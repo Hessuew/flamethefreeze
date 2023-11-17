@@ -11,6 +11,7 @@ export interface Props {
   content?: string;
   actions?: string | CallToAction[];
   image?: string | any; // TODO: find HTMLElementProps
+  imageText?: string;
 }
 
 const {
@@ -21,6 +22,7 @@ const {
   content = await Astro.slots.render('content'),
   actions = await Astro.slots.render('actions'),
   image = await Astro.slots.render('image'),
+  imageText = await Astro.slots.render('imageText'),
 } = Astro.props;
 ---
 
@@ -86,6 +88,9 @@ const {
             </div>
           )
         }
+      </div>
+      <div class="items-center justify-center w-full bg-emerald-500">
+        {imageText && <span class="self-baseline bg-red-600">{imageText}</span>}
       </div>
     </div>
   </div>
