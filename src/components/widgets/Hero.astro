@@ -85,12 +85,14 @@ const {
                   {...image}
                 />
               )}
+              {imageText && (
+                <div class="justify-center w-full flex">
+                  <p>{imageText}</p>
+                </div>
+              )}
             </div>
           )
         }
-      </div>
-      <div class="items-center justify-center w-full bg-emerald-500">
-        {imageText && <span class="self-baseline bg-red-600">{imageText}</span>}
       </div>
     </div>
   </div>

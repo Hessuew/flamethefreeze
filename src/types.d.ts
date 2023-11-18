@@ -103,6 +103,7 @@ export interface Widget {
 export interface Headline {
   title?: string;
   subtitle?: string;
+  subtitle2?: string;
   tagline?: string;
   classes?: Record<string, string>;
 }
@@ -134,6 +135,7 @@ export interface Item {
   classes?: Record<string, string>;
   callToAction?: CallToAction;
   image?: Image;
+  link?: boolean;
 }
 
 export interface Price {
