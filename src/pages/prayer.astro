@@ -1,0 +1,181 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Prayer',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="Prayer" title="Is it necessary?" />
+
+  <!-- FAQs Widget ******************* -->
+
+  <Features3
+    title="The case of Sadducees"
+    subtitle="Jesus answered and said unto them, Ye do err, not knowing the scriptures, nor the power of God. Matthew 22:29 KJV"
+    subtitle2="Haven't the Sadducees studied the scriptures all their lives? Haven't they devoted their whole lives to serve God in the temple? And to know his word and teach others and become experts of the law? Is it possible that a person could be religious and study the Bible one's whole life and still be told by Jesus, Ye do err, not knowing the scriptures, nor the power of God? How can I know if my worship of God is vain? And if I'm just studying or living a doctrine which substantially are the commandments and traditions of religious men?"
+  />
+
+  <!-- columns={1}
+    items={[
+      {
+        title: "Haven't the Sadducees studied the scriptures all their lives?",
+      },
+      {
+        title: "Haven't they devoted their whole lives to serve God in the temple?",
+      },
+      {
+        title: 'And to know his word and teach others and become experts of the law?',
+      },
+      {
+        title:
+          "Is it possible that a person could be religious and study the Bible one's whole life and still be told by Jesus, Ye do err, not knowing the scriptures, nor the power of God?",
+      },
+      {
+        title: 'How can I know if my worship of God is vain?',
+      },
+      {
+        title:
+          "And if I'm just studying or living a doctrine which substantially are the commandments and traditions of religious men?",
+      },
+    ]} -->
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="A few rhetoric questions"
+    subtitle="What is your experience regarding"
+    columns={2}
+    items={[
+      {
+        title: 'The power of God',
+        description: 'Is the power of God operating in my life',
+        icon: 'tabler:bolt',
+      },
+      {
+        title: 'Transformation',
+        description: 'Is my life being transformed day by day by the power of God?',
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Family and friends',
+        description: "Are my families and friends being influenced by God's manifesting presence through my life?",
+        icon: 'tabler:accessible',
+      },
+      {
+        title: 'Sicknesses and diseases',
+        description: 'Are the sick and diseased being healed by Jesus through me?',
+        icon: 'tabler:bandage-off',
+      },
+      {
+        title: 'Evil spirits',
+        description:
+          'Are demons being cast out through me in the name of Jesus Christ our Lord and do I see them crying out in fear and disarray?',
+        icon: 'tabler:shield-x',
+      },
+      {
+        title: 'The gospel',
+        description:
+          'Do I see the gospel being preached to sinners and they entering in the kingdom of God, free from addictions, chains of Satan, and lifelong captivating darkness?',
+        icon: 'tabler:mood-happy-filled',
+      },
+      {
+        title: 'Sin',
+        description:
+          'Am I free from private sins, lust, and addictions to alcohol, smoking, movies, video games, rock, blues, jazz music, documentaries, pornography, sexual magazines, books and romantic novels, etc?',
+        icon: 'tabler:trash-off',
+      },
+      {
+        title: 'Impossibilities',
+        description:
+          'Do I see impossible situations being transformed by the power of the Almighty God like Moses was at the Red Sea?',
+        icon: 'tabler:check',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    subtitle="Have I read about supernatural events in the scriptures and concluded it is not for my generation since I have not witnessed nor experienced any of these in my country, city, or local church denomination?"
+    subtitle2="No. That cannot be"
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    subtitle="Brethren, it is time we entered into personal supernatural experience in the Holy Spirit. God is baptizing us with power, immersing us with the manifestations of the Spirit, soaking us with the fragrance of heaven as we assemble at the throne of grace. It is time we saw the glory of God manifested in and through the church. At this war time and in this war zone, we activate combat alongside celestial armies because spiritual warfare has been legalized by the Captain of the Host of the Lord, Jesus Christ the Son of God."
+    subtitle2=" And from the days of John the Baptist until the present time, the kingdom of heaven has endured violent assault, and violent men seize it by force [as a precious prize—a share in the heavenly kingdom is sought with most ardent zeal and intense exertion]. Matthew 11:12 KJV"
+    classes={{
+      headline: {
+        subtitle: 'text-xl text-black dark:text-white',
+        subtitle2: 'text-xl text-muted',
+      },
+    }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Kindle up your prayer life to full fire🔥"
+    subtitle="Join us in prayer meeting every other Saturday starting at 18:00 GMT+2."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'FLAME the FREEZE - Prayer meeting',
+        href: 'https://uef.zoom.us/j/64440694917?pwd=eUxZRlUyM00vNkxseW1rcGxlZTc3UT09',
+        target: '_blank',
+      },
+    ]}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <!-- <Steps
+    title="Are you ready to be made an ambassador of the kingdom?"
+    tagline="Now is your time is to enter into a personal supernatural experience of the Holy Spirit"
+    subtitle="But ye, beloved, building up yourselves on your most holy faith, praying in the Holy Ghost. Jud 1:20 KJV"
+    isReversed={true}
+    items={[
+      {
+        title: 'Join us as...',
+        icon: 'tabler:number-0',
+      },
+      {
+        title: 'God is baptizing us with power',
+        icon: 'tabler:number-1',
+      },
+      {
+        title: "immersing us with the manifestations of the Spirit",
+        icon: 'tabler:number-2',
+      },
+      {
+        title: "soaking us with the fragrance of heaven as we assemble at the throne of grace.",
+        icon: 'tabler:number-3',
+      },
+      {
+        title: "It is time we saw the glory of God manifested in and through the church.",
+        icon: 'tabler:number-4',
+      },
+      {
+        title: " At this war time and in this war zone, we activate combat alongside celestial armies because spiritual warfare has been legalized by the Captain of the Host of the Lord, Jesus Christ the Son of God.",
+        icon: 'tabler:number-5',
+      },
+      {
+        title: "",
+        icon: 'tabler:number-6',
+      },
+      {
+        title: "",
+        icon: 'tabler:number-7',
+      },
+    ]}
+  /> -->
+</Layout>

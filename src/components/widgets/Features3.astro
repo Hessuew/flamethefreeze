@@ -8,6 +8,7 @@ import type { Features } from '~/types';
 const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
+  subtitle2 = await Astro.slots.render('subtitle2'),
   tagline = await Astro.slots.render('tagline'),
   image,
   items = [],
@@ -31,7 +32,7 @@ const {
   }`}
   bg={bg}
 >
-  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline} />
+  <Headline title={title} subtitle={subtitle} subtitle2={subtitle2} tagline={tagline} classes={classes?.headline} />
 
   <div aria-hidden="true" class="aspect-w-16 aspect-h-7">
     {
