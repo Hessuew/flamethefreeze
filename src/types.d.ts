@@ -268,6 +268,7 @@ export interface Steps extends Headline, Widget {
   callToAction?: string | CallToAction;
   image?: string | Image;
   isReversed?: boolean;
+  type2?: boolean;
 }
 
 export interface Content extends Headline, Widget {
