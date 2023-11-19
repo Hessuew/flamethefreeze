@@ -4,6 +4,7 @@ import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
 import Button from '~/components/ui/Button.astro';
 import type { Steps } from '~/types';
+import { twMerge } from 'tailwind-merge';
 
 const {
   title = await Astro.slots.render('title'),
@@ -12,6 +13,7 @@ const {
   callToAction = await Astro.slots.render('callToAction'),
   items = [],
   isReversed = false,
+  type2 = false,
 
   id,
   isDark = false,
@@ -42,9 +44,7 @@ const {
           ) : (
             callToAction &&
             callToAction.text &&
-            callToAction.href && (
-              <Button variant="primary" {...callToAction} class="mb-12 w-auto"/>
-            )
+            callToAction.href && <Button variant="primary" {...callToAction} class="mb-12 w-auto" />
           )
         }
       </div>
@@ -56,8 +56,14 @@ const {
             ? items.map(({ title: title2, description, icon }, index) => (
                 <li class="flex md:-mx-4">
                   <div class="pr-4 sm:pl-4 rtl:pr-0 rtl:pl-4 rtl:sm:pl-0 rtl:sm:pr-4">
-                    <span class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold rounded-full bg-blue-100 text-primary">
-                      {icon ? <Icon name={icon} class="w-6 h-6 icon-bold" /> : index + 1}
+                    <span
+                      class={twMerge(
+                        'flex w-16 h-16 bg-primary mx-auto items-center justify-center text-2xl font-bold rounded-full bg-blue-100 text-primary',
+                        type2 &&
+                          'text-white bg-primary rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4 rtl:ml-4 rtl:mr-0'
+                      )}
+                    >
+                      {icon ? <Icon name={icon} class={twMerge("w-6 h-6 icon-bold", type2 && 'w-7 h-7 text-white')} /> : index + 1}
                     </span>
                   </div>
                   <div class="pl-4 rtl:pl-0 rtl:pr-4">

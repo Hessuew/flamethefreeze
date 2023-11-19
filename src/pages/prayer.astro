@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
+import Features from '~/components/widgets/Features.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
@@ -14,7 +15,7 @@ const metadata = {
 
   <HeroText tagline="Prayer" title="Is it necessary?" />
 
-  <!-- FAQs Widget ******************* -->
+  <!-- Features3 Widget ******************* -->
 
   <Features3
     title="The case of Sadducees"
@@ -46,11 +47,11 @@ const metadata = {
       },
     ]} -->
 
-  <!-- Features3 Widget ************** -->
+  <!-- Features Widget ************** -->
 
-  <Features3
+  <Features
     title="A few rhetoric questions"
-    subtitle="What is your experience regarding"
+    subtitle="What is your experience regarding?"
     columns={2}
     items={[
       {

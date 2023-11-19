@@ -12,16 +12,16 @@ metadata:
   title:
     default: FLAME the FREEZE
     template: '%s — flamethefreeze'
-  description: "\U0001F680 And he said unto them, Go ye into all the world, and preach the gospel to every creature. Mark 16:15 KJV"
+  description: "\U0001F680. Flame the Freeze is a website focused on God's Word working today in real-life."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: FLAME the FREEZE
     images:
-      - url: '~/assets/images/default.png'
-        width: 1200
-        height: 628
+      - url: '~/assets/images/default.jpg'
+        width: 900
+        height: 900
     type: website
   # twitter:
   #   handle: '@onwidget'

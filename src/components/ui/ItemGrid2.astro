@@ -33,17 +33,17 @@ const {
       )}
     >
       {items.map(({ title, description, icon, callToAction, classes: itemClasses = {}, link }) => (
-        <div class={twMerge('relative flex flex-col', panelClass, itemClasses?.panel)}>
+        <div class={twMerge('relative flex flex-col flex-wrap whitespace-pre', panelClass, itemClasses?.panel)}>
           {(icon || defaultIcon) && (
             <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
           )}
           <div class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</div>
           {description && link ? (
-            <a class={twMerge('text-muted mt-2 hover:underline', itemClasses?.description)} set:html={description} href={description} target="_blank" />
+            <a class={twMerge('text-muted mt-2 hover:underline break-all', itemClasses?.description)} set:html={description} href={description} target="_blank" />
           ) : (
             description && (
               <p
-                class={twMerge('text-muted mt-2', descriptionClass, itemClasses?.description)}
+                class={twMerge('text-muted mt-2 break-all', descriptionClass, itemClasses?.description)}
                 set:html={description}
               />
             )
