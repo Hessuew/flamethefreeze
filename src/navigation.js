@@ -4,12 +4,20 @@
 export const headerData = {
   links: [
     {
-      text: 'The Word',
+      text: "The Word",
       href: "word",
     },
     {
-      text: 'Prayer',
+      text: "Prayer",
       href: "prayer",
+    },
+    {
+      text: "Devotions",
+      href: "devotions",
+    },
+    {
+      text: "Witnesses",
+      href: "witnesses",
     },
     // {
     //   text: 'Home',
@@ -154,8 +162,8 @@ export const footerData = {
     // { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     // { ariaLabel: 'Facebook', icon: 'taber:brand-facebook', href: '#' },
     // { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@flamethefreeze2613' },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/Hessuew/flamethefreeze' },
+    { ariaLabel: "YouTube", icon: "tabler:brand-youtube", href: "https://www.youtube.com/@flamethefreeze2613" },
+    { ariaLabel: "Github", icon: "tabler:brand-github", href: "https://github.com/Hessuew/flamethefreeze" },
   ],
   footNote: `Made by Juhani Juusola<a class="text-blue-600 dark:text-gray-200"> out of love for God</a> · All rights reserved.`,
 };
