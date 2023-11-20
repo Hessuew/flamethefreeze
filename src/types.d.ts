@@ -273,6 +273,7 @@ export interface Steps extends Headline, Widget {
 
 export interface Content extends Headline, Widget {
   content?: string;
+  defaultIcon?: string;
   image?: string | unknown;
   items?: Array<Item>;
   columns?: number;

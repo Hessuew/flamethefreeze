@@ -5,6 +5,7 @@ import WidgetWrapper from '../ui/WidgetWrapper.astro';
 import Image from '~/components/common/Image.astro';
 import Button from '~/components/ui/Button.astro';
 import ItemGrid from '../ui/ItemGrid.astro';
+import { twMerge } from 'tailwind-merge';
 
 const {
   title = await Astro.slots.render('title'),
@@ -17,6 +18,7 @@ const {
   image = await Astro.slots.render('image'),
   isReversed = false,
   isAfterContent = false,
+  defaultIcon,
 
   id,
   isDark = false,
@@ -57,13 +59,13 @@ const {
         <ItemGrid
           items={items}
           columns={columns}
-          defaultIcon="tabler:check"
+          defaultIcon={defaultIcon || "tabler:check"}
           classes={{
             container: `gap-y-4 md:gap-y-8`,
             panel: 'max-w-none',
             title: 'text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2',
             description: 'text-muted dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2',
-            icon: 'flex h-7 w-7 items-center justify-center rounded-full bg-green-600 dark:bg-green-700 text-gray-50 p-1',
+            icon: twMerge('flex h-7 w-7 items-center justify-center rounded-full bg-green-600 dark:bg-green-700 text-gray-50 p-1', defaultIcon === "tabler:x" && "bg-red-600 dark:bg-red-700"  ),
             action: 'text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2',
           }}
         />
