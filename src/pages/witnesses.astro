@@ -1,0 +1,101 @@
+---
+import Features3 from "~/components/widgets/Features3.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import Testimonials from "~/components/widgets/Testimonials.astro";
+import Layout from "~/layouts/PageLayout.astro";
+
+const metadata = {
+  title: "Witnesses",
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Witnesses"
+    title="Spiritual clouds of witnesses"
+    subtitle="Time would fail us to mention our elder brothers and sisters who have gone head of us. They excel using the same principles as discussed on this webpage. These giants of faith must not be forgotten, kindly search for them, study their lives, strengths and weaknesses and move on to shake your world for the Lord."
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    classes={{
+      headline: {
+        subtitle: "text-white text-xl",
+      },
+    }}
+    subtitle="And what shall I more say? for the time would fail me to tell of Gedeon, and of Barak, and of Samson, and of Jephthae; of David also, and Samuel, and of the prophets: Who through faith subdued kingdoms, wrought righteousness, obtained promises, stopped the mouths of lions. Hebrews 11:32,33 KJV"
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    subtitle="Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the sin which doth so easily beset us, and let us run with patience the race that is set before us. Hebrews 12:1 KJV."
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    classes={{
+      headline: {
+        subtitle: "text-white text-xl",
+      },
+    }}
+    subtitle="But ye are come unto mount Sion, and unto the city of the living God, the heavenly Jerusalem, and to an innumerable company of angels, to the general assembly and church of the firstborn, which are written in heaven, and to God the Judge of all, and to the spirits of just men made perfect. Hebrews 12:22,23 KJV"
+  />
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Words from real customers"
+    testimonials={[
+      {
+        testimonials: [
+          "We are saved by faith alone, but the faith that saves is never alone.",
+          "The truth of the matter is rather as Christ says, 'He who is not with me is against me.' He does not say, 'He who is not with me is not against me either, but merely neutral.",
+        ],
+        name: "Martin Luther: 1483-1546",
+        job: "Reformation of church",
+      },
+      {
+        testimonials: [
+          "A man with God is always in the majority.",
+          "The Scriptures of God are my only foundation and substance in all matters of weight and importance.",
+        ],
+        name: "John Knox: 1514-1572",
+        job: "Reformation of church in Scotland",
+      },
+      {
+        testimonials: [
+          "Light yourself on fire with passion and people will come from miles to watch you burn.",
+          "You have one business on earth – to save souls.",
+        ],
+        name: "John Wesley: 1703-1791",
+        job: "Founder of Revival in 18th-century Britain, which saw a resurgence of religious fervor and a revival of Christian faith.",
+      },
+      {
+        testimonials: [
+          "All earthly desires are but streams, but God is the ocean.",
+          "Resolution One: I will live for God. Resolution Two: If no one else does, I still will.",
+        ],
+        name: "Jonathan Edwards: 1703-1758",
+        job: "Sinners in the hands of the angry God.",
+      },
+      {
+        testimonials: [
+          "If you are going to walk with Jesus Christ, you are going to be opposed... In our days, to be a true Christian is really to become a scandal.",
+          "Study to know Him more and more, for the more you know, the more you will love Him.",
+        ],
+        name: "George Whitefield: 1714-1770",
+        job: "Ignited the Great Awakening, a revival movement across England and America.",
+      },
+      {
+        testimonials: ["Let me forget the world and be swallowed up in the desire to glorify God."],
+        name: "David Brainerd: 1718-1747",
+        job: "Missionary to the Native Americans with blood boiling prayers",
+      },
+    ]}
+  />
+</Layout>
