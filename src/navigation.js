@@ -19,6 +19,10 @@ export const headerData = {
       text: "Witnesses",
       href: "witnesses",
     },
+    {
+      text: "The Five Fold",
+      href: "fivefold",
+    },
     // {
     //   text: 'Home',
     //   links: [
