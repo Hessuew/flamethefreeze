@@ -14,16 +14,19 @@ const metadata = {
 
   <Hero
     tagline="Witnesses"
-    title="Spiritual clouds of witnesses"
     subtitle="Time would fail us to mention our elder brothers and sisters who have gone head of us. They excel using the same principles as discussed on this webpage. These giants of faith must not be forgotten, kindly search for them, study their lives, strengths and weaknesses and move on to shake your world for the Lord."
-  />
+  >
+    <Fragment slot="title">
+      <span class="text-accent highlight">Spiritual</span> clouds of witnesses
+    </Fragment>
+  </Hero>
 
   <!-- Features3 Widget ************** -->
 
   <Features3
     classes={{
       headline: {
-        subtitle: "text-white text-xl",
+        subtitle: "text-black dark:text-white text-xl",
       },
     }}
     subtitle="And what shall I more say? for the time would fail me to tell of Gedeon, and of Barak, and of Samson, and of Jephthae; of David also, and Samuel, and of the prophets: Who through faith subdued kingdoms, wrought righteousness, obtained promises, stopped the mouths of lions. Hebrews 11:32,33 KJV"
@@ -40,7 +43,7 @@ const metadata = {
   <Features3
     classes={{
       headline: {
-        subtitle: "text-white text-xl",
+        subtitle: "text-black dark:text-white text-xl",
       },
     }}
     subtitle="But ye are come unto mount Sion, and unto the city of the living God, the heavenly Jerusalem, and to an innumerable company of angels, to the general assembly and church of the firstborn, which are written in heaven, and to God the Judge of all, and to the spirits of just men made perfect. Hebrews 12:22,23 KJV"
@@ -49,7 +52,7 @@ const metadata = {
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title="Words of those who went before us"
     testimonials={[
       {
         testimonials: [
@@ -92,9 +95,52 @@ const metadata = {
         job: "Ignited the Great Awakening, a revival movement across England and America.",
       },
       {
-        testimonials: ["Let me forget the world and be swallowed up in the desire to glorify God."],
+        testimonials: [
+          "I care not where I go, or how I live, or what I endure so that I may save souls. When I sleep I dream of them; when I awake they are first in my thoughts.",
+          "Let me forget the world and be swallowed up in the desire to glorify God.",
+        ],
         name: "David Brainerd: 1718-1747",
         job: "Missionary to the Native Americans with blood boiling prayers",
+      },
+      {
+        testimonials: [
+          "I'm not afraid of failure; I'm afraid of succeeding at things that don't matter.",
+          "To know the will of God, we need an open Bible and an open map.",
+        ],
+        name: "William Carey: 1761-1834",
+        job: "A pioneer of missionary work. Translation of the Bible (total or partial) into 34 languages.",
+      },
+      {
+        testimonials: [
+          "It is the great business of every Christian to save souls. People complain that they do not know how to take hold of this matter. Why, the reason is plain enough; they have never studied it. They have never taken the proper pains to qualify themselves for the work. If you do not make it a matter of study, how you may successfully act in building up the kingdom of Christ, you are acting a very wicked and absurd part as a Christian.",
+          "Revival is a renewed conviction of sin and repentance, followed by an intense desire to live in obedience to God. It is giving up one's will to God in deep humility.",
+        ],
+        name: "Charles G. Finney: 1792-1875",
+        job: "The leader of the second great revival in the United States. 'The father' of the old revival.",
+      },
+      {
+        testimonials: [
+          "The beginning of anxiety is the end of faith, and the beginning of true faith is the end of anxiety.",
+          "Money is really worth no more than as it can be used to accomplish the Lord's work. Life is worth as much as it is spent for the Lord's service.",
+        ],
+        name: "George Müller: 1805-1899",
+        job: "Christian evangelist and philanthropist known for his deep faith, founding orphanages, and relying solely on prayer for the sustenance of thousands of children in 19th-century England.",
+      },
+      {
+        testimonials: [
+          "May not a single moment of my life be spent outside the light, love, and joy of God's presence. Not a moment without the entire surrender of myself as a vessel for him to fill full of his Spirit and his love",
+          "God cannot hear the prayers on our lips often because the desires of our heart after the world cry out to Him much more strongly and loudly than the our desires for Him.",
+        ],
+        name: "Andrew Murray: 1828-1917",
+        job: "A devoted South African pastor and author recognized for his profound spiritual writings, emphasizing prayer, holiness, and an intimate relationship with God in the late 19th and early 20th centuries.",
+      },
+      {
+        testimonials: [
+          "Will you go to His feet and place yourself entirely at His disposal?",
+          "You are not here in the world for yourself. You have been sent here for others. The world is waiting for you!",
+        ],
+        name: "William and Catherine Booth: 1829-1912, 1829-1890",
+        job: "Founders of The Salvation Army emphasizing practical Christianity, and advocating for the poor while spreading the Gospel globally.",
       },
     ]}
   />

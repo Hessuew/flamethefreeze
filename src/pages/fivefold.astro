@@ -1,0 +1,265 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+
+import Hero from "~/components/widgets/Hero.astro";
+
+import Content from "~/components/widgets/Content.astro";
+import Features from "~/components/widgets/Features.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+
+const metadata = {
+  title: "The Five Fold",
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="The Five Fold"
+    subtitle="So that He might sanctify her, having cleansed her by the washing of water with the Word, that He might present the church to Himself in glorious splendor, without spot or wrinkle or any such things [that she might be holy and faultless]. Ephesians 5:27 AMPC"
+  >
+    <Fragment slot="title">
+      Five-fold ministry, for what
+      <span class="text-accent highlight"> purpose?</span>
+    </Fragment>
+  </Hero>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    subtitle="So if it was He who did this, it must be quite important right?"
+    subtitle2="This pattern helps the saints to spiritually do the work of ministering and building up Christ's body. Unfortunately, several millions of believers have lived their entire life under the tutelage of one out of five of these offices. This effectively retarded their spiritual growth due to severe spiritual malnourishment and deprivation. Such congregations descend into religious cultism and proselytism, only loyal to a so-called denominational founder but are not disciples of our Lord Jesus Christ."
+  >
+    <Fragment slot="title">
+      <span class="text-accent highlight italic">Jesus</span> appointed in the church a fundamental five-fold ministry
+      to perfect and fully equip the saints.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features3>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Among these spiritually malnourished congregations..."
+    subtitle2="And he gave some, apostles; and some, prophets; and some, evangelists; and some, pastors and teachers; for the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ: till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ. Ephesians 4:11-13 KJV"
+  >
+    <Fragment slot="subtitle">
+      divisions, pride, hatred, immaturity, carnal comparisons, denial of the power of God etc are common experiences.
+      Come to think of the growth of a child who gets by on twenty percent of daily meal. Such a child would be
+      susceptible to sicknesses, pestilence, pain, weakness, and loss of body function.
+      <span class="dark:text-white text-black text-2xl">
+        We will never attain spiritual maturity in Christ if we ignore divine pattern.
+      </span> So break lose from your religious and denominational imprisonment and illusion and launch into the full
+      scope of God's plan for the end-time church.
+    </Fragment>
+  </Features3>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="examples"
+    tagline="Examples"
+    title="Here are a few examples of people whom the Lord anointed to these ministerial offices."
+    subtitle="Please feel free to learn from these saints of God as you seek to identify your peculiar ministry gifts. These servants of Christ have provided us with incredible volumes of materials through their lifetime for our edification. We must stop wasting our time on unprofitable endeavours such as social media addictions, movies and cinema, games etc."
+  />
+
+  <!-- Content Widget **************** -->
+
+<!--
+     Paul, an apostle [special messenger appointed and commissioned and sent out] not from [any body of] men nor by or through any man, but by and through Jesus Christ (the Messiah) and God the Father, Who raised Him from among the dead. Galatians 1:1 KJV
+
+Am I not an apostle (a special messenger)? Am I not free (unrestrained and exempt from any obligation)? Have I not seen Jesus our Lord? Are you [yourselves] not [the product and proof of] my workmanship in the Lord? 1 Corinthians 9:1 KJV
+
+For it seems to me that God has made an exhibit of us apostles, exposing us to view last [of all, like men in a triumphal procession who are] sentenced to death [and displayed at the end of the line]. For we have become a spectacle to the world [a show in the world’s amphitheater] with both men and angels [as spectators]. 1 Corinthians 4:9 AMPC
+
+Example of an Apostle in the 20th century:
+Smith Wigglesworth, an Apostle of Faith
+
+Audio book - Ever Increasing Faith https://youtu.be/kKhnABGoQHg -->
+
+  <Content
+    title="Apostle"
+    subtitle="And when they had fasted and prayed, and laid their hands on them, they sent them away. So they, being sent forth by the Holy Ghost, departed unto Seleucia; and from thence they sailed to Cyprus. Acts 13:3,4 KJV"
+    isReversed
+    items={[
+      {
+        title: "Description:",
+        description:
+          "Apostles are sent out by God through our Lord Jesus Christ and the Holy Spirit for a specific task in the body of Christ. Apostles are not made by men's religious institutions or theological creed. They are not self-made or have self-imposed title and salutation. Apostles are saddled with a grave responsibility to reveal the mystery of Christ to the church. It is not a matter for self gratification. Many times, whosoever is called to be an Apostle are graciously shown the vision of our Lord Jesus Christ.",
+      },
+      {
+        title: "What it is really like:",
+        description:
+          "Apostles suffer extreme contradictions from men because the mysteries of Christ spoken by them challenges the human wisdom and common knowledge in their generation. To this end, an apostolic office is a tragic and painful office and not a show room. Do you realise that the bible did not ask if any man desires the office of an Apostle? Realistically, it is not a desirable office except you are called specifically to its grave task.",
+      },
+      {
+        title: "More:",
+        description:
+          "A detailed discussion on Apostle can be found in the book written by Kenneth Hagin titled Apostles, Prophets and Teachers.",
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        From the Greek, apostolos: <br /> one who is sent out
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative h-full pb-[56.25%]">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/AVNQMYy9W2s?si=Gfcq7y7sKiQnyfR2"
+          title="YouTube video player"
+          frameborder="0"
+          class="absolute top-0 left-0 w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+
+<!-- And I fell at his feet to worship him. And he said unto me, See thou do it not: I am thy fellowservant, and of thy brethren that have the testimony of Jesus: worship God: for the testimony of Jesus is the spirit of prophecy. Revelation 19:10 AMPC
+
+[Yet] first [you must] understand this, that no prophecy of Scripture is [a matter] of any personal or private or special interpretation (loosening, solving). For no prophecy ever originated because some man willed it [to do so—it never came by human impulse], but men spoke from God who were borne along (moved and impelled) by the Holy Spirit. 1 Peter 2:21 AMPC
+
+But if all prophesy [giving inspired testimony and interpreting the divine will and purpose] and an unbeliever or untaught outsider comes in, he is told of his sin and reproved and convicted and convinced by all, and his defects and needs are examined (estimated, determined) and he is called to account by all. 1 Corinthians 14:24 AMPC
+
+Example of a Prophet in the 21st century:
+Kenneth E. Hagin: A Prophet of Faith and Prayers
+
+Hagin's Teachings https://www.youtube.com/channel/UCPwkzektpxDRcpjNZ3naToQ/videos
+
+Hagin's ministry https://www.rhema.org/ -->
+
+
+  <Content
+    title="Prophet"
+    subtitle="[This mystery] was never disclosed to human beings in past generations as it has now been revealed to His holy apostles (consecrated messengers) and prophets by the [Holy] Spirit. Ephesians 3:5 KJV"
+    items={[
+      {
+        title: "Description:",
+        description:
+          "A very important lighthouse in the body of Christ is the prophetic office. It is a full and consistent manifestations of the words of wisdom, words of knowledge, and discernment of spirit aided by the Holy Spirit to the intent that the Church may be holy, guided, protected, and alert to the wiles of the devils. The prophetic office does not function in prayerless people and persons who lack adequate knowledge of the scriptures. These are fundamental requirements for the prophetic office. To see or pursue visions without prayer and accurate scriptural interpretation is to repeat the error of Balaam, it would lead to witchcraft, divination, and occultism. Beware of False Prophets.",
+      },
+      {
+        title: "What is it really like:",
+        description:
+        "Unfortunately, this generation has mutilated the office of the prophet, it has been reduced to money spinning forecast, job offer prognostication, future spouse determination, gender of child to have, which city to live, or even what shoes to buy in the store. This is a mockery of an office through which the Holy Spirit convicts of sin, righteousness and judgement. Brethren take heed lest you are deceived."
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        From the Greek, prophetes: <br /> one who hears and listens to God
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative h-full pb-[56.25%]">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/9jR-QrrpUCY?si=Mt3-lVnl71-3fHb2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          class="absolute top-0 left-0 w-full h-full"
+          allowfullscreen></iframe>
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
+<!-- Evangelist:
+From the Greek, “evanggelistes” meaning, “one who brings good news”
+
+This office of the Holy Spirit is occupied by the town crier and conductor of the kingdom. The task in this office is to call men and women to repentance through a simple gospel message of the Lord Jesus Christ. An evangelist has an incurable desire to save the lost: "plundering hell to populate heaven". They are restless, relentless, and can not be tied to a denomination, or bugged down by herculean administrative tasks. They are God's incendiaries shot into regions of spiritual darkness to enable an engulf of divine flame of salvation, joy and peace in the Holy Ghost.
+
+Then Philip went down to the city of Samaria, and preached Christ unto them. Acts 8:5 KJV
+
+Then Philip opened his mouth, and began at the same scripture, and preached unto him Jesus. Acts 8:35 KJV
+
+And the next day we that were of Paul's company departed, and came unto Caesarea: and we entered into the house of Philip the evangelist, which was one of the seven; and abode with him. Acts 21:8 KJV
+
+For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek. Romans 1:16 KJV
+
+For whosoever shall call upon the name of the Lord shall be saved. How then shall they call on him in whom they have not believed? and how shall they believe in him of whom they have not heard? and how shall they hear without a preacher? And how shall they preach, except they be sent? as it is written, How beautiful are the feet of them that preach the gospel of peace, and bring glad tidings of good things! Romans 10:13-15 KJV
+
+Example of an Evangelist in the 21st century:
+Reinhard Bonnke: An Evangelist to Africa (Africa shall be Saved)
+
+Audio Book - Living a Life of Fire https://youtu.be/2FlZeRXPqHI
+
+Bonnke's ministry https://www.cfan.eu/reinhard-bonnke/
+
+https://www.youtube.com/watch?v=O-cnVuG6JNM -->
+
+
+
+<!-- Pastor:
+From the Greek, “poimen” meaning, “one who shepherds God’s people”
+
+This office is the most common and popular as it is the home maker for the kingdom. The pastor provides comfort to the new born in Christ, change the spiritual diapers, give the baby milk and keeps everyone warm. Jesus pastored the twelve apostles for several years. The office has different names such as Bishop, Elder, Deacon, Overseer, Shepherd. This task is well spelt out by Apostle Paul and Peter. Pastors may have a weakness of not wanting to give up their spiritual babies who are now maturing in the Lord and seeking to exercise their gift. This could lead to intimidation, manipulation and domination, in short witchcraft. A genuine pastor is not afraid to allow the flock to glean from the riches of the Holy Spirit in other verified spiritual offices. 
+
+Take care and be on guard for yourselves and the whole flock over which the Holy Spirit has appointed you bishops and guardians, to shepherd (tend and feed and guide) the church of the Lord or of God which He obtained for Himself [buying it and saving it for Himself] with His own blood. I know that after I am gone, ferocious wolves will get in among you, not sparing the flock; Acts 20:28,29 AMPC
+
+I warn and counsel the elders among you (the pastors and spiritual guides of the church) as a fellow elder and as an eyewitness [called to testify] of the sufferings of Christ, as well as a sharer in the glory (the honor and splendor) that is to be revealed (disclosed, unfolded): tend (nurture, guard, guide, and fold) the flock of God that is [your responsibility], not by coercion or constraint, but willingly; not dishonorably motivated by the advantages and profits [belonging to the office], but eagerly and cheerfully; not domineering [as arrogant, dictatorial, and overbearing persons] over those in your charge, but being examples (patterns and models of Christian living) to the flock (the congregation). 1 Peter 5:1-3 AMPC
+
+Jesus knowing that the Father had given all things into his hands, and that he was come from God, and went to God; he riseth from supper, and laid aside his garments; and took a towel, and girded himself. After that he poureth water into a bason, and began to wash the disciples' feet, and to wipe them with the towel wherewith he was girded. John 13:3-5 KJV
+
+Example of a Pastor in the 20th century:
+Oswald J. Smith
+
+Teachings https://www.youtube.com/playlist?list=PLHZp_z2RSv20BMZTT8hE19ZJVZ-b738Z1
+
+https://www.youtube.com/watch?v=zeclAWdlg0w -->
+
+
+<!-- Teacher:
+From the Greek, “didaskalos” meaning, “one who seeks and shares the truth”
+
+Here is the office of the spiritual kindergarten through university training tasked with the responsibility to systematically and painstakingly break the bread of life into bits, sizeable for consumption. A teacher is divinely inspired with the spirit of revelation and wisdom to make the scripture a living word not just dead letters of theology. A teacher is full of the knowledge of scriptures and they work hand in hand with the pastor in accurately discipling and nurturing the body of Christ. 
+
+Unlike the pastor, the teaching office is not stationary but mobile so that several local churches can benefit from the grace. It is the teaching office's task to wean the church from the feeding bottles of the pastoral office. Another name for the office of a teacher is a minister. The teacher or minister is expected to introduce strong meat which boosts spiritual immunity, increases strength and enables alertness against false doctrines and deceivers. The teaching office is saddled with the responsibility to turn spiritual babies and infants into adolescents, young adults and full grown adults, tagged operation maturity! 
+
+So if your local church is full of grown-up adult babies either on the pew or pulpit, screaming daily for spiritual feeding bottles, it is a spiritual emergency! Please kindly invite a teacher.
+
+And when he had found him, he brought him unto Antioch. And it came to pass, that a whole year they assembled themselves with the church, and taught much people. And the disciples were called Christians first in Antioch. Acts 11:26 KJV
+
+Now in the church (assembly) at Antioch there were prophets (inspired interpreters of the will and purposes of God) and teachers: Barnabas, Symeon who was called Niger [Black], Lucius of Cyrene, Manaen a member of the court of Herod the tetrarch, and Saul. Acts 13:1 AMPC
+
+For when for the time ye ought to be teachers, ye have need that one teach you again which be the first principles of the oracles of God; and are become such as have need of milk, and not of strong meat. For every one that useth milk is unskilful in the word of righteousness: for he is a babe. But strong meat belongeth to them that are of full age, even those who by reason of use have their senses exercised to discern both good and evil. Hebrews 5:12-14 KJV
+
+So then, we may no longer be children, tossed [like ships] to and fro between chance gusts of teaching and wavering with every changing wind of doctrine, [the prey of] the cunning and cleverness of unscrupulous men, [gamblers engaged] in every shifting form of trickery in inventing errors to mislead. Ephesians 4:14 AMPC
+
+Who also hath made us able ministers of the new testament; not of the letter, but of the spirit: for the letter killeth, but the spirit giveth life. 2 Corinthians 3:6 KJV
+
+Example of a Teacher in the 21st century:
+Derek Prince
+
+Teachings https://www.youtube.com/c/DerekPrinceMinistries/videos
+
+Prince's ministry https://www.derekprince.com/
+
+https://www.youtube.com/watch?v=gE1Z7-8cq_M
+
+ -->
+
+</Layout>
