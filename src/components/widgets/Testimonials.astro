@@ -29,11 +29,6 @@ const {
           <div class="flex h-auto">
             <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600">
               {title && <h2 class="text-lg font-medium leading-6 pb-4">{title}</h2>}
-              {testimonials && (
-                <blockquote class="flex-auto">
-                  <p class="text-muted">“{testimonials}”</p>
-                </blockquote>
-              )}
               {testimonials && Array.isArray(testimonials)
                 ? testimonials.map((testimonial) => (
                     <blockquote class="flex-auto">
