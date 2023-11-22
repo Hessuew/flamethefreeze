@@ -11,7 +11,6 @@ import { twMerge } from "tailwind-merge";
 const {
   title = await Astro.slots.render("title"),
   subtitle = await Astro.slots.render("subtitle"),
-  bottomarea = await Astro.slots.render("bottomarea"),
   tagline,
   content = await Astro.slots.render("content"),
   callToAction,
@@ -21,6 +20,7 @@ const {
   isReversed = false,
   isAfterContent = false,
   defaultIcon,
+  testimonial,
 
   id,
   isDark = false,
@@ -97,6 +97,19 @@ const {
         }
       </div>
     </div>
+    {
+      testimonial && (
+        <Testimonials
+          title={testimonial.title}
+          testimonials={[
+            {
+              testimonials: testimonial.testimonials,
+              name: testimonial.name,
+              job: testimonial.job,
+            },
+          ]}
+        />
+      )
+    }
   </div>
-  {bottomarea && <Testimonials title={bottomarea.title} subtitle={bottomarea.subtitle} testimonials={bottomarea.items} />}
 </WidgetWrapper>
