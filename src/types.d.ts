@@ -152,7 +152,7 @@ export interface Price {
 
 export interface Testimonial {
   title?: string;
-  testimonials?: string[];
+  testimonials?: string | string[];
   name?: string;
   job?: string;
   image?: string | unknown;
@@ -272,7 +272,6 @@ export interface Steps extends Headline, Widget {
   type2?: boolean;
 }
 
-
 export interface Content extends Headline, Widget {
   content?: string;
   defaultIcon?: string;
@@ -282,6 +281,7 @@ export interface Content extends Headline, Widget {
   isReversed?: boolean;
   isAfterContent?: boolean;
   callToAction?: CallToAction;
+  testimonial?: Testimonial;
 }
 
 export interface Contact extends Headline, Form, Widget {}
