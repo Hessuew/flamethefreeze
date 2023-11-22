@@ -1,27 +1,27 @@
-// import { getPermalink, getBlogPermalink, } from './utils/permalinks';
+import { getPermalink } from './utils/permalinks';
 // import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
       text: "The Word",
-      href: "word",
+      href: getPermalink("word"),
     },
     {
       text: "Prayer",
-      href: "prayer",
+      href: getPermalink("prayer"),
     },
     {
       text: "Devotions",
-      href: "devotions",
+      href: getPermalink("devotions"),
     },
     {
       text: "Witnesses",
-      href: "witnesses",
+      href: getPermalink("witnesses"),
     },
     {
       text: "The Five Fold",
-      href: "fivefold",
+      href: getPermalink("fivefold"),
     },
     // {
     //   text: 'Home',
