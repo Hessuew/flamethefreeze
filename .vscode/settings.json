@@ -16,5 +16,8 @@
   },
   "yaml.schemas": {
     "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
+  },
+  "vim.handleKeys": {
+    "<C-p>": false
   }
 }

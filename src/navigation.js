@@ -11,6 +11,10 @@ export const headerData = {
       text: "Prayer",
       href: getPermalink("prayer"),
     },
+    // {
+    //   text: "True Church",
+    //   href: getPermalink("church"),
+    // },
     {
       text: "Devotions",
       href: getPermalink("devotions"),
@@ -169,5 +173,5 @@ export const footerData = {
     { ariaLabel: "YouTube", icon: "tabler:brand-youtube", href: "https://www.youtube.com/@flamethefreeze2613" },
     { ariaLabel: "Github", icon: "tabler:brand-github", href: "https://github.com/Hessuew/flamethefreeze" },
   ],
-  footNote: `Made by Juhani Juusola<a class="text-blue-600 dark:text-gray-200"> out of love for God</a> · All rights reserved.`,
+  footNote: `Made by Juhani Juusola<a class="text-blue-600 dark:text-gray-200 hover:underline" href="#"> out of love for God</a> · All rights reserved.`,
 };
