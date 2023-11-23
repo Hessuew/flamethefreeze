@@ -1,4 +1,5 @@
 ---
+import { twMerge } from "tailwind-merge";
 import Headline from "~/components/ui/Headline.astro";
 import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
 import Button from "~/components/ui/Button.astro";
@@ -11,6 +12,7 @@ const {
   tagline = "",
   testimonials = [],
   callToAction,
+  columns,
 
   id,
   isDark = false,
@@ -22,7 +24,19 @@ const {
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ""}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
 
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div
+    class={twMerge(
+      `grid mx-auto gap-8 md:gap-y-12 ${
+        columns === 4
+          ? "lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
+          : columns === 3
+            ? "lg:grid-cols-3 sm:grid-cols-2"
+            : columns === 2
+              ? "sm:grid-cols-2 "
+              : "sm:grid-cols-2 lg:grid-cols-3"
+      }`
+    )}
+  >
     {
       testimonials &&
         testimonials.map(({ title, testimonials, name, job, image }) => (

@@ -12,7 +12,7 @@ metadata:
   title:
     default: FLAME the FREEZE
     template: '%s — flamethefreeze'
-  description: "\U0001F680. Flame the Freeze is a website focused on God's Word working today in real-life."
+  description: "\U0001F680. Flame the Freeze — Where the Word of God and experience meets"
   robots:
     index: true
     follow: true

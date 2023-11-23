@@ -35,10 +35,6 @@ const metadata = {
       <span class="text-accent highlight italic">Jesus</span> appointed in the church a fundamental five-fold ministry
       to perfect and fully equip the saints.
     </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
   </Features3>
 
   <!-- Features3 Widget ************** -->
@@ -69,27 +65,37 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <!--
-     
-Am I not an apostle (a special messenger)? Am I not free (unrestrained and exempt from any obligation)? Have I not seen Jesus our Lord? Are you [yourselves] not [the product and proof of] my workmanship in the Lord? 1 Corinthians 9:1 KJV
-For it seems to me that God has made an exhibit of us apostles, exposing us to view last [of all, like men in a triumphal procession who are] sentenced to death [and displayed at the end of the line]. For we have become a spectacle to the world [a show in the world’s amphitheater] with both men and angels [as spectators]. 1 Corinthians 4:9 AMPC
-Example of an Apostle in the 20th century:
-Smith Wigglesworth, an Apostle of Faith
-Audio book - Ever Increasing Faith https://youtu.be/kKhnABGoQHg -->
-
-    <!-- testimonial={{
-      testimonials: [
-        {
-          testimonials: "Paul, an apostle [special messenger appointed and commissioned and sent out] not from [any body of] men nor by or through any man, but by and through Jesus Christ (the Messiah) and God the Father, Who raised Him from among the dead.",
-          name: "Galatians 1:1 KJV",
-        },
-      ]
-    }
-    } -->
   <Content
     title="Apostle"
     subtitle="And when they had fasted and prayed, and laid their hands on them, they sent them away. So they, being sent forth by the Holy Ghost, departed unto Seleucia; and from thence they sailed to Cyprus. Acts 13:3,4 KJV"
     isReversed
+    testimonial={[
+      {
+        testimonials:
+          "Paul, an apostle [special messenger appointed and commissioned and sent out] not from [any body of] men nor by or through any man, but by and through Jesus Christ (the Messiah) and God the Father, Who raised Him from among the dead.",
+        name: "Galatians 1:1 KJV",
+      },
+      {
+        testimonials:
+          "Am I not an apostle (a special messenger)? Am I not free (unrestrained and exempt from any obligation)? Have I not seen Jesus our Lord? Are you [yourselves] not [the product and proof of] my workmanship in the Lord?",
+        name: "1 Corinthians 9:1 KJV",
+      },
+      {
+        testimonials:
+          "For it seems to me that God has made an exhibit of us apostles, exposing us to view last [of all, like men in a triumphal procession who are] sentenced to death [and displayed at the end of the line]. For we have become a spectacle to the world [a show in the world’s amphitheater] with both men and angels [as spectators].",
+        name: "1 Corinthians 4:9 AMPC",
+      },
+    ]}
+    bottom={{
+      title: "Example of an Apostle in the 20th century:",
+      subtitle: "Smith Wigglesworth, an Apostle of Faith",
+      links: [
+        {
+          title: "Audio book - Ever Increasing Faith",
+          link: "https://youtu.be/kKhnABGoQHg",
+        },
+      ],
+    }}
     items={[
       {
         title: "Description:",
@@ -131,17 +137,40 @@ Audio book - Ever Increasing Faith https://youtu.be/kKhnABGoQHg -->
 
   <!-- Content Widget **************** -->
 
-  <!-- And I fell at his feet to worship him. And he said unto me, See thou do it not: I am thy fellowservant, and of thy brethren that have the testimony of Jesus: worship God: for the testimony of Jesus is the spirit of prophecy. Revelation 19:10 AMPC
-[Yet] first [you must] understand this, that no prophecy of Scripture is [a matter] of any personal or private or special interpretation (loosening, solving). For no prophecy ever originated because some man willed it [to do so—it never came by human impulse], but men spoke from God who were borne along (moved and impelled) by the Holy Spirit. 1 Peter 2:21 AMPC
-But if all prophesy [giving inspired testimony and interpreting the divine will and purpose] and an unbeliever or untaught outsider comes in, he is told of his sin and reproved and convicted and convinced by all, and his defects and needs are examined (estimated, determined) and he is called to account by all. 1 Corinthians 14:24 AMPC
-Example of a Prophet in the 21st century:
-Kenneth E. Hagin: A Prophet of Faith and Prayers
-Hagin's Teachings https://www.youtube.com/channel/UCPwkzektpxDRcpjNZ3naToQ/videos
-Hagin's ministry https://www.rhema.org/ -->
-
   <Content
     title="Prophet"
     subtitle="[This mystery] was never disclosed to human beings in past generations as it has now been revealed to His holy apostles (consecrated messengers) and prophets by the [Holy] Spirit. Ephesians 3:5 KJV"
+    testimonial={[
+      {
+        testimonials:
+          "And I fell at his feet to worship him. And he said unto me, See thou do it not: I am thy fellowservant, and of thy brethren that have the testimony of Jesus: worship God: for the testimony of Jesus is the spirit of prophecy.",
+        name: "Revelation 19:10 AMPC",
+      },
+      {
+        testimonials:
+          "[Yet] first [you must] understand this, that no prophecy of Scripture is [a matter] of any personal or private or special interpretation (loosening, solving). For no prophecy ever originated because some man willed it [to do so—it never came by human impulse], but men spoke from God who were borne along (moved and impelled) by the Holy Spirit.",
+        name: "1 Peter 2:21 AMPC",
+      },
+      {
+        testimonials:
+          "But if all prophesy [giving inspired testimony and interpreting the divine will and purpose] and an unbeliever or untaught outsider comes in, he is told of his sin and reproved and convicted and convinced by all, and his defects and needs are examined (estimated, determined) and he is called to account by all.",
+        name: "1 Corinthians 14:24 AMPC",
+      },
+    ]}
+    bottom={{
+      title: "Example of a Prophet in the 21st century:",
+      subtitle: "Kenneth E. Hagin: A Prophet of Faith and Prayers",
+      links: [
+        {
+          title: "Hagin's Teachings",
+          link: "https://www.youtube.com/channel/UCPwkzektpxDRcpjNZ3naToQ/videos",
+        },
+        {
+          title: "Hagin's ministry",
+          link: "https://www.rhema.org/",
+        },
+      ],
+    }}
     items={[
       {
         title: "Description:",
@@ -185,21 +214,42 @@ Hagin's ministry https://www.rhema.org/ -->
     </Fragment>
   </Content>
 
-  <!-- Evangelist:
-
-Then Philip opened his mouth, and began at the same scripture, and preached unto him Jesus. Acts 8:35 KJV
-And the next day we that were of Paul's company departed, and came unto Caesarea: and we entered into the house of Philip the evangelist, which was one of the seven; and abode with him. Acts 21:8 KJV
-For whosoever shall call upon the name of the Lord shall be saved. How then shall they call on him in whom they have not believed? and how shall they believe in him of whom they have not heard? and how shall they hear without a preacher? And how shall they preach, except they be sent? as it is written, How beautiful are the feet of them that preach the gospel of peace, and bring glad tidings of good things! Romans 10:13-15 KJV
-Example of an Evangelist in the 21st century:
-Reinhard Bonnke: An Evangelist to Africa (Africa shall be Saved)
-Audio Book - Living a Life of Fire https://youtu.be/2FlZeRXPqHI
-Bonnke's ministry https://www.cfan.eu/reinhard-bonnke/
--->
+  <!-- Content Widget **************** -->
 
   <Content
     title="Evangelist"
     subtitle="For I am not ashamed of the gospel of Christ: for it is the power of God unto salvation to every one that believeth; to the Jew first, and also to the Greek. Romans 1:16 KJV"
     isReversed
+    testimonial={[
+      {
+        testimonials: "Then Philip opened his mouth, and began at the same scripture, and preached unto him Jesus.",
+        name: "Acts 8:35 KJV",
+      },
+      {
+        testimonials:
+          "And the next day we that were of Paul's company departed, and came unto Caesarea: and we entered into the house of Philip the evangelist, which was one of the seven; and abode with him.",
+        name: "Acts 21:8 KJV",
+      },
+      {
+        testimonials:
+          "For whosoever shall call upon the name of the Lord shall be saved. How then shall they call on him in whom they have not believed? and how shall they believe in him of whom they have not heard? and how shall they hear without a preacher? And how shall they preach, except they be sent? as it is written, How beautiful are the feet of them that preach the gospel of peace, and bring glad tidings of good things!",
+        name: "Romans 10:13-15 KJV",
+      },
+    ]}
+    bottom={{
+      title: "Example of an Evangelist in the 21st century:",
+      subtitle: "Reinhard Bonnke: An Evangelist to Africa (Africa shall be Saved)",
+      links: [
+        {
+          title: "Audio Book - Living a Life of Fire",
+          link: "https://youtu.be/2FlZeRXPqHI",
+        },
+        {
+          title: "Bonnke's ministry",
+          link: "https://www.cfan.eu/reinhard-bonnke/",
+        },
+      ],
+    }}
     items={[
       {
         title: "Description:",
@@ -233,22 +283,37 @@ Bonnke's ministry https://www.cfan.eu/reinhard-bonnke/
     </Fragment>
   </Content>
 
-  <!-- Pastor:
-From the Greek, “poimen” meaning, “one who shepherds God’s people”
-
-I warn and counsel the elders among you (the pastors and spiritual guides of the church) as a fellow elder and as an eyewitness [called to testify] of the sufferings of Christ, as well as a sharer in the glory (the honor and splendor) that is to be revealed (disclosed, unfolded): tend (nurture, guard, guide, and fold) the flock of God that is [your responsibility], not by coercion or constraint, but willingly; not dishonorably motivated by the advantages and profits [belonging to the office], but eagerly and cheerfully; not domineering [as arrogant, dictatorial, and overbearing persons] over those in your charge, but being examples (patterns and models of Christian living) to the flock (the congregation). 1 Peter 5:1-3 AMPC
-Jesus knowing that the Father had given all things into his hands, and that he was come from God, and went to God; he riseth from supper, and laid aside his garments; and took a towel, and girded himself. After that he poureth water into a bason, and began to wash the disciples' feet, and to wipe them with the towel wherewith he was girded. John 13:3-5 KJV
-I am the good shepherd: the good shepherd giveth his life for the sheep. Joh 10:11 KJV
-Example of a Pastor in the 20th century:
-Oswald J. Smith
-
-Teachings https://www.youtube.com/playlist?list=PLHZp_z2RSv20BMZTT8hE19ZJVZ-b738Z1
-
--->
+  <!-- Content Widget **************** -->
 
   <Content
     title="Pastor"
     subtitle="Take care and be on guard for yourselves and the whole flock over which the Holy Spirit has appointed you bishops and guardians, to shepherd (tend and feed and guide) the church of the Lord or of God which He obtained for Himself [buying it and saving it for Himself] with His own blood. I know that after I am gone, ferocious wolves will get in among you, not sparing the flock; Acts 20:28,29 AMPC"
+    testimonial={[
+      {
+        testimonials:
+          "I warn and counsel the elders among you (the pastors and spiritual guides of the church) as a fellow elder and as an eyewitness [called to testify] of the sufferings of Christ, as well as a sharer in the glory (the honor and splendor) that is to be revealed (disclosed, unfolded): tend (nurture, guard, guide, and fold) the flock of God that is [your responsibility], not by coercion or constraint, but willingly; not dishonorably motivated by the advantages and profits [belonging to the office], but eagerly and cheerfully; not domineering [as arrogant, dictatorial, and overbearing persons] over those in your charge, but being examples (patterns and models of Christian living) to the flock (the congregation).",
+        name: "1 Peter 5:1-3 AMPC",
+      },
+      {
+        testimonials:
+          "Jesus knowing that the Father had given all things into his hands, and that he was come from God, and went to God; he riseth from supper, and laid aside his garments; and took a towel, and girded himself. After that he poureth water into a bason, and began to wash the disciples' feet, and to wipe them with the towel wherewith he was girded.",
+        name: "John 13:3-5 KJV",
+      },
+      {
+        testimonials: "I am the good shepherd: the good shepherd giveth his life for the sheep. I am the good shepherd, and know my sheep, and am known of mine. As the Father knoweth me, even so know I the Father: and I lay down my life for the sheep.",
+        name: "Joh 10:11,14,15 KJV",
+      },
+    ]}
+    bottom={{
+      title: "Example of a Pastor in the 20th century:",
+      subtitle: "Oswald J. Smith",
+      links: [
+        {
+          title: "Teachings ",
+          link: "https://www.youtube.com/playlist?list=PLHZp_z2RSv20BMZTT8hE19ZJVZ-b738Z1",
+        },
+      ],
+    }}
     items={[
       {
         title: "Description:",
@@ -292,21 +357,47 @@ Teachings https://www.youtube.com/playlist?list=PLHZp_z2RSv20BMZTT8hE19ZJVZ-b738
     </Fragment>
   </Content>
 
-  <!-- Teacher:
-Now in the church (assembly) at Antioch there were prophets (inspired interpreters of the will and purposes of God) and teachers: Barnabas, Symeon who was called Niger [Black], Lucius of Cyrene, Manaen a member of the court of Herod the tetrarch, and Saul. Acts 13:1 AMPC
-For when for the time ye ought to be teachers, ye have need that one teach you again which be the first principles of the oracles of God; and are become such as have need of milk, and not of strong meat. For every one that useth milk is unskilful in the word of righteousness: for he is a babe. But strong meat belongeth to them that are of full age, even those who by reason of use have their senses exercised to discern both good and evil. Hebrews 5:12-14 KJV
-So then, we may no longer be children, tossed [like ships] to and fro between chance gusts of teaching and wavering with every changing wind of doctrine, [the prey of] the cunning and cleverness of unscrupulous men, [gamblers engaged] in every shifting form of trickery in inventing errors to mislead. Ephesians 4:14 AMPC
-Who also hath made us able ministers of the new testament; not of the letter, but of the spirit: for the letter killeth, but the spirit giveth life. 2 Corinthians 3:6 KJV
-Example of a Teacher in the 21st century:
-Derek Prince
-Teachings https://www.youtube.com/c/DerekPrinceMinistries/videos
-Prince's ministry https://www.derekprince.com/
- -->
+  <!-- Content Widget **************** -->
 
   <Content
+  classes={{
+    bottom: "border-b-0"
+  }}
     title="Teacher"
     subtitle="And when he had found him, he brought him unto Antioch. And it came to pass, that a whole year they assembled themselves with the church, and taught much people. And the disciples were called Christians first in Antioch. Acts 11:26 KJV"
     isReversed
+    testimonial={[
+      {
+        testimonials: "Now in the church (assembly) at Antioch there were prophets (inspired interpreters of the will and purposes of God) and teachers: Barnabas, Symeon who was called Niger [Black], Lucius of Cyrene, Manaen a member of the court of Herod the tetrarch, and Saul.",
+        name: "Acts 13:1 AMPC",
+      },
+      {
+        testimonials: "For when for the time ye ought to be teachers, ye have need that one teach you again which be the first principles of the oracles of God; and are become such as have need of milk, and not of strong meat. For every one that useth milk is unskilful in the word of righteousness: for he is a babe. But strong meat belongeth to them that are of full age, even those who by reason of use have their senses exercised to discern both good and evil.",
+        name: "Hebrews 5:12-14 KJV",
+      },
+      {
+        testimonials: "So then, we may no longer be children, tossed [like ships] to and fro between chance gusts of teaching and wavering with every changing wind of doctrine, [the prey of] the cunning and cleverness of unscrupulous men, [gamblers engaged] in every shifting form of trickery in inventing errors to mislead.",
+        name: "Ephesians 4:14 AMPC",
+      },
+      {
+        testimonials: "Who also hath made us able ministers of the new testament; not of the letter, but of the spirit: for the letter killeth, but the spirit giveth life.",
+        name: "2 Corinthians 3:6 KJV",
+      },
+    ]}
+    bottom={{
+      title: "Example of a Teacher in the 21st century:",
+      subtitle: "Derek Prince",
+      links: [
+        {
+          title: "Teachings",
+          link: "https://www.youtube.com/c/DerekPrinceMinistries/videos",
+        },
+        {
+          title: "Prince's ministry",
+          link: "https://www.derekprince.com/",
+        },
+      ],
+    }}
     items={[
       {
         title: "Description:",

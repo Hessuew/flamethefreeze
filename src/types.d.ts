@@ -230,6 +230,7 @@ export interface Pricing extends Headline, Widget {
 
 export interface Testimonials extends Headline, Widget {
   testimonials?: Array<Testimonial>;
+  columns?: number;
   callToAction?: CallToAction;
 }
 
@@ -281,7 +282,12 @@ export interface Content extends Headline, Widget {
   isReversed?: boolean;
   isAfterContent?: boolean;
   callToAction?: CallToAction;
-  testimonial?: Testimonial;
+  testimonial?: Testimonials;
+  bottom?: {
+    title: string;
+    subtitle: string;
+    links: {title: string, link: string}[]
+  }
 }
 
 export interface Contact extends Headline, Form, Widget {}

@@ -21,6 +21,7 @@ const {
   isAfterContent = false,
   defaultIcon,
   testimonial,
+  bottom,
 
   id,
   isDark = false,
@@ -97,18 +98,22 @@ const {
         }
       </div>
     </div>
+    {testimonial && <Testimonials columns={columns} testimonials={testimonial} />}
     {
-      testimonial && (
-        <Testimonials
-          title={testimonial.title}
-          testimonials={[
-            {
-              testimonials: testimonial.testimonials,
-              name: testimonial.name,
-              job: testimonial.job,
-            },
-          ]}
-        />
+      bottom && (
+        <div class={twMerge("text-center border-b pb-4 border-neutral-400", classes.bottom)}>
+          <p class={twMerge("text-2xl")} set:html={bottom.title} />
+          <p class={twMerge("pt-4 text-muted text-xl")} set:html={bottom.subtitle} />
+          {bottom.links &&
+            bottom.links.map(({ title, link }) => (
+              <p class={twMerge("pt-4 text-xl")}>
+                {title}:
+                <a class="hover:underline" href={link} target="_blank">
+                  {link}
+                </a>
+              </p>
+            ))}
+        </div>
       )
     }
   </div>
