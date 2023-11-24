@@ -1,0 +1,22 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import HeroText from "~/components/widgets/HeroText.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+
+const metadata = {
+  title: "The Church",
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="The true church" title="Coming soon..." />
+
+  <!-- Features3 Widget ******************* -->
+
+  <!-- title="The church to attend is where:"
+    subtitle2="1. Jesus is glorified (2 Cor 10:17)" -->
+  <Features3 />
+  <Features3 />
+</Layout>
