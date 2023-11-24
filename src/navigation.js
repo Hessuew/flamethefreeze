@@ -11,10 +11,10 @@ export const headerData = {
       text: "Prayer",
       href: getPermalink("prayer"),
     },
-    // {
-    //   text: "True Church",
-    //   href: getPermalink("church"),
-    // },
+    {
+      text: "The Church",
+      href: getPermalink("church"),
+    },
     {
       text: "Devotions",
       href: getPermalink("devotions"),
@@ -26,6 +26,10 @@ export const headerData = {
     {
       text: "The Five Fold",
       href: getPermalink("fivefold"),
+    },
+    {
+      text: "About us",
+      href: getPermalink("about"),
     },
     // {
     //   text: 'Home',
