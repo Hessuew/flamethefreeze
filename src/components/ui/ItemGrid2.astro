@@ -39,7 +39,7 @@ const {
           )}
           <div class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</div>
           {description && link ? (
-            <a class={twMerge('text-muted mt-2 hover:underline break-all', itemClasses?.description)} set:html={description} href={description} target="_blank" />
+            <a class={twMerge('text-muted mt-2 hover:underline break-all', itemClasses?.description)} set:html={description} href={description.toString()} target="_blank" />
           ) : (
             description && (
               <p
