@@ -81,7 +81,24 @@ const {
           image && (
             <div class="relative m-auto max-w-4xl h-full">
               {typeof image === "string" ? (
-                <Fragment set:html={image} />
+                <>
+                  <Fragment set:html={image} />
+                  {bottom && (
+                    <div class={twMerge("text-center self-baseline pt-10", classes.bottom)}>
+                      <p class={twMerge("text-2xl")} set:html={bottom.title} />
+                      <p class={twMerge("pt-4 text-muted text-xl")} set:html={bottom.subtitle} />
+                      {bottom.links &&
+                        bottom.links.map(({ title, link }) => (
+                          <p class={twMerge("pt-4 text-xl")}>
+                            {title}:
+                            <a class="hover:underline break-all" href={link} target="_blank">
+                              {link}
+                            </a>
+                          </p>
+                        ))}
+                    </div>
+                  )}
+                </>
               ) : (
                 <Image
                   class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
@@ -99,22 +116,6 @@ const {
       </div>
     </div>
     {testimonial && <Testimonials columns={columns} testimonials={testimonial} />}
-    {
-      bottom && (
-        <div class={twMerge("text-center border-b pb-4 border-neutral-400", classes.bottom)}>
-          <p class={twMerge("text-2xl")} set:html={bottom.title} />
-          <p class={twMerge("pt-4 text-muted text-xl")} set:html={bottom.subtitle} />
-          {bottom.links &&
-            bottom.links.map(({ title, link }) => (
-              <p class={twMerge("pt-4 text-xl")}>
-                {title}:
-                <a class="hover:underline break-all" href={link} target="_blank">
-                  {link}
-                </a>
-              </p>
-            ))}
-        </div>
-      )
-    }
+    <div class={twMerge("text-center border-b pb-4 border-neutral-400", classes.bottom)}></div>
   </div>
 </WidgetWrapper>
