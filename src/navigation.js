@@ -4,7 +4,7 @@ import { getPermalink } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: "The Word",
+      text: "Word",
       href: getPermalink("word"),
     },
     {
@@ -12,7 +12,7 @@ export const headerData = {
       href: getPermalink("prayer"),
     },
     {
-      text: "The Church",
+      text: "Church",
       href: getPermalink("church"),
     },
     {
@@ -24,7 +24,7 @@ export const headerData = {
       href: getPermalink("witnesses"),
     },
     {
-      text: "The Five Fold",
+      text: "Five-fold",
       href: getPermalink("fivefold"),
     },
     {
@@ -177,5 +177,5 @@ export const footerData = {
     { ariaLabel: "YouTube", icon: "tabler:brand-youtube", href: "https://www.youtube.com/@flamethefreeze2613" },
     { ariaLabel: "Github", icon: "tabler:brand-github", href: "https://github.com/Hessuew/flamethefreeze" },
   ],
-  footNote: `Made by Juhani Juusola<a class="text-blue-600 dark:text-gray-200 hover:underline" href="#"> out of love for God</a> · All rights reserved.`,
+  footNote: `Made by Juhani Juusola <span class="text-blue-600 dark:text-gray-200 hover:underline">out of love for God</span> · All rights reserved.`,
 };
