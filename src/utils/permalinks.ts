@@ -5,6 +5,7 @@ import { SITE, APP_BLOG } from '~/utils/config';
 import { trim } from '~/utils/utils';
 
 export const trimSlash = (s: string) => trim(trim(s, '/'));
+
 const createPath = (...params: string[]) => {
   const paths = params
     .map((el) => trimSlash(el))
@@ -65,7 +66,7 @@ export const getPermalink = (slug = '', type = 'page'): string => {
 };
 
 /** */
-export const getHomePermalink = (): string => getPermalink('/');
+export const getHomePermalink = (lang?: string): string => getPermalink(`/${lang ? lang + "/" : ""}`);
 
 /** */
 export const getBlogPermalink = (): string => getPermalink(BLOG_BASE);

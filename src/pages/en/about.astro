@@ -1,22 +1,27 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
 import HeroText from "~/components/widgets/HeroText.astro";
-import Features3 from "~/components/widgets/Features3.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
-import { getPermalink } from '~/utils/permalinks';
+
+export interface Props {
+  tagline?: string;
+}
 
 const metadata = {
   title: "About us",
 };
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const { tagline = "about.hero.tagline" } = Astro.props;
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline={"WORD"} title={t("about.hetotitle")} />
-  <Features3 />
-  <Features3 />
-  <a href={getPermalink("test")} >test</a>
+  <div class="flex-col w-full">
+    <HeroText tagline={t(tagline as any)} title={t("about.heto.title")} />
+    <div class="w-full h-[calc(100vh-400px)]"></div>
+  </div>
 </Layout>

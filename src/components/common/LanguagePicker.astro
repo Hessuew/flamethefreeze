@@ -1,0 +1,39 @@
+---
+import { getLangFromUrl } from "~/i18n/utils";
+import { languages } from "../../i18n/ui";
+
+const lang = getLangFromUrl(Astro.url);
+
+const changeLangInUrl = () => {
+  let url = Astro.url.toString();
+  console.log(url)
+  if (url.includes("/en/")) {
+    url = url.replace("/en/", "/fi/");
+  } else if (url.includes("/en")) {
+    url = url.replace("/en", "/fi");
+  } else if (url.includes("/fi/")) {
+    url = url.replace("/fi/", "/en/");
+  } else if (url.includes("/fi")) {
+    url = url.replace("/fi", "/en");
+  } else {
+    url += "fi";
+  }
+  return url;
+};
+---
+<ul>
+  {
+    Object.entries(languages).map(([lng, label]) => {
+      if (lng === lang)
+        return (
+          <a
+            class="text-muted text-lg justify-center items-center font-semibold lg:text-base w-11 h-11 lg:w-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg p-2.5 inline-flex"
+            href={changeLangInUrl()}
+          >
+            {label}
+          </a>
+        );
+      else return null;
+    })
+  }
+</ul>

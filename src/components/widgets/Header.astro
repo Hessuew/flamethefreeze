@@ -3,12 +3,13 @@ import { Icon } from "astro-icon/components";
 import Logo from "~/components/Logo.astro";
 import ToggleTheme from "~/components/common/ToggleTheme.astro";
 import ToggleMenu from "~/components/common/ToggleMenu.astro";
-import Button from "~/components/ui/Button.astro"
+import Button from "~/components/ui/Button.astro";
 
-import { getHomePermalink } from "~/utils/permalinks";
+import { getHomePermalink, getPermalink } from "~/utils/permalinks";
 import { trimSlash, getAsset } from "~/utils/permalinks";
 import type { CallToAction } from "~/types";
-// import LanguagePicker from "../LanguagePicker.astro";
+import LanguagePicker from "../common/LanguagePicker.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 
 interface Link {
   text?: string;
@@ -44,12 +45,14 @@ const {
   isDark = false,
   isFullWidth = false,
   showToggleTheme = false,
-  // showLangPicker = true,
+  showLangPicker = true,
   showRssFeed = false,
   position = "center",
 } = Astro.props;
 
-const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
+const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <header
@@ -69,7 +72,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
     ]}
   >
     <div class:list={[{ "mr-auto rtl:mr-0 rtl:ml-auto": position === "right" }, "flex justify-between"]}>
-      <a class="flex items-center" href={getHomePermalink()}>
+      <a class="flex items-center" href={getHomePermalink(lang)}>
         <Logo />
       </a>
       <div class="flex items-center lg:hidden">
@@ -89,7 +92,8 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
               {links?.length ? (
                 <>
                   <button class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center">
-                    {text} <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden lg:inline" />
+                    {text}{" "}
+                    <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden lg:inline" />
                   </button>
                   <ul class="dropdown-menu lg:backdrop-blur-md dark:lg:bg-dark rounded lg:absolute pl-4 lg:pl-0 lg:hidden font-medium lg:bg-white/90 lg:min-w-[200px] drop-shadow-xl">
                     {links.map(({ text: text2, href: href2 }) => (
@@ -97,7 +101,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
                         <a
                           class:list={[
                             "first:rounded-t last:rounded-b lg:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap",
-                            { "aw-link-active" : href2 === currentPath}
+                            { "aw-link-active": href2 === currentPath },
                           ]}
                           href={href2}
                         >
@@ -111,11 +115,11 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
                 <a
                   class:list={[
                     "hover:text-link dark:hover:text-white px-4 py-3 flex items-centers",
-                    { "aw-link-active": href === currentPath }
+                    { "aw-link-active": href === currentPath },
                   ]}
-                  href={href}
+                  href={getPermalink(`${lang}/${href}`)}
                 >
-                  {text}
+                  {text ? t(text as any) : text}
                 </a>
               )}
             </li>
@@ -131,14 +135,14 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
     >
       <div class="items-center flex justify-between w-full lg:w-auto">
         <div class="flex">
+          {showLangPicker && <LanguagePicker />}
           {showToggleTheme && <ToggleTheme iconClass="w-6 h-6 lg:w-5 lg:h-5 lg:inline-block" />}
-          <!-- {showLangPicker && <LanguagePicker />} -->
           {
             showRssFeed && (
               <a
                 class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                 aria-label="RSS Feed"
-                href={getAsset('/rss.xml')}
+                href={getAsset("/rss.xml")}
               >
                 <Icon name="tabler:rss" class="w-5 h-5" />
               </a>
@@ -149,7 +153,7 @@ const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
           actions?.length ? (
             <span class="ml-4 rtl:ml-0 rtl:mr-4">
               {actions.map((btnProps) => (
-                <Button {...btnProps} class="ml-2 py-2.5 px-5.5 lg:px-6 font-semibold shadow-none text-sm w-auto"/>
+                <Button {...btnProps} class="ml-2 py-2.5 px-5.5 lg:px-6 font-semibold shadow-none text-sm w-auto" />
               ))}
             </span>
           ) : (
