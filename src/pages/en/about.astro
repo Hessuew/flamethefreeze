@@ -22,6 +22,6 @@ const { tagline = "about.hero.tagline" } = Astro.props;
 
   <div class="flex-col w-full">
     <HeroText tagline={t(tagline as any)} title={t("about.heto.title")} />
-    <div class="w-full h-[calc(100vh-400px)]"></div>
+    <div class="w-full h-[calc(100vh-375px)] lg:h-[calc(100vh-400px)] 2xl:h-[calc(100vh-500px)]"></div>
   </div>
 </Layout>
