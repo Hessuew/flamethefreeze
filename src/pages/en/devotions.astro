@@ -1,7 +1,7 @@
 ---
 import Features3 from "~/components/widgets/Features3.astro";
 import Hero from "~/components/widgets/Hero.astro";
-import Steps2 from "~/components/widgets/Steps2.astro";
+import Steps from "~/components/widgets/Steps.astro";
 import Layout from "~/layouts/PageLayout.astro";
 
 const metadata = {
@@ -61,33 +61,38 @@ const metadata = {
 
   <!-- Steps2 Widget ****************** -->
 
-  <Steps2
+  <Steps
     title="Daily devotionals"
-    link={true}
     items={[
       {
         title: "Daily Fire - Reinhard Bonnke",
         description: "https://shop.cfan.eu/products/daily-fire-devotional",
+        icon: "tabler:number-1",
       },
       {
         title: "My utmost for His Highest - Oswald Chambers",
         description: "https://utmost.org/",
+        icon: "tabler:number-2",
       },
       {
         title: "Chequebook of Faith - Charles Spurgeon",
         description: "https://www.crosswalk.com/devotionals/faithcheckbook/archives.html",
+        icon: "tabler:number-3",
       },
       {
         title: "Faith Food devotions - Kenneth Hagin",
         description: "https://www.rhema.org/?option=com_faithfood",
+        icon: "tabler:number-4",
       },
       {
         title: "Health Food devotions - Kenneth Hagin",
         description: "https://www.rhema.org/?option=com_healthfood",
+        icon: "tabler:number-5",
       },
       {
         title: "Declaring God's Word - Derek Prince",
         description: "https://www.derekprince.com/devotions",
+        icon: "tabler:number-6",
       },
     ]}
   />

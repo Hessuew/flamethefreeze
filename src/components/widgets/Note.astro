@@ -1,11 +1,15 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section class="bg-slate-50 dark:bg-purple-900/40 not-prose">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
     <span class="font-bold">
       <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom" /> Question:</span
-    > Do you really want to know God personally?
+    >{t("index.note")}
   </div>
 </section>

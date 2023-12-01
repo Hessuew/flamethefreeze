@@ -1,35 +1,31 @@
-import { getPermalink } from './utils/permalinks';
+// import { getPermalink } from "./utils/permalinks";
 // import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: "Word",
-      href: getPermalink("word"),
+      text: "header.link1",
+      href: "word",
     },
     {
-      text: "Prayer",
-      href: getPermalink("prayer"),
+      text: "header.link2",
+      href: "prayer",
     },
     {
-      text: "Church",
-      href: getPermalink("church"),
+      text: "header.link3",
+      href: "church",
     },
     {
-      text: "Devotions",
-      href: getPermalink("devotions"),
+      text: "header.link4",
+      href: "devotions",
     },
     {
-      text: "Witnesses",
-      href: getPermalink("witnesses"),
+      text: "header.link5",
+      href: "witnesses",
     },
     {
-      text: "Five-fold",
-      href: getPermalink("fivefold"),
-    },
-    {
-      text: "About us",
-      href: getPermalink("about"),
+      text: "header.link6",
+      href: "fivefold",
     },
     // {
     //   text: 'Home',
@@ -177,5 +173,4 @@ export const footerData = {
     { ariaLabel: "YouTube", icon: "tabler:brand-youtube", href: "https://www.youtube.com/@flamethefreeze2613" },
     { ariaLabel: "Github", icon: "tabler:brand-github", href: "https://github.com/Hessuew/flamethefreeze" },
   ],
-  footNote: `Made by Juhani Juusola <span class="text-blue-600 dark:text-gray-200 hover:underline">out of love for God</span> · All rights reserved.`,
 };
