@@ -6,7 +6,6 @@ const lang = getLangFromUrl(Astro.url);
 
 const changeLangInUrl = () => {
   let url = Astro.url.toString();
-  console.log(url)
   if (url.includes("/en/")) {
     url = url.replace("/en/", "/fi/");
   } else if (url.includes("/en")) {
