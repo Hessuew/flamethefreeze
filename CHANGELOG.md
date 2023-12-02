@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/Hessuew/flamethefreeze/compare/v1.1.0...v1.1.1) (2023-12-02)
+
+
+### Bug Fixes
+
+* finnish spelling fixes ([0c3d9da](https://github.com/Hessuew/flamethefreeze/commit/0c3d9da5deb7ad7960644145d445055a5c7e4eb1))
+* finnish spelling fixes, sitemap generation up ([#24](https://github.com/Hessuew/flamethefreeze/issues/24)) ([299a0d0](https://github.com/Hessuew/flamethefreeze/commit/299a0d0e3cad16267a87429733617bd4d1210560))
+
 ## [1.1.0](https://github.com/Hessuew/flamethefreeze/compare/v1.0.0...v1.1.0) (2023-12-02)
 
 
