@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Hessuew/flamethefreeze/compare/v1.1.1...v1.2.0) (2023-12-02)
+
+
+### Features
+
+* theme up, church trasnlated ([#26](https://github.com/Hessuew/flamethefreeze/issues/26)) ([bfc9583](https://github.com/Hessuew/flamethefreeze/commit/bfc95834800403253241cb6f55bc69555caa18f5))
+
 ## [1.1.1](https://github.com/Hessuew/flamethefreeze/compare/v1.1.0...v1.1.1) (2023-12-02)
 
 
