@@ -30,25 +30,26 @@ export const ui = {
     "index.hero1.subtitle1":
       "is not in enticing words of man's wisdom but in demonstrated power. Therefore the power of God working in and through the lives of normal people is a testimony that God",
     "index.hero1.subtitle2": "in the midst of His people in this 21st century.",
-    "index.note": " Do you really want to know God personally?",
+    "index.note.text1": " Question:",
+    "index.note.text2": " Do you really want to know God personally?",
     "index.features1.tagline": "Content",
-    "index.features1.title": "What we are doing by the Spirit of God",
+    "index.features1.title": "What God does through His Holy Spirit",
     "index.features1.subtitle":
       "For thus saith the Lord of hosts; Yet once, it is a little while, and I will shake the heavens, and the earth, and the sea, and the dry land; and I will shake all nations, and the desire of all nations shall come: and I will fill this house with glory, saith the Lord of hosts. Haggai 2:6,7 KJV",
-    "index.features1.items1.title": "Wake up the body of Christ",
+    "index.features1.items1.title": "Wakes up the body of Christ",
     "index.features1.items1.description":
       "It is time the bride of Christ woke up from slumber and spiritual death because our Lord Jesus Christ is coming for a glorious church.",
-    "index.features1.items2.title": "Shake out all frost",
+    "index.features1.items2.title": "Shakes out all frost",
     "index.features1.items2.description": "God is going to shake the church out of every frost and freeze.",
-    "index.features1.items3.title": "Kindle it to full flame🔥",
+    "index.features1.items3.title": "Kindles it to full flame🔥",
     "index.features1.items3.description": "He wants to 'flame the freeze'.",
-    "index.features1.items4.title": "Revive the manifestations of the Spirit",
+    "index.features1.items4.title": "Revives the manifestations of the Spirit",
     "index.features1.items4.description":
       "We need to see a revival of the apostolic signs and wonders in the entire body of Christ.",
-    "index.features1.items5.title": "Remove barriers and borders",
+    "index.features1.items5.title": "Removes barriers and borders",
     "index.features1.items5.description":
       "Genuine christlikeness and christianity is not about denominational, cultural, racial, geographical, gender, age, or religious superiority.",
-    "index.features1.items6.title": "See a massive harvest of souls and a genuine revival",
+    "index.features1.items6.title": "And we will see a massive harvest of souls and a genuine revival",
     "index.features1.items6.description":
       "It is time we see a mass salvation of souls, restoration of backsliders, and general revival in the body of Christ.",
     "index.features3-1.subtitle":
@@ -92,7 +93,7 @@ export const ui = {
     "prayer.features3-1.subtitle": "Jesus answered and said unto them, Ye do err, not knowing the scriptures, nor the power of God. Matthew 22:29 KJV",
     "prayer.features3-1.subtitle2": "Haven't the Sadducees studied the scriptures all their lives? Haven't they devoted their whole lives to serve God in the temple? And to know his word and teach others and become experts of the law? Is it possible that a person could be religious and study the Bible one's whole life and still be told by Jesus, Ye do err, not knowing the scriptures, nor the power of God? How can I know if my worship of God is vain? And if I'm just studying or living a doctrine which substantially are the commandments and traditions of religious men?",
     "prayer.features1.title": "A few rhetoric questions",
-    "prayer.features1.subtitle": "What is your experience regarding",
+    "prayer.features1.subtitle": "Ask yourself regarding the following subjects and compare your answers to the Bible",
     "prayer.features1.items1.title": "The power of God",
     "prayer.features1.items1.description": "Is the power of God operating in my life?",
     "prayer.features1.items2.title": "Transformation",
@@ -193,12 +194,14 @@ export const ui = {
     "index.hero1.subtitle1":
       "ei ole inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista. Siitä syystä Jumalan voima normaalien ihmisten keskellä ja elämässä on todistus, että Jumala",
     "index.hero1.subtitle2": "Hänen kansansa keskellä 2000-luvulla.",
+    "index.note.text1": " Kysymys:",
+    "index.note.text2": " Haluatko todella tulla tuntemaan Jumalan henkilökohtaisesti?",
     "index.note": " Haluatko todella tulla tuntemaan Jumalan henkilökohtaisesti?",
     "index.features1.tagline": "Sisältö",
-    "index.features1.title": "Mitä me teemme Pyhän Hengen kautta",
+    "index.features1.title": "Mitä Jumala tekee Pyhän Hengenksä kautta",
     "index.features1.subtitle":
       "Sillä näin sanoo Herra Sebaot: Vielä vähän aikaa ja minä järisytän taivaat ja maan, meren ja mantereen. Minä panen kaikki kansat vapisemaan. Kaikkien kansojen kalleudet tulevat tänne, ja minä täytän tämän huoneen kunnialla, sanoo Herra Sebaot. Haggai 2:6,7 FINRK",
-    "index.features1.items1.title": "Herätämme Kristuksen ruumiin",
+    "index.features1.items1.title": "Herättää Kristuksen ruumiin",
     "index.features1.items1.description": "Kristuksen ruumiin on aika herätä unesta",
     "index.features1.items2.title": "Ravistaa kylmentyminen pois",
     "index.features1.items2.description":
@@ -211,7 +214,7 @@ export const ui = {
     "index.features1.items5.title": "Poistaa esteet ja rajat",
     "index.features1.items5.description":
       "Aidossa kristillisyydessä ja kristinuskossa ei ole kyse uskonnollisesta, kulttuurisesta, rodusta, maantieteellisestä, sukupuolesta, iästä tai uskonnollisesta paremmuudesta.",
-    "index.features1.items6.title": "Nähdä valtava sielujen korjuu ja todellinen herätys",
+    "index.features1.items6.title": "Ja tulemme näkemään valtavan sielujen korjuun ja todellisen herätyksen",
     "index.features1.items6.description":
       "On aika nähdä sielujen pelastuvan massoittain, luopuneiden takaisin palaaminen ja täysi herätys Kristuksen ruumiissa.",
     "index.features3-1.subtitle":
@@ -255,7 +258,7 @@ export const ui = {
     "prayer.features3-1.subtitle": "Jeesus vastasi heille: 'Te olette eksyksissä, koska ette tunne Kirjoituksia ettekä Jumalan voimaa.'",
     "prayer.features3-1.subtitle2": "Eivätkö saddukeukset olleet tutkineet pyhiä kirjoituksia koko elämänsä ajan? Eivätkö he olleet omistaneet koko elämänsä palvellakseen Jumalaa temppelissä? Ja tietääkseen hänen sanansa ja opettaa muita ja tulla lain asiantuntijoiksi? Onko mahdollista, että ihminen voisi olla uskonnollinen ja tutkia Raamattua koko ikänsä ja silti Jeesus sanoo hänelle: Te erehdytte, ettekä tunne kirjoituksia, ettekä Jumalan voimaa? Mistä voin tietää, onko Jumalan palvontani turhaa? Ja jos minä vain opiskelen tai elän oppia, joka on uskonnollisten miesten käskyjä ja perinteitä?",
     "prayer.features1.title": "Muutama retorinen kysymys",
-    "prayer.features1.subtitle": "Kysy itseltäsi seuraaviin aiheisiin liittyen",
+    "prayer.features1.subtitle": "Kysy itseltäsi seuraaviin aiheisiin liittyen ja peilaa vastauksiasi Raamattuun",
     "prayer.features1.items1.title": "Jumalan voima",
     "prayer.features1.items1.description": "Toimiiko Jumalan voima elämässäni?",
     "prayer.features1.items2.title": "Muutos",
@@ -283,8 +286,8 @@ export const ui = {
     "witnesses.tagline": "Todistajat",
     "word.hero.tagline": "Sana",
     "word.hero.imagetext": "Jeesus ja hänen opetuslapsensa (kohtaus sarjasta 'The Chosen')",
-    "word.hero.title1": "Kaksitoista apostolia muuttuivat",
-    "word.hero.title2": "yhteydessä kolmessa ja puolessa vuodessa",
+    "word.hero.title1": "Kaksitoista apostolia muuttuivat ollessaan",
+    "word.hero.title2": "kanssa kolmessa ja puolessa vuodessa",
     "word.hero.title.span": "Herramme Jeesuksen Kristuksen",
     "word.hero.subtitle":
       "He eivät olleet tutkijoita, vain tavallisia miehiä pikkutöissä. Mutta Jeesus valitsi nämä miehet kirkon kriittisimpään tehtävään - laskemaan hengellistä perustaa julmuuden, jumalattomuuden, vihan, sorron ja vainon asutuksiin. Mikä sai nämä tuntemattomat miehet menestymään? Miten he selvisivät brutaalista vastuksesta?",
@@ -310,7 +313,7 @@ export const ui = {
       "Mutta kun he eivät näitä löytäneet, he raahasivat Jaasonin ja muutamia muita veljiä kaupungin johtomiesten eteen ja huusivat: ”Nuo koko maailman villitsijät ovat tulleet tännekin. Apt 17:6 FINKRK",
     "word.steps2-1.items3.title": "Ja toiset sanoivat heidän olevan jumalia",
     "word.steps2-1.items3.description":
-      "Kun ihmiset näkivät, mitä Paavali oli tehnyt, he korottivat äänensä ja sanoivat lykaonian kielellä: ”Jumalat ovat ihmishahmossa tulleet alas meidän luoksemme.” Apt 14:11 FINKRK",
+      "Kun ihmiset näkivät, mitä Paavali oli tehnyt, he korottivat äänensä ja sanoivat lykaonian kielellä: ”Jumalat ovat ihmishahmossa tulleet alas meidän luoksemme.” Apt 14:11 FINRK",
     "word.steps2-2.title": "Meillä on sinulle kysymys",
     "word.steps2-2.subtitle":
       "Haluaisitko liittyä kanssamme Hänen hengelliseen ruokapöytäänsä, jossa Hän paljastaa itsensä seurakunnalleen? Habakuk 2:14:ssä on kirjoitettu, että maa tulee olemaan täynnä Herran kirkkauden tuntemusta, niinkuin vedet peittävät meren. On aika tavata Jeesus!",
