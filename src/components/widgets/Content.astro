@@ -116,6 +116,8 @@ const {
       </div>
     </div>
     {testimonial && <Testimonials columns={columns} testimonials={testimonial} />}
+    {bottom &&
     <div class={twMerge("text-center border-b pb-4 border-neutral-400", classes.bottom)}></div>
+    }
   </div>
 </WidgetWrapper>
