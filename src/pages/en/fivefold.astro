@@ -6,6 +6,7 @@ import Hero from "~/components/widgets/Hero.astro";
 import Content from "~/components/widgets/Content.astro";
 import Features from "~/components/widgets/Features.astro";
 import Features3 from "~/components/widgets/Features3.astro";
+import GradientText from "~/components/ui/GradientText.astro";
 
 const metadata = {
   title: "The Five Fold",
@@ -21,7 +22,7 @@ const metadata = {
   >
     <Fragment slot="title">
       Five-fold ministry, for what
-      <span class="text-accent highlight"> purpose?</span>
+      <GradientText text=" purpose?" />
     </Fragment>
   </Hero>
 
@@ -32,7 +33,8 @@ const metadata = {
     subtitle2="This pattern helps the saints to spiritually do the work of ministering and building up Christ's body. Unfortunately, several millions of believers have lived their entire life under the tutelage of one out of five of these offices. This effectively retarded their spiritual growth due to severe spiritual malnourishment and deprivation. Such congregations descend into religious cultism and proselytism, only loyal to a so-called denominational founder but are not disciples of our Lord Jesus Christ."
   >
     <Fragment slot="title">
-      <span class="text-accent highlight italic">Jesus</span> appointed in the church a fundamental five-fold ministry
+      <GradientText class="italic pr-1" text="Jesus" />
+      appointed in the church a fundamental five-fold ministry
       to perfect and fully equip the saints.
     </Fragment>
   </Features3>
@@ -140,6 +142,7 @@ const metadata = {
   <Content
     title="Prophet"
     subtitle="[This mystery] was never disclosed to human beings in past generations as it has now been revealed to His holy apostles (consecrated messengers) and prophets by the [Holy] Spirit. Ephesians 3:5 KJV"
+    whiteText={true}
     testimonial={[
       {
         testimonials:
@@ -190,7 +193,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      <h3 class="text-2xl font-bold tracking-tight text-white sm:text-3xl mb-2">
         From the Greek, prophetes: <br />one who hears and listens to God
       </h3>
     </Fragment>
@@ -210,7 +213,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-secondary dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -288,6 +291,7 @@ const metadata = {
   <Content
     title="Pastor"
     subtitle="Take care and be on guard for yourselves and the whole flock over which the Holy Spirit has appointed you bishops and guardians, to shepherd (tend and feed and guide) the church of the Lord or of God which He obtained for Himself [buying it and saving it for Himself] with His own blood. I know that after I am gone, ferocious wolves will get in among you, not sparing the flock; Acts 20:28,29 AMPC"
+    whiteText={true}
     testimonial={[
       {
         testimonials:
@@ -333,7 +337,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      <h3 class="text-2xl font-bold tracking-tight text-white sm:text-3xl mb-2">
         From the Greek, poimen: <br />one who shepherds God's people
       </h3>
     </Fragment>
@@ -353,7 +357,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-secondary dark:bg-transparent"></div>
     </Fragment>
   </Content>
 

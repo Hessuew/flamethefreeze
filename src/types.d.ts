@@ -288,6 +288,7 @@ export interface Content extends Headline, Widget {
     subtitle: string;
     links: { title: string; link: string }[];
   };
+  whiteText?: boolean;
 }
 
 export interface Contact extends Headline, Form, Widget {}

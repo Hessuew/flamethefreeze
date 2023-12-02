@@ -5,6 +5,7 @@ import Hero from "~/components/widgets/Hero.astro";
 import Steps from "~/components/widgets/Steps.astro";
 import Layout from "~/layouts/PageLayout.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import GradientText from "~/components/ui/GradientText.astro";
 
 const metadata = {
   title: "Devotions",
@@ -19,8 +20,8 @@ const t = useTranslations(lang);
 
   <Hero tagline="Daily devotionals">
     <Fragment slot="title">
-      <span class="text-accent highlight">Spiritual</span> food for
-      <span class="text-accent highlight"> spiritual</span> beings!
+      <GradientText text="Spiritual" /> food for
+      <GradientText text=" spiritual" /> beings!
     </Fragment>
 
     <Fragment slot="subtitle">

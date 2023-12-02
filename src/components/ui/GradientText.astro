@@ -1,0 +1,21 @@
+---
+import { twMerge } from "tailwind-merge";
+
+const {
+  text = Astro.slots.render("default"),
+  class: className = "",
+  isHeading = false,
+} = Astro.props as {
+  text: string;
+  class?: string;
+  isHeading?: boolean;
+};
+---
+
+<span
+  class={twMerge(
+    "highlight bg-gradient-to-r from-orange-600 to-yellow-500 text-transparent bg-clip-text pr-1",
+    className,
+    isHeading && "text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading"
+  )}>{text}</span
+>
