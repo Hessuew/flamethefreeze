@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/Hessuew/flamethefreeze/compare/v1.0.0...v1.1.0) (2023-12-02)
+
+
+### Features
+
+* translated word and prayer screens ([0d27c00](https://github.com/Hessuew/flamethefreeze/commit/0d27c0097f4aeacc83f98c724d0d008cc643f24f))
+* translated word and prayer screens ([#22](https://github.com/Hessuew/flamethefreeze/issues/22)) ([eece0ed](https://github.com/Hessuew/flamethefreeze/commit/eece0ed22ae265fe783104fec9b9d21ff2dcd171))
+
 ## 1.0.0 (2023-12-02)
 
 
