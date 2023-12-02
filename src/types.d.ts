@@ -130,7 +130,7 @@ export interface Stat {
 
 export interface Item {
   title?: string;
-  description?: string | string[];
+  description?: string | { text: string; link?: boolean; subtitle?: boolean }[];
   icon?: string;
   classes?: Record<string, string>;
   callToAction?: CallToAction;
@@ -286,8 +286,8 @@ export interface Content extends Headline, Widget {
   bottom?: {
     title: string;
     subtitle: string;
-    links: {title: string, link: string}[]
-  }
+    links: { title: string; link: string }[];
+  };
 }
 
 export interface Contact extends Headline, Form, Widget {}
