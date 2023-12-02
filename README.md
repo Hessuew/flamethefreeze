@@ -109,4 +109,4 @@ Made by Juhani Juusola out of love for God • All rights reserved.
 
 ## Acknowledgements
 
-Initially created by [onWidget](https://onwidget.com) ([AstroWind])(https://github.com/onwidget/astrowind) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
+Initially created by [onWidget](https://onwidget.com), made with [AstroWind](https://github.com/onwidget/astrowind) which is maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).

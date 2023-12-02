@@ -4,102 +4,80 @@ import HeroText from "~/components/widgets/HeroText.astro";
 import Features from "~/components/widgets/Features.astro";
 import Features3 from "~/components/widgets/Features3.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 
 const metadata = {
   title: "Prayer",
 };
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline="Prayer">
+  <HeroText tagline={t("prayer.herotext.tagline")}>
     <Fragment slot="title">
-      is it <span class="text-accent highlight italic"> really</span> necessary?
+      {t("prayer.herotext.title1")}<span class="text-accent highlight italic">{t("prayer.herotext.title.span")}</span>{
+        t("prayer.herotext.title2")
+      }
     </Fragment>
   </HeroText>
 
   <!-- Features3 Widget ******************* -->
 
   <Features3
-    title="The case of Sadducees"
-    subtitle="Jesus answered and said unto them, Ye do err, not knowing the scriptures, nor the power of God. Matthew 22:29 KJV"
-    subtitle2="Haven't the Sadducees studied the scriptures all their lives? Haven't they devoted their whole lives to serve God in the temple? And to know his word and teach others and become experts of the law? Is it possible that a person could be religious and study the Bible one's whole life and still be told by Jesus, Ye do err, not knowing the scriptures, nor the power of God? How can I know if my worship of God is vain? And if I'm just studying or living a doctrine which substantially are the commandments and traditions of religious men?"
+    title={t("prayer.features3-1.title")}
+    subtitle={t("prayer.features3-1.subtitle")}
+    subtitle2={t("prayer.features3-1.subtitle2")}
   />
-
-  <!-- columns={1}
-    items={[
-      {
-        title: "Haven't the Sadducees studied the scriptures all their lives?",
-      },
-      {
-        title: "Haven't they devoted their whole lives to serve God in the temple?",
-      },
-      {
-        title: 'And to know his word and teach others and become experts of the law?',
-      },
-      {
-        title:
-          "Is it possible that a person could be religious and study the Bible one's whole life and still be told by Jesus, Ye do err, not knowing the scriptures, nor the power of God?",
-      },
-      {
-        title: 'How can I know if my worship of God is vain?',
-      },
-      {
-        title:
-          "And if I'm just studying or living a doctrine which substantially are the commandments and traditions of religious men?",
-      },
-    ]} -->
 
   <!-- Features Widget ************** -->
 
   <Features
-    title="A few rhetoric questions"
-    subtitle="What is your experience regarding?"
+    title={t("prayer.features1.title")}
+    subtitle={t("prayer.features1.subtitle")}
     columns={2}
     items={[
       {
-        title: "The power of God",
-        description: "Is the power of God operating in my life",
+        title: t("prayer.features1.items1.title"),
+        description: t("prayer.features1.items1.description"),
         icon: "tabler:bolt",
       },
       {
-        title: "Transformation",
-        description: "Is my life being transformed day by day by the power of God?",
+        title: t("prayer.features1.items2.title"),
+        description: t("prayer.features1.items2.description"),
         icon: "tabler:trending-up",
       },
       {
-        title: "Family and friends",
-        description: "Are my families and friends being influenced by God's manifesting presence through my life?",
+        title: t("prayer.features1.items3.title"),
+        description: t("prayer.features1.items3.description"),
         icon: "tabler:accessible",
       },
       {
-        title: "Sicknesses and diseases",
-        description: "Are the sick and diseased being healed by Jesus through me?",
+        title: t("prayer.features1.items4.title"),
+        description: t("prayer.features1.items4.description"),
         icon: "tabler:bandage-off",
       },
       {
-        title: "Evil spirits",
-        description:
-          "Are demons being cast out through me in the name of Jesus Christ our Lord and do I see them crying out in fear and disarray?",
+        title: t("prayer.features1.items5.title"),
+        description: t("prayer.features1.items5.description"),
         icon: "tabler:shield-x",
       },
       {
-        title: "The gospel",
-        description:
-          "Do I see the gospel being preached to sinners and they entering in the kingdom of God, free from addictions, chains of Satan, and lifelong captivating darkness?",
+        title: t("prayer.features1.items6.title"),
+        description: t("prayer.features1.items6.description"),
         icon: "tabler:mood-happy",
       },
       {
-        title: "Sin",
-        description:
-          "Am I free from private sins, lust, and addictions to alcohol, smoking, movies, video games, rock, blues, jazz music, documentaries, pornography, sexual magazines, books and romantic novels, etc?",
+        title: t("prayer.features1.items7.title"),
+        description: t("prayer.features1.items7.description"),
         icon: "tabler:trash-off",
       },
       {
-        title: "Impossibilities",
-        description:
-          "Do I see impossible situations being transformed by the power of the Almighty God like Moses was at the Red Sea?",
+        title: t("prayer.features1.items8.title"),
+        description: t("prayer.features1.items8.description"),
         icon: "tabler:checks",
       },
     ]}
@@ -108,16 +86,17 @@ const metadata = {
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
-    subtitle="Have I read about supernatural events in the scriptures and concluded it is not for my generation since I have not witnessed nor experienced any of these in my country, city, or local church denomination?"
-    subtitle2="No. That cannot be"
-  />
+  <Features3 subtitle={t("prayer.features3-2.subtitle")}>
+    <Fragment slot="subtitle2">
+      <span class="highlight font-bold">{t("prayer.features3-2.subtitle2a")}</span>{t("prayer.features3-2.subtitle2b")}
+    </Fragment>
+  </Features3>
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    subtitle="Brethren, it is time we entered into personal supernatural experience in the Holy Spirit. God is baptizing us with power, immersing us with the manifestations of the Spirit, soaking us with the fragrance of heaven as we assemble at the throne of grace. It is time we saw the glory of God manifested in and through the church. At this war time and in this war zone, we activate combat alongside celestial armies because spiritual warfare has been legalized by the Captain of the Host of the Lord, Jesus Christ the Son of God."
-    subtitle2=" And from the days of John the Baptist until the present time, the kingdom of heaven has endured violent assault, and violent men seize it by force [as a precious prize—a share in the heavenly kingdom is sought with most ardent zeal and intense exertion]. Matthew 11:12 KJV"
+    subtitle={t("prayer.features3-3.subtitle")}
+    subtitle2={t("prayer.features3-3.subtitle2")}
     classes={{
       headline: {
         subtitle: "text-xl text-black dark:text-white",
@@ -129,51 +108,8 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Kindle your prayer life to full flame"
-    subtitle="Join us in prayer meeting every other Saturday starting at 18:00 GMT+2."
-    subtitle2="Zoom ID: 644 4069 4917, Passcode: 467939"
+    title={t("prayer.callToAction.title")}
+    subtitle={t("prayer.callToAction.subtitle")}
+    subtitle2={t("prayer.callToAction.subtitle2")}
   />
-
-  <!-- Steps Widget ****************** -->
-
-  <!-- <Steps
-    title="Are you ready to be made an ambassador of the kingdom?"
-    tagline="Now is your time is to enter into a personal supernatural experience of the Holy Spirit"
-    subtitle="But ye, beloved, building up yourselves on your most holy faith, praying in the Holy Ghost. Jud 1:20 KJV"
-    isReversed={true}
-    items={[
-      {
-        title: 'Join us as...',
-        icon: 'tabler:number-0',
-      },
-      {
-        title: 'God is baptizing us with power',
-        icon: 'tabler:number-1',
-      },
-      {
-        title: "immersing us with the manifestations of the Spirit",
-        icon: 'tabler:number-2',
-      },
-      {
-        title: "soaking us with the fragrance of heaven as we assemble at the throne of grace.",
-        icon: 'tabler:number-3',
-      },
-      {
-        title: "It is time we saw the glory of God manifested in and through the church.",
-        icon: 'tabler:number-4',
-      },
-      {
-        title: " At this war time and in this war zone, we activate combat alongside celestial armies because spiritual warfare has been legalized by the Captain of the Host of the Lord, Jesus Christ the Son of God.",
-        icon: 'tabler:number-5',
-      },
-      {
-        title: "",
-        icon: 'tabler:number-6',
-      },
-      {
-        title: "",
-        icon: 'tabler:number-7',
-      },
-    ]}
-  /> -->
 </Layout>
