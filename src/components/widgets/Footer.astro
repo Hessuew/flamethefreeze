@@ -79,18 +79,23 @@ const t = useTranslations(lang);
         socialLinks?.length ? (
           <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">
             <li>
+              <p class="text-muted dark:text-gray-400 rounded-lg text-sm p-2.5 inline-flex items-center">
+                {t("footer.about")}{" "}
+              </p>
+            </li>
+            <li>
               <a
-                class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-                aria-label={"about"}
+                class="text-orange-600 hover:bg-orange-300 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                aria-label={"AboutPage"}
                 href={getPermalink(`${lang}/about`)}
               >
-                {t("footer.about")}
+                <Icon name="tabler:flame" class="w-5 h-5" />
               </a>
             </li>
             {socialLinks.map(({ ariaLabel, href, text, icon }) => (
               <li>
                 <a
-                  class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                  class="text-muted dark:text-gray-400 hover:bg-orange-300 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label={ariaLabel}
                   href={href}
                 >
@@ -108,6 +113,8 @@ const t = useTranslations(lang);
       <div class="text-sm mr-4 dark:text-slate-400">
         {t("footer.madeBy1")}<span class="text-blue-600 dark:text-gray-200 hover:underline">{t("footer.madeBy2")}</span>
         {t("footer.madeBy3")}
+        <!-- {t("footer.madeBy1")}<span class="bg-gradient-to-r bg-clip-text font-semibold from-orange-600 to-orange-500 text-transparent hover:underline">{t("footer.madeBy2")}</span>
+        {t("footer.madeBy3")} -->
       </div>
     </div>
   </div>

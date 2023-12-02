@@ -5,6 +5,7 @@ import Features from "~/components/widgets/Features.astro";
 import Features3 from "~/components/widgets/Features3.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import GradientText from "~/components/ui/GradientText.astro";
 
 const metadata = {
   title: "Prayer",
@@ -19,9 +20,9 @@ const t = useTranslations(lang);
 
   <HeroText tagline={t("prayer.herotext.tagline")}>
     <Fragment slot="title">
-      {t("prayer.herotext.title1")}<span class="text-accent highlight italic">{t("prayer.herotext.title.span")}</span>{
-        t("prayer.herotext.title2")
-      }
+      {t("prayer.herotext.title1")}
+      <GradientText class="italic pr-3" isHeading={true} text={t("prayer.herotext.title.span")} />
+      { t("prayer.herotext.title2") }
     </Fragment>
   </HeroText>
 
@@ -108,8 +109,12 @@ const t = useTranslations(lang);
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title={t("prayer.callToAction.title")}
     subtitle={t("prayer.callToAction.subtitle")}
     subtitle2={t("prayer.callToAction.subtitle2")}
-  />
+  >
+    <Fragment slot="title">
+      {t("prayer.callToAction.title1")}
+      <GradientText text={t("prayer.callToAction.title2")} />
+      </Fragment>
+</CallToAction>
 </Layout>

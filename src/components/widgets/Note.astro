@@ -6,10 +6,14 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<section class="bg-slate-50 dark:bg-purple-900/40 not-prose">
+<section class="bg-secondary dark:bg-purple-900/40 not-prose">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
-    <span class="font-bold">
-      <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom" />{t("index.note.text1")}</span
-    >{t("index.note.text2")}
+    <span class="font-bold text-white">
+      <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom text-white" />
+      {t("index.note.text1")}
+    </span>
+    <span class="text-white">
+      {t("index.note.text2")}
+    </span>
   </div>
 </section>

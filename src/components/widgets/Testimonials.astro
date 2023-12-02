@@ -41,30 +41,30 @@ const {
       testimonials &&
         testimonials.map(({ title, testimonials, name, job, image }) => (
           <div class="flex h-auto">
-            <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600">
+            <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none border dark:border-neutral-600">
               {title && <h2 class="text-lg font-medium leading-6 pb-4">{title}</h2>}
               {testimonials && Array.isArray(testimonials)
                 ? testimonials.map((testimonial) => (
                     <blockquote class="flex-auto">
-                      <p class="text-muted">“{testimonial}”</p>
+                      <p class={twMerge("text-muted", classes.testimonial)}>“{testimonial}”</p>
                     </blockquote>
                   ))
                 : testimonials && (
                     <blockquote class="flex-auto">
-                      <p class="text-muted">“{testimonials}”</p>
+                      <p class={twMerge("text-muted", classes.testimonial)}>“{testimonials}”</p>
                     </blockquote>
                   )}
 
-              <hr class="border-slate-200 dark:border-slate-600 my-4" />
+              <hr class="border-slate-600 my-4" />
 
               <div class="flex items-center">
                 {image && (
-                  <div class="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-600">
+                  <div class="h-10 w-10 rounded-full border border-slate-600">
                     {typeof image === "string" ? (
                       <Fragment set:html={image} />
                     ) : (
                       <Image
-                        class="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-600 min-w-full min-h-full"
+                        class="h-10 w-10 rounded-full border border-slate-600 min-w-full min-h-full"
                         width={40}
                         height={40}
                         widths={[400, 768]}
@@ -76,8 +76,8 @@ const {
                 )}
 
                 <div class="grow ml-3 rtl:ml-0 rtl:mr-3">
-                  {name && <p class="text-base font-semibold">{name}</p>}
-                  {job && <p class="text-xs text-muted">{job}</p>}
+                  {name && <p class={twMerge("text-base font-semibold", classes.name)}>{name}</p>}
+                  {job && <p class={twMerge("text-xs text-muted", classes.job)}>{job}</p>}
                 </div>
               </div>
             </div>

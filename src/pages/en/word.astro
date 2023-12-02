@@ -5,6 +5,7 @@ import Hero from "~/components/widgets/Hero.astro";
 import Stats from "~/components/widgets/Stats.astro";
 import Steps2 from "~/components/widgets/Steps2.astro";
 import Layout from "~/layouts/PageLayout.astro";
+import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 
 const metadata = {
@@ -28,7 +29,8 @@ const t = useTranslations(lang);
   >
     <Fragment slot="title">
       {t("word.hero.title1")}<br />
-      <span class="text-accent highlight">{t("word.hero.title.span")}</span><br />
+      <GradientText text={t("word.hero.title.span")} />
+      <br />
       {t("word.hero.title2")}
     </Fragment>
 
@@ -50,10 +52,7 @@ const t = useTranslations(lang);
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
-    subtitle={t("word.features3-1.subtitle")}
-    subtitle2={t("word.features3-1.subtitle2")}
-  />
+  <Features3 subtitle={t("word.features3-1.subtitle")} subtitle2={t("word.features3-1.subtitle2")} />
 
   <!-- Steps2 Widget ****************** -->
 
