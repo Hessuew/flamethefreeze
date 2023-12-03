@@ -4,8 +4,8 @@ import Features3 from "~/components/widgets/Features3.astro";
 import Hero from "~/components/widgets/Hero.astro";
 import Steps from "~/components/widgets/Steps.astro";
 import Layout from "~/layouts/PageLayout.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import GradientText from "~/components/ui/GradientText.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 
 const metadata = {
   title: "Devotions",
@@ -18,23 +18,24 @@ const t = useTranslations(lang);
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero tagline="Daily devotionals">
+  <Hero tagline={t("devotions.hero.tagline")}>
     <Fragment slot="title">
-      <GradientText text="Spiritual" /> food for
-      <GradientText text=" spiritual" /> beings!
+      <GradientText text={t("devotions.hero.title.span1")} />
+      {t("devotions.hero.title.title1")}
+      <GradientText text={t("devotions.hero.title.span2")} />
+      {t("devotions.hero.title.title2")}
     </Fragment>
 
     <Fragment slot="subtitle">
-      We are spiritual beings that need spiritual food for sustenance. To walk in the supernatural we must attend to
-      things that propels us to prayers and the word of God. A few daily devotional are listed below which would be
-      helpful to our Christian faith.
+      {t("devotions.hero.subtitle")}
+      
     </Fragment>
   </Hero>
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    subtitle="This book of the law shall not depart out of thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous, and then thou shalt have good success. Joshua 1:8 KJV"
+    subtitle={t("devotions.features3-1.subtitle")}
   />
 
   <!-- Features3 Widget ************** -->
@@ -45,13 +46,13 @@ const t = useTranslations(lang);
         subtitle: "text-black dark:text-white text-xl",
       },
     }}
-    subtitle="Blessed (happy, fortunate, prosperous, and enviable) is the man who walks and lives not in the counsel of the ungodly [following their advice, their plans and purposes], nor stands [submissive and inactive] in the path where sinners walk, nor sits down [to relax and rest] where the scornful [and the mockers] gather. But his delight and desire are in the law of the Lord, and on His law (the precepts, the instructions, the teachings of God) he habitually meditates (ponders and studies) by day and by night. Psalms 1:1,2 AMPC"
+    subtitle={t("devotions.features3-2.subtitle")}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    subtitle="Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word. With my whole heart have I sought thee: O let me not wander from thy commandments. Thy word have I hid in mine heart, that I might not sin against thee. Blessed art thou, O Lord: teach me thy statutes. With my lips have I declared all the judgments of thy mouth. I have rejoiced in the way of thy testimonies, as much as in all riches. I will meditate in thy precepts, and have respect unto thy ways. I will delight myself in thy statutes: I will not forget thy word. Psalm 119:9-16 KJV"
+    subtitle={t("devotions.features3-3.subtitle")}
   />
 
   <!-- Features3 Widget ************** -->
@@ -62,70 +63,70 @@ const t = useTranslations(lang);
         subtitle: "text-black dark:text-white text-xl",
       },
     }}
-    subtitle="Thy word is a lamp unto my feet, and a light unto my path. Psalm 119:105 KJV"
+    subtitle={t("devotions.features3-4.subtitle")}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps
-    title="Daily devotionals"
+    title={t("devotions.steps.title")}
     items={[
       {
-        title: "Daily Fire - Reinhard Bonnke",
+        title: t("devotions.steps.items1.title"),
         description: [
           {
             link: true,
-            text: "https://shop.cfan.eu/products/daily-fire-devotional",
+            text: t("devotions.steps.items1.description1"),
           },
         ],
         icon: "tabler:number-1",
       },
       {
-        title: "My utmost for His Highest - Oswald Chambers",
+        title: t("devotions.steps.items2.title"),
         description: [
           {
             link: true,
-            text: "https://utmost.org/",
+            text: t("devotions.steps.items2.description1"),
           },
         ],
         icon: "tabler:number-2",
       },
       {
-        title: "Chequebook of Faith - Charles Spurgeon",
+        title: t("devotions.steps.items3.title"),
         description: [
           {
             link: true,
-            text: "https://www.crosswalk.com/devotionals/faithcheckbook/archives.html",
+            text: t("devotions.steps.items3.description1"),
           },
         ],
         icon: "tabler:number-3",
       },
       {
-        title: "Faith Food devotions - Kenneth Hagin",
+        title: t("devotions.steps.items4.title"),
         description: [
           {
             link: true,
-            text: "https://www.rhema.org/?option=com_faithfood",
+            text: t("devotions.steps.items4.description1"),
           },
         ],
         icon: "tabler:number-4",
       },
       {
-        title: "Health Food devotions - Kenneth Hagin",
+        title: t("devotions.steps.items5.title"),
         description: [
           {
             link: true,
-            text: "https://www.rhema.org/?option=com_healthfood",
+            text: t("devotions.steps.items5.description1"),
           },
         ],
         icon: "tabler:number-5",
       },
       {
-        title: "Declaring God's Word - Derek Prince",
+        title: t("devotions.steps.items6.title"),
         description: [
           {
             link: true,
-            text: "https://www.derekprince.com/devotions",
+            text: t("devotions.steps.items6.description1"),
           },
         ],
         icon: "tabler:number-6",
@@ -142,36 +143,3 @@ const t = useTranslations(lang);
     subtitle={t("devotions.features1.subtitle")}
   />
 </Layout>
-
-<!-- Features2 Widget **************
-  <Features2 />
-
-  <Features2
-    columns={2}
-    classes={{
-        items: {
-            description: "text-xl"
-        }
-    }}
-    items={[
-      {
-        description:
-          "This book of the law shall not depart out of thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous, and then thou shalt have good success. Joshua 1:8 KJV",
-        icon: "tabler:book",
-      },
-      {
-        description: "Thy word is a lamp unto my feet, and a light unto my path. Psalm 119:105 KJV",
-        icon: "tabler:bulb",
-      },
-      {
-        description:
-          "Blessed (happy, fortunate, prosperous, and enviable) is the man who walks and lives not in the counsel of the ungodly [following their advice, their plans and purposes], nor stands [submissive and inactive] in the path where sinners walk, nor sits down [to relax and rest] where the scornful [and the mockers] gather. But his delight and desire are in the law of the Lord, and on His law (the precepts, the instructions, the teachings of God) he habitually meditates (ponders and studies) by day and by night. Psalms 1:1,2 AMPC",
-        icon: "tabler:confetti",
-      },
-      {
-        description:
-          "Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word. With my whole heart have I sought thee: O let me not wander from thy commandments. Thy word have I hid in mine heart, that I might not sin against thee. Blessed art thou, O Lord: teach me thy statutes. With my lips have I declared all the judgments of thy mouth. I have rejoiced in the way of thy testimonies, as much as in all riches. I will meditate in thy precepts, and have respect unto thy ways. I will delight myself in thy statutes: I will not forget thy word. Psalm 119:9-16 KJV",
-        icon: "tabler:photo",
-      },
-    ]}
-  /> -->
