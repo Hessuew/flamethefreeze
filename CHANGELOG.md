@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.0](https://github.com/Hessuew/flamethefreeze/compare/v1.2.0...v1.3.0) (2023-12-03)
+
+
+### Features
+
+* devotions stranslated ([2c132a9](https://github.com/Hessuew/flamethefreeze/commit/2c132a9c974a739d24e11b57fdb3de4a50830a37))
+* devotions stranslated ([#28](https://github.com/Hessuew/flamethefreeze/issues/28)) ([9a68f70](https://github.com/Hessuew/flamethefreeze/commit/9a68f70bc46f360ce10231bb0f910a3baa96559d))
+
 ## [1.2.0](https://github.com/Hessuew/flamethefreeze/compare/v1.1.1...v1.2.0) (2023-12-02)
 
 
