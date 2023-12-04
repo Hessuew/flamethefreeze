@@ -4,21 +4,26 @@ import Features3 from "~/components/widgets/Features3.astro";
 import Hero from "~/components/widgets/Hero.astro";
 import Testimonials from "~/components/widgets/Testimonials.astro";
 import Layout from "~/layouts/PageLayout.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 
 const metadata = {
   title: "Witnesses",
 };
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Witnesses"
-    subtitle="Time would fail us to mention our elder brothers and sisters who have gone head of us. They excel using the same principles as discussed on this webpage. These giants of faith must not be forgotten, kindly search for them, study their lives, strengths and weaknesses and move on to shake your world for the Lord."
+    tagline={t("witnesses.hero.title.tagline")}
+    subtitle={t("witnesses.hero.title.subtitle")}
   >
     <Fragment slot="title">
-      <GradientText text="Spiritual" /> clouds of witnesses
+      <GradientText text={t("witnesses.hero.title.span")} />
+      {t("witnesses.hero.title.title")}
     </Fragment>
   </Hero>
 
@@ -30,13 +35,13 @@ const metadata = {
         subtitle: "text-black dark:text-white text-xl",
       },
     }}
-    subtitle="And what shall I more say? for the time would fail me to tell of Gedeon, and of Barak, and of Samson, and of Jephthae; of David also, and Samuel, and of the prophets: Who through faith subdued kingdoms, wrought righteousness, obtained promises, stopped the mouths of lions. Hebrews 11:32,33 KJV"
+    subtitle={t("witnesses.features3-1.subtitle")}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    subtitle="Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the sin which doth so easily beset us, and let us run with patience the race that is set before us. Hebrews 12:1 KJV."
+    subtitle={t("witnesses.features3-2.subtitle")}
   />
 
   <!-- Features3 Widget ************** -->
@@ -47,432 +52,431 @@ const metadata = {
         subtitle: "text-black dark:text-white text-xl",
       },
     }}
-    subtitle="But ye are come unto mount Sion, and unto the city of the living God, the heavenly Jerusalem, and to an innumerable company of angels, to the general assembly and church of the firstborn, which are written in heaven, and to God the Judge of all, and to the spirits of just men made perfect. Hebrews 12:22,23 KJV"
+    subtitle={t("witnesses.features3-3.subtitle")}
   />
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words of those who went before us"
+    title={t("witnesses.testimonials.title")}
     columns={2}
     testimonials={[
       {
         testimonials: [
-          "We are saved by faith alone, but the faith that saves is never alone.",
-          "Unless I am convicted by Scripture and plain reason-I do not accept the authority of popes and councils, for they have contradicted each other-my conscience is captive to the Word of God. I cannot and will not recant anything, for to go against conscience is neither right nor safe. Here I stand, I cannot do otherwise. God help me. Amen.",
+        t("witnesses.testimonials.items1.t1"), 
+        t("witnesses.testimonials.items1.t2"), 
         ],
-        name: "Martin Luther: 1483-1546",
-        job: "A pivotal figure in the Protestant Reformation, displayed unwavering faith, challenging established religious norms through his teachings and writings, reshaping Christianity's course.",
+        name: t("witnesses.testimonials.items1.name"),
+        job: t("witnesses.testimonials.items1.job"),
       },
       {
         testimonials: [
-          "A man with God is always in the majority.",
-          "The Scriptures of God are my only foundation and substance in all matters of weight and importance.",
-          "I sought neither preeminence, glory, nor riches; my honor was that Jesus Christ should reign.",
+        t("witnesses.testimonials.items2.t1"), 
+        t("witnesses.testimonials.items2.t2"), 
+        t("witnesses.testimonials.items2.t3"), 
         ],
-        name: "John Knox: 1514-1572",
-        job: "A leading figure in the Scottish Reformation, wielded tremendous influence through his fiery preaching, relentless pursuit of church reform, and a deep, fervent prayer life, profoundly shaping Scottish religious and political landscapes.",
+        name: t("witnesses.testimonials.items2.name"),
+        job: t("witnesses.testimonials.items2.job"),
       },
       {
         testimonials: [
-          "Get on fire for God and men will come and see you burn.",
-          "You have one business on earth - to save souls.",
-          "Whosoever will reign with Christ in heaven, must have Christ reigning in him on earth",
-          "Reading Christians are growing Christians. When Christians cease to read, they cease to grow.",
+        t("witnesses.testimonials.items3.t1"), 
+        t("witnesses.testimonials.items3.t2"), 
+        t("witnesses.testimonials.items3.t3"), 
+        t("witnesses.testimonials.items3.t4"), 
         ],
-        name: "John Wesley: 1703-1791",
-        job: "Founder of Revival in 18th-century Britain, which saw a resurgence of religious fervor and a revival of Christian faith.",
+        name: t("witnesses.testimonials.items3.name"),
+        job: t("witnesses.testimonials.items3.job"),
       },
       {
         testimonials: [
-          "Resolution One: I will live for God. Resolution Two: If no one else does, I still will.",
-          "A true and faithful Christian does not make holy living an accidental thing. It is his great concern. As the business of the soldier is to fight, so the business of the Christian is to be like Christ.",
-          "All earthly desires are but streams, but God is the ocean.",
+        t("witnesses.testimonials.items4.t1"), 
+        t("witnesses.testimonials.items4.t2"), 
+        t("witnesses.testimonials.items4.t3"), 
         ],
-        name: "Jonathan Edwards: 1703-1758",
-        job: "A preacher during the Great Awakening remembered for his powerful sermons and philosophical contributions, notably 'Sinners in the Hands of an Angry God.'",
+        name: t("witnesses.testimonials.items4.name"),
+        job: t("witnesses.testimonials.items4.job"),
       },
       {
         testimonials: [
-          "If you are going to walk with Jesus Christ, you are going to be opposed... In our days, to be a true Christian is really to become a scandal.",
-          "Study to know Him more and more, for the more you know, the more you will love Him.",
+        t("witnesses.testimonials.items5.t1"), 
+        t("witnesses.testimonials.items5.t2"), 
         ],
-        name: "George Whitefield: 1714-1770",
-        job: "Ignited the Great Awakening, a revival movement across England and America.",
+        name: t("witnesses.testimonials.items5.name"),
+        job: t("witnesses.testimonials.items5.job"),
       },
       {
         testimonials: [
-          "I care not where I go, or how I live, or what I endure so that I may save souls. When I sleep I dream of them; when I awake they are first in my thoughts.",
-          "Let me forget the world and be swallowed up in the desire to glorify God.",
+        t("witnesses.testimonials.items6.t1"), 
+        t("witnesses.testimonials.items6.t2"), 
         ],
-        name: "David Brainerd: 1718-1747",
-        job: "A devoted missionary to Native Americans in colonial America, is remembered for his unwavering dedication to spreading Christianity and his influential diary detailing his spiritual struggles and missionary work.",
+        name: t("witnesses.testimonials.items6.name"),
+        job: t("witnesses.testimonials.items6.job"),
       },
       {
         testimonials: [
-          "I'm not afraid of failure; I'm afraid of succeeding at things that don't matter.",
-          "Prayer - secret, fervent, believing prayer - lies at the root of all personal godliness.",
-          "It is the duty of those who are entrusted with the Gospel to endeavor to make it known among all nations.",
-          "Surely it is worthwhile to lay ourselves out with all our might in promoting the cause and kingdom of Christ.",
+        t("witnesses.testimonials.items7.t1"), 
+        t("witnesses.testimonials.items7.t2"), 
+        t("witnesses.testimonials.items7.t3"), 
+        t("witnesses.testimonials.items7.t4"), 
         ],
-        name: "William Carey: 1761-1834",
-        job: "A pioneer of missionary work. Translation of the Bible (total or partial) into 34 languages.",
+        name: t("witnesses.testimonials.items7.name"),
+        job: t("witnesses.testimonials.items7.job"),
       },
       {
         testimonials: [
-          "It is the great business of every Christian to save souls. People complain that they do not know how to take hold of this matter. Why, the reason is plain enough; they have never studied it. They have never taken the proper pains to qualify themselves for the work. If you do not make it a matter of study, how you may successfully act in building up the kingdom of Christ, you are acting a very wicked and absurd part as a Christian.",
-          "Revival is a renewed conviction of sin and repentance, followed by an intense desire to live in obedience to God. It is giving up one's will to God in deep humility.",
+        t("witnesses.testimonials.items8.t1"), 
+        t("witnesses.testimonials.items8.t2"), 
         ],
-        name: "Charles G. Finney: 1792-1875",
-        job: "The leader of the second great revival in the United States. 'The father' of the old revival.",
+        name: t("witnesses.testimonials.items8.name"),
+        job: t("witnesses.testimonials.items8.job"),
       },
       {
         testimonials: [
-          "The beginning of anxiety is the end of faith, and the beginning of true faith is the end of anxiety.",
-          "Money is really worth no more than as it can be used to accomplish the Lord's work. Life is worth as much as it is spent for the Lord's service.",
+        t("witnesses.testimonials.items9.t1"), 
+        t("witnesses.testimonials.items9.t2"), 
         ],
-        name: "George Müller: 1805-1899",
-        job: "Christian evangelist and philanthropist known for his deep faith, founding orphanages, and relying solely on prayer for the sustenance of thousands of children in 19th-century England.",
+        name: t("witnesses.testimonials.items9.name"),
+        job: t("witnesses.testimonials.items9.job"),
       },
       {
         testimonials: [
-          "May not a single moment of my life be spent outside the light, love, and joy of God's presence. Not a moment without the entire surrender of myself as a vessel for him to fill full of his Spirit and his love",
-          "God cannot hear the prayers on our lips often because the desires of our heart after the world cry out to Him much more strongly and loudly than the our desires for Him.",
+        t("witnesses.testimonials.items10.t1"), 
+        t("witnesses.testimonials.items10.t2"), 
         ],
-        name: "Andrew Murray: 1828-1917",
-        job: "A devoted South African pastor and author recognized for his profound spiritual writings, emphasizing prayer, holiness, and an intimate relationship with God in the late 19th and early 20th centuries.",
+        name: t("witnesses.testimonials.items10.name"),
+        job: t("witnesses.testimonials.items10.job"),
       },
       {
         testimonials: [
-          "Will you go to His feet and place yourself entirely at His disposal?",
-          "You are not here in the world for yourself. You have been sent here for others. The world is waiting for you!",
+        t("witnesses.testimonials.items11.t1"), 
+        t("witnesses.testimonials.items11.t2"), 
         ],
-        name: "William and Catherine Booth: 1829-1912, 1829-1890",
-        job: "Founders of The Salvation Army emphasizing practical Christianity, and advocating for the poor while spreading the Gospel globally.",
+        name: t("witnesses.testimonials.items11.name"),
+        job: t("witnesses.testimonials.items11.job"),
       },
       {
         testimonials: [
-          "There are three great truths, 1st, That there is a God; 2nd, That He has spoken to us in the Bible; 3rd, That He means what He says.",
-          "God is not looking for men of great faith, He is looking for common men to trust His great faithfulness.",
+        t("witnesses.testimonials.items12.t1"), 
+        t("witnesses.testimonials.items12.t2"), 
         ],
-        name: "Hudson Taylor: 1832-1905",
-        job: "A dedicated missionary in the 19th century, revolutionized Christian missions through his deep empathy, cultural integration, and profound faith, impacting countless lives in China.",
+        name: t("witnesses.testimonials.items12.name"),
+        job: t("witnesses.testimonials.items12.job"),
       },
       {
         testimonials: [
-          "The best 'apology' for the gospel is to let the gospel out. Never mind defending Deuteronomy or the whole of the Pentateuch. Preach Jesus Christ and him crucified. The Lion of the tribe of Judah will soon drive away all his adversaries.",
-          "Have you no wish for others to be saved? Then you're not saved yourself, be sure of that!",
+        t("witnesses.testimonials.items13.t1"), 
+        t("witnesses.testimonials.items13.t2"), 
         ],
-        name: "C. H. Spurgeon: 1834-1892",
-        job: "A 19th-century preacher, was renowned for his profound faith, captivating sermons, and unwavering commitment to spreading the gospel.",
+        name: t("witnesses.testimonials.items13.name"),
+        job: t("witnesses.testimonials.items13.job"),
       },
       {
         testimonials: [
-          "If our spiritually dead ones are to be raised, we must first get power with God. The reason we so often fail in moving our fellowmen is that we try to win them without first getting power with God. Jesus was in communion with His Father, and so He could be assured that His prayers were heard.",
-          "The Bible was not given for our information but for our transformation.",
+        t("witnesses.testimonials.items14.t1"), 
+        t("witnesses.testimonials.items14.t2"), 
         ],
-        name: "D. L. Moody: 1837-1899",
-        job: "A 19th-century evangelist, was recognized for his fervent faith, dynamic preaching, and tireless efforts in sharing the gospel, impacting countless lives across nations.",
+        name: t("witnesses.testimonials.items14.name"),
+        job: t("witnesses.testimonials.items14.job"),
       },
       {
         testimonials: [
-          "I find that the earnest followers of Christ have very little rest here. Like our Master, we must be about our Father's business.",
-          "Paul says preaching has to be with demonstration of the Spirit and of power. The Holy Ghost bears witness with signs and miracles; unless these attend our ministry we cannot succeed.",
+        t("witnesses.testimonials.items15.t1"), 
+        t("witnesses.testimonials.items15.t2"), 
         ],
-        name: "Maria Woodworth-Etter: 1844-1924",
-        job: "An influential American evangelist from the late 19th and early 20th centuries, was renowned for her pioneering role in the Pentecostal movement and her impactful revival meetings marked by spiritual manifestations and healing.",
+        name: t("witnesses.testimonials.items15.name"),
+        job: t("witnesses.testimonials.items15.job"),
       },
       {
         testimonials: [
-          "My tears were wiped away, my heart was strong, I saw the way of healing…I said, “God help me now to preach the Word to all the dying around, and tell them how 'tis Satan still defiles, and Jesus still delivers, for He is just the same today.",
-          "There are many Christians who are Christians in theory only, and they are worldlings in practice.",
+        t("witnesses.testimonials.items16.t1"), 
+        t("witnesses.testimonials.items16.t2"), 
         ],
-        name: "John Alexander Dowie: 1847-1907",
-        job: "A zealous evangelist known for his fervent faith in divine healing and his emphasis on spiritual healing through prayer and faith, which became central to his ministry",
+        name: t("witnesses.testimonials.items16.name"),
+        job: t("witnesses.testimonials.items16.job"),
       },
       {
         testimonials: [
-          "You get faith by studying the Word. Study that Word until something in you 'knows that you know' and that you do not just hope that you know.",
-          "Yes, beloved reader, our God reigneth, and if we crown Him Lord of all, Lord of our soul, Lord of our body, Lord of all the circumstance in our lives, we shall find that He is able to subdue all things unto Himself.",
+        t("witnesses.testimonials.items17.t1"), 
+        t("witnesses.testimonials.items17.t2"), 
         ],
-        name: "Carrie Judd: 1858-1946",
-        job: "A prominent figure in the faith healing movement, was known for her dedication to divine healing and her influential role as a writer and speaker advocating for the power of prayer and faith",
+        name: t("witnesses.testimonials.items17.name"),
+        job: t("witnesses.testimonials.items17.job"),
       },
       {
         testimonials: [
-          "I am not moved by what I see. I am moved only by what I believe. I know this, no man looks at appearances if he believes. No man considers how he feels if he believes. The man who believes God has it.",
-          "Some people read their Bibles in Hebrew, some in Greek; I like to read mine in the Holy Ghost. You must everyday make higher ground. You must deny yourself to make progress with God.",
+        t("witnesses.testimonials.items18.t1"), 
+        t("witnesses.testimonials.items18.t2"), 
         ],
-        name: "Smith Wigglesworth: 1859-1947",
-        job: "A renowned apostle of faith and pioneer of the Pentecostal movement, 23 people raised from the dead among other manifestations of the Spirit.",
+        name: t("witnesses.testimonials.items18.name"),
+        job: t("witnesses.testimonials.items18.job"),
       },
       {
         testimonials: [
-          "I believe the Bible is the word of God from cover to cover.",
-          "Conversion is a complete surrender to Jesus. It's a willingness to do what he wants you to do.",
-          "I have more respect for the devil than for some preachers I have met; the devil believes the Bible is the Word of God!",
+        t("witnesses.testimonials.items19.t1"), 
+        t("witnesses.testimonials.items19.t2"), 
+        t("witnesses.testimonials.items19.t3"), 
         ],
-        name: "Billy Sunday: 1862-1935",
-        job: "A former baseball player turned influential evangelist, captivated audiences with his fiery preaching style and moral crusades, leaving a significant impact on American evangelicalism ",
+        name: t("witnesses.testimonials.items19.name"),
+        job: t("witnesses.testimonials.items19.job"),
       },
       {
         testimonials: [
-          "The renewal of the Church will depend on the renewal of our prayer life.",
-          "I never before knew what it was to work all day and then pray all night before God for another… In college or at parties at home, I used to keep such hours for myself, or pleasure, and can I not do as much for God and souls?",
+        t("witnesses.testimonials.items20.t1"), 
+        t("witnesses.testimonials.items20.t2"), 
         ],
-        name: "John (praying) Hyde: 1865-1912",
-        job: "He came to be called 'Praying Hyde' for his passionate prayers to reach lost souls.",
+        name: t("witnesses.testimonials.items20.name"),
+        job: t("witnesses.testimonials.items20.job"),
       },
       {
         testimonials: [
-          "When I saw for the first time by the Word of God that sickness was not the Will of God, everything in my nature rose up to defeat the will of the devil.",
-          "Jesus did not heal the sick in order to coax them to be Christians. He healed because it was His nature to heal.",
+        t("witnesses.testimonials.items21.t1"), 
+        t("witnesses.testimonials.items21.t2"), 
         ],
-        name: "John G. Lake: 1870-1935",
-        job: "Was known for his unwavering faith and notable demonstrations of divine healing, leaving a lasting legacy in the realm of spiritual healing and Pentecostalism",
+        name: t("witnesses.testimonials.items21.name"),
+        job: t("witnesses.testimonials.items21.job"),
       },
       {
         testimonials: [
-          "I can say, through the power of the Spirit that wherever God can get a people that will come together in one accord and one mind in the Word of God, the baptism of the Holy Ghost will fall upon them, like as at Cornelius' house.",
-          "Any man that is saved and sanctified can feel the fire burning in his heart, when he calls on the name of Jesus.",
+        t("witnesses.testimonials.items22.t1"), 
+        t("witnesses.testimonials.items22.t2"), 
         ],
-        name: "William J. Seymour: 1870-1922",
-        job: "Holiness preacher who initiated the Azusa Street Revival. Played a pivotal role in promoting the experience of speaking in tongues and fostering unity among diverse believers, leaving an enduring impact on global Christianity.",
+        name: t("witnesses.testimonials.items22.name"),
+        job: t("witnesses.testimonials.items22.job"),
       },
       {
         testimonials: [
-          "Some people wonder why they can't have faith for healing. They feed their body three hot meals a day, and their spirit one cold snack a week.",
-          "We see, from almost every conceivable angle throughout the Scripture, that there is no doctrine more clearly taught than that it is God's will to heal all who have need of healing, and that they may fulfill the number of their days according to His promise.",
+        t("witnesses.testimonials.items23.t1"), 
+        t("witnesses.testimonials.items23.t2"), 
+          ""
         ],
-        name: "F. F. Bosworth: 1877-1958",
-        job: "Made significant contributions to the faith healing movement, notably through his teachings on divine healing",
+        name: t("witnesses.testimonials.items23.name"),
+        job: t("witnesses.testimonials.items23.job"),
       },
       {
         testimonials: [
-          "What we need is a fresh vision of the Cross. And may that mighty, all-embracing love of His be no longer a fitful, wavering influence in our lives, but the ruling passion of our souls.",
-          "I have found what I believe to be the highest kind of Christianity. I want to give my life, God helping me, to lead others, many others, to find it. Many have found it already, thank God, and they are doing what I am doing, in a large or little way, as God gives them light. And that is all there is to the revival, and all there is to me, my friend.",
+        t("witnesses.testimonials.items24.t1"), 
+        t("witnesses.testimonials.items24.t2"), 
+        t("witnesses.testimonials.items24.t3"), 
         ],
-        name: "Evan Roberts: 1878-1951",
-        job: "Leading figure of the 1904-1905 Welsh revival. Marked by fervent prayer, profound spiritual experiences, and a widespread awakening that impacted Wales and beyond, igniting a spiritual renewal among many.",
+        name: t("witnesses.testimonials.items24.name"),
+        job: t("witnesses.testimonials.items24.job"),
       },
       {
         testimonials: [
-          "The nature of Christ's salvation is woefully misrepresented by the present-day evangelist. He announces a Saviour from Hell rather than a Saviour from sin. And that is why so many are fatally deceived, for there are multitudes who wish to escape the Lake of fire who have no desire to be delivered from their carnality and worldliness.",
-          "It is not the absence of sin but the grieving over it which distinguishes the child of God from empty professors",
-          "True liberty is not the power to live as we please, but to live as we ought.",
+        t("witnesses.testimonials.items25.t1"), 
+        t("witnesses.testimonials.items25.t2"), 
+        t("witnesses.testimonials.items25.t3"), 
         ],
-        name: "A. W. Pink: 1886-1952",
-        job: "A profound theologian and writer, is celebrated for his impactful biblical expositions and deep theological insights, leaving a lasting legacy through his influential writings that continue to resonate with readers seeking a deeper understanding of Christian doctrine.",
+        name: t("witnesses.testimonials.items25.name"),
+        job: t("witnesses.testimonials.items25.job"),
       },
       {
         testimonials: [
-          "We are afraid of disturbing people today. You must not have their emotions stirred, you must not have the people weeping in a meeting, you must not have the people rolling on the floor under conviction of sin; keep things orderly.  May God help us, may God have mercy upon us. Who are we to dictate to Almighty God as to how He is going to work?",
-          "There is a kind of gospel being proclaimed today which conveniently accommodates itself to the spirit of the age, and makes no demand for godliness.",
-          "The church that does not evangelize will fossilize.",
+        t("witnesses.testimonials.items26.t1"), 
+        t("witnesses.testimonials.items26.t2"), 
+        t("witnesses.testimonials.items26.t3"), 
         ],
-        name: "Duncan Campbell: 1898-1972",
-        job: "A passionate Scottish revivalist, gained renown for his leadership in the Hebrides Revival of the late 1940s, characterized by fervent prayer, profound repentance, and a powerful outpouring of the Holy Spirit, bringing transformative spiritual renewal to the islands and beyond.",
+        name: t("witnesses.testimonials.items26.name"),
+        job: t("witnesses.testimonials.items26.job"),
       },
       {
         testimonials: [
-          "We talk of the Second Coming; half the world has never heard of the first.",
-          "Any church that is not seriously involved in helping fulfill the Great Commission has forfeited its biblical right to exist.",
-          "I am perfectly confident that the man who does not spend hours alone with God will never know the anointing of the Holy Spirit. The world must be left outside until God alone fills the vision...God has promised to answer prayer. It is not that He is unwilling, for the fact is, He is more willing to give than we are to receive. But the trouble is, we are not ready...",
+        t("witnesses.testimonials.items27.t1"), 
+        t("witnesses.testimonials.items27.t2"), 
+        t("witnesses.testimonials.items27.t3"), 
         ],
-        name: "Oswald J. Smith: 1889-1986",
-        job: "A dedicated Canadian pastor and missionary advocate, is remembered for his fervent support of global missions, championing the cause of spreading the Gospel worldwide, inspiring many to engage in evangelism and mission work.",
+        name: t("witnesses.testimonials.items27.name"),
+        job: t("witnesses.testimonials.items27.job"),
       },
       {
         testimonials: [
-          "What is my task? First of all, my task is to be pleasing to Christ. To be empty of self and be filled with Himself. To be filled with the Holy Spirit; to be led by the Holy Spirit.",
-          "We are all making a crown for Jesus out of these daily lives of ours, either a crown of golden, divine love, studded with gems of sacrifice and adoration, or a thorny crown, filled with the cruel briars of unbelief, or selfishness, and sin.",
-          "What is my task? To get the gospel around the world in the shortest possible time to every man and woman and boy and girl!",
+        t("witnesses.testimonials.items28.t1"), 
+        t("witnesses.testimonials.items28.t2"), 
         ],
-        name: "Aimee Semple McPherson: 1890-1944",
-        job: "A pioneering evangelist and founder of the Foursquare Church, captivated audiences with her dynamic preaching, innovative use of media, and compassionate outreach.",
+        name: t("witnesses.testimonials.items28.name"),
+        job: t("witnesses.testimonials.items28.job"),
       },
       {
         testimonials: [
-          "Worry does not empty tomorrow of its sorrow, it empties today of its strength.",
-          "Forgiveness is an act of the will, and the will can function regardless of the temperature of the heart.",
+        t("witnesses.testimonials.items29.t1"), 
+        t("witnesses.testimonials.items29.t2"), 
         ],
-        name: "Corrie Ten Boom: 1892-1983",
-        job: "Helped many Jewish people escape from the Nazis during the Holocaust in World War II. Writer and public speaker.",
+        name: t("witnesses.testimonials.items29.name"),
+        job: t("witnesses.testimonials.items29.job"),
       },
       {
         testimonials: [
-          "It is doubtful whether God can bless a man greatly until He has hurt him deeply.",
-          "What comes into our minds when we think about God is the most important thing about us.",
+        t("witnesses.testimonials.items30.t1"), 
+        t("witnesses.testimonials.items30.t2"), 
         ],
-        name: "A. W. Tozer: 1897-1963",
-        job: "A revered Christian author and pastor, is celebrated for his profound writings and passionate pursuit of a deeper relationship with God, influencing countless individuals to seek a more intimate and transformative connection with the divine.",
+        name: t("witnesses.testimonials.items30.name"),
+        job: t("witnesses.testimonials.items30.job"),
       },
       {
         testimonials: [
-          "Oh God, here's my Bible, Here's my money. Here's me. Use me, God.",
-          "If God has called you to China or any other place and you are sure in your own heart, let nothing deter you.Remember, it is God who has called you and it is the same as when He called Moses or Samuel",
+        t("witnesses.testimonials.items31.t1"), 
+        t("witnesses.testimonials.items31.t2"), 
         ],
-        name: "Gladys Aylward: 1902-1970",
-        job: "A revered figure among the people, taking in orphans and adopting several herself, intervening in a volatile prison riot and advocating prison reform, risking her life many times to help those in need.",
+        name: t("witnesses.testimonials.items31.name"),
+        job: t("witnesses.testimonials.items31.job"),
       },
       {
         testimonials: [
-          "Outside of Christ, I am only a sinner, but in Christ, I am saved. Outside of Christ, I am empty; in Christ, I am full. Outside of Christ, I am weak; in Christ, I am strong. Outside of Christ, I cannot; in Christ, I am more than able. Outside of Christ, I have been defeated; in Christ, I am already victorious. How meaningful are the words, 'in Christ.'",
-          "If you would test the character of anything, you only need to enquire whether that thing leads you to God or away from God.",
+        t("witnesses.testimonials.items32.t1"), 
+       t("witnesses.testimonials.items32.t2"), 
         ],
-        name: "Watchman Nee: 1903-1972",
-        job: "A Chinese Christian leader and prolific writer, is revered for his spiritual insights and teachings on the Christian life, leaving a profound impact through his books and ministry that continue to guide and inspire believers worldwide.",
+        name: t("witnesses.testimonials.items32.name"),
+        job: t("witnesses.testimonials.items32.job"),
       },
       {
         testimonials: [
-          "God's people are not called to walk by feelings or by sight, but by faith.",
-         "The church of Jesus Christ is built on the rock of revelation, and the gates of hell shall not prevail against it.",
-         "The unity of the body of Christ is the key to the end-time harvest.",
+        t("witnesses.testimonials.items33.t1"), 
+        t("witnesses.testimonials.items33.t2"), 
+        t("witnesses.testimonials.items33.t3"), 
         ],
-        name: "David du Plessis: 1905-1987",
-        job: "Considered one of the main founders of the charismatic movement, in which the Pentecostal experience of baptism with the Holy Spirit spread to non-Pentecostal churches worldwide.",
+        name: t("witnesses.testimonials.items33.name"),
+        job: t("witnesses.testimonials.items33.job"),
       },
       {
         testimonials: [
-          "I believe in miracles, because I believe in God.",
-          "The secret of my strength is simple: I pray.",
-          "I'm not a healer, and I'm not a miracle worker. I'm just a little nobody, telling everybody about somebody, who can save anybody.",
-          "I surrendered unto Him all there was of me; everything! Then for the first time I realized what it meant to have real power.",
+        t("witnesses.testimonials.items34.t1"), 
+        t("witnesses.testimonials.items34.t2"), 
         ],
-        name: "Kathryn Kuhlman: 1907-1976",
-        job: "A renowned evangelist and faith healer, captivated audiences with her powerful preaching and remarkable healing services, leaving a lasting impact through her ministry that emphasized the Holy Spirit's miraculous work.",
+        name: t("witnesses.testimonials.items34.name"),
+        job: t("witnesses.testimonials.items34.job"),
       },
       {
         testimonials: [
-          "The Holy Ghost will make you dress right, and live right, and talk right, and be right, when the Holy Ghost gets you. Amen. That's right.",
-          "Show me a man. Show me another Calvin, Knox, Finney, Sankey, or any of those who feels the burden of the people, that'll lay on their face and cry and pray before God. Send us a John Smith of the Baptist Church again, who prayed all night for the iniquity of the people until his eyes would be swelled shut the next morning from weeping, till his wife would lead him to the table and feed him his breakfast out of a spoon. Show me a John Wesley again, a firebrand snatched from the fire. I'll show you a revival.",
+        t("witnesses.testimonials.items35.t1"), 
+        t("witnesses.testimonials.items35.t2"), 
         ],
-        name: "William M. Branham: 1909-1965",
-        job: "Faith healer who initiated the post World War II healing revival.",
+        name: t("witnesses.testimonials.items35.name"),
+        job: t("witnesses.testimonials.items35.job"),
       },
       {
         testimonials: [
-          "If you are walking with Jesus, in the Spirit, you need not fear going too far. No believer has gone as far as God wants him to go.",
-          "Before one can walk as Christ walked, and talk as He talked, he must first begin to think as Christ thought.",
-          "But just as Christ was willing to be crucified before He could send this power, we, too, must be willing to be crucified in order to be used for the benefit of others. Could this be the reason so many who claim to have the baptism of the Holy Spirit do not manifest the power? Isn't this a glaring defect in Pentecostal circles to which the skeptical churches and the unbelievers can point? Can we blame them?",
+        t("witnesses.testimonials.items36.t1"), 
+        t("witnesses.testimonials.items36.t2"), 
         ],
-        name: "A. A. Allen: 1911-1970",
-        job: "A flamboyant evangelist and faith healer, made a significant impact through his revival meetings, marked by dramatic healing services and passionate preaching, attracting large crowds.",
+        name: t("witnesses.testimonials.items36.name"),
+        job: t("witnesses.testimonials.items36.job"),
       },
       {
         testimonials: [
-          "You are what you are because that is what you really want to be! We make decisions and those decisions make us who were are! You can judge anything in the world by this. God builds up and the Devil tears down.",
-          "I know success or failure in my life or ministry does not depend on my own skill or even on external circumstances, it depends only on my faithfulness. God will give me the gifts necessary to do whatever He calls me to do, and He will not be hindered in His work by circumstances.",
+        t("witnesses.testimonials.items37.t1"), 
+        t("witnesses.testimonials.items37.t2"), 
         ],
-        name: "Lester Sumrall: 1913-1996",
-        job: "A dedicated evangelist and missionary, is remembered for his global ministry efforts, founding numerous churches and organizations worldwide, and his impactful teachings on faith, healing, and spiritual warfare that continue to inspire and guide believers.",
+        name: t("witnesses.testimonials.items37.name"),
+        job: t("witnesses.testimonials.items37.job"),
       },
       {
         testimonials: [
-          "Consider the work of Calvary. A perfect work, perfect in every respect, perfect in every aspect",
-          "There is no such thing as partial obedience.",
-          "God is more concerned with our character than with our achievements. Achievements have importance only in the realm of time. Character is eternal. It determines what we will be through eternity.",
+        t("witnesses.testimonials.items38.t1"), 
+        t("witnesses.testimonials.items38.t2"), 
+        t("witnesses.testimonials.items38.t3"), 
         ],
-        name: "Derek Prince: 1915-2003",
-        job: "A respected Bible teacher and author, left a lasting legacy through his profound teachings on spiritual warfare, deliverance, and biblical principles, impacting countless individuals worldwide seeking a deeper understanding of the Scriptures and Christian living.",
+        name: t("witnesses.testimonials.items38.name"),
+        job: t("witnesses.testimonials.items38.job"),
       },
       {
         testimonials: [
-          "Central Truth: Prayer is successful only when it is based on the promises in God's Word!",
-          "Believe it in your heart; say it with your mouth. That is the principle of faith. You can have what you say.",
-          "If what you hear preached doesn't cause faith to come and build faith in your spirit, then it either isn't the Word of God or else you're not hearing it",
+        t("witnesses.testimonials.items39.t1"), 
+        t("witnesses.testimonials.items39.t2"), 
+        t("witnesses.testimonials.items39.t3"), 
         ],
-        name: "Kenneth E. Hagin: 1917-2003",
-        job: "Word grounded preacher and teacher in prophets office, Jesus appeared to him 7 times, remembered for his teachings of faith, divine healing, and the believer's authority, shaped the landscape of modern charismatic Christianity.",
+        name: t("witnesses.testimonials.items39.name"),
+        job: t("witnesses.testimonials.items39.job"),
       },
       {
         testimonials: [
-          "God is a good God, and the Devil is a bad Devil.",
-          "Faith is not something you have to get. It's something that you, as a bornagain child of God, already have. Act on it by releasing it to God. That's when your healing starts!",
-          "Your faith begins to move, to act, when the power of God supernaturally empties you of doubt and fills you with a knowing. You come into a state of knowing that you know that you know. In that instant you cannot doubt.",
+        t("witnesses.testimonials.items40.t1"), 
+        t("witnesses.testimonials.items40.t2"), 
         ],
-        name: "Oral Roberts: 1918-2009",
-        job: "A pioneering televangelist, made significant contributions to the realm of healing evangelism and charismatic Christianity, utilizing media platforms to reach millions with his message while leaving a lasting impact on faith-based education and ministry.",
+        name: t("witnesses.testimonials.items40.name"),
+        job: t("witnesses.testimonials.items40.job"),
       },
       {
         testimonials: [
-          "Being a Christian is more than just an instantaneous conversion; it is like a daily process whereby you grow to be more and more like Christ.",
-          "My home is in Heaven. I'm just traveling through this world.",
+        t("witnesses.testimonials.items41.t1"), 
+        t("witnesses.testimonials.items41.t2"), 
         ],
-        name: "Billy Graham: 1918-2018",
-        job: "A globally renowned evangelist, touched countless lives through his powerful preaching, crusades, and unwavering message of God's love and salvation.",
+        name: t("witnesses.testimonials.items41.name"),
+        job: t("witnesses.testimonials.items41.job"),
       },
       {
         testimonials: [
-          "If you have worry, you don't have faith, and if you have faith, you don't have worry.",
-          "Fear cannot stay in the same house as Jesus Christ.",
+        t("witnesses.testimonials.items42.t1"), 
+        t("witnesses.testimonials.items42.t2"), 
         ],
-        name: "Jack Coe: 1918-1956",
-        job: "'The man of reckless faith'. One of the first faith healers in United States with a touring tent ministry after World War II.",
+        name: t("witnesses.testimonials.items42.name"),
+        job: t("witnesses.testimonials.items42.job"),
       },
       {
         testimonials: [
-          "God wants us to be walking in the beauty of His holiness so all that people will be able to see is His glory, and nothing of our earthly selves. He is calling on the body of Christ to be so totally committed to Him that nothing else matters in ourlives and that we will be so 'in Him' that the worl dwill see Jesus in us.",
-          "Jesus touched the man AGAIN when he said he could only see men as trees, showing that we need not be ashamed to go back more than once for our healing.",
+        t("witnesses.testimonials.items43.t1"), 
+        t("witnesses.testimonials.items43.t2"), 
         ],
-        name: "Charles and Frances Hunter: 1920-2009, 1917-2008",
-        job: "A dynamic husband-and-wife duo, were influential evangelists and advocates of the healing ministry, known for their teachings, books, and practical demonstrations of God's healing power.",
+        name: t("witnesses.testimonials.items43.name"),
+        job: t("witnesses.testimonials.items43.job"),
       },
       {
         testimonials: [
-          "One Way: Jesus! One Job: Evangelism!",
-          "How can we call ourselves a church and not believe in healing and in miracles? I cannot read four pages anywhere in the Bible without encountering miracles! And the God of the bible is the same today!",
-          "The purpose of a spirit filled life is to demonstrate the supernatural power of our living God so that the unsaved multitudes will abandon their dead gods to call upon the name of The Lord and be delivered.",
+        t("witnesses.testimonials.items44.t1"), 
+        t("witnesses.testimonials.items44.t2"), 
         ],
-        name: "T. L. and Daisy Osborn. 1923-2013, 1924-1995",
-        job: "A dynamic husband-and-wife team, were renowned evangelists and missionaries, known for their global ministry, emphasizing the Gospel's power through mass crusades, teaching on faith, healing, and leading multitudes to Christ, leaving a profound legacy in worldwide evangelism.",
+        name: t("witnesses.testimonials.items44.name"),
+        job: t("witnesses.testimonials.items44.job"),
       },
       {
         testimonials: [
-          "You don't have any problems, all you need is faith in God.",
-          "When the devil starts messing, God starts blessing.",
+        t("witnesses.testimonials.items45.t1"), 
+        t("witnesses.testimonials.items45.t2"), 
         ],
-        name: "R. W. Schambach: 1926-2012",
-        job: "A passionate evangelist and revivalist, impacted many through his vibrant preaching and emphasis on the power of faith, conducting crusades marked by fervent messages and reported miraculous healings, leaving a lasting imprint in the realm of charismatic Christianity.",
-      },
-      {
-        testimonials: ["He is no fool who gives what he cannot keep to gain what he cannot lose.", "God always gives His best to those who leave the choice with him."],
-        name: "Jim Elliot: 1927-1956",
-        job: "A devoted missionary, exemplified unwavering dedication to sharing the Gospel, tragically losing his life during a mission to the Auca tribe in Ecuador, inspiring countless individuals with his commitment to Christ-centered service and sacrifice.",
+        name: t("witnesses.testimonials.items45.name"),
+        job: t("witnesses.testimonials.items45.job"),
       },
       {
         testimonials: [
-          "God hates the LUKEWARM GOSPEL OF HALF-TRUTHS that is now spreading over the Globe. This gospel says, 'Just believe in Jesus and you'll be Saved. There's nothing more to it.' It ignores the Whole Counsel of God, which speaks of Repenting from former Sins, of Taking up your Cross, of being conformed to the Image of Christ by the refining work of the Holy Spirit. It is totally silent about the Reality of Hell and an After-Death Judgment.",
-          "A humble person is not one who thinks little of himself, hangs his head and says, I'm nothing. Rather, he is one who depends wholly on the Lord for everything, in every circumstance."
+        t("witnesses.testimonials.items46.t1"), 
+        t("witnesses.testimonials.items46.t2"), 
         ],
-        name: "David Wilkerson: 1931-2011",
-        job: "Direct and frank sermons against apostasy, such as 'A Call to Anguish', and serious about making the commitment to obey Jesus' teachings.",
+        name: t("witnesses.testimonials.items46.name"),
+        job: t("witnesses.testimonials.items46.job"),
       },
       {
         testimonials: [
-          "Sometimes it's not good to reveal everything that God tells you, unless you are prepared to go through an awful period of criticism and unbelief until it comes to pass.",
-          "Make this declaration: Death and life are in the power of my tongue. I choose Life!",
-          "Don't be satisfied with living below the full potential of prauer power Christ intended for His church"
+        t("witnesses.testimonials.items47.t1"), 
+        t("witnesses.testimonials.items47.t2"), 
+          "",
         ],
-        name: "Morris Cerrullo: 1931-2020",
-        job: "A renowned evangelist and teacher, impacted multitudes worldwide through his dynamic ministry, crusades, and training events, empowering believers and emphasizing the message of faith and evangelism, leaving a lasting imprint on global Christianity.",
+        name: t("witnesses.testimonials.items47.name"),
+        job: t("witnesses.testimonials.items47.job"),
       },
       {
         testimonials: [
-          "When we have nothing left but God, we discover that God is enough",
-          "A lifestyle change isn't required for God to accept people. All He asks for is a 'heart change.'",
-          "Don't tell me how big your mountain is. Tell your mountain how BIG your God is."
+        t("witnesses.testimonials.items48.t1"), 
+        t("witnesses.testimonials.items48.t2"), 
+          "",
         ],
-        name: "Benson Idahosa: 1938-1998",
-        job: "A trailblazing Nigerian evangelist, left an indelible mark through his powerful preaching, emphasis on faith, miraculous demonstrations, and tireless efforts in social upliftment, shaping the landscape of African Christianity and global evangelism.",
+        name: t("witnesses.testimonials.items48.name"),
+        job: t("witnesses.testimonials.items48.job"),
       },
       {
         testimonials: [
-          "It is said that resentment is like drinking poison and waiting for your enemy to die. There is no room for such a waste of energy in the service of God.",
-          "We are not helping people to get God right, but to get right with God. The Holy Spirit alone opens hearts and minds.",
+        t("witnesses.testimonials.items49.t1"), 
+        t("witnesses.testimonials.items49.t2"), 
         ],
-        name: "Reinhard Bonnke: 1940-2019",
-        job: "Gospel missions throughout Africa. It is estimated that over 79 million people converted to Christianity as a result of Bonnke's ministry.",
+        name: t("witnesses.testimonials.items49.name"),
+        job: t("witnesses.testimonials.items49.job"),
+      },
+      {
+        testimonials: [
+        t("witnesses.testimonials.items50.t1"), 
+        t("witnesses.testimonials.items50.t2"), 
+        ],
+        name: t("witnesses.testimonials.items50.name"),
+        job: t("witnesses.testimonials.items50.job"),
       },
     ]}
   />

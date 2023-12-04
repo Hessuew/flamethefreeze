@@ -20,17 +20,20 @@ const changeLangInUrl = () => {
   return url;
 };
 ---
+
 <ul>
   {
     Object.entries(languages).map(([lng, label]) => {
       if (lng === lang)
         return (
-          <a
-            class="text-muted text-lg justify-center items-center font-semibold lg:text-base w-11 h-11 lg:w-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg p-2.5 inline-flex"
-            href={changeLangInUrl()}
-          >
-            {label}
-          </a>
+          <li>
+            <a
+              class="text-muted text-lg justify-center items-center font-semibold lg:text-base w-11 h-11 lg:w-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg p-2.5 inline-flex"
+              href={changeLangInUrl()}
+            >
+              {label}
+            </a>
+          </li>
         );
       else return null;
     })
