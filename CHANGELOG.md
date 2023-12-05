@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.4.0](https://github.com/Hessuew/flamethefreeze/compare/v1.3.0...v1.4.0) (2023-12-05)
+
+
+### Features
+
+* (wip) witnesses translated ([f7ef580](https://github.com/Hessuew/flamethefreeze/commit/f7ef580bd00228462749357b6d016c3c955a3a57))
+* (wip) witnesses translated ([#30](https://github.com/Hessuew/flamethefreeze/issues/30)) ([4368d7a](https://github.com/Hessuew/flamethefreeze/commit/4368d7a240ecdef4269449169b8bfa1fcc1090db))
+* added missing witnesses testimonials (en) ([21c55d2](https://github.com/Hessuew/flamethefreeze/commit/21c55d24266ee3c251d689d3a1e33d0705f8179c))
+* added missing witnesses testimonials (en) ([#33](https://github.com/Hessuew/flamethefreeze/issues/33)) ([7f52a36](https://github.com/Hessuew/flamethefreeze/commit/7f52a36eb49b07e739de2a8701d826db8ccaf118))
+
 ## [1.3.0](https://github.com/Hessuew/flamethefreeze/compare/v1.2.0...v1.3.0) (2023-12-03)
 
 
