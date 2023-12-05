@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.0](https://github.com/Hessuew/flamethefreeze/compare/v1.4.0...v1.5.0) (2023-12-05)
+
+
+### Features
+
+* witnesses translated (needs spell checking) ([f3b76e5](https://github.com/Hessuew/flamethefreeze/commit/f3b76e5aa418fff1a4b5960907d9c02dccefcb1f))
+* witnesses translated (needs spell checking) ([#34](https://github.com/Hessuew/flamethefreeze/issues/34)) ([1853aac](https://github.com/Hessuew/flamethefreeze/commit/1853aacb27a9089185560aaa4c9ee5d9a3a3a2b3))
+
 ## [1.4.0](https://github.com/Hessuew/flamethefreeze/compare/v1.3.0...v1.4.0) (2023-12-05)
 
 
