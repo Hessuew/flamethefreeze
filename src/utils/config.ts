@@ -78,7 +78,7 @@ const config = yaml.load(fs.readFileSync('src/config.yaml', 'utf8')) as {
   analytics?: unknown;
 };
 
-const DEFAULT_SITE_NAME = 'https://flamethefreeze.com/';
+const DEFAULT_SITE_NAME = 'WEBSITE';
 
 const getSite = () => {
   const _default = {
