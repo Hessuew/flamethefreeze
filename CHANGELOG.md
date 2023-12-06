@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.1](https://github.com/Hessuew/flamethefreeze/compare/v1.5.0...v1.5.1) (2023-12-06)
+
+
+### Bug Fixes
+
+* finnish witnesses translations (wip) 33/50 ([a6cc256](https://github.com/Hessuew/flamethefreeze/commit/a6cc25683c61961c022024c7dddbe6a39ace9f19))
+* finnish witnesses translations (wip) 33/50 ([#36](https://github.com/Hessuew/flamethefreeze/issues/36)) ([cd50c3c](https://github.com/Hessuew/flamethefreeze/commit/cd50c3cb3196e7976bb3a08bf93302e22cc7f0eb))
+
 ## [1.5.0](https://github.com/Hessuew/flamethefreeze/compare/v1.4.0...v1.5.0) (2023-12-05)
 
 
