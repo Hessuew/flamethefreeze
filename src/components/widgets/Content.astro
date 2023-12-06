@@ -22,7 +22,7 @@ const {
   defaultIcon,
   testimonial,
   bottom,
-  whiteText= false,
+  whiteText = false,
 
   id,
   isDark = false,
@@ -43,8 +43,14 @@ const {
     tagline={tagline}
     classes={{
       container: "max-w-xl sm:mx-auto lg:max-w-2xl",
-      title: twMerge("text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading", whiteText && "text-white"),
-      subtitle: twMerge("max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400", whiteText && "text-white"),
+      title: twMerge(
+        "text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading",
+        whiteText && "text-white"
+      ),
+      subtitle: twMerge(
+        "max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400",
+        whiteText && "text-white"
+      ),
     }}
   />
   <div class="mx-auto max-w-7xl p-4 md:px-8">
@@ -67,7 +73,10 @@ const {
           classes={{
             container: `gap-y-4 md:gap-y-8`,
             panel: "max-w-none",
-            title: twMerge("text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2", whiteText && "text-white"),
+            title: twMerge(
+              "text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2",
+              whiteText && "text-white"
+            ),
             description: twMerge("text-muted dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2", whiteText && "text-white"),
             icon: twMerge(
               "flex h-7 w-7 items-center justify-center rounded-full bg-green-600 dark:bg-green-700 text-gray-50 p-1",
@@ -87,12 +96,19 @@ const {
                   {bottom && (
                     <div class={twMerge("text-center self-baseline pt-10", classes.bottom)}>
                       <p class={twMerge("text-2xl", whiteText && "text-white")} set:html={bottom.title} />
-                      <p class={twMerge("pt-4 text-muted text-xl", whiteText && "text-white")} set:html={bottom.subtitle} />
+                      <p
+                        class={twMerge("pt-4 text-muted text-xl", whiteText && "text-white")}
+                        set:html={bottom.subtitle}
+                      />
                       {bottom.links &&
                         bottom.links.map(({ title, link }) => (
                           <p class={twMerge("pt-4 text-xl", whiteText && "text-white")}>
                             {title}:
-                            <a class={twMerge("hover:underline break-all", whiteText && "text-white")} href={link} target="_blank">
+                            <a
+                              class={twMerge("hover:underline break-all", whiteText && "text-white")}
+                              href={link}
+                              target="_blank"
+                            >
                               {link}
                             </a>
                           </p>
@@ -116,11 +132,18 @@ const {
         }
       </div>
     </div>
-    {testimonial && <Testimonials classes={{
-      name: twMerge(whiteText && "text-white"),
-      testimonial: twMerge(whiteText && "text-white")}} columns={columns} testimonials={testimonial} />}
-    {bottom &&
-    <div class={twMerge("text-center border-b pb-4 border-neutral-400", classes.bottom)}></div>
+    {
+      testimonial && (
+        <Testimonials
+          classes={{
+            name: twMerge(whiteText && "text-white"),
+            testimonial: twMerge(whiteText && "text-white"),
+          }}
+          columns={columns}
+          testimonials={testimonial}
+        />
+      )
     }
+    {bottom && <div class={twMerge("text-center border-b pb-4 border-neutral-400", classes.bottom)} />}
   </div>
 </WidgetWrapper>
