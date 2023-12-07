@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.6.0](https://github.com/Hessuew/flamethefreeze/compare/v1.5.1...v1.6.0) (2023-12-07)
+
+
+### Features
+
+* fivefold trasnlated (wip: 1/2) ([101c57b](https://github.com/Hessuew/flamethefreeze/commit/101c57baae5ab57c7d6c1b0315cfc8d998c39e5c))
+* fivefold trasnlated (wip: 1/2) ([#38](https://github.com/Hessuew/flamethefreeze/issues/38)) ([cc4c5cd](https://github.com/Hessuew/flamethefreeze/commit/cc4c5cdbe796beb70a5d2cff227904f3c7f4eecd))
+
 ## [1.5.1](https://github.com/Hessuew/flamethefreeze/compare/v1.5.0...v1.5.1) (2023-12-06)
 
 
