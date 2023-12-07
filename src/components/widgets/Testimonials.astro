@@ -13,6 +13,7 @@ const {
   testimonials = [],
   callToAction,
   columns,
+  numbers = false,
 
   id,
   isDark = false,
@@ -42,7 +43,7 @@ const {
         testimonials.map(({ title, testimonials, name, job, image }, index) => (
           <div class="flex h-auto">
             <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none border dark:border-neutral-600">
-              <p class="text-muted -mt-2 lg:-mt-4 lg:-ml-3">{index + 1}.</p>
+              {numbers && <p class="text-muted -mt-2 lg:-mt-4 lg:-ml-3">{index + 1}.</p>}
               {title && <h2 class="text-lg font-medium leading-6 pb-4">{title}</h2>}
               {testimonials && Array.isArray(testimonials)
                 ? testimonials.map((testimonial) => (

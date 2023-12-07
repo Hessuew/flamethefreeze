@@ -232,6 +232,7 @@ export interface Testimonials extends Headline, Widget {
   testimonials?: Array<Testimonial>;
   columns?: number;
   callToAction?: CallToAction;
+  numbers?: boolean;
 }
 
 export interface Brands extends Headline, Widget {
