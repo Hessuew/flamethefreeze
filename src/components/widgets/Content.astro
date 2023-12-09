@@ -95,17 +95,18 @@ const {
                   <Fragment set:html={image} />
                   {bottom && (
                     <div class={twMerge("text-center self-baseline pt-10", classes.bottom)}>
-                      <p class={twMerge("text-2xl", whiteText && "text-white")} set:html={bottom.title} />
+                      <p aria-label="Title for content bottom area" class={twMerge("text-2xl", whiteText && "text-white")} set:html={bottom.title} />
                       <p
+                      aria-label="Subtitle for content bottom area"
                         class={twMerge("pt-4 text-muted text-xl", whiteText && "text-white")}
                         set:html={bottom.subtitle}
                       />
                       {bottom.links &&
                         bottom.links.map(({ title, link }) => (
-                          <p class={twMerge("pt-4 text-xl", whiteText && "text-white")}>
+                          <p aria-label="Bottom area text" class={twMerge("pt-4 text-xl", whiteText && "text-white")}>
                             {title}:
-                            <a
-                              class={twMerge("hover:underline break-all", whiteText && "text-white")}
+                            <a aria-label="Bottom area link"
+                              class={twMerge("text-blue-400 hover:underline break-all", whiteText && "text-white")}
                               href={link}
                               target="_blank"
                             >
