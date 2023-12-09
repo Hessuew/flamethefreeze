@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.2](https://github.com/Hessuew/flamethefreeze/compare/v1.7.1...v1.7.2) (2023-12-09)
+
+
+### Bug Fixes
+
+* minor page insight fixes ([d29dd9d](https://github.com/Hessuew/flamethefreeze/commit/d29dd9d9e5c45ab787730f7b0b077f6030d59303))
+* minor page insight fixes ([#44](https://github.com/Hessuew/flamethefreeze/issues/44)) ([54a481b](https://github.com/Hessuew/flamethefreeze/commit/54a481b157f35cfa858e2692821088bd77e2de6a))
+
 ## [1.7.1](https://github.com/Hessuew/flamethefreeze/compare/v1.7.0...v1.7.1) (2023-12-09)
 
 
