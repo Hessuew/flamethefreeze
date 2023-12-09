@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.0](https://github.com/Hessuew/flamethefreeze/compare/v1.6.0...v1.7.0) (2023-12-09)
+
+
+### Features
+
+* embedded pdf, image opt (wip) ([79cdd04](https://github.com/Hessuew/flamethefreeze/commit/79cdd0467dc460782cdc892665fdc6eb804765e9))
+* embedded pdf, image opt (wip) ([#40](https://github.com/Hessuew/flamethefreeze/issues/40)) ([e7956e7](https://github.com/Hessuew/flamethefreeze/commit/e7956e76f0ea7c890c989c117c562c280c0592d7))
+
 ## [1.6.0](https://github.com/Hessuew/flamethefreeze/compare/v1.5.1...v1.6.0) (2023-12-07)
 
 
