@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.1](https://github.com/Hessuew/flamethefreeze/compare/v1.7.0...v1.7.1) (2023-12-09)
+
+
+### Bug Fixes
+
+* witnesses finnish fixes (with Greta❤️) ([0b8762e](https://github.com/Hessuew/flamethefreeze/commit/0b8762efb3c24da70849918888a4b52666547e67))
+* witnesses finnish fixes (with Greta❤️) ([#42](https://github.com/Hessuew/flamethefreeze/issues/42)) ([bda3de1](https://github.com/Hessuew/flamethefreeze/commit/bda3de1381cc5d52b7a381c0f9aad8634a1af0d2))
+
 ## [1.7.0](https://github.com/Hessuew/flamethefreeze/compare/v1.6.0...v1.7.0) (2023-12-09)
 
 
