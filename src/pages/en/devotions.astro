@@ -28,15 +28,12 @@ const t = useTranslations(lang);
 
     <Fragment slot="subtitle">
       {t("devotions.hero.subtitle")}
-      
     </Fragment>
   </Hero>
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
-    subtitle={t("devotions.features3-1.subtitle")}
-  />
+  <Features3 subtitle={t("devotions.features3-1.subtitle")} />
 
   <!-- Features3 Widget ************** -->
 
@@ -51,9 +48,7 @@ const t = useTranslations(lang);
 
   <!-- Features3 Widget ************** -->
 
-  <Features3
-    subtitle={t("devotions.features3-3.subtitle")}
-  />
+  <Features3 subtitle={t("devotions.features3-3.subtitle")} />
 
   <!-- Features3 Widget ************** -->
 
@@ -136,10 +131,24 @@ const t = useTranslations(lang);
 
   <!-- Features Widget *************** -->
 
-  <Features
-    id="features"
-    tagline={t("devotions.features1.tagline")}
-    title={t("devotions.features1.title")}
-    subtitle={t("devotions.features1.subtitle")}
-  />
+  <Features id="features" tagline={t("devotions.features1.tagline")} title={t("devotions.features1.title")} />
+
+  <!-- Ebook Widget *************** -->
+
+  <div class="w-full flex justify-center pb-10">
+    <iframe
+      src={lang === "en"
+        ? "https://drive.google.com/file/d/1D5npgHt176KLtaEir-OE61LcndzssEjp/preview"
+        : "https://drive.google.com/file/d/1JY5xC1_A24QFWG75GzI0ul1JAv1iBjIk/preview"}
+      width="100%"
+      height="640"
+      allow="autoplay"
+      class="max-w-2xl"
+    >
+      <p> {t("devotions.ebook.text1")} <a class="hover:underline" href={lang === "en" ?
+      "https://drive.google.com/file/d/1D5npgHt176KLtaEir-OE61LcndzssEjp/preview" :
+      "https://drive.google.com/file/d/1JY5xC1_A24QFWG75GzI0ul1JAv1iBjIk/preview"}
+      target="_blank">{t("devotions.ebook.a")}</a > {t("devotions.ebook.text2")}</p>
+    </iframe>
+  </div>
 </Layout>
