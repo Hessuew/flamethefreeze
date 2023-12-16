@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.0](https://github.com/Hessuew/flamethefreeze/compare/v1.7.2...v1.8.0) (2023-12-16)
+
+
+### Features
+
+* Biome support, reworking witnesses by the Spirit of God ([e8e311d](https://github.com/Hessuew/flamethefreeze/commit/e8e311d13507b1426d0eed31f7739cbda30e34f4))
+* Biome support, reworking witnesses by the Spirit of God ([#46](https://github.com/Hessuew/flamethefreeze/issues/46)) ([bfc4122](https://github.com/Hessuew/flamethefreeze/commit/bfc41220fb445126ffadf8ea275378f58ec25e71))
+
 ## [1.7.2](https://github.com/Hessuew/flamethefreeze/compare/v1.7.1...v1.7.2) (2023-12-09)
 
 
