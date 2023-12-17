@@ -464,6 +464,7 @@ export const ui = {
 		"prayer.callToAction.subtitle":
 			"Join us in prayer meeting every other Saturday starting at 18:00 GMT+2.",
 		"prayer.callToAction.subtitle2": "Zoom ID: 644 4069 4917, Passcode: 467939",
+		"witnesses.temp": "The short biographies of the people are under refactoring as guided and inspired by the Holy Spirit.",
 		"witnesses.hero.title.tagline": "Witnesses",
 		"witnesses.hero.title.title": " cloud of witnesses",
 		"witnesses.hero.title.subtitle":
@@ -494,7 +495,7 @@ export const ui = {
 			"I sought neither preeminence, glory, nor riches; my honor was that Jesus Christ should reign.",
 		"witnesses.testimonials.items3.name": "John Wesley: 1703-1791",
 		"witnesses.testimonials.items3.job":
-				"When churches and saloons are emptied to hear a man preaching a sermon in a graveyard, there must be something extraordinary happening. John was set on fire for God, and the whole globe came to know this burning and shining light. As Jonathan Edwards and George Whitefield were, by the grace of God, waking up America, so was John Wesley waking up Europe.",
+			"When churches and saloons are emptied to hear a man preaching a sermon in a graveyard, there must be something extraordinary happening. John was set on fire for God, and the whole globe came to know this burning and shining light. As Jonathan Edwards and George Whitefield were, by the grace of God, waking up America, so was John Wesley waking up Europe.",
 		"witnesses.testimonials.items3.t1":
 			"Get on fire for God and men will come and see you burn.",
 		"witnesses.testimonials.items3.t2":
@@ -505,7 +506,7 @@ export const ui = {
 			"Reading Christians are growing Christians. When Christians cease to read, they cease to grow.",
 		"witnesses.testimonials.items4.name": "Jonathan Edwards: 1703-1758",
 		"witnesses.testimonials.items4.job":
-			"'Sinners in the Hands of an Angry God'. This single sermon sparked one of the greatest moves of God in history, the First Great Awakening. Tens of thousands of people made public confessions in different states. Benjamin Franklin said it seemed as if the whole world were growing religious, so that one could not even walk through the town in an evening without hearing psalms sung by different families on every street." ,
+			"'Sinners in the Hands of an Angry God'. This single sermon sparked one of the greatest moves of God in history, the First Great Awakening. Tens of thousands of people made public confessions in different states. Benjamin Franklin said it seemed as if the whole world were growing religious, so that one could not even walk through the town in an evening without hearing psalms sung by different families on every street.",
 		"witnesses.testimonials.items4.t1":
 			"Resolution One: I will live for God. Resolution Two: If no one else does, I still will.",
 		"witnesses.testimonials.items4.t2":
@@ -528,8 +529,7 @@ export const ui = {
 			"Let me forget the world and be swallowed up in the desire to glorify God.",
 		"witnesses.testimonials.items7.name": "William Carey: 1761-1834",
 		"witnesses.testimonials.items7.job":
-		// TODO:
-			"",
+			"When a man puts his life, marriage, future, and everything he has on stake for God, something remarkable is going to be born. So was the life of William Carey. It was through this man that mission work was revived globally. Truly, we must take the gospel to all the world.",
 		"witnesses.testimonials.items7.t1":
 			"I'm not afraid of failure; I'm afraid of succeeding at things that don't matter.",
 		"witnesses.testimonials.items7.t2":
@@ -571,8 +571,7 @@ export const ui = {
 			"Go straight for souls and go for the worst.",
 		"witnesses.testimonials.items12.name": "Hudson Taylor: 1832-1905",
 		"witnesses.testimonials.items12.job":
-		// TODO: 
-			"",
+			"A man left his mother nation to go into a strange, big country where Christianity was almost not heard of. His life was given to the lost so that those without Jesus would meet the master personally and be forgiven of their sins. This country, China, came to contain some of the most vibrant Christians there have ever been. If you are not willing to put your life at stake for Jesus, know that He put His life on stake for you first. Now is your time to put your life on stake for others.",
 		"witnesses.testimonials.items12.t1":
 			"There are three great truths, 1st, That there is a God; 2nd, That He has spoken to us in the Bible; 3rd, That He means what He says.",
 		"witnesses.testimonials.items12.t2":
@@ -609,8 +608,8 @@ export const ui = {
 			"There are many Christians who are Christians in theory only, and they are worldlings in practice.",
 		"witnesses.testimonials.items17.name": "Carrie Judd: 1858-1946",
 		"witnesses.testimonials.items17.job":
-		// TODO: 
-			"",
+			// TODO:
+			"Coming soon...",
 		"witnesses.testimonials.items17.t1":
 			"You get faith by studying the Word. Study that Word until something in you 'knows that you know' and that you do not just hope that you know.",
 		"witnesses.testimonials.items17.t2": "Divine healing is an eternal fact.",
@@ -643,8 +642,7 @@ export const ui = {
 			"I never before knew what it was to work all day and then pray all night before God for another… In college or at parties at home, I used to keep such hours for myself, or pleasure, and can I not do as much for God and souls?",
 		"witnesses.testimonials.items21.name": "John G. Lake: 1870-1935",
 		"witnesses.testimonials.items21.job":
-		// TODO: 
-			"This man showed to the world in multiple instances that Jesus still heals and that Jesus is above every other God and religion in the presence medical professionals.",
+			"This man showed the world that Jesus still heals by demonstrating God's supernatural healing power in the presence of multiple medical professionals. Not only did this happen multiple times, but he also challenged professors of other religions head-on to battles of power to see whether one's god is truly God. You know, Jesus won every time. Go and shake your world for Jesus!",
 		"witnesses.testimonials.items21.t1":
 			"When I saw for the first time by the Word of God that sickness was not the Will of God, everything in my nature rose up to defeat the will of the devil.",
 		"witnesses.testimonials.items21.t2":
@@ -657,22 +655,19 @@ export const ui = {
 		"witnesses.testimonials.items22.t2":
 			"Any man that is saved and sanctified can feel the fire burning in his heart, when he calls on the name of Jesus.",
 		"witnesses.testimonials.items23.name": "F. F. Bosworth: 1877-1958",
-		"witnesses.testimonials.items23.job":
-			"Coming soon...",
+		"witnesses.testimonials.items23.job": "Coming soon...",
 		"witnesses.testimonials.items23.t1":
 			"Some people wonder why they can't have faith for healing. They feed their body three hot meals a day, and their spirit one cold snack a week.",
 		"witnesses.testimonials.items23.t2":
 			"We see, from almost every conceivable angle throughout the Scripture, that there is no doctrine more clearly taught than that it is God's will to heal all who have need of healing, and that they may fulfill the number of their days according to His promise.",
 		"witnesses.testimonials.items24.name": "Evan Roberts: 1878-1951",
-		"witnesses.testimonials.items24.job":
-			"Coming soon...",
+		"witnesses.testimonials.items24.job": "In a church meeting, this young man leaned forward and started to pray in an intense and heartfelt voice, saying, Bend me, bend me, O God. The result was one of the mightiest revivals the earth has ever witnessed. Pubs, saloons, liquor stores, and dancing halls were all emptied because all the people of the cities went to the church gatherings. So mighty was the reformation that the police didn't have tasks to do, so they participated in the meetings, keeping up the order there while themselves hearing the words of salvation. Even the mining work was at stake because the asses of the swearing miners obeyed only when they were sweared at, but now none of the miners used a single swear word. To see the mighty glory of God poured upon cities and nations, there has always been an individual of prayer. Are you that individual?",
 		"witnesses.testimonials.items24.t1": "Bend me, bend me, O God.",
 		"witnesses.testimonials.items24.t2": "I am in the hands of Jesus.",
 		"witnesses.testimonials.items24.t3":
 			"Do not try to do great things, just try to be calm and patient. Let God speak through you.",
 		"witnesses.testimonials.items25.name": "A. W. Pink: 1886-1952",
-		"witnesses.testimonials.items25.job":
-			"Coming soon...",
+		"witnesses.testimonials.items25.job": "Coming soon...",
 		"witnesses.testimonials.items25.t1":
 			"The nature of Christ's salvation is woefully misrepresented by the present-day evangelist. He announces a Saviour from Hell rather than a Saviour from sin. And that is why so many are fatally deceived, for there are multitudes who wish to escape the Lake of fire who have no desire to be delivered from their carnality and worldliness.",
 		"witnesses.testimonials.items25.t2":
@@ -680,8 +675,7 @@ export const ui = {
 		"witnesses.testimonials.items25.t3":
 			"True liberty is not the power to live as we please, but to live as we ought.",
 		"witnesses.testimonials.items26.name": "Duncan Campbell: 1898-1972",
-		"witnesses.testimonials.items26.job":
-			"Coming soon...",
+		"witnesses.testimonials.items26.job": "Coming soon...",
 		"witnesses.testimonials.items26.t1":
 			"We are afraid of disturbing people today. You must not have their emotions stirred, you must not have the people weeping in a meeting, you must not have the people rolling on the floor under conviction of sin; keep things orderly.  May God help us, may God have mercy upon us. Who are we to dictate to Almighty God as to how He is going to work?",
 		"witnesses.testimonials.items26.t2":
@@ -689,8 +683,7 @@ export const ui = {
 		"witnesses.testimonials.items26.t3":
 			"The church that does not evangelize will fossilize.",
 		"witnesses.testimonials.items27.name": "Oswald J. Smith: 1889-1986",
-		"witnesses.testimonials.items27.job":
-			"Coming soon...",
+		"witnesses.testimonials.items27.job": "Not many have a heart for mission work like this man. If you want to find a shepherd who, even though working locally, is still burning and living to reach those who have not yet heard the gospel even once, then this is the man. My brother and sister, die for Jesus while making the gospel known wherever you are and making sure people will know that Jesus died for them.",
 		"witnesses.testimonials.items27.t1":
 			"We talk of the Second Coming; half the world has never heard of the first.",
 		"witnesses.testimonials.items27.t2":
@@ -698,8 +691,7 @@ export const ui = {
 		"witnesses.testimonials.items27.t3":
 			"I am perfectly confident that the man who does not spend hours alone with God will never know the anointing of the Holy Spirit. The world must be left outside until God alone fills the vision...God has promised to answer prayer. It is not that He is unwilling, for the fact is, He is more willing to give than we are to receive. But the trouble is, we are not ready...",
 		"witnesses.testimonials.items28.name": "Aimee Semple McPherson: 1890-1944",
-		"witnesses.testimonials.items28.job":
-			"Coming soon...",
+		"witnesses.testimonials.items28.job": "Coming soon...",
 		"witnesses.testimonials.items28.t1":
 			"What is my task? First of all, my task is to be pleasing to Christ. To be empty of self and be filled with Himself. To be filled with the Holy Spirit; to be led by the Holy Spirit.",
 		"witnesses.testimonials.items28.t2":
@@ -707,15 +699,13 @@ export const ui = {
 		"witnesses.testimonials.items28.t3":
 			"What is my task? To get the gospel around the world in the shortest possible time to every man and woman and boy and girl!",
 		"witnesses.testimonials.items29.name": "Corrie Ten Boom: 1892-1983",
-		"witnesses.testimonials.items29.job":
-			"Coming soon...",
+		"witnesses.testimonials.items29.job": "Coming soon...",
 		"witnesses.testimonials.items29.t1":
 			"Worry does not empty tomorrow of its sorrow, it empties today of its strength.",
 		"witnesses.testimonials.items29.t2":
 			"Forgiveness is an act of the will, and the will can function regardless of the temperature of the heart.",
 		"witnesses.testimonials.items30.name": "A. W. Tozer: 1897-1963",
-		"witnesses.testimonials.items30.job":
-			"Coming soon...",
+		"witnesses.testimonials.items30.job": "Coming soon...",
 		"witnesses.testimonials.items30.t1":
 			"A scared world needs a fearless church.",
 		"witnesses.testimonials.items30.t2":
@@ -723,22 +713,19 @@ export const ui = {
 		"witnesses.testimonials.items30.t3":
 			"True religion confronts earth with heaven and brings eternity to bear upon time.",
 		"witnesses.testimonials.items31.name": "Gladys Aylward: 1902-1970",
-		"witnesses.testimonials.items31.job":
-			"Coming soon...",
+		"witnesses.testimonials.items31.job": "Coming soon...",
 		"witnesses.testimonials.items31.t1":
 			"Oh God, here's my Bible, Here's my money. Here's me. Use me, God.",
 		"witnesses.testimonials.items31.t2":
 			"If God has called you to China or any other place and you are sure in your own heart, let nothing deter you.Remember, it is God who has called you and it is the same as when He called Moses or Samuel",
 		"witnesses.testimonials.items32.name": "Watchman Nee: 1903-1972",
-		"witnesses.testimonials.items32.job":
-			"Coming soon...",
+		"witnesses.testimonials.items32.job": "Coming soon...",
 		"witnesses.testimonials.items32.t1":
 			"Outside of Christ, I am only a sinner, but in Christ, I am saved. Outside of Christ, I am empty; in Christ, I am full. Outside of Christ, I am weak; in Christ, I am strong. Outside of Christ, I cannot; in Christ, I am more than able. Outside of Christ, I have been defeated; in Christ, I am already victorious. How meaningful are the words, 'in Christ.'",
 		"witnesses.testimonials.items32.t2":
 			"If you would test the character of anything, you only need to enquire whether that thing leads you to God or away from God.",
 		"witnesses.testimonials.items33.name": "David du Plessis: 1905-1987",
-		"witnesses.testimonials.items33.job":
-			"Coming soon...",
+		"witnesses.testimonials.items33.job": "Coming soon...",
 		"witnesses.testimonials.items33.t1":
 			"God's people are not called to walk by feelings or by sight, but by faith.",
 		"witnesses.testimonials.items33.t2":
@@ -746,8 +733,7 @@ export const ui = {
 		"witnesses.testimonials.items33.t3":
 			"The unity of the body of Christ is the key to the end-time harvest.",
 		"witnesses.testimonials.items34.name": "Kathryn Kuhlman: 1907-1976",
-		"witnesses.testimonials.items34.job":
-			"Coming soon...",
+		"witnesses.testimonials.items34.job": "Coming soon...",
 		"witnesses.testimonials.items34.t1":
 			"I believe in miracles, because I believe in God.",
 		"witnesses.testimonials.items34.t2":
@@ -757,15 +743,13 @@ export const ui = {
 		"witnesses.testimonials.items34.t4":
 			"I surrendered unto Him all there was of me; everything! Then for the first time I realized what it meant to have real power.",
 		"witnesses.testimonials.items35.name": "William M. Branham: 1909-1965",
-		"witnesses.testimonials.items35.job":
-			"Coming soon...",
+		"witnesses.testimonials.items35.job": "Coming soon...",
 		"witnesses.testimonials.items35.t1":
 			"The Holy Ghost will make you dress right, and live right, and talk right, and be right, when the Holy Ghost gets you. Amen. That's right.",
 		"witnesses.testimonials.items35.t2":
 			"Show me a man. Show me another Calvin, Knox, Finney, Sankey, or any of those who feels the burden of the people, that'll lay on their face and cry and pray before God. Send us a John Smith of the Baptist Church again, who prayed all night for the iniquity of the people until his eyes would be swelled shut the next morning from weeping, till his wife would lead him to the table and feed him his breakfast out of a spoon. Show me a John Wesley again, a firebrand snatched from the fire. I'll show you a revival.",
 		"witnesses.testimonials.items36.name": "A. A. Allen: 1911-1970",
-		"witnesses.testimonials.items36.job":
-			"Coming soon...",
+		"witnesses.testimonials.items36.job": "Coming soon...",
 		"witnesses.testimonials.items36.t1":
 			"If you are walking with Jesus, in the Spirit, you need not fear going too far. No believer has gone as far as God wants him to go.",
 		"witnesses.testimonials.items36.t2":
@@ -773,15 +757,13 @@ export const ui = {
 		"witnesses.testimonials.items36.t3":
 			"But just as Christ was willing to be crucified before He could send this power, we, too, must be willing to be crucified in order to be used for the benefit of others. Could this be the reason so many who claim to have the baptism of the Holy Spirit do not manifest the power? Isn't this a glaring defect in Pentecostal circles to which the skeptical churches and the unbelievers can point? Can we blame them?",
 		"witnesses.testimonials.items37.name": "Lester Sumrall: 1913-1996",
-		"witnesses.testimonials.items37.job":
-			"Coming soon...",
+		"witnesses.testimonials.items37.job": "Coming soon...",
 		"witnesses.testimonials.items37.t1":
 			"You are what you are because that is what you really want to be! We make decisions and those decisions make us who were are! You can judge anything in the world by this. God builds up and the Devil tears down.",
 		"witnesses.testimonials.items37.t2":
 			"Faith is not knowing that God can. It is knowing that He will.",
 		"witnesses.testimonials.items38.name": "Derek Prince: 1915-2003",
-		"witnesses.testimonials.items38.job":
-			"Coming soon...",
+		"witnesses.testimonials.items38.job": "Coming soon...",
 		"witnesses.testimonials.items38.t1":
 			"Consider the work of Calvary. A perfect work, perfect in every respect, perfect in every aspect",
 		"witnesses.testimonials.items38.t2":
@@ -789,8 +771,7 @@ export const ui = {
 		"witnesses.testimonials.items38.t3":
 			"God is more concerned with our character than with our achievements. Achievements have importance only in the realm of time. Character is eternal. It determines what we will be through eternity.",
 		"witnesses.testimonials.items39.name": "Kenneth E. Hagin: 1917-2003",
-		"witnesses.testimonials.items39.job":
-			"Coming soon...",
+		"witnesses.testimonials.items39.job": "Coming soon...",
 		"witnesses.testimonials.items39.t1":
 			"Central Truth: Prayer is successful only when it is based on the promises in God's Word!",
 		"witnesses.testimonials.items39.t2":
@@ -798,8 +779,7 @@ export const ui = {
 		"witnesses.testimonials.items39.t3":
 			"If what you hear preached doesn't cause faith to come and build faith in your spirit, then it either isn't the Word of God or else you're not hearing it",
 		"witnesses.testimonials.items40.name": "Oral Roberts: 1918-2009",
-		"witnesses.testimonials.items40.job":
-			"Coming soon...",
+		"witnesses.testimonials.items40.job": "Coming soon...",
 		"witnesses.testimonials.items40.t1":
 			"God is a good God, and the Devil is a bad Devil.",
 		"witnesses.testimonials.items40.t2":
@@ -807,8 +787,7 @@ export const ui = {
 		"witnesses.testimonials.items40.t3":
 			"Your faith begins to move, to act, when the power of God supernaturally empties you of doubt and fills you with a knowing. You come into a state of knowing that you know that you know. In that instant you cannot doubt.",
 		"witnesses.testimonials.items41.name": "Billy Graham: 1918-2018",
-		"witnesses.testimonials.items41.job":
-			"Coming soon...",
+		"witnesses.testimonials.items41.job": "Coming soon...",
 		"witnesses.testimonials.items41.t1":
 			"Being a Christian is more than just an instantaneous conversion; it is like a daily process whereby you grow to be more and more like Christ.",
 		"witnesses.testimonials.items41.t2":
@@ -816,8 +795,7 @@ export const ui = {
 		"witnesses.testimonials.items41.t3":
 			"My home is in Heaven. I'm just traveling through this world.",
 		"witnesses.testimonials.items42.name": "Jack Coe: 1918-1956",
-		"witnesses.testimonials.items42.job":
-			"Coming soon...",
+		"witnesses.testimonials.items42.job": "Coming soon...",
 		"witnesses.testimonials.items42.t1":
 			"If you have worry, you don't have faith, and if you have faith, you don't have worry.",
 		"witnesses.testimonials.items42.t2":
@@ -826,31 +804,27 @@ export const ui = {
 			"When Jesus comes in the scene, anything can happen, and usually does.",
 		"witnesses.testimonials.items43.name":
 			"Charles and Frances Hunter: 1920-2009, 1917-2008",
-		"witnesses.testimonials.items43.job":
-			"Coming soon...",
+		"witnesses.testimonials.items43.job": "Coming soon...",
 		"witnesses.testimonials.items43.t1":
 			"God wants us to be walking in the beauty of His holiness so all that people will be able to see is His glory, and nothing of our earthly selves. He is calling on the body of Christ to be so totally committed to Him that nothing else matters in ourlives and that we will be so 'in Him' that the worl dwill see Jesus in us.",
 		"witnesses.testimonials.items43.t2":
 			"Jesus touched the man AGAIN when he said he could only see men as trees, showing that we need not be ashamed to go back more than once for our healing.",
 		"witnesses.testimonials.items44.name":
 			"T. L. and Daisy Osborn. 1923-2013, 1924-1995",
-		"witnesses.testimonials.items44.job":
-			"Coming soon...",
+		"witnesses.testimonials.items44.job": "Coming soon...",
 		"witnesses.testimonials.items44.t1": "One Way: Jesus! One Job: Evangelism!",
 		"witnesses.testimonials.items44.t2":
 			"How can we call ourselves a church and not believe in healing and in miracles? I cannot read four pages anywhere in the Bible without encountering miracles! And the God of the bible is the same today!",
 		"witnesses.testimonials.items44.t3":
 			"The purpose of a spirit filled life is to demonstrate the supernatural power of our living God so that the unsaved multitudes will abandon their dead gods to call upon the name of The Lord and be delivered.",
 		"witnesses.testimonials.items45.name": "R. W. Schambach: 1926-2012",
-		"witnesses.testimonials.items45.job":
-			"Coming soon...",
+		"witnesses.testimonials.items45.job": "Coming soon...",
 		"witnesses.testimonials.items45.t1":
 			"You don't have any problems, all you need is faith in God.",
 		"witnesses.testimonials.items45.t2":
 			"When the devil starts messing, God starts blessing.",
 		"witnesses.testimonials.items46.name": "Jim Elliot: 1927-1956",
-		"witnesses.testimonials.items46.job":
-			"Coming soon...",
+		"witnesses.testimonials.items46.job": "Coming soon...",
 		"witnesses.testimonials.items46.t1":
 			"He is no fool who gives what he cannot keep to gain what he cannot lose.",
 		"witnesses.testimonials.items46.t2":
@@ -858,15 +832,13 @@ export const ui = {
 		"witnesses.testimonials.items46.t3":
 			"Rest in this - it is His business to lead, command, impel, send, call... It is your business to obey, follow, move, respond.",
 		"witnesses.testimonials.items47.name": "David Wilkerson: 1931-2011",
-		"witnesses.testimonials.items47.job":
-			"Coming soon...",
+		"witnesses.testimonials.items47.job": "Coming soon...",
 		"witnesses.testimonials.items47.t1":
 			"God hates the LUKEWARM GOSPEL OF HALF-TRUTHS that is now spreading over the Globe. This gospel says, 'Just believe in Jesus and you'll be Saved. There's nothing more to it.' It ignores the Whole Counsel of God, which speaks of Repenting from former Sins, of Taking up your Cross, of being conformed to the Image of Christ by the refining work of the Holy Spirit. It is totally silent about the Reality of Hell and an After-Death Judgment.",
 		"witnesses.testimonials.items47.t2":
 			"A humble person is not one who thinks little of himself, hangs his head and says, I'm nothing. Rather, he is one who depends wholly on the Lord for everything, in every circumstance.",
 		"witnesses.testimonials.items48.name": "Morris Cerrullo: 1931-2020",
-		"witnesses.testimonials.items48.job":
-			"Coming soon...",
+		"witnesses.testimonials.items48.job": "Coming soon...",
 		"witnesses.testimonials.items48.t1":
 			"Sometimes it's not good to reveal everything that God tells you, unless you are prepared to go through an awful period of criticism and unbelief until it comes to pass.",
 		"witnesses.testimonials.items48.t2":
@@ -874,8 +846,7 @@ export const ui = {
 		"witnesses.testimonials.items48.t3":
 			"Don't be satisfied with living below the full potential of prauer power Christ intended for His church",
 		"witnesses.testimonials.items49.name": "Benson Idahosa: 1938-1998",
-		"witnesses.testimonials.items49.job":
-			"Coming soon...",
+		"witnesses.testimonials.items49.job": "Coming soon...",
 		"witnesses.testimonials.items49.t1":
 			"When we have nothing left but God, we discover that God is enough",
 		"witnesses.testimonials.items49.t2":
@@ -883,8 +854,7 @@ export const ui = {
 		"witnesses.testimonials.items49.t3":
 			"Don't tell me how big your mountain is. Tell your mountain how BIG your God is.",
 		"witnesses.testimonials.items50.name": "Reinhard Bonnke: 1940-2019",
-		"witnesses.testimonials.items50.job":
-			"Coming soon...",
+		"witnesses.testimonials.items50.job": "Coming soon...",
 		"witnesses.testimonials.items50.t1":
 			"The less Holy Spirit we have, the more cake and coffee we need to keep the church going.",
 		"witnesses.testimonials.items50.t2":
@@ -1368,6 +1338,7 @@ export const ui = {
 			"Liity rukouskokoukseen joka toinen lauantai klo 18:00 GMT+2 alkaen.",
 		"prayer.callToAction.subtitle2":
 			"Zoom ID: 644 4069 4917, pääsykoodi: 467939",
+		"witnesses.temp": "Pyhän Hengen ohjauksen ja avun kautta lyhyet elämänkerta kuvaukset ovat uudelleenmuokkaustyön alla.",
 		"witnesses.hero.title.tagline": "Todistajat",
 		"witnesses.hero.title.span": "Hengellinen",
 		"witnesses.hero.title.title": " todistajien pilvi",
@@ -1381,22 +1352,19 @@ export const ui = {
 			"Te vastoin olette tulleet Siionin vuoren ja elävän Jumalan kaupungin, taivaallisen Jerusalemin, kymmenenientuhansien enkelien ja juhlajoukon luo, esikoisten seurakunnan luo, niiden sitä nimet ovat kirjoittaneet taivaissa, Jumalan luo, joka on kaikkien tuomari, ja täydellisiksi tulleiden vanhurskaiden henkien luo. Hep 12:22,23 FINRK",
 		"witnesses.testimonials.title":
 			"Uskon sanoja niiltä, jotka ovat kulkeneet edellämme",
-		"witnesses.testimonials.items1.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items1.job": "Tulossa pian...",
 		"witnesses.testimonials.items1.t1":
 			"Pelastumme yksin uskosta, mutta usko, joka pelastaa, ei ole koskaan yksin.",
 		"witnesses.testimonials.items1.t2":
 			"Ellei Raamattu ja selkeä syy minua tuomitse – en hyväksy paavien ja neuvostojen auktoriteettia, sillä ne ovat olleet ristiriidassa keskenään – minun omatuntoni on Jumalan Sanan vangitsema. En voi enkä aio kieltäytyä mistään, sillä omantunnon vastustaminen ei ole oikein eikä turvallista. Tässä minä seison, en voi tehdä toisin. Jumala auta minua. Aamen.",
-		"witnesses.testimonials.items2.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items2.job": "Tulossa pian...",
 		"witnesses.testimonials.items2.t1":
 			"Mies Jumalan kanssa on aina enemmistö.",
 		"witnesses.testimonials.items2.t2":
 			"Jumalan kirjoitukset ovat ainoa perustani ja olemukseni kaikissa painavissa ja tärkeissä asioissa.",
 		"witnesses.testimonials.items2.t3":
 			"En etsinyt ylivaltaa, kunniaa enkä rikkauksia; Minun kunniani oli, että Jeesus Kristus hallitsi.",
-		"witnesses.testimonials.items3.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items3.job": "Tulossa pian...",
 		"witnesses.testimonials.items3.t1":
 			"Syty tuleen Jumalalle, niin ihmiset tulevat katsomaan sinun palavan.",
 		"witnesses.testimonials.items3.t2":
@@ -1405,28 +1373,24 @@ export const ui = {
 			"Joka tahtoo hallita Kristuksen kanssa taivaassa, Kristuksen täytyy hallita hänen sisimpäänsä maan päällä.",
 		"witnesses.testimonials.items3.t4":
 			"Lukevat kristityt ovat kasvavia kristittyjä. Kun kristityt lakkaavat lukemasta, he lakkaavat kasvamasta.",
-		"witnesses.testimonials.items4.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items4.job": "Tulossa pian...",
 		"witnesses.testimonials.items4.t1":
 			"Päätös yksi: Elän Jumalalle. Päätös kaksi: Jos kukaan muu ei tee, niin minä teen silti.",
 		"witnesses.testimonials.items4.t2":
 			"Tosi ja uskollinen kristitty ei tee pyhästä elämästä sattumanvaraista asiaa. Se on hänen suuri huolensa. Kuten sotilaan tehtävä on taistella, niin kristityn tehtävä on olla Kristuksen kaltainen.",
 		"witnesses.testimonials.items4.t3":
 			"Jumalasta nauttiminen on ainoa onni, josta sielumme on tyytyväinen. Taivaaseen pääseminen sekä täysi nauttiminen Jumalasta ovat äärettömästi parempia kuin miellyttävimmät nautinnot maan päällä.",
-		"witnesses.testimonials.items5.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items5.job": "Tulossa pian...",
 		"witnesses.testimonials.items5.t1":
 			"Jos aiot vaeltaa Jeesuksen Kristuksen kanssa, sinua vastustetaan... Meidän päivinämme tosi kristittynä oleminen on oikeastaan olla skandaali.",
 		"witnesses.testimonials.items5.t2":
 			"Opi tuntemaan Hänet enemmän ja enemmän, sillä mitä enemmän tunnet Häntä, sitä enemmän tulet rakastamaan Häntä.",
-		"witnesses.testimonials.items6.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items6.job": "Tulossa pian...",
 		"witnesses.testimonials.items6.t1":
 			"En välitä minne menen tai kuinka elän tai mitä kestän pelastaakseni sieluja. Kun nukun, näen heistä unta; kun herään, he ovat ensimmäisenä ajatuksissani.",
 		"witnesses.testimonials.items6.t2":
 			"Haluan unohtaa maailman ja olla uppoutuneena Jumalan ylistämiseen.",
-		"witnesses.testimonials.items7.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items7.job": "Tulossa pian...",
 		"witnesses.testimonials.items7.t1":
 			"En pelkää epäonnistumista; Pelkään onnistuvani asioissa, joilla ei ole merkitystä.",
 		"witnesses.testimonials.items7.t2":
@@ -1435,187 +1399,160 @@ export const ui = {
 			"Niiden, joille evankeliumi on uskottu, velvollisuus on tehdä se tunnetuksi kaikkien kansojen keskuudessa.",
 		"witnesses.testimonials.items7.t4":
 			"On todellakin kannattavaa panostaa kaikella voimallaan Kristuksen työhön ja valtakunnan edistämiseen.",
-		"witnesses.testimonials.items8.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items8.job": "Tulossa pian...",
 		"witnesses.testimonials.items8.t1":
 			"Jokaisen kristityn tärkein tehtävä on pelastaa sieluja. Ihmiset valittavat, etteivät he tiedä, miten he voivat onnistua asiassa. Miksi, syy on erittäin selvä; he eivät ole koskaan perehtyneet asiaan. He eivät ole koskaan vaivautuneet. Jos et tee tästä itsellesi tärkeää asiaa ja opiskele, kuinka voit menestyä Kristuksen valtakunnan rakentamisessa, toimit kristittynä hyvin pahalla ja absurdilla tavalla.",
 		"witnesses.testimonials.items8.t2":
 			"Herätys on uusi vakaumus synnistä ja katumuksesta, jota seuraa voimakas halu elää kuuliaisesti Jumalalle. Se on syvässä näyryydessä oman tahdon antamista Jumalalle.",
-		"witnesses.testimonials.items9.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items9.job": "Tulossa pian...",
 		"witnesses.testimonials.items9.t1":
 			"Murehtimisen alku on uskon loppu, ja todellisen uskon alku on murehtimisen loppu.",
 		"witnesses.testimonials.items9.t2":
 			"Raha ei ole yhtään sen arvokkaampaa kuin se edistää Herran työtä. Elämä on yhtä arvokas kuinka suuressa mittakaavassa se käytetään Herran palvelukseen.",
-		"witnesses.testimonials.items10.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items10.job": "Tulossa pian...",
 		"witnesses.testimonials.items10.t1":
 			"Älköön yhtäkään hetkeä elämässäni vietettäkö Jumalan läsnäolon valon, rakkauden ja ilon ulkopuolella. Ei hetkeäkään ilman, että olen kokonaan luovuttanut itseni astiana, jonka hän voi täyttää Hengellään ja rakkaudellaan.",
 		"witnesses.testimonials.items10.t2":
 			"Jumala ei usein voi kuulla rukouksia huulillamme, koska sydämemme toiveet maailman perään huutavat Hänelle paljon voimakkaammin ja äänekkäämmin, kuin halumme Häntä kohtaan.",
-		"witnesses.testimonials.items11.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items11.job": "Tulossa pian...",
 		"witnesses.testimonials.items11.t1":
 			"Asetutko Hänen jalkoihinsa ja asetatko itsesi kokonaan Hänen käyttöönsä?",
 		"witnesses.testimonials.items11.t2":
 			"Et ole täällä maailmassa itseäsi varten. Sinut on lähetetty tänne muiden takia. Maailma odottaa sinua!",
 		"witnesses.testimonials.items11.t3":
 			"Mene suoraan sieluja kohti ja mene kaikkein pahimpien luo.",
-		"witnesses.testimonials.items12.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items12.job": "Tulossa pian...",
 		"witnesses.testimonials.items12.t1":
 			"On kolme suurta totuutta: 1. on olemassa Jumala, 2. Hän on puhunut meille Raamatussa, 3. Hän tarkoittaa, mitä Hän sanoo.",
 		"witnesses.testimonials.items12.t2":
 			"Suuri lähetyskäsky ei ole mielipideasia; se on käsky, jota on noudatettava.",
 		"witnesses.testimonials.items12.t3":
 			"Älä pidä konserttiasi ensin ja viritä sitten instrumenttisi. Aloita päivä Jumalan Sanalla ja rukouksella ja pääse ennen kaikkea harmoniaan Hänen kanssaan.",
-		"witnesses.testimonials.items13.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items13.job": "Tulossa pian...",
 		"witnesses.testimonials.items13.t1":
 			"Paras 'anteeksipyyntö' evankeliumille on kerota evankeliumi. Sinun ei tarvitse puolustaa 5. Mooseksen Kirjaa tai mitään Mooseksen kirjoista. Saarnaa Jeesusta Kristusta ja häntä ristiinnaulittuna. Juudan heimon leijona karkottaa pian kaikki vihollisensa.",
 		"witnesses.testimonials.items13.t2":
 			"Etkö halua muiden pelastuvan? Silloin et ole itse pelastunut, ole varma siitä!",
-		"witnesses.testimonials.items14.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items14.job": "Tulossa pian...",
 		"witnesses.testimonials.items14.t1":
 			"Jos hengellisesti kuolleemme aiotaan herättää, meidän on ensin saatava voimaa Jumalalta. Syy, miksi epäonnistumme niin usein voittamaan lähimmäisemme Kristukselle on, että yritämme voittaa heidät saamatta ensin voimaa Jumalalta. Jeesus oli yhteydessä Isänsä kanssa, joten Hän saattoi olla varma, että Hänen rukouksensa kuultiin.",
 		"witnesses.testimonials.items14.t2":
 			"Raamattua ei annettu meille informaatioksi, vaan meidän muuttamiseksi.",
-		"witnesses.testimonials.items15.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items15.job": "Tulossa pian...",
 		"witnesses.testimonials.items15.t1":
 			"Minä huomaan, että tunnollisilla Kristuksen seuraajilla on vain vähän lepoa täällä. Meidän on oltava Isämme töissä Mestarimme tavoin.",
 		"witnesses.testimonials.items15.t2":
 			"Paavali sanoo, että saarnaamisen on tapahduttava Hengen ja voiman osoittamisella. Pyhä Henki todistaa merkein ja ihmein; jos näillä eivät ole näkyvä osa jumalanpalvelustamme, emme voi menestyä.",
-		"witnesses.testimonials.items16.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items16.job": "Tulossa pian...",
 		"witnesses.testimonials.items16.t1":
 			"Kyneleeni pyyhittiin pois, sydämeni oli vahva, näin tien parantumiseen... Sanoin, Jumala auta minua nyt saarnaamaan Sanaa kaikille ympärillä oleville kuoleville ja kertomaan heille, kuinka Saatana edelleen saastuttaa ja Jeesus yhä vapauttaa, sillä Hän on sama tänään.",
 		"witnesses.testimonials.items16.t2":
 			"On monia kristittyjä, jotka ovat kristittyjä vain teoriassa, ja he ovat käytännössä osa maailmaa.",
-		"witnesses.testimonials.items17.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items17.job": "Tulossa pian...",
 		"witnesses.testimonials.items17.t1":
 			"Saat uskoa tutkimalla Sanaa. Tutki sitä, kunnes jokin sinussa 'tietää, että tiedät' etkä vain toivo tietäväsi.",
 		"witnesses.testimonials.items17.t2":
 			"Jumalallinen parantaminen on ikuinen tosiasia.",
 		"witnesses.testimonials.items17.t3":
 			"Kyllä, rakas lukija, meidän Jumalamme hallitsee, ja jos me kruunaamme hänet kaiken Herraksi, sielumme Herraksi, ruumiimme Herraksi ja kaikkien elämämme olosuhteiden Herraksi. Silloin huomaamme, että Hän yksin pystyy alistamaan kaiken valtaansa.",
-		"witnesses.testimonials.items18.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items18.job": "Tulossa pian...",
 		"witnesses.testimonials.items18.t1":
 			"Minua ei liikuta se, mitä näen. Minua liikuttaa vain se, mihin uskon. Tiedän tämän, kukaan mies ei katso ulkonäköä, jos hän uskoo. Kukaan ihminen ei ajattele, miltä hänestä tuntuu, jos hän uskoo. Miehellä, joka uskoo Jumalaan, on jo halumansa asia.",
 		"witnesses.testimonials.items18.t2":
 			"Jotkut ihmiset lukevat Raamattuaan hepreaksi, toiset kreikaksi; Tykkään lukea omaani Pyhässä Hengessä. Sinun on joka päivä noustava korkeammalle tasolle. Sinun täytyy kieltää itsesi edistyäksesi Jumalan kanssa.",
 		"witnesses.testimonials.items18.t3":
 			"Älä osallistu lounaan jälkeen kannattamattomaan keskusteluun, vaan lue luku Sanasta ja pidä rukoushetki. Pyrin tekemään tämän riippumatta siitä, missä olen.",
-		"witnesses.testimonials.items19.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items19.job": "Tulossa pian...",
 		"witnesses.testimonials.items19.t1":
 			"Uskon, että Raamattu on Jumalan sanaa kannesta kanteen.",
 		"witnesses.testimonials.items19.t2":
 			"Kääntyminen on täydellistä antautumista Jeesukselle. Se on halukkuutta tehdä mitä hän haluaa sinun tekevän.",
 		"witnesses.testimonials.items19.t3":
 			"Kunnioitan enemmän paholaista, kuin joitain tapaamiani saarnaajia; paholainen uskoo, että Raamattu on Jumalan sanaa!",
-		"witnesses.testimonials.items20.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items20.job": "Tulossa pian...",
 		"witnesses.testimonials.items20.t1":
 			"Kirkon uudistuminen riippuu rukouselämämme uudistumisesta.",
 		"witnesses.testimonials.items20.t2":
 			"En koskaan tiennyt, mitä on työskennellä koko päivän ja sitten rukoilla koko yön Jumalan edessä toisen puolesta… Yliopistossa tai juhlissa kotona, minulla oli tapana pitää ne tunnit itselleni tai huvikseni. Enkö voi nyt tehdä niin paljon Jumalalle ja sieluille?",
-		"witnesses.testimonials.items21.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items21.job": "Tulossa pian...",
 		"witnesses.testimonials.items21.t1":
 			"Kun näin ensimmäistä kertaa Jumalan Sanan kautta, että sairaus ei ollut Jumalan tahto, kaikki luonnossani nousi voittamaan paholaisen tahdon.",
 		"witnesses.testimonials.items21.t2":
 			"Jeesus ei parantanut sairaita houkutellakseen heitä olemaan kristittyjä. Hän paransi, koska Hänen luonteensa oli parantaa.",
-		"witnesses.testimonials.items22.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items22.job": "Tulossa pian...",
 		"witnesses.testimonials.items22.t1":
 			"Voin sanoa Hengen voimalla, että missä tahansa Jumala saa kansan, joka tulee yhteen yksimielisenä Jumalan sanassa, Pyhän Hengen kaste lankeaa heidän päälleen, kuten Korneliuksen talossa.",
 		"witnesses.testimonials.items22.t2":
 			"Jokainen pelastunut ja pyhitetty ihminen voi tuntea tulen palavan sydämessään, kun hän huutaa avukseen Jeesuksen nimeä.",
-		"witnesses.testimonials.items23.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items23.job": "Tulossa pian...",
 		"witnesses.testimonials.items23.t1":
 			"Jotkut ihmiset ihmettelevät, miksi he eivät voi uskoa paranemiseen. He ruokkivat ruumistaan kolmella lämpimällä aterialla päivässä ja henkeänsä yhdellä kylmällä välipalalla viikossa.",
 		"witnesses.testimonials.items23.t2":
 			"Näemme lähes kaikista mahdollisista näkökulmista koko Raamatussa, ettei ole olemassa selkeämmin opetettua oppia kuin se, että Jumalan tahto on parantaa kaikki, jotka tarvitsevat parantumista, ja että he voivat täyttää päivänsä Hänen lupauksensa mukaisesti.",
-		"witnesses.testimonials.items24.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items24.job": "Tulossa pian...",
 		"witnesses.testimonials.items24.t1":
 			"Taivuta minua, taivuta minua, oi Jumala.",
 		"witnesses.testimonials.items24.t2": "Olen Jeesuksen käsissä.",
 		"witnesses.testimonials.items24.t3":
 			"Älä yritä tehdä suuria asioita, yritä vain olla rauhallinen ja kärsivällinen. Anna Jumalan puhua sinun kauttasi.",
-		"witnesses.testimonials.items25.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items25.job": "Tulossa pian...",
 		"witnesses.testimonials.items25.t1":
 			"Nykyinen evankelista antaa valitettavan väärän kuvan Kristuksen pelastuksen luonteesta. Hän julistaa Vapahtajaa helvetistä ennemmin kuin Vapahtajaa synnistä. Ja siksi niin monet joutuvat kohtalokkaasti petetyksi, sillä on suuri joukko, jotka haluavat paeta tulijärvestä ja jotka eivät halua vapautua lihallisuudestaan ja maailmallisuudestaan.",
 		"witnesses.testimonials.items25.t2":
 			"Ei synnin poissaolo, vaan sen aiheuttama murhe erottaa Jumalan lapsen tyhjien sanojen puhujista.",
 		"witnesses.testimonials.items25.t3":
 			"Todellinen vapaus ei ole valtaa elää niin kuin haluamme, vaan sitä, että voimme elää niin kuin meidän tulee.",
-		"witnesses.testimonials.items26.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items26.job": "Tulossa pian...",
 		"witnesses.testimonials.items26.t1":
 			"Pelkäämme häiritsevämme ihmisiä tänään. Sinun ei pidä saada heidän tunteitaan hermostumaan, heitä ei pidä saada itkemään kokouksessa, et saa saada heitä pyörimään lattialla synnin tuomitsemana; asiat pitää pitää järjestyksessä. Jumala auttakoon meitä, Jumala armahtakoon meitä. Keitä me olemme sanelemaan Kaikkivaltiaalle Jumalalle, kuinka Hänen tulee toimia?",
 		"witnesses.testimonials.items26.t2":
 			"Tänään julistetaan eräänlaista evankeliumia, joka mukautuu sopivasti aikakauden henkeen eikä vaadi jumalisuutta.",
 		"witnesses.testimonials.items26.t3":
 			"Kirkko, joka ei evankelioi, fossiloituu.",
-		"witnesses.testimonials.items27.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items27.job": "Tulossa pian...",
 		"witnesses.testimonials.items27.t1":
 			"Puhumme toisesta tulemisesta; puolet maailmasta ei ole koskaan kuullut ensimmäisestä.",
 		"witnesses.testimonials.items27.t2":
 			"Jokainen kirkko, joka ei ole vakavasti mukana Suuren lähetyskäskyn toteuttamisessa, on menettänyt raamatullisen oikeutensa olemassaoloon.",
 		"witnesses.testimonials.items27.t3":
 			"Olen täysin varma siitä, että mies, joka ei vietä tunteja yksin Jumalan kanssa, ei koskaan saa tietää Pyhän Hengen voitelusta. Maailma on jätettävä ulkopuolelle, kunnes Jumala yksin täyttää näyn...Jumala on luvannut vastata rukoukseen. Hän ei ole haluton, sillä tosiasia on, että Hän on halukkaampi antamaan kuin me saamaan. Mutta ongelma on se, ettemme ole valmiita...",
-		"witnesses.testimonials.items28.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items28.job": "Tulossa pian...",
 		"witnesses.testimonials.items28.t1":
 			"Mikä on minun tehtäväni? Ensinnäkin minun tehtäväni on miellyttää Kristusta. Olla tyhjä itsestään ja olla täynnä Häntä, täyttyä Pyhällä Hengellä ja olla Pyhän Hengen johdattama.",
 		"witnesses.testimonials.items28.t2":
 			"Me kaikki teemme Jeesukselle tästä jokapäiväisestä elämästämme kruunun, joko kultaisen, jumalallisen rakkauden kruunun, joka on täynnä uhrauksen ja palvonnan jalokiviä, tai orjantappuraisen kruunun, joka on täynnä epäuskon tai itsekkyyden julmia harsoja, ja syntiä.",
 		"witnesses.testimonials.items28.t3":
 			"Mikä on minun tehtäväni? Saada   evankeliumia ympäri maailmaa mahdollisimman lyhyessä ajassa jokaiselle miehelle ja naiselle ja pojalle ja tytölle!",
-		"witnesses.testimonials.items29.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items29.job": "Tulossa pian...",
 		"witnesses.testimonials.items29.t1":
 			"Huoli ei tyhjennä huomista surusta, se tyhjentää tämän päivän sen voimasta.",
 		"witnesses.testimonials.items29.t2":
 			"Anteeksiantaminen on tahdon teko, ja tahto voi toimia sydämen lämpötilasta riippumatta.",
-		"witnesses.testimonials.items30.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items30.job": "Tulossa pian...",
 		"witnesses.testimonials.items30.t1":
 			"Pelokas maailma tarvitsee pelottonta seurakuntaa.",
 		"witnesses.testimonials.items30.t2":
 			"Se mitä tulee mieleemme, kun ajattelemme Jumalaa, on tärkeintä meissä.",
 		"witnesses.testimonials.items30.t3":
 			"Todellinen uskonto kohtaa maan taivaan kanssa ja tuo iankaikkisuuden aikaan.",
-		"witnesses.testimonials.items31.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items31.job": "Tulossa pian...",
 		"witnesses.testimonials.items31.t1":
 			"Voi Jumala, tässä on minun Raamattuni, tässä on minun rahani. Tässä minä. Käytä minua, Jumala!",
 		"witnesses.testimonials.items31.t2":
 			"Jos Jumala on kutsunut sinut Kiinaan tai johonkin muuhun paikkaan ja olet varma omasta sydämestäsi, älä anna minkään estää sinua. Muista, että Jumala on kutsunut sinut ja se on sama kuin silloin, kun Hän kutsui Mooseksen tai Samuelin.",
-		"witnesses.testimonials.items32.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items32.job": "Tulossa pian...",
 		"witnesses.testimonials.items32.t1":
 			"Kristuksen ulkopuolella olen vain syntinen, mutta Kristuksessa olen pelastettu. Kristuksen ulkopuolella olen tyhjä; Kristuksessa olen kylläinen. Kristuksen ulkopuolella olen heikko; Kristuksessa olen vahva. Kristuksen ulkopuolella en voi; Kristuksessa olen enemmän kuin kykenevä. Kristuksen ulkopuolella olen voitettu; Kristuksessa olen jo voittaja. Kuinka merkityksellinen on sana 'Kristuksessa'",
 		"witnesses.testimonials.items32.t2":
 			"Jos testaat jonkun luonnetta, sinun tarvitsee vain tiedustella, johtaako se sinut Jumalan luo vai pois Jumalasta.",
-		"witnesses.testimonials.items33.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items33.job": "Tulossa pian...",
 		"witnesses.testimonials.items33.t1":
 			"Jumalan kansaa ei ole kutsuttu vaeltamaan tunteiden tai näön, vaan uskon kautta.",
 		"witnesses.testimonials.items33.t2":
 			"Jeesuksen Kristuksen kirkko on rakennettu ilmestyksen kalliolle, eivätkä helvetin portit voita sitä.",
 		"witnesses.testimonials.items33.t3":
 			"Kristuksen ruumiin ykseys on avain lopunajan sadonkorjuuseen.",
-		"witnesses.testimonials.items34.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items34.job": "Tulossa pian...",
 		"witnesses.testimonials.items34.t1":
 			"Uskon ihmeisiin, koska uskon Jumalaan.",
 		"witnesses.testimonials.items34.t2":
@@ -1624,120 +1561,104 @@ export const ui = {
 			"En ole parantaja, enkä ihmeidentekijä. Olen vain pieni ei kukaan, kerron kaikille jostain, joka voi pelastaa kenet tahansa.",
 		"witnesses.testimonials.items34.t4":
 			"Annoin Hänelle kaiken, mitä minusta oli; kaiken! Sitten ensimmäistä kertaa tajusin, mitä todellinen voima merkitsee.",
-		"witnesses.testimonials.items35.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items35.job": "Tulossa pian...",
 		"witnesses.testimonials.items35.t1":
 			"Pyhä Henki saa sinut pukeutumaan oikein ja elämään oikein, puhumaan oikein ja olemaan oikein, kun Pyhä Henki todella saa sinut. Aamen. Se on oikein.",
 		"witnesses.testimonials.items35.t2":
 			"Näytä minulle mies. Näytä minulle toinen Calvin, Knox, Finney, Sankey tai joku niistä, jotka tuntevat ihmisten taakan, jotka makaavat heidän kasvoillaan ja itkevät ja rukoilevat Jumalan edessä. Lähetä meille jälleen John Smith baptistiseurakunnasta, joka rukoili koko yön ihmisten pahuuden puolesta, kunnes hänen silmänsä turposivat seuraavana aamuna itkemästä, kunnes hänen vaimonsa johdatti hänet pöytään ja syötti hänelle aamiaisen lusikka. Näytä minulle taas John Wesley, tulesta temmattu oksa. Näytän sinulle herätyksen.",
-		"witnesses.testimonials.items36.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items36.job": "Tulossa pian...",
 		"witnesses.testimonials.items36.t1":
 			"Jos kuljet Jeesuksen kanssa Hengessä, sinun ei tarvitse pelätä menemistä liian pitkälle. Yksikään uskova ei ole mennyt niin pitkälle kuin Jumala haluaa hänen menevän.",
 		"witnesses.testimonials.items36.t2":
 			"Ennen kuin ihminen voi vaeltaa niin kuin Kristus vaelsi ja puhua niin kuin Hän puhui, hänen on ensin alettava ajatella niin kuin Kristus ajatteli.",
 		"witnesses.testimonials.items36.t3":
 			"Mutta aivan, kuten Kristus oli halukas tulemaan ristiinnaulittavaksi ennen kuin Hän saattoi toimia tämän voiman, meidänkin täytyy olla valmiita ristiinnaulituksi, jotta voimme käyttää meitä muiden hyväksi. Voisiko tämä olla syynä siihen, että niin monet, jotka väittävät saaneensa Pyhän Hengen kasteen, eivät osoita voimaa? Eikö tämä ole räikeä vika helluntailaispiireissä, johon skeptiset seurakunnat ja epäuskoiset voivat viitata? Voimmeko syyttää heitä?",
-		"witnesses.testimonials.items37.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items37.job": "Tulossa pian...",
 		"witnesses.testimonials.items37.t1":
 			"Olet mitä olet, koska sitä sinä todella haluat olla! Me teemme päätöksiä ja ne päätökset tekevät meistä sen, mitä olemme! Tämän perusteella voit arvioida mitä tahansa maailmassa. Jumala rakentaa ja Paholainen repii alas.",
 		"witnesses.testimonials.items37.t2":
 			"Usko ei ole sitä, että tiedät, että Jumala voi. Se on sen tietämistä, että Hän tekee.",
-		"witnesses.testimonials.items38.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items38.job": "Tulossa pian...",
 		"witnesses.testimonials.items38.t1":
 			"Ajatelkaa Golgatan työtä. Täydellinen työ, täydellinen kaikin puolin, täydellinen kaikilta osin.",
 		"witnesses.testimonials.items38.t2":
 			"Tietenkään kristinusko ei ole joukko sääntöjä.",
 		"witnesses.testimonials.items38.t3":
 			"Jumala on enemmän huolissaan luonteestamme kuin saavutuksistamme. Saavutuksilla on merkitystä vain ajassa. Luonne on ikuinen. Se määrittää, mitä me olemme ikuisuuden läpi.",
-		"witnesses.testimonials.items39.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items39.job": "Tulossa pian...",
 		"witnesses.testimonials.items39.t1":
 			"Keskeinen totuus: Rukous onnistuu vain, kun se perustuu Jumalan sanan lupauksiin!",
 		"witnesses.testimonials.items39.t2":
 			"Usko se sydämessäsi; sano se suullasi. Se on uskon periaate. Saat mitä sanot.",
 		"witnesses.testimonials.items39.t3":
 			"Jos se, mitä kuulet saarnattavan, ei saa uskoa tulemaan ja rakentamaan uskoa hengessäsi, niin se joko ei ole Jumalan Sanaa tai et kuule sitä.",
-		"witnesses.testimonials.items40.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items40.job": "Tulossa pian...",
 		"witnesses.testimonials.items40.t1":
 			"Jumala on hyvä Jumala ja Paholainen on paha paholainen.",
 		"witnesses.testimonials.items40.t2":
 			"Usko ei ole jotain, mitä sinun tarvitsee saada. Se on jotain, joka sinulla Jumalan uudestisyntyneenä lapsena jo on. Toimi sen mukaisesti vapauttamalla se Jumalalle. Silloin paranemisesi alkaa!",
 		"witnesses.testimonials.items40.t3":
 			"Uskosi alkaa liikkua, toimia, kun Jumalan voima yliluonnollisesti tyhjentää sinut epäilystä ja täyttää sinut tuntemisella. Tulet tilaan, jossa tiedät, että tiedät tietäväsi. Siinä hetkessä et voi epäillä.",
-		"witnesses.testimonials.items41.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items41.job": "Tulossa pian...",
 		"witnesses.testimonials.items41.t1":
 			"Kristitynä oleminen on enemmän kuin vain välitöntä kääntymystä; se on jokapäiväinen prosessi, jossa kasvat yhä enemmän Kristuksen kaltaiseksi.",
 		"witnesses.testimonials.items41.t2":
 			"Suurin perintö, jonka voi siirtää lapsilleen ja lastenlapsille, ei ole raha tai muu elämässä kertynyttä aineellista, vaan luonteen ja uskon perintö.",
 		"witnesses.testimonials.items41.t3":
 			"Kotini on taivas. Matkustan vain tämän maailman halki.",
-		"witnesses.testimonials.items42.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items42.job": "Tulossa pian...",
 		"witnesses.testimonials.items42.t1":
 			"Jos olet huolissasi, sinulla ei ole uskoa, ja jos sinulla on uskoa, sinulla ei ole huolta.",
 		"witnesses.testimonials.items42.t2":
 			"Pelko ei voi jäädä samaan taloon Jeesuksen Kristuksen kanssa.",
 		"witnesses.testimonials.items42.t3":
 			"Kun Jeesus tulee paikalle, mitä tahansa voi tapahtua, ja yleensä tapahtuu.",
-		"witnesses.testimonials.items43.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items43.job": "Tulossa pian...",
 		"witnesses.testimonials.items43.t1":
 			"Jumala haluaa meidän vaeltavan Hänen pyhyytensä kauneudessa, jotta kaikki, mitä ihmiset voivat nähdä, on Hänen kunniaansa, eikä mitään maallista itseämme. Hän kutsuu Kristuksen ruumista olemaan niin täysin sitoutunut Häneen, ettei millään muulla ole elämässämme merkitystä ja että me olemme niin 'Hänessä', että maailma näkee Jeesuksen meissä.",
 		"witnesses.testimonials.items43.t2":
 			"Jeesus kosketti UUDELLEEN miestä, kun hän sanoi näkevänsä ihmiset vain puita, mikä osoitti, että meidän ei tarvitse hävetä palatessamme rukoiltavaksi useammin kuin kerran parantuaksemme.",
-		"witnesses.testimonials.items44.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items44.job": "Tulossa pian...",
 		"witnesses.testimonials.items44.t1":
 			"Yksi tie: Jeesus! Yksi työ: evankeliointi!",
 		"witnesses.testimonials.items44.t2":
 			"Kuinka voimme kutsua itseämme seurakunnaksi ja olla uskomatta paranemiseen ja ihmeisiin? En voi lukea neljää sivua Raamatusta kohtaamatta ihmeitä! Ja Raamatun Jumala on sama tänään!",
 		"witnesses.testimonials.items44.t3":
 			"Hengentäytetyn elämän tarkoitus on osoittaa elävän Jumalamme yliluonnollinen voima, jotta pelastumattomat joukot hylkäävät kuolleet jumalansa huutaakseen avuksi Herran nimeä pelastuakseen.",
-		"witnesses.testimonials.items45.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items45.job": "Tulossa pian...",
 		"witnesses.testimonials.items45.t1":
 			"Sinulla ei ole mitään ongelmia, tarvitset vain uskoa Jumalaan.",
 		"witnesses.testimonials.items45.t2":
 			"Kun paholainen alkaa sotkea, Jumala alkaa siunata.",
 		"witnesses.testimonials.items45.t3":
 			"Usko on ainoa asia, joka miellyttää Jumalaa. Kun astut uskon askeleen, et koskaan joudu pettymään.",
-		"witnesses.testimonials.items46.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items46.job": "Tulossa pian...",
 		"witnesses.testimonials.items46.t1":
 			"Hullu ei ole se, joka antaa sen, mitä ei voi pitää saadakseen sen, mitä ei voi menettää. ",
 		"witnesses.testimonials.items46.t2":
 			"Jumala antaa aina parhaansa niille, jotka jättävät valinnan hänelle.",
 		"witnesses.testimonials.items46.t3":
 			"Lepää tässä - Hänen asiansa on johtaa, käskeä, kannustaa, lähettää, kutsua... Sinun asiasi on totella, seurata, liikkua, vastata.",
-		"witnesses.testimonials.items47.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items47.job": "Tulossa pian...",
 		"witnesses.testimonials.items47.t1":
 			"Jumala vihaa PUOLITOTUUSTEN KÄDENLÄMPÖISTÄ EVANKELIUMIA, joka nyt leviää ympäri maapalloa. Tämä evankeliumi sanoo: 'Usko vain Jeesukseen, niin sinä pelastut.' Siinä ei ole mitään muuta. Se jättää huomiotta Jumalan koko sanan, joka puhuu parannuksen tekemisestä entisistä synneistä, ristin ottamista sekä Kristuksen kuvaan mukautumisesta Pyhän Hengen puhdistavan työn kautta. Se on täysin hiljaa helvetin todellisuudesta ja kuoleman jälkeisestä tuomiosta.",
 		"witnesses.testimonials.items47.t2":
 			"Nöyrä ihminen ei ole sellainen, joka ajattelee vähän itsestään, painaa päänsä alas ja sanoo: en ole mitään. Pikemminkin sellainen ihminen, joka on täysin riippuvainen Herrasta kaikessa ja kaikissa olosuhteissa.",
-		"witnesses.testimonials.items48.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items48.job": "Tulossa pian...",
 		"witnesses.testimonials.items48.t1":
 			"Joskus ei ole hyvä paljastaa kaikkea, mitä Jumala sinulle sanoo, ellet ole valmis käymään läpi kauheaa kritiikin ja epäuskon aikaa, kunnes se tapahtuu.",
 		"witnesses.testimonials.items48.t2":
 			"Tee tämä julistus: Kuolema ja elämä ovat kieleni vallassa. Valitsen Elämän!",
 		"witnesses.testimonials.items48.t3":
 			"Älä tyydy elämään sen rukousvoiman täyden potentiaalin alapuolella, jonka Kristus on asettanut seurakunnalleen.",
-		"witnesses.testimonials.items49.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items49.job": "Tulossa pian...",
 		"witnesses.testimonials.items49.t1":
 			"Kun meillä ei ole muuta jäljellä kuin Jumala, huomaamme, että Jumala riittää.",
 		"witnesses.testimonials.items49.t2":
 			"Elämänmuutosta ei vaadita, jotta Jumala hyväksyy ihmiset. Hän pyytää vain sydämen muutosta.",
 		"witnesses.testimonials.items49.t3":
 			"Älä kerro minulle, kuinka suuri vuoresi on. Kerro vuorelle, kuinka SUURI Jumalasi on.",
-		"witnesses.testimonials.items50.job":
-			"Tulossa pian...",
+		"witnesses.testimonials.items50.job": "Tulossa pian...",
 		"witnesses.testimonials.items50.t1":
 			"Mitä vähemmän meillä on Pyhää Henkeä, sitä enemmän kakkua ja kahvia tarvitsemme pitääksemme seurakunnan toiminnassa.",
 		"witnesses.testimonials.items50.t2":
