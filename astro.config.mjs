@@ -71,16 +71,16 @@ export default defineConfig({
 
     tasks(),
 
-    // compress({
-    //   CSS: true,
-    //   HTML: {
-    //     removeAttributeQuotes: false,
-    //   },
-    //   Image: false,
-    //   JavaScript: true,
-    //   SVG: true,
-    //   Logger: 1,
-    // }),
+    compress({
+      CSS: true,
+      HTML: {
+        removeAttributeQuotes: false,
+      },
+      Image: false,
+      JavaScript: true,
+      SVG: true,
+      Logger: 1,
+    }),
   ],
 
   markdown: {
