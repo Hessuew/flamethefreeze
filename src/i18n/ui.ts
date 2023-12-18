@@ -464,7 +464,8 @@ export const ui = {
 		"prayer.callToAction.subtitle":
 			"Join us in prayer meeting every other Saturday starting at 18:00 GMT+2.",
 		"prayer.callToAction.subtitle2": "Zoom ID: 644 4069 4917, Passcode: 467939",
-		"witnesses.temp": "The short biographies of the people are under refactoring as guided and inspired by the Holy Spirit.",
+		"witnesses.temp":
+			"The short biographies of the people are under refactoring as guided and inspired by the Holy Spirit.",
 		"witnesses.hero.title.tagline": "Witnesses",
 		"witnesses.hero.title.title": " cloud of witnesses",
 		"witnesses.hero.title.subtitle":
@@ -608,8 +609,7 @@ export const ui = {
 			"There are many Christians who are Christians in theory only, and they are worldlings in practice.",
 		"witnesses.testimonials.items17.name": "Carrie Judd: 1858-1946",
 		"witnesses.testimonials.items17.job":
-			// TODO:
-			"Coming soon...",
+			"When God calls someone, the person is truly called. This woman of faith fought and declared the healing power of God with her black friend in a time when women preachers, black people, and divine healing were all opposed. Yet none of those things put her down. At this present moment, the church is overtaken by greed, wordliness, lukewarmness, and hypocrisy. Are you going to fight the good fight of faith through the power of God? Are you going to see a change in the whole moral climate of the body of Christ and civilizations?",
 		"witnesses.testimonials.items17.t1":
 			"You get faith by studying the Word. Study that Word until something in you 'knows that you know' and that you do not just hope that you know.",
 		"witnesses.testimonials.items17.t2": "Divine healing is an eternal fact.",
@@ -661,7 +661,8 @@ export const ui = {
 		"witnesses.testimonials.items23.t2":
 			"We see, from almost every conceivable angle throughout the Scripture, that there is no doctrine more clearly taught than that it is God's will to heal all who have need of healing, and that they may fulfill the number of their days according to His promise.",
 		"witnesses.testimonials.items24.name": "Evan Roberts: 1878-1951",
-		"witnesses.testimonials.items24.job": "In a church meeting, this young man leaned forward and started to pray in an intense and heartfelt voice, saying, Bend me, bend me, O God. The result was one of the mightiest revivals the earth has ever witnessed. Pubs, saloons, liquor stores, and dancing halls were all emptied because all the people of the cities went to the church gatherings. So mighty was the reformation that the police didn't have tasks to do, so they participated in the meetings, keeping up the order there while themselves hearing the words of salvation. Even the mining work was at stake because the asses of the swearing miners obeyed only when they were sweared at, but now none of the miners used a single swear word. To see the mighty glory of God poured upon cities and nations, there has always been an individual of prayer. Are you that individual?",
+		"witnesses.testimonials.items24.job":
+			"In a church meeting, this young man leaned forward and started to pray in an intense and heartfelt voice, saying, Bend me, bend me, O God. The result was one of the mightiest revivals the earth has ever witnessed. Pubs, saloons, liquor stores, and dancing halls were all emptied because all the people of the cities went to the church gatherings. So mighty was the reformation that the police didn't have tasks to do, so they participated in the meetings, keeping up the order there while themselves hearing the words of salvation. Even the mining work was at stake because the asses of the swearing miners obeyed only when they were sweared at, but now none of the miners used a single swear word. To see the mighty glory of God poured upon cities and nations, there has always been an individual of prayer. Are you that individual?",
 		"witnesses.testimonials.items24.t1": "Bend me, bend me, O God.",
 		"witnesses.testimonials.items24.t2": "I am in the hands of Jesus.",
 		"witnesses.testimonials.items24.t3":
@@ -683,7 +684,8 @@ export const ui = {
 		"witnesses.testimonials.items26.t3":
 			"The church that does not evangelize will fossilize.",
 		"witnesses.testimonials.items27.name": "Oswald J. Smith: 1889-1986",
-		"witnesses.testimonials.items27.job": "Not many have a heart for mission work like this man. If you want to find a shepherd who, even though working locally, is still burning and living to reach those who have not yet heard the gospel even once, then this is the man. My brother and sister, die for Jesus while making the gospel known wherever you are and making sure people will know that Jesus died for them.",
+		"witnesses.testimonials.items27.job":
+			"Not many have a heart for mission work like this man. If you want to find a shepherd who, even though working locally, is still burning and living to reach those who have not yet heard the gospel even once, then this is the man. My brother and sister, die for Jesus while making the gospel known wherever you are and making sure people will know that Jesus died for them.",
 		"witnesses.testimonials.items27.t1":
 			"We talk of the Second Coming; half the world has never heard of the first.",
 		"witnesses.testimonials.items27.t2":
@@ -1338,7 +1340,8 @@ export const ui = {
 			"Liity rukouskokoukseen joka toinen lauantai klo 18:00 GMT+2 alkaen.",
 		"prayer.callToAction.subtitle2":
 			"Zoom ID: 644 4069 4917, pääsykoodi: 467939",
-		"witnesses.temp": "Pyhän Hengen ohjauksen ja avun kautta lyhyet elämänkerta kuvaukset ovat uudelleenmuokkaustyön alla.",
+		"witnesses.temp":
+			"Pyhän Hengen ohjauksen ja avun kautta lyhyet elämänkerta kuvaukset ovat uudelleenmuokkaustyön alla.",
 		"witnesses.hero.title.tagline": "Todistajat",
 		"witnesses.hero.title.span": "Hengellinen",
 		"witnesses.hero.title.title": " todistajien pilvi",
