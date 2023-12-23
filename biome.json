@@ -5,17 +5,11 @@
 	},
 	"linter": {
 		"enabled": true,
-		"include": [
-			"*.astro"
-		],
 		"rules": {
 			"recommended": true
 		}
 	},
 	"formatter": {
-		"enabled": true,
-		"include": [
-			"*.astro"
-		]
+		"enabled": true
 	}
 }
