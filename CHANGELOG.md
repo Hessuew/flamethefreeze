@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.0.0](https://github.com/Hessuew/flamethefreeze/compare/v1.8.0...v2.0.0) (2023-12-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* new package versions ([#50](https://github.com/Hessuew/flamethefreeze/issues/50))
+* new package versions
+
+### Features
+
+* new package versions ([#50](https://github.com/Hessuew/flamethefreeze/issues/50)) ([dcb5aae](https://github.com/Hessuew/flamethefreeze/commit/dcb5aaec504aad38dcad2da3f89fd476face9468))
+
+
+### Miscellaneous Chores
+
+* new package versions ([dcdd121](https://github.com/Hessuew/flamethefreeze/commit/dcdd1214aee1f3ef547ee3ae5bf57d01b51ca0f6))
+
 ## [1.8.0](https://github.com/Hessuew/flamethefreeze/compare/v1.7.2...v1.8.0) (2023-12-16)
 
 
