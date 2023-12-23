@@ -655,7 +655,7 @@ export const ui = {
 		"witnesses.testimonials.items22.t2":
 			"Any man that is saved and sanctified can feel the fire burning in his heart, when he calls on the name of Jesus.",
 		"witnesses.testimonials.items23.name": "F. F. Bosworth: 1877-1958",
-		"witnesses.testimonials.items23.job": "Coming soon...",
+		"witnesses.testimonials.items23.job": "He went to Zion City and lived next to John G. Lake. Then they heard of the Azusa Street revival, went there, and were filled with the Holy Spirit. Then was the time to heal the sick. He cooperated with William Branham, for that man had tremendous success in teaching and Bosworth healing the sick. When he was of retirement age, he saw how it was possible to profess to great crowds the healing power of Christ, and sick people were healed. He returned to the ministry. A stationary stone will get mossy, but a rolling stone will never. Are you a stationary stone or a rolling one? Roll 100% for Christ today!",
 		"witnesses.testimonials.items23.t1":
 			"Some people wonder why they can't have faith for healing. They feed their body three hot meals a day, and their spirit one cold snack a week.",
 		"witnesses.testimonials.items23.t2":
@@ -668,7 +668,7 @@ export const ui = {
 		"witnesses.testimonials.items24.t3":
 			"Do not try to do great things, just try to be calm and patient. Let God speak through you.",
 		"witnesses.testimonials.items25.name": "A. W. Pink: 1886-1952",
-		"witnesses.testimonials.items25.job": "Coming soon...",
+		"witnesses.testimonials.items25.job": "This man was preaching the gospel and writing through the guidance of the Holy Spirit, as the Word of God was actually true and meant what it said. He did not fear severe opposition or contradictions, but he wanted to wake up the sleeping church. Are you part of a sleeping church and even content with it? Do you actually live according to the truth of the gospel? Now is the time to wake up! NOW is the time to rise from the dead, and Christ shall give you light.",
 		"witnesses.testimonials.items25.t1":
 			"The nature of Christ's salvation is woefully misrepresented by the present-day evangelist. He announces a Saviour from Hell rather than a Saviour from sin. And that is why so many are fatally deceived, for there are multitudes who wish to escape the Lake of fire who have no desire to be delivered from their carnality and worldliness.",
 		"witnesses.testimonials.items25.t2":
@@ -676,7 +676,7 @@ export const ui = {
 		"witnesses.testimonials.items25.t3":
 			"True liberty is not the power to live as we please, but to live as we ought.",
 		"witnesses.testimonials.items26.name": "Duncan Campbell: 1898-1972",
-		"witnesses.testimonials.items26.job": "Coming soon...",
+		"witnesses.testimonials.items26.job": "This man was thrown into the midst of a great revival. When he arrived, he noticed immediately that these were men who meant business. There he worked in the revival, where he met time and time again hundreds upon hundreds of people, young and old, male and female, under a mighty conviction of sin. It was as if God had come to town. People were kneeling on the streets and fields in multitudes because they felt God's presence and were crying for mercy. They needed mercy! If you haven't come to Christ yet, so do you!",
 		"witnesses.testimonials.items26.t1":
 			"We are afraid of disturbing people today. You must not have their emotions stirred, you must not have the people weeping in a meeting, you must not have the people rolling on the floor under conviction of sin; keep things orderly.  May God help us, may God have mercy upon us. Who are we to dictate to Almighty God as to how He is going to work?",
 		"witnesses.testimonials.items26.t2":
@@ -685,7 +685,7 @@ export const ui = {
 			"The church that does not evangelize will fossilize.",
 		"witnesses.testimonials.items27.name": "Oswald J. Smith: 1889-1986",
 		"witnesses.testimonials.items27.job":
-			"Not many have a heart for mission work like this man. If you want to find a shepherd who, even though working locally, is still burning and living to reach those who have not yet heard the gospel even once, then this is the man. My brother and sister, die for Jesus while making the gospel known wherever you are and making sure people will know that Jesus died for them.",
+			"Not many have a heart for mission work like this man. If you want to find a shepherd who, even though working locally, was still burning and living to reach those who have not yet heard the gospel even once, then this is the man. My brother and sister, die for Jesus while making the gospel known wherever you are and making sure people will know that Jesus died for them.",
 		"witnesses.testimonials.items27.t1":
 			"We talk of the Second Coming; half the world has never heard of the first.",
 		"witnesses.testimonials.items27.t2":
@@ -693,7 +693,7 @@ export const ui = {
 		"witnesses.testimonials.items27.t3":
 			"I am perfectly confident that the man who does not spend hours alone with God will never know the anointing of the Holy Spirit. The world must be left outside until God alone fills the vision...God has promised to answer prayer. It is not that He is unwilling, for the fact is, He is more willing to give than we are to receive. But the trouble is, we are not ready...",
 		"witnesses.testimonials.items28.name": "Aimee Semple McPherson: 1890-1944",
-		"witnesses.testimonials.items28.job": "Coming soon...",
+		"witnesses.testimonials.items28.job": "Time when",
 		"witnesses.testimonials.items28.t1":
 			"What is my task? First of all, my task is to be pleasing to Christ. To be empty of self and be filled with Himself. To be filled with the Holy Spirit; to be led by the Holy Spirit.",
 		"witnesses.testimonials.items28.t2":
@@ -701,7 +701,7 @@ export const ui = {
 		"witnesses.testimonials.items28.t3":
 			"What is my task? To get the gospel around the world in the shortest possible time to every man and woman and boy and girl!",
 		"witnesses.testimonials.items29.name": "Corrie Ten Boom: 1892-1983",
-		"witnesses.testimonials.items29.job": "Coming soon...",
+		"witnesses.testimonials.items29.job": "Will you stand for Christ even if people are cruelly killed next to you? Are you willing to stand even if it costs your freedom, your dreams, your family, and even your life? This woman stood when her whole family, her friends, and her whole future were lost. She chose to confess the same testimony as Shadrach, Meshach, and Abednego, answered and said to the king, O Nebuchadnezzar, we are not careful to answer thee in this matter. If it be so, our God whom we serve is able to deliver us from the burning fiery furnace, and he will deliver us out of thine hand, O king. But if not, be it known unto thee, O king, that we will not serve thy gods, nor worship the golden image which thou hast set up. Dan 3:16-18 KJV",
 		"witnesses.testimonials.items29.t1":
 			"Worry does not empty tomorrow of its sorrow, it empties today of its strength.",
 		"witnesses.testimonials.items29.t2":
@@ -715,13 +715,13 @@ export const ui = {
 		"witnesses.testimonials.items30.t3":
 			"True religion confronts earth with heaven and brings eternity to bear upon time.",
 		"witnesses.testimonials.items31.name": "Gladys Aylward: 1902-1970",
-		"witnesses.testimonials.items31.job": "Coming soon...",
+		"witnesses.testimonials.items31.job": "A young woman felt the call of God to China. To people she didn't know, to a culture completely strange. But she knew they were without Christ and without hope in the world. She returned as an old lady to visit her native country, which she left decades ago, and soon returned to where the call of God was. Have you heard the call of God? Have you heard divine words pointed at you and inflaming your heart to save the lost at all costs? Volunteer to the use of the Master and see souls enter the life ever after.",
 		"witnesses.testimonials.items31.t1":
 			"Oh God, here's my Bible, Here's my money. Here's me. Use me, God.",
 		"witnesses.testimonials.items31.t2":
 			"If God has called you to China or any other place and you are sure in your own heart, let nothing deter you.Remember, it is God who has called you and it is the same as when He called Moses or Samuel",
 		"witnesses.testimonials.items32.name": "Watchman Nee: 1903-1972",
-		"witnesses.testimonials.items32.job": "Coming soon...",
+		"witnesses.testimonials.items32.job": "It is not about your education, your background, or even you. Just give the material to God, and he will make something out of it! A testimony was born when a young Chinese man professed Jesus as his Lord. He preached, he wrote, he was put into prison, he awakened, and he labored. This is a testimony to a life lived for a purpose. If you don't give your life for Christ without reservation, you don't have any meaning to live, not even the right to exist. Now God is calling you to repent. Cry for mercy and throw yourself into God's hands and watch what He will make out of you!",
 		"witnesses.testimonials.items32.t1":
 			"Outside of Christ, I am only a sinner, but in Christ, I am saved. Outside of Christ, I am empty; in Christ, I am full. Outside of Christ, I am weak; in Christ, I am strong. Outside of Christ, I cannot; in Christ, I am more than able. Outside of Christ, I have been defeated; in Christ, I am already victorious. How meaningful are the words, 'in Christ.'",
 		"witnesses.testimonials.items32.t2":
@@ -735,7 +735,7 @@ export const ui = {
 		"witnesses.testimonials.items33.t3":
 			"The unity of the body of Christ is the key to the end-time harvest.",
 		"witnesses.testimonials.items34.name": "Kathryn Kuhlman: 1907-1976",
-		"witnesses.testimonials.items34.job": "Coming soon...",
+		"witnesses.testimonials.items34.job": "She had felt the call and replied, but then married, crying right after the wedding that it was not God's will. She lived some time in misery until she divorced her husband. Now she was a woman preacher; at the time, woman preachers were not widely accepted. And in addition, a divorcee. But that did not hinder the glory of God. Thounsands, even tens and hunders of thoundas, were healed, and multitudes entered the kingdom. A manifestation of the Spirit and of power indeed. Has society rejected you? Has the religious community turned you down? Congratulations! That is the point for you to enter into the glory of God.",
 		"witnesses.testimonials.items34.t1":
 			"I believe in miracles, because I believe in God.",
 		"witnesses.testimonials.items34.t2":
@@ -745,13 +745,13 @@ export const ui = {
 		"witnesses.testimonials.items34.t4":
 			"I surrendered unto Him all there was of me; everything! Then for the first time I realized what it meant to have real power.",
 		"witnesses.testimonials.items35.name": "William M. Branham: 1909-1965",
-		"witnesses.testimonials.items35.job": "Coming soon...",
+		"witnesses.testimonials.items35.job": "In this time and in this season, it seems that those whom God used mightily in their time are being criticized and labeled as heretics and delusionists. Nevertheless, such manifestations of the word of knowledge have maybe never been seen before or after those in this man's ministry. The glory of God was even being photographed hovering over his head. Truly, it is not who man commends but whom the Lord commends! His downfall came when he started to operate in an office the Lord had not called him to. But you. Be faithful in the ministry the Lord has called you into and keep the faith to the end.",
 		"witnesses.testimonials.items35.t1":
 			"The Holy Ghost will make you dress right, and live right, and talk right, and be right, when the Holy Ghost gets you. Amen. That's right.",
 		"witnesses.testimonials.items35.t2":
 			"Show me a man. Show me another Calvin, Knox, Finney, Sankey, or any of those who feels the burden of the people, that'll lay on their face and cry and pray before God. Send us a John Smith of the Baptist Church again, who prayed all night for the iniquity of the people until his eyes would be swelled shut the next morning from weeping, till his wife would lead him to the table and feed him his breakfast out of a spoon. Show me a John Wesley again, a firebrand snatched from the fire. I'll show you a revival.",
 		"witnesses.testimonials.items36.name": "A. A. Allen: 1911-1970",
-		"witnesses.testimonials.items36.job": "Coming soon...",
+		"witnesses.testimonials.items36.job": "Do you know how it feels to be in the ministry but still be hungry for more of the power of God? So Allen closed himself in a closet until he met God. The rest of his life is testimony to what happens when a man meets God. Sick being healed, demons being cast out, lunatics being restored, and poor hearing the word of the gospel preached to them. If you want to be used by God, you want to be desperate. Desperate to actually meed him genuinely. For what you have, you will give.",
 		"witnesses.testimonials.items36.t1":
 			"If you are walking with Jesus, in the Spirit, you need not fear going too far. No believer has gone as far as God wants him to go.",
 		"witnesses.testimonials.items36.t2":
@@ -759,13 +759,13 @@ export const ui = {
 		"witnesses.testimonials.items36.t3":
 			"But just as Christ was willing to be crucified before He could send this power, we, too, must be willing to be crucified in order to be used for the benefit of others. Could this be the reason so many who claim to have the baptism of the Holy Spirit do not manifest the power? Isn't this a glaring defect in Pentecostal circles to which the skeptical churches and the unbelievers can point? Can we blame them?",
 		"witnesses.testimonials.items37.name": "Lester Sumrall: 1913-1996",
-		"witnesses.testimonials.items37.job": "Coming soon...",
+		"witnesses.testimonials.items37.job": "Reread the first quote from Him. This man's life was a testimony to healing the sick, casting out devils, and saving the lost. The same way the testimony of God through your life—saving the lost, healing the sick, and casting out devils—is perfectly that because you want it to be so. You either want to be lukewarm or burning hot. If you eat the world, you cannot be but lukewarm. But if you eat the Word of God, you cannot be but burning! Don't blame God for your laxity, but you do something about it!",
 		"witnesses.testimonials.items37.t1":
 			"You are what you are because that is what you really want to be! We make decisions and those decisions make us who were are! You can judge anything in the world by this. God builds up and the Devil tears down.",
 		"witnesses.testimonials.items37.t2":
 			"Faith is not knowing that God can. It is knowing that He will.",
 		"witnesses.testimonials.items38.name": "Derek Prince: 1915-2003",
-		"witnesses.testimonials.items38.job": "Coming soon...",
+		"witnesses.testimonials.items38.job": "A rock-hard philosopher was changed when he met the supernatural power of God. At first, his hand was raised in a church meeting without him doing it. In the next meeting, he knew he had to lift his hand himself. He heard two distinctive voices saying, You are going to look really silly lifting your hand up in front of these old ladies, and if this is something good, why should you not experience it? He lifted his hand up, and the testimony of his life was, as Jesus' told him, I have called you to be a teacher of the Scriptures in the truth, faith, and love that are hidden in Christ Jesus for many people. Those two voices are speaking now to you. Do you choose to lift your hand for God to offer yourself for His service now?",
 		"witnesses.testimonials.items38.t1":
 			"Consider the work of Calvary. A perfect work, perfect in every respect, perfect in every aspect",
 		"witnesses.testimonials.items38.t2":
@@ -941,13 +941,13 @@ export const ui = {
 			"Syöttepä siis tai juotte tai teettepä mitä tahansa, tehkää kaikki Jumalan kunniaksi. 1 Kor 10:31 FINRK",
 		"church.steps.items2.title": "Ristiä saarnataan",
 		"church.steps.items2.description1":
-			"Mutta me saarnaamme ristiinnaulittua Kristusta. Hän on juutalaisille pahennus ja pakanoille hullutus, 24mutta kutsutuille, niin juutalaisille kuin kreikkalaisillekin, Kristus on Jumalan voima ja Jumalan viisaus. 1 Kor 1:23,24 FINRK",
+			"Mutta me saarnaamme ristiinnaulittua Kristusta. Hän on juutalaisille pahennus ja pakanoille hullutus, mutta kutsutuille, niin juutalaisille kuin kreikkalaisillekin, Kristus on Jumalan voima ja Jumalan viisaus. 1 Kor 1:23,24 FINRK",
 		"church.steps.items2.description2":
-			"Israelin miehet, kuulkaa nämä sanat! Jeesus Nasaretilainen oli mies, josta Jumala todisti teille voimateoilla, ihmeillä ja merkeillä, joita Jumala teki hänen kauttaan teidän keskuudessanne, niin kuin itse tiedätte. 23Hänet Jumala antoi teidän käsiinne edeltäpäin tekemänsä päätöksen ja ennaltatietämisensä mukaisesti, ja hänet te laista tietämättömien miesten kätten kautta naulitsitte ristiin ja tapoitte. 24Mutta Jumala herätti hänet ja päästi hänet kuoleman tuskista. Eihän ollut edes mahdollista, että kuolema olisi voinut pitää häntä vallassaan. Apt 2:22-24 FINRK",
+			"Israelin miehet, kuulkaa nämä sanat! Jeesus Nasaretilainen oli mies, josta Jumala todisti teille voimateoilla, ihmeillä ja merkeillä, joita Jumala teki hänen kauttaan teidän keskuudessanne, niin kuin itse tiedätte. Hänet Jumala antoi teidän käsiinne edeltäpäin tekemänsä päätöksen ja ennaltatietämisensä mukaisesti, ja hänet te laista tietämättömien miesten kätten kautta naulitsitte ristiin ja tapoitte. Mutta Jumala herätti hänet ja päästi hänet kuoleman tuskista. Eihän ollut edes mahdollista, että kuolema olisi voinut pitää häntä vallassaan. Apt 2:22-24 FINRK",
 		"church.steps.items2.description3":
 			"Veljet, minä palautan mieleenne sen evankeliumin, jonka olen teille julistanut ja jonka olette ottaneet vastaan ja jossa myös pysytte. Sen kautta te myös pelastutte, jos pidätte kiinni siitä sellaisena kuin minä sen teille julistin. Muuten olette aivan turhaan uskoneet. Ennen kaikkea annoin teille tiedoksi sen, minkä myös itse olin saanut: Kristus kuoli meidän syntiemme tähden Kirjoitusten mukaan, hänet haudattiin ja hänet herätettiin kolmantena päivänä Kirjoitusten mukaan. 1 Kor 15:1-4",
 		"church.steps.items3.title":
-			"Rakkaus Jumalaa ja veljiä kohtaan on runsasta puhtaasta sydämestä ja hyvästä omastatunnosta ja vilpittömästä uskosta",
+			"Rakkaus Jumalaa ja veljiä kohtaan on runsasta puhtaasta sydämestä, hyvästä omastatunnosta ja vilpittömästä uskosta",
 		"church.steps.items3.description1":
 			"Käskymme päämääränä on rakkaus, joka tulee puhtaasta sydämestä, hyvästä omastatunnosta ja vilpittömästä uskosta. 1 Tim 1:5 FINRK",
 		"church.steps.items3.description2":
@@ -973,13 +973,13 @@ export const ui = {
 		"church.steps.items4.description8":
 			"Olkaa siis, rakkaat veljeni, lujia ja järkähtämättömiä, aina innokkaita Herran työssä, ja tietäkää, että vaivannäkönne Herrassa ei ole turhaa. 1 Kor 15:58",
 		"church.steps.items5.title":
-			"Intohimosi rukoilla yhdessä ja erikseen syttyy täyteen liekkiin ja vain kasvaa päivä päivältä. Haluaa rukoilla tuntikausia",
+			"Intohimosi rukoilla yhdessä ja erikseen syttyy täyteen liekkiin ja vain kasvaa päivä päivältä. Haluat rukoilla tuntikausia",
 		"church.steps.items5.description1":
 			"Jeesus kertoi heille vertauksen siitä, että heidän tuli aina rukoilla lannistumatta. Luk 18:1 FINRK",
 		"church.steps.items5.description2":
 			"Kehotan teitä, veljet, Herramme Jeesuksen Kristuksen kautta ja Hengen rakkauden kautta auttamaan minua taistelussani rukoilemalla puolestani Jumalaa. Rom 15:30 FINRK",
 		"church.steps.items5.description3":
-			"Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämellisiä, Hengen ja pyhien kirjoitusten täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat verta syntiä vastaan, *niin* olet oikea paikka. Jos niitä ei löydy, kirkko on menettänyt ensimmäisen rakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
+			"Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämellisiä, Hengen ja pyhien kirjoitusten täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat vereen asti syntiä vastaan, *niin* olet oikea paikka. Jos niitä ei löydy, kirkko on menettänyt ensimmäisen rakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
 		"church.steps.items5.description4":
 			"Vapaaksi päästyään apostolit menivät omiensa luo ja kertoivat kaiken, mitä ylipapit ja vanhimmat olivat heille sanoneet. Sen kuultuaan he kaikki yksimielisesti korottivat äänensä Jumalan puoleen ja sanoivat... Apt 4:23,24a FINRK",
 		"church.steps.items5.description5":
@@ -1007,9 +1007,9 @@ export const ui = {
 		"church.steps.items8.description3":
 			"vaikka minä ruumiillisesti olen poissa, olen kuitenkin hengessä läsnä ja kuin läsnä on jo langennut tuomion sille, joka on tehnyt tuollaista. Kun olette Herran Jeesuksen nimessä nauttineet yhteen ja minun henkeni ja Herramme Jeesuksen voima ovat läsnä, tuo mies luovutettava Saatanan haltuun lihan turmioksi, jotta hänen henkensä pelastuisi Herran päivänä. Kerskailunne ei ole hyväksi. Ettekö tiedä, että pieni määrä hapatetta hapattaa koko taikinan? 1 Kor 15:3-6 FINRK",
 		"church.steps.items9.title":
-			"Synti lakkaa elämästäsi, olet vapautettu sorrostasi, riippuvuudet murtuvat, sairaudet parantuvat, demonit karkotetaan, ELÄMÄT muuttuvat JUMALAN VOIMALLA!",
+			"Synti lakkaa elämästäsi, olet vapaudut sorrosta, riippuvuudet murtuvat, sairaudet parantuvat, demonit karkotetaan, ELÄMÄT muuttuvat JUMALAN VOIMALLA!",
 		"church.steps.items9.description1":
-			"Nämä merkit ovat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, nostavat käsin käärmeitä. Jos he juovat jotain kuolettavaa, se ei tarvitse heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi. Mar 16:17,18 FINRK",
+			"Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi.",
 		"church.steps.items9.description2":
 			"Herran Henki on minun päälläni, sillä hän on voidellut minut julistamaan evankeliumia köyhille. Hän on lähettänyt minut julistamaan vangituille vapautusta ja sokeille näkönsä saamista, päästämään sorretut vapauteen. Luk 4:18 FINRK",
 		"church.steps.items9.description3":
@@ -1017,7 +1017,7 @@ export const ui = {
 		"church.steps.items9.description4":
 			"Puheeni ja julistukseni ei ollut inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista, jotta teidän uskonne ei perustuisi ihmisviisauteen vaan Jumalan voimaan. 1 Kor 2:4,5 FINRK",
 		"church.steps.items10.title":
-			"Pyhän Hengen on vapaus, vanhurskaus, ilo ja rauha on läsnä",
+			"Pyhän Hengen vapaus, vanhurskaus, ilo ja rauha on läsnä",
 		"church.steps.items10.description1":
 			"Sillä Jumalan valtakunta ei ole syömistä ja juomista vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä. Rom 14:17 FINRK",
 		"church.steps.items10.description2":
