@@ -1,5 +1,21 @@
 # Changelog
 
+## [2.1.0](https://github.com/Hessuew/flamethefreeze/compare/v2.0.0...v2.1.0) (2023-12-24)
+
+
+### Features
+
+* restructured witnesses (50/100, en) translating testimonies again (8/50) ([d1ee19d](https://github.com/Hessuew/flamethefreeze/commit/d1ee19de923328c60f07a4a5e0401cda7e8eeb6b))
+* restructured witnesses (50/100, en) translating testimonies again (8/50) ([#56](https://github.com/Hessuew/flamethefreeze/issues/56)) ([b721402](https://github.com/Hessuew/flamethefreeze/commit/b72140239f4b1faa94a595705e53d460be40c941))
+
+
+### Bug Fixes
+
+* cloudflare deploy fix test ([6c1e82f](https://github.com/Hessuew/flamethefreeze/commit/6c1e82fc594d6c06a30809d11bef90f1db0b8b54))
+* cloudflare deploy fix test ([#53](https://github.com/Hessuew/flamethefreeze/issues/53)) ([ad0dd4d](https://github.com/Hessuew/flamethefreeze/commit/ad0dd4d3f1c14b15574e02c448061bfdcc6d2271))
+* cloudflare deploy fix test 1.1 ([d50f0c9](https://github.com/Hessuew/flamethefreeze/commit/d50f0c9ff786a988758ac43d21ac39d47dfc4687))
+* cloudflare deploy fix test 1.1 ([#55](https://github.com/Hessuew/flamethefreeze/issues/55)) ([2615bae](https://github.com/Hessuew/flamethefreeze/commit/2615baed129028c147b683f98be123b0663ec7b1))
+
 ## [2.0.0](https://github.com/Hessuew/flamethefreeze/compare/v1.8.0...v2.0.0) (2023-12-23)
 
 
