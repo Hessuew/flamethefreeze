@@ -720,7 +720,8 @@ export const ui = {
     "witnesses.testimonials.items38.t3":
       "God is more concerned with our character than with our achievements. Achievements have importance only in the realm of time. Character is eternal. It determines what we will be through eternity.",
     "witnesses.testimonials.items39.name": "Kenneth E. Hagin: 1917-2003",
-    "witnesses.testimonials.items39.job": "Coming soon...",
+    "witnesses.testimonials.items39.job":
+      "A man is no more than his words. Visited by our Lord seven times, this man taught the body of Christ about faith, healing, and the authority of the believer. And it showed! He was not sick for 60 years! That was divine health manifested. Your words will defeat you or put you over. Speak the words of faith always. Always speak words of grace to edify the hearers. And do it in love, for love never thinks of evil. And love never fails!",
     "witnesses.testimonials.items39.t1":
       "Central Truth: Prayer is successful only when it is based on the promises in God's Word!",
     "witnesses.testimonials.items39.t2":
@@ -728,50 +729,58 @@ export const ui = {
     "witnesses.testimonials.items39.t3":
       "If what you hear preached doesn't cause faith to come and build faith in your spirit, then it either isn't the Word of God or else you're not hearing it",
     "witnesses.testimonials.items40.name": "Oral Roberts: 1918-2009",
-    "witnesses.testimonials.items40.job": "Coming soon...",
+    "witnesses.testimonials.items40.job":
+      "A man who used faith like a tool. It is not some mysterious knowledge of the head but a concrete act, putting your whole weight on God. So was the life of this man. From one place of complete trust to another. From healing the sick to casting out devils to preaching the gospel, pulling the sinners from hell and plunging them to heaven, He was recorded to have laid his hands on 2 million people. Just laying hands on 2 million! How many times have you preached the gospel? Brother, sister, it is time to step up our labors of love for God!",
     "witnesses.testimonials.items40.t1": "God is a good God, and the Devil is a bad Devil.",
     "witnesses.testimonials.items40.t2":
       "Faith is not something you have to get. It's something that you, as a bornagain child of God, already have. Act on it by releasing it to God. That's when your healing starts!",
     "witnesses.testimonials.items40.t3":
       "Your faith begins to move, to act, when the power of God supernaturally empties you of doubt and fills you with a knowing. You come into a state of knowing that you know that you know. In that instant you cannot doubt.",
     "witnesses.testimonials.items41.name": "Billy Graham: 1918-2018",
-    "witnesses.testimonials.items41.job": "Coming soon...",
+    "witnesses.testimonials.items41.job":
+      "When the gospel is in your heart, you will let it out to everyone. This man preached the gospel in full stadiums again and again. He visited around the whole globe, spoke to presidents, and preached the unwatered gospel no matter the status of man. That is what we are living for. To say that our Lord Jesus died to save the people from their sins. You cannot preach if you are still living in sin! Get rid of them, repent right now, and then(!) you can preach salvation because you yourself have been saved, not in sin but from sin!",
     "witnesses.testimonials.items41.t1":
       "Being a Christian is more than just an instantaneous conversion; it is like a daily process whereby you grow to be more and more like Christ.",
     "witnesses.testimonials.items41.t2":
       "The greatest legacy one can pass on to one's children and grandchildren is not money or other material things accumulated in one's life, but rather a legacy of character and faith.",
     "witnesses.testimonials.items41.t3": "My home is in Heaven. I'm just traveling through this world.",
     "witnesses.testimonials.items42.name": "Jack Coe: 1918-1956",
-    "witnesses.testimonials.items42.job": "Coming soon...",
+    "witnesses.testimonials.items42.job":
+      "If the size of a tent were the measure of godliness, this man would have had it. He seated over 20,000 people after World War II, preaching the gospel with signs, miracles, and wonders, being only in his 30s. But this man died at the age of 34. Why? He was corrected by the Lord through multiple men of God, including Kenneth E. Hagin, that he walked not in love toward other ministers. Faith always works through love. If we love God with all our hearts, we love to do His will and love His children, for we are of the same family. If we don't, we have missed it and should return. Oh, wayward, return. Return to the path of life! Return to the bosom of your father.",
     "witnesses.testimonials.items42.t1":
       "If you have worry, you don't have faith, and if you have faith, you don't have worry.",
     "witnesses.testimonials.items42.t2": "Fear cannot stay in the same house as Jesus Christ.",
     "witnesses.testimonials.items42.t3": "When Jesus comes in the scene, anything can happen, and usually does.",
     "witnesses.testimonials.items43.name": "Charles and Frances Hunter: 1920-2009, 1917-2008",
-    "witnesses.testimonials.items43.job": "Coming soon...",
+    "witnesses.testimonials.items43.job":
+      "The couple was on a plane with their crew, doing God's work. After a long flight, they told their people to get up and pray for the power of God to fix their backs from all disadjures. They did, and He did. Then a flight attendant came and told Francis that she could pray for her back after the flight. She said, Yes, now. She prayed, and her shorter hand grew in that instant. She screamed. Then Frances asked if she was saved and filled with the Holy Spirit. She said I'm a child of God, but would you like to pray for me after the flight? Frances said, Yes, now. So in a minute, the young woman started to speak fluently in tongues. This was a practical couple preaching the gospel and manifesting the power of God wherever they went, from toilet to airplane.",
     "witnesses.testimonials.items43.t1":
       "God wants us to be walking in the beauty of His holiness so all that people will be able to see is His glory, and nothing of our earthly selves. He is calling on the body of Christ to be so totally committed to Him that nothing else matters in ourlives and that we will be so 'in Him' that the worl dwill see Jesus in us.",
     "witnesses.testimonials.items43.t2":
       "Jesus touched the man AGAIN when he said he could only see men as trees, showing that we need not be ashamed to go back more than once for our healing.",
     "witnesses.testimonials.items44.name": "T. L. and Daisy Osborn. 1923-2013, 1924-1995",
-    "witnesses.testimonials.items44.job": "Coming soon...",
+    "witnesses.testimonials.items44.job":
+      "If you know you have the power of God in you, you will be bold in the Lord. You need to be filled with the Spirit of God, for you will receive power when the Holy Ghost comes upon you. This Spirit-filled couple went abroad, preaching boldly to the people in miracle ministry. And they told every child of God that they could and should have a miracle ministry. Because it is the ministry of God, God is doing the miracles, not you. So did God in their lives. They utterly destroyed and debunked beliefs toward false gods, showing in front of them that Jesus Christ is the Lord and there is no other name by which we must be saved!",
     "witnesses.testimonials.items44.t1": "One Way: Jesus! One Job: Evangelism!",
     "witnesses.testimonials.items44.t2":
       "How can we call ourselves a church and not believe in healing and in miracles? I cannot read four pages anywhere in the Bible without encountering miracles! And the God of the bible is the same today!",
     "witnesses.testimonials.items44.t3":
       "The purpose of a spirit filled life is to demonstrate the supernatural power of our living God so that the unsaved multitudes will abandon their dead gods to call upon the name of The Lord and be delivered.",
     "witnesses.testimonials.items45.name": "R. W. Schambach: 1926-2012",
-    "witnesses.testimonials.items45.job": "Coming soon...",
+    "witnesses.testimonials.items45.job":
+      "R. W. Schambach, as a young man, was working with A. A. Allen. He experienced firsthand the multitude of miracles God performed. And so he continued himself in the Spirit and power of Elijah, with the same miracles, signs, and wonders following. Do you know why? The God of the miracles was the same. So he is today! Go and heal the sick, cast out devils, and preach the gospel, working together with God. But make sure you know the God you should be working with!",
     "witnesses.testimonials.items45.t1": "You don't have any problems, all you need is faith in God.",
     "witnesses.testimonials.items45.t2": "When the devil starts messing, God starts blessing.",
     "witnesses.testimonials.items46.name": "Jim Elliot: 1927-1956",
-    "witnesses.testimonials.items46.job": "Coming soon...",
+    "witnesses.testimonials.items46.job":
+      "His heart was for the lost. In Ecuador, he married Elisabeth, and soon after his honeymoon, he returned, and Elliot began preparing to reach the Huaorani people. While meeting them, he and the group of five men were killed by Huaorani warriors. This is a war to reach the lost. Satan is doing his all to keep people hellbound. But nothing, absolutely nothing, is impossible for him who believes! We must continue the work our elder brethren have started and given their lives for. The battles are won in prayer before the confrontations. Let us not proceed before wrestling the victory over principalities, powers, and territories, and we will see the outpouring of the Spirit!",
     "witnesses.testimonials.items46.t1": "He is no fool who gives what he cannot keep to gain what he cannot lose.",
     "witnesses.testimonials.items46.t2": "God always gives His best to those who leave the choice with him.",
     "witnesses.testimonials.items46.t3":
       "Rest in this - it is His business to lead, command, impel, send, call... It is your business to obey, follow, move, respond.",
     "witnesses.testimonials.items47.name": "David Wilkerson: 1931-2011",
-    "witnesses.testimonials.items47.job": "Coming soon...",
+    "witnesses.testimonials.items47.job":
+      "Brutally frank preaching. But that was the preaching that turned multitudes to God because they saw that this man was genuine. He did not water the Word of God or try to win men's admiration. And therefore, he could be trusted just like Daniel was; he spoke only what God had said. Do you?",
     "witnesses.testimonials.items47.t1":
       "God hates the LUKEWARM GOSPEL OF HALF-TRUTHS that is now spreading over the Globe. This gospel says, 'Just believe in Jesus and you'll be Saved. There's nothing more to it.' It ignores the Whole Counsel of God, which speaks of Repenting from former Sins, of Taking up your Cross, of being conformed to the Image of Christ by the refining work of the Holy Spirit. It is totally silent about the Reality of Hell and an After-Death Judgment.",
     "witnesses.testimonials.items47.t2":
@@ -783,16 +792,18 @@ export const ui = {
     "witnesses.testimonials.items48.t2":
       "Make this declaration: Death and life are in the power of my tongue. I choose Life!",
     "witnesses.testimonials.items48.t3":
-      "Don't be satisfied with living below the full potential of prauer power Christ intended for His church",
+      "Don't be satisfied with living below the full potential of prayer power Christ intended for His church",
     "witnesses.testimonials.items49.name": "Benson Idahosa: 1938-1998",
-    "witnesses.testimonials.items49.job": "Coming soon...",
+    "witnesses.testimonials.items49.job":
+      "A young boy read from the Bible that Jesus raised the dead. He went and asked his pastor if this could be done today and if Jesus actually meant those who believed would do the same works. The pastor answered yes. He asked if he had done so. He said no. The young man continued to search in town for anyone who had died so that Jesus could raise them from the dead. After hours, he found a house where a young girl had just died. Praying for the girl, nothing happened. He noticed Jesus drove the parens out, and so did he. Then he prayed, and the dead came back to life. This is the life we should live. A life of divine manifestation of the power of God in our lives! If you don't have experience with this power, join us, and your life will be changed by the same power that raised Jesus from the dead!",
     "witnesses.testimonials.items49.t1": "When we have nothing left but God, we discover that God is enough",
     "witnesses.testimonials.items49.t2":
       "A lifestyle change isn't required for God to accept people. All He asks for is a 'heart change.'",
     "witnesses.testimonials.items49.t3":
       "Don't tell me how big your mountain is. Tell your mountain how BIG your God is.",
     "witnesses.testimonials.items50.name": "Reinhard Bonnke: 1940-2019",
-    "witnesses.testimonials.items50.job": "Coming soon...",
+    "witnesses.testimonials.items50.job":
+      "When he got the call of God, he was resisted by his own church and father. But nevertheless, he answered the call and went to preach the gospel in Africa. After the days of small beginnings, God guided him to rent the biggest stadium. Even tho invited none local church attended the event. There were a mere 100 people in the whole stadium. But then! Oh, but then the power of God started to move. The sick were healed; miracles, signs, and wonders manifested! The next day, the stadium was full, and the dead congregations were brought back to life. Will you answer the call of God even though you will probably be rejected by the local churches or even your family? That is the only way to revive them.",
     "witnesses.testimonials.items50.t1":
       "The less Holy Spirit we have, the more cake and coffee we need to keep the church going.",
     "witnesses.testimonials.items50.t2":
@@ -883,7 +894,7 @@ export const ui = {
     "church.steps.items3.description2":
       "Häntä te rakastatte, vaikka ette ole häntä nähneet, häneen te uskotte, vaikka ette häntä nyt näe, ja te riemuitsette sanoin kuvaamattomalla ja kirkastuneella ilolla. 1 Pet 1:8 FINRK",
     "church.steps.items3.description3":
-      "ämä käsky meillä on häneltä: joka rakastaa Jumalaa, rakastakoon myös veljeään. 1 Joh 4:21 FINRK",
+      "Tämä käsky meillä on häneltä: joka rakastaa Jumalaa, rakastakoon myös veljeään. 1 Joh 4:21 FINRK",
     "church.steps.items4.title": "Rakkaus maailmaa kohtaan kuolee ja rakkaus maailman asioita kohtaan kuolee",
     "church.steps.items4.description1":
       "Te avionrikkojat! Ettekö tiedä, että maailman ystävyys on vihollisuutta Jumalaa vastaan. Joka siis tahtoo olla maailman ystävä, hänestä tulee Jumalan vihollinen. Jam 4:4 FINRK",
@@ -907,12 +918,12 @@ export const ui = {
     "church.steps.items5.description2":
       "Kehotan teitä, veljet, Herramme Jeesuksen Kristuksen kautta ja Hengen rakkauden kautta auttamaan minua taistelussani rukoilemalla puolestani Jumalaa. Rom 15:30 FINRK",
     "church.steps.items5.description3":
-      "Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämellisiä, Hengen ja pyhien kirjoitusten täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat vereen asti syntiä vastaan, *niin* olet oikea paikka. Jos niitä ei löydy, kirkko on menettänyt ensimmäisen rakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
+      "Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämen pohjasta lähteviä ja Hengen ja Sanan täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat vereen syntiä vastaan, *niin* olet oikea paikka. Jos niitä ei löydy, kirkko on menettänyt ensimmäisen rakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
     "church.steps.items5.description4":
       "Vapaaksi päästyään apostolit menivät omiensa luo ja kertoivat kaiken, mitä ylipapit ja vanhimmat olivat heille sanoneet. Sen kuultuaan he kaikki yksimielisesti korottivat äänensä Jumalan puoleen ja sanoivat... Apt 4:23,24a FINRK",
     "church.steps.items5.description5":
       "Te kyykäärmeiden sikiöt, kuinka te voisitte puhua hyvää, kun itse olette pahoja! Sydämen kyllyydestä suu puhuu. Mat 12:34 FINRK",
-    "church.steps.items6.title": "Saat enemmän ihmisiä pelastettua",
+    "church.steps.items6.title": "Enemmän ihmisiä pelastuu sinun kauttasi",
     "church.steps.items6.description1": "Vanhurskaan hedelmä on elämän puu, ja viisas voittaa sieluja. San 11:30 FINRK",
     "church.steps.items6.description2":
       "Hän sanoi heille: ”Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaikille luoduille. Mar 16:15 FINRK",
@@ -931,9 +942,9 @@ export const ui = {
     "church.steps.items8.description2":
       "Toiset pelastakaa tulesta temmaten, toisia taas armahtakaa kavahtaen heitä, inhoten ruumiin tahraamaa vaatettakin. Jud 1:23 FINRK",
     "church.steps.items8.description3":
-      "vaikka minä ruumiillisesti olen poissa, olen kuitenkin hengessä läsnä ja kuin läsnä on jo langennut tuomion sille, joka on tehnyt tuollaista. Kun olette Herran Jeesuksen nimessä nauttineet yhteen ja minun henkeni ja Herramme Jeesuksen voima ovat läsnä, tuo mies luovutettava Saatanan haltuun lihan turmioksi, jotta hänen henkensä pelastuisi Herran päivänä. Kerskailunne ei ole hyväksi. Ettekö tiedä, että pieni määrä hapatetta hapattaa koko taikinan? 1 Kor 15:3-6 FINRK",
+      "Vaikka minä ruumiillisesti olen poissa, olen kuitenkin hengessä läsnä ja kuin läsnä on jo langennut tuomion sille, joka on tehnyt tuollaista. Kun olette Herran Jeesuksen nimessä nauttineet yhteen ja minun henkeni ja Herramme Jeesuksen voima ovat läsnä, tuo mies luovutettava Saatanan haltuun lihan turmioksi, jotta hänen henkensä pelastuisi Herran päivänä. Kerskailunne ei ole hyväksi. Ettekö tiedä, että pieni määrä hapatetta hapattaa koko taikinan? 1 Kor 15:3-6 FINRK",
     "church.steps.items9.title":
-      "Synti lakkaa elämästäsi, olet vapaudut sorrosta, riippuvuudet murtuvat, sairaudet parantuvat, demonit karkotetaan, ELÄMÄT muuttuvat JUMALAN VOIMALLA!",
+      "Synti lakkaa elämästäsi, vapaudut sorrosta, riippuvuudet murtuvat, sairaudet parantuvat, demonit karkotetaan, ELÄMÄT muuttuvat JUMALAN VOIMALLA!",
     "church.steps.items9.description1":
       "Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi.",
     "church.steps.items9.description2":
@@ -1259,53 +1270,51 @@ export const ui = {
     "witnesses.testimonials.items1.job": "Tulossa pian...",
     "witnesses.testimonials.items1.t1": "Pelastumme yksin uskosta, mutta usko, joka pelastaa, ei ole koskaan yksin.",
     "witnesses.testimonials.items1.t2":
-      "Ellei Raamattu ja selkeä syy minua tuomitse – en hyväksy paavien ja neuvostojen auktoriteettia, sillä ne ovat olleet ristiriidassa keskenään – minun omatuntoni on Jumalan Sanan vangitsema. En voi enkä aio kieltäytyä mistään, sillä omantunnon vastustaminen ei ole oikein eikä turvallista. Tässä minä seison, en voi tehdä toisin. Jumala auta minua. Aamen.",
+      "Ellei Raamattu ja selkeä syy minua tuomitse – en hyväksy paavien ja neuvostojen auktoriteettia, sillä ne ovat olleet ristiriidassa keskenään – minun omatuntoni on Jumalan Sanan ohjaama. En voi enkä aio kieltäytyä mitään sanomaani, sillä omantuntoni vastustaminen ei ole oikein eikä turvallista. Tässä seison, enkä muuta voi. Auta minua Jumala. Aamen.",
     "witnesses.testimonials.items2.job": "Tulossa pian...",
-    "witnesses.testimonials.items2.t1": "Mies Jumalan kanssa on aina enemmistö.",
-    "witnesses.testimonials.items2.t2":
-      "Jumalan kirjoitukset ovat ainoa perustani ja olemukseni kaikissa painavissa ja tärkeissä asioissa.",
+    "witnesses.testimonials.items2.t1": "Mies, joka on Jumalan puolella, kuuluu aina enemmistöön.",
+    "witnesses.testimonials.items2.t2": "Jumalan Sana on ainoa perustani kaikissa tärkeissä asioissa.",
     "witnesses.testimonials.items2.t3":
-      "En etsinyt ylivaltaa, kunniaa enkä rikkauksia; Minun kunniani oli, että Jeesus Kristus hallitsi.",
+      "En etsi statusta, kunniaa tai rikkauksia; suurin kunniani on se, kun Jeesus Kristus hallitsee.",
     "witnesses.testimonials.items3.job": "Tulossa pian...",
     "witnesses.testimonials.items3.t1": "Syty tuleen Jumalalle, niin ihmiset tulevat katsomaan sinun palavan.",
     "witnesses.testimonials.items3.t2": "Sinulla on yksi tehtävä maan päällä - pelastaa sieluja.",
     "witnesses.testimonials.items3.t3":
-      "Joka tahtoo hallita Kristuksen kanssa taivaassa, Kristuksen täytyy hallita hänen sisimpäänsä maan päällä.",
+      "Jos joku tahtoo hallita Kristuksen kanssa taivaassa, ensin Kristuksen on hallittava hänen sydämessään maan päälle.",
     "witnesses.testimonials.items3.t4":
-      "Lukevat kristityt ovat kasvavia kristittyjä. Kun kristityt lakkaavat lukemasta, he lakkaavat kasvamasta.",
+      "Ne kristityt, jotka lukevat, ovat kasvavia kristittyjä. Kun kristityt lakkaavat lukemasta, he lakkaavat kasvamasta.",
     "witnesses.testimonials.items4.job": "Tulossa pian...",
     "witnesses.testimonials.items4.t1":
-      "Päätös yksi: Elän Jumalalle. Päätös kaksi: Jos kukaan muu ei tee, niin minä teen silti.",
+      "Päätös yksi: Elän Jumalalle. Päätös kaksi: Jos kukaan muu ei tee niin, niin minä silti teen.",
     "witnesses.testimonials.items4.t2":
-      "Tosi ja uskollinen kristitty ei tee pyhästä elämästä sattumanvaraista asiaa. Se on hänen suuri huolensa. Kuten sotilaan tehtävä on taistella, niin kristityn tehtävä on olla Kristuksen kaltainen.",
+      "Todellinen uskollinen kristitty ei vain vahingossa pyhity. Se on hänelle suuri ja rakas asia. Sotilaan tehtävä on taistella. Kristityn tehtävä on olla Kristuksen kaltainen",
     "witnesses.testimonials.items4.t3":
-      "Jumalasta nauttiminen on ainoa onni, josta sielumme on tyytyväinen. Taivaaseen pääseminen sekä täysi nauttiminen Jumalasta ovat äärettömästi parempia kuin miellyttävimmät nautinnot maan päällä.",
+      "Jumalasta nauttiminen on ainoa asia, josta sielumme voi olla tyytyväinen. Taivaaseen pääseminen sekä Jumalasta nauttiminen ovat äärettömästi parempia kuin miellyttävimmät nautinnot maan päällä.",
     "witnesses.testimonials.items5.job": "Tulossa pian...",
     "witnesses.testimonials.items5.t1":
-      "Jos aiot vaeltaa Jeesuksen Kristuksen kanssa, sinua vastustetaan... Meidän päivinämme tosi kristittynä oleminen on oikeastaan olla skandaali.",
+      "Jos aiot todella kulkea Jeesuken Kristuksen kanssa, sinua tullaan varmasti vastustamaan... Itseasiassa tänä päivänä todellisena kristittynä oleminen tarkoittaa, että olet skandaali.",
     "witnesses.testimonials.items5.t2":
-      "Opi tuntemaan Hänet enemmän ja enemmän, sillä mitä enemmän tunnet Häntä, sitä enemmän tulet rakastamaan Häntä.",
+      "Tunne Häntä enemmän ja enemmän. Sillä, mitä enemmän tunnet Häntä, sitä enemmän rakastat Häntä.",
     "witnesses.testimonials.items6.job": "Tulossa pian...",
     "witnesses.testimonials.items6.t1":
-      "En välitä minne menen tai kuinka elän tai mitä kestän pelastaakseni sieluja. Kun nukun, näen heistä unta; kun herään, he ovat ensimmäisenä ajatuksissani.",
-    "witnesses.testimonials.items6.t2": "Haluan unohtaa maailman ja olla uppoutuneena Jumalan ylistämiseen.",
+      "Ei väliä, minne menen, miten elän, tai mitä joudun kestämään, jotta vain voin voittaa sieluja. Näen heitä unissani ja hereillä ollessani ajattelen ensimmäisenä heitä.",
+    "witnesses.testimonials.items6.t2":
+      "Antakaa minun unohtaa tämä maailman ja vain uppoutua syvemmälle halusta kirkastaa Häntä.",
     "witnesses.testimonials.items7.job": "Tulossa pian...",
     "witnesses.testimonials.items7.t1":
-      "En pelkää epäonnistumista; Pelkään onnistuvani asioissa, joilla ei ole merkitystä.",
+      "En pelkää epäonnistumista; pelkään, että onnistun asioissa, joilla ei ole mitään merkitystä.",
     "witnesses.testimonials.items7.t2":
-      "Rukous - salainen, kiihkeä, uskova rukous - on kaiken henkilökohtaisen jumalisuuden perusta.",
+      "Rukous - salainen, palava, uskoa täynä oleva rukous - on yksilön kaiken jumalallisen elämän perusta.",
     "witnesses.testimonials.items7.t3":
-      "Niiden, joille evankeliumi on uskottu, velvollisuus on tehdä se tunnetuksi kaikkien kansojen keskuudessa.",
+      "Jokaisen, joka on vastaanottanut evankeliumin, tehtävä on tehtä se tiettäväksi kaikkien maiden keskellä.",
     "witnesses.testimonials.items7.t4":
-      "On todellakin kannattavaa panostaa kaikella voimallaan Kristuksen työhön ja valtakunnan edistämiseen.",
+      "Meidän kannattaa heittää itsemme kaikella voimallamme Jumalan työhön ja Kristuksen valtakunnan edistämiseen.",
     "witnesses.testimonials.items8.job": "Tulossa pian...",
     "witnesses.testimonials.items8.t1":
-      "Jokaisen kristityn tärkein tehtävä on pelastaa sieluja. Ihmiset valittavat, etteivät he tiedä, miten he voivat onnistua asiassa. Miksi, syy on erittäin selvä; he eivät ole koskaan perehtyneet asiaan. He eivät ole koskaan vaivautuneet. Jos et tee tästä itsellesi tärkeää asiaa ja opiskele, kuinka voit menestyä Kristuksen valtakunnan rakentamisessa, toimit kristittynä hyvin pahalla ja absurdilla tavalla.",
-    "witnesses.testimonials.items8.t2":
-      "Herätys on uusi vakaumus synnistä ja katumuksesta, jota seuraa voimakas halu elää kuuliaisesti Jumalalle. Se on syvässä näyryydessä oman tahdon antamista Jumalalle.",
+      "Jokaisen kristityn suurin tehtävä on pelastaa sieluja. Mutta moni valittaa, että he eivät tiedä miten. Mutta vastaus heidän valitukseensa on selvä; he eivät ole panostaneet tietääkseen. He eivät ole ikinä nähneet vaivaa ollakseen kykeneviä siihen. Toimintasi on todella pahaa ja kohtuutonta kristityksi, jos et opiskele, kuinka voit tehokkaasti rakentaa Kristuksen valtakuntaa.",
+    "witnesses.testimonials.items8.t2": "Herätys on uudistunut ",
     "witnesses.testimonials.items9.job": "Tulossa pian...",
-    "witnesses.testimonials.items9.t1":
-      "Murehtimisen alku on uskon loppu, ja todellisen uskon alku on murehtimisen loppu.",
+    "witnesses.testimonials.items9.t1": "Kun alat murehtia et voi toimia uskossa. Kun alat uskoa, et voi murehtia.",
     "witnesses.testimonials.items9.t2":
       "Raha ei ole yhtään sen arvokkaampaa kuin se edistää Herran työtä. Elämä on yhtä arvokas kuinka suuressa mittakaavassa se käytetään Herran palvelukseen.",
     "witnesses.testimonials.items10.job": "Tulossa pian...",
