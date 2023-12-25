@@ -533,7 +533,7 @@ export const ui = {
     "witnesses.testimonials.items13.job":
       "Even at a young age, he was working as a pastor and preached with deep fervor and passion. He raised his weapons, which were mighty through God against irreligion, cant, hypocrisy, pride, and those secret bosom sins, to the thousands and even tens of thousands of listeners while impressing you with a perfect conviction of his sincerity. And he did this, by the grace of God, through over 3600 sermons.",
     "witnesses.testimonials.items13.t1":
-      "The best 'apology' for the gospel is to let the gospel out. Never mind defending Deuteronomy or the whole of the Pentateuch. Preach Jesus Christ and him crucified. The Lion of the tribe of Judah will soon drive away all his adversaries.",
+      "The Bible is not the light of the world, it is the light of the Church. But the world does not read the Bible, the world reads Christians! You are the light of the world.",
     "witnesses.testimonials.items13.t2":
       "Have you no wish for others to be saved? Then you're not saved yourself, be sure of that!",
     "witnesses.testimonials.items14.name": "D. L. Moody: 1837-1899",
@@ -560,17 +560,15 @@ export const ui = {
     "witnesses.testimonials.items17.job":
       "When God calls someone, the person is truly called. This woman of faith fought and declared the healing power of God with her black friend in a time when women preachers, black people, and divine healing were all opposed. Yet none of those things put her down. At this present moment, the church is overtaken by greed, wordliness, lukewarmness, and hypocrisy. Are you going to fight the good fight of faith through the power of God? Are you going to see a change in the whole moral climate of the body of Christ and civilizations?",
     "witnesses.testimonials.items17.t1":
-      "You get faith by studying the Word. Study that Word until something in you 'knows that you know' and that you do not just hope that you know.",
+      "Now, who is going to trust God for the winged life? You can crawl instead if you wish. God will even bless you if you crawl; He will do the best He can for you, but oh how much better to avail ourselves of our wonderful privileges in Christ and to ‘mount up with wings as eagles, run and not be weary, walk and not faint.’ O beloved friends, there is a life on wings. I feel the streams of His life fill me and permeate my mortal frame from my head to my feet, until no words are adequate to describe it. I can only make a few bungling attempts to tell you what it is like and ask the Lord to reveal to you the rest. May He reveal to you your inheritance in Christ Jesus so that you will press on and get all that He has for you.",
     "witnesses.testimonials.items17.t2": "Divine healing is an eternal fact.",
-    "witnesses.testimonials.items17.t3":
-      "Yes, beloved reader, our God reigneth, and if we crown Him Lord of all, Lord of our soul, Lord of our body, Lord of all the circumstance in our lives, we shall find that He is able to subdue all things unto Himself.",
     "witnesses.testimonials.items18.name": "Smith Wigglesworth: 1859-1947",
     "witnesses.testimonials.items18.job":
       "An Apostle of Faith. God raised 24 individuals from the dead through him. The only book he ever read in his life was the Bible, and he dedicated his days to reading it and praying. He was reading the Bible and praying, reading the Bible and praying, reading the Bible and praying. Can you now explain why this man was so strong in faith?",
     "witnesses.testimonials.items18.t1":
       "I am not moved by what I see. I am moved only by what I believe. I know this, no man looks at appearances if he believes. No man considers how he feels if he believes. The man who believes God has it.",
     "witnesses.testimonials.items18.t2":
-      "Some people read their Bibles in Hebrew, some in Greek; I like to read mine in the Holy Ghost. You must everyday make higher ground. You must deny yourself to make progress with God.",
+      "You must everyday make higher ground. You must deny yourself to make progress with God.",
     "witnesses.testimonials.items18.t3":
       "Don't take part in an unprofitable conversation after lunch, but read a chapter from the Word and have a season of prayer. I aim to do this not matter where I am",
     "witnesses.testimonials.items19.name": "Billy Sunday: 1862-1935",
@@ -593,7 +591,9 @@ export const ui = {
     "witnesses.testimonials.items21.t1":
       "When I saw for the first time by the Word of God that sickness was not the Will of God, everything in my nature rose up to defeat the will of the devil.",
     "witnesses.testimonials.items21.t2":
-      "Jesus did not heal the sick in order to coax them to be Christians. He healed because it was His nature to heal.",
+      "In those early centuries of Christianity, Christianity did not go into the world apologizing. It went to slay the powers of darkness and undo the works of the devil, and it lived in holy triumph.",
+    "witnesses.testimonials.items21.t3":
+      "If you are having the right kind of spiritual fellowship, you will have power with God, and there is no escaping it!",
     "witnesses.testimonials.items22.name": "William J. Seymour: 1870-1922",
     "witnesses.testimonials.items22.job":
       "This black one-eyed man spent his time in the meeting before his time to preach, sitting and his head inside a box. It was God he needed, and God he needed to hear from. And glory followed. The cloud of the glory of God was witnessed in the meetings and children were playing in it; cancer tumors dropped out of the bodies of people; adults and even babes raised their hands simultaneously like some one would direct them without anyone actually guiding anyone in the presence and worship of God; angels were heard singing with the saints; and a fire of God was shown above the old mule stall where they met. This was the final indignation leading to the fire of Pentecost engulfing the whole globe.",
@@ -638,11 +638,13 @@ export const ui = {
     "witnesses.testimonials.items27.t2":
       "Any church that is not seriously involved in helping fulfill the Great Commission has forfeited its biblical right to exist.",
     "witnesses.testimonials.items27.t3":
-      "I am perfectly confident that the man who does not spend hours alone with God will never know the anointing of the Holy Spirit. The world must be left outside until God alone fills the vision...God has promised to answer prayer. It is not that He is unwilling, for the fact is, He is more willing to give than we are to receive. But the trouble is, we are not ready...",
+      "I am perfectly confident that the man who does not spend hours alone with God will never know the anointing of the Holy Spirit. The world must be left outside until God alone fills the vision.",
+    "witnesses.testimonials.items27.t4":
+      " God has promised to answer prayer. It is not that He is unwilling, for the fact is, He is more willing to give than we are to receive. But the trouble is, we are not ready.",
     "witnesses.testimonials.items28.name": "Aimee Semple McPherson: 1890-1944",
     "witnesses.testimonials.items28.job": "Time when",
     "witnesses.testimonials.items28.t1":
-      "What is my task? First of all, my task is to be pleasing to Christ. To be empty of self and be filled with Himself. To be filled with the Holy Spirit; to be led by the Holy Spirit.",
+      "Awake! thou that sleepest, arise from the dead! The Lord still lives today. His power has never abated. His Word has never changed. The things He did in Bible days, He still lives to do today. Not a burden is there He cannot bear nor a fetter He cannot break.",
     "witnesses.testimonials.items28.t2":
       "We are all making a crown for Jesus out of these daily lives of ours, either a crown of golden, divine love, studded with gems of sacrifice and adoration, or a thorny crown, filled with the cruel briars of unbelief, or selfishness, and sin.",
     "witnesses.testimonials.items28.t3":
@@ -666,7 +668,7 @@ export const ui = {
       "A young woman felt the call of God to China. To people she didn't know, to a culture completely strange. But she knew they were without Christ and without hope in the world. She returned as an old lady to visit her native country, which she left decades ago, and soon returned to where the call of God was. Have you heard the call of God? Have you heard divine words pointed at you and inflaming your heart to save the lost at all costs? Volunteer to the use of the Master and see souls enter the life ever after.",
     "witnesses.testimonials.items31.t1": "Oh God, here's my Bible, Here's my money. Here's me. Use me, God.",
     "witnesses.testimonials.items31.t2":
-      "If God has called you to China or any other place and you are sure in your own heart, let nothing deter you.Remember, it is God who has called you and it is the same as when He called Moses or Samuel",
+      "If God has called you to China or any other place and you are sure in your own heart, let nothing deter you. Remember, it is God who has called you and it is the same as when He called Moses or Samuel",
     "witnesses.testimonials.items32.name": "Watchman Nee: 1903-1972",
     "witnesses.testimonials.items32.job":
       "It is not about your education, your background, or even you. Just give the material to God, and he will make something out of it! A testimony was born when a young Chinese man professed Jesus as his Lord. He preached, he wrote, he was put into prison, he awakened, and he labored. This is a testimony to a life lived for a purpose. If you don't give your life for Christ without reservation, you don't have any meaning to live, not even the right to exist. Now God is calling you to repent. Cry for mercy and throw yourself into God's hands and watch what He will make out of you!",
@@ -709,8 +711,10 @@ export const ui = {
     "witnesses.testimonials.items37.job":
       "Reread the first quote from Him. This man's life was a testimony to healing the sick, casting out devils, and saving the lost. The same way the testimony of God through your life—saving the lost, healing the sick, and casting out devils—is perfectly that because you want it to be so. You either want to be lukewarm or burning hot. If you eat the world, you cannot be but lukewarm. But if you eat the Word of God, you cannot be but burning! Don't blame God for your laxity, but you do something about it!",
     "witnesses.testimonials.items37.t1":
-      "You are what you are because that is what you really want to be! We make decisions and those decisions make us who were are! You can judge anything in the world by this. God builds up and the Devil tears down.",
-    "witnesses.testimonials.items37.t2": "Faith is not knowing that God can. It is knowing that He will.",
+      "You are what you are because that is what you really want to be! We make decisions and those decisions make us who were are!",
+    "witnesses.testimonials.items37.t2":
+      "You can judge anything in the world by this. God builds up and the Devil tears down.",
+    "witnesses.testimonials.items37.t3": "Faith is not knowing that God can. It is knowing that He will.",
     "witnesses.testimonials.items38.name": "Derek Prince: 1915-2003",
     "witnesses.testimonials.items38.job":
       "A rock-hard philosopher was changed when he met the supernatural power of God. At first, his hand was raised in a church meeting without him doing it. In the next meeting, he knew he had to lift his hand himself. He heard two distinctive voices saying, You are going to look really silly lifting your hand up in front of these old ladies, and if this is something good, why should you not experience it? He lifted his hand up, and the testimony of his life was, as Jesus' told him, I have called you to be a teacher of the Scriptures in the truth, faith, and love that are hidden in Christ Jesus for many people. Those two voices are speaking now to you. Do you choose to lift your hand for God to offer yourself for His service now?",
@@ -753,9 +757,9 @@ export const ui = {
     "witnesses.testimonials.items42.t3": "When Jesus comes in the scene, anything can happen, and usually does.",
     "witnesses.testimonials.items43.name": "Charles and Frances Hunter: 1920-2009, 1917-2008",
     "witnesses.testimonials.items43.job":
-      "The couple was on a plane with their crew, doing God's work. After a long flight, they told their people to get up and pray for the power of God to fix their backs from all disadjures. They did, and He did. Then a flight attendant came and told Francis that she could pray for her back after the flight. She said, Yes, now. She prayed, and her shorter hand grew in that instant. She screamed. Then Frances asked if she was saved and filled with the Holy Spirit. She said I'm a child of God, but would you like to pray for me after the flight? Frances said, Yes, now. So in a minute, the young woman started to speak fluently in tongues. This was a practical couple preaching the gospel and manifesting the power of God wherever they went, from toilet to airplane.",
+      "The couple was on a plane with their crew, doing God's work. After a long flight, they told their people to get up and pray for the power of God to fix their backs from all problems. They did, and He did. Then a flight attendant came and told Francis that she could pray for her back after the flight. She said, Yes, now. She prayed, and her shorter hand grew in that instant. She screamed. Then Frances asked if she was saved and filled with the Holy Spirit. She said I'm a child of God, but would you like to pray for me after the flight? Frances said, Yes, now. So in a minute, the young woman started to speak fluently in tongues. This was a practical couple preaching the gospel and manifesting the power of God wherever they went, from toilet to airplane.",
     "witnesses.testimonials.items43.t1":
-      "God wants us to be walking in the beauty of His holiness so all that people will be able to see is His glory, and nothing of our earthly selves. He is calling on the body of Christ to be so totally committed to Him that nothing else matters in ourlives and that we will be so 'in Him' that the worl dwill see Jesus in us.",
+      "God wants us to be walking in the beauty of His holiness so all that people will be able to see is His glory, and nothing of our earthly selves. He is calling on the body of Christ to be so totally committed to Him that nothing else matters in our lives and that we will be so 'in Him' that the world will see Jesus in us.",
     "witnesses.testimonials.items43.t2":
       "Jesus touched the man AGAIN when he said he could only see men as trees, showing that we need not be ashamed to go back more than once for our healing.",
     "witnesses.testimonials.items44.name": "T. L. and Daisy Osborn. 1923-2013, 1924-1995",
@@ -918,7 +922,7 @@ export const ui = {
     "church.steps.items5.description2":
       "Kehotan teitä, veljet, Herramme Jeesuksen Kristuksen kautta ja Hengen rakkauden kautta auttamaan minua taistelussani rukoilemalla puolestani Jumalaa. Rom 15:30 FINRK",
     "church.steps.items5.description3":
-      "Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämen pohjasta lähteviä ja Hengen ja Sanan täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat vereen syntiä vastaan, *niin* olet oikea paikka. Jos niitä ei löydy, kirkko on menettänyt ensimmäisen rakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
+      "Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämen pohjasta lähteviä ja Hengen ja Sanan täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat vereen syntiä vastaan, *niin* olet oikea paikka. Jos niitä ei löydy, seurakunta on menettänyt ensimmäisen rakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
     "church.steps.items5.description4":
       "Vapaaksi päästyään apostolit menivät omiensa luo ja kertoivat kaiken, mitä ylipapit ja vanhimmat olivat heille sanoneet. Sen kuultuaan he kaikki yksimielisesti korottivat äänensä Jumalan puoleen ja sanoivat... Apt 4:23,24a FINRK",
     "church.steps.items5.description5":
@@ -936,17 +940,17 @@ export const ui = {
       "Tulkaa sen kaikessa vaelluksessanne pyhiksi, niin kuin sinun kutsujannekin on pyhä. Onhan kirjoitettu: ”Olkaa pyhät, sillä minä olen pyhä.” Jos te siis Isänänne huudatte avuksi häntä, henkilöön katsomatta tuomit joka jokaisen hänen tekojensa mukaan, niin vaeltakaa jumalanpelossa tämä muukalaisuutenne aika. tuotteenttehän, että teitä ei ole lunastettu isiltä perimästänne turhasta vaelluksesta katoavilla aarteilla, hopealla tai kullalla, vaan Kristuksen, kuin virheettömän ja tahrattoman Karitsan, kalliilla verellä. Hänet oli kyllä ​​ennalta ehkäistä jo ennen maailman perustamista, mutta vasta viimeisinä aikana paikalla on tuotu julki teitä varten. 1 Pet 1:15-20 FINRK",
     "church.steps.items7.description3":
       "Rakkaani, nyt me olemme Jumalan lapsia, eikä vielä ole käynyt ilmi, mitä meistä tulee. Me tiedämme tulevamme hänen kaltaisikseen, kun hän ilmestyy, sillä me saamme nähdä hänet sellaisena kuin hän on. Jokainen, joka panee häneen tämän toivon, puhdistaa itsensä, niin kuin hän on puhdas. 1 Joh 3:2,3 FINRK",
-    "church.steps.items8.title": "Syntiä vihataan ja tuomitaan",
+    "church.steps.items8.title": "Syntiä vihataan ja se tuomitaan",
     "church.steps.items8.description1":
       "Temppelissä hän tapasi niitä, jotka myivät härkiä, lampaita ja kyyhkysiä. tarjolla oli myös rahanvaihtajia istumassa. Hän teki köydenpätkistä ruoskan ja ajoissa kaikki ulos temppelialueelta lamppuaineen ja härkinen. Rahanvaihtajien rahat hän kaatoi maahan, ja heidän pöytänsä hän työnsi kumoon. Kyyhkysten myyjille hän sanoi: 'Viekää nämä pois täältä! Älkää tehkö minun Isäni huoneesta markkinapaikkaa. Joh 2:14-16 FINRK",
     "church.steps.items8.description2":
-      "Toiset pelastakaa tulesta temmaten, toisia taas armahtakaa kavahtaen heitä, inhoten ruumiin tahraamaa vaatettakin. Jud 1:23 FINRK",
-    "church.steps.items8.description3":
       "Vaikka minä ruumiillisesti olen poissa, olen kuitenkin hengessä läsnä ja kuin läsnä on jo langennut tuomion sille, joka on tehnyt tuollaista. Kun olette Herran Jeesuksen nimessä nauttineet yhteen ja minun henkeni ja Herramme Jeesuksen voima ovat läsnä, tuo mies luovutettava Saatanan haltuun lihan turmioksi, jotta hänen henkensä pelastuisi Herran päivänä. Kerskailunne ei ole hyväksi. Ettekö tiedä, että pieni määrä hapatetta hapattaa koko taikinan? 1 Kor 15:3-6 FINRK",
+    "church.steps.items8.description3":
+      "Toiset pelastakaa tulesta temmaten, toisia taas armahtakaa kavahtaen heitä, inhoten ruumiin tahraamaa vaatettakin. Jud 1:23 FINRK",
     "church.steps.items9.title":
       "Synti lakkaa elämästäsi, vapaudut sorrosta, riippuvuudet murtuvat, sairaudet parantuvat, demonit karkotetaan, ELÄMÄT muuttuvat JUMALAN VOIMALLA!",
     "church.steps.items9.description1":
-      "Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi.",
+      "Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi. Mark 16:17,18 FINRK",
     "church.steps.items9.description2":
       "Herran Henki on minun päälläni, sillä hän on voidellut minut julistamaan evankeliumia köyhille. Hän on lähettänyt minut julistamaan vangituille vapautusta ja sokeille näkönsä saamista, päästämään sorretut vapauteen. Luk 4:18 FINRK",
     "church.steps.items9.description3":
@@ -988,20 +992,20 @@ export const ui = {
     "fivefold.features3-1.title.span": "Jeesus",
     "fivefold.features3-1.subtitle": "Joten jos Hän teki tämän, sen täytyy olla melko tärkeää, eikö niin?",
     "fivefold.features3-1.subtitle2":
-      "Tämä malli auttaa pyhiä tekemään hengellisesti palvelutyötä ja Kristuksen ruumiin rakentamista. Valitettavasti useat miljoonat uskovat ovat eläneet koko elämänsä yhden viidestä näistä viroista. Tämä hidasti tehokkaasti heidän henkistä kasvuaan vakavan henkisen aliravitsemuksen ja puutteen vuoksi. Sellaiset seurakunnat laskeutuvat uskonnolliseen kulttiin ja käännynnäisyyteen, ovat vain uskollisia niin sanotulle uskonnollisen perustajalle, mutta eivät ole Herramme Jeesuksen Kristuksen opetuslapsia.",
+      "Tämä Jeesuksen antama malli auttaa pyhiä hengelliseen palvelutyöhön ja Kristuksen ruumiin rakentamiseen. Valitettavasti miljoonat kristityt ovat eläneet kasvaen vain yhden näiden palvelutehtävien alla viiden sijaan. Tämä on mekittävästi hidastanut heidän kasvuaan henegllisen aliravitsemuksen ja monipuolisen hengellisen ruoan puutteen vuoksi. Tämän kaltaiset seurakunnat vajoavat uskonnolliseen kultittumiseen ja tuottamaan vain käännynnäisiä, jotka ovat vain uskollisia vain oman kirkkokuntansa perustajahenkilölle, olematta kuintenkaan Herramme Jeesuksen Kristuksen opetuslapsia.",
     "fivefold.features3-2.title": "Näiden hengellisesti aliravittujen seurakuntien joukossa...",
     "fivefold.features3-2.subtitle1-1":
-      "jakautuminen, ylpeys, viha, kypsymättömyys, lihalliset vertailut, Jumalan voiman kieltäminen jne. ovat yleisiä kokemuksia. Ajatellaanpa sellaisen lapsen kasvua, joka tulee toimeen kahdellakymmenellä prosentilla päivittäisestä ateriasta. Tällainen lapsi olisi altis sairauksille, ruttotaudeille, kipulle, heikkoukselle ja kehon toiminnan menetykselle.",
+      "jakaantumiset, ylpeys, viha, epäkypsyys, lihalliset vertailut, Jumalan voiman kieltäminen ja vastaavat asiat ovat yleisiä. Kuvittele esimerkiksi lasta, jolle annetaan vain 20% päivän ruoasta. Tämä lapsi olisi altis sairauksille, kausitaudeille, kivulle, heikkoudelle ja ruumiin toiminnan heikentymiselle yksinkertaisesti ruoan puutteen vuoksi.",
     "fivefold.features3-2.subtitle2-1":
-      "Päästä siis eroon uskonnollisesta ja kirkkokunnallisesta vankeudesta ja harhakuvitelmasta ja aloita Jumalan lopunajan seurakuntaa koskevan suunnitelman täysi ulottuvuus.",
+      "Joten vapauta itsesi uskonnollisesta ja kirkkokunnallisesta vankeudesta ja harhakuvasta ja koe Jumalan täysi suunnitelma Hänen lopun ajan seurakunnalleen.",
     "fivefold.features3-2.subtitle2":
       "Hän antoi toiset apostoleiksi, toiset profeetoiksi, toiset evankelistoiksi, toiset paimeniksi ja opettajiksi tehdäkseen pyhät valmiiksi palvelutyöhön, Kristuksen ruumiin rakentamiseen, kunnes me kaikki saavutamme ykseyden uskossa ja Jumalan Pojan tuntemisessa, kypsän miehuuden, Kristuksen täyteyden täysi-ikäisyyden mitan. Efe 4:11-13 FINRK",
     "fivefold.features3-2.subtitle.span":
-      "Emme koskaan saavuta hengellistä kypsyyttä Kristuksessa, jos jätämme huomiotta jumalallisen mallin.",
+      "Emme voi koskaan saavuttaa hengellistä kypsyyttä Kristuksessa, jos emme huomioi Jumalan antamaa mallia.",
     "fivefold.features.tagline": "Esimerkit",
-    "fivefold.features.title": "Tässä on muutamia esimerkkejä ihmisistä, jotka Herra voiteli näihin palvelustehtäviin.",
+    "fivefold.features.title": "Tässä muutama esimerkki ihmisistä, jotka Herra Jeesus voiteli näihin palvelutehtäviin.",
     "fivefold.features.subtitle":
-      "Ota rohkeasti oppia näiltä Jumalan pyhiltä, kun yrität tunnistaa erityisiä palveluslahjojasi. Nämä Kristuksen palvelijat ovat toimittaneet meille uskomattomia määriä materiaalia koko elämänsä ajan rakentuksemme. Meidän on lopetettava aikamme tuhlaaminen kannattamattomiin hankkeisiin, kuten sosiaaliseen mediaan, elokuviin ja elokuviin, peleihin jne.",
+      "Opi näistä pyhistä etsiessäsi ja tunnistaessasi omaa palvelupaikaasi. Nämä Kristuksen palvelijat ovat tuottaeen valtavan määrän hyödyllistä hengellistä materiaalia elämänsä aikana meidän hyödyksemme. Meidän tulee lopettaa aikamme tuhlaaminen turhiin toimiin, kuten sosiaalinen media, elokuvat, video- sekä lautapelit yms.",
     "fivefold.content1.title": "Apostoli",
     "fivefold.content1.subtitle":
       "Silloin he paastosivat ja rukoilivat, ja he panivat kätensä heidän päälleen ja antoivat heidän mennä. Niin he Pyhän Hengen lähettäminä menivät Seleukiaan ja purjehtivat sieltä Kyprokseen. Apt 13:3,4 FINRK",
@@ -1021,13 +1025,13 @@ export const ui = {
     "fivefold.content1.bottom.links1.title": "Äänikirja - Ever Increasing Faith",
     "fivefold.content1.items1.title": "Kuvaus:",
     "fivefold.content1.items1.description":
-      "Jumala lähettää apostolit Herramme Jeesuksen Kristuksen ja Pyhän Hengen kautta tiettyyn tehtävään Kristuksen ruumiissa. Apostoleja eivät tee miesten uskonnolliset instituutiot tai teologinen uskontunnustus. Ne eivät ole itse tehtyjä tai niillä ei ole omaa arvonimeä ja tervehdystä. Apostoleilla on vakava vastuu paljastaa seurakunnalle Kristuksen salaisuus. Kyse ei ole itsensä tyydyttämisestä. Monesti jokaiselle, joka on kutsuttu apostoliksi, näytetään armollisesti Herramme Jeesuksen Kristuksen näky.",
+      "Apostolit ovat Herramme Jeesuksen Kristuksen ja Pyhän Hengen lähettämiä Jumalan työntekijöitä johonkin tiettyyn tarkoitukseen Kristuksen ruumiissa. Apostolit eivät ihmisten uskonnollisten tai teologisten instituutioiden tuotosta. Eivät itsejulistautuneita henkilöitä tai näin itseään kutsuvia julistajia. Apostoleille on annettu tärkeä ja vastuullinen tehtävä tuoda esille Kristuksen mysteeriä seurakunnalle. Kyseinen palvelupaikka ei ole tarkoitettu yksilön koroittamiseen. Monesti apostoliksi kutsutut näkevät ilmestyksessä Herramme Jeesuksen Kristuksen, ja tämä vain Jumalan armosta.",
     "fivefold.content1.items2.title": "Sisältö:",
     "fivefold.content1.items2.description":
-      "Apostolit kärsivät ihmisiltä äärimmäisiä ristiriitoja, koska heidän puhumansa Kristuksen salaisuudet haastavat heidän sukupolvensa inhimillisen viisauden ja yleisen tiedon. Tätä tarkoitusta varten apostolinen virka on traaginen ja tuskallinen virka, ei esittelytila. Ymmärrätkö, että Raamattu ei kysynyt, haluaako kukaan apostolin virkaa? Realistisesti katsoen, se ei ole toivottava toimisto, paitsi jos sinut kutsutaan nimenomaan sen vakavaan tehtävään.",
+      "Apostolit joutuvat kestämään äärimmäisten ristiriitojen keskellä saarnatessaan Kristuksen mysteerejä, sillä nämä haastavat heidän sukupolvensa ihmisviisauden sekä yleiset uskomukset. Tästä syystä apostolin tehtävää voisi kuvailla traagiseksi ja kivuliaaksi palvelupaikaksi eikä valokeilaksi. Oletko huomannut, että Raamatussa ei kysytä, haluaisiko joku apostolin palvelupaikkaan? Järkevästi katsottuna, kukaan ei halua tätä tehtävää ellei hän ole siihen nimenomaisesti kutsuttu.",
     "fivefold.content1.items3.title": "Lisää:",
     "fivefold.content1.items3.description":
-      "Yksityiskohtainen keskustelu apostolista löytyy Kenneth Haginin kirjoittamasta kirjasta, jonka otsikko on Hän antoi lahjoja ihmisille.",
+      "Erinomainen syventyminen apostolin palvelupaikasta löytyy Kenneth Haginin kirjoittamasta kirjasta, He gave gifts unto men.",
     "fivefold.content2.title": "Profeetta",
     "fivefold.content2.subtitle":
       "Tätä salaisuutta ei ole menneiden sukupolvien aikana annettu ihmisten tietoon, niin kuin se nyt on Hengessä ilmoitettu hänen pyhille apostoleilleen ja profeetoille. Efe 3:5 FINRK",
@@ -1048,13 +1052,13 @@ export const ui = {
     "fivefold.content2.bottom.links2.title": "Haginin palvelutehtävä",
     "fivefold.content2.items1.title": "Kuvaus:",
     "fivefold.content2.items1.description":
-      "Erittäin tärkeä majakka Kristuksen ruumiissa on profeetallinen virka. Se on täydellinen ja johdonmukainen ilmentymä viisauden sanoista, tiedon sanoista ja hengen erottamisesta Pyhän Hengen avulla, jotta kirkko voisi olla pyhä, ohjattu, suojeltu ja valpas paholaisten juonen suhteen. Profeetallinen virka ei toimi rukoilemattomissa ihmisissä ja henkilöissä, joilla ei ole riittävää tietämystä pyhistä kirjoituksista. Nämä ovat profeetallisen viran perusvaatimuksia. Näkyjen näkeminen tai tavoitteleminen ilman rukousta ja tarkkaa pyhien kirjoitusten tulkintaa on Bileamin virheen toistamista, se johtaisi noituuteen, ennustamiseen ja okkultismiin. Varo vääriä profeettoja.",
+      "Profeetan palvelupaikka on Kristuksen ruumissa tärkeä majakka. Se on johdonmukaisesti esiintyviä viisauden ja tiedon sanoja sekä henkien erottamista täynä. Pyhä Henki näiden kautta auttaa seurakuntaa pyhittymään, ohjaa ja suojaa sitä sekä varoittaa sitä Paholaisen juonista. Profeetta ei voi olla henkilö, joka ruokoilee vähän, tai henkilö, joka ei tunne Sanaa hyvin. Nämä ovat perustavanlaatuiset vaatimukset, jotta Jumala voi asettaa yksilön profeetan palvelupaikalle. Näkyjen tai ilmestysten jahtaaminen ilman rukousta tai tarkkaa Sanan tuntemista johtaa Bileamin virheeseen toistumiseen, noituuteen, ennustamiseen, ja okkultismiin. Varokaa vääriä profeettoja.",
     "fivefold.content2.items2.title": "Sisältö:",
     "fivefold.content2.items2.description":
-      "Valitettavasti tämä sukupolvi on silvonnut profeetan viran, se on pelkistynyt rahan pyörittämiseen, työtarjousten ennustamiseen, tulevan puolison päättäväisyyteen, lapsen sukupuoleen, missä kaupungissa asua tai jopa mitä kenkiä ostaa kaupasta. Tämä on pilkkaa viralle, jonka kautta Pyhä Henki tuomitsee synnin, vanhurskauden ja tuomion. Veljet varokaa, ettei teitä petetä.",
+      "Valitettavasti tämän sukupolven keskellä profeettojen määrä on räjähtänyt väärällä tavalla. Se on muuttunut rahan ja työtarjousten ennustamiseksi, tulevan puolison löytämiseksi, lapsen sukupuolen tietämiseksi, sopivan asuinpaikkakunnan määrittämiseksi, tai jopa oikeiden kenkien ostamisen johdatukseksi. Tämä on täyttä pilkaa palvelupaikalle, jonka kautta Pyhä Henki tuomitsee maailman synnistä, vanhurskaudesta ja tuomiosta. Veljet, varokaa ettei teitä petetä tai harhauteta.",
     "fivefold.content2.items3.title": "Lisää:",
     "fivefold.content2.items3.description":
-      "Yksityiskohtainen keskustelu profeetasta löytyy Kenneth Haginin kirjoittamasta kirjasta, jonka otsikko on Hän antoi lahjoja ihmisille.",
+      "Erinomainen syventyminen profeetan palvelupaikasta löytyy Kenneth Haginin kirjoittamasta kirjasta, He gave gifts unto men.",
     "fivefold.content3.title": "Evankelista",
     "fivefold.content3.subtitle":
       "Minä en häpeä evankeliumia, sillä se on Jumalan voima pelastukseksi jokaiselle, joka uskoo, juutalaiselle ensin, sitten myös kreikkalaiselle. Rom 1:16 FINRK",
@@ -1075,7 +1079,7 @@ export const ui = {
     "fivefold.content3.bottom.links2.title": "Bonnken palvelutehtävä ",
     "fivefold.content3.items1.title": "Kuvaus:",
     "fivefold.content3.items1.description":
-      "Tätä Pyhän Hengen virkaa hoitaa kaupungin huutaja ja valtakunnan kapellimestari. Tehtävänä tässä virassa on kutsua miehiä ja naisia pparannukseen yksinkertaisen evankeliumin sanoman kautta Herrasta Jeesuksesta Kristuksesta. Evankelistalla on parantumaton halu pelastaa kadonneet: 'ryöstää helvetti taivaan asuttamiseksi'. He ovat levottomia, säälimättömiä, eivätkä ne voi olla sidottu kirkkokuntaan tai herkuleisten hallinnollisten tehtävien vaivaama. Ne ovat Jumalan sytyttäviä hengellisen pimeyden alueille mahdollistamaan pelastuksen, ilon ja rauhan jumalallisen liekin nielaisemisen Pyhässä Hengessä.",
+      "Pyhän Hengen asettama palvelupaikka on kaupunkin kaduilla julkisia ilmoituksia kaupungin tai torin kadulla huutava äänitorvi. Palvelupaikan tehtävä on on kutsua miehiä na naisia parannukseen yksinkertaisen Jeesuksen Kristusken evankeliumin kautta. Evankelista on parantumaton halu pelastaa kadotettuja, 'ryöstää helvetti taivaan täyttämiseksi'. He ovat koko ajan liikkessä ja eivät ole sidottuja kirkkokuntaan tai hallinnollisiin tehtäviin. He ovat Jumalan tulia ammuttuna hengellisesti pimeyden valtaamille alueille, jotta Jumalan pyhä tuli nielaisee nämä alueet pelastuksen sekä Pyhän Hengen ilon ja rauhan hyökyaaltoon.",
     "fivefold.content3.items2.title": "Sisältö (Kritus):",
     "fivefold.content3.items2.description":
       "Filippos meni Samarian kaupunkiin ja saarnasi kansalle Kristusta. Apt 8:5 FINRK",
@@ -1098,13 +1102,13 @@ export const ui = {
     "fivefold.content4.bottom.links1.title": "Opetuksia",
     "fivefold.content4.items1.title": "Kuvaus:",
     "fivefold.content4.items1.description":
-      "Tämä toimisto on yleisin ja suosituin, koska se on valtakunnan kotivalmistaja. Pastori lohduttaa Kristuksessa syntyneitä, vaihtaa hengelliset vaipat, antaa vauvalle maitoa ja pitää kaikki lämpimänä. Jeesus paimeni kahtatoista apostolia useita vuosia. Toimistolla on eri nimiä, kuten piispa, vanhin, diakoni, valvoja, paimen. Apostoli Paavali ja Pietari ovat täsmentäneet tämän tehtävän hyvin. Pastorit voivat olla heikkoja, koska he eivät halua luopua hengellisistä lapsistaan, jotka nyt kypsyvät Herrassa ja pyrkivät käyttämään lahjaansa. Tämä voi johtaa pelotteluun, manipulointiin ja herruuteen, lyhyesti sanottuna noituuteen. Todellinen pastori ei pelkää antaa lauman poimia Pyhän Hengen rikkauksia muissa vahvistetuissa hengellisissä viroissa.",
+      "Suosituin ja yleisin palvelupaikka, valtakunnan 'kodintekijä'. Pastori tuo turvan vastasyntyneille uskoville, vaihtaa hengelliset vaipat, antaa vauvan maitoa ja pitää kaikki lämpiminä. Jeesus paimensi apostolia usean vuoden ajan. Tätä palvelupaikkaa voidaan kutsua usealla nimellä: Piispa, Vanhin, Auttaja, Kaitsija, Paimen. Siitä on antanut hyvän kuvauksen apostoli Paavali ja Pietari. On mahdollista, että Pastori syyllistyy toimeen, että hän ei tahdo antaa hänen hengellisten lapsiensa kasvaa kypsyyteen Herrassa, koska tässä prosessissa nämä alkavat ise harjoittaa hengellisiä lahjojaan. Hän ei nää sitä mahdollisuutena ja Kristuksen valtakunnan leviämisenä vaan uhkana. Tällainen Pastori pelottelee, manipuloi ja hallitsee toimintansa alla olevia eli harjoittaa noituutta. Todellinen pastori ei pelkää antaa lauman ruokailla ja kasvaa Pyhän Hengen antamista rikkauksista toisten palvelutehtävien kautta.",
     "fivefold.content4.items2.title": "Sisältö:",
     "fivefold.content4.items2.description":
-      "Todellinen pastori antaa henkensä lampaiden puolesta. Paimentamaan ja ruokkimaan muita pastorien tulee olla vahvoja ja syvällä Sanassa ja rukouksessa. He saavat polviltaan jumalallisia puheita, jotka laumassa johtavat runsaaseen haluun ylistää Jeesusta ja rakastaa Jumalaa ja veljiä. Se saa ihmiset kärsimään ja kamppailemaan polvillaan rukoillen rukoillen ja rukoillen sielujen puolesta! Halu pyhyyteen herää ja synti ja rakkaus maailmaa kohtaan lakkaa.",
+      "Todellinen paimen antaa henkensä lampaiden puolesta. Paimentaakseen ja ruokkiakseen lampaita pastorien täytyy olla vahva ja juurtunut rukoukseen ja Sanaan. Polvillaan rukouksessa he saavat taivaasta sanan, jonka kautta lauma kasvaa halussa kirkastaa Jeesusta sekä rakastaa Jumalaa sekä veljiä. Se sytyttää lauman liekkiin, kamppailemaan ja kärsimään polvillaan rukouksessa. Halu pyhittymiseen kasvaa ja synti ja rakkaus maailmaan kohtaan kuolee.",
     "fivefold.content4.items3.title": "Lisää:",
     "fivefold.content4.items3.description":
-      "Yksityiskohtainen keskustelu pastorista löytyy Kenneth Haginin kirjoittamasta kirjasta, jonka otsikko on Hän antoi lahjoja ihmisille.",
+      "Erinomainen syventyminen pastorin palvelupaikasta löytyy Kenneth Haginin kirjoittamasta kirjasta, He gave gifts unto men.",
     "fivefold.content5.title": "Opettaja",
     "fivefold.content5.subtitle":
       "Ja löydettyään toi hänet Antiokiaan. He olivat kokonaisen vuoden seurakunnan keskuudessa, ja suuri joukko ihmisiä sai heiltä opetusta. Antiokiassa alettiin ensimmäiseksi kutsua opetuslapsia kristityiksi. Apt 11:26 FINRK",
@@ -1124,18 +1128,18 @@ export const ui = {
     "fivefold.content5.testimonials4.name": "2 Kor 3:6 FINRK",
     "fivefold.content5.bottom.title": "Esimerkki opettajasta 2000-luvulla:",
     "fivefold.content5.bottom.subtitle":
-      "Derek Prince, 'Olen kutsunut sinut Raamatun opettajaksi totuudessa, uskossa ja rakkaudessa, joka on kätkettynä Kristuksessa Jeesuksessa monille ihmisille.'",
+      "Derek Prince, 'Olen kutsunut sinut Raamatun opettajaksi totuudessa, uskossa ja rakkaudessa, joka on kätkettynä Kristuksessa Jeesuksessa, monille ihmisille.'",
     "fivefold.content5.bottom.links1.title": "Opetuksia",
     "fivefold.content5.bottom.links2.title": "Princen palvelutehtävä",
     "fivefold.content5.items1.title": "Kuvaus:",
     "fivefold.content5.items1.description":
-      "Tässä on yliopistokoulutuksen kautta hengellisen päiväkodin toimisto, jonka tehtävänä on murtaa elämän leipä systemaattisesti ja vaivattomasti kulutettaviksi mitoiksi palasiksi. Opettaja on jumalallisesti inspiroitunut ilmoituksen ja viisauden hengestä tekemään pyhistä kirjoituksista elävän sanan, ei vain teologian kuolleita kirjaimia. Opettaja on täynnä pyhien kirjoitusten tuntemusta ja työskentelee käsi kädessä pastorin kanssa Kristuksen ruumiin tarkkaan kurittamiseen ja hoitamiseen.",
+      "Tehtävänä kouluttaa hengellisestä päiväkodista aina yliopistoon asti. Tämä tapahtuu systemaattisesti jakamalla elämän leipää sopivan kokoisina palasina ja annoksina. Opettaja toimii yliluonnollisessa ilmestyksen ja viisauden hengen voitelussa tehden Raamatusta elävää Sanaa eikä kuollutta teologiaa. Tässä palvelupaikassa yksilö on täynä Raamatun tuntemusta ja hän toimii käsi kädessä Pastorin kanssa täsmällisessä Kristuksen ruumiin opetuslapseuttamissa ja ravitsemisessa.",
     "fivefold.content5.items2.title": "Sisältö:",
     "fivefold.content5.items2.description":
-      "Toisin kuin pastori, opetustoimisto ei ole kiinteä, vaan liikkuva, jotta useat paikalliset seurakunnat voivat hyötyä armosta. Opetusviraston tehtävänä on vieroittaa kirkko pastoraalisen tuttipulloista. Toinen nimi opettajan viralle on ministeri. Opettajan tai ministerin odotetaan esittelevän vahvaa lihaa, joka vahvistaa hengellistä immuniteettia, lisää voimaa ja mahdollistaa valppauden vääriä oppeja ja pettäjiä vastaan. Opetustoimistolla on vastuu tehdä hengellisistä vauvoista ja vauvoista nuoria, nuoria aikuisia ja täysi-ikäisiä aikuisia, leimattu toimintakypsyys!",
+      "Toisin, kuin pastori, opettaja ei välttämättä ole paikkakuntaa sidottu vaan sen alue ulottuu usean seurakunnan piiriin, jotta nämä voivat vahvistua ja kasvaa. Opettajan tehtävä on vieroittaa seurakunta tuttipulloista, joita pastori tarjoaa. Tämän palvelutehtävän odotetaan tuovan vahvaa ruokaa, joka vahvistaa hengellistä vastustuskykyä, vahvistaa ja lisää valppautta vääriä opettajia ja pettäjiä vastaan. Opettajan tehtävänä on muuttaa hengelliset vauvat ja lapset nuoriksi, nuoriksi aikuisiksi ja täysi-ikäisiksi aukuisiksi. Tehtävänimike, operaatio täysi-ikäisyys!",
     "fivefold.content5.items3.title": "Huomioita:",
     "fivefold.content5.items3.description":
-      "Jos paikallinen seurakuntasi on täynnä aikuisia aikuisia vauvoja joko penkissä tai saarnatuolilla, jotka huutavat päivittäin hengellisiä tuttipulloja, se on henkinen hätä! Kutsu ystävällisesti opettaja.",
+      "Paikallisseurakuntasi voi olla täynä fyysisesti aukuisia, mutta hengellisesti vauvoja, on sitten kyse laumasta tai paimenesta. He huutavat jatkuvasti hengellisten tuttipullojensa perään. Tämä on hengellinen hätä tilanne! Kutsu nopeasti paikalle opettaja.",
     "footer.about": "Meistä:",
     "footer.madeBy1": "Tehnyt Juhani Juusola",
     "footer.madeBy2": " rakkaudesta Jumalaan ",
@@ -1158,7 +1162,7 @@ export const ui = {
     "index.note.text2": " Haluatko todella tulla tuntemaan Jumalan henkilökohtaisesti?",
     "index.note": " Haluatko todella tulla tuntemaan Jumalan henkilökohtaisesti?",
     "index.features1.tagline": "Sisältö",
-    "index.features1.title": "Mitä Jumala tekee Pyhän Hengenksä kautta",
+    "index.features1.title": "Mitä Jumala tekee Pyhän Henkensä kautta",
     "index.features1.subtitle":
       "Sillä näin sanoo Herra Sebaot: Vielä vähän aikaa ja minä järisytän taivaat ja maan, meren ja mantereen. Minä panen kaikki kansat vapisemaan. Kaikkien kansojen kalleudet tulevat tänne, ja minä täytän tämän huoneen kunnialla, sanoo Herra Sebaot. Haggai 2:6,7 FINRK",
     "index.features1.items1.title": "Herättää Kristuksen ruumiin",
@@ -1173,7 +1177,7 @@ export const ui = {
       "Meidän täytyy nähdä apostolisten ihmeiden ja merkkien herääminen henkiin koko Kristuksen ruumiissa",
     "index.features1.items5.title": "Poistaa esteet ja rajat",
     "index.features1.items5.description":
-      "Aidossa kristillisyydessä ja kristinuskossa ei ole kyse uskonnollisesta, kulttuurisesta, rodusta, maantieteellisestä, sukupuolesta, iästä tai uskonnollisesta paremmuudesta.",
+      "Aidossa kristillisyydessä ja kristinuskossa ei ole kyse uskonnollisesta, kulttuurisesta, rodullisesta, maantieteellisestä, sukupuolesta, iästä tai uskonnollisesta paremmuudesta.",
     "index.features1.items6.title": "Ja tulemme näkemään valtavan sielujen korjuun ja todellisen herätyksen",
     "index.features1.items6.description":
       "On aika nähdä sielujen pelastuvan massoittain, luopuneiden takaisin palaaminen ja täysi herätys Kristuksen ruumiissa.",
@@ -1312,197 +1316,208 @@ export const ui = {
     "witnesses.testimonials.items8.job": "Tulossa pian...",
     "witnesses.testimonials.items8.t1":
       "Jokaisen kristityn suurin tehtävä on pelastaa sieluja. Mutta moni valittaa, että he eivät tiedä miten. Mutta vastaus heidän valitukseensa on selvä; he eivät ole panostaneet tietääkseen. He eivät ole ikinä nähneet vaivaa ollakseen kykeneviä siihen. Toimintasi on todella pahaa ja kohtuutonta kristityksi, jos et opiskele, kuinka voit tehokkaasti rakentaa Kristuksen valtakuntaa.",
-    "witnesses.testimonials.items8.t2": "Herätys on uudistunut ",
+    "witnesses.testimonials.items8.t2":
+      "Herätys on yksilön uudistunut vakuuttuminen synnistä ja parannuksen teosta, jota seuraa intensiivinen tahto elää kuuliaisesti Jumalalle. Kun yksilö luovuttaa oman tahtonsa Jumalalle syvässä nöyryydessä. ",
     "witnesses.testimonials.items9.job": "Tulossa pian...",
     "witnesses.testimonials.items9.t1": "Kun alat murehtia et voi toimia uskossa. Kun alat uskoa, et voi murehtia.",
     "witnesses.testimonials.items9.t2":
-      "Raha ei ole yhtään sen arvokkaampaa kuin se edistää Herran työtä. Elämä on yhtä arvokas kuinka suuressa mittakaavassa se käytetään Herran palvelukseen.",
+      "Rahan arvo on juuri se, kuinka hyvin se käytetään Herran työhön. Myös elämä on juuri niin arvokas, kuinka paljon se on käytetty Herran palvelemiseen.",
     "witnesses.testimonials.items10.job": "Tulossa pian...",
     "witnesses.testimonials.items10.t1":
-      "Älköön yhtäkään hetkeä elämässäni vietettäkö Jumalan läsnäolon valon, rakkauden ja ilon ulkopuolella. Ei hetkeäkään ilman, että olen kokonaan luovuttanut itseni astiana, jonka hän voi täyttää Hengellään ja rakkaudellaan.",
+      "En halua vietää yhtään hetkeä elämässäni Jumalan valon, rakkauden ja ilon ulkopuolella. Ei hetkeäkään, joilloin elämäni ei olisi luovutettu kokonaan Hänelle astiana, jonka Hän voi täyttää Hengellään ja rakkaudellaan.",
     "witnesses.testimonials.items10.t2":
-      "Jumala ei usein voi kuulla rukouksia huulillamme, koska sydämemme toiveet maailman perään huutavat Hänelle paljon voimakkaammin ja äänekkäämmin, kuin halumme Häntä kohtaan.",
+      "Usein Jumala ei vain voi kuulla huultemme rukouksia, koska sydämemme halu maailman asiohin huutaa Hänelle paljon kovemmin, kuin meidän halumme Hänen tahtoaan kohtaan. ",
     "witnesses.testimonials.items11.job": "Tulossa pian...",
-    "witnesses.testimonials.items11.t1": "Asetutko Hänen jalkoihinsa ja asetatko itsesi kokonaan Hänen käyttöönsä?",
+    "witnesses.testimonials.items11.t1":
+      "Valitsetko paikan Mestarin jalkojen juuresta ja annat itsesi täysin Hänen käyttöönsä?",
     "witnesses.testimonials.items11.t2":
-      "Et ole täällä maailmassa itseäsi varten. Sinut on lähetetty tänne muiden takia. Maailma odottaa sinua!",
-    "witnesses.testimonials.items11.t3": "Mene suoraan sieluja kohti ja mene kaikkein pahimpien luo.",
+      "Nyt täällä maailmassa, et ole pelastettu itsesäsi varten. Sinut on lähetetty muita varten. Maailma odottaa sinua!",
+    "witnesses.testimonials.items11.t3":
+      "Kulje koko ajan voittaaksesi sieluja ja niitä kohti, jotka ovat kaikkein pahimpia syntisiä.",
     "witnesses.testimonials.items12.job": "Tulossa pian...",
     "witnesses.testimonials.items12.t1":
-      "On kolme suurta totuutta: 1. on olemassa Jumala, 2. Hän on puhunut meille Raamatussa, 3. Hän tarkoittaa, mitä Hän sanoo.",
-    "witnesses.testimonials.items12.t2": "Suuri lähetyskäsky ei ole mielipideasia; se on käsky, jota on noudatettava.",
+      "On kolme suurta totuutta: 1. On olemassa Jumala; 2. Hän on puhunut meille Raamatussa; 3. Hän tarkoittaa, mitä sanoo.",
+    "witnesses.testimonials.items12.t2": "Suuri lähetyskäsky ei ole mielipiede, vaan käsky, jota on noudatettava.",
     "witnesses.testimonials.items12.t3":
-      "Älä pidä konserttiasi ensin ja viritä sitten instrumenttisi. Aloita päivä Jumalan Sanalla ja rukouksella ja pääse ennen kaikkea harmoniaan Hänen kanssaan.",
+      "Älä soita konserttia ensin ja sitten vasta viritä soitintasi. Aloita päiväsi Jumalan Sanalla ja rukouksella ja viritä itsesi ensin Hänen kanssaan.",
     "witnesses.testimonials.items13.job": "Tulossa pian...",
     "witnesses.testimonials.items13.t1":
-      "Paras 'anteeksipyyntö' evankeliumille on kerota evankeliumi. Sinun ei tarvitse puolustaa 5. Mooseksen Kirjaa tai mitään Mooseksen kirjoista. Saarnaa Jeesusta Kristusta ja häntä ristiinnaulittuna. Juudan heimon leijona karkottaa pian kaikki vihollisensa.",
+      "Raamattu ei ole maailman valo, vaan seurakunnan valo. Maailma ei lue Raamattua, vaan kristittyjä! Sinä olet maailman valo.",
     "witnesses.testimonials.items13.t2":
-      "Etkö halua muiden pelastuvan? Silloin et ole itse pelastunut, ole varma siitä!",
+      "Etkö toivo, että toiset pelastuvat? Sitten et ole itse pelastunut ja siitä voit olla varma!",
     "witnesses.testimonials.items14.job": "Tulossa pian...",
     "witnesses.testimonials.items14.t1":
-      "Jos hengellisesti kuolleemme aiotaan herättää, meidän on ensin saatava voimaa Jumalalta. Syy, miksi epäonnistumme niin usein voittamaan lähimmäisemme Kristukselle on, että yritämme voittaa heidät saamatta ensin voimaa Jumalalta. Jeesus oli yhteydessä Isänsä kanssa, joten Hän saattoi olla varma, että Hänen rukouksensa kuultiin.",
-    "witnesses.testimonials.items14.t2": "Raamattua ei annettu meille informaatioksi, vaan meidän muuttamiseksi.",
+      "Jos haluamme, että hengellisesti kuolleet heräävät, meidän täytyy aluksi saada voima siihen Jumalalta. Syy, miksi niin usein emme vaikuta toisiin on, että yritämme voittaa heitä Kristukselle, ennen kuin olemme saanet voiman siihen Jumalalta. Jeesus oli ensin yhteydessä Isänsä kanssa ja siksi Hän oli varma, että Hänen rukouksiinsa vastataan.",
+    "witnesses.testimonials.items14.t2":
+      "Jumala ei ole antanut meille Raamattua informaatioksi, vaan meidän muutostamme varten",
     "witnesses.testimonials.items15.job": "Tulossa pian...",
     "witnesses.testimonials.items15.t1":
-      "Minä huomaan, että tunnollisilla Kristuksen seuraajilla on vain vähän lepoa täällä. Meidän on oltava Isämme töissä Mestarimme tavoin.",
+      "Olen huomannut, että vilpittömästi Kristusta seuraavat lepäävät hyvin vähän täällä maan päällä. Niin kuin Mestarimme, meidän tulee olla alituisesti Isämme töissä.",
     "witnesses.testimonials.items15.t2":
-      "Paavali sanoo, että saarnaamisen on tapahduttava Hengen ja voiman osoittamisella. Pyhä Henki todistaa merkein ja ihmein; jos näillä eivät ole näkyvä osa jumalanpalvelustamme, emme voi menestyä.",
+      "Paavali sanoin, että Sanan julistamisen täytyy tulla Hengen ja voiman ilmenemisen kanssa. Pyhä Henki todistaa puhutan sanan ihmein ja merkein; ilman, että nämä ovat osa palvelutehtäväämme, emme voi onnistua.",
     "witnesses.testimonials.items16.job": "Tulossa pian...",
     "witnesses.testimonials.items16.t1":
-      "Kyneleeni pyyhittiin pois, sydämeni oli vahva, näin tien parantumiseen... Sanoin, Jumala auta minua nyt saarnaamaan Sanaa kaikille ympärillä oleville kuoleville ja kertomaan heille, kuinka Saatana edelleen saastuttaa ja Jeesus yhä vapauttaa, sillä Hän on sama tänään.",
+      "Olen ylittänyt valtameren 14 kertaa laivalla. Noiden 14 ylityksen aikana monia myrskyjä nousi. Mutta joka kerta myrskyn noustessa, tein aina samoin, kuin Jeesus: minä nuhtelin myrskyä. Ja jokaikinen lakkasi.",
     "witnesses.testimonials.items16.t2":
-      "On monia kristittyjä, jotka ovat kristittyjä vain teoriassa, ja he ovat käytännössä osa maailmaa.",
+      "On olemassa monia kristittyjä, jotka ovat kristittyjä vain teoriassa, mutta kuuluvat maailmaan toiminnassaan.",
     "witnesses.testimonials.items17.job": "Tulossa pian...",
     "witnesses.testimonials.items17.t1":
-      "Saat uskoa tutkimalla Sanaa. Tutki sitä, kunnes jokin sinussa 'tietää, että tiedät' etkä vain toivo tietäväsi.",
-    "witnesses.testimonials.items17.t2": "Jumalallinen parantaminen on ikuinen tosiasia.",
-    "witnesses.testimonials.items17.t3":
-      "Kyllä, rakas lukija, meidän Jumalamme hallitsee, ja jos me kruunaamme hänet kaiken Herraksi, sielumme Herraksi, ruumiimme Herraksi ja kaikkien elämämme olosuhteiden Herraksi. Silloin huomaamme, että Hän yksin pystyy alistamaan kaiken valtaansa.",
+      "Voitko uskoa Jumalaan nyt kokeaksesi elämän, joka lentää kotkan siivillä? Voit toki ryömiä, jos haluat. Jumala siunaa sinua vaikka ryömisitkin; Hän tekee parhaansa sinulle. Mutta oi, kuinka paljon parempi on, kun haluamme elää siinä todellisuudessa, jotka Kristus meille voitti ja 'kohota siivilleen, kuin kotka, juosta uupumatta, kävellä väsymättä.' Oi rakkaat ystävät, on olemassa elämä kotkan siivillä. Tunnen Hänen elämänsä virtojen täyttävän minut ja läpikäyvän olemukseni päästä varpaisiin, kunnes sanat eivät voi kuvata sitä. Voin vain tehdä muutaman horjuvan yrityksen yrittäessäni kuvailla sitä ja pyytää Herraa avaaman teille loput. Avatkoon Hän teille teidän perintöosanne Kristuksessa, että te puskette eteenpäin ja koette kaiken, mitä Hänellä on teille varattuna.",
+    "witnesses.testimonials.items17.t2": "Jumalan parantava voima on ikuinen fakta.",
     "witnesses.testimonials.items18.job": "Tulossa pian...",
     "witnesses.testimonials.items18.t1":
-      "Minua ei liikuta se, mitä näen. Minua liikuttaa vain se, mihin uskon. Tiedän tämän, kukaan mies ei katso ulkonäköä, jos hän uskoo. Kukaan ihminen ei ajattele, miltä hänestä tuntuu, jos hän uskoo. Miehellä, joka uskoo Jumalaan, on jo halumansa asia.",
+      "Minuun ei vaikuta se, mitä näen. Minuun vaikuttaa vain se, mihin uskon. Tiedän, että kukaan ei katsoa olosuhteita, jos hän uskoo. Kukaan ei välitä siitä, mitä tuntee, jos uskoo. Sillä, joka uskoo, on jo se, mitä Jumalan Sana sanoo, vaikka näyttäisi tai tuntuisi miltä.",
     "witnesses.testimonials.items18.t2":
-      "Jotkut ihmiset lukevat Raamattuaan hepreaksi, toiset kreikaksi; Tykkään lukea omaani Pyhässä Hengessä. Sinun on joka päivä noustava korkeammalle tasolle. Sinun täytyy kieltää itsesi edistyäksesi Jumalan kanssa.",
+      "Joka päivä sinun tulee päästä korkeammalla hengessä. Sinun tulee kieltää itsesi, jotta voi edistyä Jumalan kanssa.",
     "witnesses.testimonials.items18.t3":
-      "Älä osallistu lounaan jälkeen kannattamattomaan keskusteluun, vaan lue luku Sanasta ja pidä rukoushetki. Pyrin tekemään tämän riippumatta siitä, missä olen.",
+      "Lounaan jälkeen sinun ei pidä osallistua turhuuksia sisältävään keskusteluun. Sen sijaan lue luku Sanasta ja vietä hetki rukouksessa. Pyrin tekemään tämän riippumatta siitä, missä olen.",
     "witnesses.testimonials.items19.job": "Tulossa pian...",
-    "witnesses.testimonials.items19.t1": "Uskon, että Raamattu on Jumalan sanaa kannesta kanteen.",
+    "witnesses.testimonials.items19.t1": "Uskon Raamatun olevan kannesta kanteen Jumalan sanaa",
     "witnesses.testimonials.items19.t2":
-      "Kääntyminen on täydellistä antautumista Jeesukselle. Se on halukkuutta tehdä mitä hän haluaa sinun tekevän.",
+      "Parannuksen teko on yksilön täydellistä antautumista Jeesukselle. Täyden tahdon omaamista tehdä se, mitä Hän tahtoo sinun tekevän.",
     "witnesses.testimonials.items19.t3":
-      "Kunnioitan enemmän paholaista, kuin joitain tapaamiani saarnaajia; paholainen uskoo, että Raamattu on Jumalan sanaa!",
+      "Kunnoitan enemmän Paholaista, kuin joitakin Sanan julistajia, jotka olen tavannut. Paholainen uskoo Raamatun olevan Jumalan Sanaa.",
     "witnesses.testimonials.items20.job": "Tulossa pian...",
-    "witnesses.testimonials.items20.t1": "Kirkon uudistuminen riippuu rukouselämämme uudistumisesta.",
+    "witnesses.testimonials.items20.t1":
+      "Seurakunnan henkiin herääminen riippuu täysin rukouselämämme henkiin heräämisestä.",
     "witnesses.testimonials.items20.t2":
-      "En koskaan tiennyt, mitä on työskennellä koko päivän ja sitten rukoilla koko yön Jumalan edessä toisen puolesta… Yliopistossa tai juhlissa kotona, minulla oli tapana pitää ne tunnit itselleni tai huvikseni. Enkö voi nyt tehdä niin paljon Jumalalle ja sieluille?",
+      "Aiemmin en tiennyt, millaista oli tehdä päivä töitä ja sitten viettää koko yö rukouksessa toisen puolesta... Ylipistossa tai juhliessani kotona nuo tunnit olivat itseäni tai nautintoja varten. Enkö voi antaa niitä nyt Jumalle ja sielujen voittamiseksi?",
     "witnesses.testimonials.items21.job": "Tulossa pian...",
     "witnesses.testimonials.items21.t1":
-      "Kun näin ensimmäistä kertaa Jumalan Sanan kautta, että sairaus ei ollut Jumalan tahto, kaikki luonnossani nousi voittamaan paholaisen tahdon.",
+      "Kun ensimmäisen kerran näin Jumalan Sanasta, että sairaana oleminen ei ollut Jumalan tahto, koko olemukseni nousi kukistamaan tuon Saatanan tahdon.",
     "witnesses.testimonials.items21.t2":
-      "Jeesus ei parantanut sairaita houkutellakseen heitä olemaan kristittyjä. Hän paransi, koska Hänen luonteensa oli parantaa.",
+      "Kristinuskon ensimmäisinä vuosisatoina se ei edennyt maailmaan pyydellen anteeksi. Se eteni kukistaakseen pimeyden voimat ja tehdäkseen tyhjäksi Paholaisen teot. Ja se eli pyhässä voitossa.",
+    "witnesses.testimonials.items21.t3":
+      "Jos sinulla on oikeanlainen hengellinen yhteys Jumalaan, sinulla on Jumalan voima elämässäsi, eikä muuta mahdollisuutta ole!",
     "witnesses.testimonials.items22.job": "Tulossa pian...",
     "witnesses.testimonials.items22.t1":
-      "Voin sanoa Hengen voimalla, että missä tahansa Jumala saa kansan, joka tulee yhteen yksimielisenä Jumalan sanassa, Pyhän Hengen kaste lankeaa heidän päälleen, kuten Korneliuksen talossa.",
+      "Pyhän Hengen voiman vaikutuksesta sanon, että kun Jumala saa yksilöitä, jotka tulevat yhteen yhdessä ymmärryksessä Jumalan Sanasta, He tulevat täyttymään Pyhällä Hengellä juuri niin kuin Korneliuksen talossa.",
     "witnesses.testimonials.items22.t2":
-      "Jokainen pelastunut ja pyhitetty ihminen voi tuntea tulen palavan sydämessään, kun hän huutaa avukseen Jeesuksen nimeä.",
+      "Jokainen pelastunut ja pyhitetty henkilö voi tuntea tulen palavan hänen sydämessään kutsuessaan Jeesuksen nimeä.",
     "witnesses.testimonials.items23.job": "Tulossa pian...",
     "witnesses.testimonials.items23.t1":
-      "Jotkut ihmiset ihmettelevät, miksi he eivät voi uskoa paranemiseen. He ruokkivat ruumistaan kolmella lämpimällä aterialla päivässä ja henkeänsä yhdellä kylmällä välipalalla viikossa.",
+      "Jotkut ihmettelevät, miksei heillä vain ole uskoa paranemiseen. He ruokkivat ruumistaan kolmella lämpimällä aterilla päivässä ja henkeään yhdellä kylmällä välipalalla viikossa.",
     "witnesses.testimonials.items23.t2":
-      "Näemme lähes kaikista mahdollisista näkökulmista koko Raamatussa, ettei ole olemassa selkeämmin opetettua oppia kuin se, että Jumalan tahto on parantaa kaikki, jotka tarvitsevat parantumista, ja että he voivat täyttää päivänsä Hänen lupauksensa mukaisesti.",
+      "Raamatusta on aivan selvästi nähtävissä, mistä kulmasta ikinä sitä katsookaan, että se sisältää kaikkein selvimmin todistuksen siitä, että Jumalan tahto on parantaa kaikki. Ja että jokainen täyttää elämänsä kaikki päivät Hänen lupauksensa mukaan.",
     "witnesses.testimonials.items24.job": "Tulossa pian...",
-    "witnesses.testimonials.items24.t1": "Taivuta minua, taivuta minua, oi Jumala.",
+    "witnesses.testimonials.items24.t1": "Taivuta minut, taivuta minut, oi Jumala.",
     "witnesses.testimonials.items24.t2": "Olen Jeesuksen käsissä.",
     "witnesses.testimonials.items24.t3":
-      "Älä yritä tehdä suuria asioita, yritä vain olla rauhallinen ja kärsivällinen. Anna Jumalan puhua sinun kauttasi.",
+      "Älä yritä tehdä suuria asoita, vaan yritä vain olla rauhassa ja kärsivällinen. Anna Jumalan puhua sinun kauttasi.",
     "witnesses.testimonials.items25.job": "Tulossa pian...",
     "witnesses.testimonials.items25.t1":
-      "Nykyinen evankelista antaa valitettavan väärän kuvan Kristuksen pelastuksen luonteesta. Hän julistaa Vapahtajaa helvetistä ennemmin kuin Vapahtajaa synnistä. Ja siksi niin monet joutuvat kohtalokkaasti petetyksi, sillä on suuri joukko, jotka haluavat paeta tulijärvestä ja jotka eivät halua vapautua lihallisuudestaan ja maailmallisuudestaan.",
+      "Nykypäivän evankelistat antavat voivoteltavan väärän kuvan pelastuksen luonteesta. Hänet esitellään ennemmin Pelastajana helvetistä kuin Pelastajana synnistä. Siksi monet ovat niin kuolettavasti petettyjä. Sillä niin monet haluavat paeta tulijärvestä ja samalla he eivät tahdo vapautua lihallisuudesta ja maailman rakkaudesta.",
     "witnesses.testimonials.items25.t2":
-      "Ei synnin poissaolo, vaan sen aiheuttama murhe erottaa Jumalan lapsen tyhjien sanojen puhujista.",
+      "Synnin poissa olo ei erota Jumalan lasta vain kristityn nimen omaavasta, vaan sydämen täysi murhe synnin takia.",
     "witnesses.testimonials.items25.t3":
-      "Todellinen vapaus ei ole valtaa elää niin kuin haluamme, vaan sitä, että voimme elää niin kuin meidän tulee.",
+      "Oikea vapaus ei ole valta valita omaa tahtoaan ja elää, miten haluaa. Vaan elää, kuten meidän kuuluu.",
     "witnesses.testimonials.items26.job": "Tulossa pian...",
     "witnesses.testimonials.items26.t1":
-      "Pelkäämme häiritsevämme ihmisiä tänään. Sinun ei pidä saada heidän tunteitaan hermostumaan, heitä ei pidä saada itkemään kokouksessa, et saa saada heitä pyörimään lattialla synnin tuomitsemana; asiat pitää pitää järjestyksessä. Jumala auttakoon meitä, Jumala armahtakoon meitä. Keitä me olemme sanelemaan Kaikkivaltiaalle Jumalalle, kuinka Hänen tulee toimia?",
+      "Tänä päivänä pelkäämme häiritsevämme ihmisiä jotenkin. Älä häiritse heidän tunteitaan, et saa saada heitä itkemään kokouksessa, et saa saada heitä makaavaan maassa synnin tuskassa; kaiken tulee olla tip top! Jumalan armahtakoon meitä, Jumala auttakoon meitä. Kuinka me voimme määritellä ja määrätä, kuinka Kaikkivaltias Jumala saa toimia?",
     "witnesses.testimonials.items26.t2":
-      "Tänään julistetaan eräänlaista evankeliumia, joka mukautuu sopivasti aikakauden henkeen eikä vaadi jumalisuutta.",
-    "witnesses.testimonials.items26.t3": "Kirkko, joka ei evankelioi, fossiloituu.",
+      "Tämän päivän evankeliumi sujuvasti mukauttaa itsensä ajan henkeen ja ei tee mitää vaatimusta jumalisuuden puolesta.",
+    "witnesses.testimonials.items26.t3": "Seurakunta, joka ei evankelioi, muuttuu fossiiliksi.",
     "witnesses.testimonials.items27.job": "Tulossa pian...",
     "witnesses.testimonials.items27.t1":
-      "Puhumme toisesta tulemisesta; puolet maailmasta ei ole koskaan kuullut ensimmäisestä.",
+      "Tänä päivänä puhutaan Jeesuksen toisesta tulemisesta. Puolet maailmasta ei ole edes kuullut ensimmäisestä.",
     "witnesses.testimonials.items27.t2":
-      "Jokainen kirkko, joka ei ole vakavasti mukana Suuren lähetyskäskyn toteuttamisessa, on menettänyt raamatullisen oikeutensa olemassaoloon.",
+      "Jokainen seurakunta, joka ei ole täydellä painollaan työssä täyttääkseen Suuren lähetyskäskyn, on menettänyt Raamatun mukaan oikeutensa edes olla olemassa.",
     "witnesses.testimonials.items27.t3":
-      "Olen täysin varma siitä, että mies, joka ei vietä tunteja yksin Jumalan kanssa, ei koskaan saa tietää Pyhän Hengen voitelusta. Maailma on jätettävä ulkopuolelle, kunnes Jumala yksin täyttää näyn...Jumala on luvannut vastata rukoukseen. Hän ei ole haluton, sillä tosiasia on, että Hän on halukkaampi antamaan kuin me saamaan. Mutta ongelma on se, ettemme ole valmiita...",
+      "Olen täysin vakuuttunut, että kukaan, joka ei vietä tunteja yksin vain Jumalan kanssa, tulee ikinä tuntemaan Pyhän Hengen voitelun elämässään. Koko maailman tulee jättää ulkopuolelle, kunnes näet vain Jumalan.",
+    "witnesses.testimonials.items27.t4":
+      "Jumala on luvannut vastata rukouksiin. Kyse ei ole siitä, ettei Hänellä ole halua tehdä sitä, vaan päinvastoin, Hänellä on enemmän halua antaa, kuin meillä vastaanottaa. Ongelma on, että me emme ole valmiita siihen.",
     "witnesses.testimonials.items28.job": "Tulossa pian...",
     "witnesses.testimonials.items28.t1":
-      "Mikä on minun tehtäväni? Ensinnäkin minun tehtäväni on miellyttää Kristusta. Olla tyhjä itsestään ja olla täynnä Häntä, täyttyä Pyhällä Hengellä ja olla Pyhän Hengen johdattama.",
+      "Herää! Sinä, joka nukut, ja nouse kuolleista! Herra elää yhä tänä päivänä. Hänen voimansa ei ehtynyt. Hänen Sanansa ei ole ikinä muuttunut. Ne teot, joita Hän teki Raamatun aikana, Hän elää tehdäkseen tänään. Ei ole kuormaa, jota Hän ei jaksa kantaa, ei kahletta, jota Hän ei voi murtaa.",
     "witnesses.testimonials.items28.t2":
-      "Me kaikki teemme Jeesukselle tästä jokapäiväisestä elämästämme kruunun, joko kultaisen, jumalallisen rakkauden kruunun, joka on täynnä uhrauksen ja palvonnan jalokiviä, tai orjantappuraisen kruunun, joka on täynnä epäuskon tai itsekkyyden julmia harsoja, ja syntiä.",
+      "Me jokainen teemme Jeesukselle kruunun jokapäiväisestä elämästämme. Joka rakkaudestamme Häneen syntyvän kultaisen kruunun, upotettuina uhrautumisen ja ihailun jalokivilla. Tai julmien epäuskon, itsekkyyden ja synnin piikkien täyttämän orjantappurakruunun.",
     "witnesses.testimonials.items28.t3":
-      "Mikä on minun tehtäväni? Saada   evankeliumia ympäri maailmaa mahdollisimman lyhyessä ajassa jokaiselle miehelle ja naiselle ja pojalle ja tytölle!",
+      "Mikä on tehtäväni? Saada evankeliumi kaikkialle maailmaan mahdollisimman nopeasti jokaiselle miehelle, naiselle, pojalle ja tytölle.",
     "witnesses.testimonials.items29.job": "Tulossa pian...",
-    "witnesses.testimonials.items29.t1": "Huoli ei tyhjennä huomista surusta, se tyhjentää tämän päivän sen voimasta.",
+    "witnesses.testimonials.items29.t1": "Huoli ei tyhjennä huomistasi murheista. Se tyhjentää tämän päiväsi voimasta.",
     "witnesses.testimonials.items29.t2":
-      "Anteeksiantaminen on tahdon teko, ja tahto voi toimia sydämen lämpötilasta riippumatta.",
+      "Anteeksiantaminen on päätös. Tahtosi toimii on sitten sydämesi tunnetila mikä tahansa.",
     "witnesses.testimonials.items30.job": "Tulossa pian...",
-    "witnesses.testimonials.items30.t1": "Pelokas maailma tarvitsee pelottonta seurakuntaa.",
-    "witnesses.testimonials.items30.t2": "Se mitä tulee mieleemme, kun ajattelemme Jumalaa, on tärkeintä meissä.",
-    "witnesses.testimonials.items30.t3": "Todellinen uskonto kohtaa maan taivaan kanssa ja tuo iankaikkisuuden aikaan.",
+    "witnesses.testimonials.items30.t1": "Maailma täynä pelkoa tarvitsee pelotonta seurakuntaa",
+    "witnesses.testimonials.items30.t2":
+      "Se, mitä mieleemme tulee, kun ajattelemme Jumalaa, kertoo, mitä me todella olemme.",
+    "witnesses.testimonials.items30.t3": "Oikea uskonto tuo taivaan maan päälle ja tuo ikuisuuden aikaan.",
     "witnesses.testimonials.items31.job": "Tulossa pian...",
-    "witnesses.testimonials.items31.t1":
-      "Voi Jumala, tässä on minun Raamattuni, tässä on minun rahani. Tässä minä. Käytä minua, Jumala!",
+    "witnesses.testimonials.items31.t1": "Oi Jumala, tässä Raamattuni, tässä rahani, tässä minä! Käytä minua Jumala.",
     "witnesses.testimonials.items31.t2":
-      "Jos Jumala on kutsunut sinut Kiinaan tai johonkin muuhun paikkaan ja olet varma omasta sydämestäsi, älä anna minkään estää sinua. Muista, että Jumala on kutsunut sinut ja se on sama kuin silloin, kun Hän kutsui Mooseksen tai Samuelin.",
+      "Jos Jumala on kutsunut sinut Kiinaan tai minne tahansa muualle ja olet sydämessäsi varma asiasta, älä annan minkään estää sinua. Muista, että Jumalan kutsu sinulle on saman vahvuinen, kuin Hänen kutsuessaan Mooseksen tai Samuelin.",
     "witnesses.testimonials.items32.job": "Tulossa pian...",
     "witnesses.testimonials.items32.t1":
-      "Kristuksen ulkopuolella olen vain syntinen, mutta Kristuksessa olen pelastettu. Kristuksen ulkopuolella olen tyhjä; Kristuksessa olen kylläinen. Kristuksen ulkopuolella olen heikko; Kristuksessa olen vahva. Kristuksen ulkopuolella en voi; Kristuksessa olen enemmän kuin kykenevä. Kristuksen ulkopuolella olen voitettu; Kristuksessa olen jo voittaja. Kuinka merkityksellinen on sana 'Kristuksessa'",
+      "Ilman Kristusta, olen vain syntinen, mutta Kristuksessa olen pelastettu. Ilman Kristusta, olen tyhjä, mutta Kristuksessa olen täysi. Ilman Kristusta, olen heikko, mutta Kristuksessa olen vahva. Ilman Kristusta, en pysty, mutta Kristuksessa olen enemmän, kuin kykenevä. Ilman Kristusta, olen jo hävinnyt, mutta Kristuksessa olen jo voittanut. Kuinka ihmeellisen merkityksellinen on sana 'Kristuksessa'.",
     "witnesses.testimonials.items32.t2":
-      "Jos testaat jonkun luonnetta, sinun tarvitsee vain tiedustella, johtaako se sinut Jumalan luo vai pois Jumalasta.",
+      "Voit testata minkä tahansa asian luoteen kysymällä, viekä se sinua lähemmäs Jumalaa vai kauemmas Jumalasta.",
     "witnesses.testimonials.items33.job": "Tulossa pian...",
     "witnesses.testimonials.items33.t1":
-      "Jumalan kansaa ei ole kutsuttu vaeltamaan tunteiden tai näön, vaan uskon kautta.",
+      "Jumalan kansan kutsussa heitä ei kutsuttu kulkemaan tunteiden ja näkemisen kautta, vaan uskon kautta.",
     "witnesses.testimonials.items33.t2":
-      "Jeesuksen Kristuksen kirkko on rakennettu ilmestyksen kalliolle, eivätkä helvetin portit voita sitä.",
-    "witnesses.testimonials.items33.t3": "Kristuksen ruumiin ykseys on avain lopunajan sadonkorjuuseen.",
+      "Jeesuksen Kristuksen seurakunta on rakennettu ilmestyksen kalliolle ja tuonelan portit eivät sitä voita!",
+    "witnesses.testimonials.items33.t3": "Rakkaus ja ykseys Kristusken ruumiissa on avain lopun ajan sadonkorjuuseen.",
     "witnesses.testimonials.items34.job": "Tulossa pian...",
     "witnesses.testimonials.items34.t1": "Uskon ihmeisiin, koska uskon Jumalaan.",
-    "witnesses.testimonials.items34.t2": "Voimani salaisuus on yksinkertainen: minä rukoilen.",
+    "witnesses.testimonials.items34.t2": "Salaisuus voimaani on yksinkertainen, rukoilen.",
     "witnesses.testimonials.items34.t3":
-      "En ole parantaja, enkä ihmeidentekijä. Olen vain pieni ei kukaan, kerron kaikille jostain, joka voi pelastaa kenet tahansa.",
+      "En omaa parantavaa voimaa, enkä ihmeiden tekijä. Olen pieni ei kukaan, kertoen kaikille, kuka voi pelastaa kaikki.",
     "witnesses.testimonials.items34.t4":
-      "Annoin Hänelle kaiken, mitä minusta oli; kaiken! Sitten ensimmäistä kertaa tajusin, mitä todellinen voima merkitsee.",
+      "Minä antauduin ja annoin Hänelle täysin itseni; aivan täysin! Silloin ensimmäistä sain nähdä, mitä tarkoittaa omata todellista voimaa.",
     "witnesses.testimonials.items35.job": "Tulossa pian...",
     "witnesses.testimonials.items35.t1":
-      "Pyhä Henki saa sinut pukeutumaan oikein ja elämään oikein, puhumaan oikein ja olemaan oikein, kun Pyhä Henki todella saa sinut. Aamen. Se on oikein.",
+      "Pyhä Henki ohjaa sinut pukeutumaan oikein, elämään oikein, puhumaan oikein, ja olemaan oikein. Tämän tapahtuu, kun Pyhä Henki saa sinut kokonaan käyttöönsä. Aamen, sen tekeminen on oikein!",
     "witnesses.testimonials.items35.t2":
-      "Näytä minulle mies. Näytä minulle toinen Calvin, Knox, Finney, Sankey tai joku niistä, jotka tuntevat ihmisten taakan, jotka makaavat heidän kasvoillaan ja itkevät ja rukoilevat Jumalan edessä. Lähetä meille jälleen John Smith baptistiseurakunnasta, joka rukoili koko yön ihmisten pahuuden puolesta, kunnes hänen silmänsä turposivat seuraavana aamuna itkemästä, kunnes hänen vaimonsa johdatti hänet pöytään ja syötti hänelle aamiaisen lusikka. Näytä minulle taas John Wesley, tulesta temmattu oksa. Näytän sinulle herätyksen.",
+      "Näytä minulle yksilö. Näytä minulle uusi Calvin, Knox, Finney, Sankey, tai kuka tahansa niistä, joka tuntee painon ihmisten sielujen puolesta, joka painaa naamansa lattiaan rukoillakseen Jumalan edessä. Lähetä meille Baptisti John Smith uudelleen, joka rukoili koko yön kansan syntien tähden, kunnes hänen silmänsä olivat aamuun mennessä turvonneet umpeen itkemisestä ja aamulla hänen vaimonsa auttoi hänet aamupalapöytään ja ruokki hänet lusikalla. Näytä meille uudelleen John Wesley, tulesta temmattu soihtu. Ja silloin minä näytän sinulle herätyksen.",
     "witnesses.testimonials.items36.job": "Tulossa pian...",
     "witnesses.testimonials.items36.t1":
-      "Jos kuljet Jeesuksen kanssa Hengessä, sinun ei tarvitse pelätä menemistä liian pitkälle. Yksikään uskova ei ole mennyt niin pitkälle kuin Jumala haluaa hänen menevän.",
+      "Jos kuljet Jeesuksen kanssa täynä Henkeä sinun ei tarvitse pelätä, että menisit liian pitkälle. Kukaan uskova ei ole mennyt ikinä niin pitkälle, kuin Jumala tahtoisi hänen menevän.",
     "witnesses.testimonials.items36.t2":
-      "Ennen kuin ihminen voi vaeltaa niin kuin Kristus vaelsi ja puhua niin kuin Hän puhui, hänen on ensin alettava ajatella niin kuin Kristus ajatteli.",
+      "Ennen kuin kukaan voi elää niin kuin Kristus eli, ja puhua niin kuin Hän puhui, hänen täytyy aluksi ajatella niin kuin Hän ajatteli.",
     "witnesses.testimonials.items36.t3":
-      "Mutta aivan, kuten Kristus oli halukas tulemaan ristiinnaulittavaksi ennen kuin Hän saattoi toimia tämän voiman, meidänkin täytyy olla valmiita ristiinnaulituksi, jotta voimme käyttää meitä muiden hyväksi. Voisiko tämä olla syynä siihen, että niin monet, jotka väittävät saaneensa Pyhän Hengen kasteen, eivät osoita voimaa? Eikö tämä ole räikeä vika helluntailaispiireissä, johon skeptiset seurakunnat ja epäuskoiset voivat viitata? Voimmeko syyttää heitä?",
+      "Niin kuin Kristus oli valmis ristiinnaulittavaksi, ennen kuin Hän pystyi lähettämään tämän voiman, myös meidän tulee olla valmiita ristiinnaulittavaksi, jotta voimme olla käytössä muita varten. Voisiko tämä olla syy, miksi niin moni väittää täyttyneensä Pyhällä Hengellä, mutta Jumalan voima ei näy heidän elämässään. Eikö tämä ole selvä heikkous Helluntai piireissä, jota epäuskoiset seurakunnat ja syntiset voivat osoittaa? Ja ihan oikeutetusti!",
     "witnesses.testimonials.items37.job": "Tulossa pian...",
     "witnesses.testimonials.items37.t1":
-      "Olet mitä olet, koska sitä sinä todella haluat olla! Me teemme päätöksiä ja ne päätökset tekevät meistä sen, mitä olemme! Tämän perusteella voit arvioida mitä tahansa maailmassa. Jumala rakentaa ja Paholainen repii alas.",
+      "Olet nyt sinä, koska haluat olla juuri se, mitä olet nyt! Me teemme päätökset ja päätökset tekevät meistä sen, mitä olemme!",
     "witnesses.testimonials.items37.t2":
-      "Usko ei ole sitä, että tiedät, että Jumala voi. Se on sen tietämistä, että Hän tekee.",
+      "Tämän pohjalta voi punnita minkä tahansa asian maailmassa: Jumala tuo elämän ja Paholainen tuhoaa.",
+    "witnesses.testimonials.items37.t3":
+      "Usko ei tarkoita sitä, että uskot Jumalan kykenevän siihen. Usko on se, että teidät Jumalan tekevän sen.",
     "witnesses.testimonials.items38.job": "Tulossa pian...",
     "witnesses.testimonials.items38.t1":
-      "Ajatelkaa Golgatan työtä. Täydellinen työ, täydellinen kaikin puolin, täydellinen kaikilta osin.",
-    "witnesses.testimonials.items38.t2": "Tietenkään kristinusko ei ole joukko sääntöjä.",
+      "Mietiskele Golgatan ristintyötä. Täydellinen työ, täydellinen joka suunnasta, täydellinen joka ulottuvuudelta.",
+    "witnesses.testimonials.items38.t2": "Kristinusko ei tietenkään ole joukko sääntöjä.",
     "witnesses.testimonials.items38.t3":
-      "Jumala on enemmän huolissaan luonteestamme kuin saavutuksistamme. Saavutuksilla on merkitystä vain ajassa. Luonne on ikuinen. Se määrittää, mitä me olemme ikuisuuden läpi.",
+      "Jumala välittää enemmmän luonteestamme, kuin saavutuksistamme. Saavutuksilla on merkitystä vain ajassa. Mutta luonne on ikuinen. Se määrittää, mitä tulemme olemaan koko ikuisuuden läpi.",
     "witnesses.testimonials.items39.job": "Tulossa pian...",
     "witnesses.testimonials.items39.t1":
-      "Keskeinen totuus: Rukous onnistuu vain, kun se perustuu Jumalan sanan lupauksiin!",
+      "Keskeinen totuus: Rukous toimii vain silloin, kun se perustuu Jumalan Sanan lupauksiin.",
     "witnesses.testimonials.items39.t2":
-      "Usko se sydämessäsi; sano se suullasi. Se on uskon periaate. Saat mitä sanot.",
+      "Usko Jumalan sana sydämessäsi ja tunnusta se suullasi. Tämä on uskon toiminnan periaate. Ja sinä tulet kokemaan sen, mitä sanot.",
     "witnesses.testimonials.items39.t3":
-      "Jos se, mitä kuulet saarnattavan, ei saa uskoa tulemaan ja rakentamaan uskoa hengessäsi, niin se joko ei ole Jumalan Sanaa tai et kuule sitä.",
+      "Jos kuuntelemasi ei tuo uskoa sinuun ja rakenna uskoa hengessäsi, kuulemasi ei joko ole Jumalan sanaa ja tai sitten sinä et vain kuule sitä.",
     "witnesses.testimonials.items40.job": "Tulossa pian...",
-    "witnesses.testimonials.items40.t1": "Jumala on hyvä Jumala ja Paholainen on paha paholainen.",
+    "witnesses.testimonials.items40.t1": "Jumala on aina hyvä ja Paholainen on aina paha.",
     "witnesses.testimonials.items40.t2":
-      "Usko ei ole jotain, mitä sinun tarvitsee saada. Se on jotain, joka sinulla Jumalan uudestisyntyneenä lapsena jo on. Toimi sen mukaisesti vapauttamalla se Jumalalle. Silloin paranemisesi alkaa!",
+      "Sinun ei tarvitse yrittää saada uskoa. Jumalan lapsena sinulla jo on sitä. Toimi sen mukaan ja vapauta se. Sillä hetkellä ihme parantumisesi alkaa!",
     "witnesses.testimonials.items40.t3":
-      "Uskosi alkaa liikkua, toimia, kun Jumalan voima yliluonnollisesti tyhjentää sinut epäilystä ja täyttää sinut tuntemisella. Tulet tilaan, jossa tiedät, että tiedät tietäväsi. Siinä hetkessä et voi epäillä.",
+      "Uskosi alkaa liikkua ja toimia, kun Jumalan yliluonnollinen voima tyhjentää sinut epäilystä ja täyttää sinut varmuudella. Tulet tilaan, jossa olet varma, että olet varma, että olet varma. Siinä silmänräpäyksessä et voi epäillä.",
     "witnesses.testimonials.items41.job": "Tulossa pian...",
     "witnesses.testimonials.items41.t1":
-      "Kristitynä oleminen on enemmän kuin vain välitöntä kääntymystä; se on jokapäiväinen prosessi, jossa kasvat yhä enemmän Kristuksen kaltaiseksi.",
+      "Kristitty ei ole vain se, jonka elämä muuttui parannuksen hetkellä. Se on joka päivä jatkuva ja etenevä prosessi, jossa kasvat ja kasvat enemmän Kristuksen kaltaisuuteen.",
     "witnesses.testimonials.items41.t2":
-      "Suurin perintö, jonka voi siirtää lapsilleen ja lastenlapsille, ei ole raha tai muu elämässä kertynyttä aineellista, vaan luonteen ja uskon perintö.",
-    "witnesses.testimonials.items41.t3": "Kotini on taivas. Matkustan vain tämän maailman halki.",
+      "Suurin perintö lapsilleen ei ole raha tai tavarat, vaan jumalallisen luonteen kasvattaminen heissä ja usko.",
+    "witnesses.testimonials.items41.t3": "Taivas on kotini. Minä vain kuljen tämän maailman läpi.",
     "witnesses.testimonials.items42.job": "Tulossa pian...",
     "witnesses.testimonials.items42.t1":
-      "Jos olet huolissasi, sinulla ei ole uskoa, ja jos sinulla on uskoa, sinulla ei ole huolta.",
-    "witnesses.testimonials.items42.t2": "Pelko ei voi jäädä samaan taloon Jeesuksen Kristuksen kanssa.",
+      "Jos murehdit, sinulla ei ole uskoa. Jos sinulla on uskoa, sinulla ei ole murheita.",
+    "witnesses.testimonials.items42.t2": "Pelkä ei voi jäädä samaan taloon Jeesuksen kanssa.",
     "witnesses.testimonials.items42.t3": "Kun Jeesus tulee paikalle, mitä tahansa voi tapahtua, ja yleensä tapahtuu.",
+    "witnesses.testimonials.items42.t3":
+      "Jeesuksen tullessa paikalle, mitä tahansa voi tapahtua, ja juuri niin tapahtuukin.",
     "witnesses.testimonials.items43.job": "Tulossa pian...",
     "witnesses.testimonials.items43.t1":
-      "Jumala haluaa meidän vaeltavan Hänen pyhyytensä kauneudessa, jotta kaikki, mitä ihmiset voivat nähdä, on Hänen kunniaansa, eikä mitään maallista itseämme. Hän kutsuu Kristuksen ruumista olemaan niin täysin sitoutunut Häneen, ettei millään muulla ole elämässämme merkitystä ja että me olemme niin 'Hänessä', että maailma näkee Jeesuksen meissä.",
+      "Jumala tahtoo sinun kulkevan Hänen pyhyytensä kauneudessa, niin että kaikki, mitä ihmiset näkevät on Hänen kirkkautensa, ei mitään meistä. Hän kutsuu Kristuksen ruumista olemaan niin totaalisen omistautunut Hänelle, että millään muulla ei ole elämissämme väliä. Ja että me olemme niin uppoutuneet Häneen, että maailma näkee meistä Jeesuksen.",
     "witnesses.testimonials.items43.t2":
       "Jeesus kosketti UUDELLEEN miestä, kun hän sanoi näkevänsä ihmiset vain puita, mikä osoitti, että meidän ei tarvitse hävetä palatessamme rukoiltavaksi useammin kuin kerran parantuaksemme.",
     "witnesses.testimonials.items44.job": "Tulossa pian...",

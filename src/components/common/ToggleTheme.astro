@@ -1,4 +1,5 @@
 ---
+import { twMerge } from "tailwind-merge";
 import { Icon } from "astro-icon/components";
 
 import { UI } from "~/utils/config";
@@ -21,8 +22,25 @@ const {
 
 {
   !(UI.theme && UI.theme.endsWith(":only")) && (
-    <button type="button" class={className} aria-label={label} data-aw-toggle-color-scheme>
-      <Icon name={"tabler:sun"} class={iconClass} />
-    </button>
+    <>
+      <button
+        type="button"
+        class={twMerge(className, "dark:invisible dark:hidden")}
+        aria-label={label}
+        data-aw-toggle-color-scheme
+        transition:persist
+      >
+        <Icon name={"tabler:sun"} class={iconClass} />
+      </button>
+      <button
+        type="button"
+        class={twMerge(className, "invisible hidden dark:visible dark:block")}
+        aria-label={label}
+        data-aw-toggle-color-scheme
+        transition:persist
+      >
+        <Icon name={"tabler:moon"} class={iconClass} />
+      </button>
+    </>
   )
 }
