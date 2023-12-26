@@ -774,7 +774,8 @@ export const ui = {
     "witnesses.testimonials.items45.job":
       "R. W. Schambach, as a young man, was working with A. A. Allen. He experienced firsthand the multitude of miracles God performed. And so he continued himself in the Spirit and power of Elijah, with the same miracles, signs, and wonders following. Do you know why? The God of the miracles was the same. So he is today! Go and heal the sick, cast out devils, and preach the gospel, working together with God. But make sure you know the God you should be working with!",
     "witnesses.testimonials.items45.t1": "You don't have any problems, all you need is faith in God.",
-    "witnesses.testimonials.items45.t2": "When the devil starts messing, God starts blessing.",
+    "witnesses.testimonials.items45.t2":
+      "God is looking for the believer to take up his responsibility — to be  obedient  to  His  voice  and  help  release  God's  miracle  power. When we come to the place where we move on what God says, when He says it — miracles will become a way of life.",
     "witnesses.testimonials.items46.name": "Jim Elliot: 1927-1956",
     "witnesses.testimonials.items46.job":
       "His heart was for the lost. In Ecuador, he married Elisabeth, and soon after his honeymoon, he returned, and Elliot began preparing to reach the Huaorani people. While meeting them, he and the group of five men were killed by Huaorani warriors. This is a war to reach the lost. Satan is doing his all to keep people hellbound. But nothing, absolutely nothing, is impossible for him who believes! We must continue the work our elder brethren have started and given their lives for. The battles are won in prayer before the confrontations. Let us not proceed before wrestling the victory over principalities, powers, and territories, and we will see the outpouring of the Spirit!",
@@ -1512,56 +1513,56 @@ export const ui = {
     "witnesses.testimonials.items42.t1":
       "Jos murehdit, sinulla ei ole uskoa. Jos sinulla on uskoa, sinulla ei ole murheita.",
     "witnesses.testimonials.items42.t2": "Pelkä ei voi jäädä samaan taloon Jeesuksen kanssa.",
-    "witnesses.testimonials.items42.t3": "Kun Jeesus tulee paikalle, mitä tahansa voi tapahtua, ja yleensä tapahtuu.",
     "witnesses.testimonials.items42.t3":
       "Jeesuksen tullessa paikalle, mitä tahansa voi tapahtua, ja juuri niin tapahtuukin.",
     "witnesses.testimonials.items43.job": "Tulossa pian...",
     "witnesses.testimonials.items43.t1":
       "Jumala tahtoo sinun kulkevan Hänen pyhyytensä kauneudessa, niin että kaikki, mitä ihmiset näkevät on Hänen kirkkautensa, ei mitään meistä. Hän kutsuu Kristuksen ruumista olemaan niin totaalisen omistautunut Hänelle, että millään muulla ei ole elämissämme väliä. Ja että me olemme niin uppoutuneet Häneen, että maailma näkee meistä Jeesuksen.",
     "witnesses.testimonials.items43.t2":
-      "Jeesus kosketti UUDELLEEN miestä, kun hän sanoi näkevänsä ihmiset vain puita, mikä osoitti, että meidän ei tarvitse hävetä palatessamme rukoiltavaksi useammin kuin kerran parantuaksemme.",
+      "Jeesus kosketti miestä UUDELLEEN, kun tämä sanoi näkevänsä ihmiset kuin puita. Hän näytti, ettei meidän tarvitse hävetä mennessämme, jos etsimme apua parantumiseen useammin, kuin kerran.",
     "witnesses.testimonials.items44.job": "Tulossa pian...",
-    "witnesses.testimonials.items44.t1": "Yksi tie: Jeesus! Yksi työ: evankeliointi!",
+    "witnesses.testimonials.items44.t1": "Vain yksi tie: Jeesus! Vain yksi tehtävä: evankeliointi!",
     "witnesses.testimonials.items44.t2":
-      "Kuinka voimme kutsua itseämme seurakunnaksi ja olla uskomatta paranemiseen ja ihmeisiin? En voi lukea neljää sivua Raamatusta kohtaamatta ihmeitä! Ja Raamatun Jumala on sama tänään!",
+      "Kuinka voimme kutsua itseämme seurakunnaksi ja emme usko yliluonnolliseen parantamiseen ja ihmeisiin? En voi lukea 4 sivua mistään kohtaa Raamattua ja kohtaamatta ihmettä! Ja Raamatun Jumala on yhä sama tänään!",
     "witnesses.testimonials.items44.t3":
-      "Hengentäytetyn elämän tarkoitus on osoittaa elävän Jumalamme yliluonnollinen voima, jotta pelastumattomat joukot hylkäävät kuolleet jumalansa huutaakseen avuksi Herran nimeä pelastuakseen.",
+      "Hengen täyteisen elämän tarkoitus on näyttää elävän Jumalamme yliluonnollinen voima, jotta valtavat pelastumattomien joukot hylkäävät kuolleet jumalansa, huutavat avuksi Herran nimeä ja pelastuvat.",
     "witnesses.testimonials.items45.job": "Tulossa pian...",
-    "witnesses.testimonials.items45.t1": "Sinulla ei ole mitään ongelmia, tarvitset vain uskoa Jumalaan.",
-    "witnesses.testimonials.items45.t2": "Kun paholainen alkaa sotkea, Jumala alkaa siunata.",
-    "witnesses.testimonials.items45.t3":
-      "Usko on ainoa asia, joka miellyttää Jumalaa. Kun astut uskon askeleen, et koskaan joudu pettymään.",
+    "witnesses.testimonials.items45.t1": "Et omista yhtään ongelmaa, sillä tarvitse vain uskoa Jumalaan.",
+    "witnesses.testimonials.items45.t2":
+      "Jumala odottaa, että uskova alkaa toimia, niin kuin hänen tulisi - olla tottelevainen Hänen äänelleen ja auttaa vapauttamaan Jumalan yliluonnollista voimaa. Kun tulemme asemaan, jossa toimimme sen mukaan, mitä Jumala sanoo ja kun Hän sanoo, ihmeistä tulee elämäntapamme.",
     "witnesses.testimonials.items46.job": "Tulossa pian...",
     "witnesses.testimonials.items46.t1":
-      "Hullu ei ole se, joka antaa sen, mitä ei voi pitää saadakseen sen, mitä ei voi menettää. ",
-    "witnesses.testimonials.items46.t2": "Jumala antaa aina parhaansa niille, jotka jättävät valinnan hänelle.",
+      "Se, joka antaa sen, mitä ei voi pitää, saadakseen sen, mitä ei voi menettää, ei ole hullu.",
+    "witnesses.testimonials.items46.t2":
+      "Jumala antaa parhaansa aina niille, jotka jättävät elämänsä päätökset Hänelle.",
     "witnesses.testimonials.items46.t3":
-      "Lepää tässä - Hänen asiansa on johtaa, käskeä, kannustaa, lähettää, kutsua... Sinun asiasi on totella, seurata, liikkua, vastata.",
+      "Voit levätä tässä totuudessa - Hänen tehtävänsä on johtaa, käskeä, vaikuttaa, lähettää, kutsua... Sinun tehtävänäsi on totella, seurata, liikkua ja vastata.",
     "witnesses.testimonials.items47.job": "Tulossa pian...",
     "witnesses.testimonials.items47.t1":
-      "Jumala vihaa PUOLITOTUUSTEN KÄDENLÄMPÖISTÄ EVANKELIUMIA, joka nyt leviää ympäri maapalloa. Tämä evankeliumi sanoo: 'Usko vain Jeesukseen, niin sinä pelastut.' Siinä ei ole mitään muuta. Se jättää huomiotta Jumalan koko sanan, joka puhuu parannuksen tekemisestä entisistä synneistä, ristin ottamista sekä Kristuksen kuvaan mukautumisesta Pyhän Hengen puhdistavan työn kautta. Se on täysin hiljaa helvetin todellisuudesta ja kuoleman jälkeisestä tuomiosta.",
+      "Jumalaa vihaa KÄDENLÄMPÖISTÄ PUOLITOTUUKSIEN EVANKELIUMIA, joka nyt leviää ympäri maapalloa. Sen mukaan 'usko vain Jeesukseen niin pelastut'. Eikä mitään enempää. Se hylkää koko Jumalan Sanan, joka puhuu parannuksesta synnistä, ristin ottamisesta ja Kristuksen kuvaksi muuttumisesta Pyhän Hengen työn kautta. Se ei mainitse yhtään mitään Helvetistä ja kuoleman jälkeisestä tuomiosta.",
     "witnesses.testimonials.items47.t2":
-      "Nöyrä ihminen ei ole sellainen, joka ajattelee vähän itsestään, painaa päänsä alas ja sanoo: en ole mitään. Pikemminkin sellainen ihminen, joka on täysin riippuvainen Herrasta kaikessa ja kaikissa olosuhteissa.",
+      "Se, joka ajattelee vähän itsestään, katsoo maata kohti ja sanoo, En ole mitään, ei ole nöyrä. Vaan se, joka turvaa ja luottaa täysin Herraan kaikessa ja joka tilanteessa.",
     "witnesses.testimonials.items48.job": "Tulossa pian...",
     "witnesses.testimonials.items48.t1":
-      "Joskus ei ole hyvä paljastaa kaikkea, mitä Jumala sinulle sanoo, ellet ole valmis käymään läpi kauheaa kritiikin ja epäuskon aikaa, kunnes se tapahtuu.",
-    "witnesses.testimonials.items48.t2": "Tee tämä julistus: Kuolema ja elämä ovat kieleni vallassa. Valitsen Elämän!",
+      "Ei ole hyvä paljastaa kaikkea, mitä Jumala puhuu sinulle, sillä silloin joudut menemään läpi valtavasta kritiikin ja epäuskon aallosta toisten kritisoidessa sinua ja  epäilevän kertomaasi, kunnes se, mitä Jumala sanoi sinulle, tapahtuu.",
+    "witnesses.testimonials.items48.t2":
+      "Sano tämä totuus: Kieleni ja puheeni tuottaa minulle joko kuoleman tai elämän. Minä valitsen siis elämän!",
     "witnesses.testimonials.items48.t3":
-      "Älä tyydy elämään sen rukousvoiman täyden potentiaalin alapuolella, jonka Kristus on asettanut seurakunnalleen.",
+      "Sinun ei tule olla tyytynyt elämään yhtään alemmassa rukouksen mahdollisuuksissa ja voimassa, kuin Jeesus tarkoitti ja mahdollisti seurakunnalleen.",
     "witnesses.testimonials.items49.job": "Tulossa pian...",
     "witnesses.testimonials.items49.t1":
-      "Kun meillä ei ole muuta jäljellä kuin Jumala, huomaamme, että Jumala riittää.",
+      "Siinä vaiheessa, kun käteemme jää vain Jumala, ymmärrämme, että Jumala onkin tarpeeksi.",
     "witnesses.testimonials.items49.t2":
-      "Elämänmuutosta ei vaadita, jotta Jumala hyväksyy ihmiset. Hän pyytää vain sydämen muutosta.",
+      "Jumalan hyväksynnän saamisessa ei ole kyse ulkoisesta elämän ja elämäntapojen muuttamisesta. Vaan kaikki, mitä Hän pyytää ja vaatii, on sydämen, ihmisen sisimmän muutos.",
     "witnesses.testimonials.items49.t3":
-      "Älä kerro minulle, kuinka suuri vuoresi on. Kerro vuorelle, kuinka SUURI Jumalasi on.",
+      "Älä kerro kuinka suuri vuoresi eli sinun ongelmasi on. Kerro ongelmallesi, kuinka SUURI sinun Jumalasi on.",
     "witnesses.testimonials.items50.job": "Tulossa pian...",
     "witnesses.testimonials.items50.t1":
-      "Mitä vähemmän meillä on Pyhää Henkeä, sitä enemmän kakkua ja kahvia tarvitsemme pitääksemme seurakunnan toiminnassa.",
+      "Mitä vähemmän Pyhää Henkeä meillä on, sitä enemmän tarvitsemme kakkua ja kahvia pitääksemme seurakunnan toiminnan pystyssä ja ihmiset tyytyväisinä.",
     "witnesses.testimonials.items50.t2":
-      "Jokainen voi uskoa, kun Jumala on jo liikkeessä. Mutta todellinen usko on sitä, kun astut ulos, kun näyttää siltä, että Jumala ei liiku.",
+      "Jokainen voi uskoa silloin, kun Jumala jo liikkuu. Mutta oikea usko uskoo jo silloin, kun teet uskon askeleen jo silloin, kun näyttää, että Jumala ei vielä liiku.",
     "witnesses.testimonials.items50.t3":
-      "Emme auta ihmisiä saamaan Jumalaa olemaan oikein heitä kohtaan, vaan heitä tulemaan oikein Jumalan kanssa. Pyhä Henki yksin avaa sydämet ja mielet.",
+      "Emme auta ketään siinä, että Jumala suhtautuisi heihin oikein. Vaan siinä, että heidän tulee suhtautua Jumalaan oikein. Vain Pyhä Henki voi avata ihmisten mielet ja sydämet.",
     "word.hero.tagline": "Sana",
     "word.hero.imagetext": "Jeesus ja hänen opetuslapsensa (kohtaus sarjasta 'The Chosen')",
     "word.hero.title1": "Kaksitoista apostolia muuttuivat ollessaan",

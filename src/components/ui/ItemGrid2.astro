@@ -1,18 +1,18 @@
 ---
-import { Icon } from 'astro-icon/components';
-import { twMerge } from 'tailwind-merge';
-import type { ItemGrid } from '~/types';
-import Button from './Button.astro';
+import { Icon } from "astro-icon/components";
+import { twMerge } from "tailwind-merge";
+import type { ItemGrid } from "~/types";
+import Button from "./Button.astro";
 
-const { items = [], columns, defaultIcon = '', classes = {} } = Astro.props as ItemGrid;
+const { items = [], columns, defaultIcon = "", classes = {} } = Astro.props as ItemGrid;
 
 const {
-  container: containerClass = '',
+  container: containerClass = "",
   // container: containerClass = "sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
-  panel: panelClass = '',
-  title: titleClass = '',
-  description: descriptionClass = '',
-  icon: defaultIconClass = 'text-primary',
+  panel: panelClass = "",
+  title: titleClass = "",
+  description: descriptionClass = "",
+  icon: defaultIconClass = "text-primary",
 } = classes;
 ---
 
@@ -22,28 +22,33 @@ const {
       class={twMerge(
         `grid gap-8 gap-x-12 sm:gap-y-8 ${
           columns === 4
-            ? 'lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2'
+            ? "lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
             : columns === 3
-              ? 'lg:grid-cols-3 sm:grid-cols-2'
+              ? "lg:grid-cols-3 sm:grid-cols-2"
               : columns === 2
-                ? 'sm:grid-cols-2 '
-                : ''
+                ? "sm:grid-cols-2 "
+                : ""
         }`,
         containerClass
       )}
     >
       {items.map(({ title, description, icon, callToAction, classes: itemClasses = {}, link }) => (
-        <div class={twMerge('relative flex flex-col flex-wrap', panelClass, itemClasses?.panel)}>
+        <div class={twMerge("relative flex flex-col flex-wrap", panelClass, itemClasses?.panel)}>
           {(icon || defaultIcon) && (
-            <Icon name={icon || defaultIcon} class={twMerge('mb-2 w-10 h-10', defaultIconClass, itemClasses?.icon)} />
+            <Icon name={icon || defaultIcon} class={twMerge("mb-2 w-10 h-10", defaultIconClass, itemClasses?.icon)} />
           )}
-          <div class={twMerge('text-xl font-bold', titleClass, itemClasses?.title)}>{title}</div>
+          <div class={twMerge("text-xl font-bold", titleClass, itemClasses?.title)}>{title}</div>
           {description && link ? (
-            <a class={twMerge('text-muted mt-2 hover:underline break-all', itemClasses?.description)} set:html={description} href={description.toString()} target="_blank" />
+            <a
+              class={twMerge("text-blue-400 mt-2 hover:underline break-all", itemClasses?.description)}
+              set:html={description}
+              href={description.toString()}
+              target="_blank"
+            />
           ) : (
             description && (
               <p
-                class={twMerge('text-muted mt-2 break-word', descriptionClass, itemClasses?.description)}
+                class={twMerge("text-muted mt-2 break-word", descriptionClass, itemClasses?.description)}
                 set:html={description}
               />
             )
