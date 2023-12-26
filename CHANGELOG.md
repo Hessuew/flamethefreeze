@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.2.0](https://github.com/Hessuew/flamethefreeze/compare/v2.1.0...v2.2.0) (2023-12-26)
+
+
+### Features
+
+* added witnesses ([0b2411c](https://github.com/Hessuew/flamethefreeze/commit/0b2411c2fe4fb036a5610f3eb18c42e2d99d7284))
+* added witnesses ([#60](https://github.com/Hessuew/flamethefreeze/issues/60)) ([f466365](https://github.com/Hessuew/flamethefreeze/commit/f4663657bef3f3e3de25f92970601a8825c47bee))
+* witnesses bio translated 10/50. ([b4b807d](https://github.com/Hessuew/flamethefreeze/commit/b4b807db02b7a357caa8b952dd41cb97def0f446))
+* witnesses bio translated 10/50. ([#62](https://github.com/Hessuew/flamethefreeze/issues/62)) ([97aaae6](https://github.com/Hessuew/flamethefreeze/commit/97aaae65c073c00230d563224160468132b95894))
+
 ## [2.1.0](https://github.com/Hessuew/flamethefreeze/compare/v2.0.0...v2.1.0) (2023-12-24)
 
 
