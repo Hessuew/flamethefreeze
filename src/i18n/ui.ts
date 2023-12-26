@@ -1304,44 +1304,52 @@ export const ui = {
     "witnesses.features3-3.subtitle":
       "Te vastoin olette tulleet Siionin vuoren ja elävän Jumalan kaupungin, taivaallisen Jerusalemin, kymmenenientuhansien enkelien ja juhlajoukon luo, esikoisten seurakunnan luo, niiden sitä nimet ovat kirjoittaneet taivaissa, Jumalan luo, joka on kaikkien tuomari, ja täydellisiksi tulleiden vanhurskaiden henkien luo. Hep 12:22,23 FINRK",
     "witnesses.testimonials.title": "Uskon sanoja niiltä, jotka ovat kulkeneet edellämme",
-    "witnesses.testimonials.items1.job": "",
+    "witnesses.testimonials.items1.job":
+      "Kun uskon merkitys oli menettänyt merkityksensä ja 'tie taivaaseen' oli anekaupan kautta, uskon mies nousi. Aemmin hän oli vain itseään ruoskiva munkki. Mutta kun Jumalan Sana muutti hänet, erityisesti 'Vanhurskas on elävä uskosta', koko kirkko heräsi eloon elämään elävän uskon kautta.",
     "witnesses.testimonials.items1.t1": "Pelastumme yksin uskosta, mutta usko, joka pelastaa, ei ole koskaan yksin.",
     "witnesses.testimonials.items1.t2":
       "Ellei Raamattu ja selkeä syy minua tuomitse – en hyväksy paavien ja neuvostojen auktoriteettia, sillä ne ovat olleet ristiriidassa keskenään – minun omatuntoni on Jumalan Sanan ohjaama. En voi enkä aio kieltäytyä mitään sanomaani, sillä omantuntoni vastustaminen ei ole oikein eikä turvallista. Tässä seison, enkä muuta voi. Auta minua Jumala. Aamen.",
-    "witnesses.testimonials.items2.job": "Tulossa pian...",
+    "witnesses.testimonials.items2.job":
+      "Jokaisen ja kaikki ihmiset tunnistaa heidän rukouselämänsä kautta. Kerrotaan, että Maria, Skottien Kuningatar, pelkäsi enemmän John Knoxin rukouksia kuin Euroopan armeijoita liittoutuneina. Knoxille ja hänen ystävillee kerrottiin erään rukous tapaamisen jälkeen, että kuningatar oli kuollut. Sattumaa? Herodes kuoli, kun Herran enkeli löi häntä, koska hän ei antanut kunnia Jumalalle. Oli tämä tapaus sattuma?",
     "witnesses.testimonials.items2.t1": "Mies, joka on Jumalan puolella, kuuluu aina enemmistöön.",
     "witnesses.testimonials.items2.t2": "Jumalan Sana on ainoa perustani kaikissa tärkeissä asioissa.",
     "witnesses.testimonials.items2.t3":
       "En etsi statusta, kunniaa tai rikkauksia; suurin kunniani on se, kun Jeesus Kristus hallitsee.",
-    "witnesses.testimonials.items2b.job": "Tulossa pian...",
+    "witnesses.testimonials.items2b.job":
+      "Tämä mies, palvelutehtävänsä alusta aina kuolemaansa asti, määritti, että päivä oli vietetty huonosti, ellei hän viettänyt seitsemää tai kahdeksaa tuntia rukouksessa. Oliko tämä syy siihen, että hän pystyi rukoilemaan rukouksia, kuten 'Herra, annatko sinä minulle Skotlannin?' Ystäväni, rukoiletko sinä? Oletko antanut itsesi tekemään työtä rukouksessa? Sillä ne ja vain ne, jotka rukoilevat, ovat mahtavia Jumalan valtakunnassa.",
     "witnesses.testimonials.items2b.t1": "Jumala ei tee mitään ilman rukousta, mutta kaikein sen kautta.",
     "witnesses.testimonials.items2b.t2":
       "Ne meistä, jotka joutuvat ongelmiin, ovat niitä, jotka kantavat menneisyytensä ankkuria aina mukanaan.",
-    "witnesses.testimonials.items3.job": "Tulossa pian...",
+    "witnesses.testimonials.items3.job":
+      "Kun seurakunnat ja saluunat tyhjenevät, jotta ihmiset voivat kuulla miehen puhuvan saarnan hautuumaalla, jotain erikoista täytyy olla meneillään. John oli tulessa Jumalalle ja koko maailman tuli tuntemaan tämän palavan ja loistavan valon. Niin kuin Jonathan Edwards ja George Whitefield olivat Amerikalle Jumalan armosta, niin John Wesley oli Euroopalle.",
     "witnesses.testimonials.items3.t1": "Syty tuleen Jumalalle, niin ihmiset tulevat katsomaan sinun palavan.",
     "witnesses.testimonials.items3.t2": "Sinulla on yksi tehtävä maan päällä - pelastaa sieluja.",
     "witnesses.testimonials.items3.t3":
       "Jos joku tahtoo hallita Kristuksen kanssa taivaassa, ensin Kristuksen on hallittava hänen sydämessään maan päälle.",
     "witnesses.testimonials.items3.t4":
       "Ne kristityt, jotka lukevat, ovat kasvavia kristittyjä. Kun kristityt lakkaavat lukemasta, he lakkaavat kasvamasta.",
-    "witnesses.testimonials.items4.job": "Tulossa pian...",
+    "witnesses.testimonials.items4.job":
+      "'Syntiset Vihaisen Jumalan Käsissä'. Tämä saarna synnytti yhden historian suurimmista herätyksistä, Ensimmäisen Suuren Heräämisen. Kymmenet tuhannet ihmiset tunnustivat syntejään julkisesti eri Amerikan osavaltioissa. Benjamin Franklin sanoi, että näytti siltä, että koko maailmasta oli tulossa uskonnollinen. Niin, että kukaan ei voinut kävellä kylän läpi illalla kuulematta eri perheiden laulavan psalmeja eri kaduilla.",
     "witnesses.testimonials.items4.t1":
       "Päätös yksi: Elän Jumalalle. Päätös kaksi: Jos kukaan muu ei tee niin, niin minä silti teen.",
     "witnesses.testimonials.items4.t2":
       "Todellinen uskollinen kristitty ei vain vahingossa pyhity. Se on hänelle suuri ja rakas asia. Sotilaan tehtävä on taistella. Kristityn tehtävä on olla Kristuksen kaltainen",
     "witnesses.testimonials.items4.t3":
       "Jumalasta nauttiminen on ainoa asia, josta sielumme voi olla tyytyväinen. Taivaaseen pääseminen sekä Jumalasta nauttiminen ovat äärettömästi parempia kuin miellyttävimmät nautinnot maan päällä.",
-    "witnesses.testimonials.items5.job": "Tulossa pian...",
+    "witnesses.testimonials.items5.job":
+      "Johtohahmo tai yksi johtohahmoista Ensimmäisessä Suuressa Heräämisessä. Todennäköisesti tunnetein mies tuona ajanjaksona Amerikassa. Tämä mies puhui saarnansa ulkona tuhansille kuulijoille. Osavaltiot kääntyivät takaisin Jumalan puoleen. Ilman Ensimmäistä Suurta Heräämistä ei olisi Amerikan vapaussotaa, itsenäisyydenjulistusta tai perustuslakia.",
     "witnesses.testimonials.items5.t1":
       "Jos aiot todella kulkea Jeesuken Kristuksen kanssa, sinua tullaan varmasti vastustamaan... Itseasiassa tänä päivänä todellisena kristittynä oleminen tarkoittaa, että olet skandaali.",
     "witnesses.testimonials.items5.t2":
       "Tunne Häntä enemmän ja enemmän. Sillä, mitä enemmän tunnet Häntä, sitä enemmän rakastat Häntä.",
-    "witnesses.testimonials.items6.job": "Tulossa pian...",
+    "witnesses.testimonials.items6.job":
+      "Amerikan alkuperäisasukkaiden lähetustyöntekijä. Hän antoi koko elämänsä pelastaakseen syntisiä, joista kukaan ei välittänyt, mutta joiden puolesta hänen Herransa oli kuollut. Tämä rukous kone vietti yönsä tunteja ulkona rukoillen polvillaan lumen keskellä. Hänen rukouksiensa intohimo oli niin valtava, että hän oli hiestä läpimärkä.",
     "witnesses.testimonials.items6.t1":
       "Ei väliä, minne menen, miten elän, tai mitä joudun kestämään, jotta vain voin voittaa sieluja. Näen heitä unissani ja hereillä ollessani ajattelen ensimmäisenä heitä.",
     "witnesses.testimonials.items6.t2":
       "Antakaa minun unohtaa tämä maailman ja vain uppoutua syvemmälle halusta kirkastaa Häntä.",
-    "witnesses.testimonials.items7.job": "Tulossa pian...",
+    "witnesses.testimonials.items7.job":
+      "Kun yksilö asettaa elämänsä, avioliittonsa, tulevaisuutensa ja aivan kaiken, mitä hänellä on, vaakalaudalle Jumalan takia, jotain merkittävää täytyy tapahtua. Näin oli William Careyn elämässä. Tämän miehen kautta lähetystyö heräsi syttyi liekkiin kokoa maapallolla. Meidän on pakko viedä kaikkialle maailmaan.",
     "witnesses.testimonials.items7.t1":
       "En pelkää epäonnistumista; pelkään, että onnistun asioissa, joilla ei ole mitään merkitystä.",
     "witnesses.testimonials.items7.t2":
@@ -1350,25 +1358,29 @@ export const ui = {
       "Jokaisen, joka on vastaanottanut evankeliumin, tehtävä on tehtä se tiettäväksi kaikkien maiden keskellä.",
     "witnesses.testimonials.items7.t4":
       "Meidän kannattaa heittää itsemme kaikella voimallamme Jumalan työhön ja Kristuksen valtakunnan edistämiseen.",
-    "witnesses.testimonials.items8a.job": "Tulossa pian...",
+    "witnesses.testimonials.items8a.job":
+      "Olen oppinut, että henkilö voi mennä sänkyyn täysin sairaana, heikkoudesta ja väsymyksestä ja paineen alla. Ja olen oppinut, että hän voi rukoilla, kuin hän tekisi välivaltaa Taivaalle, ja sitten nähnyt siunauksen tulevan niin selvästi vastauksena hänen rukoukseensa, että kukaan ihminen ei voi epäillä, että Jumala puhui taivaasta. Kerronko sinulle, kuinka hän kuoli? Hän rukoili enemmän ja enemmän; hänellä oli tapana ottaa kartta eteensä ja rukoilla, katsoa eri maita ja rukoilla niiden puolesta, kunnes hän kuoli omassa huoneessaan, rukoillen. Siunattu mies! Hän oli epäuskoiseten, lihallisten ja tyhjää uskontoa elävien kauhistus, mutta Taivaan suosikki, ja rukouksen hallitseva ruhtinas.",
     "witnesses.testimonials.items8a.t1":
       " Kun herra Finney ja minä aloitumme yhteisen työmme, emme ajatelleetkaan menevämme muiden Jumalan työntekijöiden luokse. Suurin tavoitteemme oli mennä sinne, jossa ei ollut työntekijöitä eikä herätystä ja etsiä kadonneita lampaita, joista kukaan ei välittänyt. Me aloitimme työn ja Herra sai sen menestymään. Mutta me emme mene kenenkään seurakuntaan, ellei meitä kutsuta. Meillä on tarpeeksi tilaa työskennellä ja tarpeeksi työtä tehtävänä.",
     "witnesses.testimonials.items8a.t2":
       "Oi, kuolen tästä voiman puutteesta rukouksessa! Ruumiini on murskattu, maailman on päälläni, ja kuinka voisin olla rukoilematta?",
     "witnesses.testimonials.items8a.t3":
       "Finney: Niin kuin kaikki, jotka rukoilevat paljon, isä Nash on todella hiljainen henkilö. Näytä minulle joku, joka puhuu aina, ja minä näytän sinulle kristityn, joka ei ikinä rukoile.",
-    "witnesses.testimonials.items8.job": "Tulossa pian...",
+    "witnesses.testimonials.items8.job":
+      "Vanhan ajan herätyksen isä. Ihmiset itkivät, makasivat lattialla suuressa tuskassa syntiensä vuoksi, kun he kuulivat hänen saarnaavan. Kokonaiset kylät, kaupungit ja osavaltiot muutuivat Jumalan voiman alla. Sadat tuhannet kääntyivät Jumalan puoleen oikeassa parannuksessa, muuttaen koko elämänsä tottelemaan, rakastamaan ja miellyttämään Jumalaa. Kun skeptikot tulivat niin kaupunkeihin, joissa hän työskenteli, he tulivat syväluotaavan Jumalan läsnäolon tunteeseen ja huomasivat, että vielä kääntymättömät paikalliset tunsivat juuri samoin koko kaupungissa ja sen ulkopuolella.",
     "witnesses.testimonials.items8.t1":
       "Jokaisen kristityn suurin tehtävä on pelastaa sieluja. Mutta moni valittaa, että he eivät tiedä miten. Mutta vastaus heidän valitukseensa on selvä; he eivät ole panostaneet tietääkseen. He eivät ole ikinä nähneet vaivaa ollakseen kykeneviä siihen. Toimintasi on todella pahaa ja kohtuutonta kristityksi, jos et opiskele, kuinka voit tehokkaasti rakentaa Kristuksen valtakuntaa.",
     "witnesses.testimonials.items8.t2":
       "Herätys on yksilön uudistunut vakuuttuminen synnistä ja parannuksen teosta, jota seuraa intensiivinen tahto elää kuuliaisesti Jumalalle. Kun yksilö luovuttaa oman tahtonsa Jumalalle syvässä nöyryydessä. ",
     "witnesses.testimonials.items8.t3":
       "Kuulet Jumalan sanaa ja uskot sen teoriassa, mutta käytännössä kiellät sen. Kerron sinulle suoraan, että huijaat itseäsi.",
-    "witnesses.testimonials.items9.job": "Tulossa pian...",
+    "witnesses.testimonials.items9.job":
+      "Tämä mies piti huolta kymmenistä tuhansista orvoista. Vain rukouksen avulla hän sai lapset ja heidän käyttämänsä rakennukset saivat kaiken ruoan, tarvikkeet ja tykötarpeet, mitä he tarvitsivat.",
     "witnesses.testimonials.items9.t1": "Kun alat murehtia et voi toimia uskossa. Kun alat uskoa, et voi murehtia.",
     "witnesses.testimonials.items9.t2":
       "Rahan arvo on juuri se, kuinka hyvin se käytetään Herran työhön. Myös elämä on juuri niin arvokas, kuinka paljon se on käytetty Herran palvelemiseen.",
-    "witnesses.testimonials.items10.job": "Tulossa pian...",
+    "witnesses.testimonials.items10.job":
+      "Mies, joka oli täysin sitoutunut Jumalaan. Hänen elämänsä oli nuhde saarna niille, jotka vain tunnustivat uskonnon, mutta joilla ei ollut koko sydäntä siinä mukana. Ihmiset vedetiin oikeaan, henkilökohtaiseen ja syvään antautumiseen Jumalalle, Hänen miellyttämiseensä ja rakastamiseensa, etsimiseensä ja tahntonsa tekemiseen kaikissa asioissa. Elämä ei ollut enää keskittynyt heihin itseensä, vaan Jumalaan. Tämä on oikea ja todellinen parannuksen teko.",
     "witnesses.testimonials.items10.t1":
       "En halua vietää yhtään hetkeä elämässäni Jumalan valon, rakkauden ja ilon ulkopuolella. Ei hetkeäkään, joilloin elämäni ei olisi luovutettu kokonaan Hänelle astiana, jonka Hän voi täyttää Hengellään ja rakkaudellaan.",
     "witnesses.testimonials.items10.t2":
