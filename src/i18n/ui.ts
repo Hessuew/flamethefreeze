@@ -21,13 +21,13 @@ export const ui = {
     "church.herotext.subtitle.span2": " Jesus Christ",
     "church.steps.tagline": "A guide",
     "church.steps.title": "The church to attend is where:",
-    "church.steps.items1.title": "Jesus is glorified",
+    "church.steps.items1.title": "Jesus is glorified.",
     "church.steps.items1.description1": "But he that glorieth, let him glory in the Lord. 2 Cor 10:17 KJV",
     "church.steps.items1.description2":
       "He shall glorify me: for he shall receive of mine, and shall shew it unto you. Joh 16:14 KJV",
     "church.steps.items1.description3":
       "Whether therefore ye eat, or drink, or whatsoever ye do, do all to the glory of God. 1 Cor 10:31 KJV",
-    "church.steps.items2.title": "The cross is preached",
+    "church.steps.items2.title": "The cross is preached.",
     "church.steps.items2.description1":
       "But we preach Christ crucified, unto the Jews a stumblingblock, and unto the Greeks foolishness. But unto them which are called, both Jews and Greeks, Christ the power of God, and the wisdom of God. 1 Cor 1:23,24 KJV",
     "church.steps.items2.description2":
@@ -35,57 +35,57 @@ export const ui = {
     "church.steps.items2.description3":
       "Moreover, brethren, I declare unto you the gospel which I preached unto you, which also ye have received, and wherein ye stand; By which also ye are saved, if ye keep in memory what I preached unto you, unless ye have believed in vain. For I delivered unto you first of all that which I also received, how that Christ died for our sins according to the scriptures; And that he was buried, and that he rose again the third day according to the scriptures. 1 Cor 15:1-4 KJV",
     "church.steps.items3.title":
-      "Love to God and to brethren abounds out of pure heart, and of good conscience and of faith unfeigned",
+      "Love to God and to brethren abounds out of a pure heart, of good conscience and of faith unfeigned.",
     "church.steps.items3.description1":
       "Now the end of the commandment is charity out of a pure heart, and of a good conscience, and of faith unfeigned. 1 Tim 1:5 KJV",
     "church.steps.items3.description2":
       "Whom having not seen, ye love; in whom, though now ye see him not, yet believing, ye rejoice with joy unspeakable and full of glory. 1 Pet 1:8 KJV",
     "church.steps.items3.description3":
       "And this commandment have we from him, That he who loveth God love his brother also. 1 Joh 4:21 KJV",
-    "church.steps.items4.title": "The love toward the world dies and love towards the things of the world dies",
+    "church.steps.items4.title": "The love of the world dies, and the love of the things of the world dies.",
     "church.steps.items4.description1":
       "Ye adulterers and adulteresses, know ye not that the friendship of the world is enmity with God? whosoever therefore will be a friend of the world is the enemy of God. Jam 4:4 KJV",
     "church.steps.items4.description2":
       "Love not the world, neither the things that are in the world. If any man love the world, the love of the Father is not in him. For all that is in the world, the lust of the flesh, and the lust of the eyes, and the pride of life, is not of the Father, but is of the world. 1 Joh 2:15,16 KJV.",
     "church.steps.items4.description3":
-      "Nothing in this world satisfies you anymore, you just want Jesus and more of Him.",
+      "Nothing in this world satisfies you anymore; you just want Jesus and more of Him.",
     "church.steps.items4.description4":
       "These all died in faith, not having received the promises, but having seen them afar off, and were persuaded of them, and embraced them, and confessed that they were strangers and pilgrims on the earth. For they that say such things declare plainly that they seek a country. Heb 11:13,14 KJV",
     "church.steps.items4.description5":
       "That I may know him, and the power of his resurrection, and the fellowship of his sufferings, being made conformable unto his death. Phi 3:10 KJV.",
     "church.steps.items4.description6":
-      "If you have started to pray more, if you have started to read the Bible more, if you started to preach the gospel more, then you are in the right place.",
+      "If you have started to pray more, if you have started to read the Bible more, and if you have started to preach the gospel more, then you are in the right place.",
     "church.steps.items4.description7":
       "But we will give ourselves continually to prayer, and to the ministry of the word. Acts 6:4 KJV",
     "church.steps.items4.description8":
       "Therefore, my beloved brethren, be ye stedfast, unmovable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord. 1 Cor 15:58 KJV.",
     "church.steps.items5.title":
-      "Your passion to pray together and individually is kindled to full flame and just enlarges day by day. Wanting to pray hours and hours",
+      "Your passion to pray together and individually is kindled to full flame and just enlarges day by day. Wanting to pray for hours and hours.",
     "church.steps.items5.description1":
       "And he spake a parable unto them to this end, that men ought always to pray, and not to faint. Luk 18:1 KJV",
     "church.steps.items5.description2":
       "Now I beseech you, brethren, for the Lord Jesus Christ's sake, and for the love of the Spirit, that ye strive together with me in your prayers to God for me. Rom 15:30 KJV.",
     "church.steps.items5.description3":
-      "How alive a church is can be noticed from its' prayer meeting directly. You want to know the state of the church, go to the prayer meeting. If it is full of passion, fervency, heartfelt, Spirit and scripture filled prayers, then you are at the right place. If they pray for souls, agonize for dead churches, cry for the wayward, lay down in pain for the lost, travail for general revival, strive for the advancing of the gospel, and resist to blood against sin, *then* you are at the right place. If these are not found, the church has lost its first love and has a name but is dead. For out of the abundance of the heart the mouth speaketh.",
+      "How alive a church is can be noticed from its' prayer meetings directly. If you want to know the state of the church, go to the prayer meeting. If it is full of passion, fervor, heartfelt, and Spirit and scripture-filled prayers, then you are at the right place. If they pray for souls, agonize for dead churches, cry for the wayward, lay down in pain for the lost, travail for general revival, strive for the advancement of the gospel, and resist to blood against sin, *then* you are at the right place. If these are not found, the church has lost its first love and has a name but is dead. For out of the abundance of the heart, the mouth speaks.",
     "church.steps.items5.description4":
       "And being let go, they went to their own company, and reported all that the chief priests and elders had said unto them. And when they heard that, they lifted up their voice to God with one accord... Acts 4:23,24a KJV",
     "church.steps.items5.description5":
       "O generation of vipers, how can ye, being evil, speak good things? for out of the abundance of the heart the mouth speaketh. Mat 12:34 KJV",
-    "church.steps.items6.title": "You get more people saved",
+    "church.steps.items6.title": "You get more people saved.",
     "church.steps.items6.description1":
       "The fruit of the righteous is a tree of life; and he that winneth souls is wise. Pro 11:30 KJV",
     "church.steps.items6.description2":
       "And he said unto them, Go ye into all the world, and preach the gospel to every creature. Mark 16:15 KJV",
     "church.steps.items6.description3":
       "And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth. Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you always, even unto the end of the world. Amen. Mat 28:18-20 KJV.",
-    "church.steps.items7.title": "Holiness is preached and is evident in the life of people",
+    "church.steps.items7.title": "Holiness is preached and is evident in the lives of people.",
     "church.steps.items7.description1":
       "Ye are witnesses, and God also, how holily and justly and unblameably we behaved ourselves among you that believe. 1 The 2:10 KJV",
     "church.steps.items7.description2":
       "But as he which hath called you is holy, so be ye holy in all manner of conversation; Because it is written, Be ye holy; for I am holy. And if ye call on the Father, who without respect of persons judgeth according to every man's work, pass the time of your sojourning here in fear: Forasmuch as ye know that ye were not redeemed with corruptible things, as silver and gold, from your vain conversation received by tradition from your fathers; But with the precious blood of Christ, as of a lamb without blemish and without spot. 1 Pet 1:15-20 KJV.",
     "church.steps.items7.description3":
       "Beloved, now are we the sons of God, and it doth not yet appear what we shall be: but we know that, when he shall appear, we shall be like him; for we shall see him as he is. And every man that hath this hope in him purifieth himself, even as he is pure. 1 Joh 3:2,3 KJV.",
-    "church.steps.items8.title": "Sin is hated and judged",
+    "church.steps.items8.title": "Sin is hated and judged.",
     "church.steps.items8.description1":
       "And found in the temple those that sold oxen and sheep and doves, and the changers of money sitting: And when he had made a scourge of small cords, he drove them all out of the temple, and the sheep, and the oxen; and poured out the changers' money, and overthrew the tables; And said unto them that sold doves, Take these things hence; make not my Father's house an house of merchandise. Joh 2:14-16 KJV",
     "church.steps.items8.description2":
@@ -93,7 +93,7 @@ export const ui = {
     "church.steps.items8.description3":
       "For I verily, as absent in body, but present in spirit, have judged already, as though I were present, concerning him that hath so done this deed, In the name of our Lord Jesus Christ, when ye are gathered together, and my spirit, with the power of our Lord Jesus Christ, To deliver such an one unto Satan for the destruction of the flesh, that the spirit may be saved in the day of the Lord Jesus. Your glorying is not good. Know ye not that a little leaven leaveneth the whole lump? 1 Cor 5:3-6 KJV.",
     "church.steps.items9.title":
-      "Sin ceases from your life, you are released from your oppressions, the addictions are broken, sicknesses are healed, demons are being cast out, LIVES are being transformed by the POWER of GOD!",
+      "Sin ceases from your life, you are released from your oppressions, the addictions are broken, sicknesses are healed, demons are being cast out, and lives are being transformed by the POWER of God!",
     "church.steps.items9.description1":
       "And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; They shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover. Mark 16:17,18 KJV.",
     "church.steps.items9.description2":
@@ -102,7 +102,7 @@ export const ui = {
       "How God anointed Jesus of Nazareth with the Holy Ghost and with power: who went about doing good, and healing all that were oppressed of the devil; for God was with him. Acts 10:38 KJV.",
     "church.steps.items9.description4":
       "And my speech and my preaching was not with enticing words of man's wisdom, but in demonstration of the Spirit and of power: That your faith should not stand in the wisdom of men, but in the power of God. 1 Cor 2:4,5 KJV.",
-    "church.steps.items10.title": "There is liberty, righteousness, joy and peace in the Holy Ghost",
+    "church.steps.items10.title": "There is liberty, righteousness, joy, and peace in the Holy Ghost.",
     "church.steps.items10.description1":
       "For the kingdom of God is not meat and drink; but righteousness, and peace, and joy in the Holy Ghost. Rom 14:17 KJV.",
     "church.steps.items10.description2":
@@ -113,7 +113,7 @@ export const ui = {
     "devotions.hero.title.span1": "Spiritual",
     "devotions.hero.title.span2": " spiritual",
     "devotions.hero.subtitle":
-      "We are spiritual beings that need spiritual food for sustenance. To walk in the supernatural we must attend to things that propels us to prayers and the word of God. A few daily devotional are listed below which would be helpful to our Christian faith.",
+      "We are spiritual beings that need spiritual food for sustenance. To walk in the supernatural, we must attend to things that propels us to prayer and the word of God. A few daily devotionals are listed below that would be helpful to our Christian faith.",
     "devotions.features3-1.subtitle":
       "This book of the law shall not depart out of thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous, and then thou shalt have good success. Joshua 1:8 KJV",
     "devotions.features3-2.subtitle":
@@ -135,7 +135,7 @@ export const ui = {
     "devotions.steps.items6.title": "Declaring God's Word - Derek Prince",
     "devotions.steps.items6.description1": "https://www.derekprince.com/devotions",
     "devotions.features1.tagline": "Extra",
-    "devotions.features1.title": "Free e-book for the exhortation and edification of the body of Christ",
+    "devotions.features1.title": "A free e-book for the exhortation and edification of the body of Christ.",
     "devotions.ebook.text1": "Unable to display PDF file. ",
     "devotions.ebook.text2": " instead.",
     "devotions.ebook.a": "Download",
@@ -145,25 +145,25 @@ export const ui = {
     "fivefold.hero.subtitle":
       "So that He might sanctify her, having cleansed her by the washing of water with the Word, that He might present the church to Himself in glorious splendor, without spot or wrinkle or any such things [that she might be holy and faultless]. Ephesians 5:27 AMPC",
     "fivefold.features3-1.title":
-      "appointed in the church a fundamental five-fold ministry to perfect and fully equip the saints.",
+      "appointed in the church a fundamental, five-fold ministry to perfect and fully equip the saints.",
     "fivefold.features3-1.title.span": "Jesus",
-    "fivefold.features3-1.subtitle": "So if it was He who did this, it must be quite important right?",
+    "fivefold.features3-1.subtitle": "So if it was He who did this, it must be quite important, right?",
     "fivefold.features3-1.subtitle2":
-      "This pattern helps the saints to spiritually do the work of ministering and building up Christ's body. Unfortunately, several millions of believers have lived their entire life under the tutelage of one out of five of these offices. This effectively retarded their spiritual growth due to severe spiritual malnourishment and deprivation. Such congregations descend into religious cultism and proselytism, only loyal to a so-called denominational founder but are not disciples of our Lord Jesus Christ.",
+      "This pattern helps the saints to spiritually do the work of ministering and building up Christ's body. Unfortunately, several millions of believers have lived their entire lives under the tutelage of one out of five of these offices. This effectively retarded their spiritual growth due to severe spiritual malnourishment and deprivation. Such congregations descend into religious cultism and proselytism, only loyal to a so-called denominational founder but not disciples of our Lord Jesus Christ.",
     "fivefold.features3-2.title": "Among these spiritually malnourished congregations...",
     "fivefold.features3-2.title.span": "",
     "fivefold.features3-2.subtitle1-1":
-      "divisions, pride, hatred, immaturity, carnal comparisons, denial of the power of God etc are common experiences.  Come to think of the growth of a child who gets by on twenty percent of daily meal. Such a child would be susceptible to sicknesses, pestilence, pain, weakness, and loss of body function.",
+      "Divisions, pride, hatred, immaturity, carnal comparisons, denial of the power of God, etc. are common experiences. Come to think of the growth of a child who gets by on twenty percent of his daily meal. Such a child would be susceptible to sickness, pestilence, pain, weakness, and loss of body function.",
     "fivefold.features3-2.subtitle1-2":
-      "So break lose from your religious and denominational imprisonment and illusion and launch into the full scope of God's plan for the end-time church.",
+      "So break free from your religious and denominational imprisonment and illusion and launch into the full scope of God's plan for the end-time church.",
     "fivefold.features3-2.subtitle.span":
-      "We will never attain spiritual maturity in Christ if we ignore divine pattern.",
+      "We will never attain spiritual maturity in Christ if we ignore the divine pattern.",
     "fivefold.features3-2.subtitle2":
       "And he gave some, apostles; and some, prophets; and some, evangelists; and some, pastors and teachers; for the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ: till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ. Ephesians 4:11-13 KJV",
     "fivefold.features.tagline": "Examples",
     "fivefold.features.title": "Here are a few examples of people whom the Lord anointed to these ministerial offices.",
     "fivefold.features.subtitle":
-      "Please feel free to learn from these saints of God as you seek to identify your peculiar ministry gifts. These servants of Christ have provided us with incredible volumes of materials through their lifetime for our edification. We must stop wasting our time on unprofitable endeavours such as social media addictions, movies and cinema, games etc.",
+      "Please feel free to learn from these saints of God as you seek to identify your peculiar ministry gifts. These servants of Christ have provided us with incredible volumes of materials throughout their lifetime for our edification. We must stop wasting our time on unprofitable endeavors such as social media addictions, movies, cinema, games, etc.",
     "fivefold.content1.title": "Apostle",
     "fivefold.content1.subtitle":
       "And when they had fasted and prayed, and laid their hands on them, they sent them away. So they, being sent forth by the Holy Ghost, departed unto Seleucia; and from thence they sailed to Cyprus. Acts 13:3,4 KJV",
@@ -182,13 +182,13 @@ export const ui = {
     "fivefold.content1.bottom.links1.link": "https://youtu.be/kKhnABGoQHg",
     "fivefold.content1.items1.title": "Description:",
     "fivefold.content1.items1.description":
-      "Apostles are sent out by God through our Lord Jesus Christ and the Holy Spirit for a specific task in the body of Christ. Apostles are not made by men's religious institutions or theological creed. They are not self-made or have self-imposed title and salutation. Apostles are saddled with a grave responsibility to reveal the mystery of Christ to the church. It is not a matter for self gratification. Many times, whosoever is called to be an Apostle are graciously shown the vision of our Lord Jesus Christ.",
+      "Apostles are sent out by God through our Lord Jesus Christ and the Holy Spirit for a specific task in the body of Christ. Apostles are not made by men's religious institutions or theological creeds. They are not self-made or have self-imposed titles and salutations. Apostles are saddled with a grave responsibility to reveal the mystery of Christ to the church. It is not a matter of self-gratification. Many times, whoever is called to be an apostle is graciously shown the vision of our Lord Jesus Christ.",
     "fivefold.content1.items2.title": "Content:",
     "fivefold.content1.items2.description":
-      "Apostles suffer extreme contradictions from men because the mysteries of Christ spoken by them challenges the human wisdom and common knowledge in their generation. To this end, an apostolic office is a tragic and painful office and not a show room. Do you realise that the bible did not ask if any man desires the office of an Apostle? Realistically, it is not a desirable office except you are called specifically to its grave task.",
+      "Apostles suffer extreme contradictions from men because the mysteries of Christ spoken by them challenge human wisdom and common knowledge in their generation. To this end, an apostolic office is a tragic and painful office, not a show room. Do you realize that the Bible does not ask if any man desires the office of an apostle? Realistically, it is not a desirable office unless you are specifically called to its grave task.",
     "fivefold.content1.items3.title": "More:",
     "fivefold.content1.items3.description":
-      "A detailed discussion on Apostle can be found in the book written by Kenneth Hagin titled, He gave gifts unto men.",
+      "A detailed discussion of the Apostle can be found in the book written by Kenneth Hagin titled He gave gifts unto men.",
     "fivefold.content1.content1": "From the Greek, apostolos:",
     "fivefold.content1.content2": "one who is sent out",
     "fivefold.content2.title": "Prophet",
@@ -211,13 +211,13 @@ export const ui = {
     "fivefold.content2.bottom.links2.link": "https://www.rhema.org/",
     "fivefold.content2.items1.title": "Description:",
     "fivefold.content2.items1.description":
-      "A very important lighthouse in the body of Christ is the prophetic office. It is a full and consistent manifestations of the words of wisdom, words of knowledge, and discernment of spirit aided by the Holy Spirit to the intent that the Church may be holy, guided, protected, and alert to the wiles of the devils. The prophetic office does not function in prayerless people and persons who lack adequate knowledge of the scriptures. These are fundamental requirements for the prophetic office. To see or pursue visions without prayer and accurate scriptural interpretation is to repeat the error of Balaam, it would lead to witchcraft, divination, and occultism. Beware of False Prophets.",
+      "A very important lighthouse in the body of Christ is the prophetic office. It is a full and consistent manifestation of the words of wisdom, knowledge, and discernment of spirit aided by the Holy Spirit to the intent that the Church may be holy, guided, protected, and alert to the wiles of the devils. The prophetic office does not function in the lives of prayerless people and persons who lack adequate knowledge of the scriptures. These are fundamental requirements for the prophetic office. To see or pursue visions without prayer and accurate scriptural interpretation is to repeat the error of Balaam; it would lead to witchcraft, divination, and occultism. Beware of false prophets.",
     "fivefold.content2.items2.title": "Content:",
     "fivefold.content2.items2.description":
-      "Unfortunately, this generation has mutilated the office of the prophet, it has been reduced to money spinning forecast, job offer prognostication, future spouse determination, gender of child to have, which city to live, or even what shoes to buy in the store. This is a mockery of an office through which the Holy Spirit convicts of sin, righteousness and judgement. Brethren take heed lest you are deceived.",
+      "Unfortunately, this generation has mutilated the office of the prophet; it has been reduced to money-spin forecast, job offer prognostication, future spouse determination, gender of child to have, which city to live in, or even what shoes to buy in the store. This is a mockery of an office through which the Holy Spirit convicts of sin, righteousness, and judgment. Brethren, take heed lest you be deceived.",
     "fivefold.content2.items3.title": "More:",
     "fivefold.content2.items3.description":
-      "A detailed discussion on Prophets can be found in the book written by Kenneth Hagin titled, He gave gifts unto men.",
+      "A detailed discussion of the Prophet can be found in the book written by Kenneth Hagin titled He gave gifts unto men.",
     "fivefold.content2.content1": "From the Greek, prophetes:",
     "fivefold.content2.content2": "one who hears and listens to God",
     "fivefold.content3.title": "Evangelist",
@@ -240,7 +240,7 @@ export const ui = {
     "fivefold.content3.bottom.links2.link": "https://www.cfan.eu/reinhard-bonnke/",
     "fivefold.content3.items1.title": "Description:",
     "fivefold.content3.items1.description":
-      "This office of the Holy Spirit is occupied by the town crier and conductor of the kingdom. The task in this office is to call men and women to repentance through a simple gospel message of the Lord Jesus Christ. An evangelist has an incurable desire to save the lost: 'plundering hell to populate heaven'. They are restless, relentless, and can not be tied to a denomination, or bugged down by herculean administrative tasks. They are God's incendiaries shot into regions of spiritual darkness to enable an engulf of divine flame of salvation, joy and peace in the Holy Ghost.",
+      "This office of the Holy Spirit is occupied by the town crier and conductor of the kingdom. The task in this office is to call men and women to repentance through the simple gospel message of the Lord Jesus Christ. An evangelist has an incurable desire to save the lost: 'plundering hell to populate heaven'. They are restless, relentless, and cannot be tied to a denomination or bugged down by herculean administrative tasks. They are God's incendiaries shot into regions of spiritual darkness to enable an engulfing of divine flame of salvation, joy, and peace in the Holy Ghost.",
     "fivefold.content3.items2.title": "Content (Christ):",
     "fivefold.content3.items2.description":
       "Then Philip went down to the city of Samaria, and preached Christ unto them. Acts 8:5 KJV",
@@ -264,13 +264,13 @@ export const ui = {
     "fivefold.content4.bottom.links1.link": "https://www.youtube.com/playlist?list=PLHZp_z2RSv20BMZTT8hE19ZJVZ-b738Z1",
     "fivefold.content4.items1.title": "Description:",
     "fivefold.content4.items1.description":
-      "This office is the most common and popular as it is the home maker for the kingdom. The pastor provides comfort to the new born in Christ, change the spiritual diapers, give the baby milk and keeps everyone warm. Jesus pastored the twelve apostles for several years. The office has different names such as Bishop, Elder, Deacon, Overseer, Shepherd. This task is well spelt out by Apostle Paul and Peter. Pastors may have a weakness of not wanting to give up their spiritual babies who are now maturing in the Lord and seeking to exercise their gift. This could lead to intimidation, manipulation and domination, in short witchcraft. A genuine pastor is not afraid to allow the flock to glean from the riches of the Holy Spirit in other verified spiritual offices.",
+      "This office is the most common and popular, as it is the homemaker for the kingdom. The pastor provides comfort to the newly born in Christ, changes the spiritual diapers, gives the baby milk, and keeps everyone warm. Jesus pastored the twelve apostles for several years. The office has different names, such as bishop, elder, deacon, overseer, shepherd. This task is well spelled out by apostle Paul and Peter. Pastors may have the weakness of not wanting to give up their spiritual babies who are now maturing in the Lord and seeking to exercise their gift. This could lead to intimidation, manipulation, and domination—in short, witchcraft. A genuine pastor is not afraid to allow the flock to glean from the riches of the Holy Spirit in other verified spiritual offices.",
     "fivefold.content4.items2.title": "Content:",
     "fivefold.content4.items2.description":
-      "True pastor gives his life for the sheep. To shepherd and feed others pastors need be strong and deep in the Word and prayer. From their knees they receive divine utterances which in the flock results to abundant desire to glorify Jesus and to love God and brehtren. It kindles people to travail and strive on their knees praying praying and praying for souls! Desire for holiness awakens and sin and love of the world ceases.",
+      "A true pastor gives his life for the sheep. To shepherd and feed others, pastors need to be strong and deep in the Word and prayer. From their knees, they receive divine utterances, which in the flock result in an abundant desire to glorify Jesus and to love God and brethren. It kindles people to travail and strive on their knees; praying, praying, and praying for souls! Desire for holiness awakens, and sin and love of the world cease.",
     "fivefold.content4.items3.title": "More:",
     "fivefold.content4.items3.description":
-      "A detailed discussion on Pastors can be found in the book written by Kenneth Hagin titled, He gave gifts unto men.",
+      "A detailed discussion of the Pastor can be found in the book written by Kenneth Hagin titled He gave gifts unto men.",
     "fivefold.content4.content1": "From the Greek, poimen:",
     "fivefold.content4.content2": "one who shepherds God's people",
     "fivefold.content5.title": "Teacher",
@@ -297,10 +297,10 @@ export const ui = {
     "fivefold.content5.bottom.links2.link": "https://www.derekprince.com/",
     "fivefold.content5.items1.title": "Description:",
     "fivefold.content5.items1.description":
-      "Here is the office of the spiritual kindergarten through university training tasked with the responsibility to systematically and painstakingly break the bread of life into bits, sizeable for consumption. A teacher is divinely inspired with the spirit of revelation and wisdom to make the scripture a living word not just dead letters of theology. A teacher is full of the knowledge of scriptures and they work hand in hand with the pastor in accurately discipling and nurturing the body of Christ. ",
+      "Here is the office of the spiritual kindergarten through university training, tasked with the responsibility to systematically and painstakingly break the bread of life into bits, sizeable for consumption. A teacher is divinely inspired with the spirit of revelation and wisdom to make the scripture a living word, not just dead letters of theology. A teacher is full of knowledge of scriptures, and they work hand in hand with the pastor to accurately disciple and nurture the body of Christ. ",
     "fivefold.content5.items2.title": "Content:",
     "fivefold.content5.items2.description":
-      "Unlike the pastor, the teaching office is not stationary but mobile so that several local churches can benefit from the grace. It is the teaching office's task to wean the church from the feeding bottles of the pastoral office. Another name for the office of a teacher is a minister. The teacher or minister is expected to introduce strong meat which boosts spiritual immunity, increases strength and enables alertness against false doctrines and deceivers. The teaching office is saddled with the responsibility to turn spiritual babies and infants into adolescents, young adults and full grown adults, tagged operation maturity! ",
+      "Unlike the pastor, the teaching office is not stationary but mobile, so several local churches can benefit from the grace. It is the teaching office's task to wean the church from the feeding bottles of the pastoral office. Another name for the office of a teacher is a minister. The teacher or minister is expected to introduce strong meat, which boosts spiritual immunity, increases strength, and enables alertness against false doctrines and deceivers. The teaching office is saddled with the responsibility to turn spiritual babies and infants into adolescents, young adults, and full-grown adults, tagged operation maturity! ",
     "fivefold.content5.items3.title": "Remark:",
     "fivefold.content5.items3.description":
       "So if your local church is full of grown-up adult babies either on the pew or pulpit, screaming daily for spiritual feeding bottles, it is a spiritual emergency! Please kindly invite a teacher.",
@@ -317,39 +317,39 @@ export const ui = {
     "header.link5": "Witnesses",
     "header.link6": "Five-fold",
     "index.hero1.title1": "Flame the Freeze is a website focused on",
-    "index.hero1.title2": " in real-life",
+    "index.hero1.title2": " in real life",
     "index.hero1.title.span": " God's Word working today",
     "index.hero1.subtitle.span1": "The kingdom of God",
     "index.hero1.subtitle.span2": " still works",
     "index.hero1.subtitle1":
-      "is not in enticing words of man's wisdom but in demonstrated power. Therefore the power of God working in and through the lives of normal people is a testimony that God",
-    "index.hero1.subtitle2": "in the midst of His people in this 21st century.",
+      "is not in the enticing words of man's wisdom but in demonstrated power. Therefore, the power of God working in and through the lives of normal people is a testimony that God",
+    "index.hero1.subtitle2": "in the midst of His people in the 21st century.",
     "index.note.text1": " Question:",
     "index.note.text2": " Do you really want to know God personally?",
     "index.features1.tagline": "Content",
     "index.features1.title": "What God does through His Holy Spirit",
     "index.features1.subtitle":
       "For thus saith the Lord of hosts; Yet once, it is a little while, and I will shake the heavens, and the earth, and the sea, and the dry land; and I will shake all nations, and the desire of all nations shall come: and I will fill this house with glory, saith the Lord of hosts. Haggai 2:6,7 KJV",
-    "index.features1.items1.title": "Wakes up the body of Christ",
+    "index.features1.items1.title": "Wakes up the body of Christ.",
     "index.features1.items1.description":
       "It is time the bride of Christ woke up from slumber and spiritual death because our Lord Jesus Christ is coming for a glorious church.",
-    "index.features1.items2.title": "Shakes out all frost",
+    "index.features1.items2.title": "Shakes out all the frost.",
     "index.features1.items2.description": "God is going to shake the church out of every frost and freeze.",
-    "index.features1.items3.title": "Kindles it to full flame🔥",
+    "index.features1.items3.title": "Kindles it to full flame🔥.",
     "index.features1.items3.description": "He wants to 'flame the freeze'.",
-    "index.features1.items4.title": "Revives the manifestations of the Spirit",
+    "index.features1.items4.title": "Revives the manifestations of the Spirit.",
     "index.features1.items4.description":
       "We need to see a revival of the apostolic signs and wonders in the entire body of Christ.",
-    "index.features1.items5.title": "Removes barriers and borders",
+    "index.features1.items5.title": "Removes barriers and borders.",
     "index.features1.items5.description":
-      "Genuine Christ -likeness and christianity is not about denominational, cultural, racial, geographical, gender, age, or religious superiority.",
-    "index.features1.items6.title": "And we will see a massive harvest of souls and a genuine revival",
+      "Genuine Christ-likeness and Christianity are not about denominational, cultural, racial, geographical, gender, age, or religious superiority.",
+    "index.features1.items6.title": "And we will see a massive harvest of souls and a genuine revival.",
     "index.features1.items6.description":
-      "It is time we see a mass salvation of souls, restoration of backsliders, and general revival in the body of Christ.",
+      "It is time we see a mass salvation of souls, the restoration of backsliders, and a general revival in the body of Christ.",
     "index.features3-1.subtitle":
       "There is one body, and one Spirit, even as ye are called in one hope of your calling; One Lord, one faith, one baptism, One God and Father of all, who is above all, and through all, and in you all. Ephesians 4:4-6 KJV",
     "index.content1.tagline": "God's kingdom",
-    "index.content1.title": "The church of God must be God's kingdom in earth",
+    "index.content1.title": "The church of God must be God's kingdom on earth",
     "index.content1.items1": "Renewed",
     "index.content1.items2": "Revived",
     "index.content1.items3": "Refreshed",
@@ -365,14 +365,14 @@ export const ui = {
     "index.content2.items5": "Addictions",
     "index.content2.items6": "Oppression",
     "index.content2.items7": "Gross darkness",
-    "index.content2.content": "The glory of God in the body of Christ groans for manifestation in midst of",
+    "index.content2.content": "The glory of God in the body of Christ groans for manifestation in the midst of",
     "index.features3-2.subtitle":
       "Arise, shine; for thy light is come, and the glory of the Lord is risen upon thee. For, behold, the darkness shall cover the earth, and gross darkness the people: but the Lord shall arise upon thee, and his glory shall be seen upon thee. And the Gentiles shall come to thy light, and kings to the brightness of thy rising. Isaiah 60:1-3 KJV",
     "index.hero2.title": "God's people must be committed to lifting the name of",
     "index.hero2.title.span": " our Lord Jesus Christ",
     "index.hero2.subtitle1": "And to see ",
     "index.hero2.subtitle2":
-      "to manifest in street corners, institutions, church denominations, villages, towns, cities, countries, and continents.",
+      "manifest in street corners, institutions, church denominations, villages, towns, cities, countries, and continents.",
     "index.hero2.subtitle.span": "His kingdom",
     "index.hero3.title1": "Do",
     "index.hero3.title2": "want to join this chariot of fire that will change the globe?",
@@ -387,41 +387,41 @@ export const ui = {
     "prayer.features3-1.subtitle":
       "Jesus answered and said unto them, Ye do err, not knowing the scriptures, nor the power of God. Matthew 22:29 KJV",
     "prayer.features3-1.subtitle2":
-      "Haven't the Sadducees studied the scriptures all their lives? Haven't they devoted their whole lives to serve God in the temple? And to know his word and teach others and become experts of the law? Is it possible that a person could be religious and study the Bible one's whole life and still be told by Jesus, Ye do err, not knowing the scriptures, nor the power of God? How can I know if my worship of God is vain? And if I'm just studying or living a doctrine which substantially are the commandments and traditions of religious men?",
-    "prayer.features1.title": "A few rhetoric questions",
-    "prayer.features1.subtitle": "Ask yourself regarding the following subjects and compare your answers to the Bible",
+      "Haven't the Sadducees studied the scriptures all their lives? Haven't they devoted their whole lives to serving God in the temple? And to know his word, teach others, and become experts in the law? Is it possible that a person could be religious and study the Bible their whole life and still be told by Jesus, Ye do err, not knowing the scriptures nor the power of God? How can I know if my worship of God is vain? And if I'm just studying or living a doctrine, which are substantially the commandments and traditions of religious men?",
+    "prayer.features1.title": "A few rhetorical questions",
+    "prayer.features1.subtitle": "Ask yourself about the following subjects and compare your answers to the Bible.",
     "prayer.features1.items1.title": "The power of God",
     "prayer.features1.items1.description": "Is the power of God operating in my life?",
     "prayer.features1.items2.title": "Transformation",
     "prayer.features1.items2.description": "Is my life being transformed day by day by the power of God?",
     "prayer.features1.items3.title": "Family and friends",
     "prayer.features1.items3.description":
-      "Are my families and friends being influenced by God's manifesting presence through my life?",
+      "Are my family and friends being influenced by God's manifesting presence in my life?",
     "prayer.features1.items4.title": "Sicknesses and diseases",
     "prayer.features1.items4.description": "Are the sick and diseased being healed by Jesus through me?",
     "prayer.features1.items5.title": "Evil spirits",
     "prayer.features1.items5.description":
-      "Do I cast out demons in the name of Jesus Christ our Lord and do I see them crying out in fear and disarray?",
+      "Do I cast out demons in the name of Jesus Christ, our Lord, and do I see them crying out in fear and disarray?",
     "prayer.features1.items6.title": "The gospel",
     "prayer.features1.items6.description":
-      "Do I preach the gospel to sinners and see them entering in the kingdom of God, free from addictions, chains of Satan, and lifelong captivating darkness?",
+      "Do I preach the gospel to sinners and see them entering the kingdom of God, free from addictions, chains of Satan, and lifelong captivating darkness?",
     "prayer.features1.items7.title": "Sin",
     "prayer.features1.items7.description":
-      "Am I free from private sins, lust, and addictions to alcohol, smoking, movies, video games, rock, blues, jazz music, documentaries, pornography, sexual magazines, books and romantic novels, etc?",
+      "Am I free from private sins, lust, and addictions to alcohol, smoking, movies, video games, rock, blues, jazz music, documentaries, pornography, sexual magazines, books, romantic novels, etc.?",
     "prayer.features1.items8.title": "Impossibilities",
     "prayer.features1.items8.description":
-      "Do I see impossible situations being transformed by the power of the Almighty God like Moses was at the Red Sea?",
+      "Do I see impossible situations being transformed by the power of the Almighty God, like Moses was at the Red Sea?",
     "prayer.features3-2.subtitle":
-      "Have I read about supernatural events in the scriptures and concluded it is not for my generation since I have not witnessed nor experienced any of these in my country, city, or local church denomination?",
+      "Have I read about supernatural events in the scriptures and concluded they are not for my generation since I have not witnessed nor experienced any of them in my country, city, or local church denomination?",
     "prayer.features3-2.subtitle2a": "No!",
-    "prayer.features3-2.subtitle2b": " That cannot be",
+    "prayer.features3-2.subtitle2b": " That cannot be.",
     "prayer.features3-3.subtitle":
-      "Brethren, it is time we entered into personal supernatural experience in the Holy Spirit. God is baptizing us with power, immersing us with the manifestations of the Spirit, soaking us with the fragrance of heaven as we assemble at the throne of grace. It is time we saw the glory of God manifested in and through the church. At this war time and in this war zone, we activate combat alongside celestial armies because spiritual warfare has been legalized by the Captain of the Host of the Lord, Jesus Christ the Son of God.",
+      "Brethren, it is time we entered into personal supernatural experiences with the Holy Spirit. God is baptizing us with power, immersing us in the manifestations of the Spirit, and soaking us in the fragrance of heaven as we assemble at the throne of grace. It is time we saw the glory of God manifested in and through the church. At this time of war and in this war zone, we activate combat alongside celestial armies because spiritual warfare has been legalized by the Captain of the Host of the Lord, Jesus Christ the Son of God.",
     "prayer.features3-3.subtitle2":
       "And from the days of John the Baptist until the present time, the kingdom of heaven has endured violent assault, and violent men seize it by force [as a precious prize—a share in the heavenly kingdom is sought with most ardent zeal and intense exertion]. Matthew 11:12 AMPC",
     "prayer.callToAction.title1": "Kindle your prayer life to ",
     "prayer.callToAction.title2": "full flame",
-    "prayer.callToAction.subtitle": "Join us in prayer meeting every other Saturday starting at 18:00 GMT+2.",
+    "prayer.callToAction.subtitle": "Join us in prayer meetings every other Saturday, starting at 18:00 GMT+2.",
     "prayer.callToAction.subtitle2": "Zoom ID: 644 4069 4917, Passcode: 467939",
     "witnesses.temp":
       "The short biographies of the people are under refactoring as guided and inspired by the Holy Spirit.",
@@ -818,10 +818,10 @@ export const ui = {
     "word.hero.tagline": "The Word",
     "word.hero.imagetext": "Jesus and his disciples (A scene from the series 'The Chosen')",
     "word.hero.title1": "The twelve apostles were changed by ",
-    "word.hero.title2": "in three and half years",
+    "word.hero.title2": "in three and a half years",
     "word.hero.title.span": "our Lord Jesus Christ",
     "word.hero.subtitle":
-      "They were no scholars, just normal men with petty jobs. But Jesus chose these men for the most critical task of the church – to lay spiritual foundation in the habitations of cruelty, wickedness, hate, oppression, and persecution. What made these unknown men to succeed? How did they survive the brutal opposition?",
+      "They were no scholars, just normal men with petty jobs. But Jesus chose these men for the most critical task of the church—to lay a spiritual foundation in the habitations of cruelty, wickedness, hate, oppression, and persecution. What made these unknown men succeed? How did they survive the brutal opposition?",
     "word.stats.title1": "Men",
     "word.stats.amount1": "12",
     "word.stats.title2": "Years",
@@ -833,34 +833,34 @@ export const ui = {
     "word.features3-1.subtitle":
       "Now when they saw the boldness of Peter and John, and perceived that they were unlearned and ignorant men, they marvelled; and they took knowledge of them, that they had been with Jesus. Acts 4:13 KJV",
     "word.features3-1.subtitle2":
-      "It was not about their skills and talents, connections, resources, ethnicity or race. But their commitment to stay and to continue to stay with Jesus who is the true Vine. You might be uneducated, disadvantaged, have some disability, little skills, talents, relationships and connections. But none of these is integral to your glorious manifestation. The key question is: Have you been with Jesus?",
+      "It was not about their skills and talents, connections, resources, ethnicity, or race. But their commitment to stay and to continue to stay with Jesus, who is the true Vine. You might be uneducated, disadvantaged, have some disability, and have a few skills, talents, relationships, and connections. But none of these are integral to your glorious manifestation. The key question is: Have you been with Jesus?",
     "word.steps2-1.title": "We want your experience to change.",
     "word.steps2-1.subtitle":
-      "So that when you function in your family, meet with friends, go to work, do daily chores, people speak that you have been with Jesus. So that your life spreads the heavenly fragrance, knowledge, presence, and the person of our Lord Jesus Christ. So that His presence is so overwhelming on you such that when people meet you, they actually meet Jesus. So that His life changing power and love overtakes your weaknesses and carnal limitations and people can see God through the veil of your flesh.",
-    "word.steps2-1.items1.title": "Aspostles stayed with the Holy Spirit",
+      "So that when you function in your family, meet with friends, go to work and, do daily chores, people will say that you have been with Jesus. So that your life spreads the heavenly fragrance, knowledge, presence, and person of our Lord Jesus Christ. So that His presence is so overwhelming on you that when people meet you, they actually meet Jesus. So that His life-changing power and love overtake your weaknesses and carnal limitations and people can see God through the veil of your flesh.",
+    "word.steps2-1.items1.title": "Apostles stayed with the Holy Spirit.",
     "word.steps2-1.items1.description":
       "But we will give ourselves continually to prayer, and to the ministry of the word. Acts 6:4 KJV",
-    "word.steps2-1.items2.title": "The results made some angry",
+    "word.steps2-1.items2.title": "The results made some angry.",
     "word.steps2-1.items2.description":
       "And when they found them not, they drew Jason and certain brethren unto the rulers of the city, crying, These that have turned the world upside down are come hither also. Acts 17:6 KJV",
-    "word.steps2-1.items3.title": "And others said they were gods",
+    "word.steps2-1.items3.title": "And others said they were gods.",
     "word.steps2-1.items3.description":
       "And the crowds, when they saw what Paul had done, lifted up their voices, shouting in the Lycaonian language, The gods have come down to us in human form! Acts 14:11 AMPC",
-    "word.steps2-2.title": "We have a question for you",
+    "word.steps2-2.title": "We have a question for you.",
     "word.steps2-2.subtitle":
-      "Would you like to join us at His spiritual dining table, where He reveals himself to His church? It is written in Habakkuk 2:14 that for the earth shall be filled with the knowledge of the glory of the Lord, as the waters cover the sea. It is time we met Jesus!",
-    "word.steps2-2.items1.title": "It is time to wake up",
+      "Would you like to join us at His spiritual dining table, where He reveals himself to His church? It is written in Habakkuk 2:14 that the earth shall be filled with the knowledge of the glory of the Lord, as the waters cover the sea. It is time we met Jesus!",
+    "word.steps2-2.items1.title": "It is time to wake up.",
     "word.steps2-2.items1.description": "Brethren, it is high time we truly knew Jesus. Personally and intimately",
-    "word.steps2-2.items2.title": "To carry His presence",
+    "word.steps2-2.items2.title": "To carry His presence.",
     "word.steps2-2.items2.description": "Submerge ourselves in His presence, righteousness, love, joy and peace",
-    "word.steps2-2.items3.title": "To destroy all strongholds",
+    "word.steps2-2.items3.title": "To destroy all strongholds.",
     "word.steps2-2.items3.description":
       "Strongholds of the devil in our and others' lives must be completely destroyed and vanquished.",
     "word.features2.tagline": "Find us",
     "word.features2.title": "Our platforms",
-    "word.features2.items1.title": "FLAME the FREEZE - Prayer meeting",
+    "word.features2.items1.title": "FLAME the FREEZE - Prayer Meeting",
     "word.features2.items1.description":
-      "Every other Saturday starting at 18:00 GMT+2. Zoom ID: 644 4069 4917, Passcode: 467939",
+      "Every other Saturday starts at 18:00 GMT+2. Zoom ID: 644 4069 4917, Passcode: 467939",
     "word.features2.items2.title": "FLAME the FREEZE -  YouTube",
     "word.features2.items2.description": "https://www.youtube.com/@flamethefreeze2613",
   },
@@ -1142,9 +1142,9 @@ export const ui = {
     "fivefold.content5.items3.description":
       "Paikallisseurakuntasi voi olla täynä fyysisesti aukuisia, mutta hengellisesti vauvoja, on sitten kyse laumasta tai paimenesta. He huutavat jatkuvasti hengellisten tuttipullojensa perään. Tämä on hengellinen hätä tilanne! Kutsu nopeasti paikalle opettaja.",
     "footer.about": "Meistä:",
-    "footer.madeBy1": "Tehnyt Juhani Juusola",
-    "footer.madeBy2": " rakkaudesta Jumalaan ",
-    "footer.madeBy3": "· Kaikki oikeudet pidetään.",
+    "footer.madeBy1": "Tehnyt Juhani Juusola ",
+    "footer.madeBy2": "rakkaudesta Jumalaan",
+    "footer.madeBy3": " · Kaikki oikeudet pidetään.",
     "header.link1": "Sana",
     "header.link2": "Rukous",
     "header.link3": "Seurakunta",
