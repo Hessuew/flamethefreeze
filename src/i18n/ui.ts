@@ -532,10 +532,12 @@ export const ui = {
     "witnesses.testimonials.items11.name": "William and Catherine Booth: 1829-1912, 1829-1890",
     "witnesses.testimonials.items11.job":
       "A couple who turned the world upside down for Jesus. The gospel was taken to ~58 countries and colonies during their lifetime. After their deaths, the work has spread to more than 100 counties. If you are not preaching the gospel, you are not living a true Christian life.",
-    "witnesses.testimonials.items11.t1": "Will you go to His feet and place yourself entirely at His disposal?",
+    "witnesses.testimonials.items11.t1":
+      "I consider that the chief dangers which confront the coming century will be religion without the Holy Ghost, Christianity without Christ, forgiveness without repentance, salvation without regeneration, politics without God, and heaven without hell.",
     "witnesses.testimonials.items11.t2":
-      "You are not here in the world for yourself. You have been sent here for others. The world is waiting for you!",
-    "witnesses.testimonials.items11.t3": "Go straight for souls and go for the worst.",
+      "You cannot warm the hearts of people with God's love if they have an empty stomach and cold feet.",
+    "witnesses.testimonials.items11.t3":
+      "Most Christians would like to send their recruits to Bible college for five years. I would like to send them to hell for five minutes. That would do more than anything else to prepare them for a lifetime of compassionate ministry.",
     "witnesses.testimonials.items12.name": "Hudson Taylor: 1832-1905",
     "witnesses.testimonials.items12.job":
       "A man left his mother nation to go into a strange, big country where Christianity was almost not heard of. His life was given to the lost so that those without Jesus would meet the master personally and be forgiven of their sins. This country, China, came to contain some of the most vibrant Christians there have ever been. If you are not willing to put your life at stake for Jesus, know that He put His life on stake for you first. Now is your time to put your life on stake for others.",
@@ -549,12 +551,14 @@ export const ui = {
     "witnesses.testimonials.items13.job":
       "Even at a young age, he was working as a pastor and preached with deep fervor and passion. He raised his weapons, which were mighty through God against irreligion, cant, hypocrisy, pride, and those secret bosom sins, to the thousands and even tens of thousands of listeners while impressing you with a perfect conviction of his sincerity. And he did this, by the grace of God, through over 3600 sermons.",
     "witnesses.testimonials.items13.t1":
-      "The Bible is not the light of the world, it is the light of the Church. But the world does not read the Bible, the world reads Christians! You are the light of the world.",
+      "Whatever a man depends upon, whatever rules his mind, whatever governs his affections, whatever is the chief object of his delight, is his god.",
     "witnesses.testimonials.items13.t2":
+      "Who among you today is doing the most for your Master's kingdom? I will tell you. Lend me a spiritual thermometer by which I may try the heat of your heart, and I will tell you the amount of your success.",
+    "witnesses.testimonials.items13.t3":
       "Have you no wish for others to be saved? Then you're not saved yourself, be sure of that!",
     "witnesses.testimonials.items14.name": "D. L. Moody: 1837-1899",
     "witnesses.testimonials.items14.job":
-      "One young woman was touched by a sermon he was preaching outdoors but left without making a commitment to Christ. Moody noticed the woman and went after her. The woman increased her speed and tried to evacuate to her apartment. She reached the doorknob, rushed in, ran to her bedroom, and dove under the bed. Moody came after and pulled the woman from under the bed, commending her for giving her life to Christ. The woman was saved in tears, and later, when telling the story, she thanked God, for without it, she would have been lost for eternity.",
+      "One young woman was touched by a sermon he was preaching outdoors but left without making a commitment to Christ. Moody noticed the woman and went after her. The woman increased her speed and tried to evacuate to her apartment. She reached the doorknob, rushed in, ran to her bedroom, and dove under the bed. Moody came after and pulled the woman from under the bed, persuading her for giving her life to Christ. The woman was saved in tears, and later, when telling the story, she thanked God, for without it, she would have been lost for eternity.",
     "witnesses.testimonials.items14.t1":
       "If our spiritually dead ones are to be raised, we must first get power with God. The reason we so often fail in moving our fellowmen is that we try to win them without first getting power with God. Jesus was in communion with His Father, and so He could be assured that His prayers were heard.",
     "witnesses.testimonials.items14.t2": "The Bible was not given for our information but for our transformation.",
@@ -586,9 +590,9 @@ export const ui = {
     "witnesses.testimonials.items17.name": "Carrie Judd: 1858-1946",
     "witnesses.testimonials.items17.job":
       "When God calls someone, the person is truly called. This woman of faith fought and declared the healing power of God with her black friend in a time when women preachers, black people, and divine healing were all opposed. Yet none of those things put her down. At this present moment, the church is overtaken by greed, wordliness, lukewarmness, and hypocrisy. Are you going to fight the good fight of faith through the power of God? Are you going to see a change in the whole moral climate of the body of Christ and civilizations?",
-    "witnesses.testimonials.items17.t1":
+    "witnesses.testimonials.items17.t1": "Divine healing is an eternal fact.",
+    "witnesses.testimonials.items17.t2":
       "Now, who is going to trust God for the winged life? You can crawl instead if you wish. God will even bless you if you crawl; He will do the best He can for you, but oh how much better to avail ourselves of our wonderful privileges in Christ and to ‘mount up with wings as eagles, run and not be weary, walk and not faint.’ O beloved friends, there is a life on wings. I feel the streams of His life fill me and permeate my mortal frame from my head to my feet, until no words are adequate to describe it. I can only make a few bungling attempts to tell you what it is like and ask the Lord to reveal to you the rest. May He reveal to you your inheritance in Christ Jesus so that you will press on and get all that He has for you.",
-    "witnesses.testimonials.items17.t2": "Divine healing is an eternal fact.",
     "witnesses.testimonials.items18.name": "Smith Wigglesworth: 1859-1947",
     "witnesses.testimonials.items18.job":
       "An Apostle of Faith. God raised 24 individuals from the dead through him. The only book he ever read in his life was the Bible, and he dedicated his days to reading it and praying. He was reading the Bible and praying, reading the Bible and praying, reading the Bible and praying. Can you now explain why this man was so strong in faith?",
@@ -669,7 +673,8 @@ export const ui = {
     "witnesses.testimonials.items27.t4":
       " God has promised to answer prayer. It is not that He is unwilling, for the fact is, He is more willing to give than we are to receive. But the trouble is, we are not ready.",
     "witnesses.testimonials.items28.name": "Aimee Semple McPherson: 1890-1944",
-    "witnesses.testimonials.items28.job": "Coming soon...",
+    "witnesses.testimonials.items28.job":
+      "At a young age, she trained herself to preach with inanimate objects. Opposing her mother to visit Pentecostal meetings for more of God, she spent the whole day in prayer. That night, she was baptized in the Holy Spirit. In her life, she was opposed so many times. She never did shy away but fought—oh, she fought like a lion against every opposition and perception. And she always won. Oh, why are we so timid today? When someone says something false about us or intimitates us, why do we quiet down and shy away? Oh, we must change! Jesus never let the opposition silence him. He silenced the opposition! You! Do the same in the name of Jesus!",
     "witnesses.testimonials.items28.t1":
       "Awake! thou that sleepest, arise from the dead! The Lord still lives today. His power has never abated. His Word has never changed. The things He did in Bible days, He still lives to do today. Not a burden is there He cannot bear nor a fetter He cannot break.",
     "witnesses.testimonials.items28.t2":
@@ -1305,7 +1310,7 @@ export const ui = {
       "Te vastoin olette tulleet Siionin vuoren ja elävän Jumalan kaupungin, taivaallisen Jerusalemin, kymmenenientuhansien enkelien ja juhlajoukon luo, esikoisten seurakunnan luo, niiden sitä nimet ovat kirjoittaneet taivaissa, Jumalan luo, joka on kaikkien tuomari, ja täydellisiksi tulleiden vanhurskaiden henkien luo. Hep 12:22,23 FINRK",
     "witnesses.testimonials.title": "Uskon sanoja niiltä, jotka ovat kulkeneet edellämme",
     "witnesses.testimonials.items1.job":
-      "Kun uskon merkitys oli menettänyt merkityksensä ja 'tie taivaaseen' oli anekaupan kautta, uskon mies nousi. Aemmin hän oli vain itseään ruoskiva munkki. Mutta kun Jumalan Sana muutti hänet, erityisesti 'Vanhurskas on elävä uskosta', koko kirkko heräsi eloon elämään elävän uskon kautta.",
+      "Kun usko oli menettänyt merkityksensä ja 'tie taivaaseen' oli aneiden kautta, uskon mies nousi. Aemmin hän oli vain itseään ruoskiva munkki. Mutta kun Jumalan Sana muutti hänet, erityisesti 'Vanhurskas on elävä uskosta', koko kirkko heräsi eloon elämään elävän uskon kautta.",
     "witnesses.testimonials.items1.t1": "Pelastumme yksin uskosta, mutta usko, joka pelastaa, ei ole koskaan yksin.",
     "witnesses.testimonials.items1.t2":
       "Ellei Raamattu ja selkeä syy minua tuomitse – en hyväksy paavien ja neuvostojen auktoriteettia, sillä ne ovat olleet ristiriidassa keskenään – minun omatuntoni on Jumalan Sanan ohjaama. En voi enkä aio kieltäytyä mitään sanomaani, sillä omantuntoni vastustaminen ei ole oikein eikä turvallista. Tässä seison, enkä muuta voi. Auta minua Jumala. Aamen.",
@@ -1385,40 +1390,49 @@ export const ui = {
       "En halua vietää yhtään hetkeä elämässäni Jumalan valon, rakkauden ja ilon ulkopuolella. Ei hetkeäkään, joilloin elämäni ei olisi luovutettu kokonaan Hänelle astiana, jonka Hän voi täyttää Hengellään ja rakkaudellaan.",
     "witnesses.testimonials.items10.t2":
       "Usein Jumala ei vain voi kuulla huultemme rukouksia, koska sydämemme halu maailman asiohin huutaa Hänelle paljon kovemmin, kuin meidän halumme Hänen tahtoaan kohtaan. ",
-    "witnesses.testimonials.items11.job": "Tulossa pian...",
+    "witnesses.testimonials.items11.job":
+      "Pari, joka mullisti maailman Jeesukselle. Evankeliumi vietiin ~58 maahan ja siirtokuntaan heidän elinaikanaan. Heidän kuoltuaan työ on levinnyt yli 100 maahan. Jos sinä et julista evankeliumia, et elä todellista kristityn elämään.",
     "witnesses.testimonials.items11.t1":
-      "Valitsetko paikan Mestarin jalkojen juuresta ja annat itsesi täysin Hänen käyttöönsä?",
+      "Pidän tulevan vuosisadan suurimpian vaaroina uskontoa ilman Pyhää Henkeä, kristillisyyttä ilman Kristusta, anteeksiantoa ilman parannuksen tekoa, pelastusta ilman uudestisyntymää, politiikkaa ilman Jumalaa ja taivasta ilman helvettiä.",
     "witnesses.testimonials.items11.t2":
-      "Nyt täällä maailmassa, et ole pelastettu itsesäsi varten. Sinut on lähetetty muita varten. Maailma odottaa sinua!",
+      "Et voi lämmittää ihmisten sydämiä Jumalan rakkaudella, jos heillä on tyhjä vatsa ja kylmät jalat.",
     "witnesses.testimonials.items11.t3":
-      "Kulje koko ajan voittaaksesi sieluja ja niitä kohti, jotka ovat kaikkein pahimpia syntisiä.",
-    "witnesses.testimonials.items12.job": "Tulossa pian...",
+      "Suurin osa kristityistä haluaisi lähettää heidän uskoon johdattaneesta henkilöt Raamattukouluun viideksi vuodeksi. Minä haluaisin lähettää heidät helvettiin viideksi minuutiksi. Se tekisi paljon enemmän valmistaakseen heitä elämän mittaiseen myötätuntoa täynä olevaan Jumalan työhön, kuin mikään muu.",
+    "witnesses.testimonials.items12.job":
+      "Mies, joka jätti kotimaansa, lähteääkseen vieraaseen, suureen maahan, jossa kristinusko oli lähes tuntematon asia. Hänen elämänsä oli annettu syntisten puolesta, jotta ne, jotka elivät ilman Jeeusta, kohtaisivat Mestarin henkilökohtaisesti ja saisivat syntinsä anteeksi. Tästä maasta, Kiinasta, tuli tulevien vuosien aikana joitakin palavimpia kristittyjä, joita maapallo on koskaan kohdannut. Jos et tahdo asettaa elämääsi likoon Jeesuksen vuoksi, tiedä että Hän uhrasi elämänsä sinun vuoksesi. Nyt on sinun vuorosi laittaa elämäsi likoon muiden vuoksi.",
     "witnesses.testimonials.items12.t1":
       "On kolme suurta totuutta: 1. On olemassa Jumala; 2. Hän on puhunut meille Raamatussa; 3. Hän tarkoittaa, mitä sanoo.",
     "witnesses.testimonials.items12.t2": "Suuri lähetyskäsky ei ole mielipiede, vaan käsky, jota on noudatettava.",
     "witnesses.testimonials.items12.t3":
       "Älä soita konserttia ensin ja sitten vasta viritä soitintasi. Aloita päiväsi Jumalan Sanalla ja rukouksella ja viritä itsesi ensin Hänen kanssaan.",
-    "witnesses.testimonials.items13.job": "Tulossa pian...",
+    "witnesses.testimonials.items13.job":
+      "Jo nuorella iällä hän työskenteli pastorina ja saarnasi suurella intohimolla ja innolla. He nosti aseensa, jotki olivat mahtavia Jumalassa, uskonnottomuutta, kiusaamista, tekopyhyyttä, ylpeyttä ja helmasyntejä vastaan puhuen tuhansille ja jopa kymmenille tuhansille vakuuttaen kaikki kuulijat täydellisesti vilpittömyydenstään. Ja hän teki näin Jumalan armon kautta yli 3600 saarnassa.",
     "witnesses.testimonials.items13.t1":
-      "Raamattu ei ole maailman valo, vaan seurakunnan valo. Maailma ei lue Raamattua, vaan kristittyjä! Sinä olet maailman valo.",
+      "Se, mihin luotat, mikä hallitsee mieltäsi, mikä hallitsee syvimpiä mieltymyksiäsi, mikä on sinun suurin ilosi aihe, se on jumalasi.",
     "witnesses.testimonials.items13.t2":
+      "Kuka teistä tänä päivänä tekee eniten Mestarinne valtakunnan hyväksi? Minäpä kerron teille. Lainatkaa minulle hengellinen lämpömittari, jolla minä voin mitata sydämen lämpötilan. Silloin minä näytän teille onnistumisenne laajuuden.",
+    "witnesses.testimonials.items13.t3":
       "Etkö toivo, että toiset pelastuvat? Sitten et ole itse pelastunut ja siitä voit olla varma!",
-    "witnesses.testimonials.items14.job": "Tulossa pian...",
+    "witnesses.testimonials.items14.job":
+      "Yksi nuori nainen tuli kosketetuksi hänen saarnatessaan ulkona, mutta lähti luovuttamatta itseään Kristukselle. Moody huomasi naisen ja lähti hänen peräänsä. Nainen lisäsi vauhtiaan ja yritti paeta asuntoonsa. Hän nappasi ovennupin, ryntäsi sisään, juoksi makuunhuoneeseensa ja sukelsi sänkynsä alle. Moody tuli perässä, veti naisen sängyn alta ja taivutteli häntä antamaan elämänsä Kristukselle. Nainen pelastui kyyneleet silmissään ja myöhemmin kertoessaan tarinansa hän kiitti Jumalaa, sillä ilman tuota kohtaamista, hän olisi kadonnut ikuisesti.",
     "witnesses.testimonials.items14.t1":
       "Jos haluamme, että hengellisesti kuolleet heräävät, meidän täytyy aluksi saada voima siihen Jumalalta. Syy, miksi niin usein emme vaikuta toisiin on, että yritämme voittaa heitä Kristukselle, ennen kuin olemme saanet voiman siihen Jumalalta. Jeesus oli ensin yhteydessä Isänsä kanssa ja siksi Hän oli varma, että Hänen rukouksiinsa vastataan.",
     "witnesses.testimonials.items14.t2":
       "Jumala ei ole antanut meille Raamattua informaatioksi, vaan meidän muutostamme varten",
-    "witnesses.testimonials.items14b.job": "Tulossa pian...",
+    "witnesses.testimonials.items14b.job":
+      "Yhdessä nämä kaksi, Moody ja Sanky, vaelsivat Englannin läpi sekä kaupunkialueita Amerikan itäosissa vähentäen helvetin asukaslukua miljoonalla sielulla.",
     "witnesses.testimonials.items14b.t1":
       "Laulaminen tekee vähintään yhtä paljon työtä kuin saarnaaminen painaakseen Jumalan Sanan ihmisten mieliin.",
     "witnesses.testimonials.items14b.t2":
       "Moodyn ensimmäiset sanat hänelle esittäytymisen jälkeen olivat, Mistä olet, oletko naimisissa, mitä työtä teet? Sankey vastasi olevansa Pensylvaniasta, olevansa naimisissa ja hänellä on kaksi lasta, ja työskentelevänsä valtiolle. Tähän Moody vastasi, Sinun täytyy jättää työsi. Sankey oli vastahakoinen jättämään työnsä, mutta Moody painosti häntä sanoen, Sinun täytyy, olen etsinyt sinua viimeiset kahdeksan vuotta.",
-    "witnesses.testimonials.items15.job": "Tulossa pian...",
+    "witnesses.testimonials.items15.job":
+      "Roistojoukko tuli yhteen hänen tapaamiseensa uhkaillen häntä ja hänen työntekijöitään. Maria osoitti heitä kohti ja sanoi, Ensimmäinen teistä, joka yrittää tehdä mitään pahaa minun väelleni kuolee Jumalan lyömänä. Koko joukko tuli niin suureen synnintuntoon, että he antoivat elämänsä Jumalalle ja tästä eteenpäin suojelivat Äiti Etteriä. Kerran mies häiristi tapaamista epäsopivalla kielenkäytöllä ja jumalanpilkalla. Siinä hetkessä hänen kielensä turposi niin paljon, että se jäi hänen suunsa ulkopuolelle. Etsittyään apua lääkäreiltä mies palasi Äiti Etterin luokse parannuksessa. Etter nauroi, kosketti kieltä ja se palautui normaaliksi välittömästi.",
     "witnesses.testimonials.items15.t1":
       "Olen huomannut, että vilpittömästi Kristusta seuraavat lepäävät hyvin vähän täällä maan päällä. Niin kuin Mestarimme, meidän tulee olla alituisesti Isämme töissä.",
     "witnesses.testimonials.items15.t2":
       "Paavali sanoin, että Sanan julistamisen täytyy tulla Hengen ja voiman ilmenemisen kanssa. Pyhä Henki todistaa puhutan sanan ihmein ja merkein; ilman, että nämä ovat osa palvelutehtäväämme, emme voi onnistua.",
-    "witnesses.testimonials.items16.job": "Tulossa pian...",
+    "witnesses.testimonials.items16.job":
+      "Mies, jolla oli naamassaan syöpä, tuotiin Dowien eteen samalla, kun lukuisa lääkäri tarkkaili tilannetta. Dowie meni miehen luoksi vauhdilla, ojensi kätensä ja nappasi kiinni syövästä. Hän huusi, Jeesuksen nimessä ja veti syövän pois hänen naamastaan. Lääkärit tulivat heti tutkimaan miehen naaman ja huomasivat, että kasvaimen sijaan paikalla oli täydellinen, vauvan kaltainen iho.",
     "witnesses.testimonials.items16.t1":
       "Olen ylittänyt valtameren 14 kertaa laivalla. Noiden 14 ylityksen aikana monia myrskyjä nousi. Mutta joka kerta myrskyn noustessa, tein aina samoin, kuin Jeesus: minä nuhtelin myrskyä. Ja jokaikinen lakkasi.",
     "witnesses.testimonials.items16.t2":
@@ -1427,24 +1441,28 @@ export const ui = {
       "Sinun uskomuksesi siitä, että Jeesus on Pelastaja synnistä, ei voi perustua siihen, että joku toinen on pelastettu, tai sanoo, että on pelastettu. Sinä perustat sen elävän Jumalan Sanaan ja seisot sen päällä.",
     "witnesses.testimonials.items16.t4":
       "Sairaudet, niin kuin myös synti, ovat Jumalan vihollisia ja Paholaisen työtä eikä voi ikinä olla Jumalan tahto.",
-    "witnesses.testimonials.items17.job": "Tulossa pian...",
-    "witnesses.testimonials.items17.t1":
+    "witnesses.testimonials.items17.job":
+      "Kun Jumala kutsuu jonkun, henkilö on todella kutsuttu. Tämä uskon nainen taisteli ja julisti Jumalan parantavasta voimasta mustan ystävättärensä kanssa keskellä ajanjaksoa, jolloin naissaarnaajat, mustat, ja yliluonnollinen parantuminen olivat vastustettuja. Silti yksikään näistä asioista ei lannistanut häntä. Tällä hetkellä seurakunnan on vallannut ahneus, maailmallisuus, kädenlämpöisyys ja tekopyhyys. Aiotko sinä taistella uskon jalon kamppailun Jumalan voiman kautta? Aiotko sinä nähdä moraalisen muutoksen koko Kristuksen ruumiissa ja tässä sivilisaatiossa?",
+    "witnesses.testimonials.items17.t1": "Jumalan parantava voima on ikuinen fakta.",
+    "witnesses.testimonials.items17.t2":
       "Voitko uskoa Jumalaan nyt kokeaksesi elämän, joka lentää kotkan siivillä? Voit toki ryömiä, jos haluat. Jumala siunaa sinua vaikka ryömisitkin; Hän tekee parhaansa sinulle. Mutta oi, kuinka paljon parempi on, kun haluamme elää siinä todellisuudessa, jotka Kristus meille voitti ja 'kohota siivilleen, kuin kotka, juosta uupumatta, kävellä väsymättä.' Oi rakkaat ystävät, on olemassa elämä kotkan siivillä. Tunnen Hänen elämänsä virtojen täyttävän minut ja läpikäyvän olemukseni päästä varpaisiin, kunnes sanat eivät voi kuvata sitä. Voin vain tehdä muutaman horjuvan yrityksen yrittäessäni kuvailla sitä ja pyytää Herraa avaaman teille loput. Avatkoon Hän teille teidän perintöosanne Kristuksessa, että te puskette eteenpäin ja koette kaiken, mitä Hänellä on teille varattuna.",
-    "witnesses.testimonials.items17.t2": "Jumalan parantava voima on ikuinen fakta.",
-    "witnesses.testimonials.items18.job": "Tulossa pian...",
+    "witnesses.testimonials.items18.job":
+      "Uskon apostoli. Jumala herätti 24 henkilöä kuolleista hänen kauttaan. Aino kirja, jota hän ikinä luki, oli Raamattu ja hän omisti päivänsä Raamatun lukemiseen ja rukoukseen. Hän luki Raamattua ja rukoili, luki Raamattua ja rukoili, luki Raamattua ja rukoili. Voitko nyt ymmärtää, miksi miksi tämä mies oli niin vahva uskossa?",
     "witnesses.testimonials.items18.t1":
       "Minuun ei vaikuta se, mitä näen. Minuun vaikuttaa vain se, mihin uskon. Tiedän, että kukaan ei katsoa olosuhteita, jos hän uskoo. Kukaan ei välitä siitä, mitä tuntee, jos uskoo. Sillä, joka uskoo, on jo se, mitä Jumalan Sana sanoo, vaikka näyttäisi tai tuntuisi miltä.",
     "witnesses.testimonials.items18.t2":
       "Joka päivä sinun tulee päästä korkeammalla hengessä. Sinun tulee kieltää itsesi, jotta voi edistyä Jumalan kanssa.",
     "witnesses.testimonials.items18.t3":
       "Lounaan jälkeen sinun ei pidä osallistua turhuuksia sisältävään keskusteluun. Sen sijaan lue luku Sanasta ja vietä hetki rukouksessa. Pyrin tekemään tämän riippumatta siitä, missä olen.",
-    "witnesses.testimonials.items19.job": "Tulossa pian...",
+    "witnesses.testimonials.items19.job":
+      "Aiempi pesäpallonpelaaja kääntyi Kristuksen puoleen koko sydämestään. Kuvittele mies, joka puski kaikella voimallaan eteenpäin loistaakseen fyysisissä suorituksissa, mutta nyt puskee eteenpäin vielä suuremmalla voimalla evankeliumikiertueilla. Maailman ei vieläkään ole palautunut siitä vaikutuksesta, minkä Jumala vaikutti hänen kauttaan.",
     "witnesses.testimonials.items19.t1": "Uskon Raamatun olevan kannesta kanteen Jumalan sanaa",
     "witnesses.testimonials.items19.t2":
       "Parannuksen teko on yksilön täydellistä antautumista Jeesukselle. Täyden tahdon omaamista tehdä se, mitä Hän tahtoo sinun tekevän.",
     "witnesses.testimonials.items19.t3":
       "Kunnoitan enemmän Paholaista, kuin joitakin Sanan julistajia, jotka olen tavannut. Paholainen uskoo Raamatun olevan Jumalan Sanaa.",
-    "witnesses.testimonials.items20.job": "Tulossa pian...",
+    "witnesses.testimonials.items20.job":
+      "Hän ei tehnyt tavallista lähetystyötä, vaan vietti suurimman osan ajastaan rukouksessa. Hän rukoili, kunnes Jumala antoi hänelle yhden sielun, joka päivä. Sitten hän rukoili, kunnes Jumala antoi hänelle kaksi sielua, joka päivä. Tämä mies oli rukous kahdella jalalla. Kerrotaan, että lääkärit huomasivat hänen sydämensä liikkuneen oikealle puolelle hänen rintaansa sen kiihkeyden ja intohimon takia, joka hänen rukouksissaan syntyi. ",
     "witnesses.testimonials.items20.t1":
       "Seurakunnan henkiin herääminen riippuu täysin rukouselämämme henkiin heräämisestä.",
     "witnesses.testimonials.items20.t2":
@@ -1493,7 +1511,8 @@ export const ui = {
       "Olen täysin vakuuttunut, että kukaan, joka ei vietä tunteja yksin vain Jumalan kanssa, tulee ikinä tuntemaan Pyhän Hengen voitelun elämässään. Koko maailman tulee jättää ulkopuolelle, kunnes näet vain Jumalan.",
     "witnesses.testimonials.items27.t4":
       "Jumala on luvannut vastata rukouksiin. Kyse ei ole siitä, ettei Hänellä ole halua tehdä sitä, vaan päinvastoin, Hänellä on enemmän halua antaa, kuin meillä vastaanottaa. Ongelma on, että me emme ole valmiita siihen.",
-    "witnesses.testimonials.items28.job": "Tulossa pian...",
+    "witnesses.testimonials.items28.job":
+      "Jo nuorella iällä hän harjoitteli saarnaamista puhumalla elottomille esineille. Äitiään vastustaen hän meni Helluntai tapaamiseen, sillä hän halusi enemmän Jumalaa, ja hän vietti päivän rukouksessa. Sinä yönä hän täyttyi Pyhällä Hengellä. Häntä vastustettiin niin monesti hänen elämänsä aikana. Hän ei ikinä hiljentynyt vaan taisteli — oi hän taisteli, kuin leijona jokaista vastustusta ja vainoa vastaan. Ja hän aina voitti. Oi, miksi olemme niin pelokkaita tänä päivänä? Kun joku sanoo meistä jotain valheellista tai pelottelee meitä, miksi me hiljenemme ja vetäydymme? Oi, meidän täytyy muuttua! Jeesus ei antanut ikinä vastustuksen hiljentää Häntä. Hän hiljensi vastustuksen! Sinä! Tee samoin Jeesuksen nimessä!",
     "witnesses.testimonials.items28.t1":
       "Herää! Sinä, joka nukut, ja nouse kuolleista! Herra elää yhä tänä päivänä. Hänen voimansa ei ehtynyt. Hänen Sanansa ei ole ikinä muuttunut. Ne teot, joita Hän teki Raamatun aikana, Hän elää tehdäkseen tänään. Ei ole kuormaa, jota Hän ei jaksa kantaa, ei kahletta, jota Hän ei voi murtaa.",
     "witnesses.testimonials.items28.t2":
