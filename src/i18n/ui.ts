@@ -612,7 +612,7 @@ export const ui = {
       "I have more respect for the devil than for some preachers I have met; the devil believes the Bible is the Word of God!",
     "witnesses.testimonials.items20.name": "John (praying) Hyde: 1865-1912",
     "witnesses.testimonials.items20.job":
-      "He didn't do traditional missionary work. He spent most of his time in prayer. He prayed till God gave him one soul each day. Then he prayed till God gave him two souls every single day. This man was a prayer in the form of a man. It was told that doctors noticed his heart had moved to the right side of his chest because of the fervor and zeal with which he worked in his prayers. Can you see yourself praying alike for the souls that will soon enter into eternal flames of agony and torment? If not, it is time to repent.",
+      "He didn't do traditional missionary work. He spent most of his time in prayer. He prayed till God gave him one soul each day. Then he prayed till God gave him two souls every single day. This man was a prayer in the form of a man. It was told that doctors noticed his heart had moved to the right side of his chest because of the fervor and zeal with which he worked in his prayers. Can you see yourself praying alike for the souls that enjoy the pleasures of sin and not the beauty of holiness in God? If not, it is time to repent.",
     "witnesses.testimonials.items20.t1": "The renewal of the Church will depend on the renewal of our prayer life.",
     "witnesses.testimonials.items20.t2":
       "I never before knew what it was to work all day and then pray all night before God for another… In college or at parties at home, I used to keep such hours for myself, or pleasure, and can I not do as much for God and souls?",
@@ -669,9 +669,9 @@ export const ui = {
     "witnesses.testimonials.items27.t2":
       "Any church that is not seriously involved in helping fulfill the Great Commission has forfeited its biblical right to exist.",
     "witnesses.testimonials.items27.t3":
-      "I am perfectly confident that the man who does not spend hours alone with God will never know the anointing of the Holy Spirit. The world must be left outside until God alone fills the vision.",
+      "It matters not how spiritual a church may profess to be, if souls are not saved, something is radically wrong, and the professed spirituality is simply a false experience, a delusion of the devil. People who are satisfied to meet together simply to have a good time among themselves are far away from God. Real spirituality always has an outcome.",
     "witnesses.testimonials.items27.t4":
-      " God has promised to answer prayer. It is not that He is unwilling, for the fact is, He is more willing to give than we are to receive. But the trouble is, we are not ready.",
+      "Oh, how few find time for prayer! There is time for everything else, time to sleep and time to eat, time to read the newspaper and the novel, time to visit friends, time for everything else under the sun, but-no time for prayer, the most important of all things, the one great essential!",
     "witnesses.testimonials.items28.name": "Aimee Semple McPherson: 1890-1944",
     "witnesses.testimonials.items28.job":
       "At a young age, she trained herself to preach with inanimate objects. Opposing her mother to visit Pentecostal meetings for more of God, she spent the whole day in prayer. That night, she was baptized in the Holy Spirit. In her life, she was opposed so many times. She never did shy away but fought—oh, she fought like a lion against every opposition and perception. And she always won. Oh, why are we so timid today? When someone says something false about us or intimitates us, why do we quiet down and shy away? Oh, we must change! Jesus never let the opposition silence him. He silenced the opposition! You! Do the same in the name of Jesus!",
@@ -689,7 +689,8 @@ export const ui = {
     "witnesses.testimonials.items29.t2":
       "Forgiveness is an act of the will, and the will can function regardless of the temperature of the heart.",
     "witnesses.testimonials.items30.name": "A. W. Tozer: 1897-1963",
-    "witnesses.testimonials.items30.job": "Coming soon...",
+    "witnesses.testimonials.items30.job":
+      "He made the Word really to be alive. Not looking for influence but just the pure presence of God and to be deeper and deeper with Him.",
     "witnesses.testimonials.items30.t1": "A scared world needs a fearless church.",
     "witnesses.testimonials.items30.t2":
       "What comes into our minds when we think about God is the most important thing about us.",
@@ -1462,57 +1463,63 @@ export const ui = {
     "witnesses.testimonials.items19.t3":
       "Kunnoitan enemmän Paholaista, kuin joitakin Sanan julistajia, jotka olen tavannut. Paholainen uskoo Raamatun olevan Jumalan Sanaa.",
     "witnesses.testimonials.items20.job":
-      "Hän ei tehnyt tavallista lähetystyötä, vaan vietti suurimman osan ajastaan rukouksessa. Hän rukoili, kunnes Jumala antoi hänelle yhden sielun, joka päivä. Sitten hän rukoili, kunnes Jumala antoi hänelle kaksi sielua, joka päivä. Tämä mies oli rukous kahdella jalalla. Kerrotaan, että lääkärit huomasivat hänen sydämensä liikkuneen oikealle puolelle hänen rintaansa sen kiihkeyden ja intohimon takia, joka hänen rukouksissaan syntyi. ",
+      "Hän ei tehnyt tavallista lähetystyötä, vaan vietti suurimman osan ajastaan rukouksessa. Hän rukoili, kunnes Jumala antoi hänelle yhden sielun, joka päivä. Sitten hän rukoili, kunnes Jumala antoi hänelle kaksi sielua, joka päivä. Tämä mies oli rukous kahdella jalalla. Kerrotaan, että lääkärit huomasivat hänen sydämensä liikkuneen oikealle puolelle hänen rintaansa sen kiihkeyden ja intohimon takia, joka hänen rukouksissaan syntyi. Voitko nähdä itsesi rukoilemassa samallalailla niiden sielujen puolesta, jotka nauttivat synnistä, eivätkä ikuisesta puhtaudesta Jumalassa. Jos et, on aika tehdä parannus.",
     "witnesses.testimonials.items20.t1":
       "Seurakunnan henkiin herääminen riippuu täysin rukouselämämme henkiin heräämisestä.",
     "witnesses.testimonials.items20.t2":
       "Aiemmin en tiennyt, millaista oli tehdä päivä töitä ja sitten viettää koko yö rukouksessa toisen puolesta... Ylipistossa tai juhliessani kotona nuo tunnit olivat itseäni tai nautintoja varten. Enkö voi antaa niitä nyt Jumalle ja sielujen voittamiseksi?",
-    "witnesses.testimonials.items21.job": "Tulossa pian...",
+    "witnesses.testimonials.items21.job":
+      "Tämä mies näytti maailmalle, että Jeesus yhä parantaa, näyttämällä Jumalan yliluonnollisen parantavan voiman lääkärien edessä. Tämä ainoastaan ei ollut ainoa julkinen Jumalan voiman näyttö, vaan hän haastoi toisten uskontojen edustajat suoriin voiman näyttöihin, joissa nähdään, kenen jumala on todella Jumala. Varmaan tiedät, että Jeesus voitti, joka kerta. Mene ja ravista maailmaasi Jeesukselle.",
     "witnesses.testimonials.items21.t1":
       "Kun ensimmäisen kerran näin Jumalan Sanasta, että sairaana oleminen ei ollut Jumalan tahto, koko olemukseni nousi kukistamaan tuon Saatanan tahdon.",
     "witnesses.testimonials.items21.t2":
       "Kristinuskon ensimmäisinä vuosisatoina se ei edennyt maailmaan pyydellen anteeksi. Se eteni kukistaakseen pimeyden voimat ja tehdäkseen tyhjäksi Paholaisen teot. Ja se eli pyhässä voitossa.",
     "witnesses.testimonials.items21.t3":
       "Jos sinulla on oikeanlainen hengellinen yhteys Jumalaan, sinulla on Jumalan voima elämässäsi, eikä muuta mahdollisuutta ole!",
-    "witnesses.testimonials.items22.job": "Tulossa pian...",
+    "witnesses.testimonials.items22.job":
+      "Tämä yksisilmäinen musta mies käytti aikansa kokouksissa ennen omaa vuoroaan istuen ja päänsä laatikon sisällä. Hän tarvitsi Jumalaa ja Hän tarvitsi sanan Jumalalta. Ja kirkkaus seurasi. Jumalan kirkkauden pilvi oli kokouksissa ja lapset leikkivät sen sisällä. Syöpäkasvaimet putosivat ihmisten kehoista. Aikuiset ja vauvat nostivat yhtä aikaa kätensä Jumalan läsnäolossa ja palvonnassa, ikään kuin joku olisi ohjannut heitä, kuin taivaallinen kapelimestari. Enkelien kuultiin laulavan pyhien kanssa. Ja Jumalan tuli näkyi muulitallin yllä, jossa he kokoontuivat. Tämä oli viimeinen tarvittava kipinä Helluntai tulen syttymiseen koko maapallolla.",
     "witnesses.testimonials.items22.t1":
       "Pyhän Hengen voiman vaikutuksesta sanon, että kun Jumala saa yksilöitä, jotka tulevat yhteen yhdessä ymmärryksessä Jumalan Sanasta, He tulevat täyttymään Pyhällä Hengellä juuri niin kuin Korneliuksen talossa.",
     "witnesses.testimonials.items22.t2":
       "Jokainen pelastunut ja pyhitetty henkilö voi tuntea tulen palavan hänen sydämessään kutsuessaan Jeesuksen nimeä.",
-    "witnesses.testimonials.items23.job": "Tulossa pian...",
+    "witnesses.testimonials.items23.job":
+      "Hän muutti Zion kaupunkiin ja asui John G Laken vieressä. Sitten he kuulivat Azusa kadun herätyksestä, menivät sinne ja täyttyivät Pyhällä Hengellä. Sitten oli aika parantaa sairaat. Yhteistyössä William Branhamin kanssa, sillä hänellä oli valtava menestys opetuksen osa-alueella ja Bosworthilla parantamisen. Kun hän oli eläkeiässä, hän näki kuinka julistaa suurelle joukolle kerralle Jeesuksen parantavaa voimaa ja sairaat paranivat. Joten hän palasi tekemään töitä Herralle. Paikallaan oleva kivi maatuu, mutta vierivä kivi ei ikinä. Oletko sinä paikallaan oleva vai vierivä kivi? Vieri 100% Kristukselle tänään!",
     "witnesses.testimonials.items23.t1":
       "Jotkut ihmettelevät, miksei heillä vain ole uskoa paranemiseen. He ruokkivat ruumistaan kolmella lämpimällä aterilla päivässä ja henkeään yhdellä kylmällä välipalalla viikossa.",
     "witnesses.testimonials.items23.t2":
       "Raamatusta on aivan selvästi nähtävissä, mistä kulmasta ikinä sitä katsookaan, että se sisältää kaikkein selvimmin todistuksen siitä, että Jumalan tahto on parantaa kaikki. Ja että jokainen täyttää elämänsä kaikki päivät Hänen lupauksensa mukaan.",
-    "witnesses.testimonials.items24.job": "Tulossa pian...",
+    "witnesses.testimonials.items24.job":
+      "Seurakunnan tilaisuudessa tämä nuori mies nojasi eteenpäin ja alkoi rukoilla intensiivisellä ja syvältä sydämestä lähtevällä äänensävyllä sanoen, Taivuta minua, taivuta minua, oi Jumala. Lopputulos oli yksi mahtavimmista herätyksistä, jonka maapallo on ikinä kokenut. Pubit, saluunat, alkoholikaupat ja tanssihallit tyhjenivät kaikki, koska kaikki kaupungin ihmiset menivät seurakunnan kokouksiin. Niin suuri muutos, että poliisilla ei ollut työtä, joten he osallistuivat kokouksiin, pitivät yllä järjestystä samalla kuunnelleen itse omaan tarpeeseensa pelastuksen sanomaa. Jopa kaivostyö oli vaakalaudalla kiroilevien kaivosmiesten aasit tottelivat vain, kun niille kiroiltiin, mutta nyt yksikään kaivosmies ei käyttänyt yhtäkään kirosanaa. Nähdäksemme mittavan Jumalan kirkkauden laskeutuvan kaupunkiemme ja maidemme päälle, paikalla on aina ollut rukouksen mies. Oletko sinä tuo yksilö?",
     "witnesses.testimonials.items24.t1": "Taivuta minut, taivuta minut, oi Jumala.",
     "witnesses.testimonials.items24.t2": "Olen Jeesuksen käsissä.",
     "witnesses.testimonials.items24.t3":
       "Älä yritä tehdä suuria asoita, vaan yritä vain olla rauhassa ja kärsivällinen. Anna Jumalan puhua sinun kauttasi.",
-    "witnesses.testimonials.items25.job": "Tulossa pian...",
+    "witnesses.testimonials.items25.job":
+      "Hän julisti evankeliumia ja kirjoitti Pyhän Hengen ohjaamana uskoen, että Jumalan sana on oikeasti totta ja tarkoittaa sitä, mitä sanoo. Hän ei pelännyt ankaraa vastustusta ja ristiriitoja, vaan hän halusi herättää nukkuvan seurakunnan. Oletko sinä osa nukkuvaa seurakuntaa ja jopa hyväksyt sen? Elätkö oikeasti evankeliumin esille tuoman totuuden mukaan? Nyt on aika herätä! NYT on aika nousta kuolleista, ja Kristus antaa sinulle valon.",
     "witnesses.testimonials.items25.t1":
       "Nykypäivän evankelistat antavat voivoteltavan väärän kuvan pelastuksen luonteesta. Hänet esitellään ennemmin Pelastajana helvetistä kuin Pelastajana synnistä. Siksi monet ovat niin kuolettavasti petettyjä. Sillä niin monet haluavat paeta tulijärvestä ja samalla he eivät tahdo vapautua lihallisuudesta ja maailman rakkaudesta.",
     "witnesses.testimonials.items25.t2":
       "Synnin poissa olo ei erota Jumalan lasta vain kristityn nimen omaavasta, vaan sydämen täysi murhe synnin takia.",
     "witnesses.testimonials.items25.t3":
       "Oikea vapaus ei ole valta valita omaa tahtoaan ja elää, miten haluaa. Vaan elää, kuten meidän kuuluu.",
-    "witnesses.testimonials.items26.job": "Tulossa pian...",
+    "witnesses.testimonials.items26.job":
+      "Tämä mies heitettiin keskelle suurta herätystä. Kun hän saapui, hän huomasi heti, että nämä olivat ihmisiä, jotka olivat tosissaan. Hän työskenteli herätyksen keskellä ja näki uudelleen ja uudelleen satoja ja satoja ihmisiä, nuoria ja vanhoja, miehiä ja naisia, jotka olivat valtavan synnintunnon alla. Oli kuin Jumala olisi tullut kaupunkiin. Ihmiset polvistuivat kaduilla ja pelloilla joukouttain, koska he tunsivat Jumalan läsnäolon huusivat armoa. He tarvitsivat armoa! Jos sinä et ole vielä tullut Kristuksen luokse niin myös sinä!",
     "witnesses.testimonials.items26.t1":
       "Tänä päivänä pelkäämme häiritsevämme ihmisiä jotenkin. Älä häiritse heidän tunteitaan, et saa saada heitä itkemään kokouksessa, et saa saada heitä makaavaan maassa synnin tuskassa; kaiken tulee olla tip top! Jumalan armahtakoon meitä, Jumala auttakoon meitä. Kuinka me voimme määritellä ja määrätä, kuinka Kaikkivaltias Jumala saa toimia?",
     "witnesses.testimonials.items26.t2":
       "Tämän päivän evankeliumi sujuvasti mukauttaa itsensä ajan henkeen ja ei tee mitää vaatimusta jumalisuuden puolesta.",
     "witnesses.testimonials.items26.t3": "Seurakunta, joka ei evankelioi, muuttuu fossiiliksi.",
-    "witnesses.testimonials.items27.job": "Tulossa pian...",
+    "witnesses.testimonials.items27.job":
+      "Jo nuorella iällä hän harjoitteli saarnaamista puhumalla elottomille esineille. Äitiään vastustaen hän meni Helluntai tapaamiseen, sillä hän halusi enemmän Jumalaa, ja hän vietti päivän rukouksessa. Sinä yönä hän täyttyi Pyhällä Hengellä. Häntä vastustettiin niin monesti hänen elämänsä aikana. Hän ei ikinä hiljentynyt vaan taisteli — oi hän taisteli, kuin leijona jokaista vastustusta ja vainoa vastaan. Ja hän aina voitti. Oi, miksi olemme niin pelokkaita tänä päivänä? Kun joku sanoo meistä jotain valheellista tai pelottelee meitä, miksi me hiljenemme ja vetäydymme? Oi, meidän täytyy muuttua! Jeesus ei antanut ikinä vastustuksen hiljentää Häntä. Hän hiljensi vastustuksen! Sinä! Tee samoin Jeesuksen nimessä!",
     "witnesses.testimonials.items27.t1":
       "Tänä päivänä puhutaan Jeesuksen toisesta tulemisesta. Puolet maailmasta ei ole edes kuullut ensimmäisestä.",
     "witnesses.testimonials.items27.t2":
       "Jokainen seurakunta, joka ei ole täydellä painollaan työssä täyttääkseen Suuren lähetyskäskyn, on menettänyt Raamatun mukaan oikeutensa edes olla olemassa.",
     "witnesses.testimonials.items27.t3":
-      "Olen täysin vakuuttunut, että kukaan, joka ei vietä tunteja yksin vain Jumalan kanssa, tulee ikinä tuntemaan Pyhän Hengen voitelun elämässään. Koko maailman tulee jättää ulkopuolelle, kunnes näet vain Jumalan.",
+      "It matters not how spiritual a church may profess to be, if souls are not saved, something is radically wrong, and the professed spirituality is simply a false experience, a delusion of the devil. People who are satisfied to meet together simply to have a good time among themselves are far away from God. Real spirituality always has an outcome.",
     "witnesses.testimonials.items27.t4":
-      "Jumala on luvannut vastata rukouksiin. Kyse ei ole siitä, ettei Hänellä ole halua tehdä sitä, vaan päinvastoin, Hänellä on enemmän halua antaa, kuin meillä vastaanottaa. Ongelma on, että me emme ole valmiita siihen.",
-    "witnesses.testimonials.items28.job":
-      "Jo nuorella iällä hän harjoitteli saarnaamista puhumalla elottomille esineille. Äitiään vastustaen hän meni Helluntai tapaamiseen, sillä hän halusi enemmän Jumalaa, ja hän vietti päivän rukouksessa. Sinä yönä hän täyttyi Pyhällä Hengellä. Häntä vastustettiin niin monesti hänen elämänsä aikana. Hän ei ikinä hiljentynyt vaan taisteli — oi hän taisteli, kuin leijona jokaista vastustusta ja vainoa vastaan. Ja hän aina voitti. Oi, miksi olemme niin pelokkaita tänä päivänä? Kun joku sanoo meistä jotain valheellista tai pelottelee meitä, miksi me hiljenemme ja vetäydymme? Oi, meidän täytyy muuttua! Jeesus ei antanut ikinä vastustuksen hiljentää Häntä. Hän hiljensi vastustuksen! Sinä! Tee samoin Jeesuksen nimessä!",
+      "Oh, how few find time for prayer! There is time for everything else, time to sleep and time to eat, time to read the newspaper and the novel, time to visit friends, time for everything else under the sun, but-no time for prayer, the most important of all things, the one great essential!",
+    "witnesses.testimonials.items28.job": "Tulossa pian...",
     "witnesses.testimonials.items28.t1":
       "Herää! Sinä, joka nukut, ja nouse kuolleista! Herra elää yhä tänä päivänä. Hänen voimansa ei ehtynyt. Hänen Sanansa ei ole ikinä muuttunut. Ne teot, joita Hän teki Raamatun aikana, Hän elää tehdäkseen tänään. Ei ole kuormaa, jota Hän ei jaksa kantaa, ei kahletta, jota Hän ei voi murtaa.",
     "witnesses.testimonials.items28.t2":
