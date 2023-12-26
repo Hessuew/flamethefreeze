@@ -423,8 +423,7 @@ export const ui = {
     "prayer.callToAction.title2": "full flame",
     "prayer.callToAction.subtitle": "Join us in prayer meetings every other Saturday, starting at 18:00 GMT+2.",
     "prayer.callToAction.subtitle2": "Zoom ID: 644 4069 4917, Passcode: 467939",
-    "witnesses.temp":
-      "The short biographies of the people are under refactoring as guided and inspired by the Holy Spirit.",
+    "witnesses.temp": "",
     "witnesses.hero.title.tagline": "Witnesses",
     "witnesses.hero.title.title": " cloud of witnesses",
     "witnesses.hero.title.subtitle":
@@ -451,6 +450,12 @@ export const ui = {
       "The Scriptures of God are my only foundation and substance in all matters of weight and importance.",
     "witnesses.testimonials.items2.t3":
       "I sought neither preeminence, glory, nor riches; my honor was that Jesus Christ should reign.",
+    "witnesses.testimonials.items2b.name": "John Welch: 1570-1622",
+    "witnesses.testimonials.items2b.job":
+      "This man, from the beginning of his ministry to his death, reckoned the day ill-spent if he stayed not seven or eight hours in prayer. Is this why he could pray prayers like, Lord, wilt Thou not grant me Scotland? My friend, do you pray? Have you given yourself to travail in prayer? For those and only those who pray are mighty in the kingdom.",
+    "witnesses.testimonials.items2b.t1": "God does nothing apart from prayer, but he does everything by it.",
+    "witnesses.testimonials.items2b.t2":
+      "The people who get in trouble in our company are those who carry around the anchor of the past.",
     "witnesses.testimonials.items3.name": "John Wesley: 1703-1791",
     "witnesses.testimonials.items3.job":
       "When churches and saloons are emptied to hear a man preaching a sermon in a graveyard, there must be something extraordinary happening. John was set on fire for God, and the whole globe came to know this burning and shining light. As Jonathan Edwards and George Whitefield were, by the grace of God, waking up America, so was John Wesley waking up Europe.",
@@ -492,6 +497,15 @@ export const ui = {
       "It is the duty of those who are entrusted with the Gospel to endeavor to make it known among all nations.",
     "witnesses.testimonials.items7.t4":
       "Surely it is worthwhile to lay ourselves out with all our might in promoting the cause and kingdom of Christ.",
+    "witnesses.testimonials.items8a.name": "Daniel Nash: 1775-1831",
+    "witnesses.testimonials.items8a.job":
+      "I have known that man go to bed absolutely sick, for weakness and faintness, under the pressure. And I have known him pray as if he would do violence to Heaven, and then have seen the blessing come as plainly in answer to his prayer as if it were revealed, so that no person could doubt it any more than if God had spoken from heaven. Shall I tell you how he died? He prayed more and more; he used to take the map of the world before him, and pray, and look over the different countries and pray for them, till he expired in his room, praying. Blessed man! He was the reproach of the ungodly, and of carnal, unbelieving professors; but he was the favorite of Heaven, and a prevailing prince of prayer.",
+    "witnesses.testimonials.items8a.t1":
+      "When Mr. Finney and I began our race, we had no thought of going amongst ministers. Our highest ambition was to go where there was neither minister nor reformation and try to look up the lost sheep, for whom no man cared. We began and the Lord prospered. But we go into no man's parish unless called. We have room enough to work and work enough to do.",
+    "witnesses.testimonials.items8a.t2":
+      "Oh, I am dying for the want of strength to pray! My body is crushed, the world is on me, and how can I forbear praying?",
+    "witnesses.testimonials.items8a.t3":
+      "By Finney: Like anybody who does a lot of praying, Father Nash is a very quiet person. Show me a person who is always talking and I'll show you a Christian who never does much praying.",
     "witnesses.testimonials.items8.name": "Charles G. Finney: 1792-1875",
     "witnesses.testimonials.items8.job":
       "'Father of Old Revivalism'. People were crying, laying on the floor, and in agony because of their sins when they heard him preach. Whole towns, cities, and nations were changed under the power of God. Hundreds of thousands turned to God in true repentance, changing their whole lives to obey, love, and please God. When skeptics came to the cities where he was working, they came under a soul-reaching atmosphere of holiness, and they noticed that the yet unbelieving townspeople shared the same conviction of the manifested holiness of God in and around the whole city.",
@@ -499,6 +513,8 @@ export const ui = {
       "It is the great business of every Christian to save souls. People complain that they do not know how to take hold of this matter. Why, the reason is plain enough; they have never studied it. They have never taken the proper pains to qualify themselves for the work. If you do not make it a matter of study, how you may successfully act in building up the kingdom of Christ, you are acting a very wicked and absurd part as a Christian.",
     "witnesses.testimonials.items8.t2":
       "Revival is a renewed conviction of sin and repentance, followed by an intense desire to live in obedience to God. It is giving up one's will to God in deep humility.",
+    "witnesses.testimonials.items8.t3":
+      "You hear the word, and believe it in theory, while you deny it in practice. I say to you, that 'you deceive yourselves'.",
     "witnesses.testimonials.items9.name": "George Müller: 1805-1899",
     "witnesses.testimonials.items9.job":
       "A man who took care of tens of thousands of orphans. Just by prayer, the children and facilities got all the food, equipment, and necessities they needed.",
@@ -542,6 +558,13 @@ export const ui = {
     "witnesses.testimonials.items14.t1":
       "If our spiritually dead ones are to be raised, we must first get power with God. The reason we so often fail in moving our fellowmen is that we try to win them without first getting power with God. Jesus was in communion with His Father, and so He could be assured that His prayers were heard.",
     "witnesses.testimonials.items14.t2": "The Bible was not given for our information but for our transformation.",
+    "witnesses.testimonials.items14b.name": "Ira David Sankey: 1840-1908",
+    "witnesses.testimonials.items14b.job":
+      "Together the two, Moody and Sankey, traveled to England as well as urban areas in the eastern United States 'reducing the population of hell by a million souls.",
+    "witnesses.testimonials.items14b.t1":
+      "Singing does at least as much as preaching to impress the word of God upon people's minds.",
+    "witnesses.testimonials.items14b.t2":
+      "Moody's first words to him, after an introduction, were, 'Where are you from? Are you married? What is your business?' Sankey replied he lived in Pennsylvania, had a wife and two children and was employed by the government, whereupon Moody replied, 'You will have to give that up.' Sankey was reluctant to give up his job but Moody pressed him, saying, 'You must; I have been looking for you the last eight years'.",
     "witnesses.testimonials.items15.name": "Maria Woodworth-Etter: 1844-1924",
     "witnesses.testimonials.items15.job":
       "A thug group came into one of her meetings, threatening her and her workers. Maria pointed her hand toward them, saying, The first of you trying to do any harm to my people shall be struck dead by God. The whole group came to such a conviction that they gave their lives to God, and henceforth, they were protecting Mama Etter. One time, a man interrupted a sermon with vulgar language and blasphemy. In that instant, his tongue swelled so much that it stayed outside his mouth. After seeking help from the doctors, the man came to Mama Etter in repentance. She laughed, touched the tongue, and it returned to normal instantly.",
@@ -556,6 +579,10 @@ export const ui = {
       "I have crossed the ocean fourteen times by ship. During those fourteen crossings, many storms arose. But every time a storm came up, I always did like Jesus did: I rebuked that storm. And every single one ceased.",
     "witnesses.testimonials.items16.t2":
       "There are many Christians who are Christians in theory only, and they are worldlings in practice.",
+    "witnesses.testimonials.items16.t3":
+      "You do not base your belief that Jesus is the Saviour from sin upon the fact that somebody is saved, or says he is saved; but you base it upon the Word of the living God; and there you stand.",
+    "witnesses.testimonials.items16.t4":
+      "Disease, like Sin, is God's enemy, and the devil's work, and can never be God's will.",
     "witnesses.testimonials.items17.name": "Carrie Judd: 1858-1946",
     "witnesses.testimonials.items17.job":
       "When God calls someone, the person is truly called. This woman of faith fought and declared the healing power of God with her black friend in a time when women preachers, black people, and divine healing were all opposed. Yet none of those things put her down. At this present moment, the church is overtaken by greed, wordliness, lukewarmness, and hypocrisy. Are you going to fight the good fight of faith through the power of God? Are you going to see a change in the whole moral climate of the body of Christ and civilizations?",
@@ -642,7 +669,7 @@ export const ui = {
     "witnesses.testimonials.items27.t4":
       " God has promised to answer prayer. It is not that He is unwilling, for the fact is, He is more willing to give than we are to receive. But the trouble is, we are not ready.",
     "witnesses.testimonials.items28.name": "Aimee Semple McPherson: 1890-1944",
-    "witnesses.testimonials.items28.job": "Time when",
+    "witnesses.testimonials.items28.job": "Coming soon...",
     "witnesses.testimonials.items28.t1":
       "Awake! thou that sleepest, arise from the dead! The Lord still lives today. His power has never abated. His Word has never changed. The things He did in Bible days, He still lives to do today. Not a burden is there He cannot bear nor a fetter He cannot break.",
     "witnesses.testimonials.items28.t2":
@@ -798,6 +825,11 @@ export const ui = {
       "Make this declaration: Death and life are in the power of my tongue. I choose Life!",
     "witnesses.testimonials.items48.t3":
       "Don't be satisfied with living below the full potential of prayer power Christ intended for His church",
+    "witnesses.testimonials.items49a.name": "David Yonggi Cho: 1936-2021",
+    "witnesses.testimonials.items49a.job": "",
+    "witnesses.testimonials.items49a.t1": "Nothing you can do will benefit you more than prayer.",
+    "witnesses.testimonials.items49a.t2":
+      "You could remove the powerful preaching from our church and it would still continue. You could remove the administration of pastoral care through the cell group system and the church would still continue. But if you remove the prayer life of our church it would collapse.",
     "witnesses.testimonials.items49.name": "Benson Idahosa: 1938-1998",
     "witnesses.testimonials.items49.job":
       "A young boy read from the Bible that Jesus raised the dead. He went and asked his pastor if this could be done today and if Jesus actually meant those who believed would do the same works. The pastor answered yes. He asked if he had done so. He said no. The young man continued to search in town for anyone who had died so that Jesus could raise them from the dead. After hours, he found a house where a young girl had just died. Praying for the girl, nothing happened. He noticed Jesus drove the parens out, and so did he. Then he prayed, and the dead came back to life. This is the life we should live. A life of divine manifestation of the power of God in our lives! If you don't have experience with this power, join us, and your life will be changed by the same power that raised Jesus from the dead!",
@@ -1272,7 +1304,7 @@ export const ui = {
     "witnesses.features3-3.subtitle":
       "Te vastoin olette tulleet Siionin vuoren ja elävän Jumalan kaupungin, taivaallisen Jerusalemin, kymmenenientuhansien enkelien ja juhlajoukon luo, esikoisten seurakunnan luo, niiden sitä nimet ovat kirjoittaneet taivaissa, Jumalan luo, joka on kaikkien tuomari, ja täydellisiksi tulleiden vanhurskaiden henkien luo. Hep 12:22,23 FINRK",
     "witnesses.testimonials.title": "Uskon sanoja niiltä, jotka ovat kulkeneet edellämme",
-    "witnesses.testimonials.items1.job": "Tulossa pian...",
+    "witnesses.testimonials.items1.job": "",
     "witnesses.testimonials.items1.t1": "Pelastumme yksin uskosta, mutta usko, joka pelastaa, ei ole koskaan yksin.",
     "witnesses.testimonials.items1.t2":
       "Ellei Raamattu ja selkeä syy minua tuomitse – en hyväksy paavien ja neuvostojen auktoriteettia, sillä ne ovat olleet ristiriidassa keskenään – minun omatuntoni on Jumalan Sanan ohjaama. En voi enkä aio kieltäytyä mitään sanomaani, sillä omantuntoni vastustaminen ei ole oikein eikä turvallista. Tässä seison, enkä muuta voi. Auta minua Jumala. Aamen.",
@@ -1281,6 +1313,10 @@ export const ui = {
     "witnesses.testimonials.items2.t2": "Jumalan Sana on ainoa perustani kaikissa tärkeissä asioissa.",
     "witnesses.testimonials.items2.t3":
       "En etsi statusta, kunniaa tai rikkauksia; suurin kunniani on se, kun Jeesus Kristus hallitsee.",
+    "witnesses.testimonials.items2b.job": "Tulossa pian...",
+    "witnesses.testimonials.items2b.t1": "Jumala ei tee mitään ilman rukousta, mutta kaikein sen kautta.",
+    "witnesses.testimonials.items2b.t2":
+      "Ne meistä, jotka joutuvat ongelmiin, ovat niitä, jotka kantavat menneisyytensä ankkuria aina mukanaan.",
     "witnesses.testimonials.items3.job": "Tulossa pian...",
     "witnesses.testimonials.items3.t1": "Syty tuleen Jumalalle, niin ihmiset tulevat katsomaan sinun palavan.",
     "witnesses.testimonials.items3.t2": "Sinulla on yksi tehtävä maan päällä - pelastaa sieluja.",
@@ -1314,11 +1350,20 @@ export const ui = {
       "Jokaisen, joka on vastaanottanut evankeliumin, tehtävä on tehtä se tiettäväksi kaikkien maiden keskellä.",
     "witnesses.testimonials.items7.t4":
       "Meidän kannattaa heittää itsemme kaikella voimallamme Jumalan työhön ja Kristuksen valtakunnan edistämiseen.",
+    "witnesses.testimonials.items8a.job": "Tulossa pian...",
+    "witnesses.testimonials.items8a.t1":
+      " Kun herra Finney ja minä aloitumme yhteisen työmme, emme ajatelleetkaan menevämme muiden Jumalan työntekijöiden luokse. Suurin tavoitteemme oli mennä sinne, jossa ei ollut työntekijöitä eikä herätystä ja etsiä kadonneita lampaita, joista kukaan ei välittänyt. Me aloitimme työn ja Herra sai sen menestymään. Mutta me emme mene kenenkään seurakuntaan, ellei meitä kutsuta. Meillä on tarpeeksi tilaa työskennellä ja tarpeeksi työtä tehtävänä.",
+    "witnesses.testimonials.items8a.t2":
+      "Oi, kuolen tästä voiman puutteesta rukouksessa! Ruumiini on murskattu, maailman on päälläni, ja kuinka voisin olla rukoilematta?",
+    "witnesses.testimonials.items8a.t3":
+      "Finney: Niin kuin kaikki, jotka rukoilevat paljon, isä Nash on todella hiljainen henkilö. Näytä minulle joku, joka puhuu aina, ja minä näytän sinulle kristityn, joka ei ikinä rukoile.",
     "witnesses.testimonials.items8.job": "Tulossa pian...",
     "witnesses.testimonials.items8.t1":
       "Jokaisen kristityn suurin tehtävä on pelastaa sieluja. Mutta moni valittaa, että he eivät tiedä miten. Mutta vastaus heidän valitukseensa on selvä; he eivät ole panostaneet tietääkseen. He eivät ole ikinä nähneet vaivaa ollakseen kykeneviä siihen. Toimintasi on todella pahaa ja kohtuutonta kristityksi, jos et opiskele, kuinka voit tehokkaasti rakentaa Kristuksen valtakuntaa.",
     "witnesses.testimonials.items8.t2":
       "Herätys on yksilön uudistunut vakuuttuminen synnistä ja parannuksen teosta, jota seuraa intensiivinen tahto elää kuuliaisesti Jumalalle. Kun yksilö luovuttaa oman tahtonsa Jumalalle syvässä nöyryydessä. ",
+    "witnesses.testimonials.items8.t3":
+      "Kuulet Jumalan sanaa ja uskot sen teoriassa, mutta käytännössä kiellät sen. Kerron sinulle suoraan, että huijaat itseäsi.",
     "witnesses.testimonials.items9.job": "Tulossa pian...",
     "witnesses.testimonials.items9.t1": "Kun alat murehtia et voi toimia uskossa. Kun alat uskoa, et voi murehtia.",
     "witnesses.testimonials.items9.t2":
@@ -1351,6 +1396,11 @@ export const ui = {
       "Jos haluamme, että hengellisesti kuolleet heräävät, meidän täytyy aluksi saada voima siihen Jumalalta. Syy, miksi niin usein emme vaikuta toisiin on, että yritämme voittaa heitä Kristukselle, ennen kuin olemme saanet voiman siihen Jumalalta. Jeesus oli ensin yhteydessä Isänsä kanssa ja siksi Hän oli varma, että Hänen rukouksiinsa vastataan.",
     "witnesses.testimonials.items14.t2":
       "Jumala ei ole antanut meille Raamattua informaatioksi, vaan meidän muutostamme varten",
+    "witnesses.testimonials.items14b.job": "Tulossa pian...",
+    "witnesses.testimonials.items14b.t1":
+      "Laulaminen tekee vähintään yhtä paljon työtä kuin saarnaaminen painaakseen Jumalan Sanan ihmisten mieliin.",
+    "witnesses.testimonials.items14b.t2":
+      "Moodyn ensimmäiset sanat hänelle esittäytymisen jälkeen olivat, Mistä olet, oletko naimisissa, mitä työtä teet? Sankey vastasi olevansa Pensylvaniasta, olevansa naimisissa ja hänellä on kaksi lasta, ja työskentelevänsä valtiolle. Tähän Moody vastasi, Sinun täytyy jättää työsi. Sankey oli vastahakoinen jättämään työnsä, mutta Moody painosti häntä sanoen, Sinun täytyy, olen etsinyt sinua viimeiset kahdeksan vuotta.",
     "witnesses.testimonials.items15.job": "Tulossa pian...",
     "witnesses.testimonials.items15.t1":
       "Olen huomannut, että vilpittömästi Kristusta seuraavat lepäävät hyvin vähän täällä maan päällä. Niin kuin Mestarimme, meidän tulee olla alituisesti Isämme töissä.",
@@ -1361,6 +1411,10 @@ export const ui = {
       "Olen ylittänyt valtameren 14 kertaa laivalla. Noiden 14 ylityksen aikana monia myrskyjä nousi. Mutta joka kerta myrskyn noustessa, tein aina samoin, kuin Jeesus: minä nuhtelin myrskyä. Ja jokaikinen lakkasi.",
     "witnesses.testimonials.items16.t2":
       "On olemassa monia kristittyjä, jotka ovat kristittyjä vain teoriassa, mutta kuuluvat maailmaan toiminnassaan.",
+    "witnesses.testimonials.items16.t3":
+      "Sinun uskomuksesi siitä, että Jeesus on Pelastaja synnistä, ei voi perustua siihen, että joku toinen on pelastettu, tai sanoo, että on pelastettu. Sinä perustat sen elävän Jumalan Sanaan ja seisot sen päällä.",
+    "witnesses.testimonials.items16.t4":
+      "Sairaudet, niin kuin myös synti, ovat Jumalan vihollisia ja Paholaisen työtä eikä voi ikinä olla Jumalan tahto.",
     "witnesses.testimonials.items17.job": "Tulossa pian...",
     "witnesses.testimonials.items17.t1":
       "Voitko uskoa Jumalaan nyt kokeaksesi elämän, joka lentää kotkan siivillä? Voit toki ryömiä, jos haluat. Jumala siunaa sinua vaikka ryömisitkin; Hän tekee parhaansa sinulle. Mutta oi, kuinka paljon parempi on, kun haluamme elää siinä todellisuudessa, jotka Kristus meille voitti ja 'kohota siivilleen, kuin kotka, juosta uupumatta, kävellä väsymättä.' Oi rakkaat ystävät, on olemassa elämä kotkan siivillä. Tunnen Hänen elämänsä virtojen täyttävän minut ja läpikäyvän olemukseni päästä varpaisiin, kunnes sanat eivät voi kuvata sitä. Voin vain tehdä muutaman horjuvan yrityksen yrittäessäni kuvailla sitä ja pyytää Herraa avaaman teille loput. Avatkoon Hän teille teidän perintöosanne Kristuksessa, että te puskette eteenpäin ja koette kaiken, mitä Hänellä on teille varattuna.",
@@ -1556,6 +1610,10 @@ export const ui = {
       "Jumalan hyväksynnän saamisessa ei ole kyse ulkoisesta elämän ja elämäntapojen muuttamisesta. Vaan kaikki, mitä Hän pyytää ja vaatii, on sydämen, ihmisen sisimmän muutos.",
     "witnesses.testimonials.items49.t3":
       "Älä kerro kuinka suuri vuoresi eli sinun ongelmasi on. Kerro ongelmallesi, kuinka SUURI sinun Jumalasi on.",
+    "witnesses.testimonials.items49a.job": "Tulossa pian...",
+    "witnesses.testimonials.items49a.t1": "Mikään, mitä ikinä teetkään, ei voi hyödyttää sinua enemmän, kuin rukous.",
+    "witnesses.testimonials.items49a.t2":
+      "Voit poistaa voimakkaan saarnaamisen seurakunnastamme ja sen toiminta silti jatkuisi. Voit poistaa paimenellisen kaitsemisen solu ryhmien kautta ja toiminta silti jatkuisi. Mutta jos sinä poistat seurakuntamme rukous elämän se luhistuu kasaan.",
     "witnesses.testimonials.items50.job": "Tulossa pian...",
     "witnesses.testimonials.items50.t1":
       "Mitä vähemmän Pyhää Henkeä meillä on, sitä enemmän tarvitsemme kakkua ja kahvia pitääksemme seurakunnan toiminnan pystyssä ja ihmiset tyytyväisinä.",
