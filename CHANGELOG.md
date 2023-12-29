@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.5.0](https://github.com/Hessuew/flamethefreeze/compare/v2.4.0...v2.5.0) (2023-12-29)
+
+
+### Features
+
+* about page, drive images ([1d0b989](https://github.com/Hessuew/flamethefreeze/commit/1d0b9898260764b97718d8a4fda9b82c297ee132))
+* about us page (3/4) ([c7d5486](https://github.com/Hessuew/flamethefreeze/commit/c7d5486045fd73f833e9566ec75eb2381ae434fa))
+* about us page (3/4) ([#67](https://github.com/Hessuew/flamethefreeze/issues/67)) ([c740906](https://github.com/Hessuew/flamethefreeze/commit/c7409066ba689a777187084df805928c15ec2169))
+
 ## [2.4.0](https://github.com/Hessuew/flamethefreeze/compare/v2.3.0...v2.4.0) (2023-12-26)
 
 
