@@ -108,8 +108,8 @@ const t = useTranslations(lang);
       { title: t("index.content1.items7") },
     ]}
     image={{
-      // src: "~/assets/images/amazon.webp",
-      src: "https://m.media-amazon.com/images/I/A1BhKDXUJBL.jpg",
+      // src: "https://m.media-amazon.com/images/I/A1BhKDXUJBL.jpg",
+      src: "https://drive.google.com/uc?export=view&id=1awVYU4CDRcjv7xV4ioYsy1ecs_3NgznI",
       alt: "Image of Amazon forest",
     }}
   >
@@ -143,8 +143,8 @@ const t = useTranslations(lang);
       { title: t("index.content2.items7") },
     ]}
     image={{
-      // src: "~/assets/images/wildfire.webp",
-      src: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2021_25/3411506/200911-wildfire-california-worst-widlfire-year-se-236p.jpg",
+      // src: "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1500w,f_auto,q_auto:best/newscms/2021_25/3411506/200911-wildfire-california-worst-widlfire-year-se-236p.jpg",
+      src: "https://drive.google.com/uc?export=view&id=1Yl1ggxChNBXkL7diCY0kJhyohLkxGaHX",
       alt: "Image of California wildfire",
     }}
   >
@@ -187,4 +187,33 @@ const t = useTranslations(lang);
       {t("index.hero3.title2")}
     </Fragment>
   </Hero>
+
+  <!-- Text section -->
+
+  <div class="w-full flex flex-col items-center px-10">
+    <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
+  </div>
+
+  <!-- Hero Widget ******************* -->
+
+  <Hero tagline={t("index.hero4.tagline")}>
+    <Fragment slot="title">
+      {t("index.hero4.title1")}
+      <GradientText class="italic pr-3" text={t("index.hero4.title.span1")} />
+      {t("index.hero4.title2")}
+      <GradientText text={t("index.hero4.title.span2")} />
+    </Fragment>
+  </Hero>
+
+  <div class="w-full flex flex-col items-center px-10 pb-20">
+    <iframe
+      loading="lazy"
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/bpxG9_RWR3g?si=QE8uUVI2F27pbZz8"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
 </Layout>
