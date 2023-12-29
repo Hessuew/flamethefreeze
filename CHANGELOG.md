@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.2](https://github.com/Hessuew/flamethefreeze/compare/v2.5.1...v2.5.2) (2023-12-29)
+
+
+### Bug Fixes
+
+* about hover color fix ([4ef7d4f](https://github.com/Hessuew/flamethefreeze/commit/4ef7d4fad0acc5ce4867c2ccfe3df11ec2107674))
+* about hover color fix ([#72](https://github.com/Hessuew/flamethefreeze/issues/72)) ([2e076b0](https://github.com/Hessuew/flamethefreeze/commit/2e076b00317c9f497656fa4fd0f216ffe253bcd9))
+
 ## [2.5.1](https://github.com/Hessuew/flamethefreeze/compare/v2.5.0...v2.5.1) (2023-12-29)
 
 
