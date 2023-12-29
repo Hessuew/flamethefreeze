@@ -7,8 +7,46 @@ export const defaultLang = "en";
 
 export const ui = {
   en: {
-    "about.hero.tagline": "About us",
-    "about.heto.title": "Coming soon...",
+    "about.herotext.tagline": "About us",
+    "about.herotext.title1": "Here you will ",
+    "about.herotext.title2": " find cake🍰 and coffee☕, pursuits for fame⭐, or petitions for money💸.",
+    "about.herotext.subtitle.span": "not!",
+    "about.herotext.title.span": "not!",
+    "about.herotext.subtitle1":
+      "We will offer you the pure word of God without any respect for persons, a word that will divide asunder soul and spirit and discern the thoughts and intents ",
+    "about.herotext.subtitle.span1": "of your heart. ",
+    "about.herotext.subtitle2": "A word that will sancify and mold your life to be holy as ",
+    "about.herotext.subtitle.span2": "He is holy. ",
+    "about.herotext.subtitle3": "So that in the end, by the process of the Holy Spirit and the word of God...",
+    // "about.herotext.subtitle.span3": "your heart...",
+    "about.steps.title": "...like Abraham, you have laid all these on the altar as a sacrifice...",
+    "about.steps.items1.title": "Country to live in,",
+    "about.steps.items1.description1": "(Gen 12:1, God's initial call.)",
+    "about.steps.items2.title": "Relatives and father's house",
+    "about.steps.items2.description1": "(Gen 12:1, God's initial call.)",
+    "about.steps.items3.title": "Friends, possessions and wealth,",
+    "about.steps.items3.description1":
+      "(Gen 13:9-14, Lot separated from Abram and chose the good-looking land of Sodom and Gomorrah.)",
+    "about.steps.items4.title": "Fears",
+    "about.steps.items4.description1": "(Gen 20:11-13, 17, Abraham feared and lied about Sarah.)",
+    "about.steps.items5.title": "Own plans and honor",
+    "about.steps.items5.description1": "(Gen 21:9-14, Abraham sent away Hagar and Ishmael.)",
+    "about.steps.items6.title": "Partner,",
+    "about.steps.items6.description1": "(Gen 22:1-3, Abraham left to sacrifice Isaac without telling Sarah.)",
+    "about.steps.items7.title": "Your deepest affections and desires.",
+    "about.steps.items7.description1":
+      "(Gen 22:10, 'And Abraham stretched forth his hand, and took the knife to slay his son.')",
+    "about.features2.title1": "...and now your ",
+    "about.features2.title2": ", oh, your ",
+    "about.features2.title3": ", is bumping for",
+    "about.features2.title.span": "heart",
+    "about.h1": "❤️",
+    "about.h2": "God",
+    "about.features.title": "Created by Andrew, a physician, and Juhani, a programmer, Kuopio, Finland. ",
+    "about.features.subtitle":
+      "They are involved in strengthening and edifying local churches, preaching the gospel everywhere, discipling and maturing young believers, organizing global prayer conferences, conducting inspirational and revelatory bible studies with the demonstration of the power and the gift of the Holy Spirit, through mighty miracles, signs and wonders in the name of our Lord Jesus Christ. To the body of Christ, these brothers are ambassadors of the mystery of the glory of God hidden from ages now made known to the saints by the spirit of wisdom, to prepare a glorious church for the Bridegroom's return.",
+    "about.note.text1": "Note:",
+    "about.note.text2": "More coming soon...",
     "church.herotext.tagline": "The true church",
     "church.herotext.title1": "What is",
     "church.herotext.title2": " church?",
@@ -346,6 +384,9 @@ export const ui = {
     "index.features1.items6.title": "And we will see a massive harvest of souls and a genuine revival.",
     "index.features1.items6.description":
       "It is time we see a mass salvation of souls, the restoration of backsliders, and a general revival in the body of Christ.",
+    "index.features1.items7.title": "And for you personally, it is time you entered into the first love❤️.",
+    "index.features1.items7.description":
+      "Any man can be measured by taking a spiritual thermometer and testing the temperature of the heart. Fire and hunger for God are the deepest indicators you can test a man with.",
     "index.features3-1.subtitle":
       "There is one body, and one Spirit, even as ye are called in one hope of your calling; One Lord, one faith, one baptism, One God and Father of all, who is above all, and through all, and in you all. Ephesians 4:4-6 KJV",
     "index.content1.tagline": "God's kingdom",
@@ -685,9 +726,12 @@ export const ui = {
     "witnesses.testimonials.items29.job":
       "Will you stand for Christ even if people are cruelly killed next to you? Are you willing to stand even if it costs your freedom, your dreams, your family, and even your life? This woman stood when her whole family, her friends, and her whole future were lost. She chose to confess the same testimony as Shadrach, Meshach, and Abednego, answered and said to the king, O Nebuchadnezzar, we are not careful to answer thee in this matter. If it be so, our God whom we serve is able to deliver us from the burning fiery furnace, and he will deliver us out of thine hand, O king. But if not, be it known unto thee, O king, that we will not serve thy gods, nor worship the golden image which thou hast set up. Dan 3:16-18 KJV",
     "witnesses.testimonials.items29.t1":
-      "Worry does not empty tomorrow of its sorrow, it empties today of its strength.",
+      "You can never learn that Christ is all you need, until Christ is all you have.",
     "witnesses.testimonials.items29.t2":
-      "Forgiveness is an act of the will, and the will can function regardless of the temperature of the heart.",
+      "Trying to do the Lord's work in your own strength is the most confusing, exhausting, and tedious of all work. But when you are filled with the Holy Spirit, then the ministry of Jesus just flows out of you.",
+    "witnesses.testimonials.items29.t3": "Is prayer your steering wheel or your spare tire?",
+    "witnesses.testimonials.items29.t4":
+      "Faith sees the invisible, believes the unbelievable, and receives the impossible.",
     "witnesses.testimonials.items30.name": "A. W. Tozer: 1897-1963",
     "witnesses.testimonials.items30.job":
       "He made the Word really to be alive. Not looking for influence but just the pure presence of God and to be deeper and deeper with Him.",
@@ -905,6 +949,8 @@ export const ui = {
   fi: {
     "about.hero.tagline": "Meistä",
     "about.heto.title": "Tulossa pian...",
+    "about.note.text1": "Huomio:",
+    "about.note.text2": "Lisää tulossa pian...",
     "church.herotext.tagline": "Aito seurakunta",
     "church.herotext.title1": "Mikä on",
     "church.herotext.title2": " seurakunta?",
@@ -1001,7 +1047,7 @@ export const ui = {
       "Sillä Jumalan valtakunta ei ole syömistä ja juomista vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä. Rom 14:17 FINRK",
     "church.steps.items10.description2": "Herra on Henki, ja missä Herran Henki on, siellä on vapaus. 2 Kor 3:17 FINRK",
     "church.herotext.subtitle.span": "",
-    "devotions.hero.tagline": "Päivän hartaudet",
+    "devotions.hero.tagline": "Päivän omistautuminen",
     "devotions.hero.title.title1": " ruokaa",
     "devotions.hero.title.title2": "olennoille!",
     "devotions.hero.title.span1": "Hengellistä",
@@ -1186,7 +1232,7 @@ export const ui = {
     "header.link1": "Sana",
     "header.link2": "Rukous",
     "header.link3": "Seurakunta",
-    "header.link4": "Hartaudet",
+    "header.link4": "Omistautuminen",
     "header.link5": "Todistajat",
     "header.link6": "Viisi-jakoinen",
     "index.hero1.title1": "Flame the Freeze on sivu, joka keskittyy",
@@ -1516,20 +1562,23 @@ export const ui = {
     "witnesses.testimonials.items27.t2":
       "Jokainen seurakunta, joka ei ole täydellä painollaan työssä täyttääkseen Suuren lähetyskäskyn, on menettänyt Raamatun mukaan oikeutensa edes olla olemassa.",
     "witnesses.testimonials.items27.t3":
-      "It matters not how spiritual a church may profess to be, if souls are not saved, something is radically wrong, and the professed spirituality is simply a false experience, a delusion of the devil. People who are satisfied to meet together simply to have a good time among themselves are far away from God. Real spirituality always has an outcome.",
+      "Jos sieluja ei pelasteta, ei väliä, kuinka hengellinen seurakunta väittää olevansa, vaan silloin jotain on radikaalisti vialla ja väitetty hengellisyys on vain valhe kokemusta ja Paholaisen huijausta. Ihmiset, jotka ovat tyytyväisiä tavatakseen vain viettääkseen mukavaa aikaa keskenään, ovat kaukana Jumalasta. Oikealla hengellisyydellä on aina oikeaa tulosta.",
     "witnesses.testimonials.items27.t4":
-      "Oh, how few find time for prayer! There is time for everything else, time to sleep and time to eat, time to read the newspaper and the novel, time to visit friends, time for everything else under the sun, but-no time for prayer, the most important of all things, the one great essential!",
-    "witnesses.testimonials.items28.job": "Tulossa pian...",
+      "Oi, kuinka harva löytää aikaa rukoilla! On aikaa kaikkeen muuhun, aika nukkua, aika syödä, aika lukea sanomalehti ja novellia, aika vierailla ystävien luona, aika tehdä kaikkea muuta auringon alla, mutta ei aikaa rukoilla. Ei aikaa juuri sille kaikkein tärkeimmälle, jolla on oikeasti merkitystä!",
+    "witnesses.testimonials.items28.job":
+      "Seisotko Kristuksen puolella, vaikka ihmisiä tapettaisiin julmasti sinun vierelläsi? Seisotko, jos se maksaa sinulle vapautesi, unelmasi, perheesi, ja jopa elämäsi? Tämä nainen seisoi, vaikka hänen koko perheensä, ystävänsä ja tulevaisuutensa oli menetetty. Hän päätti pysyä samassa todistuksessa, kuin Sadrak, Meesak ja Abed-Nego vastasivat kuninkaalle: ”Nebukadnessar! Tähän meidän ei tarvitse vastata sinulle sanaakaan. 17 Jos käy niin kuin olet sanonut, voi meidän Jumalamme, jota me palvelemme, kyllä pelastaa meidät tulisesta pätsistä, ja hän pelastaa myös sinun käsistäsi, kuningas. 18Ja vaikka ei pelastaisikaan, niin tiedä se, kuningas, että me emme palvele sinun jumaliasi emmekä kumarra kultaista kuvapatsasta, jonka olet pystyttänyt. Dan 3:16-18 FINRK",
     "witnesses.testimonials.items28.t1":
       "Herää! Sinä, joka nukut, ja nouse kuolleista! Herra elää yhä tänä päivänä. Hänen voimansa ei ehtynyt. Hänen Sanansa ei ole ikinä muuttunut. Ne teot, joita Hän teki Raamatun aikana, Hän elää tehdäkseen tänään. Ei ole kuormaa, jota Hän ei jaksa kantaa, ei kahletta, jota Hän ei voi murtaa.",
     "witnesses.testimonials.items28.t2":
       "Me jokainen teemme Jeesukselle kruunun jokapäiväisestä elämästämme. Joka rakkaudestamme Häneen syntyvän kultaisen kruunun, upotettuina uhrautumisen ja ihailun jalokivilla. Tai julmien epäuskon, itsekkyyden ja synnin piikkien täyttämän orjantappurakruunun.",
     "witnesses.testimonials.items28.t3":
       "Mikä on tehtäväni? Saada evankeliumi kaikkialle maailmaan mahdollisimman nopeasti jokaiselle miehelle, naiselle, pojalle ja tytölle.",
-    "witnesses.testimonials.items29.job": "Tulossa pian...",
+    "witnesses.testimonials.items29.job": "",
     "witnesses.testimonials.items29.t1": "Huoli ei tyhjennä huomistasi murheista. Se tyhjentää tämän päiväsi voimasta.",
     "witnesses.testimonials.items29.t2":
       "Anteeksiantaminen on päätös. Tahtosi toimii on sitten sydämesi tunnetila mikä tahansa.",
+    "witnesses.testimonials.items29.t3": "",
+    "witnesses.testimonials.items29.t4": "",
     "witnesses.testimonials.items30.job": "Tulossa pian...",
     "witnesses.testimonials.items30.t1": "Maailma täynä pelkoa tarvitsee pelotonta seurakuntaa",
     "witnesses.testimonials.items30.t2":
