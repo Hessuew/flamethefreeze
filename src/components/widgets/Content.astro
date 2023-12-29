@@ -42,7 +42,7 @@ const {
     subtitle={subtitle}
     tagline={tagline}
     classes={{
-      container: "max-w-xl sm:mx-auto lg:max-w-2xl",
+      container: twMerge("max-w-xl sm:mx-auto lg:max-w-2xl", classes.headline),
       title: twMerge(
         "text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading",
         whiteText && "text-white"

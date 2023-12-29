@@ -1,10 +1,11 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
+import Content from "~/components/widgets/Content.astro";
 import HeroText from "~/components/widgets/HeroText.astro";
 import Steps from "~/components/widgets/Steps.astro";
 import Features from "~/components/widgets/Features.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import GradientText from "~/components/ui/GradientText.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 
 const metadata = {
   title: "About us",
@@ -125,12 +126,34 @@ const t = useTranslations(lang);
     <h1 class="font-bold text-9xl">{t("about.h1")}</h1>
     <div class="h-20"></div>
     <GradientText class="font-bold text-9xl flex" text={t("about.h2")} />
-    <div class="h-40 pb-40 border-b border-neutral-400 w-full"></div>
+    <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
   </div>
 
-  <!-- Features Widget *************** -->
+  <!-- Content Widget **************** -->
 
-  <Features title={t("about.features.title")} subtitle={t("about.features.subtitle")} />
+  <Content
+    classes={{
+      headline: "lg:max-w-4 xl",
+    }}
+    isAfterContent
+    whiteText={true}
+    image={{
+      src: "https://drive.google.com/uc?export=view&id=1wel6WDU54_pAyaqRB7YAaJZWkkou76Vs",
+      alt: "Image of Andrew and Juhani",
+    }}
+  >
+    <Fragment slot="title">
+      {t("about.content.title1")}
+      <p class="font-signature text-5xl md:text-8xl font-bold leading-tighter tracking-tighter py-4">
+        Andrew Agbaje & Juhani Juusola
+      </p>
+    </Fragment>
+    <Fragment slot="content">
+      <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
+        {t("about.content.subtitle")}
+      </h3>
+    </Fragment>
+  </Content>
 
   <!-- <section class="bg-secondary dark:bg-purple-900/40 not-prose">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
