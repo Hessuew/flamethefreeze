@@ -125,7 +125,7 @@ const t = useTranslations(lang);
   <div class="w-full flex flex-col items-center px-10">
     <h1 class="font-bold text-9xl">{t("about.h1")}</h1>
     <div class="h-20"></div>
-    <GradientText class="font-bold text-9xl flex" text={t("about.h2")} />
+    <GradientText class="font-bold text-6xl sm:text-8xl md:text-9xl flex" text={t("about.h2")} />
     <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
   </div>
 
@@ -133,7 +133,7 @@ const t = useTranslations(lang);
 
   <Content
     classes={{
-      headline: "lg:max-w-4 xl",
+      headline: "lg:max-w-4xl",
     }}
     isAfterContent
     whiteText={true}
@@ -145,7 +145,7 @@ const t = useTranslations(lang);
     <Fragment slot="title">
       {t("about.content.title1")}
       <p class="font-signature text-5xl md:text-8xl font-bold leading-tighter tracking-tighter py-4">
-        Andrew Agbaje & Juhani Juusola
+        {t("about.content.title2")}
       </p>
     </Fragment>
     <Fragment slot="content">

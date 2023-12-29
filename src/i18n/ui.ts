@@ -9,12 +9,12 @@ export const ui = {
   en: {
     "about.herotext.tagline": "About us",
     "about.herotext.title1": "Here you will ",
-    "about.herotext.title2": " find cake🍰 and coffee☕, pursuits for fame⭐, or petitions for money💸.",
+    "about.herotext.title2": " find cake🍰 and coffee☕, pursuits for fame or power⭐, or petitions for money💸",
     "about.herotext.subtitle.span": "not!",
     "about.herotext.title.span": "not!",
     "about.herotext.subtitle1":
-      "We will offer you the pure word of God without any respect for persons, a word that will divide asunder soul and spirit and discern the thoughts and intents ",
-    "about.herotext.subtitle.span1": "of your heart. ",
+      "We will offer the pure word of God without partiality, a word that will divide asunder soul and spirit and discern the thoughts and intents ",
+    "about.herotext.subtitle.span1": "of your heart (Heb 4:12). ",
     "about.herotext.subtitle2": "A word that will sancify and mold your life to be holy as ",
     "about.herotext.subtitle.span2": "He is holy. ",
     "about.herotext.subtitle3": "So that in the end, by the process of the Holy Spirit and the word of God...",
@@ -37,14 +37,15 @@ export const ui = {
       "(Gen 22:10, 'And Abraham stretched forth his hand, and took the knife to slay his son.')",
     "about.features2.title1": "...and now your ",
     "about.features2.title2": ", oh, your ",
-    "about.features2.title3": ", is bumping for",
+    "about.features2.title3": ", is pumping for",
     "about.features2.title.span": "heart",
     "about.h1": "❤️",
     "about.h2": "God",
     "about.content.title1": "Created by ",
     "about.content.title2": "Andrew Agbaje & Juhani Juusola",
     "about.content.subtitle":
-      "Andrew, a physician, and Juhani, a programmer, are based in Kuopio, Finland. They are involved in strengthening and edifying local churches, preaching the gospel everywhere, discipling and maturing young believers, organizing global prayer conferences, conducting inspirational and revelatory bible studies with the demonstration of the power and the gift of the Holy Spirit, through mighty miracles, signs and wonders in the name of our Lord Jesus Christ. To the body of Christ, these brothers are ambassadors of the mystery of the glory of God hidden from ages now made known to the saints by the spirit of wisdom, to prepare a glorious church for the Bridegroom's return.",
+      // "Andrew, a physician, and Juhani, a programmer, are based in Kuopio, Finland. They are involved in strengthening and edifying local churches, preaching the gospel everywhere, discipling and maturing young believers, organizing global prayer conferences, conducting inspirational and revelatory bible studies with the demonstration of the power and the gift of the Holy Spirit, through mighty miracles, signs and wonders in the name of our Lord Jesus Christ. To the body of Christ, these brothers are ambassadors of the mystery of the glory of God hidden from ages now made known to the saints by the spirit of wisdom, to prepare a glorious church for the Bridegroom's return.",
+      "But arise and stand upon your feet; for I have appeared to you for this purpose, that I might appoint you to serve as [My] minister and to bear witness both to what you have seen of Me and to that in which I will appear to you, choosing you out [selecting you for Myself] and delivering you from among this [Jewish] people and the Gentiles to whom I am sending you— to open their eyes that they may turn from darkness to light and from the power of Satan to God, so that they may thus receive forgiveness and release from their sins and a place and portion among those who are consecrated and purified by faith in Me. Acts 26:16-18 AMPC",
     "about.note.text1": "Note:",
     "about.note.text2": "More coming soon...",
     "church.herotext.tagline": "The true church",
@@ -381,10 +382,10 @@ export const ui = {
     "index.features1.items5.title": "Removes barriers and borders.",
     "index.features1.items5.description":
       "Genuine Christ-likeness and Christianity are not about denominational, cultural, racial, geographical, gender, age, or religious superiority.",
-    "index.features1.items6.title": "And we will see a massive harvest of souls and a genuine revival.",
+    "index.features1.items6.title": "We will see a massive harvest of souls and a genuine revival.",
     "index.features1.items6.description":
       "It is time we see a mass salvation of souls, the restoration of backsliders, and a general revival in the body of Christ.",
-    "index.features1.items7.title": "And for you personally, it is time you entered into the first love❤️.",
+    "index.features1.items7.title": "And for you personally, it is time you return back into your first love❤️.",
     "index.features1.items7.description":
       "Any man can be measured by taking a spiritual thermometer and testing the temperature of the heart. Fire and hunger for God are the deepest indicators you can test a man with.",
     "index.features3-1.subtitle":
@@ -954,28 +955,29 @@ export const ui = {
   fi: {
     "about.herotext.tagline": "Meistä",
     "about.herotext.title1": "Täällä sinä ",
-    "about.herotext.title2": " löydä kakkua🍰 ja kahvia, maineen tavoittelu⭐, tai rahan anelua💸.",
+    "about.herotext.title2": " löydä kakkua🍰 ja kahvia☕, maineen tai vallan tavoittelua⭐, tai rahan anelua💸",
     "about.herotext.subtitle.span": "et!",
     "about.herotext.title.span": "et!",
     "about.herotext.subtitle1":
-      "Täällä tarjoamme sinulle puhdasta Jumalan Sanaa katsomatta ihmiseen. Sanaa, joka jakaa kahtia sielun ja hengen ja tuomitsee sydämen ajatusket ja aikeet.",
+      "Tarjoamme puhdasta Jumalan Sanaa ominaisuuksiin katsomatta. Sanaa, joka jakaa kahtia sielun ja hengen ja tuomitsee sydämen ajatusket ja aikeet (Hep 4:12).",
     "about.herotext.subtitle.span1": " ",
-    "about.herotext.subtitle2": "Sanaa, joka pyhittää sinua ja muokkaa elämääsi, että siitä tulee pyhä, niin kuin ",
+    "about.herotext.subtitle2": "Sanaa, joka pyhittää sinua ja muokkaa elämääsi pyhäksi, niin kuin ",
     "about.herotext.subtitle.span2": "Hän on pyhä. ",
-    "about.herotext.subtitle3": "Jotta lopuksi Pyhän Hengen ja Jumalan Sanan prosessin jälkeen...",
-    "about.steps.title": "...kuten Abraham, olet asettanut kaikki nämä alttarille uhrina...",
+    "about.herotext.subtitle3": "Jotta Pyhän Hengen toiminnan ja Jumalan Sanan puhdistavan voiman kautta...",
+    "about.steps.title":
+      "...Abrahamin tavoin, mikään ei ole enää sinulle Jumalaa tärkeämpää, vaan olet asettanut uhrina alttarille...",
     "about.steps.items1.title": "Maan, jossa asua,",
     "about.steps.items1.description1": "(Gen 12:1, Jumalan alkuperäinen kutsu.)",
-    "about.steps.items2.title": "Sukulaiset ja isän talon,",
+    "about.steps.items2.title": "Sukulaiset ja lapsuuden kodin,",
     "about.steps.items2.description1": "(Gen 12:1, Jumalan alkuperäinen kutsu.)",
-    "about.steps.items3.title": "Ystävät, omaisuuden ja varat,",
+    "about.steps.items3.title": "Ystävät ja omaisuuden,",
     "about.steps.items3.description1":
       "(Gen 13:9-14, Loot erosi Abramhamista ja valitsi hyvältä näyttävän Sodomon ja Gomorron alueen.)",
     "about.steps.items4.title": "Pelot,",
     "about.steps.items4.description1": "(Gen 20:11-13, 17, Abraham pelkäsi ja valehteli Saarasta.)",
     "about.steps.items5.title": "Omat suunnitelmat ja kunnian,",
     "about.steps.items5.description1": "(Gen 21:9-14, Abraham lähetti pois Hagarin and Ishmaelin.)",
-    "about.steps.items6.title": "Kumppanin,",
+    "about.steps.items6.title": "Puolison,",
     "about.steps.items6.description1": "(Gen 22:1-3, Abraham lähti uhraaman Iisakkia kertomatta Saaralle.)",
     "about.steps.items7.title": "Syvimmät kiintymykset ja halut",
     "about.steps.items7.description1":
@@ -988,7 +990,8 @@ export const ui = {
     "about.h2": "Jumalalle",
     "about.content.title1": "Tehnyt",
     "about.content.subtitle":
-      "Andrew, lääkäri, and Juhani, ohjelmoija, asuvat Kuopiossa, Suomessa. He ovat mukana vahvistamassa ja kasvattamassa paikallista seurakuntaa julistaen evankeliumia kaikkialla, opetuslapseuttaen uusi uskovia, järjestäen globaaleja rukous konfferensseja, pitäen Pyhän Hengen innoittamia Raamatun opetuksia. Kaikki tämän Pyhän Hengen voiman ja lahojen ilmentymisen kanssa, ihmein, merkein ja tunnusteoin Herramme Jeesuksen Kristuksen nimessä. Kristusken ruumiille, nämä veljet ovat lähettiläitä Jumalan kirkkauden mysteerin avautumiseen Kristuksen ruumiille, valmistaakseen kirkastetuta seurakuntaa Sulhasen paluuta varten.",
+      // "Andrew, lääkäri, and Juhani, ohjelmoija, asuvat Kuopiossa. He ovat mukana vahvistamassa ja kasvattamassa paikallista seurakuntaa julistaen evankeliumia kaikkialla, opetuslapseuttaen uusi uskovia, järjestäen maailman laajuisia rukouskonfferensseja ja pitäen Pyhän Hengen innoittamia Raamatun opetuksia. Kaikki tämän Pyhän Hengen voiman ja lahojen ilmentymisen kanssa, ihmein, merkein ja tunnusteoin Herramme Jeesuksen Kristuksen nimessä. Kristusken ruumiille, nämä veljet ovat lähettiläitä Jumalan kirkkauden mysteerin avautumiseen Kristuksen ruumiille, valmistaakseen kirkastetuta seurakuntaa Sulhasen paluuta varten.",
+      "Nouse ja seiso jaloillasi! Minä olen ilmestynyt sinulle sitä varten, että asettaisin sinut palvelijakseni ja sen todistajaksi, mitä olet nähnyt ja mitä olet vielä näkevä, kun ilmestyn sinulle. Minä pelastan sinut oman kansasi ja pakanoiden käsistä, joiden luo minä sinut lähetän avaamaan heidän silmänsä, että he kääntyisivät pimeydestä valoon ja Saatanan vallasta Jumalan puoleen ja uskon kautta minuun saisivat synnit anteeksi ja perintöosan pyhitettyjen joukossa. Apt 26:16-18 FINRK",
     "about.note.text1": "Huomio:",
     "about.note.text2": "Lisää tulossa pian...",
     "church.herotext.tagline": "Aito seurakunta",
@@ -1047,7 +1050,7 @@ export const ui = {
     "church.steps.items5.description2":
       "Kehotan teitä, veljet, Herramme Jeesuksen Kristuksen kautta ja Hengen rakkauden kautta auttamaan minua taistelussani rukoilemalla puolestani Jumalaa. Rom 15:30 FINRK",
     "church.steps.items5.description3":
-      "Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämen pohjasta lähteviä ja Hengen ja Sanan täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat vereen syntiä vastaan, *niin* olet oikea paikka. Jos niitä ei löydy, seurakunta on menettänyt ensimmäisen rakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
+      "Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämen pohjasta lähteviä ja Hengen ja Sanan täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat henkeen ja vereen syntiä, *niin* oikeassa paikassa. Jos näin ei ole, seurakunta on menettänyt ensirakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
     "church.steps.items5.description4":
       "Vapaaksi päästyään apostolit menivät omiensa luo ja kertoivat kaiken, mitä ylipapit ja vanhimmat olivat heille sanoneet. Sen kuultuaan he kaikki yksimielisesti korottivat äänensä Jumalan puoleen ja sanoivat... Apt 4:23,24a FINRK",
     "church.steps.items5.description5":
@@ -1303,9 +1306,12 @@ export const ui = {
     "index.features1.items5.title": "Poistaa esteet ja rajat",
     "index.features1.items5.description":
       "Aidossa kristillisyydessä ja kristinuskossa ei ole kyse uskonnollisesta, kulttuurisesta, rodullisesta, maantieteellisestä, sukupuolesta, iästä tai uskonnollisesta paremmuudesta.",
-    "index.features1.items6.title": "Ja tulemme näkemään valtavan sielujen korjuun ja todellisen herätyksen",
+    "index.features1.items6.title": "Tulemme näkemään valtavan sielujen korjuun ja todellisen herätyksen",
     "index.features1.items6.description":
       "On aika nähdä sielujen pelastuvan massoittain, luopuneiden takaisin palaaminen ja täysi herätys Kristuksen ruumiissa.",
+    "index.features1.items7.title": "Ja sinun on henkilökohtaisesti aika palata ensirakkauteesi❤️.",
+    "index.features1.items7.description":
+      "Kenet tahansa voi testata ottamall hengellisen lämpömittarin ja mittaamalla heidän sydämensä lämpötilan. Tuli ja nälkä Jumalan puoleen ovat syvimpiä indikaattoreita, joilla näet kenen tahansa hengellisen tilan.",
     "index.features3-1.subtitle":
       "Yksi ruumis ja yksi Henki, niin kuin teidät on kutsuttukin yhteen ja samaan toivoon, jonka te kutsumuksessanne saitte, yksi Herra, yksi usko, yksi kaste; yksi Jumala ja kaikkien Isä, joka on yli kaikkien, kaikkien kautta ja kaikissa. Efe 4:4-6 FINRK",
     "index.content1.tagline": "Jumalan valtakunta",
@@ -1618,7 +1624,7 @@ export const ui = {
       "Me jokainen teemme Jeesukselle kruunun jokapäiväisestä elämästämme. Joka rakkaudestamme Häneen syntyvän kultaisen kruunun, upotettuina uhrautumisen ja ihailun jalokivilla. Tai julmien epäuskon, itsekkyyden ja synnin piikkien täyttämän orjantappurakruunun.",
     "witnesses.testimonials.items28.t3":
       "Mikä on tehtäväni? Saada evankeliumi kaikkialle maailmaan mahdollisimman nopeasti jokaiselle miehelle, naiselle, pojalle ja tytölle.",
-    "witnesses.testimonials.items29.job": "",
+    "witnesses.testimonials.items29.job": "Tulossa pian...",
     "witnesses.testimonials.items29.t1": "Huoli ei tyhjennä huomistasi murheista. Se tyhjentää tämän päiväsi voimasta.",
     "witnesses.testimonials.items29.t2":
       "Anteeksiantaminen on päätös. Tahtosi toimii on sitten sydämesi tunnetila mikä tahansa.",
