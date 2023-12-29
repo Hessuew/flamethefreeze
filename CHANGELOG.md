@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.1](https://github.com/Hessuew/flamethefreeze/compare/v2.5.0...v2.5.1) (2023-12-29)
+
+
+### Bug Fixes
+
+* scaling (index, about) and Finnish grammar fixes ([4de6655](https://github.com/Hessuew/flamethefreeze/commit/4de6655f8e3a6682c730cb0eec129d582c8a6246))
+* scaling (index, about) and Finnish grammar fixes ([#70](https://github.com/Hessuew/flamethefreeze/issues/70)) ([2c887b7](https://github.com/Hessuew/flamethefreeze/commit/2c887b7249119e7edf5a1d4a3ea926deac4036c0))
+
 ## [2.5.0](https://github.com/Hessuew/flamethefreeze/compare/v2.4.0...v2.5.0) (2023-12-29)
 
 
