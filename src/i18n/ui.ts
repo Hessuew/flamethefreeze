@@ -426,6 +426,8 @@ export const ui = {
     "index.hero4.title2": " and be filled with the Holy Spirit in ",
     "index.hero4.title.span1": "FLAME the FREEZE",
     "index.hero4.title.span2": "next 10 minutes?",
+    "index.hero4.subtitle":
+      "And they were all filled with the Holy Ghost, and began to speak with other tongues, as the Spirit gave them utterance. Acts 2:4 KJV",
     "prayer.herotext.tagline": "Prayer",
     "prayer.herotext.title1": "is it",
     "prayer.herotext.title2": " necessary?",
@@ -1349,7 +1351,9 @@ export const ui = {
     "index.hero4.title1": "Halutko sinä ",
     "index.hero4.title2": " ja täyttyä Pyhällä Hengellä ",
     "index.hero4.title.span1": "JÄÄN syttyvän TULEEN",
-    "index.hero4.title.span2": "seuraavan 10 mituutin aikana?",
+    "index.hero4.title.span2": "seuraavan 10 minuutin aikana?",
+    "index.hero4.subtitle":
+      "Ja he täyttyivät kaikki Pyhällä Hengellä ja alkoivat puhua muilla kielillä sen mukaan, mitä Henki antoi heille puhuttavaksi. Apt 2:4 FINRK",
     "prayer.herotext.tagline": "Rukous",
     "prayer.herotext.title1": "Onko se",
     "prayer.herotext.title2": " tarpeellista?",
@@ -1607,7 +1611,7 @@ export const ui = {
       "Tämän päivän evankeliumi sujuvasti mukauttaa itsensä ajan henkeen ja ei tee mitää vaatimusta jumalisuuden puolesta.",
     "witnesses.testimonials.items26.t3": "Seurakunta, joka ei evankelioi, muuttuu fossiiliksi.",
     "witnesses.testimonials.items27.job":
-      "Jo nuorella iällä hän harjoitteli saarnaamista puhumalla elottomille esineille. Äitiään vastustaen hän meni Helluntai tapaamiseen, sillä hän halusi enemmän Jumalaa, ja hän vietti päivän rukouksessa. Sinä yönä hän täyttyi Pyhällä Hengellä. Häntä vastustettiin niin monesti hänen elämänsä aikana. Hän ei ikinä hiljentynyt vaan taisteli — oi hän taisteli, kuin leijona jokaista vastustusta ja vainoa vastaan. Ja hän aina voitti. Oi, miksi olemme niin pelokkaita tänä päivänä? Kun joku sanoo meistä jotain valheellista tai pelottelee meitä, miksi me hiljenemme ja vetäydymme? Oi, meidän täytyy muuttua! Jeesus ei antanut ikinä vastustuksen hiljentää Häntä. Hän hiljensi vastustuksen! Sinä! Tee samoin Jeesuksen nimessä!",
+      "Monella ei ole yhtä suurta sydäntä lähetetystyölle, kuin tällä miehellä. Jos etsit esimerkkiä paimenesta, joka, vaikka työskenteleekin 'paikallisesti', on tulessa ja elää pelastaakseen niitä, jotka eivät ole kuulleet evankeliumia edes kerran, tässä se mies. Minun veljeni ja sisareni, kuole Jeesukselle tehden evankeliumin tunnetuksi, missä oletkaan, ja tee ihmisille selväksi, että Jeesus kuoli heidän puolestaan!",
     "witnesses.testimonials.items27.t1":
       "Tänä päivänä puhutaan Jeesuksen toisesta tulemisesta. Puolet maailmasta ei ole edes kuullut ensimmäisestä.",
     "witnesses.testimonials.items27.t2":
@@ -1617,19 +1621,21 @@ export const ui = {
     "witnesses.testimonials.items27.t4":
       "Oi, kuinka harva löytää aikaa rukoilla! On aikaa kaikkeen muuhun, aika nukkua, aika syödä, aika lukea sanomalehti ja novellia, aika vierailla ystävien luona, aika tehdä kaikkea muuta auringon alla, mutta ei aikaa rukoilla. Ei aikaa juuri sille kaikkein tärkeimmälle, jolla on oikeasti merkitystä!",
     "witnesses.testimonials.items28.job":
-      "Seisotko Kristuksen puolella, vaikka ihmisiä tapettaisiin julmasti sinun vierelläsi? Seisotko, jos se maksaa sinulle vapautesi, unelmasi, perheesi, ja jopa elämäsi? Tämä nainen seisoi, vaikka hänen koko perheensä, ystävänsä ja tulevaisuutensa oli menetetty. Hän päätti pysyä samassa todistuksessa, kuin Sadrak, Meesak ja Abed-Nego vastasivat kuninkaalle: ”Nebukadnessar! Tähän meidän ei tarvitse vastata sinulle sanaakaan. 17 Jos käy niin kuin olet sanonut, voi meidän Jumalamme, jota me palvelemme, kyllä pelastaa meidät tulisesta pätsistä, ja hän pelastaa myös sinun käsistäsi, kuningas. 18Ja vaikka ei pelastaisikaan, niin tiedä se, kuningas, että me emme palvele sinun jumaliasi emmekä kumarra kultaista kuvapatsasta, jonka olet pystyttänyt. Dan 3:16-18 FINRK",
+      "Jo nuorella iällä hän harjoitteli saarnaamista puhumalla elottomille esineille. Äitiään vastustaen hän meni Helluntai tapaamiseen, sillä hän halusi enemmän Jumalaa, ja hän vietti päivän rukouksessa. Sinä yönä hän täyttyi Pyhällä Hengellä. Häntä vastustettiin niin monesti hänen elämänsä aikana. Hän ei ikinä hiljentynyt vaan taisteli — oi hän taisteli, kuin leijona jokaista vastustusta ja vainoa vastaan. Ja hän aina voitti. Oi, miksi olemme niin pelokkaita tänä päivänä? Kun joku sanoo meistä jotain valheellista tai pelottelee meitä, miksi me hiljenemme ja vetäydymme? Oi, meidän täytyy muuttua! Jeesus ei antanut ikinä vastustuksen hiljentää Häntä. Hän hiljensi vastustuksen! Sinä! Tee samoin Jeesuksen nimessä!",
     "witnesses.testimonials.items28.t1":
       "Herää! Sinä, joka nukut, ja nouse kuolleista! Herra elää yhä tänä päivänä. Hänen voimansa ei ehtynyt. Hänen Sanansa ei ole ikinä muuttunut. Ne teot, joita Hän teki Raamatun aikana, Hän elää tehdäkseen tänään. Ei ole kuormaa, jota Hän ei jaksa kantaa, ei kahletta, jota Hän ei voi murtaa.",
     "witnesses.testimonials.items28.t2":
       "Me jokainen teemme Jeesukselle kruunun jokapäiväisestä elämästämme. Joka rakkaudestamme Häneen syntyvän kultaisen kruunun, upotettuina uhrautumisen ja ihailun jalokivilla. Tai julmien epäuskon, itsekkyyden ja synnin piikkien täyttämän orjantappurakruunun.",
     "witnesses.testimonials.items28.t3":
       "Mikä on tehtäväni? Saada evankeliumi kaikkialle maailmaan mahdollisimman nopeasti jokaiselle miehelle, naiselle, pojalle ja tytölle.",
-    "witnesses.testimonials.items29.job": "Tulossa pian...",
-    "witnesses.testimonials.items29.t1": "Huoli ei tyhjennä huomistasi murheista. Se tyhjentää tämän päiväsi voimasta.",
+    "witnesses.testimonials.items29.job":
+      "Aiotko seistä Kristuksen puolella, vaikka ihmisiä tapettaisiin vieressäsi julmasti? Oletko valmis seisomaan, vaikka se maksaisi vapautesi, unelmasi, perheesi ja jopa elämäsi? Tämä nainen seisoi, vaikka hän menetti koko perheensä, ystävänsä ja tulevaisuutensa. Hän päätti lausua saman todistuksen, kuin Sadrak, Meesak ja Abed-Nego vastasivat kuninkaalle: ”Nebukadnessar! Tähän meidän ei tarvitse vastata sinulle sanaakaan. 17 Jos käy niin kuin olet sanonut, voi meidän Jumalamme, jota me palvelemme, kyllä pelastaa meidät tulisesta pätsistä, ja hän pelastaa myös sinun käsistäsi, kuningas. 18Ja vaikka ei pelastaisikaan, niin tiedä se, kuningas, että me emme palvele sinun jumaliasi emmekä kumarra kultaista kuvapatsasta, jonka olet pystyttänyt. Dan 3:16-18 FINRK",
+    "witnesses.testimonials.items29.t1":
+      "Et voi ikinä oppia, että Kristus on kaikki, mitä tarvitset, ennen, kuin Hän on kaikki, mitä sinulla on.",
     "witnesses.testimonials.items29.t2":
-      "Anteeksiantaminen on päätös. Tahtosi toimii on sitten sydämesi tunnetila mikä tahansa.",
-    "witnesses.testimonials.items29.t3": "",
-    "witnesses.testimonials.items29.t4": "",
+      "Herran työn tekeminen omalla voimalla on hämmentävintä, uuvuttavinta ja tylsintä kaikista töistä. Mutta kun olet täynä Pyhää Henkeä, sitten Jeesuksen elämä ja työ sinun kauttasi virtaa vain.",
+    "witnesses.testimonials.items29.t3": "Onko rukous sinun rattisi vai vararenkaasi?",
+    "witnesses.testimonials.items29.t4": "Usko näkee näkymättömän, uskoo uskomattoman ja vastaanottaa mahdottoman.",
     "witnesses.testimonials.items30.job": "Tulossa pian...",
     "witnesses.testimonials.items30.t1": "Maailma täynä pelkoa tarvitsee pelotonta seurakuntaa",
     "witnesses.testimonials.items30.t2":
