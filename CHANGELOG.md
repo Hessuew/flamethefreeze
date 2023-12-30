@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.5.3](https://github.com/Hessuew/flamethefreeze/compare/v2.5.2...v2.5.3) (2023-12-30)
+
+
+### Bug Fixes
+
+* grammar fixes, witnesses 32/50 fi ([bfd756c](https://github.com/Hessuew/flamethefreeze/commit/bfd756c3a567fba92c4218270420ab6b26efc572))
+* grammar fixes, witnesses 32/50 fi ([#74](https://github.com/Hessuew/flamethefreeze/issues/74)) ([a3bb8b6](https://github.com/Hessuew/flamethefreeze/commit/a3bb8b6d82447b704e89a47bd3ae0121c2fbba06))
+
 ## [2.5.2](https://github.com/Hessuew/flamethefreeze/compare/v2.5.1...v2.5.2) (2023-12-29)
 
 
