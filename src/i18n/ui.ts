@@ -802,7 +802,7 @@ export const ui = {
     "witnesses.testimonials.items37.t3": "Faith is not knowing that God can. It is knowing that He will.",
     "witnesses.testimonials.items38.name": "Derek Prince: 1915-2003",
     "witnesses.testimonials.items38.job":
-      "A rock-hard philosopher was changed when he met the supernatural power of God. At first, his hand was raised in a church meeting without him doing it. In the next meeting, he knew he had to lift his hand himself. He heard two distinctive voices saying, You are going to look really silly lifting your hand up in front of these old ladies, and if this is something good, why should you not experience it? He lifted his hand up, and the testimony of his life was, as Jesus' told him, I have called you to be a teacher of the Scriptures in the truth, faith, and love that are hidden in Christ Jesus for many people. Those two voices are speaking now to you. Do you choose to lift your hand for God to offer yourself for His service now?",
+      "A rock-hard philosopher was changed when he met the supernatural power of God. At first, his hand was raised in a church meeting without him doing it. In the next meeting, he knew he had to lift his hand himself. He heard two distinctive voices saying, You are going to look really silly lifting your hand up in front of these old ladies, and, If this is something good, why should you not experience it? He lifted his hand up, and the testimony of his life was, as Jesus' told him, I have called you to be a teacher of the Scriptures in the truth, faith, and love that are hidden in Christ Jesus for many people. Those two voices are speaking now to you. Do you choose to lift your hand for God to offer yourself for His service now?",
     "witnesses.testimonials.items38.t1":
       "Consider the work of Calvary. A perfect work, perfect in every respect, perfect in every aspect",
     "witnesses.testimonials.items38.t2": "Of course, Christianity is not a set of rules.",
@@ -1637,15 +1637,17 @@ export const ui = {
     "witnesses.testimonials.items29.t3": "Onko rukous sinun rattisi vai vararenkaasi?",
     "witnesses.testimonials.items29.t4": "Usko näkee näkymättömän, uskoo uskomattoman ja vastaanottaa mahdottoman.",
     "witnesses.testimonials.items30.job": "Tulossa pian...",
-    "witnesses.testimonials.items30.t1": "Maailma täynä pelkoa tarvitsee pelotonta seurakuntaa",
+    "witnesses.testimonials.items30.t1": "Pelkoa täynä oleva maailma tarvitsee pelotonta seurakuntaa",
     "witnesses.testimonials.items30.t2":
       "Se, mitä mieleemme tulee, kun ajattelemme Jumalaa, kertoo, mitä me todella olemme.",
     "witnesses.testimonials.items30.t3": "Oikea uskonto tuo taivaan maan päälle ja tuo ikuisuuden aikaan.",
-    "witnesses.testimonials.items31.job": "Tulossa pian...",
+    "witnesses.testimonials.items31.job":
+      "Nuori nainen tunsi Jumalan kutsun Kiinaan. Ihmisten luo, joita hän ei tuntenut ja täysin vieraaseen kulttuuriin. Mutta hän tiesi, että he elivät ilman Kristusta ja ilman toivoa maailmassa. Hän palasi takaisin synnyinmaahansa myöhemmin vanhana naisena, jonka hän oli jättänyt vuosikymmeniä aikaisemmin, ja palasi pian uudelleen sinne, missä Jumalan kutsu Hänen elämälleen oli. Oletko sinä kuullut Jumalan kutsun? Oletko tutenut jumalallisten sanojen osoittavan sinua kohti ja sytyttävän sydämesi tuleen pelastaa sieluja millä hinnalla tahansa? Asetu vapaa ehtoiseksi Mestarin käyttöön ja nää sielujen astuvan ikuiseen elämään.",
     "witnesses.testimonials.items31.t1": "Oi Jumala, tässä Raamattuni, tässä rahani, tässä minä! Käytä minua Jumala.",
     "witnesses.testimonials.items31.t2":
       "Jos Jumala on kutsunut sinut Kiinaan tai minne tahansa muualle ja olet sydämessäsi varma asiasta, älä annan minkään estää sinua. Muista, että Jumalan kutsu sinulle on saman vahvuinen, kuin Hänen kutsuessaan Mooseksen tai Samuelin.",
-    "witnesses.testimonials.items32.job": "Tulossa pian...",
+    "witnesses.testimonials.items32.job":
+      "Kyse ei ole kouluksestasi, taustastasi tai edes sinusta. Anna vain materiaali Jumalalle ja Hän saa siitä jotain aikaan! Kun nuori kiinalainen tunnusti Jeesuksen Herrakseen, mahtava todistus syntyi. Hän julisti, kirjoitti, herätti sieluja, teki työtä ja hänet laitettiin vankilaan. Tämä on todistus elämästä, joka elettiin tarkoitusta varten. Jos et anna elämääsi Kristukselle ilman varauksia, elämälläsi ei ole tarkoitusta tai edes oikeutta olemassaoloon. Nyt Jumala kutsuu sinua parannuksen tekoon. Huuda armoa avuksesi ja heitä itsesi Jumalan käsiin ja näe, mitä Hän saa elämästäsi aikaan!",
     "witnesses.testimonials.items32.t1":
       "Ilman Kristusta, olen vain syntinen, mutta Kristuksessa olen pelastettu. Ilman Kristusta, olen tyhjä, mutta Kristuksessa olen täysi. Ilman Kristusta, olen heikko, mutta Kristuksessa olen vahva. Ilman Kristusta, en pysty, mutta Kristuksessa olen enemmän, kuin kykenevä. Ilman Kristusta, olen jo hävinnyt, mutta Kristuksessa olen jo voittanut. Kuinka ihmeellisen merkityksellinen on sana 'Kristuksessa'.",
     "witnesses.testimonials.items32.t2":
@@ -1656,33 +1658,38 @@ export const ui = {
     "witnesses.testimonials.items33.t2":
       "Jeesuksen Kristuksen seurakunta on rakennettu ilmestyksen kalliolle ja tuonelan portit eivät sitä voita!",
     "witnesses.testimonials.items33.t3": "Rakkaus ja ykseys Kristusken ruumiissa on avain lopun ajan sadonkorjuuseen.",
-    "witnesses.testimonials.items34.job": "Tulossa pian...",
+    "witnesses.testimonials.items34.job":
+      "Hän oli tuntenut kutsun ja vastannut, mutta meni naimisiin ja itki suoraan häiden jälkeen tietäen, ettei se ollut ollut Jumalan tahto. Hän eli jonkin aikaa surkeuden keskellä, kunnes erosi miehestään. Nyt hän oli naissaarnaaja aikana, jolloin naissaarnaajia ei laajalti hyväksytty. Ja sen lisäksi vielä eronnut. Mutta nämä eivät estäneet Jumalan kirkkautta. Tuhannet, jopa kymmenet ja sadat tuhannet parantuivat ja joukouttain ihmisiä tuli sisälle Jumalan valtakuntaan. Hengen ja voiman ilmenemistä ilman yhtään kysymysmerkkiä tai epäilyä. Onko yhteiskunta hylännyt sinut? Onko uskonnollinen yhteisö antanut sinulle huonon leiman? Onneksi olkoon! Se on juuri se hetki, jolloin Jumalan kirkkauden on aika ilmestyä elämäsi kautta.",
     "witnesses.testimonials.items34.t1": "Uskon ihmeisiin, koska uskon Jumalaan.",
     "witnesses.testimonials.items34.t2": "Salaisuus voimaani on yksinkertainen, rukoilen.",
     "witnesses.testimonials.items34.t3":
       "En omaa parantavaa voimaa, enkä ihmeiden tekijä. Olen pieni ei kukaan, kertoen kaikille, kuka voi pelastaa kaikki.",
     "witnesses.testimonials.items34.t4":
       "Minä antauduin ja annoin Hänelle täysin itseni; aivan täysin! Silloin ensimmäistä sain nähdä, mitä tarkoittaa omata todellista voimaa.",
-    "witnesses.testimonials.items35.job": "Tulossa pian...",
+    "witnesses.testimonials.items35.job":
+      "Näyttää, että tänä hetkenä ja tänä aikana, niitä, joita Jumala käytti heidän elinaikaan voimallisesti, kritisoidaan ja nimitetään harhaoppisiksi ja sekaviksi. Siitä huolimatta ehkä koko historia ennen tätä miestä ja myös aika tämän miehen jälkeen ei ole nähnyt samanveroista tiedon sanojen ilmenemistä. Jumalan kirkkaus jopa valokuvattiin leijailevan tämän miehen pään päällä. Kyse ei ole siitä, jota ihmiset suosittelevat, vaan se, jota Herra suosittelee! Hänen alamäkensä alkoi, kun hän alkoi toimia palvelutehtävässä, johon Herra ei ollut kutsunut häntä. Mutta sinä, ole uskollinen siinä palveluksessa, johon Herra on sinut kutsunut ja pidä usko loppuun asti.",
     "witnesses.testimonials.items35.t1":
       "Pyhä Henki ohjaa sinut pukeutumaan oikein, elämään oikein, puhumaan oikein, ja olemaan oikein. Tämän tapahtuu, kun Pyhä Henki saa sinut kokonaan käyttöönsä. Aamen, sen tekeminen on oikein!",
     "witnesses.testimonials.items35.t2":
       "Näytä minulle yksilö. Näytä minulle uusi Calvin, Knox, Finney, Sankey, tai kuka tahansa niistä, joka tuntee painon ihmisten sielujen puolesta, joka painaa naamansa lattiaan rukoillakseen Jumalan edessä. Lähetä meille Baptisti John Smith uudelleen, joka rukoili koko yön kansan syntien tähden, kunnes hänen silmänsä olivat aamuun mennessä turvonneet umpeen itkemisestä ja aamulla hänen vaimonsa auttoi hänet aamupalapöytään ja ruokki hänet lusikalla. Näytä meille uudelleen John Wesley, tulesta temmattu soihtu. Ja silloin minä näytän sinulle herätyksen.",
-    "witnesses.testimonials.items36.job": "Tulossa pian...",
+    "witnesses.testimonials.items36.job":
+      "Tiedätkö miltä tuntuu palvella jo Jumalaa, mutta silti janota enemmän Jumalan voimaa? Tästä syystä Allen lukitsi itsensä vaatekaappiin, kunnes kohtaisi Jumalan. Hänen loppuelämänsä on todistus siitä, mitä todella tapahtuu, kun mies kohtaa Jumalan. Sairaat paranivat, demonit ajettiin ulos, hullut tulivat järkiinsä ja köyhät kuulivat evankeliumin julistettavan heille. Jos halut olla Jumalan käytössä, sinä halut olla epätoivoinen. Epätoivoinen tavataksesi Hänet todella. Sillä se, mitä sinä olet oikeasti kokenut, sitä sinä annat muille.",
     "witnesses.testimonials.items36.t1":
       "Jos kuljet Jeesuksen kanssa täynä Henkeä sinun ei tarvitse pelätä, että menisit liian pitkälle. Kukaan uskova ei ole mennyt ikinä niin pitkälle, kuin Jumala tahtoisi hänen menevän.",
     "witnesses.testimonials.items36.t2":
       "Ennen kuin kukaan voi elää niin kuin Kristus eli, ja puhua niin kuin Hän puhui, hänen täytyy aluksi ajatella niin kuin Hän ajatteli.",
     "witnesses.testimonials.items36.t3":
       "Niin kuin Kristus oli valmis ristiinnaulittavaksi, ennen kuin Hän pystyi lähettämään tämän voiman, myös meidän tulee olla valmiita ristiinnaulittavaksi, jotta voimme olla käytössä muita varten. Voisiko tämä olla syy, miksi niin moni väittää täyttyneensä Pyhällä Hengellä, mutta Jumalan voima ei näy heidän elämässään. Eikö tämä ole selvä heikkous Helluntai piireissä, jota epäuskoiset seurakunnat ja syntiset voivat osoittaa? Ja ihan oikeutetusti!",
-    "witnesses.testimonials.items37.job": "Tulossa pian...",
+    "witnesses.testimonials.items37.job":
+      "Lue uudelleen hänen ensimmäinen sitaattinsa. Tämän miehen elämä oli todistus sairaiden parantamisesta, demonien ulos ajamisesta ja syntisten pelastamisesta. Samalla tavoin Jumalan voima sinun elämässäsi tällä hetkellä — sielujen pelastaminen, sairaiden parantaminen ja demonien ulos ajaminen — on juuri nyt se, mitä se on, koska sinä haluat sen olevan juuri niin. Sinä joko haluat olla kädenlämpöinen tai palava. Jos sinä syöt maailmaa, et voi olla, kuin kädenlämpöinen. Mutta jos sinä syöt Jumalan Sanaa, sinä ei voi olla, kuin palava! Älä syytä Jumalaa sinun laiskuudestasi, vaan tee itse jotain asialle!",
     "witnesses.testimonials.items37.t1":
       "Olet nyt sinä, koska haluat olla juuri se, mitä olet nyt! Me teemme päätökset ja päätökset tekevät meistä sen, mitä olemme!",
     "witnesses.testimonials.items37.t2":
       "Tämän pohjalta voi punnita minkä tahansa asian maailmassa: Jumala tuo elämän ja Paholainen tuhoaa.",
     "witnesses.testimonials.items37.t3":
       "Usko ei tarkoita sitä, että uskot Jumalan kykenevän siihen. Usko on se, että teidät Jumalan tekevän sen.",
-    "witnesses.testimonials.items38.job": "Tulossa pian...",
+    "witnesses.testimonials.items38.job":
+      "Kivenkova filosofi muuttui, kun Hän kohtasi Jumalan yliluonnollisen voiman. Ensin hänen kätensä nousi ilmaan kokouksessa ilman, että hän oli nostanut sitä. Seuraavassa kokouksessa hän tiesi, että hänen tuli nostaa itse kätensä. Hän kuuli kahden erillisen äänen sanovan, Tulet näyttämään todella hölmöltä, jos nostat kätesi ylös naiden vanhojen naisten edessä, ja, Jos tämä on jotain hyvää, mikset olisi osallinen sitä? Hän nosti kätensä ja hänen elämänsä tuli olemaan se, mitä Jeesus kertoi hänelle, Olet kutsunut sinut kirjoitusten opettajaksi monelle ihmiselle totuudessa, uskossa ja rakkaudessa, jotka ovat piilotettuina Kristuksessa Jeesuksessa. Nämä kaksi ääntä puhuvat nyt sinulle. Nostatko kätesi ylös nyt Jumalalle tarjotaksesi itsesi Hänen palvelukseensa?",
     "witnesses.testimonials.items38.t1":
       "Mietiskele Golgatan ristintyötä. Täydellinen työ, täydellinen joka suunnasta, täydellinen joka ulottuvuudelta.",
     "witnesses.testimonials.items38.t2": "Kristinusko ei tietenkään ole joukko sääntöjä.",
