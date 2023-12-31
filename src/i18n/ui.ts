@@ -58,7 +58,7 @@ export const ui = {
     "church.herotext.subtitle3": " exist today? Can you identify it?",
     "church.herotext.subtitle.span1": " so many",
     "church.herotext.subtitle.span2": " Jesus Christ",
-    "church.steps.tagline": "A guide",
+    "church.steps.tagline": "An eye opener",
     "church.steps.title": "The church to attend is where:",
     "church.steps.items1.title": "Jesus is glorified.",
     "church.steps.items1.description1": "But he that glorieth, let him glory in the Lord. 2 Cor 10:17 KJV",
@@ -425,7 +425,7 @@ export const ui = {
     "index.hero4.title1": "Do you want to ",
     "index.hero4.title2": " and be filled with the Holy Spirit in ",
     "index.hero4.title.span1": "FLAME the FREEZE",
-    "index.hero4.title.span2": "next 10 minutes?",
+    "index.hero4.title.span2": "the next 10 minutes?",
     "index.hero4.subtitle":
       "And they were all filled with the Holy Ghost, and began to speak with other tongues, as the Spirit gave them utterance. Acts 2:4 KJV",
     "prayer.herotext.tagline": "Prayer",
@@ -742,7 +742,7 @@ export const ui = {
       "Faith sees the invisible, believes the unbelievable, and receives the impossible.",
     "witnesses.testimonials.items30.name": "A. W. Tozer: 1897-1963",
     "witnesses.testimonials.items30.job":
-      "He made the Word really to be alive. Not looking for influence but just the pure presence of God and to be deeper and deeper with Him.",
+      "He made the Word really come alive. Not looking for influence but just the pure presence of God and to go deeper and deeper with Him. He was completely the same person in the pulpit and in person. He had a deep, intimate, and personal relationship with the Lord, which he fed every day with the Bible and seasons of personal prayer. Do you? Are you the same person when speaking to others about God and when being privately with Him? Or are you ever privately with Him? Do you spend your time soaking in the scriptures, reading for hours, and letting Him speak to you? Do you pray to God on your knees, flat on the floor, laughing, weeping, crying, whispering, and shouting? The men who have weight in their words have gotten it in a secret place; the weight is their personal fellowship with the Lord. Why are your words so light, I wonder?",
     "witnesses.testimonials.items30.t1": "A scared world needs a fearless church.",
     "witnesses.testimonials.items30.t2":
       "What comes into our minds when we think about God is the most important thing about us.",
@@ -798,7 +798,7 @@ export const ui = {
     "witnesses.testimonials.items37.t1":
       "You are what you are because that is what you really want to be! We make decisions and those decisions make us who were are!",
     "witnesses.testimonials.items37.t2":
-      "You can judge anything in the world by this. God builds up and the Devil tears down.",
+      "I asked Smith Wigglesworth, “Wigglesworth, I've seen you dozens of times. You always look the same. Why?” He said, “Sumrall, I never ask Smith Wigglesworth how he feels. I tell him.” This was Smith Wigglesworth talking to Smith Wigglesworth. It was a spirit talking to a soul. His spirit within him was talking to his mind, his emotions, and his willpower—telling his mind what to think, his emotions how to feel, and his will what to decide. His spirit was the king of his life, motivated by faith.",
     "witnesses.testimonials.items37.t3": "Faith is not knowing that God can. It is knowing that He will.",
     "witnesses.testimonials.items38.name": "Derek Prince: 1915-2003",
     "witnesses.testimonials.items38.job":
@@ -835,14 +835,14 @@ export const ui = {
     "witnesses.testimonials.items41.t3": "My home is in Heaven. I'm just traveling through this world.",
     "witnesses.testimonials.items42.name": "Jack Coe: 1918-1956",
     "witnesses.testimonials.items42.job":
-      "If the size of a tent were the measure of godliness, this man would have had it. He seated over 20,000 people after World War II, preaching the gospel with signs, miracles, and wonders, being only in his 30s. But this man died at the age of 34. Why? He was corrected by the Lord through multiple men of God, including Kenneth E. Hagin, that he walked not in love toward other ministers. Faith always works through love. If we love God with all our hearts, we love to do His will and love His children, for we are of the same family. If we don't, we have missed it and should return. Oh, wayward, return. Return to the path of life! Return to the bosom of your father.",
+      "If the size of a tent were the measure of godliness, this man would have had it. He seated over 20,000 people after World War II, preaching the gospel with signs, miracles, and wonders, being only in his 30s. But this man died at the age of 34. Why? He was corrected by the Lord through multiple of His servants, including Kenneth E. Hagin, that he walked not in love toward other ministers. Faith always works through love. If we love God with all our hearts, we love to do His will and love His children, for we are of the same family. If we don't, we have missed it and should return. Oh, wayward, return. Return to the path of life! Return to the bosom of your father.",
     "witnesses.testimonials.items42.t1":
       "If you have worry, you don't have faith, and if you have faith, you don't have worry.",
     "witnesses.testimonials.items42.t2": "Fear cannot stay in the same house as Jesus Christ.",
     "witnesses.testimonials.items42.t3": "When Jesus comes in the scene, anything can happen, and usually does.",
     "witnesses.testimonials.items43.name": "Charles and Frances Hunter: 1920-2009, 1917-2008",
     "witnesses.testimonials.items43.job":
-      "The couple was on a plane with their crew, doing God's work. After a long flight, they told their people to get up and pray for the power of God to fix their backs from all problems. They did, and He did. Then a flight attendant came and told Francis that she could pray for her back after the flight. She said, Yes, now. She prayed, and her shorter hand grew in that instant. She screamed. Then Frances asked if she was saved and filled with the Holy Spirit. She said I'm a child of God, but would you like to pray for me after the flight? Frances said, Yes, now. So in a minute, the young woman started to speak fluently in tongues. This was a practical couple preaching the gospel and manifesting the power of God wherever they went, from toilet to airplane.",
+      "The couple was on a plane with their crew, doing God's work. After a long flight, they told their people to get up and pray for the power of God to fix their backs from all problems. They did, and He did. Then a flight attendant came and told Frances that she could pray for her back after the flight. She said, Yes, now. She prayed, and her shorter hand grew in that instant to be as long as the other. She screamed. Then Frances asked if she was saved and filled with the Holy Spirit. She said I'm a child of God, but would you like to pray for me after the flight? Frances said, Yes, now. So in a minute, the young woman started to speak fluently in tongues. This was a practical couple preaching the gospel and manifesting the power of God wherever they went, from public toilets to airplane.",
     "witnesses.testimonials.items43.t1":
       "God wants us to be walking in the beauty of His holiness so all that people will be able to see is His glory, and nothing of our earthly selves. He is calling on the body of Christ to be so totally committed to Him that nothing else matters in our lives and that we will be so 'in Him' that the world will see Jesus in us.",
     "witnesses.testimonials.items43.t2":
@@ -884,7 +884,8 @@ export const ui = {
     "witnesses.testimonials.items48.t3":
       "Don't be satisfied with living below the full potential of prayer power Christ intended for His church",
     "witnesses.testimonials.items49a.name": "David Yonggi Cho: 1936-2021",
-    "witnesses.testimonials.items49a.job": "",
+    "witnesses.testimonials.items49a.job":
+      "He was pastoring the world's biggest church, yet he had a great quantity of free time to spend with God in prayer. Why? He prioritized correctly. Other people took care of administrative tasks, and he fed the lambs with the fresh bread of life straight from the oven of heaven, brought from there by the bread shovel of prayer. He spent 2 hours in prayer before speaking in Korea and 3-5 hours before speaking in Europe. Why? It was not the message in itself; the heavens needed to be open for the power of God to change the listeners in that instant. We need to repent and turn back to the power source, which is prayer. Let us revive the prayer life of the church, and we will see the mighty outpouring of the Spirit again. The problem is not more wickedness, more sicknesses and diseases, or more wordliness. The problem is the lack of prayer. So the solution is simple: more prayer.",
     "witnesses.testimonials.items49a.t1": "Nothing you can do will benefit you more than prayer.",
     "witnesses.testimonials.items49a.t2":
       "You could remove the powerful preaching from our church and it would still continue. You could remove the administration of pastoral care through the cell group system and the church would still continue. But if you remove the prayer life of our church it would collapse.",
@@ -1006,7 +1007,7 @@ export const ui = {
     "church.herotext.subtitle3": " seurakuntaa olemassa tänään? Voitko tunnistaa sen?",
     "church.herotext.subtitle.span1": " niin monia",
     "church.herotext.subtitle.span2": " Jeesuksen Kristuksen",
-    "church.steps.tagline": "Ohje",
+    "church.steps.tagline": "Silmienavaaja",
     "church.steps.title": "Seurakunta, johon osallistua, on missä:",
     "church.steps.items1.title": "Jeesus on kirkastettu",
     "church.steps.items1.description1": "Mutta joka kerskaa, hänen kerskauksenaan olkoon Herra. 2 Kor 10:17 FINRK",
@@ -1636,7 +1637,8 @@ export const ui = {
       "Herran työn tekeminen omalla voimalla on hämmentävintä, uuvuttavinta ja tylsintä kaikista töistä. Mutta kun olet täynä Pyhää Henkeä, sitten Jeesuksen elämä ja työ sinun kauttasi virtaa vain.",
     "witnesses.testimonials.items29.t3": "Onko rukous sinun rattisi vai vararenkaasi?",
     "witnesses.testimonials.items29.t4": "Usko näkee näkymättömän, uskoo uskomattoman ja vastaanottaa mahdottoman.",
-    "witnesses.testimonials.items30.job": "Tulossa pian...",
+    "witnesses.testimonials.items30.job":
+      "Hän sai Sanan todella heräämään eloon. Hän ei etsinyt vaikutusvaltaa, vaan puhdasta Jumalan läsnäoloa ja halusi päästä syvemmälle ja syvemmälle Hänen kanssaan. Hän oli täysän sama saarnapöntössä ja yksityisesti. Hänellä oli syvä, intiimi ja henkilökohtainen Herran kanssa, jota hän ruokki päivittäin lukemalla Raamattua ja viettämällä yksityisiä rukoushetkiä. Entä sinä? Oletko sama henkilö, kun puhut toisille Jumalasta ja kun olet yksin Hänen kanssaan? Tai oletko ikinä yksin Hänen kanssaan? Vietätkö aikaasi upoten Raamatatun kirjoituksiin, lukein tuntikausia ja antaen Hänen puhua sinulle? Rukoiletko Jumalaa polvillasi, kasvoillasi maaten, nauraen, nyyhkyttäen, itkien, kuiskaten ja huutaen? Miehet, joiden sanoissa on painoa, ovat saaneet sen salaisessa paikassa; tuo paino on heidän henkilökohtainen suhteensa Herran kanssa. Miksiköhän sinun sanasi ovat niin kevyitä, ihmettelempä vain?",
     "witnesses.testimonials.items30.t1": "Pelkoa täynä oleva maailma tarvitsee pelotonta seurakuntaa",
     "witnesses.testimonials.items30.t2":
       "Se, mitä mieleemme tulee, kun ajattelemme Jumalaa, kertoo, mitä me todella olemme.",
@@ -1685,7 +1687,7 @@ export const ui = {
     "witnesses.testimonials.items37.t1":
       "Olet nyt sinä, koska haluat olla juuri se, mitä olet nyt! Me teemme päätökset ja päätökset tekevät meistä sen, mitä olemme!",
     "witnesses.testimonials.items37.t2":
-      "Tämän pohjalta voi punnita minkä tahansa asian maailmassa: Jumala tuo elämän ja Paholainen tuhoaa.",
+      "Kysyin Smith Wigglesworthilta, Wigglesworth olen tavannut sinut kymmeniä kertoja, sinä näytät aina samalta, miksi? Hän sanoi, Sumrall, en ikinä kysy Wigglesworthilta, kuinka hän voi, minä kerron hänelle. Tässä Smith Wigglesworth puhui Smit Wigglesworthille. Hänen henkensä puhui hänen sielulleen. Hänen henkensä hänen sisällään puhui hänen mielelleen, tunteilleen ja tahdonvoimalleen — kertoen mielelleen, mitä ajatella, tunteilleen, mitä tuntea ja tahdolleen, mitä päättää. Hänen henkensä oli hänen elämänsä hallitseva tekijä ja sitä ohjasi hänen uskonsa.",
     "witnesses.testimonials.items37.t3":
       "Usko ei tarkoita sitä, että uskot Jumalan kykenevän siihen. Usko on se, että teidät Jumalan tekevän sen.",
     "witnesses.testimonials.items38.job":
@@ -1695,54 +1697,63 @@ export const ui = {
     "witnesses.testimonials.items38.t2": "Kristinusko ei tietenkään ole joukko sääntöjä.",
     "witnesses.testimonials.items38.t3":
       "Jumala välittää enemmmän luonteestamme, kuin saavutuksistamme. Saavutuksilla on merkitystä vain ajassa. Mutta luonne on ikuinen. Se määrittää, mitä tulemme olemaan koko ikuisuuden läpi.",
-    "witnesses.testimonials.items39.job": "Tulossa pian...",
+    "witnesses.testimonials.items39.job":
+      "Mies on vain sanojensa veroinen. Herramme Jeesus vieraili tämän miehen luona seitsemän kertaa ja tämä mies opetti Kristuksen ruumista uskosta, parantumisesta ja uskovan auktoriteetista. Ja se näkyi! Hän ei ollut sairas 60 vuoteen! Tuo pystyi olemaan vain yliluonnollista terveyttä. Sinun sanasi joko päihittävät sinut tai tuovat sinulle voiton. Puhu aina uskon sanoja. Puhu aina armolla höystettyjä sanoja, jotka rakentavat kuulijoita. Ja tee se rakkaudessa, sillä rakkaus ei ajattele ikinä pahaa. Ja rakkaus ei ikinä epäonnistu!",
     "witnesses.testimonials.items39.t1":
       "Keskeinen totuus: Rukous toimii vain silloin, kun se perustuu Jumalan Sanan lupauksiin.",
     "witnesses.testimonials.items39.t2":
       "Usko Jumalan sana sydämessäsi ja tunnusta se suullasi. Tämä on uskon toiminnan periaate. Ja sinä tulet kokemaan sen, mitä sanot.",
     "witnesses.testimonials.items39.t3":
       "Jos kuuntelemasi ei tuo uskoa sinuun ja rakenna uskoa hengessäsi, kuulemasi ei joko ole Jumalan sanaa ja tai sitten sinä et vain kuule sitä.",
-    "witnesses.testimonials.items40.job": "Tulossa pian...",
+    "witnesses.testimonials.items40.job":
+      "Mies, joka käytti uskoa, kuin työkalua. Usko ei ole jotain mystistä pään tietoa vaan selkeä fakta, jossa laitat koko painosi Jumalan varaan. Näin oli tämän miehen elämässä. Yhdestä täydestä antautumisesta toiseen. Sairaiden parantamisesta pahojen henkien ulosajamiseen ja siitä evankeliumin julistamiseen, vetäen sieluja helvetistä ja työntäen niitä taivaaseen. Hänen on laskettu laskeneen kätensä noin kahden miljoonan ihmisen päälle. Kaksi miljoonaa! Kuinka monta kertaa sinä olet julistantu evankeliumia? Veli, sisko, on aika kasvataa rakkauden työtämme meidän Herrallemme!",
     "witnesses.testimonials.items40.t1": "Jumala on aina hyvä ja Paholainen on aina paha.",
     "witnesses.testimonials.items40.t2":
       "Sinun ei tarvitse yrittää saada uskoa. Jumalan lapsena sinulla jo on sitä. Toimi sen mukaan ja vapauta se. Sillä hetkellä ihme parantumisesi alkaa!",
     "witnesses.testimonials.items40.t3":
       "Uskosi alkaa liikkua ja toimia, kun Jumalan yliluonnollinen voima tyhjentää sinut epäilystä ja täyttää sinut varmuudella. Tulet tilaan, jossa olet varma, että olet varma, että olet varma. Siinä silmänräpäyksessä et voi epäillä.",
-    "witnesses.testimonials.items41.job": "Tulossa pian...",
+    "witnesses.testimonials.items41.job":
+      "Kun evankeliumi on todella sydämessäsi, sinä päästät sen ulos sieltä kaikille. Tämä mies julisti evankeliumia täysille stadioneille uudelleen ja uudelleen. Hän matkusti ympäri maapalloa, puhui presidenteille, ja julisti vesittämätöntä evankeliumia riippumatta kuulijan statuksesta. Tätä varten me elämme. Kertoaksemme, että Herramme Jeesus kuoli pelastaakseen ihmiset heidän synneistään. Et voi julistaa evankeliumi, jos elät vielä itse synnissä! Irrota itsesi synnistä, tee nyt parannus ja sitten(!) voit julistaa pelastusta, koska olet itse pelastunut, et synnissä, vaan synnistä!",
     "witnesses.testimonials.items41.t1":
       "Kristitty ei ole vain se, jonka elämä muuttui parannuksen hetkellä. Se on joka päivä jatkuva ja etenevä prosessi, jossa kasvat ja kasvat enemmän Kristuksen kaltaisuuteen.",
     "witnesses.testimonials.items41.t2":
       "Suurin perintö lapsilleen ei ole raha tai tavarat, vaan jumalallisen luonteen kasvattaminen heissä ja usko.",
     "witnesses.testimonials.items41.t3": "Taivas on kotini. Minä vain kuljen tämän maailman läpi.",
-    "witnesses.testimonials.items42.job": "Tulossa pian...",
+    "witnesses.testimonials.items42.job":
+      "Jos teltan koko olisi jumalisuuden mitta, tämä mies olisi voittanut. Hänen telttaansa mahtui istumaan yli 20,000 ihmistä Toisen Maailmansodan jälkeen ja hän julisti evankeliumia ihmeet, merkit ja tunnusteot seuraten hänen ollessaan vasta kolmessakymmenissään. Mutta tämä mies kuoli vain 34 vuotiaana. Miksi? Herra korjasi häntä monen palvelijansa kautta, mukaan lukien Kenneth E. Hagin, että hän ei kuljenut rakkaudessa toisia Herran palvelijoita kohtaan. Usko toimii aina rakkauden kautta. Jos rakastamme Jumalaa koko sydämellämme, me rakastamme tehdä Hänen tahtonsa ja rakastamme Hänen lapsiaan, sillä kuulumme samaan perheeseen. Jos emme, olemme missanneet Jumalan tahdon, ja meidän on palattava. Oi, sinä omantienkulkija, palaa. Palaa elämän tielle! Palaa Isäsi helmaan.",
     "witnesses.testimonials.items42.t1":
       "Jos murehdit, sinulla ei ole uskoa. Jos sinulla on uskoa, sinulla ei ole murheita.",
     "witnesses.testimonials.items42.t2": "Pelkä ei voi jäädä samaan taloon Jeesuksen kanssa.",
     "witnesses.testimonials.items42.t3":
       "Jeesuksen tullessa paikalle, mitä tahansa voi tapahtua, ja juuri niin tapahtuukin.",
-    "witnesses.testimonials.items43.job": "Tulossa pian...",
+    "witnesses.testimonials.items43.job":
+      "Tämä pariskunta oli lentokonematkalla väkensä kanssa tehden Herran työtä. Pitkän ajan jälkeen, he käskivät heitä nousemaan ylös ja rukolivat Jumalan voimaa oikaisemaan kaikki selät kuntoon. He tekivät niin ja Hän teki niin. Sitten lentoemäntä tuli ja kysyi Francesilta, että voisiko tämä rukoilla hänen selkänsä puolesta lennon jälkeen. Hän sanoi, kyllä, nyt. Hän rukoili ja naisen lyhyempi käsi kasvoi siinä silmän räpäyksessä yhtä pitkäksi kuin toinen. Nainen kiljahti. Sitten Frances kysyi, että oliko nainen pelastunut ja täyttynyt Pyhällä Hengellä. Nainen sanoi olevansa Jumalan lapsi, mutta voisitko rukoilla puolestani lennon jälkeen. Frances sanoi, kyllä, nyt. Joten minuutissa, nuori nainen alkoi puhua sujuvasti vierailla kielillä. Tämä käytännöllinen pari julisti evankeliumia ja näytti Jumalan voimaa minne ikinä menivät, julkisista vessoista aina lentokoneeseen.",
     "witnesses.testimonials.items43.t1":
       "Jumala tahtoo sinun kulkevan Hänen pyhyytensä kauneudessa, niin että kaikki, mitä ihmiset näkevät on Hänen kirkkautensa, ei mitään meistä. Hän kutsuu Kristuksen ruumista olemaan niin totaalisen omistautunut Hänelle, että millään muulla ei ole elämissämme väliä. Ja että me olemme niin uppoutuneet Häneen, että maailma näkee meistä Jeesuksen.",
     "witnesses.testimonials.items43.t2":
       "Jeesus kosketti miestä UUDELLEEN, kun tämä sanoi näkevänsä ihmiset kuin puita. Hän näytti, ettei meidän tarvitse hävetä mennessämme, jos etsimme apua parantumiseen useammin, kuin kerran.",
-    "witnesses.testimonials.items44.job": "Tulossa pian...",
+    "witnesses.testimonials.items44.job":
+      "Jos tiedät, että Jumalan voima on sinun sisälläsi, olet rohkea Herrassa. Sinun tulee olla täyttynyt Pyhällä Hengellä, sillä tulet saamaan voiman, kun Pyhä Henki tulee päällesi. Tämä Hengen-täyteinen pari kulki ympäri maapalloa julistaen rohkeasti ihmeiden seuratessa. Ja he kertoivat jokaiselle Jumalan lapselle, että heidän myös tulisi elää ihmeiden keskellä. Koska jokainen palvelutehtävä on Jumalan, Jumala tekee ihmeet, et sinä. Niin Jumala teki myös heidän elämässään. He totaalisesti tuhosivat ja kumosivat uskoa vääriin jumaliin näyttäen ihmisten edessä, että Jeesus Kristus on Herra ja ettei ole olemessa muuta nimeä, jonka kautta meidän tulee pelastua!",
     "witnesses.testimonials.items44.t1": "Vain yksi tie: Jeesus! Vain yksi tehtävä: evankeliointi!",
     "witnesses.testimonials.items44.t2":
       "Kuinka voimme kutsua itseämme seurakunnaksi ja emme usko yliluonnolliseen parantamiseen ja ihmeisiin? En voi lukea 4 sivua mistään kohtaa Raamattua ja kohtaamatta ihmettä! Ja Raamatun Jumala on yhä sama tänään!",
     "witnesses.testimonials.items44.t3":
       "Hengen täyteisen elämän tarkoitus on näyttää elävän Jumalamme yliluonnollinen voima, jotta valtavat pelastumattomien joukot hylkäävät kuolleet jumalansa, huutavat avuksi Herran nimeä ja pelastuvat.",
-    "witnesses.testimonials.items45.job": "Tulossa pian...",
+    "witnesses.testimonials.items45.job":
+      "R. W. Schambach työskenteli nuorena miehenä A. A. Allenin kanssa. Hän koki ensikädeltä kaikki ne ihmeiden paljoudet, joita Jumala teki. Ja näin hän sitten itse jatkoi 'Elian Hengessä ja voimassa', samat ihmeet, merkit ja tunnusteot seuraten. Tiedätkö miksi? Koska tuo ihmeiden Jumala oli sama. Ja niin Hän on myös tänään! Mene ja paranna sairaat, aja pahat henget ulos ja julista evankeliumia työskennellen yhdessä Jumalan kanssa. Mutta varmista, että todella tunnet Jumalan, joka kanssa sinun tulisi työskennellä!",
     "witnesses.testimonials.items45.t1": "Et omista yhtään ongelmaa, sillä tarvitse vain uskoa Jumalaan.",
     "witnesses.testimonials.items45.t2":
       "Jumala odottaa, että uskova alkaa toimia, niin kuin hänen tulisi - olla tottelevainen Hänen äänelleen ja auttaa vapauttamaan Jumalan yliluonnollista voimaa. Kun tulemme asemaan, jossa toimimme sen mukaan, mitä Jumala sanoo ja kun Hän sanoo, ihmeistä tulee elämäntapamme.",
-    "witnesses.testimonials.items46.job": "Tulossa pian...",
+    "witnesses.testimonials.items46.job":
+      "Hänen sydämensä oli syntisten puoleen. Hän meni Ecuadorissa naimisiin Elisabethin kanssa ja pian kuherruskuukauden jälkeen hän palasi ja alkoi valmistautua tavoittaakseen Huaorani heimon. Kohdatessaan heidät Huaorani soturit tappoivat Elliotin ja koko viiden miehen ryhmän. Tämä on sotaa sielujen voittamiseksi. Saatana tekee kaikkensa pitääkseen ihmiset matkalla helvettiin. Mutta mikään, ei mikään, ei ole mahdotonta sille, joka uskoo! Meidän täytyy jatkaa sitä työtä, minkä vanhemmat sisaremme ovat aloittaneet ja jolle he ovat antoivat elämänsä. Taistelut voitetaan rukouksessa ennen fyysisiä kohtaamisia. Älkäämme edetkö, ennen kuin olemme painineet voiton rukouksessa saaden voiton hallituksilta, henkivalloilta ja alueilta ja tulemme kokemaan Hengen vuodatuksen!",
     "witnesses.testimonials.items46.t1":
       "Se, joka antaa sen, mitä ei voi pitää, saadakseen sen, mitä ei voi menettää, ei ole hullu.",
     "witnesses.testimonials.items46.t2":
       "Jumala antaa parhaansa aina niille, jotka jättävät elämänsä päätökset Hänelle.",
     "witnesses.testimonials.items46.t3":
       "Voit levätä tässä totuudessa - Hänen tehtävänsä on johtaa, käskeä, vaikuttaa, lähettää, kutsua... Sinun tehtävänäsi on totella, seurata, liikkua ja vastata.",
-    "witnesses.testimonials.items47.job": "Tulossa pian...",
+    "witnesses.testimonials.items47.job":
+      "Brutaalisen rohkeaa saarnaamista. Mutta tämä saarnoi käänsi joukoittain ihmisiä Jumalan puoleen, koska he näkivät, että tämä mies oli aito. Hän ei vesittänyt Jumalan Sanaa tai yrittänyt voittaa ihmisten ihmisten suosiota. Ja siksi ihmiset pystyivät luottamaan häneen niin kuin Danieliin, sillä hän puhui vain sen, mitä Jumala on sanonut. Puhutko sinä?",
     "witnesses.testimonials.items47.t1":
       "Jumalaa vihaa KÄDENLÄMPÖISTÄ PUOLITOTUUKSIEN EVANKELIUMIA, joka nyt leviää ympäri maapalloa. Sen mukaan 'usko vain Jeesukseen niin pelastut'. Eikä mitään enempää. Se hylkää koko Jumalan Sanan, joka puhuu parannuksesta synnistä, ristin ottamisesta ja Kristuksen kuvaksi muuttumisesta Pyhän Hengen työn kautta. Se ei mainitse yhtään mitään Helvetistä ja kuoleman jälkeisestä tuomiosta.",
     "witnesses.testimonials.items47.t2":
@@ -1754,18 +1765,21 @@ export const ui = {
       "Sano tämä totuus: Kieleni ja puheeni tuottaa minulle joko kuoleman tai elämän. Minä valitsen siis elämän!",
     "witnesses.testimonials.items48.t3":
       "Sinun ei tule olla tyytynyt elämään yhtään alemmassa rukouksen mahdollisuuksissa ja voimassa, kuin Jeesus tarkoitti ja mahdollisti seurakunnalleen.",
-    "witnesses.testimonials.items49.job": "Tulossa pian...",
+    "witnesses.testimonials.items49a.job":
+      "Hän oli maailman suurimman seurakunnan pastori ja silti hänellä paljon aikaa, jonka hän pystyi käyttämään rukouksessa Jumalalle. Miksi? Hän priorisoi oikein. Toiset huolehtivat hallinnolliset tehtävät, hän ruokki lampaat tuoreella elämän leivälle suoraan taivaan uunista, jonka hän oli ottanut sieltä rukouksen leipälapiolla. Koreassa hän vietti 2 tuntia rukouksessa, ennen kuin puhui, ja Euroopassa 3-5 tuntia. Miksi? Kyse ei ollut itsessään viestistä, vaan taivaan piti olla avoinna, jotta Jumalan voima muuttaisi kuulijat suoraan sanan tullessa. Meidän tulee tehdä parannus ja palata voiman lähteelle, joka on rukous. Herätetään henkiin seurakunnan rukouselämä ja tulemme uudelleen näkemään mahtavan Hengen vuodatuksen. Lisääntynyt pahuus, sairaudet, tai maailmallisuus eivät ole ongelma. Ongelma on rukouksen puute. JOTEN ratkaisu on myös yksinkertainen, lisää rukousta.",
+    "witnesses.testimonials.items49a.t1": "Mikään, mitä ikinä teetkään, ei hyödytä sinua enemmän, kuin rukous.",
+    "witnesses.testimonials.items49a.t2":
+      "Voit poistaa voimakkaan saarnaamisen seurakunnastamme ja sen toiminta silti jatkuisi. Voit poistaa paimenellisen kaitsemisen solu ryhmien kautta ja toiminta silti jatkuisi. Mutta jos sinä poistat seurakuntamme rukous elämän se luhistuu kasaan.",
+    "witnesses.testimonials.items49.job":
+      "Nuori mies luki Raamatusta, että Jeesus herätti kuolleita. Hän meni kysymään pastoriltaan, että voitaisiinko tänä päivänä tehdä myös samoin, ja tarkoittiko Jeesus todella, että ne, jotka uskovat, tulisivat tekemään samoja tekoja. Pastori vastasi kyllä. Sitten hän kysyi oliko tämä tehnyt niin. Pastori vastasi ei. Nuori mies jatkoi etsimään oliko kukaan kuollut, jotta Jeesus voisi herättää nämä kuolleista. Tuntien jälkeen hän löysi talon, jossa nuori tyttö oli juuri kuollut. Hän rukoili tytön puolesta ja mitään ei tapahtunut. Hän huomasi sitten, että Jeesus ajoi vanhemmat ulos ja hän teki samoin. Sitten hän rukoili ja kuollut heräsi henkiin. Tämänkaltaista elämää meidän tulisi elää. Jumalan voimaa ja ihmeitä täynä olevaa elämää! Jos et ole kokenut tätä voimaa, liity mukaan ja elämäsi tulee muuttumaan saman voiman vaikutuksesta, joka herätti Jeesuksen kuolleista!",
     "witnesses.testimonials.items49.t1":
       "Siinä vaiheessa, kun käteemme jää vain Jumala, ymmärrämme, että Jumala onkin tarpeeksi.",
     "witnesses.testimonials.items49.t2":
       "Jumalan hyväksynnän saamisessa ei ole kyse ulkoisesta elämän ja elämäntapojen muuttamisesta. Vaan kaikki, mitä Hän pyytää ja vaatii, on sydämen, ihmisen sisimmän muutos.",
     "witnesses.testimonials.items49.t3":
       "Älä kerro kuinka suuri vuoresi eli sinun ongelmasi on. Kerro ongelmallesi, kuinka SUURI sinun Jumalasi on.",
-    "witnesses.testimonials.items49a.job": "Tulossa pian...",
-    "witnesses.testimonials.items49a.t1": "Mikään, mitä ikinä teetkään, ei voi hyödyttää sinua enemmän, kuin rukous.",
-    "witnesses.testimonials.items49a.t2":
-      "Voit poistaa voimakkaan saarnaamisen seurakunnastamme ja sen toiminta silti jatkuisi. Voit poistaa paimenellisen kaitsemisen solu ryhmien kautta ja toiminta silti jatkuisi. Mutta jos sinä poistat seurakuntamme rukous elämän se luhistuu kasaan.",
-    "witnesses.testimonials.items50.job": "Tulossa pian...",
+    "witnesses.testimonials.items50.job":
+      "Kun hän sai Jumalan kutsun, hänen oma seurakuntansa ja isänsä vastusti häntä. Mutta siitä huolimatta, hän vastasi kutsuun ja matkusti julistamaan evankeliumia Afrikkaan. Pienten alkujen päivien jälkeen Jumala ohjasi häntä vuokraamaan kaupungin suurimman stadionin. Vaikka hän kutsuikin paikallisia seurakunta tapahtumaan, kukaan näistä ei osallistunut. Koko stadionilla oli vain 100 ihmistä. Mutta sitten! Oi, mutta sitten Jumalan voima alkoi liikkua. Sairaat paranivat; ihmeitä, merkkejä ja tunnustekoja! Seuraavana päivänä stadioni oli täynä ja kuolleet seurakunnat heräsivät eloon. Aiotko vastata Jumalan kutsuun vaikka sinut todennäköisesti tullaan hylkäämään paikallis seurakuntien tai jopa perheesi taholta? Se on kuitenkin ainut keino, että nämä voivat herätä eloon.",
     "witnesses.testimonials.items50.t1":
       "Mitä vähemmän Pyhää Henkeä meillä on, sitä enemmän tarvitsemme kakkua ja kahvia pitääksemme seurakunnan toiminnan pystyssä ja ihmiset tyytyväisinä.",
     "witnesses.testimonials.items50.t2":
