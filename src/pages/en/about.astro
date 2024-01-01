@@ -4,6 +4,7 @@ import Content from "~/components/widgets/Content.astro";
 import HeroText from "~/components/widgets/HeroText.astro";
 import Steps from "~/components/widgets/Steps.astro";
 import Features from "~/components/widgets/Features.astro";
+import Testimonials from "~/components/widgets/Testimonials.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 
@@ -123,7 +124,7 @@ const t = useTranslations(lang);
   <!-- Text section -->
 
   <div class="w-full flex flex-col items-center px-10">
-    <h1 class="font-bold text-9xl">{t("about.h1")}</h1>
+    <div class="heart"></div>
     <div class="h-20"></div>
     <GradientText class="font-bold text-6xl sm:text-8xl md:text-9xl flex" text={t("about.h2")} />
     <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
@@ -141,6 +142,7 @@ const t = useTranslations(lang);
       src: "https://lh3.googleusercontent.com/d/1wel6WDU54_pAyaqRB7YAaJZWkkou76Vs",
       alt: "Image of Andrew and Juhani",
     }}
+    subtitle={t("about.content.subtitle")}
   >
     <Fragment slot="title">
       {t("about.content.title1")}
@@ -150,10 +152,50 @@ const t = useTranslations(lang);
     </Fragment>
     <Fragment slot="content">
       <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
-        {t("about.content.subtitle")}
+        {t("about.content.content")}
       </h3>
     </Fragment>
   </Content>
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    columns={3}
+    testimonials={[
+      {
+        testimonials: [t("about.testimonials.items1.t1")],
+        name: t("about.testimonials.items1.name"),
+      },
+      {
+        testimonials: [t("about.testimonials.items2.t1")],
+        name: t("about.testimonials.items2.name"),
+      },
+      {
+        testimonials: [t("about.testimonials.items3.t1")],
+        name: t("about.testimonials.items3.name"),
+      },
+      {
+        testimonials: [t("about.testimonials.items4.t1")],
+        name: t("about.testimonials.items4.name"),
+      },
+      {
+        testimonials: [t("about.testimonials.items5.t1")],
+        name: t("about.testimonials.items5.name"),
+      },
+      {
+        testimonials: [t("about.testimonials.items6.t1")],
+        name: t("about.testimonials.items6.name"),
+      },
+    ]}
+  />
+
+  <!-- Features Widget *************** -->
+
+  <Features>
+    <Fragment slot="title">
+      <span class="text-muted">{t("about.features.title")}</span>
+    </Fragment>
+  </Features>
 
   <!-- <section class="bg-secondary dark:bg-purple-900/40 not-prose">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
@@ -167,3 +209,58 @@ const t = useTranslations(lang);
     </div>
   </section> -->
 </Layout>
+<style>
+  .heart {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow:
+      0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072);
+    animation: hbeat 1s linear infinite;
+  }
+
+  .heart::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .heart::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    transform: translateX(-50%);
+  }
+
+  @keyframes hbeat {
+    0% {
+      transform: rotate(45deg) scale(1);
+    }
+    20% {
+      transform: rotate(45deg) scale(1);
+    }
+    40% {
+      transform: rotate(45deg) scale(1.4);
+    }
+    60% {
+      transform: rotate(45deg) scale(1.2);
+    }
+    80% {
+      transform: rotate(45deg) scale(1.4);
+    }
+    100% {
+      transform: rotate(45deg) scale(1);
+    }
+  }
+</style>
