@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.7.2](https://github.com/Hessuew/flamethefreeze/compare/v2.7.1...v2.7.2) (2024-01-01)
+
+
+### Bug Fixes
+
+* Greta fixes ❤️ ([eb97f8d](https://github.com/Hessuew/flamethefreeze/commit/eb97f8dc1fec5e520f1f333bd68c7eba58b1d4ac))
+* Greta fixes ❤️ ([#82](https://github.com/Hessuew/flamethefreeze/issues/82)) ([6a687ea](https://github.com/Hessuew/flamethefreeze/commit/6a687ea3ca345340fe3510f93c1e890e94a2c51a))
+
 ## [2.7.1](https://github.com/Hessuew/flamethefreeze/compare/v2.7.0...v2.7.1) (2024-01-01)
 
 
