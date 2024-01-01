@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.7.1](https://github.com/Hessuew/flamethefreeze/compare/v2.7.0...v2.7.1) (2024-01-01)
+
+
+### Bug Fixes
+
+* drive image src, text fix, rem github footer link ([0d9b54f](https://github.com/Hessuew/flamethefreeze/commit/0d9b54fecbcec01172df8f5037c1fa27c2c889bc))
+* drive image src, text fix, rem github footer link ([#80](https://github.com/Hessuew/flamethefreeze/issues/80)) ([2b52cd2](https://github.com/Hessuew/flamethefreeze/commit/2b52cd2c3138438f9542fbc36e6236541145010c))
+
 ## [2.7.0](https://github.com/Hessuew/flamethefreeze/compare/v2.6.0...v2.7.0) (2023-12-31)
 
 
