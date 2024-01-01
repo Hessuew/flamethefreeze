@@ -39,15 +39,33 @@ export const ui = {
     "about.features2.title2": ", oh, your ",
     "about.features2.title3": ", is pumping for",
     "about.features2.title.span": "heart",
-    "about.h1": "❤️",
     "about.h2": "God",
     "about.content.title1": "Created by ",
     "about.content.title2": "Andrew Agbaje & Juhani Juusola",
     "about.content.subtitle":
-      // "Andrew, a physician, and Juhani, a programmer, are based in Kuopio, Finland. They are involved in strengthening and edifying local churches, preaching the gospel everywhere, discipling and maturing young believers, organizing global prayer conferences, conducting inspirational and revelatory bible studies with the demonstration of the power and the gift of the Holy Spirit, through mighty miracles, signs and wonders in the name of our Lord Jesus Christ. To the body of Christ, these brothers are ambassadors of the mystery of the glory of God hidden from ages now made known to the saints by the spirit of wisdom, to prepare a glorious church for the Bridegroom's return.",
+      "Andrew Agbaje and Juhani Juusola have received a mandate from our Lord Jesus Christ to all the world and to the Church, which is the body of Christ.",
+    "about.content.content":
+      "Andrew, a physician, and Juhani, a programmer, are based in Kuopio, Finland. They are involved in strengthening and edifying local churches, preaching the gospel everywhere, discipling and maturing young believers, organizing global prayer conferences, conducting inspirational and revelatory bible studies with the demonstration of the power and the gift of the Holy Spirit, through mighty miracles, signs and wonders in the name of our Lord Jesus Christ. To the body of Christ, these brothers are ambassadors of the mystery of the glory of God hidden from ages now made known to the saints by the spirit of wisdom, to prepare a glorious church for the Bridegroom's return.",
+    "about.testimonials.items1.name": "Mark 16:17,18 KJV",
+    "about.testimonials.items1.t1":
+      "And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; they shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover.",
+    "about.testimonials.items2.name": "Ephesians 3:2-5 KJV",
+    "about.testimonials.items2.t1":
+      "Ye have heard of the dispensation of the grace of God which is given me to you-ward: how that by revelation he made known unto me the mystery; (as I wrote afore in few words, whereby, when ye read, ye may understand my knowledge in the mystery of Christ) which in other ages was not made known unto the sons of men, as it is now revealed unto his holy apostles and prophets by the Spirit.",
+    "about.testimonials.items3.name": "Ephesians 5:27 AMPC",
+    "about.testimonials.items3.t1":
+      "That He might present the church to Himself in glorious splendor, without spot or wrinkle or any such things [that she might be holy and faultless].",
+    "about.testimonials.items4.name": "1 Corinthians 4:1 KJV",
+    "about.testimonials.items4.t1":
+      "Let a man so account of us, as of the ministers of Christ, and stewards of the mysteries of God.",
+    "about.testimonials.items5.name": "Acts 13:2 AMPC",
+    "about.testimonials.items5.t1":
+      "While they were worshiping the Lord and fasting, the Holy Spirit said, Separate now for Me Barnabas and Saul for the work to which I have called them.",
+    "about.testimonials.items6.name": "1 Corinthians 2:7 KJV",
+    "about.testimonials.items6.t1":
+      "But we speak the wisdom of God in a mystery, even the hidden wisdom, which God ordained before the world unto our glory.",
+    "about.features.title":
       "But arise and stand upon your feet; for I have appeared to you for this purpose, that I might appoint you to serve as [My] minister and to bear witness both to what you have seen of Me and to that in which I will appear to you, choosing you out [selecting you for Myself] and delivering you from among this [Jewish] people and the Gentiles to whom I am sending you— to open their eyes that they may turn from darkness to light and from the power of Satan to God, so that they may thus receive forgiveness and release from their sins and a place and portion among those who are consecrated and purified by faith in Me. Acts 26:16-18 AMPC",
-    "about.note.text1": "Note:",
-    "about.note.text2": "More coming soon...",
     "church.herotext.tagline": "The true church",
     "church.herotext.title1": "What is",
     "church.herotext.title2": " church?",
@@ -366,7 +384,7 @@ export const ui = {
     "index.note.text1": " Question:",
     "index.note.text2": " Do you really want to know God personally?",
     "index.features1.tagline": "Content",
-    "index.features1.title": "What God does through His Holy Spirit",
+    "index.features1.title": "What God does through His Holy Spirit?",
     "index.features1.subtitle":
       "For thus saith the Lord of hosts; Yet once, it is a little while, and I will shake the heavens, and the earth, and the sea, and the dry land; and I will shake all nations, and the desire of all nations shall come: and I will fill this house with glory, saith the Lord of hosts. Haggai 2:6,7 KJV",
     "index.features1.items1.title": "Wakes up the body of Christ.",
@@ -374,18 +392,18 @@ export const ui = {
       "It is time the bride of Christ woke up from slumber and spiritual death because our Lord Jesus Christ is coming for a glorious church.",
     "index.features1.items2.title": "Shakes out all the frost.",
     "index.features1.items2.description": "God is going to shake the church out of every frost and freeze.",
-    "index.features1.items3.title": "Kindles it to full flame🔥.",
+    "index.features1.items3.title": "Kindles the church to full flame🔥.",
     "index.features1.items3.description": "He wants to 'flame the freeze'.",
-    "index.features1.items4.title": "Revives the manifestations of the Spirit.",
+    "index.features1.items4.title": "Restores the manifestations of the Spirit.",
     "index.features1.items4.description":
-      "We need to see a revival of the apostolic signs and wonders in the entire body of Christ.",
+      "We will see a revival of the apostolic signs and wonders in the entire body of Christ.",
     "index.features1.items5.title": "Removes barriers and borders.",
     "index.features1.items5.description":
       "Genuine Christ-likeness and Christianity are not about denominational, cultural, racial, geographical, gender, age, or religious superiority.",
-    "index.features1.items6.title": "We will see a massive harvest of souls and a genuine revival.",
+    "index.features1.items6.title": "Orchestrates massive harvest of souls and a genuine revival.",
     "index.features1.items6.description":
       "It is time we see a mass salvation of souls, the restoration of backsliders, and a general revival in the body of Christ.",
-    "index.features1.items7.title": "And for you personally, it is time you return back into your first love❤️.",
+    "index.features1.items7.title": "And turn you back into your first love❤️.",
     "index.features1.items7.description":
       "Any man can be measured by taking a spiritual thermometer and testing the temperature of the heart. Fire and hunger for God are the deepest indicators you can test a man with.",
     "index.features3-1.subtitle":
@@ -417,7 +435,7 @@ export const ui = {
       "manifest in street corners, institutions, church denominations, villages, towns, cities, countries, and continents.",
     "index.hero2.subtitle.span": "His kingdom",
     "index.hero3.title1": "Do",
-    "index.hero3.title2": "want to join this chariot of fire that will change the globe?",
+    "index.hero3.title2": "want to join this chariot of fire of revival that will change the globe?",
     "index.hero3.title.span": " you",
     "index.hero3.subtitle":
       "And when they found them not, they drew Jason and certain brethren unto the rulers of the city, crying, These that have turned the world upside down are come hither also. Acts 17:6 KJV",
@@ -437,8 +455,8 @@ export const ui = {
       "Jesus answered and said unto them, Ye do err, not knowing the scriptures, nor the power of God. Matthew 22:29 KJV",
     "prayer.features3-1.subtitle2":
       "Haven't the Sadducees studied the scriptures all their lives? Haven't they devoted their whole lives to serving God in the temple? And to know his word, teach others, and become experts in the law? Is it possible that a person could be religious and study the Bible their whole life and still be told by Jesus, Ye do err, not knowing the scriptures nor the power of God? How can I know if my worship of God is vain? And if I'm just studying or living a doctrine, which are substantially the commandments and traditions of religious men?",
-    "prayer.features1.title": "A few rhetorical questions",
-    "prayer.features1.subtitle": "Ask yourself about the following subjects and compare your answers to the Bible.",
+    "prayer.features1.title": "A few awakening questions",
+    "prayer.features1.subtitle": "Ask yourself the following questions and compare your answers to the Bible.",
     "prayer.features1.items1.title": "The power of God",
     "prayer.features1.items1.description": "Is the power of God operating in my life?",
     "prayer.features1.items2.title": "Transformation",
@@ -450,18 +468,18 @@ export const ui = {
     "prayer.features1.items4.description": "Are the sick and diseased being healed by Jesus through me?",
     "prayer.features1.items5.title": "Evil spirits",
     "prayer.features1.items5.description":
-      "Do I cast out demons in the name of Jesus Christ, our Lord, and do I see them crying out in fear and disarray?",
+      "Do I cast out demons in the name of Jesus Christ, our Lord, and do I the spirits cry out in fear and disarray?",
     "prayer.features1.items6.title": "The gospel",
     "prayer.features1.items6.description":
-      "Do I preach the gospel to sinners and see them entering the kingdom of God, free from addictions, chains of Satan, and lifelong captivating darkness?",
+      "Do I preach the gospel to sinners and see them entering the kingdom of God, free from addictions, chains of Satan, like addictions, constant nightmares and obsessions etc.?",
     "prayer.features1.items7.title": "Sin",
     "prayer.features1.items7.description":
-      "Am I free from private sins, lust, and addictions to alcohol, smoking, movies, video games, rock, blues, jazz music, documentaries, pornography, sexual magazines, books, romantic novels, etc.?",
+      "Am I free from private sins, lust, and addictions to alcohol, smoking, movies, video games, rock, blues, jazz music, documentaries, pornography, books, romantic novels, etc.?",
     "prayer.features1.items8.title": "Impossibilities",
     "prayer.features1.items8.description":
       "Do I see impossible situations being transformed by the power of the Almighty God, like Moses was at the Red Sea?",
     "prayer.features3-2.subtitle":
-      "Have I read about supernatural events in the scriptures and concluded they are not for my generation since I have not witnessed nor experienced any of them in my country, city, or local church denomination?",
+      "Have you read about supernatural events in the scriptures and concluded they are not for my generation since I have not witnessed nor experienced any of them in my country, city, or local church denomination?",
     "prayer.features3-2.subtitle2a": "No!",
     "prayer.features3-2.subtitle2b": " That cannot be.",
     "prayer.features3-3.subtitle":
@@ -470,7 +488,7 @@ export const ui = {
       "And from the days of John the Baptist until the present time, the kingdom of heaven has endured violent assault, and violent men seize it by force [as a precious prize—a share in the heavenly kingdom is sought with most ardent zeal and intense exertion]. Matthew 11:12 AMPC",
     "prayer.callToAction.title1": "Kindle your prayer life to ",
     "prayer.callToAction.title2": "full flame",
-    "prayer.callToAction.subtitle": "Join us in prayer meetings every other Saturday, starting at 18:00 GMT+2.",
+    "prayer.callToAction.subtitle": "Join us in prayer meetings on Saturdays of even weeks, starting at 18:00 GMT+2.",
     "prayer.callToAction.subtitle2": "Zoom ID: 644 4069 4917, Passcode: 467939",
     "witnesses.temp": "",
     "witnesses.hero.title.tagline": "Witnesses",
@@ -951,7 +969,7 @@ export const ui = {
     "word.features2.title": "Our platforms",
     "word.features2.items1.title": "FLAME the FREEZE - Prayer Meeting",
     "word.features2.items1.description":
-      "Every other Saturday starts at 18:00 GMT+2. Zoom ID: 644 4069 4917, Passcode: 467939",
+      "On Saturdays of even weeks, starting at 18:00 GMT+2, Zoom ID: 644 4069 4917, Passcode: 467939",
     "word.features2.items2.title": "FLAME the FREEZE -  YouTube",
     "word.features2.items2.description": "https://www.youtube.com/@flamethefreeze2613",
   },
@@ -962,7 +980,7 @@ export const ui = {
     "about.herotext.subtitle.span": "et!",
     "about.herotext.title.span": "et!",
     "about.herotext.subtitle1":
-      "Tarjoamme puhdasta Jumalan Sanaa ominaisuuksiin katsomatta. Sanaa, joka jakaa kahtia sielun ja hengen ja tuomitsee sydämen ajatusket ja aikeet (Hep 4:12).",
+      "Tarjoamme puhdasta Jumalan Sanaa jokaiselle statukseen katsomatta. Sanaa, joka jakaa kahtia sielun ja hengen ja tuomitsee sydämen ajatukset ja aikeet (Hep 4:12).",
     "about.herotext.subtitle.span1": " ",
     "about.herotext.subtitle2": "Sanaa, joka pyhittää sinua ja muokkaa elämääsi pyhäksi, niin kuin ",
     "about.herotext.subtitle.span2": "Hän on pyhä. ",
@@ -989,14 +1007,32 @@ export const ui = {
     "about.features2.title2": ", oi, sinun ",
     "about.features2.title3": ", pumppaa",
     "about.features2.title.span": "sydämesi",
-    "about.h1": "❤️",
     "about.h2": "Jumalalle",
     "about.content.title1": "Tehnyt",
     "about.content.subtitle":
-      // "Andrew, lääkäri, and Juhani, ohjelmoija, asuvat Kuopiossa. He ovat mukana vahvistamassa ja kasvattamassa paikallista seurakuntaa julistaen evankeliumia kaikkialla, opetuslapseuttaen uusi uskovia, järjestäen maailman laajuisia rukouskonfferensseja ja pitäen Pyhän Hengen innoittamia Raamatun opetuksia. Kaikki tämän Pyhän Hengen voiman ja lahojen ilmentymisen kanssa, ihmein, merkein ja tunnusteoin Herramme Jeesuksen Kristuksen nimessä. Kristusken ruumiille, nämä veljet ovat lähettiläitä Jumalan kirkkauden mysteerin avautumiseen Kristuksen ruumiille, valmistaakseen kirkastetuta seurakuntaa Sulhasen paluuta varten.",
+      "Andrew Agbaje ja Juhani Juusola ovat saaneet tehtävän Herraltamme Jeesukselta Kristukselta kaikkialle maailmaan ja seurakuntaan, on Kristuksen ruumis.",
+    "about.content.content":
+      "Lääkäri Andrew ja ohjelmoija Juhani, asuvat Kuopiossa. He ottavat osaa paikallisen seurakunnan kasvattamiseen ja vahvistamiseen, evankeliumin julistamiseen, uusien uskovien opetuslapseuttamiseen, maailman laajuisten rukouskonfferenssien järjestämiseen ja Pyhän Hengen innoittamien Raamatun opetuksien pitämiseen. Heidän toimintansa tarkoitus on kirkastaa Jeesusta Kristusta Pyhän Hengen voiman ja lahojen ilmentymisen kautta, ihmeet, merkit ja tunnusteot seuraten julistettua sanaa. Veljet ovat lähettiläitä Kristuksen ruumiista varten avatakseen Jumalan kirkkauden mysteeriä sekä valmistaakseen kirkastetun seurakunnan Sulhasen paluuta varten.",
+    "about.testimonials.items1.name": "Markus 16:17,18 FINRK",
+    "about.testimonials.items1.t1":
+      "And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; they shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover.",
+    "about.testimonials.items2.name": "Efesolaisille 3:2-5 FINRK",
+    "about.testimonials.items2.t1":
+      "Ye have heard of the dispensation of the grace of God which is given me to you-ward: how that by revelation he made known unto me the mystery; (as I wrote afore in few words, whereby, when ye read, ye may understand my knowledge in the mystery of Christ) which in other ages was not made known unto the sons of men, as it is now revealed unto his holy apostles and prophets by the Spirit.",
+    "about.testimonials.items3.name": "Efesolaisille 5:27 FINRK",
+    "about.testimonials.items3.t1":
+      "That He might present the church to Himself in glorious splendor, without spot or wrinkle or any such things [that she might be holy and faultless].",
+    "about.testimonials.items4.name": "1 Korinttilaisille 4:1 FINRK",
+    "about.testimonials.items4.t1":
+      "Let a man so account of us, as of the ministers of Christ, and stewards of the mysteries of God.",
+    "about.testimonials.items5.name": "Apostolien teot 13:2 FINRK",
+    "about.testimonials.items5.t1":
+      "While they were worshiping the Lord and fasting, the Holy Spirit said, Separate now for Me Barnabas and Saul for the work to which I have called them.",
+    "about.testimonials.items6.name": "1 Korinttilaisille 2:7 FINRK",
+    "about.testimonials.items6.t1":
+      "But we speak the wisdom of God in a mystery, even the hidden wisdom, which God ordained before the world unto our glory.",
+    "about.features.title":
       "Nouse ja seiso jaloillasi! Minä olen ilmestynyt sinulle sitä varten, että asettaisin sinut palvelijakseni ja sen todistajaksi, mitä olet nähnyt ja mitä olet vielä näkevä, kun ilmestyn sinulle. Minä pelastan sinut oman kansasi ja pakanoiden käsistä, joiden luo minä sinut lähetän avaamaan heidän silmänsä, että he kääntyisivät pimeydestä valoon ja Saatanan vallasta Jumalan puoleen ja uskon kautta minuun saisivat synnit anteeksi ja perintöosan pyhitettyjen joukossa. Apt 26:16-18 FINRK",
-    "about.note.text1": "Huomio:",
-    "about.note.text2": "Lisää tulossa pian...",
     "church.herotext.tagline": "Aito seurakunta",
     "church.herotext.title1": "Mikä on",
     "church.herotext.title2": " seurakunta?",
@@ -1282,39 +1318,39 @@ export const ui = {
     "header.link5": "Todistajat",
     "header.link6": "APEPO",
     "index.hero1.title1": "Flame the Freeze on sivu, joka keskittyy",
-    "index.hero1.title2": " tosi elämässä",
+    "index.hero1.title2": " tosielämässä",
     "index.hero1.title.span": " Jumalan Sanan toimintaan",
     "index.hero1.subtitle.span1": "Jumalan valtakunta",
     "index.hero1.subtitle.span2": " toimii edelleen",
     "index.hero1.subtitle1":
-      "ei ole inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista. Siitä syystä Jumalan voima normaalien ihmisten keskellä ja elämässä on todistus, että Jumala",
+      "ei ole inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista. Siitä syystä Jumalan voima normaalien ihmisten keskellä ja elämässä on todistus siitä, että Jumala",
     "index.hero1.subtitle2": "Hänen kansansa keskellä 2000-luvulla.",
     "index.note.text1": " Kysymys:",
     "index.note.text2": " Haluatko todella tulla tuntemaan Jumalan henkilökohtaisesti?",
     "index.note": " Haluatko todella tulla tuntemaan Jumalan henkilökohtaisesti?",
     "index.features1.tagline": "Sisältö",
-    "index.features1.title": "Mitä Jumala tekee Pyhän Henkensä kautta",
+    "index.features1.title": "Mitä Jumala tekee Henkensä kautta?",
     "index.features1.subtitle":
       "Sillä näin sanoo Herra Sebaot: Vielä vähän aikaa ja minä järisytän taivaat ja maan, meren ja mantereen. Minä panen kaikki kansat vapisemaan. Kaikkien kansojen kalleudet tulevat tänne, ja minä täytän tämän huoneen kunnialla, sanoo Herra Sebaot. Haggai 2:6,7 FINRK",
-    "index.features1.items1.title": "Herättää Kristuksen ruumiin",
-    "index.features1.items1.description": "Kristuksen ruumiin on aika herätä unesta",
-    "index.features1.items2.title": "Ravistaa kylmentyminen pois",
+    "index.features1.items1.title": "Herättää Kristuksen ruumiin.",
+    "index.features1.items1.description": "Kristuksen ruumiin on aika herätä unesta.",
+    "index.features1.items2.title": "Ravistaa kylmentymisen pois.",
     "index.features1.items2.description":
-      "Jumala tulee ravistamaan seurakunnan pois kaikesta kylmentymisestä ja jäästä",
-    "index.features1.items3.title": "Sytyttää sen täyteen liekkiin🔥",
-    "index.features1.items3.description": "Hän tahtoo 'sytyttää jään tuleen'",
-    "index.features1.items4.title": "Herättää henkiin Hengen ilmenemiset",
+      "Jumala tulee ravistamaan seurakunnan pois kaikesta kylmentymisestä ja jäästä.",
+    "index.features1.items3.title": "Sytyttää seurakunnan täyteen liekkiin.",
+    "index.features1.items3.description": "Hän tahtoo 'sytyttää jään tuleen'.",
+    "index.features1.items4.title": "Palauttaa Hengen ilmenemiset.",
     "index.features1.items4.description":
-      "Meidän täytyy nähdä apostolisten ihmeiden ja merkkien herääminen henkiin koko Kristuksen ruumiissa",
-    "index.features1.items5.title": "Poistaa esteet ja rajat",
+      "Me tulemme näkemään apostolisten ihmeiden ja merkkien heräämisen henkiin koko Kristuksen ruumiissa.",
+    "index.features1.items5.title": "Poistaa esteet ja rajat.",
     "index.features1.items5.description":
       "Aidossa kristillisyydessä ja kristinuskossa ei ole kyse uskonnollisesta, kulttuurisesta, rodullisesta, maantieteellisestä, sukupuolesta, iästä tai uskonnollisesta paremmuudesta.",
-    "index.features1.items6.title": "Tulemme näkemään valtavan sielujen korjuun ja todellisen herätyksen",
+    "index.features1.items6.title": "Organisoi valtavan sielujen korjuun ja todellisen herätyksen.",
     "index.features1.items6.description":
       "On aika nähdä sielujen pelastuvan massoittain, luopuneiden takaisin palaaminen ja täysi herätys Kristuksen ruumiissa.",
-    "index.features1.items7.title": "Ja sinun on henkilökohtaisesti aika palata ensirakkauteesi❤️.",
+    "index.features1.items7.title": "Ja kääntää sinut takaisin ensirakkauteesi❤️.",
     "index.features1.items7.description":
-      "Kenet tahansa voi testata ottamall hengellisen lämpömittarin ja mittaamalla heidän sydämensä lämpötilan. Tuli ja nälkä Jumalan puoleen ovat syvimpiä indikaattoreita, joilla näet kenen tahansa hengellisen tilan.",
+      "Kenet tahansa voi testata ottamalla hengellisen lämpömittarin ja mittaamalla heidän sydämensä lämpötilan. Tuli ja nälkä Jumalan puoleen ovat syvimpiä indikaattoreita, joilla voit havaita kenen tahansa hengellisen tilan.",
     "index.features3-1.subtitle":
       "Yksi ruumis ja yksi Henki, niin kuin teidät on kutsuttukin yhteen ja samaan toivoon, jonka te kutsumuksessanne saitte, yksi Herra, yksi usko, yksi kaste; yksi Jumala ja kaikkien Isä, joka on yli kaikkien, kaikkien kautta ja kaikissa. Efe 4:4-6 FINRK",
     "index.content1.tagline": "Jumalan valtakunta",
@@ -1326,7 +1362,7 @@ export const ui = {
     "index.content1.items5": "Mullistuvat",
     "index.content1.items6": "Vahvistuvat",
     "index.content1.items7": "Palautuvat",
-    "index.content1.content": "Henkinen suurlähetystö ja kirurginen teatteri, jossa elämät kokonaan",
+    "index.content1.content": "Hengellinen suurlähetystö ja parantola, jossa elämät kokonaan",
     "index.content2.items1": "Sotia",
     "index.content2.items2": "Sairauksia",
     "index.content2.items3": "Nälänhätää",
@@ -1334,17 +1370,17 @@ export const ui = {
     "index.content2.items5": "Riippuvuuksia",
     "index.content2.items6": "Sortoa",
     "index.content2.items7": "Synkkää pimeyttä",
-    "index.content2.content": "Jumalan kirkkaus Kristuksen ruumiissa odottaa, että se päsee ilmestymään keskellä",
+    "index.content2.content": "Jumalan kirkkaus Kristuksen ruumiissa odottaa, että se pääsee ilmestymään keskellä",
     "index.features3-2.subtitle":
       "Nouse, ole kirkas, sillä sinun valkeutesi tulee ja Herran kunnia koittaa sinun ylläsi. Sillä katso, pimeys peittää maan ja synkeys kansat, mutta sinun ylitsesi koittaa Herran kirkkaus, sinun ylläsi näkyy hänen kunniansa. Kansat vaeltavat sinun valoasi kohti, kuninkaat kohti aamunkoittosi kirkkautta. Jes 60:1-3",
     "index.hero2.title": "Jumalan kansan tulee olla sitoutunut kohottamaan",
     "index.hero2.title.span": " Herramme Jeesuksen Kristuksen nimeä",
     "index.hero2.subtitle1": "Ja nähdä",
     "index.hero2.subtitle2":
-      "ilmestyvän katujen kulmissa, instituutioissa, kirkkokunnissa, kylissä, kaupungeissa, kaupungeissa, maissa ja mantereilla.",
+      "ilmestyvän katujen kulmissa, instituutioissa, kirkkokunnissa, kylissä, kaupungeissa, maissa ja mantereilla.",
     "index.hero2.subtitle.span": " Hänen valtakuntansa",
     "index.hero3.title1": "Haluatko",
-    "index.hero3.title2": "liittyä tähän tulivaunuun, joka muuttaa maapallon?",
+    "index.hero3.title2": "liittyä tähän herätyksen tulivaunuun, joka muuttaa maapallon?",
     "index.hero3.title.span": " sinä",
     "index.hero3.subtitle":
       "Mutta kun he eivät näitä löytäneet, he raahasivat Jaasonin ja muutamia muita veljiä kaupungin johtomiesten eteen ja huusivat: ”Nuo koko maailman villitsijät ovat tulleet tännekin. Apt 17:6 FINRK",
@@ -1363,9 +1399,9 @@ export const ui = {
     "prayer.features3-1.subtitle":
       "Jeesus vastasi heille: 'Te olette eksyksissä, koska ette tunne Kirjoituksia ettekä Jumalan voimaa.'",
     "prayer.features3-1.subtitle2":
-      "Eivätkö saddukeukset olleet tutkineet pyhiä kirjoituksia koko elämänsä ajan? Eivätkö he olleet omistaneet koko elämänsä palvellakseen Jumalaa temppelissä? Ja tietääkseen hänen sanansa ja opettaa muita ja tulla lain asiantuntijoiksi? Onko mahdollista, että ihminen voisi olla uskonnollinen ja tutkia Raamattua koko ikänsä ja silti Jeesus sanoo hänelle: Te erehdytte, ettekä tunne kirjoituksia, ettekä Jumalan voimaa? Mistä voin tietää, onko Jumalan palvontani turhaa? Ja jos minä vain opiskelen tai elän oppia, joka on uskonnollisten miesten käskyjä ja perinteitä?",
-    "prayer.features1.title": "Muutama retorinen kysymys",
-    "prayer.features1.subtitle": "Kysy itseltäsi seuraaviin aiheisiin liittyen ja peilaa vastauksiasi Raamattuun",
+      "Eivätkö saddukeukset olleet tutkineet pyhiä kirjoituksia koko elämänsä ajan? Eivätkö he olleet omistaneet koko elämänsä palvellakseen Jumalaa temppelissä? Ja tietääkseen hänen sanansa ja opettaakseen muita ja tullakseen lain asiantuntijoiksi? Onko mahdollista, että ihminen voisi olla uskonnollinen ja tutkia Raamattua koko ikänsä, ja silti Jeesus sanoo hänelle: Te erehdytte, ettekä tunne kirjoituksia, ettekä Jumalan voimaa? Mistä voin tietää, onko Jumalan palvontani turhaa? Entä jos minä vain opiskelen tai elän oppia, joka on uskonnollisten ihmisten käskyjä ja perinteitä?",
+    "prayer.features1.title": "Muutama herättelevä kysymys",
+    "prayer.features1.subtitle": "Kysy itseltäsi seuraavat kysymykset ja peilaa vastauksiasi Raamattuun.",
     "prayer.features1.items1.title": "Jumalan voima",
     "prayer.features1.items1.description": "Toimiiko Jumalan voima elämässäni?",
     "prayer.features1.items2.title": "Muutos",
@@ -1376,27 +1412,27 @@ export const ui = {
     "prayer.features1.items4.description": "Parantaako Jeesus minun kauttani sairaat ja kärsivät?",
     "prayer.features1.items5.title": "Pahat henget",
     "prayer.features1.items5.description":
-      "Ajanko minä pahoja henkiä ulos Herramme Jeesuksen Kristuksen nimessä ja näenkö heidän huutavan pelossa ja sekasorrossa?",
+      "Ajanko minä pahoja henkiä ulos Herramme Jeesuksen Kristuksen nimessä ja näenkö henkien huutavan pelossa ja sekasorrossa?",
     "prayer.features1.items6.title": "Evankeliumi",
     "prayer.features1.items6.description":
-      "Saarnaanko evankeliumia syntisille ja näenkö heidän astuvan Jumalan valtakuntaan ilman riippuvuuksia, Saatanan kahleita ja elinikäistä hallitsevaa pimeyttä?",
+      "Saarnaanko evankeliumia syntisille ja näenkö heidän astuvan Jumalan valtakuntaan ilman riippuvuuksia, Saatanan kahleita, kuten riippuvuuksia, jatkuvia painajaisia tai pakkomielteitä jne.?",
     "prayer.features1.items7.title": "Synti",
     "prayer.features1.items7.description":
-      "Olenko vapaa yksityisistä synneistä, himoista ja alkoholiriippuvuudesta, tupakoinnista, elokuvista, videopeleistä, rockista, bluesista, jazzmusiikista, dokumenteista, pornografiasta, seksilehdistä, kirjoista ja romanttisista romaaneista jne?",
+      "Olenko vapaa yksityisistä synneistä: himoista ja alkoholiriippuvuudesta, tupakoinnista, elokuvista, videopeleistä, rockista, bluesista, jazzmusiikista, dokumenteista, pornografiasta, kirjoista ja romanttisista romaaneista jne.?",
     "prayer.features1.items8.title": "Mahdottomuudet",
     "prayer.features1.items8.description":
       "Näenkö mahdottomien tilanteiden muuttuvan Kaikkivaltiaan Jumalan voimalla, kuten Mooses Punaisella merellä?",
     "prayer.features3-2.subtitle":
-      "Olenko lukenut pyhistä kirjoituksista yliluonnollisia tapahtumia ja päätellyt, että ne eivät ole minun sukupolvelleni, koska en ole nähnyt enkä kokenut mitään näistä maassani, kaupungissani tai paikallisessa kirkossani?",
+      "Oletko lukenut yliluonnollisia tapahtumia Raamatusta ja päätellyt, että ne eivät ole minun sukupolvelleni, koska en ole nähnyt enkä kokenut mitään näistä maassani, kaupungissani tai paikallisessa seurakunnassani?",
     "prayer.features3-2.subtitle2a": "Ei!",
     "prayer.features3-2.subtitle2b": " Niin ei voi olla",
     "prayer.features3-3.subtitle":
-      "Veljet, meidän on aika astua henkilökohtaiseen yliluonnolliseen kokemukseen Pyhässä Hengessä. Jumala kastaa meidät voimalla, upottaa meidät Hengen ilmentymiin, liottaa meidät taivaan tuoksulla, kun kokoonnumme armon valtaistuimelle. On aika nähdä Jumalan kirkkauden ilmestyvän seurakunnassa ja sen kautta. Tänä sodan aikana ja tällä sotaalueella aktivoimme taistelun taivaallisten armeijoiden rinnalla, koska hengellisen sodankäynnin on laillistanut Herran sotajoukon kapteeni, Jeesus Kristus, Jumalan Poika.",
+      "Veljet, meidän on aika astua henkilökohtaiseen yliluonnolliseen kokemukseen Pyhässä Hengessä. Jumala kastaa meidät voimalla, upottaa meidät Hengen ilmentymiin, liottaa meidät taivaan tuoksulla, kun kokoonnumme armon valtaistuimelle. On aika nähdä Jumalan kirkkauden ilmestyvän seurakunnassa ja sen kautta. Tänä hengellisen sodan aikana aktivoidumme taistelun taivaallisten armeijoiden rinnalla, koska hengellisen sodankäynnin on laillistanut Herran sotajoukon kapteeni, Jeesus Kristus, Jumalan Poika.",
     "prayer.features3-3.subtitle2":
       "Mutta Johannes Kastajan päivistä asti on hyökätty taivasten valtakuntaa vastaan, ja hyökkääjät tempaavat sen itselleen. Mat 12:11 FINRK",
     "prayer.callToAction.title1": "Sytytä rukouselämäsi",
     "prayer.callToAction.title2": " täyteen liekkiin",
-    "prayer.callToAction.subtitle": "Liity rukouskokoukseen joka toinen lauantai klo 18:00 GMT+2 alkaen.",
+    "prayer.callToAction.subtitle": "Liity rukouskokoukseen joka parillisen viikon lauantaina klo 18:00 GMT+2 alkaen.",
     "prayer.callToAction.subtitle2": "Zoom ID: 644 4069 4917, pääsykoodi: 467939",
     "witnesses.temp":
       "Pyhän Hengen ohjauksen ja avun kautta lyhyet elämänkerta kuvaukset ovat uudelleenmuokkaustyön alla.",
@@ -1527,7 +1563,7 @@ export const ui = {
     "witnesses.testimonials.items14b.t1":
       "Laulaminen tekee vähintään yhtä paljon työtä kuin saarnaaminen painaakseen Jumalan Sanan ihmisten mieliin.",
     "witnesses.testimonials.items14b.t2":
-      "Moodyn ensimmäiset sanat hänelle esittäytymisen jälkeen olivat, Mistä olet, oletko naimisissa, mitä työtä teet? Sankey vastasi olevansa Pensylvaniasta, olevansa naimisissa ja hänellä on kaksi lasta, ja työskentelevänsä valtiolle. Tähän Moody vastasi, Sinun täytyy jättää työsi. Sankey oli vastahakoinen jättämään työnsä, mutta Moody painosti häntä sanoen, Sinun täytyy, olen etsinyt sinua viimeiset kahdeksan vuotta.",
+      "Moodyn ensimmäiset sanat hänelle esittäytymisen jälkeen olivat, Mistä olet, oletko naimisissa, mitä työtä teet? Sankey vastasi olevansa Pensylvaniasta, olevansa naimisissa ja hänellä on kaksi lasta, ja työskentelevänsä valtiolle. Tähän Moody vastasi, Sinun täytyy jättää työsi. Sankey oli vastahakoinen jättämään työnsä, mutta Moody suostutteli häntä sanoen, Sinun täytyy, olen etsinyt sinua viimeiset kahdeksan vuotta.",
     "witnesses.testimonials.items15.job":
       "Roistojoukko tuli yhteen hänen tapaamiseensa uhkaillen häntä ja hänen työntekijöitään. Maria osoitti heitä kohti ja sanoi, Ensimmäinen teistä, joka yrittää tehdä mitään pahaa minun väelleni kuolee Jumalan lyömänä. Koko joukko tuli niin suureen synnintuntoon, että he antoivat elämänsä Jumalalle ja tästä eteenpäin suojelivat Äiti Etteriä. Kerran mies häiristi tapaamista epäsopivalla kielenkäytöllä ja jumalanpilkalla. Siinä hetkessä hänen kielensä turposi niin paljon, että se jäi hänen suunsa ulkopuolelle. Etsittyään apua lääkäreiltä mies palasi Äiti Etterin luokse parannuksessa. Etter nauroi, kosketti kieltä ja se palautui normaaliksi välittömästi.",
     "witnesses.testimonials.items15.t1":
@@ -1804,10 +1840,10 @@ export const ui = {
     "word.features3-1.subtitle":
       "Kun hallitusmiehet ja vanhimmat näkivät Pietarin ja Johanneksen rohkeuden ja havaitsivat heidän olevan koulua käymättömiä ja oppimattomia miehiä, he ihmettelivät. He tunsivat heidät niiksi, jotka olivat olleet Jeesuksen kanssa. Apt 4:13 FINRK",
     "word.features3-1.subtitle2":
-      "Kyse ei ollut heidän taidoistaan ja kyvyistään, yhteyksistään, resursseistaan, etnisestä taustasta tai rodusta. Mutta heidän sitoutumisensa pysyä ja jatkaa Jeesuksen seuraamista, joka on todellinen Viinipuu. Saatat olla kouluttamaton, huono-osainen, sinulla on vamma, vähän taitoja, kykyjä, ihmissuhteita ja yhteyksiä. Mutta mikään näistä ei ole olennainen osa Jumalan kirkkauden ja voiman ilmestymistä kauttasi. Avainkysymys on: Oletko ollut Jeesuksen kanssa?",
-    "word.steps2-1.title": "Haluamme, että kokemuksesi muuttuu.",
+      "Kyse ei ollut heidän taidoistaan ja kyvyistään, yhteyksistään, resursseistaan, etnisestä taustasta tai rodusta, vaan heidän sitoutumisestaan pysyä ja jatkaa Jeesuksen seuraamista, joka on todellinen Viinipuu. Saatat olla kouluttamaton, huono-osainen, sinulla voi olla vamma, vähän taitoja, kykyjä, ihmissuhteita ja yhteyksiä. Silti mikään näistä ei ole este Jumalan kirkkauden ja voiman ilmestymiselle kauttasi. Avainkysymys on: Oletko ollut Jeesuksen kanssa?",
+    "word.steps2-1.title": "Haluamme kokemuksesi muuttuuvan.",
     "word.steps2-1.subtitle":
-      "Että kun toimit perheessäsi, tapaat ystäviä, käyt töissä, teet päivittäisiä askareita, ihmiset puhuvat, että olet ollut Jeesuksen kanssa. Että elämäsi levittää Herramme Jeesuksen Kristuksen taivaallista tuoksua, tietoa, läsnäoloa ja persoonaa. Joten Hänen läsnäolonsa on niin ylivoimainen sinussa, että kun ihmiset tapaavat sinut, he todella kohtaavat Jeesuksen. Että Hänen elämän muuttava voimansa ja rakkautensa ohittaisi sinun heikkoutesi ja lihalliset rajoituksesi ja ihmiset näkevät Jumalan lihasi verhon läpi.",
+      "Kun toimit perheessäsi, tapaat ystäviä, käyt töissä, teet päivittäisiä askareita, niin ihmiset puhuvat, että olet ollut Jeesuksen kanssa. Että elämäsi levittää Herramme Jeesuksen Kristuksen taivaallista tuoksua, tietoa, läsnäoloa ja persoonaa. Että Hänen läsnäolonsa on niin ylivoimainen sinussa, joten kun ihmiset tapaavat sinut, he todella kohtaavat Jeesuksen. Että Hänen elämän muuttava voimansa ja rakkautensa ohittaa sinun heikkoutesi ja lihalliset rajoituksesi ja ihmiset näkevät Jumalan lihasi verhon läpi.",
     "word.steps2-1.items1.title": "Apostolit pysyivät Pyhän Hengen kanssa",
     "word.steps2-1.items1.description": "Me itse tahdomme pysyä rukouksessa ja sanan palveluksessa. Apt 6:4 FINKRK",
     "word.steps2-1.items2.title": "Tulokset saivat jotkut vihaiseksi",
@@ -1832,6 +1868,6 @@ export const ui = {
     "word.features2.title": "Meidän alustamme",
     "word.features2.items1.title": "FLAME the FREEZE - Rukouskokous",
     "word.features2.items1.description":
-      "Joka toinen lauantai alkaen klo 18:00 GMT+2. Zoom ID: 644 4069 4917, pääsykoodi: 467939",
+      "Joka parillisen viikon lauantaina alkaen klo 18:00 GMT+2. Zoom ID: 644 4069 4917, pääsykoodi: 467939",
   },
 } as const;
