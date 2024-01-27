@@ -27,10 +27,10 @@ export const headerData = {
       text: "header.link6",
       href: "fivefold",
     },
-    // {
-    //   text: "header.link7",
-    //   href: "events",
-    // },
+    {
+      text: "header.link7",
+      href: "events",
+    },
     // {
     //   text: 'Home',
     //   links: [
