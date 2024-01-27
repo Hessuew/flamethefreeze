@@ -1,5 +1,21 @@
 # Changelog
 
+## [3.0.0](https://github.com/Hessuew/flamethefreeze/compare/v2.7.2...v3.0.0) (2024-01-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* light text color in about page, initial events page ([#84](https://github.com/Hessuew/flamethefreeze/issues/84))
+
+### Bug Fixes
+
+* light text color in about page, initial events page ([f8941df](https://github.com/Hessuew/flamethefreeze/commit/f8941df6ba0f641c7a254a27be143d706a7827ba))
+
+
+### Miscellaneous Chores
+
+* light text color in about page, initial events page ([#84](https://github.com/Hessuew/flamethefreeze/issues/84)) ([4428479](https://github.com/Hessuew/flamethefreeze/commit/44284794a2a4e8bcb871c69768db77b60c126b5f))
+
 ## [2.7.2](https://github.com/Hessuew/flamethefreeze/compare/v2.7.1...v2.7.2) (2024-01-01)
 
 
