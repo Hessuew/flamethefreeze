@@ -142,12 +142,18 @@ const t = useTranslations(lang);
       src: "https://lh3.googleusercontent.com/d/1wel6WDU54_pAyaqRB7YAaJZWkkou76Vs",
       alt: "Image of Andrew and Juhani",
     }}
-    subtitle={t("about.content.subtitle")}
   >
     <Fragment slot="title">
+      <p class="dark:text-white text-black">
       {t("about.content.title1")}
-      <p class="font-signature text-5xl md:text-8xl font-bold leading-tighter tracking-tighter py-4">
+      </p>
+      <p class="font-signature dark:text-white text-black text-5xl md:text-8xl font-bold leading-tighter tracking-tighter py-4">
         {t("about.content.title2")}
+      </p>
+    </Fragment>
+    <Fragment slot="subtitle">
+      <p class="dark:text-white text-black">
+      {t("about.content.subtitle")}
       </p>
     </Fragment>
     <Fragment slot="content">
@@ -193,7 +199,7 @@ const t = useTranslations(lang);
 
   <Features>
     <Fragment slot="title">
-      <span class="text-muted">{t("about.features.title")}</span>
+      <span class="text-black dark:text-muted ">{t("about.features.title")}</span>
     </Fragment>
   </Features>
 
