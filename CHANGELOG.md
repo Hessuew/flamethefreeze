@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.1.0](https://github.com/Hessuew/flamethefreeze/compare/v3.0.0...v3.1.0) (2024-01-29)
+
+
+### Features
+
+* events en 4/5 ready ([355b5dd](https://github.com/Hessuew/flamethefreeze/commit/355b5ddfc0a508265b9656accbb496865f36da32))
+* events en 4/5 ready ([#86](https://github.com/Hessuew/flamethefreeze/issues/86)) ([a5587f8](https://github.com/Hessuew/flamethefreeze/commit/a5587f86a77a3b1d61526fd05c569932b2c8fbaf))
+
 ## [3.0.0](https://github.com/Hessuew/flamethefreeze/compare/v2.7.2...v3.0.0) (2024-01-27)
 
 
