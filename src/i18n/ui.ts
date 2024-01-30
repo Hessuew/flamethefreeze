@@ -230,13 +230,14 @@ export const ui = {
     "events.features.items5.description2": "Every single day.",
     "events.steps2.title": "Reach out to us",
     "events.steps2.subtitle":
-      "Got questions, want to join the meetings, or want to contact us? Feel free to contact us. We believe that this website we have made has already stirred up your spiritual appetite and kindled some flame🔥 so that you see, that what we have been speaking about is real.",
+      "Got questions, want to join the meetings, or want to contact us? So please do. We believe that this website we have made has already stirred up your spiritual appetite and kindled some flame🔥 so that you see, that what we have been speaking about is real.",
     "events.steps2.items1.title": "Email us",
     "events.steps2.items1.description": "flamethefreeze@gmail.com",
     "events.steps2.items2.title": "Send us a WhatsApp message or call",
     "events.steps2.items2.description": "Phone number coming soon...",
     "events.steps2.items3.title": "Follow what Jesus is doing",
     "events.steps2.items3.description": "https://www.youtube.com/@flamethefreeze2613/videos",
+    "events.callToAction.actionText": "Start exploring",
     "events.callToAction.title": "Hungry for more?",
     "events.callToAction.subtitle1": "Dive into our recordings of each Bible Study and Prayer Meeting from the ",
     "events.callToAction.subtitle2": "study the scriptures, join the prayers and grow into that ",
@@ -1217,7 +1218,7 @@ export const ui = {
     "events.features.items2.title": "Rukous kokous - Zoom",
     "events.features.items2.description":
       "Goljat on päihitetty. Näissä tapaamisissa Pyhän Hengen avun kautta painimme pimeydessä hallitsevia maailmanvaltiaita vastaan. Jeesuksen voiton perusteella näemme Pyhän Hengen vuodatuksen keskellämme ja ihmeet sekä merkit seuraavat puhuttua sanaa. Halutko liittyä samaan kokemukseen?",
-    "events.features.items2.description2": "Saturdays of even weeks, starting at 18:00 GMT+2.",
+    "events.features.items2.description2": "Parillisten viikkoen lauantaina kello 18:00 GMT+2 eteenpäin.",
     "events.features.items3.title": "Raamattu Klubi - Paikallinen / Zoom",
     "events.features.items3.description":
       "Kokoonnumme yhteen ylistämään Herraa, kerromme, mitä Jeesus on tehnyt, kuulemme Jumalan sanaa ja rukoilemme täysin vapaasti sen mukaan, kuinka ikinä Pyhä Henki meitä haluaakaan ohjata. Hän on kyllä niin mahtava. Hän on kokousten Herra, joten me vain seuraamme Häntä asettamasta Hänelle mitään aikarajaa. Hänen läsnäolossaan ei ole kiirettä, vaan varhurskautta, iloa ja rauhaa.",
@@ -1239,6 +1240,7 @@ export const ui = {
     "events.steps2.items3.title": "Seuraa, mitä Jeesus tekee",
     "events.steps2.items3.description": "https://www.youtube.com/@flamethefreeze2613/videos",
     "events.callToAction.title": "Onko sinulla vieläkin suurempi nälkä?",
+    "events.callToAction.actionText": "Aloita selailu",
     "events.callToAction.subtitle1": "Uppoudu äänitettyihin Sanan tukimisiin ja Rukous kokouksiin ",
     "events.callToAction.subtitle2": "opiskele Raamattua, liity rukouksiin ja kasva ",
     "events.callToAction.subtitle3": "jonka Isä haluaa sinun olevan.",
