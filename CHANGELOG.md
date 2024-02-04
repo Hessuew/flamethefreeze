@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.3.0](https://github.com/Hessuew/flamethefreeze/compare/v3.2.0...v3.3.0) (2024-02-04)
+
+
+### Features
+
+* Hero images ([d000b90](https://github.com/Hessuew/flamethefreeze/commit/d000b907477fe6827b118ffccb616f1215fec44d))
+* Hero images 3/5 ([#90](https://github.com/Hessuew/flamethefreeze/issues/90)) ([a1bc697](https://github.com/Hessuew/flamethefreeze/commit/a1bc697a60b0861d4bb7ddfe4923cfeb3f95299c))
+
 ## [3.2.0](https://github.com/Hessuew/flamethefreeze/compare/v3.1.0...v3.2.0) (2024-01-30)
 
 
