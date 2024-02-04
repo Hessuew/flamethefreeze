@@ -1,7 +1,7 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
 import Content from "~/components/widgets/Content.astro";
-import HeroText from "~/components/widgets/HeroText.astro";
+import Hero from "~/components/widgets/Hero.astro";
 import Steps from "~/components/widgets/Steps.astro";
 import Features from "~/components/widgets/Features.astro";
 import Testimonials from "~/components/widgets/Testimonials.astro";
@@ -19,7 +19,13 @@ const t = useTranslations(lang);
 <Layout metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
-  <HeroText tagline={t("about.herotext.tagline")}>
+  <Hero
+    tagline={t("about.herotext.tagline")}
+    image={{
+      src: "https://lh3.googleusercontent.com/d/1luRwVZ-_9Yt3q6bzTG5FVOWQ-05gyBv6",
+      alt: "Jesus and His disciples",
+    }}
+  >
     <Fragment slot="title">
       {t("about.herotext.title1")}
       <GradientText isHeading={true} text={t("about.herotext.title.span")} />
@@ -34,7 +40,7 @@ const t = useTranslations(lang);
       {t("about.herotext.subtitle3")}
       <!-- <GradientText class="font-bold" text={t("about.herotext.subtitle.span3")} /> -->
     </Fragment>
-  </HeroText>
+  </Hero>
 
   <!-- Steps Widget ****************** -->
 
@@ -145,15 +151,17 @@ const t = useTranslations(lang);
   >
     <Fragment slot="title">
       <p class="dark:text-white text-black">
-      {t("about.content.title1")}
+        {t("about.content.title1")}
       </p>
-      <p class="font-signature dark:text-white text-black text-5xl md:text-8xl font-bold leading-tighter tracking-tighter py-4">
+      <p
+        class="font-signature dark:text-white text-black text-5xl md:text-8xl font-bold leading-tighter tracking-tighter py-4"
+      >
         {t("about.content.title2")}
       </p>
     </Fragment>
     <Fragment slot="subtitle">
       <p class="dark:text-white text-black">
-      {t("about.content.subtitle")}
+        {t("about.content.subtitle")}
       </p>
     </Fragment>
     <Fragment slot="content">
@@ -199,7 +207,7 @@ const t = useTranslations(lang);
 
   <Features>
     <Fragment slot="title">
-      <span class="text-black dark:text-muted ">{t("about.features.title")}</span>
+      <span class="text-black dark:text-muted">{t("about.features.title")}</span>
     </Fragment>
   </Features>
 
