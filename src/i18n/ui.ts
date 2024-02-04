@@ -224,13 +224,14 @@ export const ui = {
     "events.features.items4.title": "Gospel Outreach - Kuopio",
     "events.features.items4.description":
       "If we would just give ourselves continually to prayer and to the ministry of the word, but we would not preach the gospel, we would be rebels, and all our activity would fossilize. Our Lord said, 'All power is given unto me in heaven and on earth. Go ye therefore'. So therefore, we go and preach the gospel. We preach, and His work is to confirm the spoken word, with signs following. It's a wonderful division of labor, isn't it?",
+    "events.features.items4.description2": "Ask for the location.",
     "events.features.items5.title": "Personal Discipleship",
     "events.features.items5.description":
       "But what Jesus said continued, 'and make disciples of all the nations, baptizing them into the name of the Father and of the Son and of the Holy Spirit, teaching them to observe everything that I have commanded you'. People who come into Christ must grow into mature sons of God who can shift any atmosphere with unwavering faith and with the presence of God they carry.",
     "events.features.items5.description2": "Every single day.",
     "events.steps2.title": "Reach out to us",
     "events.steps2.subtitle":
-      "Got questions, want to join the meetings, or want to contact us? So please do. We believe that this website we have made has already stirred up your spiritual appetite and kindled some flame🔥 so that you see, that what we have been speaking about is real.",
+      "Got questions, want to join the meetings, or want to contact us? Following you will find our contact information. We believe that this website we have made has already stirred up your spiritual appetite and kindled some flame🔥 so that you see, that what we have been speaking about is real.",
     "events.steps2.items1.title": "Email us",
     "events.steps2.items1.description": "flamethefreeze@gmail.com",
     "events.steps2.items2.title": "Send us a WhatsApp message or call",
@@ -1217,7 +1218,7 @@ export const ui = {
     "events.features.items1.description2": "Parittomien viikkoen lauantaina kello 18:00 GMT+2 eteenpäin.",
     "events.features.items2.title": "Rukous kokous - Zoom",
     "events.features.items2.description":
-      "Goljat on päihitetty. Näissä tapaamisissa Pyhän Hengen avun kautta painimme pimeydessä hallitsevia maailmanvaltiaita vastaan. Jeesuksen voiton perusteella näemme Pyhän Hengen vuodatuksen keskellämme ja ihmeet sekä merkit seuraavat puhuttua sanaa. Halutko liittyä samaan kokemukseen?",
+      "Goljat on päihitetty. Näissä tapaamisissa Pyhän Hengen kautta painimme pimeydessä hallitsevia maailmanvaltiaita vastaan. Jeesuksen voiton perusteella näemme Pyhän Hengen vuodatuksen keskellämme ja ihmeet sekä merkit seuraavat puhuttua sanaa. Halutko liittyä samaan kokemukseen?",
     "events.features.items2.description2": "Parillisten viikkoen lauantaina kello 18:00 GMT+2 eteenpäin.",
     "events.features.items3.title": "Raamattu Klubi - Paikallinen / Zoom",
     "events.features.items3.description":
@@ -1225,7 +1226,8 @@ export const ui = {
     "events.features.items3.description2": "Kysy Zoom linkkiä tai tapaamisen sijaintia",
     "events.features.items4.title": "Evankeliointi - Kuopio",
     "events.features.items4.description":
-      "Jos annamme itsemme vain jatkuvasti rukoukselle ja sanalle, mutta emme julistaisi evankeliumia, olisimme kapinallisia ja kaikki toimintamme fossilisoituisi. Kuninkaamme Jeesus sanoi, 'Minulle on annettu kaikki valta taivaassa ja maan päällä. Menkää siis'. Joten me siis menemme ja julistamme tätä ilosanomaa. Me julistamme ja Hänen tehtävänsä on vahvistaa puhuttu sana ihmein ja merkein. Aivan mahtava työnjako eikö olekin ❤️?",
+      "Jos annamme itsemme vain jatkuvasti rukoukselle ja sanalle, mutta emme julistaisi evankeliumia, olisimme kapinallisia ja kaikki toimintamme fossilisoituisi. Kuninkaamme Jeesus sanoi, 'Minulle on annettu kaikki valta taivaassa ja maan päällä. Menkää siis'. Joten me siis menemme ja julistamme tätä ilosanomaa. Me julistamme ja Hänen tehtävänsä on vahvistaa puhuttu sana ihmein ja merkein. Aivan mahtava työnjako eikö olekin?",
+    "events.features.items4.description2": "Kysy sijaintia.",
     "events.features.items5.title": "Henkilökohtainen opetuslapseuttaminen",
     "events.features.items5.description":
       "Mutta se, mitä Jeesus sanoi, ei loppunut siihen, 'ja tehkää kaikista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää.' Niiden, jotka tulevat Kristuksen luokse täytyy kasvaa täyteen aikuisuuteen. Miehiksi (kun hengessä ei ole miestä eikä naista), jotka voivat muuttaa minkä tahansa tilanteen vankkumattomalla uskolla ja Kaikkivaltiaan läsnöololla, jota he kantavat mukanaan.",

@@ -6,7 +6,6 @@ import Layout from "~/layouts/PageLayout.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import Steps2 from "~/components/widgets/Steps2.astro";
-import Image from "~/components/common/Image.astro";
 
 const metadata = {
   title: "Events",
@@ -20,19 +19,14 @@ const t = useTranslations(lang);
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero tagline={t("events.hero.tagline")}>
-    <Fragment slot="image">
-      <Image
-        class="mx-auto rounded-md w-full object-top"
-        widths={[400, 768, 1024, 2040]}
-        sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-        loading="eager"
-        width={1024}
-        height={576}
-        src={"https://lh3.googleusercontent.com/d/1-ZNNqoI0H_1YLWXgDo0bDjY6sclgNAGp"}
-        alt={"A prayer warrior"}
-      />
-    </Fragment>
+  <Hero
+    tagline={t("events.hero.tagline")}
+    image={{
+      src: "https://lh3.googleusercontent.com/d/1CaRvoJNUGjD2g_y8YtfHYA5eT22gBSZ6",
+      // src: "https://lh3.googleusercontent.com/d/1VdG1Ur9WK3HO5Y2nh88mfuZMJtogv7Z2",
+      alt: "Jesus and His disciples",
+    }}
+  >
     <Fragment slot="title">
       {t("events.hero.title1")}
       <GradientText isHeading={true} text={t("events.hero.title.span1")} />
@@ -42,9 +36,7 @@ const t = useTranslations(lang);
     </Fragment>
     <Fragment slot="subtitle">
       {t("events.hero.subtitle1")}
-      <GradientText class="font-bold" text={t("events.hero.subtitle.span")} />{t("events.hero.title2")}{
-        t("events.hero.subtitle2")
-      }
+      <GradientText class="font-bold" text={t("events.hero.subtitle.span")} />{t("events.hero.subtitle2")}
     </Fragment>
   </Hero>
 
@@ -86,7 +78,7 @@ const t = useTranslations(lang);
         title: t("events.features.items4.title"),
         description: t("events.features.items4.description"),
         description2: {
-          text: t("events.features.items3.description2"),
+          text: t("events.features.items4.description2"),
         },
         icon: "tabler:speakerphone",
       },
