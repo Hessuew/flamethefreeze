@@ -2,6 +2,7 @@
 import Layout from "~/layouts/PageLayout.astro";
 
 import Hero from "~/components/widgets/Hero.astro";
+import Image from "~/components/common/Image.astro";
 import Note from "~/components/widgets/Note.astro";
 import Features from "~/components/widgets/Features.astro";
 import Features3 from "~/components/widgets/Features3.astro";
@@ -32,14 +33,28 @@ const t = useTranslations(lang);
     <Fragment slot="subtitle">
       <span class="font-semibold">{t("index.hero1.subtitle.span1")}</span>
       {t("index.hero1.subtitle1")}
-      <GradientText class="font-bold" text={t("index.hero1.subtitle.span2")} />
-      {t("index.hero1.subtitle2")}
+      <GradientText class="font-bold" text={t("index.hero1.subtitle.span2")} />{t("index.hero1.subtitle2")}
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note />
+  <Note title={t("index.note.text1")} subtitle={t("index.note.text2")} />
+
+  <!-- Image Widget ******************* -->
+
+  <div class="relative m-auto max-w-5xl pt-10">
+    <Image
+      class="mx-auto rounded-md w-full"
+      widths={[400, 768, 1024, 2040]}
+      sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+      loading="eager"
+      width={1024}
+      height={576}
+      src={"https://lh3.googleusercontent.com/d/1Wwytw0RsxpuU_dOncVOrdv03C1P0OZoA"}
+      alt={"Frozen city is melting by fire"}
+    />
+  </div>
 
   <!-- Features Widget *************** -->
 
