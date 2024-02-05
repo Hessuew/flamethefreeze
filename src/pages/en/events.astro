@@ -2,7 +2,9 @@
 import CallToAction from "~/components/widgets/CallToAction.astro";
 import Features2 from "~/components/widgets/Features2.astro";
 import Hero from "~/components/widgets/Hero.astro";
+import Image from "~/components/common/Image.astro";
 import Layout from "~/layouts/PageLayout.astro";
+import Note from "~/components/widgets/Note.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import Steps2 from "~/components/widgets/Steps2.astro";
@@ -19,14 +21,7 @@ const t = useTranslations(lang);
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    tagline={t("events.hero.tagline")}
-    image={{
-      src: "https://lh3.googleusercontent.com/d/1CaRvoJNUGjD2g_y8YtfHYA5eT22gBSZ6",
-      // src: "https://lh3.googleusercontent.com/d/1VdG1Ur9WK3HO5Y2nh88mfuZMJtogv7Z2",
-      alt: "Jesus and His disciples",
-    }}
-  >
+  <Hero tagline={t("events.hero.tagline")}>
     <Fragment slot="title">
       {t("events.hero.title1")}
       <GradientText isHeading={true} text={t("events.hero.title.span1")} />
@@ -39,6 +34,25 @@ const t = useTranslations(lang);
       <GradientText class="font-bold" text={t("events.hero.subtitle.span")} />{t("events.hero.subtitle2")}
     </Fragment>
   </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note title={t("events.note.title")} subtitle={t("events.note.subtitle")} />
+
+  <!-- Image Widget ******************* -->
+
+  <div class="relative m-auto max-w-5xl pt-10">
+    <Image
+      class="mx-auto rounded-md w-full"
+      widths={[400, 768, 1024, 2040]}
+      sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+      loading="eager"
+      width={1024}
+      height={576}
+      src={"https://lh3.googleusercontent.com/d/1CaRvoJNUGjD2g_y8YtfHYA5eT22gBSZ6"}
+      alt={"Roman soldier crying a battle cry"}
+    />
+  </div>
 
   <!-- Features2 Widget ************** -->
 

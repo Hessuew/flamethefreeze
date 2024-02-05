@@ -17,7 +17,14 @@ const t = useTranslations(lang);
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero tagline={t("witnesses.hero.title.tagline")} subtitle={t("witnesses.hero.title.subtitle")}>
+  <Hero
+    tagline={t("witnesses.hero.title.tagline")}
+    subtitle={t("witnesses.hero.title.subtitle")}
+    image={{
+      src: "https://lh3.googleusercontent.com/d/1nha8AFWh-gJQdGCZl2wJvgL2lHNNxcft",
+      alt: "People in the city beholding a group standing upon a cloud",
+    }}
+  >
     <Fragment slot="title">
       <GradientText text={t("witnesses.hero.title.span")} />
       {t("witnesses.hero.title.title")}

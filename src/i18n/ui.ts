@@ -207,6 +207,9 @@ export const ui = {
     "events.hero.subtitle2": "with signs following. Amen.' Mark 16:20 KJV",
     "events.hero.subtitle.span": " the word",
     "events.hero.callToAction": "Explore our meetings",
+    "events.note.title": "It is not a secret,",
+    "events.note.subtitle":
+      "we just yield ourselves completely to God for Him to use us. It is His Spirit making us bold soldiers of Christ that they will say, just like about Peter and John, 'They have been with Jesus'.",
     "events.features.title": "Explore our diverse meetings and participate",
     "events.features.subtitle": "",
     "events.features.items1.title": "Bible Study - Zoom",
@@ -413,9 +416,7 @@ export const ui = {
     "fivefold.content5.content1": "From the Greek, didaskalos:",
     "fivefold.content5.content2": "one who seeks and shares the truth",
     "footer.about": "About us:",
-    "footer.madeBy1": "Made by Juhani Juusola ",
-    "footer.madeBy2": "out of love for God",
-    "footer.madeBy3": "· All rights reserved.",
+    "footer.madeBy1": "All the images are made with Image Creator from Microsoft Designer",
     "header.link1": "Word",
     "header.link2": "Prayer",
     "header.link3": "Church",
@@ -432,7 +433,7 @@ export const ui = {
       "is not in the enticing words of man's wisdom but in demonstrated power. Therefore, the power of God working in and through the lives of normal people is a testimony that God",
     "index.hero1.subtitle2": "in the midst of His people in the 21st century.",
     "index.note.text1": " Question:",
-    "index.note.text2": " Do you really want to know God personally?",
+    "index.note.text2": " Do you really want to know God personally and flame up your whole city for God?",
     "index.features1.tagline": "Content",
     "index.features1.title": "What God does through His Holy Spirit?",
     "index.features1.subtitle":
@@ -536,6 +537,13 @@ export const ui = {
       "Brethren, it is time we entered into personal supernatural experiences with the Holy Spirit. God is baptizing us with power, immersing us in the manifestations of the Spirit, and soaking us in the fragrance of heaven as we assemble at the throne of grace. It is time we saw the glory of God manifested in and through the church. At this time of war and in this war zone, we activate combat alongside celestial armies because spiritual warfare has been legalized by the Captain of the Host of the Lord, Jesus Christ the Son of God.",
     "prayer.features3-3.subtitle2":
       "And from the days of John the Baptist until the present time, the kingdom of heaven has endured violent assault, and violent men seize it by force [as a precious prize—a share in the heavenly kingdom is sought with most ardent zeal and intense exertion]. Matthew 11:12 AMPC",
+    "prayer.features1-2.title": "God can use your mortal frame. He is more than able; flesh profiteth nothing.",
+    "prayer.features1-2.subtitle1":
+      "Wherefore take unto you the whole armour of God, that ye may be able to withstand in the evil day, and having done all, to stand. Stand therefore, having your loins girt about with truth, and having on the breastplate of righteousness; And your feet shod with the preparation of the gospel of peace; Above all, taking the shield of faith, wherewith ye shall be able to quench all the fiery darts of the wicked. And take the helmet of salvation, and the sword of the Spirit, which is the word of God:",
+    "prayer.features1-2.span1": " Praying always with",
+    "prayer.features1-2.span2": " all prayer and supplication in the Spirit",
+    "prayer.features1-2.span3": ", and watching thereunto with all perseverance and supplication for all saints.",
+    "prayer.features1-2.subtitle2": "Eph 6:13-18 KJV",
     "prayer.callToAction.title1": "Kindle your prayer life to ",
     "prayer.callToAction.title2": "full flame",
     "prayer.callToAction.subtitle": "Join us in prayer meetings on Saturdays of even weeks, starting at 18:00 GMT+2.",
@@ -1210,6 +1218,9 @@ export const ui = {
     "events.hero.subtitle2": "sitä seuraavien merkkien kautta.' Amen. Mar 16:20 FINRK",
     "events.hero.subtitle.span": " sanan",
     "events.hero.callToAction": "Tutustu tapaamisiimme",
+    "events.note.title": "Meillä ei ole salaisuuksia,",
+    "events.note.subtitle":
+      "me vain annamme itsemme täysin Jumalan käyttöön. Hänen Henkensä tekee meistä rohkeita Kristuksen sotureita ja tämän kautta meistä voidaan sanoa samalla tavalla, kuin Pietarista ja Johanneksesta, 'He ovat olleet Jeesuksen kanssa'. ",
     "events.features.title": "Tutustu monipuolisiin tapaamisiimme ja osallistu!",
     "events.features.subtitle": "",
     "events.features.items1.title": "Sanan tutkiminen - Zoom",
@@ -1407,9 +1418,7 @@ export const ui = {
     "fivefold.content5.items3.description":
       "Paikallisseurakuntasi voi olla täynä fyysisesti aukuisia, mutta hengellisesti vauvoja, on sitten kyse laumasta tai paimenesta. He huutavat jatkuvasti hengellisten tuttipullojensa perään. Tämä on hengellinen hätä tilanne! Kutsu nopeasti paikalle opettaja.",
     "footer.about": "Meistä:",
-    "footer.madeBy1": "Tehnyt Juhani Juusola ",
-    "footer.madeBy2": "rakkaudesta Jumalaan",
-    "footer.madeBy3": " · Kaikki oikeudet pidetään.",
+    "footer.madeBy1": "Kaikki kuvat on tehty käyttäen Microsoft Designerin Image Creator työkalua.",
     "header.link1": "Sana",
     "header.link2": "Rukous",
     "header.link3": "Seurakunta",
@@ -1426,8 +1435,8 @@ export const ui = {
       "ei ole inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista. Siitä syystä Jumalan voima normaalien ihmisten keskellä ja elämässä on todistus siitä, että Jumala",
     "index.hero1.subtitle2": "Hänen kansansa keskellä 2000-luvulla.",
     "index.note.text1": " Kysymys:",
-    "index.note.text2": " Haluatko todella tulla tuntemaan Jumalan henkilökohtaisesti?",
-    "index.note": " Haluatko todella tulla tuntemaan Jumalan henkilökohtaisesti?",
+    "index.note.text2":
+      " Haluatko todella tulla tuntemaan Jumalan henkilökohtaisesti ja sytyttää koko kaupunkisi tuleen Jumalaa kohtaan?",
     "index.features1.tagline": "Sisältö",
     "index.features1.title": "Mitä Jumala tekee Henkensä kautta?",
     "index.features1.subtitle":
@@ -1530,6 +1539,14 @@ export const ui = {
       "Veljet, meidän on aika astua henkilökohtaiseen yliluonnolliseen kokemukseen Pyhässä Hengessä. Jumala kastaa meidät voimalla, upottaa meidät Hengen ilmentymiin, liottaa meidät taivaan tuoksulla, kun kokoonnumme armon valtaistuimelle. On aika nähdä Jumalan kirkkauden ilmestyvän seurakunnassa ja sen kautta. Tänä hengellisen sodan aikana aktivoidumme taistelun taivaallisten armeijoiden rinnalla, koska hengellisen sodankäynnin on laillistanut Herran sotajoukon kapteeni, Jeesus Kristus, Jumalan Poika.",
     "prayer.features3-3.subtitle2":
       "Mutta Johannes Kastajan päivistä asti on hyökätty taivasten valtakuntaa vastaan, ja hyökkääjät tempaavat sen itselleen. Mat 12:11 FINRK",
+    "prayer.features1-2.title":
+      "Jumala voi käyttää kuolevaista olemustasi. Hän on enemmän kuin vain kykenevä; lihasta ei ole mitään hyötyä.",
+    "prayer.features1-2.subtitle1":
+      "Ottakaa sen tähden yllenne Jumalan koko taisteluvarustus, niin että voitte pahana päivänä tehdä vastarintaa ja kaiken suoritettuanne pysyä pystyssä. Seisokaa siis kupeet totuuteen vyötettyinä, pukeutuneina vanhurskauden haarniskaan, ja olkoon kenkinä jaloissanne alttius rauhan evankeliumia kohtaan. Ottakaa kaikessa uskon kilpi, jolla voitte sammuttaa kaikki Pahan palavat nuolet. Ottakaa myös pelastuksen kypärä ja Hengen miekka, joka on Jumalan sana.",
+    "prayer.features1-2.span1": " Tehkää tämä kaikki",
+    "prayer.features1-2.span2": " alituisessa rukouksessa ja anomisessa rukoillen joka hetki Hengessä.",
+    "prayer.features1-2.span3": "Sen vuoksi valvokaa kaikessa kestävinä ja rukoilkaa kaikkien pyhien puolesta.",
+    "prayer.features1-2.subtitle2": "Eff 6:13-18 FINRK",
     "prayer.callToAction.title1": "Sytytä rukouselämäsi",
     "prayer.callToAction.title2": " täyteen liekkiin",
     "prayer.callToAction.subtitle": "Liity rukouskokoukseen joka parillisen viikon lauantaina klo 18:00 GMT+2 alkaen.",
