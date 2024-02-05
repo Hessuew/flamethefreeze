@@ -2,7 +2,6 @@
 import Features from "~/components/widgets/Features.astro";
 import Features3 from "~/components/widgets/Features3.astro";
 import Hero from "~/components/widgets/Hero.astro";
-import Image from "~/components/common/Image.astro";
 import Steps from "~/components/widgets/Steps.astro";
 import Layout from "~/layouts/PageLayout.astro";
 import GradientText from "~/components/ui/GradientText.astro";
@@ -61,21 +60,6 @@ const t = useTranslations(lang);
     }}
     subtitle={t("devotions.features3-4.subtitle")}
   />
-
-  <!-- Image Widget ******************* -->
-
-  <div class="relative m-auto max-w-5xl pt-10">
-    <Image
-      class="mx-auto rounded-md w-full"
-      widths={[400, 768, 1024, 2040]}
-      sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 2048px, 2048px"
-      loading="eager"
-      width={1024}
-      height={1024}
-      src={"https://lh3.googleusercontent.com/d/1GeyjdD8n6eaQDIKthQm4XYBtteNWOkjn"}
-      alt={"A little boy reading the Bible"}
-    />
-  </div>
 
   <!-- Steps Widget ****************** -->
 
