@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.4.0](https://github.com/Hessuew/flamethefreeze/compare/v3.3.0...v3.4.0) (2024-02-05)
+
+
+### Features
+
+* images added (almost) ([1d2d753](https://github.com/Hessuew/flamethefreeze/commit/1d2d753d16c242978e02f5ef5dcdd1e95960dcd3))
+* images added (almost) ([#92](https://github.com/Hessuew/flamethefreeze/issues/92)) ([ced1cc9](https://github.com/Hessuew/flamethefreeze/commit/ced1cc959dcdf2327599612cc8dfb17005d3a063))
+
 ## [3.3.0](https://github.com/Hessuew/flamethefreeze/compare/v3.2.0...v3.3.0) (2024-02-04)
 
 
