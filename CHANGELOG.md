@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.4.1](https://github.com/Hessuew/flamethefreeze/compare/v3.4.0...v3.4.1) (2024-02-05)
+
+
+### Bug Fixes
+
+* removed 2 images ([1e4683a](https://github.com/Hessuew/flamethefreeze/commit/1e4683a26c21e0d9a919e02472c37710bab015a2))
+* removed 2 images ([#94](https://github.com/Hessuew/flamethefreeze/issues/94)) ([ea4cc39](https://github.com/Hessuew/flamethefreeze/commit/ea4cc39b8bde5871e9eb9f30283741d1559e3477))
+
 ## [3.4.0](https://github.com/Hessuew/flamethefreeze/compare/v3.3.0...v3.4.0) (2024-02-05)
 
 
