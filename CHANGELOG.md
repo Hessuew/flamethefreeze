@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.4.2](https://github.com/Hessuew/flamethefreeze/compare/v3.4.1...v3.4.2) (2024-02-10)
+
+
+### Bug Fixes
+
+* du Plessis bio ([19f1c1f](https://github.com/Hessuew/flamethefreeze/commit/19f1c1fe46f6382a74718cfafc1c783e54d2ec78))
+* du Plessis bio ([#96](https://github.com/Hessuew/flamethefreeze/issues/96)) ([91f6266](https://github.com/Hessuew/flamethefreeze/commit/91f6266aa59db3d42fff6850b7f2f1447dc2d697))
+
 ## [3.4.1](https://github.com/Hessuew/flamethefreeze/compare/v3.4.0...v3.4.1) (2024-02-05)
 
 
