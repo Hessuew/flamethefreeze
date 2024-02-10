@@ -838,7 +838,8 @@ export const ui = {
     "witnesses.testimonials.items32.t2":
       "If you would test the character of anything, you only need to enquire whether that thing leads you to God or away from God.",
     "witnesses.testimonials.items33.name": "David du Plessis: 1905-1987",
-    "witnesses.testimonials.items33.job": "Coming soon...",
+    "witnesses.testimonials.items33.job":
+      "A great prophecy came through Smith Wigglesworth to him, and he answered, I must judge the prophecy through the scriptures. Smith answered, Good never go by the prophecy but by the word of God. So he did, and so did God. David went preaching the gospel from nation to nation by the power of the Holy Spirit. Never just follow the prophecies, even from genuine men or women, but instead conduct everything you do according to what the word of God says. Prophesying will fade away, but God's word will never fade away!",
     "witnesses.testimonials.items33.t1": "God's people are not called to walk by feelings or by sight, but by faith.",
     "witnesses.testimonials.items33.t2":
       "The church of Jesus Christ is built on the rock of revelation, and the gates of hell shall not prevail against it.",
@@ -1807,7 +1808,8 @@ export const ui = {
       "Ilman Kristusta, olen vain syntinen, mutta Kristuksessa olen pelastettu. Ilman Kristusta, olen tyhjä, mutta Kristuksessa olen täysi. Ilman Kristusta, olen heikko, mutta Kristuksessa olen vahva. Ilman Kristusta, en pysty, mutta Kristuksessa olen enemmän, kuin kykenevä. Ilman Kristusta, olen jo hävinnyt, mutta Kristuksessa olen jo voittanut. Kuinka ihmeellisen merkityksellinen on sana 'Kristuksessa'.",
     "witnesses.testimonials.items32.t2":
       "Voit testata minkä tahansa asian luoteen kysymällä, viekä se sinua lähemmäs Jumalaa vai kauemmas Jumalasta.",
-    "witnesses.testimonials.items33.job": "Tulossa pian...",
+    "witnesses.testimonials.items33.job":
+      "Smith Wigglesworth profetoi mahtavan profetian Davidille. Hän vastasi, minun pitää punnita tämä profetia Raamatun kautta. Smith vastasi, Hyvä, älä ikinä perusta elämääsi profetiaan vaan Jumalan sanaan. Niin David teki oman osansa ja Jumala oman osansa. Hän julisti evankeliumia maasta maahan Pyhän Hengen voimassa. Älä ikinä seuraa profetioita jopa aidoilta Jumalan miehiltä tai naisilta, vaan sen sijaan perusta kaikki, mitä teet, Jumalan sanaan. Profetoiminen loppuu, mutta Jumalan sana ei ikinä häviä.",
     "witnesses.testimonials.items33.t1":
       "Jumalan kansan kutsussa heitä ei kutsuttu kulkemaan tunteiden ja näkemisen kautta, vaan uskon kautta.",
     "witnesses.testimonials.items33.t2":
