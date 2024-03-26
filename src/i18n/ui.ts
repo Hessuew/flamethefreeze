@@ -223,11 +223,11 @@ export const ui = {
     "events.features.items3.title": "Bible Club - Local / Zoom",
     "events.features.items3.description":
       "We gather together to praise the Lord, tell testimonies of what Jesus has done, hear the word of God, and pray, among other things, as the Holy Spirit guides the meeting. He is the Lord of the meeting, so we just follow Him without setting time limits. In His presence, there is no hurry but righteousness, joy, and peace.",
-    "events.features.items3.description2": "Ask for the Zoom link or the location.",
+    "events.features.items3.description2": "Ask for the Zoom link or the location: +358 46 571 4804",
     "events.features.items4.title": "Gospel Outreach - Kuopio",
     "events.features.items4.description":
       "If we would just give ourselves continually to prayer and to the ministry of the word, but we would not preach the gospel, we would be rebels, and all our activity would fossilize. Our Lord said, 'All power is given unto me in heaven and on earth. Go ye therefore'. So therefore, we go and preach the gospel. We preach, and His work is to confirm the spoken word, with signs following. It's a wonderful division of labor, isn't it?",
-    "events.features.items4.description2": "Ask for the location.",
+    "events.features.items4.description2": "Ask for the location: +358 46 571 4634",
     "events.features.items5.title": "Personal Discipleship",
     "events.features.items5.description":
       "But what Jesus said continued, 'and make disciples of all the nations, baptizing them into the name of the Father and of the Son and of the Holy Spirit, teaching them to observe everything that I have commanded you'. People who come into Christ must grow into mature sons of God who can shift any atmosphere with unwavering faith and with the presence of God they carry.",
@@ -238,7 +238,7 @@ export const ui = {
     "events.steps2.items1.title": "Email us",
     "events.steps2.items1.description": "flamethefreeze@gmail.com",
     "events.steps2.items2.title": "Send us a WhatsApp message or call",
-    "events.steps2.items2.description": "Phone number coming soon...",
+    "events.steps2.items2.description": "+358 46 571 4634",
     "events.steps2.items3.title": "Follow what Jesus is doing",
     "events.steps2.items3.description": "https://www.youtube.com/@flamethefreeze2613/videos",
     "events.callToAction.actionText": "Start exploring",
@@ -1235,11 +1235,11 @@ export const ui = {
     "events.features.items3.title": "Raamattu Klubi - Paikallinen / Zoom",
     "events.features.items3.description":
       "Kokoonnumme yhteen ylistämään Herraa, kerromme, mitä Jeesus on tehnyt, kuulemme Jumalan sanaa ja rukoilemme täysin vapaasti sen mukaan, kuinka ikinä Pyhä Henki meitä haluaakaan ohjata. Hän on kyllä niin mahtava. Hän on kokousten Herra, joten me vain seuraamme Häntä asettamasta Hänelle mitään aikarajaa. Hänen läsnäolossaan ei ole kiirettä, vaan varhurskautta, iloa ja rauhaa.",
-    "events.features.items3.description2": "Kysy Zoom linkkiä tai tapaamisen sijaintia",
+    "events.features.items3.description2": "Kysy Zoom linkkiä tai tapaamisen sijaintia: +358 46 571 4804",
     "events.features.items4.title": "Evankeliointi - Kuopio",
     "events.features.items4.description":
       "Jos annamme itsemme vain jatkuvasti rukoukselle ja sanalle, mutta emme julistaisi evankeliumia, olisimme kapinallisia ja kaikki toimintamme fossilisoituisi. Kuninkaamme Jeesus sanoi, 'Minulle on annettu kaikki valta taivaassa ja maan päällä. Menkää siis'. Joten me siis menemme ja julistamme tätä ilosanomaa. Me julistamme ja Hänen tehtävänsä on vahvistaa puhuttu sana ihmein ja merkein. Aivan mahtava työnjako eikö olekin?",
-    "events.features.items4.description2": "Kysy sijaintia.",
+    "events.features.items4.description2": "Kysy sijaintia: +358 46 571 4634",
     "events.features.items5.title": "Henkilökohtainen opetuslapseuttaminen",
     "events.features.items5.description":
       "Mutta se, mitä Jeesus sanoi, ei loppunut siihen, 'ja tehkää kaikista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää.' Niiden, jotka tulevat Kristuksen luokse täytyy kasvaa täyteen aikuisuuteen. Miehiksi (kun hengessä ei ole miestä eikä naista), jotka voivat muuttaa minkä tahansa tilanteen vankkumattomalla uskolla ja Kaikkivaltiaan läsnöololla, jota he kantavat mukanaan.",
@@ -1250,7 +1250,7 @@ export const ui = {
     "events.steps2.items1.title": "Lähetä sähköpostia",
     "events.steps2.items1.description": "flamethefreeze@gmail.com",
     "events.steps2.items2.title": "Laita WhatsApp viestiä tai soita",
-    "events.steps2.items2.description": "Numero tulossa pian...",
+    "events.steps2.items2.description": "+358 46 571 4634",
     "events.steps2.items3.title": "Seuraa, mitä Jeesus tekee",
     "events.steps2.items3.description": "https://www.youtube.com/@flamethefreeze2613/videos",
     "events.callToAction.title": "Onko sinulla vieläkin suurempi nälkä?",
