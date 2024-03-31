@@ -491,12 +491,12 @@ export const ui = {
     "index.hero3.subtitle":
       "And when they found them not, they drew Jason and certain brethren unto the rulers of the city, crying, These that have turned the world upside down are come hither also. Acts 17:6 KJV",
     "index.hero4.tagline": "A foretaste",
-    "index.hero4.title1": "Do you want to ",
-    "index.hero4.title2": " and be filled with the Holy Spirit in ",
-    "index.hero4.title.span1": "FLAME the FREEZE",
+    "index.hero4.title1": "Do you want to have a foretaste of what",
+    "index.hero4.title2": " since the start of this year?",
+    "index.hero4.title.span1": "Jesus has been doing",
     "index.hero4.title.span2": "the next 10 minutes?",
     "index.hero4.subtitle":
-      "And they were all filled with the Holy Ghost, and began to speak with other tongues, as the Spirit gave them utterance. Acts 2:4 KJV",
+      "...for all men glorified God for that which was done. For the man was above forty years old, on whom this miracle of healing was shewed. Acts 4:21,22 KJV",
     "prayer.herotext.tagline": "Prayer",
     "prayer.herotext.title1": "is it",
     "prayer.herotext.title2": " necessary?",
@@ -1495,12 +1495,11 @@ export const ui = {
     "index.hero3.subtitle":
       "Mutta kun he eivät näitä löytäneet, he raahasivat Jaasonin ja muutamia muita veljiä kaupungin johtomiesten eteen ja huusivat: ”Nuo koko maailman villitsijät ovat tulleet tännekin. Apt 17:6 FINRK",
     "index.hero4.tagline": "Esimakua",
-    "index.hero4.title1": "Halutko sinä ",
-    "index.hero4.title2": " ja täyttyä Pyhällä Hengellä ",
-    "index.hero4.title.span1": "JÄÄN syttyvän TULEEN",
-    "index.hero4.title.span2": "seuraavan 10 minuutin aikana?",
+    "index.hero4.title1": "Halutko sinä esimakua siitä, ",
+    "index.hero4.title2": " tämän vuoden aikana?",
+    "index.hero4.title.span1": "mitä Jeesus on tehnyt",
     "index.hero4.subtitle":
-      "Ja he täyttyivät kaikki Pyhällä Hengellä ja alkoivat puhua muilla kielillä sen mukaan, mitä Henki antoi heille puhuttavaksi. Apt 2:4 FINRK",
+      "...Sillä kaikki ylistivät Jumalaa siitä, mitä oli tapahtunut. 22 Olihan mies, jolle tämä parantumisihme oli tapahtunut, jo yli neljänkymmenen vuoden ikäinen. Apt. 4:21,22 KJV",
     "prayer.herotext.tagline": "Rukous",
     "prayer.herotext.title1": "Onko se",
     "prayer.herotext.title2": " tarpeellista?",
