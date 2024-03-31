@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.5.0](https://github.com/Hessuew/flamethefreeze/compare/v3.4.2...v3.5.0) (2024-03-31)
+
+
+### Features
+
+* add Jesus healing stamara testimony ([7c9f8c8](https://github.com/Hessuew/flamethefreeze/commit/7c9f8c82afc1268429810bd8381c1e9ac3683905))
+
 ## [3.4.2](https://github.com/Hessuew/flamethefreeze/compare/v3.4.1...v3.4.2) (2024-02-10)
 
 
