@@ -1,28 +1,46 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { twMerge } from "tailwind-merge";
+import { Icon } from "astro-icon/components";
 
-import { UI } from '~/utils/config';
+import { UI } from "~/utils/config";
 
 export interface Props {
   label?: string;
   class?: string;
   iconClass?: string;
-  iconName?: string;
+  // iconName?: string;
 }
 
 const {
-  label = 'Toggle between Dark and Light mode',
+  label = "Toggle between Dark and Light mode",
   class:
-    className = 'text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center',
-  iconClass = 'w-6 h-6',
-  iconName = 'tabler:sun',
+    className = "text-muted dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center",
+  iconClass = "w-6 h-6",
+  // iconName = 'tabler:sun'
 } = Astro.props;
 ---
 
 {
-  !(UI.theme && UI.theme.endsWith(':only')) && (
-    <button type="button" class={className} aria-label={label} data-aw-toggle-color-scheme>
-      <Icon name={iconName} class={iconClass} />
-    </button>
+  !(UI.theme && UI.theme.endsWith(":only")) && (
+    <>
+      <button
+        type="button"
+        class={twMerge(className, "dark:invisible dark:hidden")}
+        aria-label={label}
+        data-aw-toggle-color-scheme
+        transition:persist
+      >
+        <Icon name={"tabler:sun"} class={iconClass} />
+      </button>
+      <button
+        type="button"
+        class={twMerge(className, "invisible hidden dark:visible dark:block")}
+        aria-label={label}
+        data-aw-toggle-color-scheme
+        transition:persist
+      >
+        <Icon name={"tabler:moon"} class={iconClass} />
+      </button>
+    </>
   )
 }

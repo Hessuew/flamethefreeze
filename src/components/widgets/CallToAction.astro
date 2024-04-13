@@ -7,6 +7,7 @@ import Button from "~/components/ui/Button.astro"
 interface Props extends Widget {
   title?: string;
   subtitle?: string;
+  subtitle2?: string;
   tagline?: string;
   callToAction?: CallToAction;
   actions?: string | CallToAction[];
@@ -15,6 +16,7 @@ interface Props extends Widget {
 const {
   title = await Astro.slots.render('title'),
   subtitle = await Astro.slots.render('subtitle'),
+  subtitle2 = await Astro.slots.render('subtitle2'),
   tagline = await Astro.slots.render('tagline'),
   actions = await Astro.slots.render('actions'),
 
@@ -32,6 +34,7 @@ const {
     <Headline
       title={title}
       subtitle={subtitle}
+      subtitle2={subtitle2}
       tagline={tagline}
       classes={{
         container: 'mb-0 md:mb-0',

@@ -1,11 +1,22 @@
 ---
-import { Icon } from 'astro-icon/components';
+import { Icon } from "astro-icon/components";
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const { title = await Astro.slots.render("title"), subtitle = await Astro.slots.render("subtitle") } = Astro.props;
 ---
 
-<section class="bg-blue-50 dark:bg-slate-800 not-prose">
+<section class="bg-secondary dark:bg-purple-900/40 not-prose">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
-    <span class="font-bold">
-      <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom" /> Philosophy:</span
-    > Simplicity, Best Practices and High Performance
+    <span class="font-bold text-white">
+      <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom text-white" />
+      {title}
+    </span>
+    <span class="text-white">
+      {subtitle}
+    </span>
   </div>
 </section>

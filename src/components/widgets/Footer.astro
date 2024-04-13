@@ -1,7 +1,9 @@
 ---
-import { Icon } from 'astro-icon/components';
-import { SITE } from '~/utils/config';
-import { getHomePermalink } from '~/utils/permalinks';
+import { Icon } from "astro-icon/components";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { getPermalink } from "~/utils/permalinks";
+// import { SITE } from '~/utils/config';
+// import { getHomePermalink } from '~/utils/permalinks';
 
 interface Link {
   text?: string;
@@ -19,21 +21,24 @@ export interface Props {
   links: Array<Links>;
   secondaryLinks: Array<Link>;
   socialLinks: Array<Link>;
-  footNote?: string;
   theme?: string;
 }
 
-const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
+const { socialLinks = [], secondaryLinks = [], links = [], theme = "light" } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
+<footer class:list={[{ dark: theme === "dark" }, "relative border-t border-gray-200 dark:border-slate-800 not-prose"]}>
   <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
-    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12">
+    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-0 py-8 md:py-0">
+      <!-- <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12"> -->
       <div class="col-span-12 lg:col-span-4">
-        <div class="mb-2">
+        <!-- <div class="mb-2">
           <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
-        </div>
+        </div> -->
         <div class="text-sm text-muted">
           {
             secondaryLinks.map(({ text, href }) => (
@@ -73,10 +78,24 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
       {
         socialLinks?.length ? (
           <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">
+            <li>
+              <p class="text-muted dark:text-gray-400 rounded-lg text-sm p-2.5 inline-flex items-center">
+                {t("footer.about")}{" "}
+              </p>
+            </li>
+            <li>
+              <a
+                class="text-orange-600 hover:bg-orange-300 dark:hover:bg-orange-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                aria-label={"AboutPage"}
+                href={getPermalink(`${lang}/about`)}
+              >
+                <Icon name="tabler:flame" class="w-5 h-5" />
+              </a>
+            </li>
             {socialLinks.map(({ ariaLabel, href, text, icon }) => (
               <li>
                 <a
-                  class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                  class="text-muted dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
                   aria-label={ariaLabel}
                   href={href}
                 >
@@ -87,12 +106,15 @@ const { socialLinks = [], secondaryLinks = [], links = [], footNote = '', theme 
             ))}
           </ul>
         ) : (
-          ''
+          ""
         )
       }
 
       <div class="text-sm mr-4 dark:text-slate-400">
-        <Fragment set:html={footNote} />
+        {t("footer.madeBy1")}<span class="text-blue-600 dark:text-gray-200 hover:underline">{t("footer.madeBy2")}</span>
+        {t("footer.madeBy3")}
+        <!-- {t("footer.madeBy1")}<span class="bg-gradient-to-r bg-clip-text font-semibold from-orange-600 to-orange-500 text-transparent hover:underline">{t("footer.madeBy2")}</span>
+        {t("footer.madeBy3")} -->
       </div>
     </div>
   </div>

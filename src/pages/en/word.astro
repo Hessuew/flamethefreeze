@@ -1,0 +1,127 @@
+---
+import Features2 from "~/components/widgets/Features2.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import Stats from "~/components/widgets/Stats.astro";
+import Steps2 from "~/components/widgets/Steps2.astro";
+import Layout from "~/layouts/PageLayout.astro";
+import GradientText from "~/components/ui/GradientText.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const metadata = {
+  title: "The Word",
+};
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline={t("word.hero.tagline")}
+    image={{
+      src: "https://lh3.googleusercontent.com/d/1a20CBvV7myveQg1MfZRAIBvq0DM1Y7tX",
+      alt: "Jesus and His disciples",
+    }}
+  >
+    <Fragment slot="title">
+      {t("word.hero.title1")}<br />
+      <GradientText text={t("word.hero.title.span")} />
+      <br />
+      {t("word.hero.title2")}
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      {t("word.hero.subtitle")}
+    </Fragment>
+  </Hero>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    stats={[
+      { title: t("word.stats.title1"), amount: t("word.stats.amount1") },
+      { title: t("word.stats.title2"), amount: t("word.stats.amount2") },
+      { title: t("word.stats.title3"), amount: t("word.stats.amount3") },
+      { title: t("word.stats.title4"), amount: t("word.stats.amount4") },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3 subtitle={t("word.features3-1.subtitle")} subtitle2={t("word.features3-1.subtitle2")} />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    type2={true}
+    title={t("word.steps2-1.title")}
+    subtitle={t("word.steps2-1.subtitle")}
+    items={[
+      {
+        title: t("word.steps2-1.items1.title"),
+        description: t("word.steps2-1.items1.description"),
+        icon: "tabler:pray",
+      },
+      {
+        title: t("word.steps2-1.items2.title"),
+        description: t("word.steps2-1.items2.description"),
+        icon: "tabler:mood-angry",
+      },
+      {
+        title: t("word.steps2-1.items3.title"),
+        description: t("word.steps2-1.items3.description"),
+        icon: "tabler:message-circle-star",
+      },
+    ]}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    type2={true}
+    title={t("word.steps2-2.title")}
+    subtitle={t("word.steps2-2.subtitle")}
+    isReversed={true}
+    items={[
+      {
+        title: t("word.steps2-2.items1.title"),
+        description: t("word.steps2-2.items1.description"),
+        icon: "tabler:clock",
+      },
+      {
+        title: t("word.steps2-2.items2.title"),
+        description: t("word.steps2-2.items2.description"),
+        icon: "tabler:brand-tailwind",
+      },
+      {
+        title: t("word.steps2-2.items3.title"),
+        description: t("word.steps2-2.items3.description"),
+        icon: "tabler:swords",
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    tagline={t("word.features2.tagline")}
+    title={t("word.features2.title")}
+    columns={2}
+    items={[
+      {
+        title: t("word.features2.items1.title"),
+        description: t("word.features2.items1.description"),
+        icon: "tabler:brand-zoom",
+      },
+      {
+        title: t("word.features2.items2.title"),
+        description: t("word.features2.items2.description"),
+        icon: "tabler:brand-youtube",
+        link: true,
+      },
+    ]}
+  />
+</Layout>

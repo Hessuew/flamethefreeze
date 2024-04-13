@@ -1,51 +1,72 @@
 ---
-import Headline from '~/components/ui/Headline.astro';
-import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
-import Button from '~/components/ui/Button.astro';
-import Image from '~/components/common/Image.astro';
-import type { Testimonials } from '~/types';
-
+import { twMerge } from "tailwind-merge";
+import Headline from "~/components/ui/Headline.astro";
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import Button from "~/components/ui/Button.astro";
+import Image from "~/components/common/Image.astro";
+import type { Testimonials } from "~/types";
 
 const {
-  title = '',
-  subtitle = '',
-  tagline = '',
+  title = "",
+  subtitle = "",
+  tagline = "",
   testimonials = [],
   callToAction,
+  columns,
+  numbers = false,
 
   id,
   isDark = false,
   classes = {},
-  bg = await Astro.slots.render('bg'),
+  bg = await Astro.slots.render("bg"),
 } = Astro.props as Testimonials;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ""}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
 
-  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <div
+    class={twMerge(
+      `grid mx-auto gap-8 md:gap-y-12 ${
+        columns === 4
+          ? "lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
+          : columns === 3
+            ? "lg:grid-cols-3 sm:grid-cols-2"
+            : columns === 2
+              ? "sm:grid-cols-2 "
+              : "sm:grid-cols-2 lg:grid-cols-3"
+      }`
+    )}
+  >
     {
       testimonials &&
-        testimonials.map(({ title, testimonial, name, job, image }) => (
+        testimonials.map(({ title, testimonials, name, job, image }, index) => (
           <div class="flex h-auto">
-            <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600">
+            <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none border dark:border-neutral-600">
+              {numbers && <p class="text-muted -mt-2 lg:-mt-4 lg:-ml-3">{index + 1}.</p>}
               {title && <h2 class="text-lg font-medium leading-6 pb-4">{title}</h2>}
-              {testimonial && (
-                <blockquote class="flex-auto">
-                  <p class="text-muted">" {testimonial} "</p>
-                </blockquote>
-              )}
+              {testimonials && Array.isArray(testimonials)
+                ? testimonials.map((testimonial) => (
+                    <blockquote class="flex-auto">
+                      <p class={twMerge("text-muted", classes.testimonial)}>“{testimonial}”</p>
+                    </blockquote>
+                  ))
+                : testimonials && (
+                    <blockquote class="flex-auto">
+                      <p class={twMerge("text-muted", classes.testimonial)}>“{testimonials}”</p>
+                    </blockquote>
+                  )}
 
-              <hr class="border-slate-200 dark:border-slate-600 my-4" />
+              <hr class="border-slate-600 my-4" />
 
               <div class="flex items-center">
                 {image && (
-                  <div class="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-600">
-                    {typeof image === 'string' ? (
+                  <div class="h-10 w-10 rounded-full border border-slate-600">
+                    {typeof image === "string" ? (
                       <Fragment set:html={image} />
                     ) : (
                       <Image
-                        class="h-10 w-10 rounded-full border border-slate-200 dark:border-slate-600 min-w-full min-h-full"
+                        class="h-10 w-10 rounded-full border border-slate-600 min-w-full min-h-full"
                         width={40}
                         height={40}
                         widths={[400, 768]}
@@ -57,8 +78,8 @@ const {
                 )}
 
                 <div class="grow ml-3 rtl:ml-0 rtl:mr-3">
-                  {name && <p class="text-base font-semibold">{name}</p>}
-                  {job && <p class="text-xs text-muted">{job}</p>}
+                  {name && <p class={twMerge("text-base font-semibold", classes.name)}>{name}</p>}
+                  {job && <p class={twMerge("text-sm text-muted", classes.job)}>{job}</p>}
                 </div>
               </div>
             </div>

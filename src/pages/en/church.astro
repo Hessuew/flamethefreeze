@@ -1,0 +1,141 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import HeroText from "~/components/widgets/HeroText.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import GradientText from "~/components/ui/GradientText.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const metadata = {
+  title: "The Church",
+};
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline={t("church.herotext.tagline")}>
+    <Fragment slot="title">
+      {t("church.herotext.title1")}
+      <GradientText text={t("church.herotext.title.span")} />
+      {t("church.herotext.title2")}
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      {t("church.herotext.subtitle1")}
+      <span class="font-semibold">{t("church.herotext.subtitle.span1")} </span>
+      {t("church.herotext.subtitle2")}
+      <GradientText class="font-bold" text={t("church.herotext.subtitle.span2")} /> 
+      {t("church.herotext.subtitle3")}
+    </Fragment>
+  </HeroText>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    tagline={t("church.steps.tagline")}
+    title={t("church.steps.title")}
+    isReversed={true}
+    items={[
+      {
+        title: t("church.steps.items1.title"),
+        description: [
+          { text: t("church.steps.items1.description1") },
+          { text: t("church.steps.items1.description2") },
+          { text: t("church.steps.items1.description3"), },
+        ],
+        icon: "tabler:number-1",
+      },
+      {
+        title: t("church.steps.items2.title"),
+        description: [
+          { text: t("church.steps.items2.description1") },
+          { text: t("church.steps.items2.description2") },
+          { text: t("church.steps.items2.description3"), },
+        ],
+        icon: "tabler:number-2",
+      },
+      {
+        title: t("church.steps.items3.title"),
+        description: [
+          { text: t("church.steps.items3.description1") },
+          { text: t("church.steps.items3.description2") },
+          { text: t("church.steps.items3.description3"), },
+        ],
+        icon: "tabler:number-3",
+      },
+      {
+        title: t("church.steps.items4.title"),
+        description: [
+          { text: t("church.steps.items4.description1") },
+          { text: t("church.steps.items4.description2") },
+          { subtitle: true, text: t("church.steps.items4.description3"), },
+          { text: t("church.steps.items4.description4") },
+          { text: t("church.steps.items4.description5") },
+          { subtitle: true, text: t("church.steps.items4.description6"), },
+          { text: t("church.steps.items4.description7") },
+          { text: t("church.steps.items4.description8") },
+        ],
+        icon: "tabler:number-4",
+      },
+      {
+        title: t("church.steps.items5.title"),
+        description: [
+          { text: t("church.steps.items5.description1") },
+          { text: t("church.steps.items5.description2") },
+          { subtitle: true, text: t("church.steps.items5.description3"), },
+          { text: t("church.steps.items5.description4") },
+          { text: t("church.steps.items5.description5") },
+        ],
+        icon: "tabler:number-5",
+      },
+      {
+        title: t("church.steps.items6.title"),
+        description: [
+          { text: t("church.steps.items6.description1") },
+          { text: t("church.steps.items6.description2") },
+          { text: t("church.steps.items6.description3") },
+        ],
+        icon: "tabler:number-6",
+      },
+      {
+        title: t("church.steps.items7.title"),
+        description: [
+          { text: t("church.steps.items7.description1") },
+          { text: t("church.steps.items7.description2") },
+          { text: t("church.steps.items7.description3") },
+        ],
+        icon: "tabler:number-7",
+      },
+      {
+        title: t("church.steps.items8.title"),
+        description: [
+          { text: t("church.steps.items8.description1") },
+          { text: t("church.steps.items8.description2") },
+          { text: t("church.steps.items8.description3") },
+        ],
+        icon: "tabler:number-8",
+      },
+      {
+        title: t("church.steps.items9.title"),
+        description: [
+          { text: t("church.steps.items9.description1") },
+          { text: t("church.steps.items9.description2") },
+          { text: t("church.steps.items9.description3") },
+          { text: t("church.steps.items9.description4") },
+        ],
+        icon: "tabler:number-9",
+      },
+      {
+        title: t("church.steps.items10.title"),
+        description: [
+          { text: t("church.steps.items10.description1") },
+          { text: t("church.steps.items10.description2") },
+        ],
+        icon: "tabler:check",
+      },
+    ]}
+  />
+</Layout>

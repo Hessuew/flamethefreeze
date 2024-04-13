@@ -1,0 +1,155 @@
+---
+import Features from "~/components/widgets/Features.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import Steps from "~/components/widgets/Steps.astro";
+import Layout from "~/layouts/PageLayout.astro";
+import GradientText from "~/components/ui/GradientText.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const metadata = {
+  title: "Devotions",
+};
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero tagline={t("devotions.hero.tagline")}>
+    <Fragment slot="title">
+      <GradientText text={t("devotions.hero.title.span1")} />
+      {t("devotions.hero.title.title1")}
+      <GradientText text={t("devotions.hero.title.span2")} />
+      {t("devotions.hero.title.title2")}
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      {t("devotions.hero.subtitle")}
+    </Fragment>
+  </Hero>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3 subtitle={t("devotions.features3-1.subtitle")} />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    classes={{
+      headline: {
+        subtitle: "text-black dark:text-white text-xl",
+      },
+    }}
+    subtitle={t("devotions.features3-2.subtitle")}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3 subtitle={t("devotions.features3-3.subtitle")} />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    classes={{
+      headline: {
+        subtitle: "text-black dark:text-white text-xl",
+      },
+    }}
+    subtitle={t("devotions.features3-4.subtitle")}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title={t("devotions.steps.title")}
+    items={[
+      {
+        title: t("devotions.steps.items1.title"),
+        description: [
+          {
+            link: true,
+            text: t("devotions.steps.items1.description1"),
+          },
+        ],
+        icon: "tabler:number-1",
+      },
+      {
+        title: t("devotions.steps.items2.title"),
+        description: [
+          {
+            link: true,
+            text: t("devotions.steps.items2.description1"),
+          },
+        ],
+        icon: "tabler:number-2",
+      },
+      {
+        title: t("devotions.steps.items3.title"),
+        description: [
+          {
+            link: true,
+            text: t("devotions.steps.items3.description1"),
+          },
+        ],
+        icon: "tabler:number-3",
+      },
+      {
+        title: t("devotions.steps.items4.title"),
+        description: [
+          {
+            link: true,
+            text: t("devotions.steps.items4.description1"),
+          },
+        ],
+        icon: "tabler:number-4",
+      },
+      {
+        title: t("devotions.steps.items5.title"),
+        description: [
+          {
+            link: true,
+            text: t("devotions.steps.items5.description1"),
+          },
+        ],
+        icon: "tabler:number-5",
+      },
+      {
+        title: t("devotions.steps.items6.title"),
+        description: [
+          {
+            link: true,
+            text: t("devotions.steps.items6.description1"),
+          },
+        ],
+        icon: "tabler:number-6",
+      },
+    ]}
+  />
+
+  <!-- Features Widget *************** -->
+
+  <Features id="features" tagline={t("devotions.features1.tagline")} title={t("devotions.features1.title")} />
+
+  <!-- Ebook Widget *************** -->
+
+  <div class="w-full flex justify-center pb-10 h-[520px] lg:h-[640px]">
+    <iframe
+      aria-label="Flame the Freeze pdf"
+      src={lang === "en"
+        ? "https://drive.google.com/file/d/1D5npgHt176KLtaEir-OE61LcndzssEjp/preview"
+        : "https://drive.google.com/file/d/1JY5xC1_A24QFWG75GzI0ul1JAv1iBjIk/preview"}
+      width="100%"
+      height="100%"
+      allow="autoplay"
+      class="max-w-2xl"
+    >
+      <p> {t("devotions.ebook.text1")} <a class="hover:underline" href={lang === "en" ?
+      "https://drive.google.com/file/d/1D5npgHt176KLtaEir-OE61LcndzssEjp/preview" :
+      "https://drive.google.com/file/d/1JY5xC1_A24QFWG75GzI0ul1JAv1iBjIk/preview"}
+      target="_blank">{t("devotions.ebook.a")}</a > {t("devotions.ebook.text2")}</p>
+    </iframe>
+  </div>
+</Layout>

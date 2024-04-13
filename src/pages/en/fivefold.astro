@@ -1,0 +1,422 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+
+import Hero from "~/components/widgets/Hero.astro";
+
+import Content from "~/components/widgets/Content.astro";
+import Features from "~/components/widgets/Features.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import GradientText from "~/components/ui/GradientText.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const metadata = {
+  title: "The Five Fold",
+};
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero tagline={t("fivefold.hero.tagline")} subtitle={t("fivefold.hero.subtitle")}>
+    <Fragment slot="title">
+      {t("fivefold.hero.title")}
+      <GradientText text={t("fivefold.hero.span")} />
+    </Fragment>
+  </Hero>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3 subtitle={t("fivefold.features3-1.subtitle")} subtitle2={t("fivefold.features3-1.subtitle2")}>
+    <Fragment slot="title">
+      <GradientText class="pr-1" text={t("fivefold.features3-1.title.span")} />
+      {t("fivefold.features3-1.title")}
+    </Fragment>
+  </Features3>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3 title={t("fivefold.features3-2.title")} subtitle2={t("fivefold.features3-2.subtitle2")}>
+    <Fragment slot="subtitle">
+      {t("fivefold.features3-2.subtitle1-1")}
+      <span class="dark:text-white text-black text-2xl">
+        {t("fivefold.features3-2.subtitle.span")}
+      </span>
+      {t("fivefold.features3-2.subtitle1-2")}
+    </Fragment>
+  </Features3>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="examples"
+    tagline={t("fivefold.features.tagline")}
+    title={t("fivefold.features.title")}
+    subtitle={t("fivefold.features.subtitle")}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title={t("fivefold.content1.title")}
+    subtitle={t("fivefold.content1.subtitle")}
+    isReversed
+    testimonial={[
+      {
+        testimonials: t("fivefold.content1.testimonials1.text"),
+        name: t("fivefold.content1.testimonials1.name"),
+      },
+      {
+        testimonials: t("fivefold.content1.testimonials2.text"),
+        name: t("fivefold.content1.testimonials2.name"),
+      },
+      {
+        testimonials: t("fivefold.content1.testimonials3.text"),
+        name: t("fivefold.content1.testimonials3.name"),
+      },
+    ]}
+    bottom={{
+      title: t("fivefold.content1.bottom.title"),
+      subtitle: t("fivefold.content1.bottom.subtitle"),
+      links: [
+        {
+          title: t("fivefold.content1.bottom.links1.title"),
+          link: t("fivefold.content1.bottom.links1.link"),
+        },
+      ],
+    }}
+    items={[
+      {
+        title: t("fivefold.content1.items1.title"),
+        description: t("fivefold.content1.items1.description"),
+      },
+      {
+        title: t("fivefold.content1.items2.title"),
+        description: t("fivefold.content1.items2.description"),
+      },
+      {
+        title: t("fivefold.content1.items3.title"),
+        description: t("fivefold.content1.items3.description"),
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        {t("fivefold.content1.content1")}<br />
+        {t("fivefold.content1.content2")}
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative pb-[56.25%]">
+        <iframe
+          loading="lazy"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/AVNQMYy9W2s?si=Gfcq7y7sKiQnyfR2"
+          title="YouTube video player"
+          frameborder="0"
+          class="absolute top-0 left-0 w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title={t("fivefold.content2.title")}
+    subtitle={t("fivefold.content2.subtitle")}
+    whiteText={true}
+    testimonial={[
+      {
+        testimonials: t("fivefold.content2.testimonials1.text"),
+        name: t("fivefold.content2.testimonials1.name"),
+      },
+      {
+        testimonials: t("fivefold.content2.testimonials2.text"),
+        name: t("fivefold.content2.testimonials2.name"),
+      },
+      {
+        testimonials: t("fivefold.content2.testimonials3.text"),
+        name: t("fivefold.content2.testimonials3.name"),
+      },
+    ]}
+    bottom={{
+      title: t("fivefold.content2.bottom.title"),
+      subtitle: t("fivefold.content2.bottom.subtitle"),
+      links: [
+        {
+          title: t("fivefold.content2.bottom.links1.title"),
+          link: t("fivefold.content2.bottom.links1.link"),
+        },
+        {
+          title: t("fivefold.content2.bottom.links2.title"),
+          link: t("fivefold.content2.bottom.links2.link"),
+        },
+      ],
+    }}
+    items={[
+      {
+        title: t("fivefold.content2.items1.title"),
+        description: t("fivefold.content2.items1.description"),
+      },
+      {
+        title: t("fivefold.content2.items2.title"),
+        description: t("fivefold.content2.items2.description"),
+      },
+      {
+        title: t("fivefold.content2.items3.title"),
+        description: t("fivefold.content2.items3.description"),
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-white sm:text-3xl mb-2">
+        {t("fivefold.content2.content1")}<br />
+        {t("fivefold.content2.content2")}
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative pb-[56.25%]">
+        <iframe
+          loading="lazy"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/9jR-QrrpUCY?si=Mt3-lVnl71-3fHb2"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          class="absolute top-0 left-0 w-full h-full"
+          allowfullscreen></iframe>
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-secondary dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title={t("fivefold.content3.title")}
+    subtitle={t("fivefold.content3.subtitle")}
+    isReversed
+    testimonial={[
+      {
+        testimonials: t("fivefold.content3.testimonials1.text"),
+        name: t("fivefold.content3.testimonials1.name"),
+      },
+      {
+        testimonials: t("fivefold.content3.testimonials2.text"),
+        name: t("fivefold.content3.testimonials2.name"),
+      },
+      {
+        testimonials: t("fivefold.content3.testimonials3.text"),
+        name: t("fivefold.content3.testimonials3.name"),
+      },
+    ]}
+    bottom={{
+      title: t("fivefold.content3.bottom.title"),
+      subtitle: t("fivefold.content3.bottom.subtitle"),
+      links: [
+        {
+          title: t("fivefold.content3.bottom.links1.title"),
+          link: t("fivefold.content3.bottom.links1.link"),
+        },
+        {
+          title: t("fivefold.content3.bottom.links2.title"),
+          link: t("fivefold.content3.bottom.links2.link"),
+        },
+      ],
+    }}
+    items={[
+      {
+        title: t("fivefold.content3.items1.title"),
+        description: t("fivefold.content3.items1.description"),
+      },
+      {
+        title: t("fivefold.content3.items2.title"),
+        description: t("fivefold.content3.items2.description"),
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        {t("fivefold.content3.content1")}<br />
+        {t("fivefold.content3.content2")}
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative pb-[56.25%]">
+        <iframe
+          loading="lazy"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/O-cnVuG6JNM?si=CZGbd2p8t9oDC-bF"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          class="absolute top-0 left-0 w-full h-full"
+          allowfullscreen></iframe>
+      </div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title={t("fivefold.content4.title")}
+    subtitle={t("fivefold.content4.subtitle")}
+    whiteText={true}
+    testimonial={[
+      {
+        testimonials: t("fivefold.content4.testimonials1.text"),
+        name: t("fivefold.content4.testimonials1.name"),
+      },
+      {
+        testimonials: t("fivefold.content4.testimonials2.text"),
+        name: t("fivefold.content4.testimonials2.name"),
+      },
+      {
+        testimonials: t("fivefold.content4.testimonials3.text"),
+        name: t("fivefold.content4.testimonials3.name"),
+      },
+    ]}
+    bottom={{
+      title: t("fivefold.content4.bottom.title"),
+      subtitle: t("fivefold.content4.bottom.subtitle"),
+      links: [
+        {
+          title: t("fivefold.content4.bottom.links1.title"),
+          link: t("fivefold.content4.bottom.links1.link"),
+        },
+      ],
+    }}
+    items={[
+      {
+        title: t("fivefold.content4.items1.title"),
+        description: t("fivefold.content4.items1.description"),
+      },
+      {
+        title: t("fivefold.content4.items2.title"),
+        description: t("fivefold.content4.items2.description"),
+      },
+      {
+        title: t("fivefold.content4.items3.title"),
+        description: t("fivefold.content4.items3.description"),
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight text-white sm:text-3xl mb-2">
+        {t("fivefold.content4.content1")}<br />
+        {t("fivefold.content4.content2")}
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative pb-[56.25%]">
+        <iframe
+          loading="lazy"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/zeclAWdlg0w?si=jlkVxBPXEORZOFLn"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          class="absolute top-0 left-0 w-full h-full"
+          allowfullscreen></iframe>
+      </div>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-secondary dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    classes={{
+      bottom: "border-b-0",
+    }}
+    title={t("fivefold.content5.title")}
+    subtitle={t("fivefold.content5.subtitle")}
+    isReversed
+    testimonial={[
+      {
+        testimonials: t("fivefold.content5.testimonials1.text"),
+        name: t("fivefold.content5.testimonials1.name"),
+      },
+      {
+        testimonials: t("fivefold.content5.testimonials2.text"),
+        name: t("fivefold.content5.testimonials2.name"),
+      },
+      {
+        testimonials: t("fivefold.content5.testimonials3.text"),
+        name: t("fivefold.content5.testimonials3.name"),
+      },
+      {
+        testimonials: t("fivefold.content5.testimonials4.text"),
+        name: t("fivefold.content5.testimonials4.name"),
+      },
+    ]}
+    bottom={{
+      title: t("fivefold.content5.bottom.title"),
+      subtitle: t("fivefold.content5.bottom.subtitle"),
+      links: [
+        {
+          title: t("fivefold.content5.bottom.links1.title"),
+          link: t("fivefold.content5.bottom.links1.link"),
+        },
+        {
+          title: t("fivefold.content5.bottom.links2.title"),
+          link: t("fivefold.content5.bottom.links2.link"),
+        },
+      ],
+    }}
+    items={[
+      {
+        title: t("fivefold.content5.items1.title"),
+        description: t("fivefold.content5.items1.description"),
+      },
+      {
+        title: t("fivefold.content5.items2.title"),
+        description: t("fivefold.content5.items2.description"),
+      },
+      {
+        title: t("fivefold.content5.items3.title"),
+        description: t("fivefold.content5.items3.description"),
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        {t("fivefold.content5.content1")}<br />
+        {t("fivefold.content5.content2")}
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative pb-[56.25%]">
+        <iframe
+          loading="lazy"
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/gE1Z7-8cq_M?si=G3guf5bhn2Uv7KSk"
+          title="YouTube video player"
+          frameborder="0"
+          class="absolute top-0 left-0 w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </Fragment>
+  </Content>
+</Layout>

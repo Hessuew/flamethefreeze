@@ -4,12 +4,7 @@ import { twMerge } from "tailwind-merge";
 import type { ItemGrid } from "~/types";
 import Button from "./Button.astro";
 
-const {
-  items = [],
-  columns,
-  defaultIcon = "",
-  classes = {},
-} = Astro.props as ItemGrid;
+const { items = [], columns, defaultIcon = "", classes = {} } = Astro.props as ItemGrid;
 
 const {
   container: containerClass = "",
@@ -17,6 +12,7 @@ const {
   panel: panelClass = "",
   title: titleClass = "",
   description: descriptionClass = "",
+  description2: descriptionClass2 = "",
   icon: defaultIconClass = "text-primary",
 } = classes;
 ---
@@ -29,66 +25,58 @@ const {
           columns === 4
             ? "lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
             : columns === 3
-            ? "lg:grid-cols-3 sm:grid-cols-2"
-            : columns === 2
-            ? "sm:grid-cols-2 "
-            : ""
+              ? "lg:grid-cols-3 sm:grid-cols-2"
+              : columns === 2
+                ? "sm:grid-cols-2 "
+                : ""
         }`,
         containerClass
       )}
     >
-      {items.map(
-        ({
-          title,
-          description,
-          icon,
-          callToAction,
-          classes: itemClasses = {},
-        }) => (
-          <div
-            class={twMerge(
-              "relative flex flex-col",
-              panelClass,
-              itemClasses?.panel
-            )}
-          >
-            {(icon || defaultIcon) && (
-              <Icon
-                name={icon || defaultIcon}
-                class={twMerge(
-                  "mb-2 w-10 h-10",
-                  defaultIconClass,
-                  itemClasses?.icon
-                )}
-              />
-            )}
-            <div
-              class={twMerge(
-                "text-xl font-bold",
-                titleClass,
-                itemClasses?.title
-              )}
-            >
-              {title}
-            </div>
-            {description && (
+      {items.map(({ title, description, description2, icon, callToAction, classes: itemClasses = {}, link }) => (
+        <div class={twMerge("relative flex flex-col flex-wrap", panelClass, itemClasses?.panel)}>
+          {(icon || defaultIcon) && (
+            <Icon name={icon || defaultIcon} class={twMerge("mb-2 w-10 h-10", defaultIconClass, itemClasses?.icon)} />
+          )}
+          <div class={twMerge("text-xl font-bold", titleClass, itemClasses?.title)}>{title}</div>
+          {description && link ? (
+            <a
+              class={twMerge("text-blue-700 mt-2 hover:underline break-all", itemClasses?.description)}
+              set:html={description}
+              href={description.toString()}
+              target="_blank"
+            />
+          ) : (
+            description && (
               <p
-                class={twMerge(
-                  "text-muted mt-2",
-                  descriptionClass,
-                  itemClasses?.description
-                )}
+                class={twMerge("text-muted mt-2 break-word", descriptionClass, itemClasses?.description)}
                 set:html={description}
               />
-            )}
-            {callToAction && (
-              <div class="mt-2">
-                <Button {...callToAction} />
-              </div>
-            )}
-          </div>
-        )
-      )}
+            )
+          )}
+          {description2 && (
+            <p
+              class={twMerge("pt-4 text-muted break-word", descriptionClass2, itemClasses?.description)}
+              set:html={description2.text}
+            />
+          )}
+          {description2 && description2.link && (
+            <p
+              class={twMerge(
+                "text-blue-700 mt-2 hover:underline break-all",
+                descriptionClass2,
+                itemClasses?.description
+              )}
+              set:html={description2.link}
+            />
+          )}
+          {callToAction && (
+            <div class="mt-2">
+              <Button {...callToAction} />
+            </div>
+          )}
+        </div>
+      ))}
     </div>
   )
 }

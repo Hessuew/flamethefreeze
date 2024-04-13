@@ -1,7 +1,7 @@
 ---
-import Image from '~/components/common/Image.astro';
-import Button from '~/components/ui/Button.astro';
-import type { CallToAction } from '~/types';
+import Image from "~/components/common/Image.astro";
+import Button from "~/components/ui/Button.astro";
+import type { CallToAction } from "~/types";
 
 export interface Props {
   id?: string;
@@ -11,16 +11,18 @@ export interface Props {
   content?: string;
   actions?: string | CallToAction[];
   image?: string | any; // TODO: find HTMLElementProps
+  imageText?: string;
 }
 
 const {
   id,
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
   tagline,
-  content = await Astro.slots.render('content'),
-  actions = await Astro.slots.render('actions'),
-  image = await Astro.slots.render('image'),
+  content = await Astro.slots.render("content"),
+  actions = await Astro.slots.render("actions"),
+  image = await Astro.slots.render("image"),
+  imageText = await Astro.slots.render("imageText"),
 } = Astro.props;
 ---
 
@@ -33,7 +35,7 @@ const {
         {
           tagline && (
             <p
-              class="text-base text-secondary dark:text-blue-200 font-bold tracking-wide uppercase"
+              class="text-base text-secondary dark:bg-gradient-to-r dark:from-orange-600 dark:to-yellow-500 dark:bg-clip-text dark:text-transparent font-bold tracking-wide uppercase"
               set:html={tagline}
             />
           )
@@ -70,7 +72,7 @@ const {
         {
           image && (
             <div class="relative m-auto max-w-5xl">
-              {typeof image === 'string' ? (
+              {typeof image === "string" ? (
                 <Fragment set:html={image} />
               ) : (
                 <Image
@@ -82,6 +84,11 @@ const {
                   height={576}
                   {...image}
                 />
+              )}
+              {imageText && (
+                <div class="text-center">
+                  <p>{imageText}</p>
+                </div>
               )}
             </div>
           )

@@ -1,19 +1,18 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
+import path from "path";
+import { fileURLToPath } from "url";
 
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
-import mdx from '@astrojs/mdx';
-import partytown from '@astrojs/partytown';
-import compress from 'astro-compress';
-import icon from 'astro-icon';
-import tasks from './src/utils/tasks';
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import mdx from "@astrojs/mdx";
+import partytown from "@astrojs/partytown";
+import icon from "astro-icon";
+import tasks from "./src/utils/tasks";
 
-import { readingTimeRemarkPlugin } from './src/utils/frontmatter.mjs';
+import { readingTimeRemarkPlugin } from "./src/utils/frontmatter.mjs";
 
-import { ANALYTICS, SITE } from './src/utils/config.ts';
+import { ANALYTICS, SITE } from "./src/utils/config.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -27,51 +26,48 @@ const whenExternalScripts = (items = []) =>
 export default defineConfig({
   site: SITE.site,
   base: SITE.base,
-  trailingSlash: SITE.trailingSlash ? 'always' : 'never',
+  trailingSlash: SITE.trailingSlash ? "always" : "never",
 
-  output: 'static',
+  output: "static",
 
   integrations: [
     tailwind({
       applyBaseStyles: false,
     }),
-    sitemap(),
+    sitemap({
+      i18n: {
+        defaultLocale: "en", // All urls that don't contain `es` or `fr` after `https://stargazers.club/` will be treated as default locale, i.e. `en`
+        locales: {
+          en: "en-US", // The `defaultLocale` value must present in `locales` keys
+          fi: "fi-FI",
+        },
+      },
+    }),
     mdx(),
     icon({
       include: {
-        tabler: ['*'],
-        'flat-color-icons': [
-          'template',
-          'gallery',
-          'approval',
-          'document',
-          'advertising',
-          'currency-exchange',
-          'voice-presentation',
-          'business-contact',
-          'database',
+        tabler: ["*"],
+        "flat-color-icons": [
+          "template",
+          "gallery",
+          "approval",
+          "document",
+          "advertising",
+          "currency-exchange",
+          "voice-presentation",
+          "business-contact",
+          "database",
         ],
       },
     }),
 
     ...whenExternalScripts(() =>
       partytown({
-        config: { forward: ['dataLayer.push'] },
+        config: { forward: ["dataLayer.push"] },
       })
     ),
 
     tasks(),
-
-    compress({
-      CSS: true,
-      HTML: {
-        removeAttributeQuotes: false,
-      },
-      Image: false,
-      JavaScript: true,
-      SVG: true,
-      Logger: 1,
-    }),
   ],
 
   markdown: {
@@ -81,7 +77,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '~': path.resolve(__dirname, './src'),
+        "~": path.resolve(__dirname, "./src"),
       },
     },
   },

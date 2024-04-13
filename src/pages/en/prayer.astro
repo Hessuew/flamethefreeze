@@ -1,0 +1,146 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import Image from "~/components/common/Image.astro";
+import Features from "~/components/widgets/Features.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import CallToAction from "~/components/widgets/CallToAction.astro";
+import GradientText from "~/components/ui/GradientText.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+
+const metadata = {
+  title: "Prayer",
+};
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <Hero tagline={t("prayer.herotext.tagline")}>
+    <Fragment slot="title">
+      {t("prayer.herotext.title1")}
+      <GradientText class="italic pr-3" isHeading={true} text={t("prayer.herotext.title.span")} />
+      {t("prayer.herotext.title2")}
+    </Fragment>
+  </Hero>
+
+  <!-- Features3 Widget ******************* -->
+
+  <Features3
+    title={t("prayer.features3-1.title")}
+    subtitle={t("prayer.features3-1.subtitle")}
+    subtitle2={t("prayer.features3-1.subtitle2")}
+  />
+
+  <!-- Features Widget ************** -->
+
+  <Features
+    title={t("prayer.features1.title")}
+    subtitle={t("prayer.features1.subtitle")}
+    columns={2}
+    items={[
+      {
+        title: t("prayer.features1.items1.title"),
+        description: t("prayer.features1.items1.description"),
+        icon: "tabler:bolt",
+      },
+      {
+        title: t("prayer.features1.items2.title"),
+        description: t("prayer.features1.items2.description"),
+        icon: "tabler:trending-up",
+      },
+      {
+        title: t("prayer.features1.items3.title"),
+        description: t("prayer.features1.items3.description"),
+        icon: "tabler:accessible",
+      },
+      {
+        title: t("prayer.features1.items4.title"),
+        description: t("prayer.features1.items4.description"),
+        icon: "tabler:bandage-off",
+      },
+      {
+        title: t("prayer.features1.items5.title"),
+        description: t("prayer.features1.items5.description"),
+        icon: "tabler:shield-x",
+      },
+      {
+        title: t("prayer.features1.items6.title"),
+        description: t("prayer.features1.items6.description"),
+        icon: "tabler:mood-happy",
+      },
+      {
+        title: t("prayer.features1.items7.title"),
+        description: t("prayer.features1.items7.description"),
+        icon: "tabler:trash-off",
+      },
+      {
+        title: t("prayer.features1.items8.title"),
+        description: t("prayer.features1.items8.description"),
+        icon: "tabler:checks",
+      },
+    ]}
+    classes={{ container: "max-w-5xl" }}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3 subtitle={t("prayer.features3-2.subtitle")}>
+    <Fragment slot="subtitle2">
+      <span class="highlight font-bold">{t("prayer.features3-2.subtitle2a")}</span>{t("prayer.features3-2.subtitle2b")}
+    </Fragment>
+  </Features3>
+
+  <!-- Features Widget *************** -->
+
+  <Features id="features" tagline={t("index.features1.tagline")} title={t("prayer.features1-2.title")}>
+    <Fragment slot="subtitle">
+      {t("prayer.features1-2.subtitle1")}
+      <span class="font-semibold">{t("prayer.features1-2.span1")}</span>
+      <GradientText class="font-bold" text={t("prayer.features1-2.span2")} /><span class="font-semibold"
+        >{t("prayer.features1-2.span3")}</span
+      >
+      {t("prayer.features1-2.subtitle2")}
+    </Fragment>
+  </Features>
+
+  <!-- Image Widget ******************* -->
+
+  <div class="relative m-auto max-w-5xl pt-10">
+    <Image
+      class="mx-auto rounded-md w-full"
+      widths={[400, 768, 1024, 2040]}
+      sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+      loading="eager"
+      width={1024}
+      height={576}
+      src={"https://lh3.googleusercontent.com/d/1qBiOaaluO02K8yuukn7q4lS6ptKZIWdM"}
+      alt={"An soldier praying intensively"}
+    />
+  </div>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    subtitle={t("prayer.features3-3.subtitle")}
+    subtitle2={t("prayer.features3-3.subtitle2")}
+    classes={{
+      headline: {
+        subtitle: "text-xl text-black dark:text-white",
+        subtitle2: "text-xl text-muted",
+      },
+    }}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction subtitle={t("prayer.callToAction.subtitle")} subtitle2={t("prayer.callToAction.subtitle2")}>
+    <Fragment slot="title">
+      {t("prayer.callToAction.title1")}
+      <GradientText text={t("prayer.callToAction.title2")} />
+    </Fragment>
+  </CallToAction>
+</Layout>

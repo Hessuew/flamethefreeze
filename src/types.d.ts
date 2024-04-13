@@ -1,5 +1,5 @@
-import type { AstroComponentFactory } from 'astro/runtime/server/index.js';
-import type { HTMLAttributes } from 'astro/types';
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
+import type { HTMLAttributes } from "astro/types";
 
 export interface Post {
   /** A unique ID number that identifies a post. */
@@ -101,8 +101,10 @@ export interface Widget {
 }
 
 export interface Headline {
+  anchorId?: string;
   title?: string;
   subtitle?: string;
+  subtitle2?: string;
   tagline?: string;
   classes?: Record<string, string>;
 }
@@ -129,11 +131,13 @@ export interface Stat {
 
 export interface Item {
   title?: string;
-  description?: string;
+  description?: string | { text: string; link?: boolean; subtitle?: boolean }[];
+  description2?: { text: string; link?: string };
   icon?: string;
   classes?: Record<string, string>;
   callToAction?: CallToAction;
   image?: Image;
+  link?: boolean;
 }
 
 export interface Price {
@@ -150,7 +154,7 @@ export interface Price {
 
 export interface Testimonial {
   title?: string;
-  testimonial?: string;
+  testimonials?: string | string[];
   name?: string;
   job?: string;
   image?: string | unknown;
@@ -176,7 +180,7 @@ export interface Disclaimer {
 
 // COMPONENTS
 export interface CallToAction extends HTMLAttributes<a> {
-  variant?: 'primary' | 'secondary' | 'tertiary' | 'link';
+  variant?: "primary" | "secondary" | "tertiary" | "link";
   text?: string;
   icon?: string;
   classes?: Record<string, string>;
@@ -228,7 +232,9 @@ export interface Pricing extends Headline, Widget {
 
 export interface Testimonials extends Headline, Widget {
   testimonials?: Array<Testimonial>;
+  columns?: number;
   callToAction?: CallToAction;
+  numbers?: boolean;
 }
 
 export interface Brands extends Headline, Widget {
@@ -237,6 +243,7 @@ export interface Brands extends Headline, Widget {
 }
 
 export interface Features extends Headline, Widget {
+  anchorId?: string;
   image?: string | unknown;
   video?: Video;
   items: Array<Item>;
@@ -262,20 +269,31 @@ export interface Steps extends Headline, Widget {
     description?: string;
     icon?: string;
     classes?: Record<string, string>;
+    link?: boolean;
   }>;
   callToAction?: string | CallToAction;
   image?: string | Image;
   isReversed?: boolean;
+  link?: boolean;
+  type2?: boolean;
 }
 
 export interface Content extends Headline, Widget {
   content?: string;
+  defaultIcon?: string;
   image?: string | unknown;
   items?: Array<Item>;
   columns?: number;
   isReversed?: boolean;
   isAfterContent?: boolean;
   callToAction?: CallToAction;
+  testimonial?: Testimonials;
+  bottom?: {
+    title: string;
+    subtitle: string;
+    links: { title: string; link: string }[];
+  };
+  whiteText?: boolean;
 }
 
 export interface Contact extends Headline, Form, Widget {}
