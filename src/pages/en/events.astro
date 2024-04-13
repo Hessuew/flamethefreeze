@@ -20,7 +20,6 @@ const t = useTranslations(lang);
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
   <Hero tagline={t("events.hero.tagline")}>
     <Fragment slot="title">
       {t("events.hero.title1")}
@@ -34,6 +33,70 @@ const t = useTranslations(lang);
       <GradientText class="font-bold" text={t("events.hero.subtitle.span")} />{t("events.hero.subtitle2")}
     </Fragment>
   </Hero>
+
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline={t("events.hero2.tagline")}
+    image={{
+      src:
+        lang === "en"
+          ? "https://lh3.googleusercontent.com/d/112oamJL5qcP3R2fQNBvolts7rk2o-Mbf"
+          : "https://lh3.googleusercontent.com/d/1SukghTzbSvsFdgK4VZn0RaRFp6filpCE",
+      alt: "Jesus fest kuopio",
+    }}
+  >
+    <Fragment slot="title">
+      <pre>{`┬\n⏐\n⏐\n⏐\n⏐\n˅`}</pre>
+      {t("events.hero2.title1")}
+    </Fragment>
+    <Fragment slot="subtitle">
+      {t("events.hero2.subtitle1")}
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    anchorId="features2_title"
+    title={t("events.features2.title")}
+    subtitle={t("events.features2.subtitle")}
+    columns={3}
+    items={[
+      {
+        title: t("events.features2.items1.title"),
+        description: t("events.features2.items1.description"),
+        description2: {
+          text: t("events.features2.items1.description2"),
+          link: "https://uef.zoom.us/j/62720309361?pwd=MDBOdUc0RHFMVmt3bHZXR1FHL2swUT09",
+        },
+        // icon: "tabler:book",
+      },
+      {
+        title: t("events.features2.items2.title"),
+        description: t("events.features2.items2.description"),
+        description2: {
+          text: t("events.features2.items2.description2"),
+          link: "https://uef.zoom.us/j/64440694917?pwd=eUxZRlUyM00vNkxseW1rcGxlZTc3UT09",
+        },
+        // icon: "tabler:pray",
+      },
+      {
+        title: t("events.features2.items3.title"),
+        description: t("events.features2.items3.description"),
+        description2: {
+          text: t("events.features2.items3.description2"),
+        },
+        // icon: "tabler:friends",
+      },
+    ]}
+  />
+
+  <!-- Text section -->
+
+  <div class="w-full flex flex-col items-center px-10">
+    <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
+  </div>
 
   <!-- Note Widget ******************* -->
 
@@ -57,7 +120,6 @@ const t = useTranslations(lang);
   <!-- Features2 Widget ************** -->
 
   <Features2
-    anchorId="features2_title"
     title={t("events.features.title")}
     subtitle={t("events.features.subtitle")}
     columns={3}

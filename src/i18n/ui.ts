@@ -207,6 +207,24 @@ export const ui = {
     "events.hero.subtitle2": "with signs following. Amen.' Mark 16:20 KJV",
     "events.hero.subtitle.span": " the word",
     "events.hero.callToAction": "Explore our meetings",
+    "events.hero2.tagline": "Coming events",
+    "events.hero2.title1": "JESUS FEST KUOPIO!",
+    "events.hero2.subtitle1":
+      "June 7 – 9, 2024; 17:00 – 20:00​ Kauppatori, 70100 Kuopio​",
+    "events.features2.title": "Our songs for the event",
+    "events.features2.subtitle": "Con Gozo",
+    "events.features2.items1.title": "Bible Study - Zoom",
+    "events.features2.items1.description":
+      "We have studied now for two years the mystery of godliness from 1 Timothy 3:16. And still, the Holy Spirit is each time bringing more so that, in the end, we will also enter into glory like our Lord Jesus.",
+    "events.features2.items1.description2": "Saturdays of odd weeks, starting at 18:00 GMT+2.",
+    "events.features2.items2.title": "Prayer Meeting - Zoom",
+    "events.features2.items2.description":
+      "The Goliath/GoLion has been taken down. In these meetings by the Spirit of God, we wrestled the spiritual rulers down, and therefore, based on Jesus' victory, we are seeing the outpouring of the Spirit and the signs and wonders following the spoken word. Do you want to enter into the same experience?",
+    "events.features2.items2.description2": "Saturdays of even weeks, starting at 18:00 GMT+2.",
+    "events.features2.items3.title": "Bible Club - Local / Zoom",
+    "events.features2.items3.description":
+      "We gather together to praise the Lord, tell testimonies of what Jesus has done, hear the word of God, and pray, among other things, as the Holy Spirit guides the meeting. He is the Lord of the meeting, so we just follow Him without setting time limits. In His presence, there is no hurry but righteousness, joy, and peace.",
+    "events.features2.items3.description2": "Ask for the Zoom link or the location: +358 46 571 4804",
     "events.note.title": "It is not a secret,",
     "events.note.subtitle":
       "we just yield ourselves completely to God for Him to use us. It is His Spirit making us bold soldiers of Christ that they will say, just like about Peter and John, 'They have been with Jesus'.",
