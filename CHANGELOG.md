@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.6.0](https://github.com/Hessuew/flamethefreeze/compare/v3.5.0...v3.6.0) (2024-04-14)
+
+
+### Features
+
+* events: JESUS FEST KUOPIO, ready ([af51830](https://github.com/Hessuew/flamethefreeze/commit/af51830e1ba819ac0ec595dc6bba9b131354e6c2))
+* events: JESUS FEST KUOPIO, ready ([#103](https://github.com/Hessuew/flamethefreeze/issues/103)) ([4d9c34c](https://github.com/Hessuew/flamethefreeze/commit/4d9c34cc29e7efffbc9114d6f8582ce6d7a6b58f))
+* JESUS FEST KUOPIO ([92536ad](https://github.com/Hessuew/flamethefreeze/commit/92536ad9ade70dc0c94cadb8112ff2580b9d3a42))
+* JESUS FEST KUOPIO ([#102](https://github.com/Hessuew/flamethefreeze/issues/102)) ([cd4a4df](https://github.com/Hessuew/flamethefreeze/commit/cd4a4dfbbd6ecfc1a2cfa812273c49faa5ffae78))
+
 ## [3.5.0](https://github.com/Hessuew/flamethefreeze/compare/v3.4.2...v3.5.0) (2024-03-31)
 
 
