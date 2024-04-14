@@ -15,7 +15,6 @@ const metadata = {
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
-// actions={[{ variant: "primary", target: "_self", text: t("events.hero.callToAction"), href: "/" }]}
 ---
 
 <Layout metadata={metadata}>
@@ -55,10 +54,15 @@ const t = useTranslations(lang);
     </Fragment>
   </Hero>
 
-  <!-- Features2 Widget ************** -->
+  
+  <!-- Anchor to leave the scroll to leave Features2 title visible ************** -->
 
+  <div id="songs"/>
+
+  <!-- Features2 Widget ************** -->
   <Features2
-    anchorId="features2_title"
+    hrefID="songs"
+    class="container"
     title={t("events.features2.title")}
     subtitle={t("events.features2.subtitle")}
     columns={3}
@@ -66,28 +70,36 @@ const t = useTranslations(lang);
       {
         title: t("events.features2.items1.title"),
         description: t("events.features2.items1.description"),
-        description2: {
-          text: t("events.features2.items1.description2"),
-          link: "https://uef.zoom.us/j/62720309361?pwd=MDBOdUc0RHFMVmt3bHZXR1FHL2swUT09",
-        },
         // icon: "tabler:book",
       },
       {
         title: t("events.features2.items2.title"),
         description: t("events.features2.items2.description"),
-        description2: {
-          text: t("events.features2.items2.description2"),
-          link: "https://uef.zoom.us/j/64440694917?pwd=eUxZRlUyM00vNkxseW1rcGxlZTc3UT09",
-        },
         // icon: "tabler:pray",
       },
       {
         title: t("events.features2.items3.title"),
         description: t("events.features2.items3.description"),
-        description2: {
-          text: t("events.features2.items3.description2"),
-        },
         // icon: "tabler:friends",
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    subtitle={t("events.features3.subtitle")}
+    columns={3}
+    items={[
+      {
+        title: t("events.features3.items1.title"),
+        description: t("events.features3.items1.description"),
+        // icon: "tabler:book",
+      },
+      {
+        title: t("events.features3.items2.title"),
+        description: t("events.features3.items2.description"),
+        // icon: "tabler:pray",
       },
     ]}
   />
@@ -230,3 +242,25 @@ const t = useTranslations(lang);
     </Fragment>
   </CallToAction>
 </Layout>
+
+<style lang="css">
+  .anchor-link {
+    visibility: hidden;
+  }
+
+  a {
+    color: hsl(var(--colour-text-hue) var(--colour-text-saturation) var(--colour-text-luminance));
+    text-decoration: none;
+  }
+
+  [astro-icon] {
+    display: inline;
+    width: var(--font-size-5);
+    vertical-align: middle;
+  }
+
+  .container:focus .anchor-link,
+  .container:hover .anchor-link {
+    visibility: visible;
+  }
+</style>
