@@ -207,6 +207,28 @@ export const ui = {
     "events.hero.subtitle2": "with signs following. Amen.' Mark 16:20 KJV",
     "events.hero.subtitle.span": " the word",
     "events.hero.callToAction": "Explore our meetings",
+    "events.hero2.tagline": "Coming events",
+    "events.hero2.title1": "JESUS FEST KUOPIO!",
+    "events.hero2.subtitle1":
+      "June 7 – 9, 2024; 17:00 – 20:00​ Kauppatori, 70100 Kuopio​",
+    "events.features2.title": "Our songs for the event",
+    "events.features2.subtitle": "Wells of salvation",
+    "events.features2.items1.title": "En",
+    "events.features2.items1.description":
+      "Behold, God <br>is my salvation; <br>I will trust, and not be afraid: <br>for the LORD JEHOVAH <br>is my strength and my song; <br>he also is become <br>my salvation. <br><br>Therefore with joy <br>shall ye draw water <br>out of the wells <br>of salvation. <br><br>Therefore with joy <br>shall ye draw water <br>out of the wells <br>of salvation.",
+    "events.features2.items2.title": "Es",
+    "events.features2.items2.description":
+      "He aquí mi Dios <br>mi salvación; <br>confiaré y no temeré; <br>porque mi fortaleza <br>mi canción es Jehová, <br>quien ha venido a ser <br>mi salvación. <br><br></vr>Con gozo sacaréis <br>las aguas <br>de las fuentes <br>de salvación. <br><br>Con gozo sacaréis <br>las aguas <br>de las fuentes <br>de salvación",
+    "events.features2.items3.title": "Fi",
+    "events.features2.items3.description":
+      "Katso, <br>Herra on pelastajani. <br>Luotan enkä pelkää. <br>Sillä Herra JEHOVA <br>on voimani, lauluni. <br>Hän tuli minulle <br>pelastukseksi. <br><br>Siksi saatte ilolla <br>nostaa vettä <br>pelastuksen <br>lähtehistä. <br><br>Siksi saatte ilolla <br>nostaa vettä <br>pelastuksen <br>lähtehistä",
+    "events.features3.subtitle": "Jesus Christ the Son of God",
+    "events.features3.items1.title": "En",
+    "events.features3.items1.description":
+      "Jesus Christ the Son of God <br>Oh yes oh yes <br>Hallelujah He arose <br>Oh yes oh yes <br>Hallelujah He arose <br>The King of kings arose <br>Hallelujah He arose <br>Oh yes oh yes",
+    "events.features3.items2.title": "Fi",
+    "events.features3.items2.description":
+      "Jeesus Kristus Jumalan Poika <br>Oi kyllä kyllä <br>Hallelujah Hän nousi <br>Oi kyllä kyllä <br>Hallelujah Hän nousi <br>Kuningasten Kuningas nousi <br>Hallelujah Hän nousi <br>Oi kyllä kyllä",
     "events.note.title": "It is not a secret,",
     "events.note.subtitle":
       "we just yield ourselves completely to God for Him to use us. It is His Spirit making us bold soldiers of Christ that they will say, just like about Peter and John, 'They have been with Jesus'.",
@@ -1219,6 +1241,13 @@ export const ui = {
     "events.hero.subtitle2": "sitä seuraavien merkkien kautta.' Amen. Mar 16:20 FINRK",
     "events.hero.subtitle.span": " sanan",
     "events.hero.callToAction": "Tutustu tapaamisiimme",
+    "events.hero2.tagline": "Tulevat tapahtumat",
+    "events.hero2.title1": "JESUS FEST KUOPIO!",
+    "events.hero2.subtitle1":
+      "Kesäkuu 7 – 9, 2024; 17:00 – 20:00​ Kauppatori, 70100 Kuopio​",
+    "events.features2.title": "Laulumme tapahtumaa varten",
+    "events.features2.subtitle": "Pelastuksen lähteet",
+    "events.features3.subtitle": "Jeesus Kristus Jumalan Poika",
     "events.note.title": "Meillä ei ole salaisuuksia,",
     "events.note.subtitle":
       "me vain annamme itsemme täysin Jumalan käyttöön. Hänen Henkensä tekee meistä rohkeita Kristuksen sotureita ja tämän kautta meistä voidaan sanoa samalla tavalla, kuin Pietarista ja Johanneksesta, 'He ovat olleet Jeesuksen kanssa'. ",

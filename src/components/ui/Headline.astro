@@ -1,6 +1,7 @@
 ---
 import type { Headline } from "~/types";
 import { twMerge } from "tailwind-merge";
+import { Icon } from "astro-icon/components";
 
 const {
   title = await Astro.slots.render("title"),
@@ -9,7 +10,10 @@ const {
   anchorId,
   tagline,
   classes = {},
+  hrefID,
 } = Astro.props as Headline;
+
+const href = `#${hrefID}`;
 
 const {
   container: containerClass = "max-w-3xl",
@@ -21,19 +25,31 @@ const {
 
 {
   (title || subtitle || tagline) && (
-    <div class={twMerge("mb-8 md:mx-auto md:mb-12 text-center", containerClass)}>
+    <div class={twMerge("mb-8 md:mx-auto md:mb-12 text-center", containerClass, "anchor-link-container")}>
       {tagline && (
         <p
           class="text-base bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent font-bold tracking-wide uppercase"
           set:html={tagline}
         />
       )}
-      {title && (
+      {title && !hrefID && (
         <h2
           id={anchorId}
           class={twMerge("font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl", titleClass)}
           set:html={title}
         />
+      )}
+      {title && hrefID && (
+        <a aria-label="songs_anchor_link" {href} class="justify-center flex flex-row items-center gap-3">
+          <h2
+            id={anchorId}
+            class={twMerge("font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl", titleClass)}
+            set:html={title}
+          />
+          <span class="anchor-link w-5">
+            <Icon name={"tabler:link"} />
+          </span>
+        </a>
       )}
 
       {subtitle && <p class={twMerge("mt-4 text-muted", subtitleClass)} set:html={subtitle} />}
@@ -53,5 +69,27 @@ const {
     :global(html) {
       scroll-behavior: auto;
     }
+  }
+</style>
+
+<style lang="css">
+  .anchor-link {
+    visibility: hidden;
+  }
+
+  a {
+    color: hsl(var(--colour-text-hue) var(--colour-text-saturation) var(--colour-text-luminance));
+    text-decoration: none;
+  }
+
+  [astro-icon] {
+    display: inline;
+    width: var(--font-size-5);
+    vertical-align: middle;
+  }
+
+  .anchor-link-container:focus .anchor-link,
+  .anchor-link-container:hover .anchor-link {
+    visibility: visible;
   }
 </style>

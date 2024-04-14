@@ -51,5 +51,21 @@ const { textDirection } = I18N;
         content-visibility: auto;
       }
     </style>
+     <script>
+        // JavaScript
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the URL contains a hash
+            if (window.location.hash) {
+                // Get the ID of the element to scroll to
+                var targetId = window.location.hash.substring(1);
+                var targetElement = document.getElementById(targetId);
+                // Check if the element exists
+                if (targetElement) {
+                    // Scroll to the element
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
   </body>
 </html>
