@@ -107,6 +107,7 @@ export interface Headline {
   subtitle2?: string;
   tagline?: string;
   classes?: Record<string, string>;
+  hrefID?: string;
 }
 
 interface TeamMember {
