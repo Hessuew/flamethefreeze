@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.6.1](https://github.com/Hessuew/flamethefreeze/compare/v3.6.0...v3.6.1) (2024-04-24)
+
+
+### Bug Fixes
+
+* update Jesus Fest song lyrics, event images ([e66570c](https://github.com/Hessuew/flamethefreeze/commit/e66570c4d332ebaa010e01b6ee6567d1fa515314))
+* update Jesus Fest song lyrics, event images ([#106](https://github.com/Hessuew/flamethefreeze/issues/106)) ([c4e0418](https://github.com/Hessuew/flamethefreeze/commit/c4e04184ae37be2411401b3594a35bbe42f41ba8))
+
 ## [3.6.0](https://github.com/Hessuew/flamethefreeze/compare/v3.5.0...v3.6.0) (2024-04-14)
 
 
