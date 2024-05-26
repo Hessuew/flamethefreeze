@@ -14,6 +14,9 @@
   "[astro]": {
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   "yaml.schemas": {
     "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
   },
