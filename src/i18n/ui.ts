@@ -228,7 +228,7 @@ export const ui = {
       "Jesus Christ the Son of God <br>Oh yes oh yes <br><br>Hallelujah He arose <br>Oh yes oh yes <br><br>Hallelujah He arose <br>The King of kings arose <br><br>Hallelujah He arose <br>Oh yes oh yes",
     "events.features3.items2.title": "Fi",
     "events.features3.items2.description":
-      "Jeesus Kristus Jumalan Poika <br>Kyllä kyllä <br><br>Hallelujah Hän nousi <br>Kyllä kyllä <br><br>Hallelujah Hän noussut on <br>Kuningasten Kuningas <br><br>Hallelujah Hän noussut on <br>Oi kyllä kyllä",
+      "Jeesus Kristus Jumalan Poika <br>Kyllä kyllä <br><br>Hallelujah Hän noussut on <br>Kyllä kyllä <br><br>Hallelujah Hän noussut on <br>Kuningasten Kuningas <br><br>Hallelujah Hän noussut on <br>Oi kyllä kyllä",
     "events.note.title": "It is not a secret,",
     "events.note.subtitle":
       "we just yield ourselves completely to God for Him to use us. It is His Spirit making us bold soldiers of Christ that they will say, just like about Peter and John, 'They have been with Jesus'.",
