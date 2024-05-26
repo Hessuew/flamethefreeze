@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.6.2](https://github.com/Hessuew/flamethefreeze/compare/v3.6.1...v3.6.2) (2024-05-26)
+
+
+### Bug Fixes
+
+* improved lang picker, fixed song lyrics & link ([2345dce](https://github.com/Hessuew/flamethefreeze/commit/2345dce4bedfb39f734975a0874c2bb0ebb0002e))
+* improved lang picker, fixed song lyrics & link ([#109](https://github.com/Hessuew/flamethefreeze/issues/109)) ([7cdf894](https://github.com/Hessuew/flamethefreeze/commit/7cdf89477f8ed844f5343888c9647bb8381af246))
+
 ## [3.6.1](https://github.com/Hessuew/flamethefreeze/compare/v3.6.0...v3.6.1) (2024-04-24)
 
 
