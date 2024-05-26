@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.6.3](https://github.com/Hessuew/flamethefreeze/compare/v3.6.2...v3.6.3) (2024-05-26)
+
+
+### Bug Fixes
+
+* updated url to fixed Finnish event image ([9c5d5e5](https://github.com/Hessuew/flamethefreeze/commit/9c5d5e5bd1fb6dc05be67c2d7ff7179a374ab8eb))
+* updated url to fixed Finnish event image ([#114](https://github.com/Hessuew/flamethefreeze/issues/114)) ([0df6b34](https://github.com/Hessuew/flamethefreeze/commit/0df6b34fc64e3cf1034a3db83f5b3e28896db42a))
+
 ## [3.6.2](https://github.com/Hessuew/flamethefreeze/compare/v3.6.1...v3.6.2) (2024-05-26)
 
 
