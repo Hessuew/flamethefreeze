@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.7.1](https://github.com/Hessuew/flamethefreeze/compare/v3.7.0...v3.7.1) (2024-06-18)
+
+
+### Bug Fixes
+
+* new index header grammar fix ([3a5dc51](https://github.com/Hessuew/flamethefreeze/commit/3a5dc51d2d4ab7005ebf74fea79a2a11a0f84e9d))
+* new index header grammar fix ([#120](https://github.com/Hessuew/flamethefreeze/issues/120)) ([bf4c8b6](https://github.com/Hessuew/flamethefreeze/commit/bf4c8b6302d06be0fca0a5d3bf00c67de23ec24e))
+
 ## [3.7.0](https://github.com/Hessuew/flamethefreeze/compare/v3.6.3...v3.7.0) (2024-06-18)
 
 
