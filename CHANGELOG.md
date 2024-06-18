@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.7.0](https://github.com/Hessuew/flamethefreeze/compare/v3.6.3...v3.7.0) (2024-06-18)
+
+
+### Features
+
+* new index header text ([e1c91b2](https://github.com/Hessuew/flamethefreeze/commit/e1c91b21ee3fb6e2f0e223d9645c76c21367b7c7))
+* new index header text ([#117](https://github.com/Hessuew/flamethefreeze/issues/117)) ([58eac02](https://github.com/Hessuew/flamethefreeze/commit/58eac021adbc8c47d5cfc2ca23fcad80434ccb7f))
+
 ## [3.6.3](https://github.com/Hessuew/flamethefreeze/compare/v3.6.2...v3.6.3) (2024-05-26)
 
 
