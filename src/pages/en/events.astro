@@ -33,82 +33,6 @@ const t = useTranslations(lang);
     </Fragment>
   </Hero>
 
-  <!-- Hero Widget *******************
-
-  <Hero
-    tagline={t("events.hero2.tagline")}
-    image={{
-      src:
-        lang === "en"
-          ? "https://lh3.googleusercontent.com/d/14Bl0MQwg-O19jq3vI9O8LifTfDAqHgzk"
-          : "https://lh3.googleusercontent.com/d/1Mj2eLlPLuF-5BkeEKQyZyWpQJqz-hauo",
-      alt: "Jesus fest kuopio",
-    }}
-  >
-    <Fragment slot="title">
-      <pre>{`┬\n⏐\n⏐\n⏐\n⏐\n˅`}</pre>
-      {t("events.hero2.title1")}
-    </Fragment>
-    <Fragment slot="subtitle">
-      {t("events.hero2.subtitle1")}
-    </Fragment>
-  </Hero>
-
-  <!-- Anchor to leave the scroll to leave Features2 title visible **************
-
-  <div id="songs"></div>
-
-  <!-- Features2 Widget **************
-  <Features2
-    hrefID="songs"
-    class="container"
-    title={t("events.features2.title")}
-    subtitle={t("events.features2.subtitle")}
-    columns={2}
-    items={[
-      {
-        title: t("events.features2.items1.title"),
-        description: t("events.features2.items1.description"),
-        // icon: "tabler:book",
-      },
-      // {
-      //   title: t("events.features2.items2.title"),
-      //   description: t("events.features2.items2.description"),
-      //   // icon: "tabler:pray",
-      // },
-      {
-        title: t("events.features2.items3.title"),
-        description: t("events.features2.items3.description"),
-        // icon: "tabler:friends",
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget **************
-
-  <Features2
-    subtitle={t("events.features3.subtitle")}
-    columns={2}
-    items={[
-      {
-        title: t("events.features3.items1.title"),
-        description: t("events.features3.items1.description"),
-        // icon: "tabler:book",
-      },
-      {
-        title: t("events.features3.items2.title"),
-        description: t("events.features3.items2.description"),
-        // icon: "tabler:pray",
-      },
-    ]}
-  />
-
-  <!-- Text section
-
-  <div class="w-full flex flex-col items-center px-10">
-    <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
-  </div> -->
-
   <!-- Note Widget ******************* -->
 
   <Note title={t("events.note.title")} subtitle={t("events.note.subtitle")} />
@@ -240,6 +164,84 @@ const t = useTranslations(lang);
       {t("events.callToAction.subtitle3")}
     </Fragment>
   </CallToAction>
+
+
+  <!-- Text section -->
+
+  <div class="w-full flex flex-col items-center px-10">
+    <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
+  </div> 
+
+  <!-- Hero Widget *******************-->
+
+  <Hero
+    tagline={t("events.hero2.tagline")}
+    image={{
+      src:
+        lang === "en"
+          ? "https://lh3.googleusercontent.com/d/14Bl0MQwg-O19jq3vI9O8LifTfDAqHgzk"
+          : "https://lh3.googleusercontent.com/d/1Mj2eLlPLuF-5BkeEKQyZyWpQJqz-hauo",
+      alt: "Jesus fest kuopio",
+    }}
+  >
+    <Fragment slot="title">
+      <pre>{`┬\n⏐\n⏐\n⏐\n⏐\n˅`}</pre>
+      {t("events.hero2.title1")}
+    </Fragment>
+    <Fragment slot="subtitle">
+      {t("events.hero2.subtitle1")}
+    </Fragment>
+  </Hero>
+
+  <!-- Anchor to leave the scroll to leave Features2 title visible **************-->
+
+  <div id="songs"></div>
+
+  <!-- Features2 Widget **************-->
+  <Features2
+    hrefID="songs"
+    class="container"
+    title={t("events.features2.title")}
+    subtitle={t("events.features2.subtitle")}
+    columns={2}
+    items={[
+      {
+        title: t("events.features2.items1.title"),
+        description: t("events.features2.items1.description"),
+        // icon: "tabler:book",
+      },
+      // {
+      //   title: t("events.features2.items2.title"),
+      //   description: t("events.features2.items2.description"),
+      //   // icon: "tabler:pray",
+      // },
+      {
+        title: t("events.features2.items3.title"),
+        description: t("events.features2.items3.description"),
+        // icon: "tabler:friends",
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget **************-->
+
+  <Features2
+    subtitle={t("events.features3.subtitle")}
+    columns={2}
+    items={[
+      {
+        title: t("events.features3.items1.title"),
+        description: t("events.features3.items1.description"),
+        // icon: "tabler:book",
+      },
+      {
+        title: t("events.features3.items2.title"),
+        description: t("events.features3.items2.description"),
+        // icon: "tabler:pray",
+      },
+    ]}
+  />
+
 </Layout>
 
 <style lang="css">
