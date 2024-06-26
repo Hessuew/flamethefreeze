@@ -23,21 +23,6 @@ const t = useTranslations(lang);
   <!-- Hero Widget ******************* -->
 
   <Hero>
-    <Fragment slot="title">
-      {t("index.hero0.title1")}
-      <GradientText text={t("index.hero0.title.span1")} />
-      {t("index.hero0.title2")}
-      <GradientText text={t("index.hero0.title.span2")} />
-      {t("index.hero0.title3")}
-      <GradientText text={t("index.hero0.title.span3")} />
-      <br />{t("index.hero0.title4")}
-    </Fragment>
-  </Hero>
-
-
-  <!-- Hero Widget ******************* -->
-
-  <Hero>
     <!-- <Hero tagline="Flame the Freeze — Where the Word of God and experience meets"> -->
     <Fragment slot="title">
       {t("index.hero1.title1")}
@@ -49,6 +34,16 @@ const t = useTranslations(lang);
       <span class="font-semibold">{t("index.hero1.subtitle.span1")}</span>
       {t("index.hero1.subtitle1")}
       <GradientText class="font-bold" text={t("index.hero1.subtitle.span2")} />{t("index.hero1.subtitle2")}
+    </Fragment>
+
+    <Fragment slot="subtitle2">
+      {t("index.hero0.title1")}
+      <GradientText class="font-bold text-lg" text={t("index.hero0.title.span1")} />
+      {t("index.hero0.title2")}
+      <GradientText class="font-bold text-lg" text={t("index.hero0.title.span2")} />
+      {t("index.hero0.title3")}
+      <GradientText class="font-bold text-lg" text={t("index.hero0.title.span3")} />
+      {t("index.hero0.title4")}
     </Fragment>
   </Hero>
 
@@ -216,7 +211,7 @@ const t = useTranslations(lang);
     </Fragment>
   </Hero>
 
-  <!-- Text section -->
+  <!-- Separator section -->
 
   <div class="w-full flex flex-col items-center px-10">
     <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
@@ -224,17 +219,17 @@ const t = useTranslations(lang);
 
   <!-- Content Widget **************** -->
 
-  <Content tagline={t("index.hero4.tagline")} isReversed>
+  <Content tagline={t("index.content3.tagline")} isReversed>
     <Fragment slot="title">
-      {t("index.hero4.title1")}<br />
-      <GradientText class="italic pr-3" text={t("index.hero4.title.span1")} /><br />
-      {t("index.hero4.title2")}
-      <!-- <GradientText text={t("index.hero4.title.span2")} /> -->
+      {t("index.content3.title1")}<br />
+      <GradientText class="italic pr-3" text={t("index.content3.title.span1")} /><br />
+      {t("index.content3.title2")}
+      <!-- <GradientText text={t("index.content3.title.span2")} /> -->
     </Fragment>
 
     <Fragment slot="content">
       <h3 class="text-2xl tracking-tightsm:text-xl mb-2">
-        {t("index.hero4.subtitle")}
+        {t("index.content3.subtitle")}
       </h3>
     </Fragment>
 
@@ -249,6 +244,32 @@ const t = useTranslations(lang);
           frameborder="0"
           class="absolute top-0 left-0 w-full h-full"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </Fragment>
+  </Content>
+
+  <Content>
+    <Fragment slot="content">
+      <h3 class="text-2xl tracking-tightsm:text-xl mb-2">
+        {t("index.content4.subtitle")}
+      </h3>
+      <h3 class="text-2xl tracking-tightsm:text-xl mb-2">
+        {t("index.content4.subtitle2")}
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative">
+        <iframe
+          loading="lazy"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/g_y65xR5OYE?si=JwRc2jad8g1Swu3h"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen></iframe>
       </div>
     </Fragment>
