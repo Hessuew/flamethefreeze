@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.7.2](https://github.com/Hessuew/flamethefreeze/compare/v3.7.1...v3.7.2) (2024-09-14)
+
+
+### Bug Fixes
+
+* index 2nd video scaling on small devices ([d56629e](https://github.com/Hessuew/flamethefreeze/commit/d56629eb25f34756177574b6deaf38d9d9175a51))
+* index 2nd video scaling on small devices ([#125](https://github.com/Hessuew/flamethefreeze/issues/125)) ([d48a297](https://github.com/Hessuew/flamethefreeze/commit/d48a2978e85966697cdee60759ecf185a262cec7))
+
 ## [3.7.1](https://github.com/Hessuew/flamethefreeze/compare/v3.7.0...v3.7.1) (2024-06-18)
 
 
