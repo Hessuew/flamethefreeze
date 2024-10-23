@@ -207,10 +207,16 @@ export const ui = {
     "events.hero.subtitle2": "with signs following. Amen.' Mark 16:20 KJV",
     "events.hero.subtitle.span": " the word ",
     "events.hero.callToAction": "Explore our meetings",
+    "events.heroEvent.tagline": "Coming events",
+    "events.heroEvent.title1": "Jesus Fest winter revival",
+    "events.heroEvent.subtitle1":
+      "December 18 – 22, 2024; 11:00 – 14:00​ Kulttuuriareena 44, 70110 Kuopio​",
     "events.hero2.tagline": "Past events",
     "events.hero2.title1": "JESUS FEST KUOPIO",
     "events.hero2.subtitle1":
       "June 7 – 9, 2024; 17:00 – 20:00​ Kauppatori, 70100 Kuopio​",
+    "events.hero2.subtitle2": "+100 visitors",
+    "events.hero2.subtitle3": "Miracles: Jesus delivered 40 years old person from demonic dreams that had lasted a long time.",
     "events.features2.title": "Our songs for the event",
     "events.features2.subtitle": "Wells of salvation",
     "events.features2.items1.title": "En",
@@ -1250,10 +1256,16 @@ export const ui = {
     "events.hero.subtitle2": "sitä seuraavien merkkien kautta.' Amen. Mar 16:20 FINRK",
     "events.hero.subtitle.span": " sanan ",
     "events.hero.callToAction": "Tutustu tapaamisiimme",
+    "events.heroEvent.tagline": "Tulevat tapahtumat",
+    "events.heroEvent.title1": "Jesus Fest talvi herätys",
+    "events.heroEvent.subtitle1":
+      "Jou 18 – 22, 2024; 11:00 – 14:00​ Kulttuuriareena 44, 70110 Kuopio​",
     "events.hero2.tagline": "Menneet tapahtumat",
     "events.hero2.title1": "JESUS FEST KUOPIO",
     "events.hero2.subtitle1":
       "Kesäkuu 7 – 9, 2024; 17:00 – 20:00​ Kauppatori, 70100 Kuopio​",
+    "events.hero2.subtitle2": "+100 kävijää",
+    "events.hero2.subtitle3": "Ihmeitä: Jeesus vapautti 40 vuotiaan henkilön pitkään jatkuneista demonisista unista.",
     "events.features2.title": "Laulumme tapahtumaa varten",
     "events.features2.subtitle": "Pelastuksen lähteet",
     "events.features3.subtitle": "Jeesus Kristus Jumalan Poika",
