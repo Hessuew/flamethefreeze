@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.1](https://github.com/Hessuew/flamethefreeze/compare/v3.8.0...v3.8.1) (2024-10-23)
+
+
+### Bug Fixes
+
+* hide lang picker ([cacb400](https://github.com/Hessuew/flamethefreeze/commit/cacb400c2cef742ec2756717ea2e2ff62c3dd474))
+* hide lang picker ([#133](https://github.com/Hessuew/flamethefreeze/issues/133)) ([84c1173](https://github.com/Hessuew/flamethefreeze/commit/84c1173534f0a74baf92c57bf3a5763e9297338e))
+
 ## [3.8.0](https://github.com/Hessuew/flamethefreeze/compare/v3.7.2...v3.8.0) (2024-10-23)
 
 
