@@ -343,7 +343,7 @@ export const ui = {
     "fivefold.content2.bottom.title": "Example of a Prophet in the 21st century:",
     "fivefold.content2.bottom.subtitle": "Kenneth E. Hagin, a Prophet of Faith and Prayers",
     "fivefold.content2.bottom.links1.title": "Hagin's Teachings",
-    "fivefold.content2.bottom.links1.link": "https://www.youtube.com/channel/UCPwkzektpxDRcpjNZ3naToQ/videos",
+    "fivefold.content2.bottom.links1.link": "https://www.youtube.com/@RHEMAKennethEHagin/videos",
     "fivefold.content2.bottom.links2.title": "Hagin's ministry",
     "fivefold.content2.bottom.links2.link": "https://www.rhema.org/",
     "fivefold.content2.items1.title": "Description:",
