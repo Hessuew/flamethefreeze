@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.0](https://github.com/Hessuew/flamethefreeze/compare/v3.7.2...v3.8.0) (2024-10-23)
+
+
+### Features
+
+* Jesus Fest winter revival ([9570f04](https://github.com/Hessuew/flamethefreeze/commit/9570f04bad75ae47ad1c4eecfe7a9870f5cc9132))
+* Jesus Fest winter revival ([#128](https://github.com/Hessuew/flamethefreeze/issues/128)) ([6467963](https://github.com/Hessuew/flamethefreeze/commit/646796330f5ec25592221568af3111af1add31eb))
+
 ## [3.7.2](https://github.com/Hessuew/flamethefreeze/compare/v3.7.1...v3.7.2) (2024-09-14)
 
 
