@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.4](https://github.com/Hessuew/flamethefreeze/compare/v3.8.3...v3.8.4) (2024-10-24)
+
+
+### Bug Fixes
+
+* temp fix for home &gt; fi ([ccca271](https://github.com/Hessuew/flamethefreeze/commit/ccca271977e72c0ee80f4ffc2b3a36dc44aec896))
+* temp fix for home &gt; fi ([#144](https://github.com/Hessuew/flamethefreeze/issues/144)) ([032bc7b](https://github.com/Hessuew/flamethefreeze/commit/032bc7b07196d4d6b8b478d20cc6a171d7a2e2cb))
+
 ## [3.8.3](https://github.com/Hessuew/flamethefreeze/compare/v3.8.2...v3.8.3) (2024-10-24)
 
 
