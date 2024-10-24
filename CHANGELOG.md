@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.2](https://github.com/Hessuew/flamethefreeze/compare/v3.8.1...v3.8.2) (2024-10-24)
+
+
+### Bug Fixes
+
+* lang picker works again ([38b95da](https://github.com/Hessuew/flamethefreeze/commit/38b95da1ba6e4fdac4bac9e958e6ea9460ee077d))
+* lang picker works again ([#136](https://github.com/Hessuew/flamethefreeze/issues/136)) ([4400790](https://github.com/Hessuew/flamethefreeze/commit/440079086db073ba97f3aa81878fc3423ea2d0fb))
+
 ## [3.8.1](https://github.com/Hessuew/flamethefreeze/compare/v3.8.0...v3.8.1) (2024-10-23)
 
 
