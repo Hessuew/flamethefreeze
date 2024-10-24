@@ -12,7 +12,7 @@ const changeLangInUrl = (permaLink: string, lng?: "en" | "fi") => {
   // If path is the root ('/')
   if (str === "/" || str === "") {
     if (lng === "en" || !lng) return ""; // Ensure /en/ or /fi/ for base form
-    return `${Astro.url.origin}/${lng}`; // Ensure /en/ or /fi/ for base form
+    return "https://flamethefreeze.com/fi/"; // Ensure /en/ or /fi/ for base form
   }
 
   // Remove everything before 'en' or 'fi'
