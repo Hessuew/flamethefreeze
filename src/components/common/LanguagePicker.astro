@@ -6,24 +6,29 @@ import { getPermalink } from "~/utils/permalinks";
 
 const lang = getLangFromUrl(Astro.url);
 
-const changeLangInUrl = (lng: "en" | "fi") => {
+const changeLangInUrl = (permaLink: string, lng?: "en" | "fi") => {
   const str = Astro.url.pathname;
+
+  // If path is the root ('/')
+  if (str === "/" || str === "") {
+    if (lng === "en" || !lng) return ""; // Ensure /en/ or /fi/ for base form
+    return `${Astro.url.origin}/${lng}`; // Ensure /en/ or /fi/ for base form
+  }
 
   // Remove everything before 'en' or 'fi'
   const cleanStr = str.replace(/^.*?(en|fi)/, (match, p1) => p1);
 
+  let t = "";
   // Swap 'en' with 'fi' or 'fi' with 'en'
   if (cleanStr.startsWith("en")) {
-    if (lng === "en") return cleanStr;
-    return cleanStr.replace("en", "fi");
+    if (lng === "en") t = `${permaLink}${cleanStr}`;
+    else t = `${permaLink}${cleanStr.replace("en", "fi")}`;
   } else if (cleanStr.startsWith("fi")) {
-    console.log("jere");
-    if (lng === "fi") return cleanStr;
-    return cleanStr.replace("fi", "en");
+    if (lng === "fi") t = `${permaLink}${cleanStr}`;
+    else t = `${permaLink}${cleanStr.replace("fi", "")}`;
   }
 
-  // If 'en' or 'fi' is not found, return the original string
-  return `/${lng}${str}`;
+  return t.replace("enfi", "en");
 };
 ---
 
@@ -40,6 +45,7 @@ const changeLangInUrl = (lng: "en" | "fi") => {
                 lng === "en" && "bg-gray-300 dark:bg-gray-700 "
               )}
               href={`${getPermalink()}${changeLangInUrl("en")}`}
+              href={`${changeLangInUrl(getPermalink(), "en")}`}
             >
               {/* {label} */}
               <img
@@ -53,7 +59,7 @@ const changeLangInUrl = (lng: "en" | "fi") => {
                 "gap-2 text-muted text-lg justify-center items-center font-semibold lg:text-base w-11 h-11 lg:w-10 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded-lg p-2.5 inline-flex",
                 lng === "fi" && "bg-gray-300 dark:bg-gray-700 "
               )}
-              href={`${getPermalink()}${changeLangInUrl("fi")}`}
+              href={`${changeLangInUrl(getPermalink(), "fi")}`}
             >
               {/* {label} */}
               <img
