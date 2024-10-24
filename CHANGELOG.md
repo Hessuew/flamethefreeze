@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.3](https://github.com/Hessuew/flamethefreeze/compare/v3.8.2...v3.8.3) (2024-10-24)
+
+
+### Bug Fixes
+
+* church, LanguagePicker ([131a845](https://github.com/Hessuew/flamethefreeze/commit/131a8450fad4a3defefc982fbacbaf89a592d14f))
+* church, LanguagePicker ([#141](https://github.com/Hessuew/flamethefreeze/issues/141)) ([1388cc5](https://github.com/Hessuew/flamethefreeze/commit/1388cc597cb5917314726d6b5cdba484b4d61b74))
+
 ## [3.8.2](https://github.com/Hessuew/flamethefreeze/compare/v3.8.1...v3.8.2) (2024-10-24)
 
 
