@@ -18,8 +18,6 @@ interface Link {
   icon?: string;
 }
 
-interface ActionLink extends CallToAction {}
-
 interface MenuLink extends Link {
   links?: Array<MenuLink>;
 }
@@ -27,7 +25,7 @@ interface MenuLink extends Link {
 export interface Props {
   id?: string;
   links?: Array<MenuLink>;
-  actions?: Array<ActionLink>;
+  actions?: Array<CallToAction>;
   isSticky?: boolean;
   isDark?: boolean;
   isFullWidth?: boolean;
@@ -60,19 +58,26 @@ const t = useTranslations(lang);
     { sticky: isSticky, relative: !isSticky, dark: isDark },
     "top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out",
   ]}
+  {...isSticky ? { "data-aw-sticky-header": true } : {}}
   {...id ? { id } : {}}
 >
   <div class="absolute inset-0"></div>
   <div
     class:list={[
-      "relative text-default py-3 px-3 xl:px-6 mx-auto w-full xl:flex xl:justify-between",
+      "relative text-default py-3 px-3 xl:px-6 mx-auto w-full",
+      {
+        "xl:flex xl:justify-between": position !== "center",
+      },
+      {
+        "xl:grid xl:grid-cols-3 xl:items-center": position === "center",
+      },
       {
         "max-w-7xl": !isFullWidth,
       },
     ]}
   >
     <div class:list={[{ "mr-auto rtl:mr-0 rtl:ml-auto": position === "right" }, "flex justify-between"]}>
-      <a class="flex items-center" href={getHomePermalink(lang)}>
+      <a class="flex items-center" href={getHomePermalink()}>
         <Logo />
       </a>
       <div class="flex items-center xl:hidden">
@@ -80,18 +85,21 @@ const t = useTranslations(lang);
       </div>
     </div>
     <nav
-      class="items-center w-full xl:w-auto hidden xl:flex text-default overflow-y-auto overflow-x-hidden xl:overflow-y-visible xl:overflow-x-auto xl:mx-5"
+      class="items-center w-full xl:w-auto hidden xl:flex xl:mx-5 text-default overflow-y-auto overflow-x-hidden xl:overflow-y-visible xl:overflow-x-auto xl:justify-self-center"
       aria-label="Main navigation"
     >
       <ul
-        class="flex flex-col xl:flex-row xl:self-center w-full xl:w-auto text-xl xl:text-[0.9375rem] tracking-[0.01rem] font-medium"
+        class="flex flex-col xl:flex-row xl:self-center w-full xl:w-auto text-xl xl:text-[0.9375rem] tracking-[0.01rem] font-medium xl:justify-center"
       >
         {
           links.map(({ text, href, links }) => (
             <li class={links?.length ? "dropdown" : ""}>
               {links?.length ? (
                 <>
-                  <button class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center">
+                  <button
+                    type="button"
+                    class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap"
+                  >
                     {text}{" "}
                     <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden xl:inline" />
                   </button>
@@ -114,7 +122,7 @@ const t = useTranslations(lang);
               ) : (
                 <a
                   class:list={[
-                    "hover:text-link dark:hover:text-white px-4 py-3 flex items-centers",
+                    "hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap",
                     { "aw-link-active": href === currentPath },
                   ]}
                   href={getPermalink(`${lang}/${href}`)}
@@ -130,7 +138,7 @@ const t = useTranslations(lang);
     <div
       class:list={[
         { "ml-auto rtl:ml-0 rtl:mr-auto": position === "left" },
-        "hidden xl:self-center flex xl:flex items-center xl:mb-0 fixed w-full xl:w-auto xl:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 xl:p-0",
+        "hidden xl:self-center xl:flex items-center xl:mb-0 fixed w-full xl:w-auto xl:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 xl:p-0 xl:justify-self-end",
       ]}
     >
       <div class="items-center flex justify-between w-full xl:w-auto">
