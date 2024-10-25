@@ -37,7 +37,7 @@ const {
         {
           tagline && (
             <p
-              class="text-base text-secondary dark:bg-gradient-to-r dark:from-orange-600 dark:to-yellow-500 dark:bg-clip-text dark:text-transparent font-bold tracking-wide uppercase intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+              class="text-base text-secondary dark:bg-gradient-to-r dark:from-orange-600 dark:to-yellow-500 dark:bg-clip-text dark:text-transparent font-bold tracking-wide uppercase intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
               set:html={tagline}
             />
           )
@@ -45,7 +45,7 @@ const {
         {
           title && (
             <h1
-              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+              class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
               set:html={title}
             />
           )
@@ -54,14 +54,14 @@ const {
           {
             subtitle && (
               <p
-                class="text-xl text-muted mb-6 dark:text-slate-300 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+                class="text-xl text-muted mb-6 dark:text-slate-300 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
                 set:html={subtitle}
               />
             )
           }
           {
             actions && (
-              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+              <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
                 {Array.isArray(actions) ? (
                   actions.map((action) => (
                     <div class="flex w-full sm:w-auto">
@@ -74,12 +74,12 @@ const {
               </div>
             )
           }
-          {subtitle2 && <p class="text-xl text-muted mb-6 dark:text-slate-300 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade" set:html={subtitle2} />}
+          {subtitle2 && <p class="text-xl text-muted mb-6 dark:text-slate-300 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade" set:html={subtitle2} />}
         </div>
         {content && <Fragment set:html={content} />}
       </div>
       <div
-        class="intersect-once intercept-no-queue intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
+        class="intersect-once intercept-no-queue intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
       >
         {
           image && (
