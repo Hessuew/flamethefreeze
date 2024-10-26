@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.6](https://github.com/Hessuew/flamethefreeze/compare/v3.8.5...v3.8.6) (2024-10-26)
+
+
+### Bug Fixes
+
+* **about:** hide heart in -md screens ([c662fff](https://github.com/Hessuew/flamethefreeze/commit/c662fffb19e6d690d2708317d0f533a6dfe9a258))
+* **about:** hide heart in -md screens ([#152](https://github.com/Hessuew/flamethefreeze/issues/152)) ([fdb5c96](https://github.com/Hessuew/flamethefreeze/commit/fdb5c96234eb297fe7fd8971b7b6fbde3285ae32))
+
 ## [3.8.5](https://github.com/Hessuew/flamethefreeze/compare/v3.8.4...v3.8.5) (2024-10-26)
 
 
