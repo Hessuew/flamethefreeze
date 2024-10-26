@@ -2,7 +2,7 @@
 import { Icon } from "astro-icon/components";
 import { twMerge } from "tailwind-merge";
 import type { Item } from "~/types";
-import Test from "./Test.astro";
+import Description from "./Description.astro";
 
 export interface Props {
   items?: Array<Item>;
@@ -16,7 +16,6 @@ const {
   container: containerClass = "",
   panel: panelClass = "",
   title: titleClass = "",
-  description: descriptionClass = "",
   icon: defaultIconClass = "text-primary dark:text-slate-200 border-primary dark:border-accent",
 } = classes;
 ---
@@ -45,9 +44,9 @@ const {
             </div>
             {index !== items.length - 1 && <div class="w-px h-full bg-black/10 dark:bg-slate-400/50" />}
           </div>
-          <div class={`pt-1 ${index !== items.length - 1 ? "pb-8" : ""}`}>
+          <div class={`pt-1 ${index !== items.length - 1 ? "pb-0" : ""}`}>
             {title && <p class={twMerge("text-xl font-bold", titleClass, itemClasses?.title)} set:html={title} />}
-            <Test description={description} />
+            <Description description={description} />
           </div>
         </div>
       ))}
