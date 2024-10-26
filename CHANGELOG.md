@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.7](https://github.com/Hessuew/flamethefreeze/compare/v3.8.6...v3.8.7) (2024-10-26)
+
+
+### Bug Fixes
+
+* **about:** return heart but as a component ([866b947](https://github.com/Hessuew/flamethefreeze/commit/866b9471735f4c0a1d99f1a3b6ecbae7be27a809))
+* **about:** return heart but as a component ([#155](https://github.com/Hessuew/flamethefreeze/issues/155)) ([e54c5cb](https://github.com/Hessuew/flamethefreeze/commit/e54c5cba2453ad3ea66694179ed44bb36a150b1d))
+
 ## [3.8.6](https://github.com/Hessuew/flamethefreeze/compare/v3.8.5...v3.8.6) (2024-10-26)
 
 
