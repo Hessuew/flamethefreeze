@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.5](https://github.com/Hessuew/flamethefreeze/compare/v3.8.4...v3.8.5) (2024-10-26)
+
+
+### Bug Fixes
+
+* mobile style fixes ([e950e1f](https://github.com/Hessuew/flamethefreeze/commit/e950e1fcf623e89c0cd3950d0816de6ecad10ce1))
+* mobile style fixes ([#149](https://github.com/Hessuew/flamethefreeze/issues/149)) ([9a3a274](https://github.com/Hessuew/flamethefreeze/commit/9a3a27491e19008158640bee794416d74005841b))
+
 ## [3.8.4](https://github.com/Hessuew/flamethefreeze/compare/v3.8.3...v3.8.4) (2024-10-24)
 
 
