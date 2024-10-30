@@ -19,10 +19,11 @@ const {
   isDark = false,
   classes = {},
   bg = await Astro.slots.render("bg"),
+  noAnimation = false,
 } = Astro.props as Testimonials;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ""}`} bg={bg}>
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ""}`} bg={bg} noAnimation={noAnimation} >
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
 
   <div
@@ -41,7 +42,8 @@ const {
     {
       testimonials &&
         testimonials.map(({ title, testimonials, name, job, image }, index) => (
-          <div class="flex h-auto intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-quarter">
+          <div class="flex h-auto no-intersect">
+          {/* <div class="flex h-auto intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-quarter"> */}
             <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none border dark:border-neutral-600">
               {numbers && <p class="text-muted -mt-2 lg:-mt-4 lg:-ml-3">{index + 1}.</p>}
               {title && <h2 class="text-lg font-medium leading-6 pb-4">{title}</h2>}
