@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.8.8](https://github.com/Hessuew/flamethefreeze/compare/v3.8.7...v3.8.8) (2024-10-30)
+
+
+### Bug Fixes
+
+* animations broken in fivefold and witnesses ([1477e9b](https://github.com/Hessuew/flamethefreeze/commit/1477e9be4b9c96549e41725b0baba96a3f701076))
+* animations broken in fivefold and witnesses ([#158](https://github.com/Hessuew/flamethefreeze/issues/158)) ([ba80d8f](https://github.com/Hessuew/flamethefreeze/commit/ba80d8fbdc3fa9ff4943d7ea167e52f6b318bbf5))
+
 ## [3.8.7](https://github.com/Hessuew/flamethefreeze/compare/v3.8.6...v3.8.7) (2024-10-26)
 
 
