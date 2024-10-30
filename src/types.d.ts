@@ -98,6 +98,7 @@ export interface Widget {
   isDark?: boolean;
   bg?: string;
   classes?: Record<string, string>;
+  noAnimation?: boolean;
 }
 
 export interface Headline {
