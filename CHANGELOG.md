@@ -1,5 +1,125 @@
 # Changelog
 
+## [3.8.8](https://github.com/Hessuew/flamethefreeze/compare/v3.8.7...v3.8.8) (2024-10-30)
+
+
+### Bug Fixes
+
+* animations broken in fivefold and witnesses ([1477e9b](https://github.com/Hessuew/flamethefreeze/commit/1477e9be4b9c96549e41725b0baba96a3f701076))
+* animations broken in fivefold and witnesses ([#158](https://github.com/Hessuew/flamethefreeze/issues/158)) ([ba80d8f](https://github.com/Hessuew/flamethefreeze/commit/ba80d8fbdc3fa9ff4943d7ea167e52f6b318bbf5))
+
+## [3.8.7](https://github.com/Hessuew/flamethefreeze/compare/v3.8.6...v3.8.7) (2024-10-26)
+
+
+### Bug Fixes
+
+* **about:** return heart but as a component ([866b947](https://github.com/Hessuew/flamethefreeze/commit/866b9471735f4c0a1d99f1a3b6ecbae7be27a809))
+* **about:** return heart but as a component ([#155](https://github.com/Hessuew/flamethefreeze/issues/155)) ([e54c5cb](https://github.com/Hessuew/flamethefreeze/commit/e54c5cba2453ad3ea66694179ed44bb36a150b1d))
+
+## [3.8.6](https://github.com/Hessuew/flamethefreeze/compare/v3.8.5...v3.8.6) (2024-10-26)
+
+
+### Bug Fixes
+
+* **about:** hide heart in -md screens ([c662fff](https://github.com/Hessuew/flamethefreeze/commit/c662fffb19e6d690d2708317d0f533a6dfe9a258))
+* **about:** hide heart in -md screens ([#152](https://github.com/Hessuew/flamethefreeze/issues/152)) ([fdb5c96](https://github.com/Hessuew/flamethefreeze/commit/fdb5c96234eb297fe7fd8971b7b6fbde3285ae32))
+
+## [3.8.5](https://github.com/Hessuew/flamethefreeze/compare/v3.8.4...v3.8.5) (2024-10-26)
+
+
+### Bug Fixes
+
+* mobile style fixes ([e950e1f](https://github.com/Hessuew/flamethefreeze/commit/e950e1fcf623e89c0cd3950d0816de6ecad10ce1))
+* mobile style fixes ([#149](https://github.com/Hessuew/flamethefreeze/issues/149)) ([9a3a274](https://github.com/Hessuew/flamethefreeze/commit/9a3a27491e19008158640bee794416d74005841b))
+
+## [3.8.4](https://github.com/Hessuew/flamethefreeze/compare/v3.8.3...v3.8.4) (2024-10-24)
+
+
+### Bug Fixes
+
+* temp fix for home &gt; fi ([ccca271](https://github.com/Hessuew/flamethefreeze/commit/ccca271977e72c0ee80f4ffc2b3a36dc44aec896))
+* temp fix for home &gt; fi ([#144](https://github.com/Hessuew/flamethefreeze/issues/144)) ([032bc7b](https://github.com/Hessuew/flamethefreeze/commit/032bc7b07196d4d6b8b478d20cc6a171d7a2e2cb))
+
+## [3.8.3](https://github.com/Hessuew/flamethefreeze/compare/v3.8.2...v3.8.3) (2024-10-24)
+
+
+### Bug Fixes
+
+* church, LanguagePicker ([131a845](https://github.com/Hessuew/flamethefreeze/commit/131a8450fad4a3defefc982fbacbaf89a592d14f))
+* church, LanguagePicker ([#141](https://github.com/Hessuew/flamethefreeze/issues/141)) ([1388cc5](https://github.com/Hessuew/flamethefreeze/commit/1388cc597cb5917314726d6b5cdba484b4d61b74))
+
+## [3.8.2](https://github.com/Hessuew/flamethefreeze/compare/v3.8.1...v3.8.2) (2024-10-24)
+
+
+### Bug Fixes
+
+* lang picker works again ([38b95da](https://github.com/Hessuew/flamethefreeze/commit/38b95da1ba6e4fdac4bac9e958e6ea9460ee077d))
+* lang picker works again ([#136](https://github.com/Hessuew/flamethefreeze/issues/136)) ([4400790](https://github.com/Hessuew/flamethefreeze/commit/440079086db073ba97f3aa81878fc3423ea2d0fb))
+
+## [3.8.1](https://github.com/Hessuew/flamethefreeze/compare/v3.8.0...v3.8.1) (2024-10-23)
+
+
+### Bug Fixes
+
+* hide lang picker ([cacb400](https://github.com/Hessuew/flamethefreeze/commit/cacb400c2cef742ec2756717ea2e2ff62c3dd474))
+* hide lang picker ([#133](https://github.com/Hessuew/flamethefreeze/issues/133)) ([84c1173](https://github.com/Hessuew/flamethefreeze/commit/84c1173534f0a74baf92c57bf3a5763e9297338e))
+
+## [3.8.0](https://github.com/Hessuew/flamethefreeze/compare/v3.7.2...v3.8.0) (2024-10-23)
+
+
+### Features
+
+* Jesus Fest winter revival ([9570f04](https://github.com/Hessuew/flamethefreeze/commit/9570f04bad75ae47ad1c4eecfe7a9870f5cc9132))
+* Jesus Fest winter revival ([#128](https://github.com/Hessuew/flamethefreeze/issues/128)) ([6467963](https://github.com/Hessuew/flamethefreeze/commit/646796330f5ec25592221568af3111af1add31eb))
+
+## [3.7.2](https://github.com/Hessuew/flamethefreeze/compare/v3.7.1...v3.7.2) (2024-09-14)
+
+
+### Bug Fixes
+
+* index 2nd video scaling on small devices ([d56629e](https://github.com/Hessuew/flamethefreeze/commit/d56629eb25f34756177574b6deaf38d9d9175a51))
+* index 2nd video scaling on small devices ([#125](https://github.com/Hessuew/flamethefreeze/issues/125)) ([d48a297](https://github.com/Hessuew/flamethefreeze/commit/d48a2978e85966697cdee60759ecf185a262cec7))
+
+## [3.7.1](https://github.com/Hessuew/flamethefreeze/compare/v3.7.0...v3.7.1) (2024-06-18)
+
+
+### Bug Fixes
+
+* new index header grammar fix ([3a5dc51](https://github.com/Hessuew/flamethefreeze/commit/3a5dc51d2d4ab7005ebf74fea79a2a11a0f84e9d))
+* new index header grammar fix ([#120](https://github.com/Hessuew/flamethefreeze/issues/120)) ([bf4c8b6](https://github.com/Hessuew/flamethefreeze/commit/bf4c8b6302d06be0fca0a5d3bf00c67de23ec24e))
+
+## [3.7.0](https://github.com/Hessuew/flamethefreeze/compare/v3.6.3...v3.7.0) (2024-06-18)
+
+
+### Features
+
+* new index header text ([e1c91b2](https://github.com/Hessuew/flamethefreeze/commit/e1c91b21ee3fb6e2f0e223d9645c76c21367b7c7))
+* new index header text ([#117](https://github.com/Hessuew/flamethefreeze/issues/117)) ([58eac02](https://github.com/Hessuew/flamethefreeze/commit/58eac021adbc8c47d5cfc2ca23fcad80434ccb7f))
+
+## [3.6.3](https://github.com/Hessuew/flamethefreeze/compare/v3.6.2...v3.6.3) (2024-05-26)
+
+
+### Bug Fixes
+
+* updated url to fixed Finnish event image ([9c5d5e5](https://github.com/Hessuew/flamethefreeze/commit/9c5d5e5bd1fb6dc05be67c2d7ff7179a374ab8eb))
+* updated url to fixed Finnish event image ([#114](https://github.com/Hessuew/flamethefreeze/issues/114)) ([0df6b34](https://github.com/Hessuew/flamethefreeze/commit/0df6b34fc64e3cf1034a3db83f5b3e28896db42a))
+
+## [3.6.2](https://github.com/Hessuew/flamethefreeze/compare/v3.6.1...v3.6.2) (2024-05-26)
+
+
+### Bug Fixes
+
+* improved lang picker, fixed song lyrics & link ([2345dce](https://github.com/Hessuew/flamethefreeze/commit/2345dce4bedfb39f734975a0874c2bb0ebb0002e))
+* improved lang picker, fixed song lyrics & link ([#109](https://github.com/Hessuew/flamethefreeze/issues/109)) ([7cdf894](https://github.com/Hessuew/flamethefreeze/commit/7cdf89477f8ed844f5343888c9647bb8381af246))
+
+## [3.6.1](https://github.com/Hessuew/flamethefreeze/compare/v3.6.0...v3.6.1) (2024-04-24)
+
+
+### Bug Fixes
+
+* update Jesus Fest song lyrics, event images ([e66570c](https://github.com/Hessuew/flamethefreeze/commit/e66570c4d332ebaa010e01b6ee6567d1fa515314))
+* update Jesus Fest song lyrics, event images ([#106](https://github.com/Hessuew/flamethefreeze/issues/106)) ([c4e0418](https://github.com/Hessuew/flamethefreeze/commit/c4e04184ae37be2411401b3594a35bbe42f41ba8))
+
 ## [3.6.0](https://github.com/Hessuew/flamethefreeze/compare/v3.5.0...v3.6.0) (2024-04-14)
 
 
