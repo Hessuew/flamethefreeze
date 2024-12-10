@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.9.0](https://github.com/Hessuew/flamethefreeze/compare/v3.8.8...v3.9.0) (2024-12-10)
+
+
+### Features
+
+* replace iframes with astro-embed YouTube component ([#163](https://github.com/Hessuew/flamethefreeze/issues/163)) ([13f246b](https://github.com/Hessuew/flamethefreeze/commit/13f246b80d756c45d56f52967b487b853789aef2))
+
+
+### Bug Fixes
+
+* youtube embed, intersect fix ([863faca](https://github.com/Hessuew/flamethefreeze/commit/863facaf1f409d9c7b7199c424ad17fbfe98ace1))
+
 ## [3.8.8](https://github.com/Hessuew/flamethefreeze/compare/v3.8.7...v3.8.8) (2024-10-30)
 
 
