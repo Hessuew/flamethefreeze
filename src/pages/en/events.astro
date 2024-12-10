@@ -9,6 +9,7 @@ import Note from "~/components/widgets/Note.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import Steps2 from "~/components/widgets/Steps2.astro";
+import { YouTube } from "astro-embed";
 
 const metadata = {
   title: "Events",
@@ -116,7 +117,9 @@ const t = useTranslations(lang);
 
   <!-- Image Widget ******************* -->
 
-  <div class="relative m-auto max-w-5xl pt-10 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+  <div
+    class="relative m-auto max-w-5xl pt-10 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+  >
     <Image
       class="mx-auto rounded-md w-full"
       widths={[400, 768, 1024, 2040]}
@@ -200,17 +203,7 @@ const t = useTranslations(lang);
 
     <Fragment slot="image">
       <div class="relative pb-[56.25%]">
-        <iframe
-          loading="lazy"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/g_y65xR5OYE?si=JwRc2jad8g1Swu3h"
-          title="YouTube video player"
-          frameborder="0"
-          class="absolute top-0 left-0 w-full h-full"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen></iframe>
+        <YouTube id="g_y65xR5OYE" title="Excerpt from Jesus Fest Kuopio" />
       </div>
     </Fragment>
   </Content>
