@@ -1,0 +1,24 @@
+---
+import logoUrl from "~/assets/images/default.jpg";
+import { getImage } from "astro:assets";
+import { SITE } from "astrowind:config";
+
+const optimizedLogo = await getImage({ src: logoUrl });
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": SITE.site,
+  name: "Flame the Freeze",
+  url: SITE.site,
+  logo: {
+    "@type": "ImageObject",
+    url: new URL(optimizedLogo.src, SITE.site).toString(),
+    width: "640",
+    height: "640",
+  },
+  description: "Where the Word of God and experience meets",
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />

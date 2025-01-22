@@ -10,6 +10,11 @@ import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import Steps2 from "~/components/widgets/Steps2.astro";
 import { YouTube } from "astro-embed";
+import roman_soldier from "~/assets/images/roman_soldier.webp";
+// import jesus_fest_2024 from "~/assets/images/jesus_fest_2024.webp";
+// import jesus_fest_2024_fi from "~/assets/images/jesus_fest_2024_fi.webp";
+// import jesus_fest_winter_2024 from "~/assets/images/jesus_fest_winter_2024.webp";
+// import jesus_fest_winter_2024_fi from "~/assets/images/jesus_fest_winter_2024_fi.webp";
 
 const metadata = {
   title: "Events",
@@ -37,31 +42,26 @@ const t = useTranslations(lang);
 
   <!-- Hero Widget *******************-->
 
-  <Hero
+  <!-- <Hero
     tagline={t("events.heroEvent.tagline")}
     image={{
-      src:
-        lang === "en"
-          ? "https://lh3.googleusercontent.com/d/128L4LWy_G4SkUo124TFex5M5lHhcZ-Bl"
-          : "https://lh3.googleusercontent.com/d/1oYImiMjiA2yo3AvoYsCvi9JTQw7pllBY",
+      src: lang === "en" ? jesus_fest_2024 : jesus_fest_2024_fi,
       alt: "Jesus fest kuopio",
     }}
   >
     <Fragment slot="title">
-      <!-- <pre>{`┬\n⏐\n⏐\n⏐\n⏐\n˅`}</pre> -->
       {t("events.heroEvent.title1")}
     </Fragment>
     <Fragment slot="subtitle">
       {t("events.heroEvent.subtitle1")}
     </Fragment>
-  </Hero>
+  </Hero> -->
 
-  <!-- Anchor to leave the scroll to leave Features2 title visible **************-->
+  <!-- Anchor to leave the scroll to leave Features2 title visible ************** -->
 
   <div id="songs"></div>
 
-  <!-- Features2 Widget **************-->
-  <Features2
+  <!-- <Features2
     hrefID="songs"
     class="container"
     title={t("events.features2.title")}
@@ -84,11 +84,9 @@ const t = useTranslations(lang);
         // icon: "tabler:friends",
       },
     ]}
-  />
+  /> -->
 
-  <!-- Features2 Widget **************-->
-
-  <Features2
+  <!-- <Features2
     subtitle={t("events.features3.subtitle")}
     columns={2}
     items={[
@@ -103,13 +101,13 @@ const t = useTranslations(lang);
         // icon: "tabler:pray",
       },
     ]}
-  />
+  /> -->
 
   <!-- Text section -->
-
+  <!-- 
   <div class="w-full flex flex-col items-center px-10">
     <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
-  </div>
+  </div> -->
 
   <!-- Note Widget ******************* -->
 
@@ -127,7 +125,7 @@ const t = useTranslations(lang);
       loading="eager"
       width={1024}
       height={576}
-      src={"https://lh3.googleusercontent.com/d/1CaRvoJNUGjD2g_y8YtfHYA5eT22gBSZ6"}
+      src={roman_soldier}
       alt={"Roman soldier crying a battle cry"}
     />
   </div>
@@ -184,25 +182,25 @@ const t = useTranslations(lang);
     ]}
   />
 
-  <!-- tagline={t("events.hero2.tagline")} -->
-  <Content tagline={t("events.hero2.tagline")} isReversed>
+  <Content tagline={t("events.hero2.tagline")}>
     <Fragment slot="content">
-      <h3 class="text-2xl tracking-tightsm:text-xl mb-2">
-        {t("events.hero2.title1")}
-      </h3>
-      <h3 class="text-2xl tracking-tightsm:text-xl mb-2">
-        {t("events.hero2.subtitle1")}
-      </h3>
-      <h3 class="text-2xl tracking-tightsm:text-xl mb-2">
-        {t("events.hero2.subtitle2")}
-      </h3>
-      <h3 class="text-2xl tracking-tightsm:text-xl mb-2">
-        {t("events.hero2.subtitle3")}
+      <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
+        <span class="font-semibold text-black dark:text-white">{t("index.content4.subtitle")}</span>
+        <p class="text-lg sm:text-xl">
+          <GradientText class="font-semibold" style2>
+            "{t("index.content4.subtitle1")}"
+          </GradientText>
+          <br />
+          <br />
+          <span class="text-black dark:text-white">
+            {t("index.content4.subtitle2")}
+          </span>
+        </p>
       </h3>
     </Fragment>
 
     <Fragment slot="image">
-      <div class="relative pb-[56.25%]">
+      <div class="relative">
         <YouTube id="g_y65xR5OYE" title="Excerpt from Jesus Fest Kuopio" />
       </div>
     </Fragment>
