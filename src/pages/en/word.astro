@@ -7,6 +7,7 @@ import Steps2 from "~/components/widgets/Steps2.astro";
 import Layout from "~/layouts/PageLayout.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import word from "~/assets/images/word.webp";
 
 const metadata = {
   title: "The Word",
@@ -22,7 +23,7 @@ const t = useTranslations(lang);
   <Hero
     tagline={t("word.hero.tagline")}
     image={{
-      src: "https://lh3.googleusercontent.com/d/1a20CBvV7myveQg1MfZRAIBvq0DM1Y7tX",
+      src: word,
       alt: "Jesus and His disciples",
     }}
   >

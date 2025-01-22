@@ -9,6 +9,9 @@ import Features3 from "~/components/widgets/Features3.astro";
 import Content from "~/components/widgets/Content.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import city_in_flame from "~/assets/images/city_in_flame.webp";
+import tree1 from "~/assets/images/tree1.webp";
+import tree2 from "~/assets/images/tree2.webp";
 
 import { YouTube } from "astro-embed";
 
@@ -65,7 +68,7 @@ const t = useTranslations(lang);
       loading="eager"
       width={1024}
       height={576}
-      src={"https://lh3.googleusercontent.com/d/1Wwytw0RsxpuU_dOncVOrdv03C1P0OZoA"}
+      src={city_in_flame}
       alt={"Frozen city is melting by fire"}
     />
   </div>
@@ -147,7 +150,7 @@ const t = useTranslations(lang);
       { title: t("index.content1.items7") },
     ]}
     image={{
-      src: "https://lh3.googleusercontent.com/d/1nmqg9neG9GgUOVuYGkdovGhkGqR3L-4m",
+      src: tree1,
       alt: "Image of Amazon forest",
     }}
   >
@@ -181,7 +184,7 @@ const t = useTranslations(lang);
       { title: t("index.content2.items7") },
     ]}
     image={{
-      src: "https://lh3.googleusercontent.com/d/1QSmNRMAY96l0m-z5K1Xv8eRjEYInh6r0",
+      src: tree2,
       alt: "Image of California wildfire",
     }}
   >
