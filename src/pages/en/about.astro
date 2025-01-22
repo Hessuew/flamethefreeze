@@ -8,6 +8,8 @@ import Heart from "~/components/widgets/Heart.astro";
 import Testimonials from "~/components/widgets/Testimonials.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import no_cake_and_coffee from "~/assets/images/no_cake_and_coffee.webp";
+import andrew_and_juhani from "~/assets/images/andrew_and_juhani.webp";
 
 const metadata = {
   title: "About us",
@@ -23,8 +25,8 @@ const t = useTranslations(lang);
   <Hero
     tagline={t("about.herotext.tagline")}
     image={{
-      src: "https://lh3.googleusercontent.com/d/1luRwVZ-_9Yt3q6bzTG5FVOWQ-05gyBv6",
-      alt: "Man rejecting all the temptations offered to him",
+      src: no_cake_and_coffee,
+      alt: "Man says no the cake and coffee",
     }}
   >
     <Fragment slot="title">
@@ -136,7 +138,7 @@ const t = useTranslations(lang);
     isAfterContent
     whiteText={true}
     image={{
-      src: "https://lh3.googleusercontent.com/d/1wel6WDU54_pAyaqRB7YAaJZWkkou76Vs",
+      src: andrew_and_juhani,
       alt: "Image of Andrew and Juhani",
     }}
   >

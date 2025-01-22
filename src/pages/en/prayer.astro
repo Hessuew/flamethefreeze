@@ -7,6 +7,7 @@ import Features3 from "~/components/widgets/Features3.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import prayer from "~/assets/images/prayer.webp";
 
 const metadata = {
   title: "Prayer",
@@ -109,7 +110,9 @@ const t = useTranslations(lang);
 
   <!-- Image Widget ******************* -->
 
-  <div class="relative m-auto max-w-5xl pt-10 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+  <div
+    class="relative m-auto max-w-5xl pt-10 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+  >
     <Image
       class="mx-auto rounded-md w-full"
       widths={[400, 768, 1024, 2040]}
@@ -117,7 +120,7 @@ const t = useTranslations(lang);
       loading="eager"
       width={1024}
       height={576}
-      src={"https://lh3.googleusercontent.com/d/1qBiOaaluO02K8yuukn7q4lS6ptKZIWdM"}
+      src={prayer}
       alt={"An soldier praying intensively"}
     />
   </div>
