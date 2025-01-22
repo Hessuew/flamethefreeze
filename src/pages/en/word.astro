@@ -27,9 +27,8 @@ const t = useTranslations(lang);
     }}
   >
     <Fragment slot="title">
-      {t("word.hero.title1")}<br />
+      {t("word.hero.title1")}
       <GradientText text={t("word.hero.title.span")} />
-      <br />
       {t("word.hero.title2")}
     </Fragment>
 
@@ -113,7 +112,7 @@ const t = useTranslations(lang);
     items={[
       {
         title: t("word.features2.items1.title"),
-        description: t("word.features2.items1.description"),
+        description: `${t("word.features2.items1.description1")}<br/> ${t("word.features2.items1.description2")} <br/> ${t("word.features2.items1.description3")}`,
         icon: "tabler:brand-zoom",
       },
       {
