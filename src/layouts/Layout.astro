@@ -1,36 +1,30 @@
 ---
 import "~/assets/styles/tailwind.css";
-
-// import { ViewTransitions } from "astro:transitions";
-
-import { I18N } from "~/utils/config";
-
-import CommonMeta from "~/components/common/CommonMeta.astro";
-import Favicons from "~/components/Favicons.astro";
-import CustomStyles from "~/components/CustomStyles.astro";
+import Analytics from "~/components/common/Analytics.astro";
 import ApplyColorMode from "~/components/common/ApplyColorMode.astro";
+import BasicScripts from "~/components/common/BasicScripts.astro";
+import CommonMeta from "~/components/common/CommonMeta.astro";
 import Metadata from "~/components/common/Metadata.astro";
 import SiteVerification from "~/components/common/SiteVerification.astro";
-import Analytics from "~/components/common/Analytics.astro";
-import BasicScripts from "~/components/common/BasicScripts.astro";
-
+import StructuredData from "~/components/common/StructuredData.astro";
+import CustomStyles from "~/components/CustomStyles.astro";
+import Favicons from "~/components/Favicons.astro";
 import type { MetaData as MetaDataType } from "~/types";
-import { getLangFromUrl } from "~/i18n/utils";
+// Comment the line below to disable View Transitions
+import { ClientRouter } from "astro:transitions";
+import { I18N } from "astrowind:config";
 
 export interface Props {
   metadata?: MetaDataType;
 }
 
-const lang = getLangFromUrl(Astro.url);
 const { metadata = {} } = Astro.props;
-const { textDirection } = I18N;
+const { language, textDirection } = I18N;
 ---
 
 <!doctype html>
-<html lang={lang} dir={textDirection} class="2xl:text-[20px]">
+<html lang={language} dir={textDirection} class="2xl:text-[20px]">
   <head>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Allura:wght@400;500&display=swap" rel="stylesheet" /> -->
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;500&display=swap" rel="stylesheet" />
     <CommonMeta />
     <Favicons />
     <CustomStyles />
@@ -38,34 +32,15 @@ const { textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
-    <!-- <ViewTransitions /> -->
+    <StructuredData />
+
+    <!-- Comment the line below to disable View Transitions -->
+    <ClientRouter fallback="swap" />
   </head>
 
   <body class="antialiased text-default bg-page tracking-tight">
     <slot />
 
     <BasicScripts />
-
-    <style is:global>
-      img {
-        content-visibility: auto;
-      }
-    </style>
-     <script>
-        // JavaScript
-        document.addEventListener("DOMContentLoaded", function() {
-            // Check if the URL contains a hash
-            if (window.location.hash) {
-                // Get the ID of the element to scroll to
-                var targetId = window.location.hash.substring(1);
-                var targetElement = document.getElementById(targetId);
-                // Check if the element exists
-                if (targetElement) {
-                    // Scroll to the element
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-            }
-        });
-    </script>
   </body>
 </html>

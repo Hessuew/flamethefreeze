@@ -17,19 +17,20 @@ import { UI } from "astrowind:config";
     }
   }
 
-  const initTheme = function () {
+  function getThemePreference() {
     if ((defaultTheme && defaultTheme.endsWith(":only")) || (!localStorage.theme && defaultTheme !== "system")) {
-      applyTheme(defaultTheme.replace(":only", ""));
+      return defaultTheme.replace(":only", "");
     } else if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      applyTheme("dark");
-    } else {
-      applyTheme("light");
+      return "dark";
     }
-  };
-  initTheme();
+    return "light";
+  }
+
+  // Initialize theme immediately
+  applyTheme(getThemePreference());
 
   function attachEvent(selector, event, fn) {
     const matches = typeof selector === "string" ? document.querySelectorAll(selector) : selector;
@@ -38,6 +39,24 @@ import { UI } from "astrowind:config";
         elem.addEventListener(event, (e) => fn(e, elem), false);
       });
     }
+  }
+
+  function setupThemeToggle() {
+    document.querySelectorAll("[data-aw-toggle-color-scheme]").forEach((elem) => {
+      // Remove existing listeners first
+      const newElem = elem.cloneNode(true);
+      elem.parentNode.replaceChild(newElem, elem);
+
+      newElem.addEventListener("click", function () {
+        // if (defaultTheme.endsWith(':only')) {
+        //   return;
+        // }
+        const isDark = document.documentElement.classList.contains("dark");
+        const newTheme = isDark ? "light" : "dark";
+        localStorage.theme = newTheme;
+        applyTheme(newTheme);
+      });
+    });
   }
 
   const onLoad = function () {
@@ -62,14 +81,6 @@ import { UI } from "astrowind:config";
       document.getElementById("header")?.classList.toggle("bg-page");
       document.querySelector("#header nav")?.classList.toggle("hidden");
       document.querySelector("#header > div > div:last-child")?.classList.toggle("hidden");
-    });
-
-    attachEvent("[data-aw-toggle-color-scheme]", "click", function () {
-      if (defaultTheme.endsWith(":only")) {
-        return;
-      }
-      document.documentElement.classList.toggle("dark");
-      localStorage.theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
     });
 
     attachEvent("[data-aw-social-share]", "click", function (_, elem) {
@@ -119,19 +130,12 @@ import { UI } from "astrowind:config";
     function applyHeaderStylesOnScroll() {
       const header = document.querySelector("#header[data-aw-sticky-header]");
       if (!header) return;
-      if (lastKnownScrollPosition > 60 && !header.classList.contains("scroll")) {
+      if (lastKnownScrollPosition > 1 && !header.classList.contains("scroll")) {
         header.classList.add("scroll");
-      } else if (lastKnownScrollPosition <= 60 && header.classList.contains("scroll")) {
+      } else if (lastKnownScrollPosition <= 1 && header.classList.contains("scroll")) {
         header.classList.remove("scroll");
       }
       ticking = false;
-      // const header = document.getElementById("header");
-      // if (lastKnownScrollPosition > 60 && !header.classList.contains("scroll")) {
-      //   document.getElementById("header").classList.add("scroll");
-      // } else if (lastKnownScrollPosition <= 60 && header.classList.contains("scroll")) {
-      //   document.getElementById("header").classList.remove("scroll");
-      // }
-      // ticking = false;
     }
     applyHeaderStylesOnScroll();
 
@@ -161,11 +165,22 @@ import { UI } from "astrowind:config";
   window.onload = onLoad;
   window.onpageshow = onPageShow;
 
+  // Handle Astro View Transitions
+  document.addEventListener("astro:before-swap", () => {
+    // Store current theme before transition
+    window.currentTheme = getThemePreference();
+  });
+
   document.addEventListener("astro:after-swap", () => {
-    initTheme();
+    // Restore theme after transition
+    applyTheme(window.currentTheme || getThemePreference());
+    setupThemeToggle();
     onLoad();
     onPageShow();
   });
+
+  // Initial setup
+  setupThemeToggle();
 </script>
 
 <script is:inline>
@@ -192,7 +207,7 @@ import { UI } from "astrowind:config";
         if (element.classList.contains("intersect-full")) return 0.99;
         if (element.classList.contains("intersect-half")) return 0.5;
         if (element.classList.contains("intersect-quarter")) return 0.25;
-        if (element.classList.contains("intersect-min")) return 0.1;
+        if (element.classList.contains("intersect-tenth")) return 0.1;
         return 0;
       };
 
