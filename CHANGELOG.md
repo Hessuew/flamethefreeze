@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.10.0](https://github.com/Hessuew/flamethefreeze/compare/v3.9.0...v3.10.0) (2025-01-22)
+
+
+### Features
+
+* migrate images to local assets ([#167](https://github.com/Hessuew/flamethefreeze/issues/167)) ([03e24c0](https://github.com/Hessuew/flamethefreeze/commit/03e24c0c6c8887a088eceb8b1082b67e6bae0a68))
+
+
+### Bug Fixes
+
+* fixed image stuttering ([134b398](https://github.com/Hessuew/flamethefreeze/commit/134b39867183267690d490b6a795257ab66e08dc))
+
 ## [3.9.0](https://github.com/Hessuew/flamethefreeze/compare/v3.8.8...v3.9.0) (2024-12-10)
 
 
