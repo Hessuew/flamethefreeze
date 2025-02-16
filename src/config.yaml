@@ -1,14 +1,14 @@
 site:
   name: FLAME the FREEZE
-  site: 'https://flamethefreeze.com'
-  base: '/'
+  site: "https://flamethefreeze.com"
+  base: "/"
   trailingSlash: false
 
 # Default SEO metadata
 metadata:
   title:
     default: FLAME the FREEZE
-    template: '%s — flamethefreeze'
+    template: "%s — flamethefreeze"
   description: "\U0001F680. Flame the Freeze — Where the Word of God and experience meets"
   robots:
     index: true
@@ -16,7 +16,7 @@ metadata:
   openGraph:
     site_name: FLAME the FREEZE
     images:
-      - url: '~/assets/images/default.jpg'
+      - url: "~/assets/images/default.jpg"
         width: 900
         height: 900
     type: website
@@ -26,7 +26,7 @@ i18n:
   textDirection: ltr
 
 ui:
-  theme: 'dark' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: "dark" # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
   tokens:
     default:

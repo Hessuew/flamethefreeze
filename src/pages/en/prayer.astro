@@ -8,6 +8,7 @@ import CallToAction from "~/components/widgets/CallToAction.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import prayer from "~/assets/images/prayer.webp";
+import Features2 from "~/components/widgets/Features2.astro";
 
 const metadata = {
   title: "Prayer",
@@ -28,9 +29,54 @@ const t = useTranslations(lang);
     </Fragment>
   </Hero>
 
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    columns={3}
+    items={[
+      {
+        title: t("prayer.features2-1.items1.title"),
+        description: t("prayer.features2-1.items1.description"),
+        icon: "tabler:zoom-check",
+      },
+      {
+        title: t("prayer.features2-1.items2.title"),
+        description: t("prayer.features2-1.items2.description"),
+        icon: "tabler:map",
+      },
+      {
+        title: t("prayer.features2-1.items3.title"),
+        description: t("prayer.features2-1.items3.description"),
+        icon: "tabler:map-route",
+      },
+      {
+        title: t("prayer.features2-1.items4.title"),
+        description: t("prayer.features2-1.items4.description"),
+        icon: "tabler:swords",
+      },
+      {
+        title: t("prayer.features2-1.items5.title"),
+        description: t("prayer.features2-1.items5.description"),
+        icon: "tabler:hand-finger",
+      },
+      {
+        title: t("prayer.features2-1.items6.title"),
+        description: t("prayer.features2-1.items6.description"),
+        icon: "tabler:battery-3",
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      {t("prayer.features2-1.title1a")}
+      <GradientText>{t("prayer.features2-1.title1b")}</GradientText>
+      {t("prayer.features2-1.title1c")}
+    </Fragment>
+  </Features2>
+
   <!-- Features3 Widget ******************* -->
 
   <Features3
+    tagline={t("prayer.features3-1.tagline")}
     title={t("prayer.features3-1.title")}
     subtitle={t("prayer.features3-1.subtitle")}
     subtitle2={t("prayer.features3-1.subtitle2")}
@@ -39,6 +85,7 @@ const t = useTranslations(lang);
   <!-- Features Widget ************** -->
 
   <Features
+    tagline={t("prayer.features1.tagline")}
     title={t("prayer.features1.title")}
     subtitle={t("prayer.features1.subtitle")}
     columns={2}
@@ -97,7 +144,7 @@ const t = useTranslations(lang);
 
   <!-- Features Widget *************** -->
 
-  <Features id="features" tagline={t("index.features1.tagline")} title={t("prayer.features1-2.title")}>
+  <Features id="features" tagline={t("prayer.features1-2.tagline")} title={t("prayer.features1-2.title")}>
     <Fragment slot="subtitle">
       {t("prayer.features1-2.subtitle1")}
       <span class="font-semibold">{t("prayer.features1-2.span1")}</span>

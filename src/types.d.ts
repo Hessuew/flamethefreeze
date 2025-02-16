@@ -97,7 +97,7 @@ export interface Widget {
   id?: string;
   isDark?: boolean;
   bg?: string;
-  classes?: Record<string, string>;
+  classes?: Record<string, string | Record<string, string>>;
   noAnimation?: boolean;
 }
 
@@ -218,6 +218,8 @@ export interface Hero extends Headline, Widget {
   callToAction1?: CallToAction;
   callToAction2?: CallToAction;
   isReversed?: boolean;
+  actions?: string | CallToAction[];
+  imageText?: string;
 }
 
 export interface Team extends Headline, Widget {

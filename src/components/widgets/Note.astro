@@ -9,7 +9,9 @@ export interface Props {
 const { title = await Astro.slots.render("title"), subtitle = await Astro.slots.render("subtitle") } = Astro.props;
 ---
 
-<section class="bg-secondary dark:bg-purple-900/40 not-prose intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+<section
+  class="bg-secondary dark:bg-purple-900/40 not-prose intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+>
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
     <span class="font-bold text-white">
       <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom text-white" />

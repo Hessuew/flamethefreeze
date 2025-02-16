@@ -14,7 +14,6 @@ const changeLangInUrl = (permaLink: string, lng?: "en" | "fi") => {
     if (lng === "en" || !lng) return ""; // Ensure /en/ or /fi/ for base form
     // return "https://flamethefreeze.com/fi/"; // Ensure /en/ or /fi/ for base form
     return `${permaLink}fi`;
-
   }
 
   // Remove everything before 'en' or 'fi'

@@ -53,6 +53,50 @@ const t = useTranslations(lang);
 
   <Features3 subtitle={t("word.features3-1.subtitle")} subtitle2={t("word.features3-1.subtitle2")} />
 
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    columns={3}
+    items={[
+      {
+        title: t("word.features2-1.items1.title"),
+        description: t("word.features2-1.items1.description"),
+        icon: "tabler:baguette",
+      },
+      {
+        title: t("word.features2-1.items2.title"),
+        description: t("word.features2-1.items2.description"),
+        icon: "tabler:brain",
+      },
+      {
+        title: t("word.features2-1.items3.title"),
+        description: t("word.features2-1.items3.description"),
+        icon: "tabler:bulb",
+      },
+      {
+        title: t("word.features2-1.items4.title"),
+        description: t("word.features2-1.items4.description"),
+        icon: "tabler:plant",
+      },
+      {
+        title: t("word.features2-1.items5.title"),
+        description: t("word.features2-1.items5.description"),
+        icon: "tabler:businessplan",
+      },
+      {
+        title: t("word.features2-1.items6.title"),
+        description: t("word.features2-1.items6.description"),
+        icon: "tabler:sword",
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      {t("word.features2-1.title1a")}
+      <GradientText>{t("word.features2-1.title1b")}</GradientText>
+      {t("word.features2-1.title1c")}
+    </Fragment>
+  </Features2>
+
   <!-- Steps2 Widget ****************** -->
 
   <Steps2

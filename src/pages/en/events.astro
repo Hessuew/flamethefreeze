@@ -182,7 +182,31 @@ const t = useTranslations(lang);
     ]}
   />
 
-  <Content tagline={t("events.hero2.tagline")}>
+  <Content tagline={t("events.hero2.tagline")} isReversed>
+    <Fragment slot="content">
+      <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
+        <span class="font-semibold text-black dark:text-white">{t("events.content.subtitle")}</span>
+        <p class="text-lg sm:text-xl">
+          <GradientText class="font-semibold" style2>
+            "{t("events.content.subtitle1")}"
+          </GradientText>
+          <br />
+          <br />
+          <span class="text-black dark:text-white">
+            {t("events.content.subtitle2")}
+          </span>
+        </p>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative">
+        <YouTube id="BF3abMvyBLQ" title="Ari raised from the dead after setting himself on fire" poster="" />
+      </div>
+    </Fragment>
+  </Content>
+
+  <Content>
     <Fragment slot="content">
       <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
         <span class="font-semibold text-black dark:text-white">{t("index.content4.subtitle")}</span>
