@@ -125,7 +125,7 @@ export const ui = {
     "church.steps.items5.description3":
       "How alive a church is can be noticed from its' prayer meetings directly. If you want to know the state of the church, go to the prayer meeting. If it is full of passion, fervor, heartfelt, and Spirit and scripture-filled prayers, then you are at the right place. If they pray for souls, agonize for dead churches, cry for the wayward, lay down in pain for the lost, travail for general revival, strive for the advancement of the gospel, and resist to blood against sin, *then* you are at the right place. If these are not found, the church has lost its first love and has a name but is dead. For out of the abundance of the heart, the mouth speaks.",
     "church.steps.items5.description4":
-      "And being let go, they went to their own company, and reported all that the chief priests and elders had said unto them. And when they heard that, they lifted up their voice to God with one accord... Acts 4:23,24a KJV",
+      "And being let go, they went to their own company, and reported all that the chief priests and elders had said unto them. And when they heard that, they lifted up their voice to God with one accord ... Acts 4:23, 24a KJV",
     "church.steps.items5.description5":
       "O generation of vipers, how can ye, being evil, speak good things? for out of the abundance of the heart the mouth speaketh. Mat 12:34 KJV",
     "church.steps.items6.title": "You get more people saved.",
@@ -258,6 +258,10 @@ export const ui = {
     "events.features.items5.title": "Personal Discipleship",
     "events.features.items5.description":
       "But what Jesus said continued, 'and make disciples of all the nations, baptizing them into the name of the Father and of the Son and of the Holy Spirit, teaching them to observe everything that I have commanded you'. People who come into Christ must grow into mature sons of God who can shift any atmosphere with unwavering faith and with the presence of God they carry.",
+    "events.content.subtitle": "JESUS FEST Winter Revival - December 2024",
+    "events.content.subtitle1": "God sent two angels, and rescued me from hell.",
+    "events.content.subtitle2":
+      'Satan pursued Ari for years. Desperate to escape, he ran through a glass door and set himself on fire.  In the hospital, he died exited his burnt body, and found himself in hell, tormented by demons and fire. Crying out to God for mercy, two angels came to rescue him. "Now I believe in Jesus," he said, "because I know I will die again, but this time, I want to go to heaven."',
     "events.features.items5.description2": "Every single day.",
     "events.steps2.title": "Reach out to us",
     "events.steps2.subtitle":
@@ -470,7 +474,7 @@ export const ui = {
     "index.features1.tagline": "Content",
     "index.features1.title": "What God does through His Holy Spirit?",
     "index.features1.subtitle":
-      "For thus saith the Lord of hosts; Yet once, it is a little while, and I will shake the heavens, and the earth, and the sea, and the dry land; and I will shake all nations, and the desire of all nations shall come: and I will fill this house with glory, saith the Lord of hosts. Haggai 2:6,7 KJV",
+      "For thus saith the Lord of hosts; Yet once, it is a little while, and I will shake the heavens, and the earth, and the sea, and the dry land; and I will shake all nations, and the desire of all nations shall come: and I will fill this house with glory, saith the Lord of hosts. Hag 2:6,7 KJV",
     "index.features1.items1.title": "Wakes up the body of Christ.",
     "index.features1.items1.description":
       "It is time the bride of Christ woke up from slumber and spiritual death because our Lord Jesus Christ is coming for a glorious church.",
@@ -542,14 +546,37 @@ export const ui = {
     "index.content4.subtitle2":
       "'And he said unto them, Go ye into all the world, and preach the gospel to every creature.' Deliverance from terrible nightmares, crowds standing for hours in the cold and rain to listen, and attendees devouring a 100+ page event gift book in a single night between event days—this is just a glimpse of what transpired.",
     "prayer.herotext.tagline": "Prayer",
-    "prayer.herotext.title1": "is it",
+    "prayer.herotext.title1": "Is it",
     "prayer.herotext.title2": " necessary?",
     "prayer.herotext.title.span": " really",
+
+    "prayer.features2-1.title1a": "What does ",
+    "prayer.features2-1.title1b": "prayer",
+    "prayer.features2-1.title1c": " do to us?",
+    "prayer.features2-1.items1.title": "1. Our spirit is quickened to discern",
+    "prayer.features2-1.items1.description":
+      "When we pray, our senses in the spirit are discerned. We will discern impulses beyond the natural realm. Peace beyond understanding will protect your heart and your mind. We will also discern people: a young slave can be the contact point to the prophet, or a kiss can be a kiss from Judas, meaning, This is the person to die.<br /> <br /> 'Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.' Phi 4:7.",
+    "prayer.features2-1.items2.title": "2. We receive the prophetic blueprint for every season",
+    "prayer.features2-1.items2.description":
+      "God has prepared things for us (1 Cor 2:9, 10), but we need to pray to obtain them. But not everything received in the place of prayer is from God. Jesus had prayed and fasted for 40 days, and then Satan spake to Him and showed Him visions. Prayer purifies what we see. <br /> <br /> 'And a vision appeared to Paul in the night; There stood a man of Macedonia, and prayed him, saying, Come over into Macedonia, and help us. And after he had seen the vision, immediately we endeavoured to go into Macedonia, assuredly gathering that the Lord had called us for to preach the gospel unto them.' Acts 16:7-9.",
+    "prayer.features2-1.items3.title": "3. We receive direction",
+    "prayer.features2-1.items3.description": `You can know the place, but without direction, you can go round and round and never get there. A direction also helps you to escape from evil when you know the way of escape. <br /> <br /> 'And the Lord said unto him, Arise, and go <span class="underline">into the street</span> which is called Straight, and enquire <span class="underline">in the house of Judas</span> for one called Saul, of Tarsus: for, behold, he prayeth' Acts 9:11. <br /> <br /> 'There hath no temptation taken you but such as is common to man: but God is faithful, who will not suffer you to be tempted above that ye are able; but will with the temptation also make a way to escape, that ye may be able to bear it.' 1 Cor 10:13.`,
+    "prayer.features2-1.items4.title": "4. We contend against spiritual forces",
+    "prayer.features2-1.items4.description":
+      "When God speaks, Satan is ready to prevent that word from taking effect. We have to fight a fight of faith. And when Satan has a desire, you don't push it away, but you pray. <br /> <br /> 'For we wrestle not against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world, against spiritual wickedness in high places.' Eph 6:12. <br /> <br /> 'And the Lord said, Simon, Simon, behold, Satan hath desired to have you, that he may sift you as wheat: But I have prayed for thee ...' Luke 22:31, 32.",
+    "prayer.features2-1.items5.title": "5. We schedule the needed help",
+    "prayer.features2-1.items5.description": `Saul had seen Ananias come but Ananias refused to come. But Saul prayed and the Lord appeared to Ananias and convinced him. We need to be diligent but trust in the power of prayer. <br /> <br /> 'And the Lord said unto him, Arise, and go into the street which is called Straight, and enquire in the house of Judas for one called Saul, of Tarsus: <span class="underline">for behold he prayeth</span>' Acts 9:11. <br /> <br />'But as one was felling a beam, the axe head fell into the water: and he cried, and said, Alas, master! for it was borrowed.' 2 Kgs 6:6.`,
+    "prayer.features2-1.items6.title": "6. We build capacity",
+    "prayer.features2-1.items6.description":
+      "In the spirit, degrees or riches do not have weight; Satan laughs at them. The armies of darkness want to overcome us. What can oppose them? <br /> <br /> 'When the enemy shall come in like a flood, the Spirit of the Lord shall lift up a standard against him.' Jes 59:19 <br /> <br /> What is this standard? The word of God. <br /> <br /> 'And take ... the sword of the Spirit, which is the word of God.' Eph 6:17.",
+
+    "prayer.features3-1.tagline": "And when prayer is missing?",
     "prayer.features3-1.title": "The case of Sadducees",
     "prayer.features3-1.subtitle":
       "Jesus answered and said unto them, Ye do err, not knowing the scriptures, nor the power of God. Matthew 22:29 KJV",
     "prayer.features3-1.subtitle2":
-      "Haven't the Sadducees studied the scriptures all their lives? Haven't they devoted their whole lives to serving God in the temple? And to know his word, teach others, and become experts in the law? Is it possible that a person could be religious and study the Bible their whole life and still be told by Jesus, Ye do err, not knowing the scriptures nor the power of God? How can I know if my worship of God is vain? And if I'm just studying or living a doctrine, which are substantially the commandments and traditions of religious men?",
+      "Haven't the Sadducees studied the scriptures all their lives? Haven't they devoted their whole lives to serving God in the temple? And to know his word, teach others, and become experts in the law? Is it possible that a person could be religious and study the Bible their whole life and still be told by Jesus, Ye do err, not knowing the scriptures nor the power of God? <br /> <br /> How can I know if my worship of God is vain? And if I'm just studying or living a doctrine, which are substantially the commandments and traditions of religious men?",
+    "prayer.features1.tagline": "Checkup",
     "prayer.features1.title": "A few awakening questions",
     "prayer.features1.subtitle": "Ask yourself the following questions and compare your answers to the Bible.",
     "prayer.features1.items1.title": "The power of God",
@@ -581,6 +608,7 @@ export const ui = {
       "Brethren, it is time we entered into personal supernatural experiences with the Holy Spirit. God is baptizing us with power, immersing us in the manifestations of the Spirit, and soaking us in the fragrance of heaven as we assemble at the throne of grace. It is time we saw the glory of God manifested in and through the church. At this time of war and in this war zone, we activate combat alongside celestial armies because spiritual warfare has been legalized by the Captain of the Host of the Lord, Jesus Christ the Son of God.",
     "prayer.features3-3.subtitle2":
       "And from the days of John the Baptist until the present time, the kingdom of heaven has endured violent assault, and violent men seize it by force [as a precious prize—a share in the heavenly kingdom is sought with most ardent zeal and intense exertion]. Matthew 11:12 AMPC",
+    "prayer.features1-2.tagline": "Time of change is now",
     "prayer.features1-2.title": "God can use your mortal frame. He is more than able; flesh profiteth nothing.",
     "prayer.features1-2.subtitle1":
       "Wherefore take unto you the whole armour of God, that ye may be able to withstand in the evil day, and having done all, to stand. Stand therefore, having your loins girt about with truth, and having on the breastplate of righteousness; And your feet shod with the preparation of the gospel of peace; Above all, taking the shield of faith, wherewith ye shall be able to quench all the fiery darts of the wicked. And take the helmet of salvation, and the sword of the Spirit, which is the word of God:",
@@ -1046,6 +1074,27 @@ export const ui = {
       "Now when they saw the boldness of Peter and John, and perceived that they were unlearned and ignorant men, they marvelled; and they took knowledge of them, that they had been with Jesus. Acts 4:13 KJV",
     "word.features3-1.subtitle2":
       "It was not about their skills and talents, connections, resources, ethnicity, or race. But their commitment to stay and to continue to stay with Jesus, who is the true Vine. You might be uneducated, disadvantaged, have some disability, and have a few skills, talents, relationships, and connections. But none of these are integral to your glorious manifestation. The key question is: Have you been with Jesus?",
+    "word.features2-1.title1a": "What does ",
+    "word.features2-1.title1b": "the word",
+    "word.features2-1.title1c": " do to us?",
+    "word.features2-1.items1.title": "1. The word feeds our spirit",
+    "word.features2-1.items1.description":
+      "The first and an important task of the word of God is to feed us. Every word birthed by the Spirit feeds our spirit and produces life. We eat daily for our bodies, but we also need to feed our spirits every day. The word of God is a superfood that has enough nutrients for both a baby and an adult. <br /> <br /> 'But he answered and said, It is written, Man shall not live by bread alone, but by every word that proceedeth out of the mouth of God.' Mat 4:4.",
+    "word.features2-1.items2.title": "2. The word renews our minds",
+    "word.features2-1.items2.description":
+      "In the new birth, our spirits are saved. The salvation of our minds is a process; we must change it from the patterns we have gotten. The word of God changes it. This means that our responsibility is to expose ourselves to the word constantly so that patterns producing death change to the patterns of God. <br /> <br /> 'And be not conformed to this world: but be ye transformed by the renewing of your mind, that ye may prove what is that good, and acceptable, and perfect, will of God.' Rom 12:2.",
+    "word.features2-1.items3.title": "3. The word is a lamp unto our feet",
+    "word.features2-1.items3.description":
+      "Without light, it is completely dark » we will fall. The light shows the truth and reveals the lies. The word of God is a shining lamp and light. We are holy, but our steps become holy when we know the truth. Our every step must have its base on the word. <br /> <br /> 'Thy word is a lamp unto my feet, and a light unto my path.' Ps 119:105.<br /> <br /> 'Sanctify them through thy truth: thy word is truth.' Joh 17:17.",
+    "word.features2-1.items4.title": "4. By the word we grow to perfection",
+    "word.features2-1.items4.description":
+      "We can trust the Bible. It is written by God, and He does not make mistakes. This eternal word brings us to spiritual maturity. It provides and equips us with the tools for every task. <br /> <br /> 'All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness: That the man of God may be perfect, thoroughly furnished unto all good works.' 2 Tim 3:16,17. <br /> <br /> '... The word of his grace, which is able to build you up, and to give you an inheritance among all them which are sanctified.' Acts 20:32",
+    "word.features2-1.items5.title": "5. By the word we prosper",
+    "word.features2-1.items5.description":
+      "People want to prosper in their marriage, growing up their children, in career, financially etc., and for this they study hard and read a lot of books. But God has given us a single book, which guarantees success in every area of our lives. <br /> <br /> 'This book of the law shall not depart out of thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous, and then thou shalt have good success.' Joos 1:8.",
+    "word.features2-1.items6.title": "6. The word is our weapon",
+    "word.features2-1.items6.description":
+      "In the spirit, degrees or riches do not have weight; Satan laughs at them. The armies of darkness want to overcome us. What can oppose them? <br /> <br /> 'When the enemy shall come in like a flood, the Spirit of the Lord shall lift up a standard against him.' Jes 59:19 <br /> <br /> What is this standard? The word of God. <br /> <br /> 'And take ... the sword of the Spirit, which is the word of God.' Eph 6:17.",
     "word.steps2-1.title": "We want your experience to change.",
     "word.steps2-1.subtitle":
       "So that when you function in your family, meet with friends, go to work and, do daily chores, people will say that you have been with Jesus. So that your life spreads the heavenly fragrance, knowledge, presence, and person of our Lord Jesus Christ. So that His presence is so overwhelming on you that when people meet you, they actually meet Jesus. So that His life-changing power and love overtake your weaknesses and carnal limitations and people can see God through the veil of your flesh.",
@@ -1109,14 +1158,14 @@ export const ui = {
       "(1. Moos 22:10, 'Sitten Abraham ojensi kätensä ja tarttui veitseen teurastaakseen poikansa.')",
     "about.features2.title1": "...ja nyt sinun ",
     "about.features2.title2": ", oi, sinun ",
-    "about.features2.title3": ", pumppaa",
+    "about.features2.title3": ", sykkii",
     "about.features2.title.span": "sydämesi",
     "about.h2": "Jumalalle",
     "about.content.title1": "Tehnyt",
     "about.content.subtitle":
       "Andrew Agbaje ja Juhani Juusola ovat saaneet tehtävän Herraltamme Jeesukselta Kristukselta kaikkialle maailmaan ja seurakuntaan, on Kristuksen ruumis.",
     "about.content.content":
-      "Lääkäri Andrew ja ohjelmoija Juhani, asuvat Kuopiossa. He ottavat osaa paikallisen seurakunnan kasvattamiseen ja vahvistamiseen, evankeliumin julistamiseen, uusien uskovien opetuslapseuttamiseen, maailman laajuisten rukouskonfferenssien järjestämiseen ja Pyhän Hengen innoittamien Raamatun opetuksien pitämiseen. Heidän toimintansa tarkoitus on kirkastaa Jeesusta Kristusta Pyhän Hengen voiman ja lahojen ilmentymisen kautta, ihmeet, merkit ja tunnusteot seuraten julistettua sanaa. Veljet ovat lähettiläitä Kristuksen ruumiista varten avatakseen Jumalan kirkkauden mysteeriä sekä valmistaakseen kirkastetun seurakunnan Sulhasen paluuta varten.",
+      "Lääkäri Andrew ja ohjelmoija Juhani, asuvat Kuopiossa. He ottavat osaa paikallisen seurakunnan kasvattamiseen ja vahvistamiseen, evankeliumin julistamiseen, uusien uskovien opetuslapseuttamiseen, maailman laajuisten rukouskonfferenssien järjestämiseen ja Pyhän Hengen innoittamien Raamatun opetuksien pitämiseen. Heidän toimintansa tarkoitus on kirkastaa Jeesusta Kristusta Pyhän Hengen voiman ja lahjojen ilmentymisen kautta, ihmeet, merkit ja tunnusteot seuraten julistettua sanaa. Veljet ovat lähettiläitä Kristuksen ruumista varten avatakseen Jumalan kirkkauden mysteeriä sekä valmistaakseen kirkastetun seurakunnan Sulhasen paluuta varten.",
     "about.testimonials.items1.name": "Markus 16:17,18 FINRK",
     "about.testimonials.items1.t1":
       "And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; they shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover.",
@@ -1167,12 +1216,12 @@ export const ui = {
     "church.steps.items3.description1":
       "Käskymme päämääränä on rakkaus, joka tulee puhtaasta sydämestä, hyvästä omastatunnosta ja vilpittömästä uskosta. 1 Tim 1:5 FINRK",
     "church.steps.items3.description2":
-      "Häntä te rakastatte, vaikka ette ole häntä nähneet, häneen te uskotte, vaikka ette häntä nyt näe, ja te riemuitsette sanoin kuvaamattomalla ja kirkastuneella ilolla. 1 Pet 1:8 FINRK",
+      "Häntä te rakastatte, vaikka ette ole häntä nähneet, häneen te uskotte, vaikka ette häntä nyt näe, ja te riemuitsette sanoin kuvaamattomalla ja kirkastuneella ilolla. 1 Pie 1:8 FINRK",
     "church.steps.items3.description3":
       "Tämä käsky meillä on häneltä: joka rakastaa Jumalaa, rakastakoon myös veljeään. 1 Joh 4:21 FINRK",
     "church.steps.items4.title": "Rakkaus maailmaa kohtaan kuolee ja rakkaus maailman asioita kohtaan kuolee",
     "church.steps.items4.description1":
-      "Te avionrikkojat! Ettekö tiedä, että maailman ystävyys on vihollisuutta Jumalaa vastaan. Joka siis tahtoo olla maailman ystävä, hänestä tulee Jumalan vihollinen. Jam 4:4 FINRK",
+      "Te avionrikkojat! Ettekö tiedä, että maailman ystävyys on vihollisuutta Jumalaa vastaan. Joka siis tahtoo olla maailman ystävä, hänestä tulee Jumalan vihollinen. Jaa 4:4 FINRK",
     "church.steps.items4.description2":
       "Älkää rakastako maailmaa älkääkä sitä, mikä maailmassa on. Jos joku rakastaa maailmaa, Isän rakkaus ei ole hänessä. Sillä kaikki, mikä maailmassa on, lihan himo, silmien halu ja elämän korskeus, se ei ole Isästä vaan maailmasta. 1 Joh 2:15,16 FINRK",
     "church.steps.items4.description3":
@@ -1180,7 +1229,7 @@ export const ui = {
     "church.steps.items4.description4":
       "Uskossa nämä kaikki kuolivat eivätkä saaneet sitä, mikä oli luvattu. Kaukaa he olivat sen nähneet ja sitä tervehtineet ja tunnustaneet olevansa vieraita ja muukalaisia maan päällä. Ne, jotka näin puhuvat, ilmaisevat etsivänsä isänmaata. Hep 11:13,14",
     "church.steps.items4.description5":
-      "Haluan tuntea Kristuksen ja hänen ylösnousemuksensa voiman ja hänen kärsimystensä osallisuuden ja tulla hänen kaltaisekseen samastumalla hänen kuolemaansa. Phi 3:10 FINRK",
+      "Haluan tuntea Kristuksen ja hänen ylösnousemuksensa voiman ja hänen kärsimystensä osallisuuden ja tulla hänen kaltaisekseen samastumalla hänen kuolemaansa. Fil 3:10 FINRK",
     "church.steps.items4.description6":
       "Jos olet alkanut rukoilla enemmän, jos olet alkanut lukea Raamattua enemmän, jos olet alkanut saarnata evankeliumia enemmän, olet oikeassa paikassa.",
     "church.steps.items4.description7": "Me itse tahdomme pysyä rukouksessa ja sanan palveluksessa. Apt 6:4 FINRK",
@@ -1195,7 +1244,7 @@ export const ui = {
     "church.steps.items5.description3":
       "Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämen pohjasta lähteviä ja Hengen ja Sanan täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat henkeen ja vereen syntiä, *niin* oikeassa paikassa. Jos näin ei ole, seurakunta on menettänyt ensirakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
     "church.steps.items5.description4":
-      "Vapaaksi päästyään apostolit menivät omiensa luo ja kertoivat kaiken, mitä ylipapit ja vanhimmat olivat heille sanoneet. Sen kuultuaan he kaikki yksimielisesti korottivat äänensä Jumalan puoleen ja sanoivat... Apt 4:23,24a FINRK",
+      "Vapaaksi päästyään apostolit menivät omiensa luo ja kertoivat kaiken, mitä ylipapit ja vanhimmat olivat heille sanoneet. Sen kuultuaan he kaikki yksimielisesti korottivat äänensä Jumalan puoleen ja sanoivat ... Apt 4:23, 24a FINRK",
     "church.steps.items5.description5":
       "Te kyykäärmeiden sikiöt, kuinka te voisitte puhua hyvää, kun itse olette pahoja! Sydämen kyllyydestä suu puhuu. Mat 12:34 FINRK",
     "church.steps.items6.title": "Enemmän ihmisiä pelastuu sinun kauttasi",
@@ -1208,7 +1257,7 @@ export const ui = {
     "church.steps.items7.description1":
       "Te olette todistajamme, samoin Jumala, kuinka pyhiä, oikeamielisiä ja nuhteettomia olimme teitä kohtaan, jotka uskotte. 1 Tes 2:10 FINRK",
     "church.steps.items7.description2":
-      "Tulkaa sen kaikessa vaelluksessanne pyhiksi, niin kuin sinun kutsujannekin on pyhä. Onhan kirjoitettu: ”Olkaa pyhät, sillä minä olen pyhä.” Jos te siis Isänänne huudatte avuksi häntä, henkilöön katsomatta tuomit joka jokaisen hänen tekojensa mukaan, niin vaeltakaa jumalanpelossa tämä muukalaisuutenne aika. tuotteenttehän, että teitä ei ole lunastettu isiltä perimästänne turhasta vaelluksesta katoavilla aarteilla, hopealla tai kullalla, vaan Kristuksen, kuin virheettömän ja tahrattoman Karitsan, kalliilla verellä. Hänet oli kyllä ​​ennalta ehkäistä jo ennen maailman perustamista, mutta vasta viimeisinä aikana paikalla on tuotu julki teitä varten. 1 Pet 1:15-20 FINRK",
+      "Tulkaa sen kaikessa vaelluksessanne pyhiksi, niin kuin sinun kutsujannekin on pyhä. Onhan kirjoitettu: ”Olkaa pyhät, sillä minä olen pyhä.” Jos te siis Isänänne huudatte avuksi häntä, henkilöön katsomatta tuomit joka jokaisen hänen tekojensa mukaan, niin vaeltakaa jumalanpelossa tämä muukalaisuutenne aika. tuotteenttehän, että teitä ei ole lunastettu isiltä perimästänne turhasta vaelluksesta katoavilla aarteilla, hopealla tai kullalla, vaan Kristuksen, kuin virheettömän ja tahrattoman Karitsan, kalliilla verellä. Hänet oli kyllä ​​ennalta ehkäistä jo ennen maailman perustamista, mutta vasta viimeisinä aikana paikalla on tuotu julki teitä varten. 1 Pie 1:15-20 FINRK",
     "church.steps.items7.description3":
       "Rakkaani, nyt me olemme Jumalan lapsia, eikä vielä ole käynyt ilmi, mitä meistä tulee. Me tiedämme tulevamme hänen kaltaisikseen, kun hän ilmestyy, sillä me saamme nähdä hänet sellaisena kuin hän on. Jokainen, joka panee häneen tämän toivon, puhdistaa itsensä, niin kuin hän on puhdas. 1 Joh 3:2,3 FINRK",
     "church.steps.items8.title": "Syntiä vihataan ja se tuomitaan",
@@ -1243,10 +1292,10 @@ export const ui = {
     "devotions.features3-1.subtitle":
       "Älköön tämä lain kirja väistykö sinun suustasi, vaan mietiskele sitä päivin ja öin, että noudattaisit tarkasti kaikkea, mitä siihen on kirjoitettu, sillä silloin sinä onnistut ja menestyt tielläsi. Jos 1:8 FINRK",
     "devotions.features3-2.subtitle":
-      "Autuas se mies, joka ei vaella jumalattomien neuvon mukaan, ei viivy syntisten teillä eikä istu pilkkaajien parissa, vaan on mieltynyt Herran opetukseen ja tutkii sitä päivin ja öin. Psa 1:1,2 FINRK",
+      "Autuas se mies, joka ei vaella jumalattomien neuvon mukaan, ei viivy syntisten teillä eikä istu pilkkaajien parissa, vaan on mieltynyt Herran opetukseen ja tutkii sitä päivin ja öin. Ps 1:1, 2 FINRK",
     "devotions.features3-3.subtitle":
       "Kuinka voi nuorukainen pitää tiensä puhtaana? Siten, että sinun sanaasi. Minä etsin sinua koko sydämestäni. Älä salli minun eksyä sinun käskyistäsi. Olen kätkenyt sanasi sydämeeni, etten tekisi syntiä sinua vastaan. Siunattu olet sinä, Herra ! Opeta minulle lakisi. Huulillani minä kerron kaikki sinun suusi tuomiot. Minä iloitsen sinun todistustesi tiellä, niin kuin iloitaan kaikesta rikkaudesta. Minä mietiskelen sinun tulevasi ja tarkkailen sinun teitäsi. Minä saan iloni sinun laeistasi. Sinun sanaasi minä en unohda. Psa 119:9-16 FINRK",
-    "devotions.features3-4.subtitle": "Sinun sanasi on jalkojeni lamppu ja valo minun polullani. Psa 119:105 FINRK",
+    "devotions.features3-4.subtitle": "Sinun sanasi on jalkojeni lamppu ja valo minun polullani. Ps 119:105 FINRK",
     "devotions.steps.title": "Päivän hartaudet",
     "devotions.features1.tagline": "Extra",
     "devotions.features1.title": "Ilmainen e-kirja Kristuksen ruumiin rohkaisuksi ja vahvistamiseksi",
@@ -1300,9 +1349,13 @@ export const ui = {
     "events.features.items5.description":
       "Mutta se, mitä Jeesus sanoi, ei loppunut siihen, 'ja tehkää kaikista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää.' Niiden, jotka tulevat Kristuksen luokse täytyy kasvaa täyteen aikuisuuteen. Miehiksi (kun hengessä ei ole miestä eikä naista), jotka voivat muuttaa minkä tahansa tilanteen vankkumattomalla uskolla ja Kaikkivaltiaan läsnöololla, jota he kantavat mukanaan.",
     "events.features.items5.description2": "Jokaisena päivänä.",
+    "events.content.subtitle": "JESUS FEST Talvi Herätys - Joulukuu 2024",
+    "events.content.subtitle1": "Jumala lähetti kaksi enkeliään ja pelasti minun helvetistä.",
+    "events.content.subtitle2":
+      'Saatana jahtasi Aria vuosia. Epätoivossaan Ari juoksi lasioven läpi ja sytytti itsensä tuleen. Hän kuoli sairaalassa, poistui palaneesta ruumiistaan ja löysi itsensä helvetistä, jossa demonit ja tuli kiduttivat ja piinasivat häntä. Hän huusi Jumalaa avuksi ja kaksi enkeliä tuli pelastamaan hänet. "Nyt uskon Jeesuksen", hän kertoi, "koska tiedän kuolevani vielä jonain päivänä. Mutta tällä kertaa haluan mennä taivaaseen."',
     "events.steps2.title": "Ole yhteydessä",
     "events.steps2.subtitle":
-      "Onko sinulla kysymyksiä, haluat ottaa osaa tapaamisiin tai haluat vain olla yhteydessä? Ota yhteyttä täysin vapaasti. Uskomme, että tämä nettisivu, jonka olemme tehneet, on jo herättänyt hengellisen ruokahalusi ja sysyttänyt jo liekkiäsi 🔥 ja näet, että mistä olemme puhuneet on totta.",
+      "Onko sinulla kysymyksiä, haluat ottaa osaa tapaamisiin tai haluat vain olla yhteydessä? Ota yhteyttä äysin vapaasti. Uskomme, että tämä nettisivu, jonka olemme tehneet, on jo herättänyt hengellisen ruokahalusi ja sytyttänyt jo liekkiäsi 🔥 ja näet, että mistä olemme puhuneet on totta.",
     "events.steps2.items1.title": "Lähetä sähköpostia",
     "events.steps2.items1.description": "flamethefreeze@gmail.com",
     "events.steps2.items2.title": "Laita WhatsApp viestiä tai soita",
@@ -1320,7 +1373,7 @@ export const ui = {
     "fivefold.hero.title": "Viisi palvelutehtävää, mitä ",
     "fivefold.hero.span": "varten?",
     "fivefold.hero.subtitle":
-      "Ja asettaisi eteensä kirkastetun seurakunnan, vailla tahraa, ryppyä tai muuta sellaista, pyhän ja nuhteettoman. Efe 5:27 FINKRK",
+      "Ja asettaisi eteensä kirkastetun seurakunnan, vailla tahraa, ryppyä tai muuta sellaista, pyhän ja nuhteettoman. Ef 5:27 FINKRK",
     "fivefold.features3-1.title":
       "asetti seurakuntaan viisi palvelutehtävää pyhien täydelliseksi ja kypsäksi tekemiseksi sekä heidän varustamisekseen.",
     "fivefold.features3-1.title.span": "Jeesus",
@@ -1333,7 +1386,9 @@ export const ui = {
     "fivefold.features3-2.subtitle2-1":
       "Joten vapauta itsesi uskonnollisesta ja kirkkokunnallisesta vankeudesta ja harhakuvasta ja koe Jumalan täysi suunnitelma Hänen lopun ajan seurakunnalleen.",
     "fivefold.features3-2.subtitle2":
-      "Hän antoi toiset apostoleiksi, toiset profeetoiksi, toiset evankelistoiksi, toiset paimeniksi ja opettajiksi tehdäkseen pyhät valmiiksi palvelutyöhön, Kristuksen ruumiin rakentamiseen, kunnes me kaikki saavutamme ykseyden uskossa ja Jumalan Pojan tuntemisessa, kypsän miehuuden, Kristuksen täyteyden täysi-ikäisyyden mitan. Efe 4:11-13 FINRK",
+      "Hän antoi toiset apostoleiksi, toiset profeetoiksi, toiset evankelistoiksi, toiset paimeniksi ja opettajiksi tehdäkseen pyhät valmiiksi palvelutyöhön, Kristuksen ruumiin rakentamiseen, kunnes me kaikki saavutamme ykseyden uskossa ja Jumalan Pojan tuntemisessa, kypsän miehuuden, Kristuksen täyteyden täysi-ikäisyyden mitan. Ef 4:11-13 FINRK",
+    "fivefold.features3-2.subtitle1-2":
+      "Vapauta siis itsesi uskonnollisesta, kirkkokunnallisesta vankeudesta ja harhakuvasta ja koe henkilökohtaisesti Jumalan suunnitelma Hänen lopunajan seurakunnalleen.",
     "fivefold.features3-2.subtitle.span":
       "Emme voi koskaan saavuttaa hengellistä kypsyyttä Kristuksessa, jos emme huomioi Jumalan antamaa mallia.",
     "fivefold.features.tagline": "Esimerkit",
@@ -1368,7 +1423,7 @@ export const ui = {
       "Erinomainen syventyminen apostolin palvelupaikasta löytyy Kenneth Haginin kirjoittamasta kirjasta, He gave gifts unto men.",
     "fivefold.content2.title": "Profeetta",
     "fivefold.content2.subtitle":
-      "Tätä salaisuutta ei ole menneiden sukupolvien aikana annettu ihmisten tietoon, niin kuin se nyt on Hengessä ilmoitettu hänen pyhille apostoleilleen ja profeetoille. Efe 3:5 FINRK",
+      "Tätä salaisuutta ei ole menneiden sukupolvien aikana annettu ihmisten tietoon, niin kuin se nyt on Hengessä ilmoitettu hänen pyhille apostoleilleen ja profeetoille. Ef 3:5 FINRK",
     "fivefold.content2.content1": "Kreikan kielestä, prophetes:",
     "fivefold.content2.content2": "joka kuulee ja kuuntelee Jumalaa",
     "fivefold.content2.testimonials1.text":
@@ -1376,7 +1431,7 @@ export const ui = {
     "fivefold.content2.testimonials1.name": "Ilm 19:10 FINRK",
     "fivefold.content2.testimonials2.text":
       "sillä mitään profetiaa ei ole koskaan tuotu esiin ihmisen tahdosta, vaan Pyhän Hengen johtamina ihmiset ovat puhuneet sen, minkä saivat Jumalalta.",
-    "fivefold.content2.testimonials2.name": "2 Pet 1:21 FINRK",
+    "fivefold.content2.testimonials2.name": "2 Pie 1:21 FINRK",
     "fivefold.content2.testimonials3.text":
       "Jos sen sijaan kaikki profetoisivat ja joku, joka ei usko tai on oppimaton, tulisi sisään, niin kaikki paljastaisivat hänet ja lausuisivat hänestä tuomion.",
     "fivefold.content2.testimonials3.name": "1 Kor 14:21 FINRK",
@@ -1424,7 +1479,7 @@ export const ui = {
     "fivefold.content4.content2": "joka paimentaa Jumalan kansaa",
     "fivefold.content4.testimonials1.text":
       "Minä kehotan vanhimpia teidän joukossanne – minä, joka itsekin olen vanhin ja Kristuksen kärsimysten todistaja sekä myös osallinen siitä kirkkaudesta, joka on ilmestyvä: Kaitkaa teille uskottua Jumalan laumaa, ei pakosta vaan vapaaehtoisesti, Jumalan mielen mukaan, ei häpeällisen voiton tähden vaan sydämen halusta. Älkää herroina hallitko niitä, jotka on teille uskottu, vaan olkaa laumalle esikuvana.",
-    "fivefold.content4.testimonials1.name": "1 Pe 5:1-3 FINRK",
+    "fivefold.content4.testimonials1.name": "1 Pie 5:1-3 FINRK",
     "fivefold.content4.testimonials2.text":
       "Jeesus tiesi, että Isä oli antanut kaiken hänen käsiinsä ja että hän oli lähtenyt Jumalan luota ja oli palaava Jumalan luo. Niin hän nousi aterialta, riisui viittansa, otti pellavaliinan ja sitoi sen vyötäisilleen. Sitten hän kaatoi vettä pesuastiaan ja alkoi pestä opetuslastensa jalkoja ja kuivata niitä pellavaliinalla, joka oli hänen vyötäisillään.",
     "fivefold.content4.testimonials2.name": "Joh 13:3-5 FINRK",
@@ -1456,7 +1511,7 @@ export const ui = {
     "fivefold.content5.testimonials2.name": "Hep 5:12-14 FINRK",
     "fivefold.content5.testimonials3.text":
       "Silloin emme enää ole alaikäisiä, jotka ajelehtivat ja ovat kaikkien opintuulten heiteltävinä ihmisten arpapelissä ja eksytyksen kavalissa juonissa.",
-    "fivefold.content5.testimonials3.name": "Efe 4:14 FINRK",
+    "fivefold.content5.testimonials3.name": "Ef 4:14 FINRK",
     "fivefold.content5.testimonials4.text":
       "Hän on myös tehnyt meidät kykeneviksi olemaan uuden liiton palvelijoita, ei kirjaimen vaan Hengen. Kirjain tuottaa kuoleman, mutta Henki tekee eläväksi.",
     "fivefold.content5.testimonials4.name": "2 Kor 3:6 FINRK",
@@ -1502,7 +1557,7 @@ export const ui = {
     "index.features1.tagline": "Päämäärä",
     "index.features1.title": "Mitä maailma näkee ja kokee pian?",
     "index.features1.subtitle":
-      "Sillä näin sanoo Herra Sebaot: Vielä vähän aikaa ja minä järisytän taivaat ja maan, meren ja mantereen. Minä panen kaikki kansat vapisemaan. Kaikkien kansojen kalleudet tulevat tänne, ja minä täytän tämän huoneen kunnialla, sanoo Herra Sebaot. Haggai 2:6,7 FINRK",
+      "Sillä näin sanoo Herra Sebaot: Vielä vähän aikaa ja minä järisytän taivaat ja maan, meren ja mantereen. Minä panen kaikki kansat vapisemaan. Kaikkien kansojen kalleudet tulevat tänne, ja minä täytän tämän huoneen kunnialla, sanoo Herra Sebaot. Hag 2:6,7 FINRK",
     "index.features1.items1.title": "Seurakunta herää elävään uskoon.",
     "index.features1.items1.description":
       "Kirkko, seurakunta ja koko Kristuksen ruumiis nukkuu; sillä on jumalallisuuden kuva ilman elämiä muuttavaa voimaa. Ei uskovat näkevät ja tietävät. Herätyksen aika on tullut.",
@@ -1525,10 +1580,10 @@ export const ui = {
     "index.features1.items7.description":
       "Kenet tahansa voi testata ottamalla hengellisen lämpömittarin ja mittaamalla heidän sydämensä lämpötilan. Tuli ja nälkä Jumalan puoleen ovat syvimpiä indikaattoreita, joilla voit havaita kenen tahansa hengellisen tilan.",
     "index.features3-1.subtitle1":
-      "Sinä olet nyt, tällä hetkellä kun luet, tienristeyksessä. Mitä sinä valitset. Kun olet nyt lukenut tämän sivun alun, mitä aiot tehdä? Aiotko omistaa elämäsi Jeesukselle 100% vai sanoa, Tämän on kirjoittanut vain joku fanaatikko, ei Kristus ole noin ankara, minähän uskon Jumalaan. Et taida tietää, että se Jeesus, johon sanoit uskovasi sanoi, Ei jokainen joka sanoo minulle, Herra Herra, pääse taivasten valtakuntaan, vaan se, joka tekee minun taivaallisen Isäni tahdon. Sinä saatat kertoasi tuntevan (tietävän) Jeesuksen, mutta kysymys onkin ",
+      "Sinä olet nyt, tällä hetkellä kun luet, tienristeyksessä. Minkä suunnan siis valitset? Kun olet nyt lukenut tämän sivun alun, mitä aiot tehdä? Aiotko omistaa elämäsi Jeesukselle 100% vai sanoa, Tämän on kirjoittanut vain joku fanaatikko, ei Kristus ole noin ankara, minähän uskon Jumalaan. Et taida tietää, että se Jeesus, johon sanoit uskovasi sanoi, Ei jokainen joka sanoo minulle, Herra Herra, pääse taivasten valtakuntaan, vaan se, joka tekee minun taivaallisen Isäni tahdon. Sinä saatat kertoasi tuntevasi (tietäväsi) Jeesuksen, mutta kysymys onkin ",
     "index.features3-1.subtitle2": "tunteeko Hän sinut?",
     "index.features3-1.subtitle3":
-      "Yksi ruumis ja yksi Henki, niin kuin teidät on kutsuttukin yhteen ja samaan toivoon, jonka te kutsumuksessanne saitte, yksi Herra, yksi usko, yksi kaste; yksi Jumala ja kaikkien Isä, joka on yli kaikkien, kaikkien kautta ja kaikissa. Efe 4:4-6 FINRK",
+      "Yksi ruumis ja yksi Henki, niin kuin teidät on kutsuttukin yhteen ja samaan toivoon, jonka te kutsumuksessanne saitte, yksi Herra, yksi usko, yksi kaste; yksi Jumala ja kaikkien Isä, joka on yli kaikkien, kaikkien kautta ja kaikissa. Ef 4:4-6 FINRK",
     "index.content1.tagline": "Jumalan valtakunta",
     "index.content1.title": "Seurakunta on Jumalan valtakunta maan päällä",
     "index.content1.items1": "Uusiutuvat",
@@ -1546,7 +1601,7 @@ export const ui = {
     "index.content2.items5": "Riippuvuuksia",
     "index.content2.items6": "Sortoa",
     "index.content2.items7": "Synkkää pimeyttä",
-    "index.content2.content": "Jumalan voimka vain odottaa, että se pääsee ilmestymään keskellä",
+    "index.content2.content": "Jumalan voima odottaa, että se pääsee ilmestymään keskellä",
     "index.features3-2.subtitle":
       "Nouse, ole kirkas, sillä sinun valkeutesi tulee ja Herran kunnia koittaa sinun ylläsi. Sillä katso, pimeys peittää maan ja synkeys kansat, mutta sinun ylitsesi koittaa Herran kirkkaus, sinun ylläsi näkyy hänen kunniansa. Kansat vaeltavat sinun valoasi kohti, kuninkaat kohti aamunkoittosi kirkkautta. Jes 60:1-3",
     "index.hero2.title": "Niiden, jotka sanovat uskovansa, täytyy olla 100% sitoutuneita",
@@ -1570,61 +1625,90 @@ export const ui = {
     "index.content3.subtitle": "Lääkäri Osazen tarina - Maaliskuu 2024",
     "index.content3.subtitle1": "Menet nukkumaan ja heräät, etkä löydä enää änkytystäsi.",
     "index.content3.subtitle2":
-      "Jumala puhui Osazelle palvelijansa kautta. Vaikka hän nauroikin aluski epäuskoisena kuukautta myöhemmin hän heräsi ja puhui sujuvasti lähes 40-vuoden vaikean änkytyksen jälkeen. Kolme hänen kollegaansa vahvistivat ihmeen tapahtuneen ja hänen äitinsä itki ilosta, kun hän kuuli poikansa puhua selkeästi ensimmäistä kertaa.",
+      "Jumala puhui Osazelle palvelijansa kautta. Vaikka hän nauroikin aluski epäuskoisena kuukautta myöhemmin hän heräsi ja puhui sujuvasti lähes 40-vuoden vaikean änkytyksen jälkeen. Kolme hänen kollegaansa vahvistivat ihmeen tapahtuneen ja hänen äitinsä itki ilosta, kun hän kuuli poikansa puhuvan selkeästi ensimmäistä kertaa.",
     "index.content4.subtitle": "JESUS FEST Kuopio - Kesäkuu 2024",
     "index.content4.subtitle1": "Tykkäsitkö kirjasta? Kyllä, luin sen viime yön aikana.",
     "index.content4.subtitle2":
-      "'Hän sanoi heille, Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaikille luoduille.' Vapautuminen kauheista painajaisista, ihmiset seisoivat kuuntelmmassa tunteja koleassa sateessa, osallistujat lukivat 100+ sivun tapahtumasta saadun kirjan yhdessä yössä tapahtumapäivien välissä. Tässä lyhyt kuvaus, mitä tapahtumassa tapahtui.",
+      "'Hän sanoi heille, Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaikille luoduille.' Vapautuminen kauheista painajaisista, ihmiset seisoivat kuuntelemmassa tunteja koleassa sateessa, osallistujat lukivat 100+ sivun tapahtumasta saadun kirjan yhdessä yössä tapahtumapäivien välissä. Tässä lyhyt kuvaus, mitä tapahtumassa tapahtui.",
     "prayer.herotext.tagline": "Rukous",
     "prayer.herotext.title1": "Onko se",
     "prayer.herotext.title2": " tarpeellista?",
     "prayer.herotext.title.span": " todella",
-    "prayer.features3-1.title": "Saddukeusten tapaus",
+
+    "prayer.features2-1.title1a": "Mitä ",
+    "prayer.features2-1.title1b": "rukous",
+    "prayer.features2-1.title1c": " tekee meille?",
+    "prayer.features2-1.items1.title": "1. Henkemme aistit herkistyvät",
+    "prayer.features2-1.items1.description":
+      "Kun rukoilemme henkemme aistit herkistyvät. Alamme havaita luonnollisen maailman ylittäviä ja ulkopuolisia asioita. Ymmärryksen ylittävä rauha varjelee sydämemme ja mielemme. Me tarvitsemme havainnointikykyä, sillä ystävän suudelma voi tullakin Juudakselta, ja sillä onkin merkitys, Tämän henkilön tulee kuolla. <br /> <br /> 'Älkää olko mistään huolissanne, vaan kaikessa saattakaa pyyntönne rukoillen ja anoen kiitoksen kanssa Jumalan tietoon, ja Jumalan rauha, joka on kaikkea ymmärrystä ylempi, varjelee teidän sydämenne ja ajatuksenne Kristuksessa Jeesuksessa.' Fil 4:6-7 FINRK.",
+    "prayer.features2-1.items2.title": "2. Vastaanotamme profetaalisen suunnitelman jokaiselle kaudelle",
+    "prayer.features2-1.items2.description":
+      "Jumala on valmistanut meitä varten asioita (1 Kor 2:9, 10), mutta meidän tulee rukoilla, että voimme vastaanottaa ne. Kuitenkaan kaikki, mitä koemme rukouksessa, ei tule Jumalalta. Jeesus oli rukoillut ja paastonnut 40 päivää ja sitten Saatana puhui ja näytti näyn Hänelle. Rukous puhdistaa näkemämme. <br /> <br /> 'Yöllä Paavali näki näyn. Makedonialainen mies seisoi hänen edessään ja pyysi: ”Tule yli Makedoniaan ja auta meitä.” Kun hän oli nähnyt tämän näyn, pyrimme heti lähtemään Makedoniaan, sillä ymmärsimme, että Jumala oli kutsunut meidät julistamaan evankeliumia siellä.' Apt 16:9-10.",
+    "prayer.features2-1.items3.title": "3. Vastaanotamme suunnan",
+    "prayer.features2-1.items3.description":
+      "Voit tietää paikan, mutta ilman suuntaa saatat mennä ympäri ämpäri etkä ikinä pääse sinne. Suuntaa auttaa meitä myös välttämään pahan, sillä tiedämme pakosuunnan. <br /> <br /> 'Herra sanoi: ”Nouse ja <span class='underline'>mene kadulle</span> , jota kutsutaan Suoraksikaduksi, ja kysy <span class='underline'>Juudaksen talosta</span> Saulus-nimistä tarsolaista. Hän on rukoilemassa' Apt 9:11 <br /> <br /> 'Teitä ei ole kohdannut muu kuin inhimillinen kiusaus. Jumala on uskollinen. Hän ei salli teitä kiusattavan enempää kuin kestätte, vaan salliessaan kiusauksen hän valmistaa myös pääsyn siitä, niin että voitte sen kestää.' 1. Kor 10:13",
+    "prayer.features2-1.items4.title": "4. Taistelemme hengellisiä voimia vastaan",
+    "prayer.features2-1.items4.description":
+      "Kun Jumala puhuu Saatana yrittää estää sitä sanaa toteutumasta. Meidän täytyy taistella uskon taistelu. Ja kun Saatana haluaa jotain me emme vain puske sitä asiaa pois, vaan rukoilemme. <br /> <br /> 'Emmehän me taistele verta ja lihaa vastaan vaan hallituksia ja henkivaltoja vastaan, tässä pimeydessä hallitsevia maailmanvaltiaita ja taivaan avaruuden pahoja henkiolentoja vastaan.' Ef 6:12. <br /> <br /> 'Simon, Simon! Saatana on tavoitellut teitä valtaansa seuloakseen teitä niin kuin viljaa. Mutta minä olen rukoillut puolestasi ... ' Luu 22:31,32",
+    "prayer.features2-1.items5.title": "5. Ajoitamme tarvitun avun",
+    "prayer.features2-1.items5.description":
+      "Saul oli jo nähnyt näyssä Ananiaksen tulevan, kuitenkin Ananias kieltäytyi tulemasta. Mutta Paavali rukoili ja Herra ilmestyi Ananiakselle ja vakuutti hänet. Meidän tulee olla ahkeria, mutta samalla luottaa rukouksen voimaan. <br /> <br /> 'Herra sanoi: ”Nouse ja mene kadulle, jota kutsutaan Suoraksikaduksi, ja kysy Juudaksen talosta Saulus-nimistä tarsolaista. <span class='underline'>Hän on rukoilemassa</span>' Apt 9:11. <br /> <br /> 'Kun eräs heistä kaatoi puuta, kirveenterä irtosi ja putosi veteen. Mies huusi hädissään: ”Voi, herrani, se oli vielä lainattu!”' 2. Kun 6:5",
+    "prayer.features2-1.items6.title": "6. Kasvatamme hengellistä kapasiteettiamme",
+    "prayer.features2-1.items6.description":
+      "Hengessä tutkinnot ja rikkaudet eivät paina mitään; Saatana nauraa niille. Pimeyden armeijat haluavat vyöryä ylitsemme. Miten voimme vastustaa niitä? <br /> <br /> 'Kun vihollinen tulee tulvan tavoin, Herran Henki nostaa standardin häntä vastaan.' Jes 59:19. <br /> <br /> Mikä on tämä standardi? Jumalan sana. <br /> <br /> 'Ottakaa myös ... Hengen miekka, joka on Jumalan sana.' Ef 6:17.",
+    "prayer.features3-1.tagline": "Ja kun rukous puuttuu?",
+    "prayer.features3-1.title": "Tapaus 'Saddukeukset'",
     "prayer.features3-1.subtitle":
-      "Jeesus vastasi heille: 'Te olette eksyksissä, koska ette tunne Kirjoituksia ettekä Jumalan voimaa.'",
+      "Jeesus vastasi heille: 'Te olette eksyksissä, koska ette tunne Kirjoituksia ettekä Jumalan voimaa.' Mat 22:29 FINRK",
     "prayer.features3-1.subtitle2":
-      "Eivätkö saddukeukset olleet tutkineet pyhiä kirjoituksia koko elämänsä ajan? Eivätkö he olleet omistaneet koko elämänsä palvellakseen Jumalaa temppelissä? Ja tietääkseen hänen sanansa ja opettaakseen muita ja tullakseen lain asiantuntijoiksi? Onko mahdollista, että ihminen voisi olla uskonnollinen ja tutkia Raamattua koko ikänsä, ja silti Jeesus sanoo hänelle: Te erehdytte, ettekä tunne kirjoituksia, ettekä Jumalan voimaa? Mistä voin tietää, onko Jumalan palvontani turhaa? Entä jos minä vain opiskelen tai elän oppia, joka on uskonnollisten ihmisten käskyjä ja perinteitä?",
-    "prayer.features1.title": "Muutama herättelevä kysymys",
-    "prayer.features1.subtitle": "Kysy itseltäsi seuraavat kysymykset ja peilaa vastauksiasi Raamattuun.",
-    "prayer.features1.items1.title": "Jumalan voima",
-    "prayer.features1.items1.description": "Toimiiko Jumalan voima elämässäni?",
-    "prayer.features1.items2.title": "Muutos",
-    "prayer.features1.items2.description": "Muuttuuko elämäni päivä päivältä Jumalan voimasta?",
-    "prayer.features1.items3.title": "Perhe ja ystävät",
-    "prayer.features1.items3.description": "Onko Jumalan läsnäolo elämäni kautta vaikuttanut perheeseeni ja ystäviini?",
-    "prayer.features1.items4.title": "Taudit ja sairaudet",
-    "prayer.features1.items4.description": "Parantaako Jeesus minun kauttani sairaat ja kärsivät?",
-    "prayer.features1.items5.title": "Pahat henget",
+      "Saddukeukset olivat tutkineet kirjoituksia koko elämänsä ajan. He olivat omistaneet koko elämänsä palvellakseen Jumalaa temppelissä. Ja halusivatt tuntea Hänen sanansa, opettaa muita ja ollak lain asiantuntijoita. Onko mahdollista, että ihminen voi olla uskonnollinen ja tutkia Raamattua joka päivä koko ikänsä ja silti Jeesus sanoo tälle henkilölle: Te erehdytte, ettekä tunne kirjoituksia, ettekä Jumalan voimaa? <br /> <br /> Mistä voin tietää, että onko tapa miten olen omistanut elämäni Jumalalle turha, 'Entä jos kaikki, mitä olen oppinut seurakunnassa ja se miten elän uskoani, onkin uskonnollisten ihmisten käskyjä ja perinteitä joihin Jumala ei olekaan mieltynyt?'",
+    "prayer.features1.tagline": "Lääkärintarkastus",
+    "prayer.features1.title": "Tarkistetaan nyt mitä Jumalanpalveluksesi on",
+    "prayer.features1.subtitle":
+      "Kysy itseltäsi seuraavat kysymykset ja peilaa Jumalan sanaa vasten, onko uskosi oikeasti sitä, mitä Raamattu kertoo, miltä todellinen usko näyttää, vai oletko tullut petetyksi, ja uskosi on pään uskoa, joka ei muuta sydäntä.",
+    "prayer.features1.items1.title": "Perustuuko uskosi Jumalan voimaan?",
+    "prayer.features1.items1.description":
+      "Toimiiko Jumalan voima elämässäsi? Jos menet seurakuntaan vain kuulemaan puheita ja viettämään mukavaa aikaa niin kokemuksesi on eri kuin Raamatussa. Silloin sinulla ei ole Raamatun uskon kokemusta. Sillä siellä, kun seurakuntaan tultiin, elämän täytyi muuttua. <br /> <br /> 'Jos sen sijaan kaikki profetoisivat ja joku, joka ei usko tai on oppimaton, tulisi sisään, niin kaikki paljastaisivat hänet ja lausuisivat hänestä tuomion. Hänen sydämensä salaisuudet tulisivat ilmi, ja niin hän kasvoilleen heittäytyen rukoilisi Jumalaa ja julistaisi: ”Todellakin, Jumala on teidän keskuudessanne.”' 1. Kor 14:24-25. <br /> <br /> 'Jotta teidän uskonne ei perustuisi ihmisviisauteen vaan Jumalan voimaan. Puheeni ja julistukseni ei ollut inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista.' 1. Kor 2:4-5.",
+    "prayer.features1.items2.title": "Onko elämäsi muuttunut täysin?",
+    "prayer.features1.items2.description":
+      "Jos usko on sinulle henkilökohtainen asia, et ole uskossa. Jeesuksen usko toi hänet taivaasta maanpäälle kertomaan muille ikuisesta elämästä. Jeesus hylkäsi taivaan, jotta me voisimme pelastua. Samoin jokainen, joka todella kohtaa Jumalan muuttuu. Heidän elämänsä muuttuu: he eivät enää etsi enää omaa etuaan vaan <br /> 1. Jumalan tahtoa <br/> 2. toisten etua.  <br /> <br /> 'Mutta Pietari sanoi: ”Hopeaa ja kultaa minulla ei ole, mutta mitä minulla on, sitä minä sinulle annan: Jeesuksen Kristuksen, Nasaretilaisen, nimessä, nouse ja kävele!”' Apt. 3:6 <br /> <br /> Sinä alat auttaa muita sillä avulla, mitä olet itse saanut <br /> <br /> 'Niinpä yksikään teistä ei voi olla minun opetuslapseni, ellei hän luovu kaikesta, mitä hänellä on.' Luukas 14:33.",
+    "prayer.features1.items3.title": "Mitä on tapahtunut ihmissuhteillesi?",
+    "prayer.features1.items3.description":
+      "Kun Jumalan tuli syttyy elämässäsi perhe- ja ystävyyssuhteesi muuttuvat. Näin kävi Jeesukselle ja niin käy myös jokaiselle, jonka elämässä Jeesus todella on. <br /> <br /> 'Ja katsellen ympärillään istuvia Jeesus sanoi: ”Tässä ovat äitini ja veljeni! Se, joka tekee Jumalan tahdon, on minun veljeni ja sisareni ja äitini.”' Markus 3:33-35. <br /> <br /> Läheisimmiksi ihmisiksi sinulle tulevat ne, jotka rakastavat tehdä Jumalan tahdon mukaan. Lisäksi monet suhteesi katkeavat. Sillä Jumalan tuli sinussa ajaa pimeyden pois on sitten kyseessä vaikka oma isäsi tai äitisi. <br /> <br />'Luuletteko, että olen tullut tuomaan maan päälle rauhaa? En suinkaan, sanon teille, vaan riitaa! Sillä tästedes samassa talossa viisi riitaantuu keskenään: kolme kahta vastaan ja kaksi kolmea vastaan, isä poikaansa vastaan ja poika isäänsä vastaan, äiti tytärtään vastaan ja tytär äitiään vastaan, anoppi miniäänsä vastaan ja miniä anoppiaan vastaan.”' Luukas 12:51-53.",
+    "prayer.features1.items4.title": "Uskotko ja koetko yliluonnollisen?",
+    "prayer.features1.items4.description":
+      "Parannatko sairaita Jeesuksen nimessä? Jeesus ei sanonut, että apostolit parantavat sairaita, vaan että he, jotka uskovat. Uskotko sinä siis? <br /> <br /> 'Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ... panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi.' Markus 16:17-18. <br /> <br /> Älä anna uskonnollisten puheiden pettää sinua, <br /> <br /> 'Ihmeitä tapahtui Jeesuksen ja apostolien aikaan, mutta nyt Jumala ei toimi enää samoi' <br /> <br /> 'Jumala kyllä parantaa sairaita, mutta oman suvereenin tahtonsa mukaan, joten voimme vain katsoa, kenet Hän haluaa parantaa.' <br /> <br /> Raamattu ei sano näin. Jos uskot näin (tai millä tahansa tavalla, joka selittää Jumalan voiman pois; oppi joka tekee Jumalan sanan tyhjäksi) olet uskonnollisesti aivopesty. Haluatko vapautua?",
+    "prayer.features1.items5.title": "Näetkö hengellisen todellisuuden?",
     "prayer.features1.items5.description":
-      "Ajanko minä pahoja henkiä ulos Herramme Jeesuksen Kristuksen nimessä ja näenkö henkien huutavan pelossa ja sekasorrossa?",
-    "prayer.features1.items6.title": "Evankeliumi",
+      "Ovatko pahat henget sinulle sellainen outo ja vähän pelottava aihe? 'Jätän Saatanan rauhaan niin hän jättää varmaan minut rauhaan'. Vai oletko alkanut nähdä kaikien aisoiden hengellisen taustan? Jeesus antoi omilleen vallan talloa käärmeitä ja skorpioneja ja kaikkea vihollisen voimaa. Onko tämä sinun kokemuksesi? <br /> <br /> 'Siellä oli nainen, jossa oli ollut heikkouden henki kahdeksantoista vuotta. Hän oli koukistunut eikä lainkaan kyennyt oikaisemaan itseään. Nähdessään hänet Jeesus kutsui hänet luokseen ja sanoi: ”Nainen, sinä olet päässyt heikkoudestasi.” Sitten hän pani kätensä naisen päälle, ja heti tämä oikaisi itsensä ja ylisti Jumalaa.' Luukas 13:11-13. <br /> <br /> Kun kohtaat Jeesuksen Hän aluksi vapauttaa sinut Saatanan siteistä ja sitten lähettää sinut vapauttamaan muita. <br /> <br /> 'Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos pahoja henkiä.' Markus 16:17.",
+    "prayer.features1.items6.title": "Onko evankeliumi ilosanoma sinulle?",
     "prayer.features1.items6.description":
-      "Saarnaanko evankeliumia syntisille ja näenkö heidän astuvan Jumalan valtakuntaan ilman riippuvuuksia, Saatanan kahleita, kuten riippuvuuksia, jatkuvia painajaisia tai pakkomielteitä jne.?",
-    "prayer.features1.items7.title": "Synti",
+      "Evankeliumi on ilosanoma. Jos voitat lotossa tulet kertomaan siitä lähipiirillesi ja myös monelle muulle. Miksi, siksi että haluat jakaa ilosanoman muille ihan vapaa ehtoisesti. Onko evankeliumi siis todella ilosanoma sinulle, sillä haluat luonnostaan kertoa muille, että Jeesus on voittanut heitä varten taivaallisen lottopotin. <br /> <br /> 'Ja kuinka kukaan voi julistaa, ellei ketään lähetetä? Onhan kirjoitettu: ”Kuinka suloiset ovat niiden jalat, jotka julistavat hyvää sanomaa!' Room 10:15. <br /> <br/> Ihmiset puhuvat siitä mistä ovat ylpeitä ja hiljenevät siitä, mitä häpeävät. Oletko sinä siis ylpeä evankeliumista vai häpeätkö sitä? <br /> <br /> 'Minä en häpeä evankeliumia, sillä se on Jumalan voima pelastukseksi jokaiselle, joka uskoo, juutalaiselle ensin, sitten myös kreikkalaiselle.' Room 1:16.",
+    "prayer.features1.items7.title": "Oletko täysin vapaa synneistä?",
     "prayer.features1.items7.description":
-      "Olenko vapaa yksityisistä synneistä: himoista ja alkoholiriippuvuudesta, tupakoinnista, elokuvista, videopeleistä, rockista, bluesista, jazzmusiikista, dokumenteista, pornografiasta, kirjoista ja romanttisista romaaneista jne.?",
-    "prayer.features1.items8.title": "Mahdottomuudet",
+      "Tämä on todella tärkeä asia. Jeesus sanoi, 'Jos siis poika vapauttaa teidät, te olette todella vapaita.' Joh 8:36. Jos elät edelleen synnissä et ole pelastunut, sillä ... <br /> <br /> 'Hän synnyttää pojan, ja sinun on annettava hänelle nimeksi Jeesus , sillä hän pelastaa kansansa sen synneistä.”' Matteus 1:21. <br /> <br /> Huom, ei pelastaa kansansa sen <span class='underline'>synneissä</span>, vaan <span class='underline'>synneistä</span>. Jos elät edelleen synnissä niin Jeesus ei ole Raamatun, eli Jeesuksen oman sanan, mukaan pelastanut ja vapauttanut sinua. Haluaisitko pelastua synnistä nyt?",
+    "prayer.features1.items8.title": "Luotatko Jumalan voimaan mahdottimissakin tilanteissa?",
     "prayer.features1.items8.description":
-      "Näenkö mahdottomien tilanteiden muuttuvan Kaikkivaltiaan Jumalan voimalla, kuten Mooses Punaisella merellä?",
+      "'Turvaa Herraan kaikesta sydämestäsi, älä nojaudu omaan ymmärrykseesi' Sananlaskut 3:5. <br /> <br />  Omaan ymmärrykseen turvaaminen on turhaa ja myös tyhmää. Mutta mies joka luottaa Herraan ei tule pettymään. Hän ei voi pettyä sillä Jumala ei voi ikinä epäonnistua. Tiedätkö, että olet epäonnistunut niin monta kertaa, koska et ole turvannut Häneen? Muutetaanko asia nyt?",
     "prayer.features3-2.subtitle":
-      "Oletko lukenut yliluonnollisia tapahtumia Raamatusta ja päätellyt, että ne eivät ole minun sukupolvelleni, koska en ole nähnyt enkä kokenut mitään näistä maassani, kaupungissani tai paikallisessa seurakunnassani?",
-    "prayer.features3-2.subtitle2a": "Ei!",
-    "prayer.features3-2.subtitle2b": " Niin ei voi olla",
-    "prayer.features3-3.subtitle":
-      "Veljet, meidän on aika astua henkilökohtaiseen yliluonnolliseen kokemukseen Pyhässä Hengessä. Jumala kastaa meidät voimalla, upottaa meidät Hengen ilmentymiin, liottaa meidät taivaan tuoksulla, kun kokoonnumme armon valtaistuimelle. On aika nähdä Jumalan kirkkauden ilmestyvän seurakunnassa ja sen kautta. Tänä hengellisen sodan aikana aktivoidumme taistelun taivaallisten armeijoiden rinnalla, koska hengellisen sodankäynnin on laillistanut Herran sotajoukon kapteeni, Jeesus Kristus, Jumalan Poika.",
-    "prayer.features3-3.subtitle2":
-      "Mutta Johannes Kastajan päivistä asti on hyökätty taivasten valtakuntaa vastaan, ja hyökkääjät tempaavat sen itselleen. Mat 12:11 FINRK",
-    "prayer.features1-2.title":
-      "Jumala voi käyttää kuolevaista olemustasi. Hän on enemmän kuin vain kykenevä; lihasta ei ole mitään hyötyä.",
+      "Oletko lukenut yliluonnollisia tapahtumista Raamatusta ja omaksunut ajatuksen, että olet omalla näyrällä ja heikolla voimallasi vain pieni Jeesuksen seuraaja ja olet vain tyytyväinen, jos pääset taivaaseen. 'Minä haluan, että sinun kokemuksesi muuttuu ja se, mitä sanot muuttuu,' Sanoo Herra.",
+    "prayer.features3-2.subtitle2a": "Aikasi on nyt!",
+    "prayer.features3-2.subtitle2b": " On sinun aikasi kohdata Elävä Jumala.",
+    "prayer.features1-2.tagline": "Muutoksesi aika on nyt",
+    "prayer.features1-2.title": "Jumala tulee käyttämään sinua. Hän pystyy siihen",
     "prayer.features1-2.subtitle1":
       "Ottakaa sen tähden yllenne Jumalan koko taisteluvarustus, niin että voitte pahana päivänä tehdä vastarintaa ja kaiken suoritettuanne pysyä pystyssä. Seisokaa siis kupeet totuuteen vyötettyinä, pukeutuneina vanhurskauden haarniskaan, ja olkoon kenkinä jaloissanne alttius rauhan evankeliumia kohtaan. Ottakaa kaikessa uskon kilpi, jolla voitte sammuttaa kaikki Pahan palavat nuolet. Ottakaa myös pelastuksen kypärä ja Hengen miekka, joka on Jumalan sana.",
     "prayer.features1-2.span1": " Tehkää tämä kaikki",
     "prayer.features1-2.span2": " alituisessa rukouksessa ja anomisessa rukoillen joka hetki Hengessä.",
-    "prayer.features1-2.span3": "Sen vuoksi valvokaa kaikessa kestävinä ja rukoilkaa kaikkien pyhien puolesta.",
+    "prayer.features1-2.span3": " Sen vuoksi valvokaa kaikessa kestävinä ja rukoilkaa kaikkien pyhien puolesta.",
     "prayer.features1-2.subtitle2": "Eff 6:13-18 FINRK",
+    "prayer.features3-3.subtitle":
+      "Syy, miksi niin moni Jeesukseen uskova on niin heikko, on rukouksen vähyys ja laatu. Uskovan ja seurakunnan uskon tilan ja voiman määrittävä tekijä on rukouselämä. Jos sinä todella haluat elämäsi muuttuvan, niin muutos on tämä: rukouksen on tultava määrittäväksi osaksi elämääsi ja syrjäyttää kaikki turha.",
+    "prayer.features3-3.subtitle2":
+      "Mutta Johannes Kastajan päivistä asti on hyökätty taivasten valtakuntaa vastaan, ja hyökkääjät tempaavat sen itselleen. Mat 12:11 FINRK",
     "prayer.callToAction.title1": "Sytytä rukouselämäsi",
     "prayer.callToAction.title2": " täyteen liekkiin",
-    "prayer.callToAction.subtitle": "Liity rukouskokoukseen joka parillisen viikon lauantaina klo 18:00 GMT+2 alkaen.",
+    "prayer.callToAction.subtitle": "Liity rukouskokoukseen joka parillisen viikon lauantaina klo 18:00.",
     "prayer.callToAction.subtitle2": "Zoom ID: 644 4069 4917, pääsykoodi: 467939",
     "witnesses.temp":
       "Pyhän Hengen ohjauksen ja avun kautta lyhyet elämänkerta kuvaukset ovat uudelleenmuokkaustyön alla.",
@@ -2034,9 +2118,30 @@ export const ui = {
       "Kun hallitusmiehet ja vanhimmat näkivät Pietarin ja Johanneksen rohkeuden ja havaitsivat heidän olevan koulua käymättömiä ja oppimattomia miehiä, he ihmettelivät. He tunsivat heidät niiksi, jotka olivat olleet Jeesuksen kanssa. Apt 4:13 FINRK",
     "word.features3-1.subtitle2":
       "Kyse ei ollut taidoista tai kyvyistä, yhteyksistä, resursseista, etnisestä taustasta tai rodusta. Kyse oli heidän sitoutumisestaan. He pysyivät Jeesuksen kanssa ja jatkoivat Hänen seuraamistaan. Saatat itse olla kouluttamaton, huonossa asemassa, sinulla voi olla sairauksia, ei erikoisia taitoja, kykyjä, ihmissuhteita tai yhteyksiä. Silti mikään näistä ei ole este Jumalan kirkkauden ja voiman ilmestymiselle kauttasi. Merkitsevä kysymys on: Oletko todella Jeesuksen kanssa?",
+    "word.features2-1.title1a": "Mitä ",
+    "word.features2-1.title1b": "sana",
+    "word.features2-1.title1c": " tekee meille?",
+    "word.features2-1.items1.title": "1. Sana ruokkii henkemme",
+    "word.features2-1.items1.description":
+      "Ensimmäinen ja tärkeä Jumalan sanan tehtävä on ruokkia meidät. Jokainen hengen synnyttämä sanaa ruokkii henkeämme ja tuottaa elämää. Syömme päivittäin ruumistamme varten ja meidän tulee myös ruokkia henkemme joka päivä. <br /> <br /> 'Mutta Jeesus vastasi: On kirjoitettu: Ei ihminen elä ainoastaan leivästä, vaan jokaisesta sanasta, joka lähtee Jumalan suusta.' Mat 4:4.",
+    "word.features2-1.items2.title": "2. Sana uudistaa mielemme",
+    "word.features2-1.items2.description":
+      "Uudestisyntymässä henkemme pelastuu. Mielemme pelastuminen on prosessi; se pitää muuttua oppimistamme kaavoista. Jumalan sana muuttaa sen. <br /> <br /> 'Älkää mukautuko tämän maailmanajan menoon, vaan muuttukaa mielenne uudistuksen kautta, jotta voisitte tutkia, mikä on Jumalan tahto, mikä on hyvää, hänen mielensä mukaista ja täydellistä.' Room 12:2.",
+    "word.features2-1.items3.title": "3. Sana on jalkojemme lamppu",
+    "word.features2-1.items3.description":
+      "Ilman valoa on täysin pimeää » kaadumme. Valo näyttää totuuden ja paljastaa valheen. Jumalan sana on meille loistava lamppu ja valo. Olemme pyhiä, mutta askeleemme pyhittyvät, kun tunnemme totuuden. <br /> <br /> 'Sinun sanasi on jalkojeni lamppu ja valo minun polullani.' Ps 119:105.<br /> <br /> 'Pyhitä heidät totuudessa. Sinun sanasi on totuus.' Joh 17:17.",
+    "word.features2-1.items4.title": "4. Sanan avulla kasvamme aukuisiksi",
+    "word.features2-1.items4.description":
+      "Voimme luottaa Raamattuun. Se on Jumalan kirjoittama, Hän ei tee virheitä. Tämä ikuinen sana tuo meidät hengen aikuisuuteen. <br /> <br /> 'Koko Raamattu on syntynyt Jumalan Hengen vaikutuksesta, ja se on hyödyllinen opetukseksi, nuhteeksi, ojennukseksi ja kasvatukseksi vanhurskaudessa, jotta Jumalan ihminen olisi täydellinen ja varustautunut kaikkiin hyviin tekoihin.' 2 Tim 3:16,17.",
+    "word.features2-1.items5.title": "5. Sana takaa menestyksemme",
+    "word.features2-1.items5.description":
+      "Ihmiset haluavat menestyä parisuhteessa, lasten kasvatuksessa, uralla, taloudellisesti jne., ja tätä menestystä varten he opiskelevat ja lukevat valtavasti kirjoja. Mutta Jumala on antanut meille yhden kirjan, jokaa takaa menestyksen kaikille elämämme osa-alueille. <br /> <br /> 'Älköön tämä lain kirja väistykö sinun suustasi, vaan mietiskele sitä päivin ja öin, että noudattaisit tarkasti kaikkea, mitä siihen on kirjoitettu, sillä silloin sinä onnistut ja menestyt tielläsi.' Joos 1:8.",
+    "word.features2-1.items6.title": "6. Sana on meidän aseemme",
+    "word.features2-1.items6.description":
+      "Hengessä tutkinnoilla tai rikkauksilla ei ole painoarvoa, Saatanaa nauraa niille. Pimeyden joukot haluavat vyöryä ylitsemme, mikä voi vastustaa niitä? <br /> <br /> 'Kun vihollinen tulee tulvan tavoin, Herran Henki nostaa standardin häntä vastaan.' Jes 59:19 <br /> <br /> Mikä standardi on? Jumalan sana. <br /> <br /> 'Ottakaa ... Hengen miekka, joka on Jumalan sana.' Ef 6:17.",
     "word.steps2-1.title": "Sinun kokemuksesi Jumalasta tulee muuttumaan.",
     "word.steps2-1.subtitle":
-      "Tulet kokemaan muutoksen: kun olet perheesi keskellä, tapaat ystäviäsi, käyt töissä, teet päivittäisiä kotitöitä, niin ihmiset tulevat puhumaan: Tuo henkilö on erilainen, hän on selvästi ollut Jeesuksen kanssa. Sinun elämäsi tulee levittämään Jeesuksen Kristuksen taivaallista tuoksua, viisautta, läsnäoloa ja olemusta joka puolellesi. Hänen läsnäolonsa tulee olemaan niin suuri sinussa, että kun ihmiset tapaavat sinut, he tulevat kohtaamaan Jeesuksen sinun kauttasi. Hänen elämän muuttava voimansa ja rakkautensa kulkee sinun lävitsesi ja ihmiset näkevät Jumalan sinussa.",
+      "Tulet kokemaan muutoksen: kun olet perheesi keskellä, tapaat ystäviäsi, käyt töissä, teet päivittäisiä kotitöitä, niin ihmiset tulevat puhumaan: Tuo henkilö on erilainen, hän on selvästi ollut Jeesuksen kanssa. Sinun elamuksesi tulee levittämään Jeesuksen Kristuksen taivaallista tuoksua, viisautta, läsnäoloa ja olemusta joka puolellesi. Hänen läsnäolonsa tulee olemaan niin suuri sinussa, että kun ihmiset tapaavat sinut, he tulevat kohtaamaan Jeesuksen sinun kauttasi. Hänen elamuksen muuttava voimansa ja rakkautensa kulkee sinun lävitsesi ja ihmiset näkevät Jumalan sinussa.",
     "word.steps2-1.items1.title": "Apostolit pysyivät Pyhän Hengen kanssa",
     "word.steps2-1.items1.description": "Me itse tahdomme pysyä rukouksessa ja sanan palveluksessa. Apt 6:4 FINKRK",
     "word.steps2-1.items2.title": "Se, mitä heille taphtui, sai jotkut vihaiseksi",
@@ -2054,10 +2159,10 @@ export const ui = {
       "Jokaisen kristityksi itseään kutsuvan on tarkistettava: Elänkö 100% Jeesukselle ja jokaisen tekoni motivaationa on miellyttää Häntä parhaalla tavalla? Jos vastaus ei ole vahva ja täysin varma kyllä, sinun on aika herätä.",
     "word.steps2-2.items2.title": "Kantaa Hänen läsnäoloaan",
     "word.steps2-2.items2.description":
-      "Jos Jumala on sinussa sen tulee näkyä. Ei enää sanoja, vaan vedenpitäviä todisteita.",
+      "Jos Jumala on sinussa sen tulee näkyä. Ei enää sanoja, vaan vedenpitäviä todisteita. Jos kaikkivaltias Jumalaa asuu sydämessäsi ja sinä olet kokonaan uusi luomus, niin se on mahdotonta olla näkymättä.",
     "word.steps2-2.items3.title": "Etkö ole jo väsynyt sairauksiin ja ongelmiin?",
     "word.steps2-2.items3.description":
-      "Tämän päivän fraasi on: Jos Jeesus oli täällä nyt, niin sitten voisin parantua ja Hän auttaisi minua näissä ongelmissa. Mutta tuo on Saatanan valhe, sillä Jeesus ON TÄÄLLÄ. Sinä voi olla 100% terve ja vapautunut kaikista ongelmistasi nyt!",
+      "Tämän päivän fraasi on: Jos Jeesus olisi täällä nyt, niin sitten voisin parantua ja Hän auttaisi minua näissä ongelmissa. Mutta tuo on Saatanan valhe, sillä Jeesus ON TÄÄLLÄ. Sinä voit olla 100% terve ja vapautunut kaikista ongelmistasi nyt!",
     "word.features2.tagline": "Mistä meidät löytää",
     "word.features2.title": "No monestakin paikasta",
     "word.features2.items1.title": "FLAME the FREEZE - Rukouskokous",
