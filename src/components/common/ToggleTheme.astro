@@ -8,7 +8,6 @@ export interface Props {
   label?: string;
   class?: string;
   iconClass?: string;
-  // iconName?: string;
 }
 
 const {
@@ -16,7 +15,6 @@ const {
   class:
     className = "text-muted dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center",
   iconClass = "w-6 h-6",
-  // iconName = 'tabler:sun'
 } = Astro.props;
 ---
 
@@ -28,7 +26,6 @@ const {
         class={twMerge(className, "dark:invisible dark:hidden")}
         aria-label={label}
         data-aw-toggle-color-scheme
-        transition:persist
       >
         <Icon name={"tabler:sun"} class={iconClass} />
       </button>
@@ -37,7 +34,6 @@ const {
         class={twMerge(className, "invisible hidden dark:visible dark:block")}
         aria-label={label}
         data-aw-toggle-color-scheme
-        transition:persist
       >
         <Icon name={"tabler:moon"} class={iconClass} />
       </button>

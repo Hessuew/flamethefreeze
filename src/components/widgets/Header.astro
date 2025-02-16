@@ -10,6 +10,7 @@ import { trimSlash, getAsset } from "~/utils/permalinks";
 import type { CallToAction } from "~/types";
 import LanguagePicker from "../common/LanguagePicker.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import type { ui } from "~/i18n/ui";
 
 interface Link {
   text?: string;
@@ -127,7 +128,7 @@ const t = useTranslations(lang);
                   ]}
                   href={getPermalink(`${lang}/${href}`)}
                 >
-                  {text ? t(text as any) : text}
+                  {text ? t(text as keyof typeof ui.en) : text}
                 </a>
               )}
             </li>
