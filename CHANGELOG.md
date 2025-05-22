@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.11.0](https://github.com/Hessuew/flamethefreeze/compare/v3.10.0...v3.11.0) (2025-05-22)
+
+
+### Features
+
+* update favicon assets and configuration ([#172](https://github.com/Hessuew/flamethefreeze/issues/172)) ([961fdf9](https://github.com/Hessuew/flamethefreeze/commit/961fdf913b39bf8e5e605e1cbdb7d0964c399cfd))
+
 ## [3.10.0](https://github.com/Hessuew/flamethefreeze/compare/v3.9.0...v3.10.0) (2025-01-22)
 
 
