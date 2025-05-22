@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.11.1](https://github.com/Hessuew/flamethefreeze/compare/v3.11.0...v3.11.1) (2025-05-22)
+
+
+### Bug Fixes
+
+* correct theme toggle functionality and refactor theme initialization ([#177](https://github.com/Hessuew/flamethefreeze/issues/177)) ([2794f6e](https://github.com/Hessuew/flamethefreeze/commit/2794f6eec0631d6548afe8fc87a079f108f6245a))
+
 ## [3.11.0](https://github.com/Hessuew/flamethefreeze/compare/v3.10.0...v3.11.0) (2025-05-22)
 
 
