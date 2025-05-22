@@ -2,7 +2,7 @@
 import { UI } from "astrowind:config";
 ---
 
-<script is:inline define:vars={{ defaultTheme: "dark" }}>
+<script is:inline define:vars={{ defaultTheme: UI.theme }}>
   if (window.basic_script) {
     return;
   }
@@ -13,7 +13,7 @@ import { UI } from "astrowind:config";
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove("light");
     }
   }
 
