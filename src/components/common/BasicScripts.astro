@@ -13,24 +13,23 @@ import { UI } from "astrowind:config";
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove("light");
+      document.documentElement.classList.remove("dark");
     }
   }
 
-  function getThemePreference() {
+  const initTheme = function () {
     if ((defaultTheme && defaultTheme.endsWith(":only")) || (!localStorage.theme && defaultTheme !== "system")) {
-      return defaultTheme.replace(":only", "");
+      applyTheme(defaultTheme.replace(":only", ""));
     } else if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      return "dark";
+      applyTheme("dark");
+    } else {
+      applyTheme("light");
     }
-    return "light";
-  }
-
-  // Initialize theme immediately
-  applyTheme(getThemePreference());
+  };
+  initTheme();
 
   function attachEvent(selector, event, fn) {
     const matches = typeof selector === "string" ? document.querySelectorAll(selector) : selector;
@@ -81,6 +80,14 @@ import { UI } from "astrowind:config";
       document.getElementById("header")?.classList.toggle("bg-page");
       document.querySelector("#header nav")?.classList.toggle("hidden");
       document.querySelector("#header > div > div:last-child")?.classList.toggle("hidden");
+    });
+
+    attachEvent("[data-aw-toggle-color-scheme]", "click", function () {
+      if (defaultTheme.endsWith(":only")) {
+        return;
+      }
+      document.documentElement.classList.toggle("dark");
+      localStorage.theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
     });
 
     attachEvent("[data-aw-social-share]", "click", function (_, elem) {
@@ -165,22 +172,11 @@ import { UI } from "astrowind:config";
   window.onload = onLoad;
   window.onpageshow = onPageShow;
 
-  // Handle Astro View Transitions
-  document.addEventListener("astro:before-swap", () => {
-    // Store current theme before transition
-    window.currentTheme = getThemePreference();
-  });
-
   document.addEventListener("astro:after-swap", () => {
-    // Restore theme after transition
-    applyTheme(window.currentTheme || getThemePreference());
-    setupThemeToggle();
+    initTheme();
     onLoad();
     onPageShow();
   });
-
-  // Initial setup
-  setupThemeToggle();
 </script>
 
 <script is:inline>
