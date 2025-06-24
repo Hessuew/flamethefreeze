@@ -17,25 +17,30 @@ const {
 } = Astro.props as Stats;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ""}`} bg={bg}>
+<WidgetWrapper
+  id={id}
+  isDark={isDark}
+  containerClass={`max-w-6xl xl:max-w-[1152px] mx-auto ${classes?.container ?? ""}`}
+  bg={bg}
+>
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
-  <div class="flex flex-wrap justify-center -m-4 text-center">
+  <div class="flex flex-wrap justify-center -m-4 xl:-m-[16px] text-center">
     {
       stats &&
         stats.map(({ amount, title, icon }) => (
-          <div class="p-4 md:w-1/4 sm:w-1/2 w-full min-w-[220px] text-center md:border-r md:last:border-none dark:md:border-slate-500 intersect-once motion-safe:opacity-0 motion-safe:intersect:animate-fade intersect-quarter">
+          <div class="p-4 xl:p-[16px] md:w-1/4 sm:w-1/2 w-full min-w-[220px] text-center md:border-r md:last:border-none dark:md:border-slate-500 intersect-once motion-safe:opacity-0 motion-safe:intersect:animate-fade intersect-quarter">
             {icon && (
               <div class="flex items-center justify-center mx-auto mb-4 text-primary">
-                <Icon name={icon} class="w-10 h-10" />
+                <Icon name={icon} class="w-10 h-10 xl:w-[40px] xl:h-[40px]" />
               </div>
             )}
             {amount && (
-              <div class="font-heading text-secondary text-[2.6rem] font-bold dark:text-white lg:text-5xl xl:text-6xl">
+              <div class="text-[2.6rem] lg:text-5xl xl:text-6xl xl:text-[60px] xl:leading-[68px] font-heading text-secondary font-bold dark:text-white">
                 {amount}
               </div>
             )}
             {title && (
-              <div class="text-sm font-medium uppercase tracking-widest text-gray-800 dark:text-slate-400 lg:text-base">
+              <div class="text-sm lg:text-base xl:text-[16px] xl:leading-[24px] font-medium uppercase tracking-widest text-gray-800 dark:text-slate-400">
                 {title}
               </div>
             )}
