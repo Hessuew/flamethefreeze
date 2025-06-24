@@ -30,16 +30,20 @@ const {
   bg = await Astro.slots.render("bg"),
   noAnimation = false,
 } = Astro.props;
+
+const {
+  icon: defaultIconClass = "flex h-7 w-7 xl:h-[32px] xl:w-[32px] items-center justify-center rounded-full bg-green-600 dark:bg-green-700 text-gray-50 p-1 xl:p-[4px]",
+} = classes;
 ---
 
 <WidgetWrapper
   id={id}
   isDark={isDark}
-  containerClass={`max-w-7xl mx-auto ${isAfterContent ? "pt-0 md:pt-0 lg:pt-0" : ""} ${classes?.container ?? ""}`}
+  containerClass={`max-w-7xl xl:max-w-[1280px] mx-auto ${isAfterContent ? "pt-0 md:pt-0 lg:pt-0" : ""} ${classes?.container ?? ""}`}
   bg={bg}
   noAnimation={noAnimation}
 >
-  <Headline
+  <!-- <Headline
     title={title}
     subtitle={subtitle}
     tagline={tagline}
@@ -54,15 +58,27 @@ const {
         whiteText && "text-white"
       ),
     }}
+  /> -->
+  <Headline
+    title={title}
+    subtitle={subtitle}
+    tagline={tagline}
+    classes={{
+      container: twMerge("max-w-xl sm:mx-auto lg:max-w-xl xl:max-w-[576px]", classes.headline),
+      // title: 'text-4xl md:text-5xl xl:text-[48px] font-bold tracking-tighter mb-4 xl:mb-[16px] font-heading',
+      title: "max-w-5xl xl:max-w-[980px] mx-auto",
+      subtitleClass: (classes?.subtitleClass as string) || "",
+      // subtitle: 'sm:text-center text-xl xl:text-[20px] xl:leading-[28px] text-muted dark:text-slate-400',
+    }}
   />
-  <div class="mx-auto max-w-7xl p-4 md:px-8">
-    <div class={`md:flex ${isReversed ? "md:flex-row-reverse" : ""} md:gap-16`}>
+  <div class="mx-auto max-w-7xl xl:max-w-[1280px] p-4 md:px-8 xl:px-[32px]">
+    <div class={`md:flex ${isReversed ? "md:flex-row-reverse" : ""} md:gap-16 xl:gap-[64px]`}>
       <div class="md:basis-1/2 self-center">
-        {content && <div class="mb-12 text-lg dark:text-slate-400" set:html={content} />}
+        {content && <div class="mb-12 xl:mb-[48px] text-lg dark:text-slate-400" set:html={content} />}
 
         {
           callToAction && (
-            <div class="mt-[-40px] mb-8 text-primary">
+            <div class="mt-[-40px] mb-8 xl:mb-[32px] text-primary">
               <Button variant="link" {...callToAction} />
             </div>
           )
@@ -71,45 +87,50 @@ const {
         <ItemGrid
           items={items}
           columns={columns}
-          defaultIcon={defaultIcon || "tabler:check"}
+          defaultIcon={defaultIcon}
           classes={{
-            container: `gap-y-4 md:gap-y-8`,
+            container: `gap-y-4 md:gap-y-8 xl:gap-y-[24px]`,
             panel: "max-w-none",
-            title: twMerge(
-              "text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2",
-              whiteText && "text-white"
-            ),
-            description: twMerge("text-muted dark:text-slate-400 ml-2 rtl:ml-0 rtl:mr-2", whiteText && "text-white"),
-            icon: twMerge(
-              "flex h-7 w-7 items-center justify-center rounded-full bg-green-600 dark:bg-green-700 text-gray-50 p-1",
-              defaultIcon === "tabler:x" && "bg-red-600 dark:bg-red-700"
-            ),
-            action: "text-lg font-medium leading-6 dark:text-white ml-2 rtl:ml-0 rtl:mr-2",
+            title:
+              "text-lg xl:text-[18px] leading-6 xl:leading-[24px] font-medium dark:text-white ml-2 xl:ml-[8px] rtl:ml-0 rtl:mr-2 xl:mr-[8px]",
+            description: "text-muted dark:text-slate-400 ml-2 xl:ml-[8px] rtl:ml-0 rtl:mr-2 xl:mr-[8px]",
+            icon: defaultIconClass as string,
+            action:
+              "text-lg xl:text-[18px] leading-6 xl:leading-[24px] font-medium dark:text-white ml-2 xl:ml-[8px] rtl:ml-0 rtl:mr-2 xl:mr-[8px]",
           }}
         />
       </div>
       <div aria-hidden="true" class="mt-10 md:mt-0 md:basis-1/2">
         {
           image && (
-            <div class="relative m-auto max-w-4xl h-full">
+            <div class="relative m-auto max-w-4xl xl:max-w-[896px] h-full">
               {typeof image === "string" ? (
                 <>
                   <Fragment set:html={image} />
                   {bottom && (
-                    <div class={twMerge("text-center self-baseline pt-10", classes.bottom)}>
+                    <div class={twMerge("text-center self-baseline pt-10 xl:pt-[40px]", classes.bottom)}>
                       <p
                         aria-label="Title for content bottom area"
-                        class={twMerge("text-2xl", whiteText && "text-white")}
+                        class={twMerge("text-2xl xl:text-[24px] xl:leading-[32px]", whiteText && "text-white")}
                         set:html={bottom.title}
                       />
                       <p
                         aria-label="Subtitle for content bottom area"
-                        class={twMerge("pt-4 text-muted text-xl", whiteText && "text-white")}
+                        class={twMerge(
+                          "pt-4 xl:pt-[16px] text-muted text-xl xl:text-[20px] xl:leading-[28px]",
+                          whiteText && "text-white"
+                        )}
                         set:html={bottom.subtitle}
                       />
                       {bottom.links &&
                         bottom.links.map(({ title, link }) => (
-                          <p aria-label="Bottom area text" class={twMerge("pt-4 text-xl", whiteText && "text-white")}>
+                          <p
+                            aria-label="Bottom area text"
+                            class={twMerge(
+                              "pt-4 xl:pt-[16px] text-xl xl:text-[20px] xl:leading-[28px]",
+                              whiteText && "text-white"
+                            )}
+                          >
                             {title}:
                             <a
                               aria-label="Bottom area link"
@@ -126,7 +147,7 @@ const {
                 </>
               ) : (
                 <Image
-                  class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+                  class="mx-auto w-full rounded-lg xl:rounded-[8px] bg-gray-500 shadow-lg"
                   width={500}
                   height={500}
                   widths={[400, 768]}
@@ -152,6 +173,6 @@ const {
         />
       )
     }
-    {bottom && <div class={twMerge("text-center border-b pb-4 border-neutral-400", classes.bottom)} />}
+    {bottom && <div class={twMerge("text-center border-b pb-4 xl:pb-[16px] border-neutral-400", classes.bottom)} />}
   </div>
 </WidgetWrapper>

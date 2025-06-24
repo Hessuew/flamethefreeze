@@ -133,7 +133,8 @@ export interface Stat {
 
 export interface Item {
   title?: string;
-  description?: string | { text: string; link?: boolean; subtitle?: boolean }[];
+  flag?: string;
+  description?: string | { text: string; link?: boolean; subtitle?: boolean; classes?: Record<string, string> }[];
   description2?: { text: string; link?: string };
   icon?: string;
   classes?: Record<string, string>;
@@ -214,11 +215,24 @@ export interface Form {
 // WIDGETS
 export interface Hero extends Headline, Widget {
   content?: string;
-  image?: string | unknown;
-  callToAction1?: CallToAction;
-  callToAction2?: CallToAction;
-  isReversed?: boolean;
   actions?: string | CallToAction[];
+  isInfographics?: boolean;
+  image?:
+    | string
+    | {
+        src: string | ImageMetadata;
+        alt?: string;
+        class?: string;
+        objectPosition?: string;
+        isInfographics?: boolean;
+        height?: number;
+        width?: number;
+        link?: {
+          href: string;
+          target?: string;
+          rel?: string;
+        };
+      };
   imageText?: string;
 }
 
@@ -246,18 +260,22 @@ export interface Brands extends Headline, Widget {
   images?: Array<Image>;
 }
 
-export interface Features extends Headline, Widget {
-  anchorId?: string;
+export interface Features extends Omit<Headline, "classes">, Widget {
+  animated?: boolean;
   image?: string | unknown;
+  image2?: string | unknown;
+  imageText?: string;
+  imageText2?: string;
   video?: Video;
-  items: Array<Item>;
-  columns: number;
+  items?: Array<Item>;
+  columns?: number;
   defaultIcon?: string;
   callToAction1?: CallToAction;
   callToAction2?: CallToAction;
   isReversed?: boolean;
   isBeforeContent?: boolean;
   isAfterContent?: boolean;
+  callToAction?: CallToAction;
 }
 
 export interface Faqs extends Headline, Widget {
@@ -267,18 +285,13 @@ export interface Faqs extends Headline, Widget {
   columns?: number;
 }
 
-export interface Steps extends Headline, Widget {
-  items: Array<{
-    title: string;
-    description?: string;
-    icon?: string;
-    classes?: Record<string, string>;
-    link?: boolean;
-  }>;
+export interface Steps extends Omit<Headline, "classes">, Widget {
+  bigImage?: boolean;
   callToAction?: string | CallToAction;
+  footer?: string;
   image?: string | Image;
   isReversed?: boolean;
-  link?: boolean;
+  items: Array<Item>;
   type2?: boolean;
 }
 
@@ -291,7 +304,7 @@ export interface Content extends Headline, Widget {
   isReversed?: boolean;
   isAfterContent?: boolean;
   callToAction?: CallToAction;
-  testimonial?: Testimonials;
+  testimonial?: Array<Testimonial>;
   bottom?: {
     title: string;
     subtitle: string;

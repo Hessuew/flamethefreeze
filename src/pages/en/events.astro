@@ -11,10 +11,6 @@ import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import Steps2 from "~/components/widgets/Steps2.astro";
 import { YouTube } from "astro-embed";
 import roman_soldier from "~/assets/images/roman_soldier.webp";
-// import jesus_fest_2024 from "~/assets/images/jesus_fest_2024.webp";
-// import jesus_fest_2024_fi from "~/assets/images/jesus_fest_2024_fi.webp";
-// import jesus_fest_winter_2024 from "~/assets/images/jesus_fest_winter_2024.webp";
-// import jesus_fest_winter_2024_fi from "~/assets/images/jesus_fest_winter_2024_fi.webp";
 
 const metadata = {
   title: "Events",
@@ -40,74 +36,9 @@ const t = useTranslations(lang);
     </Fragment>
   </Hero>
 
-  <!-- Hero Widget *******************-->
-
-  <!-- <Hero
-    tagline={t("events.heroEvent.tagline")}
-    image={{
-      src: lang === "en" ? jesus_fest_2024 : jesus_fest_2024_fi,
-      alt: "Jesus fest kuopio",
-    }}
-  >
-    <Fragment slot="title">
-      {t("events.heroEvent.title1")}
-    </Fragment>
-    <Fragment slot="subtitle">
-      {t("events.heroEvent.subtitle1")}
-    </Fragment>
-  </Hero> -->
-
   <!-- Anchor to leave the scroll to leave Features2 title visible ************** -->
 
   <div id="songs"></div>
-
-  <!-- <Features2
-    hrefID="songs"
-    class="container"
-    title={t("events.features2.title")}
-    subtitle={t("events.features2.subtitle")}
-    columns={2}
-    items={[
-      {
-        title: t("events.features2.items1.title"),
-        description: t("events.features2.items1.description"),
-        // icon: "tabler:book",
-      },
-      // {
-      //   title: t("events.features2.items2.title"),
-      //   description: t("events.features2.items2.description"),
-      //   // icon: "tabler:pray",
-      // },
-      {
-        title: t("events.features2.items3.title"),
-        description: t("events.features2.items3.description"),
-        // icon: "tabler:friends",
-      },
-    ]}
-  /> -->
-
-  <!-- <Features2
-    subtitle={t("events.features3.subtitle")}
-    columns={2}
-    items={[
-      {
-        title: t("events.features3.items1.title"),
-        description: t("events.features3.items1.description"),
-        // icon: "tabler:book",
-      },
-      {
-        title: t("events.features3.items2.title"),
-        description: t("events.features3.items2.description"),
-        // icon: "tabler:pray",
-      },
-    ]}
-  /> -->
-
-  <!-- Text section -->
-  <!-- 
-  <div class="w-full flex flex-col items-center px-10">
-    <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
-  </div> -->
 
   <!-- Note Widget ******************* -->
 
@@ -116,10 +47,10 @@ const t = useTranslations(lang);
   <!-- Image Widget ******************* -->
 
   <div
-    class="relative m-auto max-w-5xl pt-10 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+    class="relative m-auto max-w-5xl xl:max-w-[1024px] pt-10 xl:pt-[40px] intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
   >
     <Image
-      class="mx-auto rounded-md w-full"
+      class="mx-auto rounded-md xl:rounded-[6px] w-full"
       widths={[400, 768, 1024, 2040]}
       sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
       loading="eager"
@@ -184,9 +115,9 @@ const t = useTranslations(lang);
 
   <Content tagline={t("events.hero2.tagline")} isReversed>
     <Fragment slot="content">
-      <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
+      <h3 class="text-xl sm:text-2xl xl:text-[24px] xl:leading-[32px] tracking-tight mb-2 xl:mb-[8px]">
         <span class="font-semibold text-black dark:text-white">{t("events.content.subtitle")}</span>
-        <p class="text-lg sm:text-xl">
+        <p class="text-lg sm:text-xl xl:text-[20px] xl:leading-[28px]">
           <GradientText class="font-semibold" style2>
             "{t("events.content.subtitle1")}"
           </GradientText>
@@ -208,9 +139,9 @@ const t = useTranslations(lang);
 
   <Content>
     <Fragment slot="content">
-      <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
+      <h3 class="text-xl sm:text-2xl xl:text-[24px] xl:leading-[32px] tracking-tight mb-2 xl:mb-[8px]">
         <span class="font-semibold text-black dark:text-white">{t("index.content4.subtitle")}</span>
-        <p class="text-lg sm:text-xl">
+        <p class="text-lg sm:text-xl xl:text-[20px] xl:leading-[28px]">
           <GradientText class="font-semibold" style2>
             "{t("index.content4.subtitle1")}"
           </GradientText>
@@ -232,8 +163,8 @@ const t = useTranslations(lang);
 
   <!-- Text section -->
 
-  <div class="w-full flex flex-col items-center px-10">
-    <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
+  <div class="w-full flex flex-col items-center px-10 xl:px-[40px]">
+    <div class="my-40 xl:my-[160px] h-[1px] bg-neutral-400 w-full"></div>
   </div>
 
   <!-- Steps2 Widget ****************** -->
@@ -264,8 +195,8 @@ const t = useTranslations(lang);
 
   <!-- Text section -->
 
-  <div class="w-full flex flex-col items-center px-10">
-    <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
+  <div class="w-full flex flex-col items-center px-10 xl:px-[40px]">
+    <div class="my-40 xl:my-[160px] h-[1px] bg-neutral-400 w-full"></div>
   </div>
 
   <!-- CallToAction Widget *********** -->

@@ -1,52 +1,66 @@
 ---
-import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
-import Timeline from "~/components/ui/Timeline.astro";
-import Headline from "~/components/ui/Headline.astro";
 import Image from "~/components/common/Image.astro";
-import type { Steps } from "~/types";
+import Headline from "~/components/ui/Headline.astro";
+import Timeline from "~/components/ui/Timeline.astro";
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import type { Steps as Props } from "~/types";
 
 const {
   title = await Astro.slots.render("title"),
   subtitle = await Astro.slots.render("subtitle"),
   tagline = await Astro.slots.render("tagline"),
+  footer = await Astro.slots.render("footer"),
   items = [],
   image = await Astro.slots.render("image"),
+  bigImage = false,
   isReversed = false,
 
   id,
   isDark = false,
   classes = {},
   bg = await Astro.slots.render("bg"),
-} = Astro.props as Steps;
+} = Astro.props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ""}`} bg={bg}>
-  <div class:list={["flex flex-col gap-8 md:gap-12", { "md:flex-row-reverse": isReversed }, { "md:flex-row": image }]}>
-    <div class:list={["md:py-4 md:self-center", { "md:basis-1/2": image }, { "w-full": !image }]}>
+<WidgetWrapper
+  id={id}
+  isDark={isDark}
+  containerClass={`max-w-5xl xl:max-w-[1024px] ${classes?.container ?? ""}`}
+  bg={bg}
+>
+  <div
+    class:list={[
+      "flex flex-col gap-8 md:gap-12 xl:gap-[48px]",
+      { "md:flex-row-reverse": isReversed && !bigImage },
+      { "md:flex-row": image && !bigImage },
+      { "lg:flex-row-reverse": bigImage },
+    ]}
+  >
+    <div class:list={["md:py-4 xl:py-[16px] self-center", { "md:basis-1/2": image }, { "w-full": !image }]}>
       <Headline
         title={title}
         subtitle={subtitle}
         tagline={tagline}
         classes={{
           container: "text-left rtl:text-right",
-          title: "text-3xl lg:text-4xl",
-          ...((classes?.items as unknown as Record<string, never>) ?? {}),
+          title: "text-3xl md:text-4xl xl:text-[36px] xl:leading-[40px]",
+          ...((classes?.headline as object) ?? {}),
         }}
       />
-      <Timeline items={items} classes={classes?.items as unknown as Record<string, never>} />
+      <Timeline items={items} classes={classes?.items as Record<string, never>} />
     </div>
     {
       image && (
-        <div class="relative md:basis-1/2">
+        <div class:list={["relative md:basis-1/2 ", { "md:max-h-[460px] xl:max-h-[540px] md:basis-full": bigImage }]}>
           {typeof image === "string" ? (
             <Fragment set:html={image} />
           ) : (
             <Image
-              class="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
-              widths={[400, 768]}
-              sizes="(max-width: 768px) 100vw, 432px"
-              width={432}
-              height={768}
+              class="inset-0 object-cover object-top w-full rounded-md shadow-md md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
+              widths={[400, 768, 1024, 2048]}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 66vw, 1365px"
+              width={1365}
+              height={600}
               layout="cover"
               src={image?.src}
               alt={image?.alt || ""}
@@ -56,4 +70,14 @@ const {
       )
     }
   </div>
+  {
+    footer && (
+      <div class="w-full">
+        <p
+          class="text-xl max-w-5xl xl:max-w-[1024px] mx-auto text-center pt-8 xl:pt-[32px] text-muted mb-6 xl:mb-[24px] dark:text-slate-300 intersect-once intersect-tenth sm:intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+          set:html={footer}
+        />
+      </div>
+    )
+  }
 </WidgetWrapper>

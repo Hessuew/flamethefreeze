@@ -1,95 +1,47 @@
 ---
-import type { Headline } from "~/types";
+import type { Headline as Props } from "~/types";
 import { twMerge } from "tailwind-merge";
-import { Icon } from "astro-icon/components";
 
 const {
   title = await Astro.slots.render("title"),
   subtitle = await Astro.slots.render("subtitle"),
   subtitle2 = await Astro.slots.render("subtitle2"),
-  anchorId,
   tagline,
   classes = {},
-  hrefID,
-} = Astro.props as Headline;
-
-const href = `#${hrefID}`;
+} = Astro.props;
 
 const {
-  container: containerClass = "max-w-3xl",
-  title: titleClass = "text-3xl md:text-4xl ",
-  subtitle: subtitleClass = "text-xl",
-  subtitle2: subtitleClass2 = "text-xl",
+  title: titleClass = "text-3xl md:text-4xl xl:text-[36px] xl:leading-[40px]",
+  subtitle: subtitleClass = "text-xl xl:text-[20px] xl:leading-[28px] max-w-5xl xl:max-w-[1080px] mx-auto",
+  subtitle2: subtitleClass2 = "text-xl xl:text-[20px] xl:leading-[28px] max-w-5xl xl:max-w-[1080px] mx-auto",
 } = classes;
 ---
 
 {
   (title || subtitle || tagline) && (
-    <div class={twMerge("mb-8 md:mx-auto md:mb-12 text-center", containerClass, "anchor-link-container")}>
+    <div
+      class={twMerge(
+        "mb-8 md:mx-auto md:mb-12 xl:mb-[48px] text-center intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+      )}
+    >
       {tagline && (
         <p
-          class="text-base bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent font-bold tracking-wide uppercase"
+          class="bg-gradient-to-r from-orange-600 to-yellow-500 text-transparent bg-clip-text text-base xl:text-[16px] xl:leading-[24px] font-bold tracking-wide uppercase"
           set:html={tagline}
         />
       )}
-      {title && !hrefID && (
+      {title && (
         <h2
-          id={anchorId}
-          class={twMerge("font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl", titleClass)}
+          class={twMerge(
+            "font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl xl:text-[36px] xl:leading-[40px]",
+            titleClass
+          )}
           set:html={title}
         />
       )}
-      {title && hrefID && (
-        <a aria-label="songs_anchor_link" {href} class="justify-center flex flex-row items-center gap-3">
-          <h2
-            id={anchorId}
-            class={twMerge("font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl", titleClass)}
-            set:html={title}
-          />
-          <span class="anchor-link w-5">
-            <Icon name={"tabler:link"} />
-          </span>
-        </a>
-      )}
 
-      {subtitle && <p class={twMerge("mt-4 text-muted", subtitleClass)} set:html={subtitle} />}
+      {subtitle && <p class={twMerge("mt-4 xl:mt-[16px] text-muted", subtitleClass)} set:html={subtitle} />}
       {subtitle2 && <p class={twMerge("pt-10", subtitleClass2)} set:html={subtitle2} />}
     </div>
   )
 }
-<style>
-  :global(html) {
-    /* ...TRUNCATED */
-
-    color: hsl(var(--colour-text-hue) var(--colour-text-saturation) var(--colour-text-luminance));
-
-    scroll-behavior: smooth;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    :global(html) {
-      scroll-behavior: auto;
-    }
-  }
-</style>
-
-<style lang="css">
-  .anchor-link {
-    visibility: hidden;
-  }
-
-  a {
-    color: hsl(var(--colour-text-hue) var(--colour-text-saturation) var(--colour-text-luminance));
-    text-decoration: none;
-  }
-
-  [astro-icon] {
-    display: inline;
-    width: var(--font-size-5);
-    vertical-align: middle;
-  }
-
-  .anchor-link-container:focus .anchor-link,
-  .anchor-link-container:hover .anchor-link {
-    visibility: visible;
-  }
-</style>

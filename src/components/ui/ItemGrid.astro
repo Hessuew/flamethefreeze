@@ -1,10 +1,10 @@
 ---
-import { twMerge } from "tailwind-merge";
-import type { ItemGrid } from "~/types";
-import Button from "./Button.astro";
+import type { ItemGrid as Props } from "~/types";
 import { Icon } from "astro-icon/components";
+import { twMerge } from "tailwind-merge";
+import Button from "./Button.astro";
 
-const { items = [], columns, defaultIcon = "", classes = {} } = Astro.props as ItemGrid;
+const { items = [], columns, defaultIcon = "", classes = {} } = Astro.props;
 
 const {
   container: containerClass = "",
@@ -20,7 +20,7 @@ const {
   items && (
     <div
       class={twMerge(
-        `grid mx-auto gap-8 md:gap-y-12 ${
+        `grid mx-auto gap-8 md:gap-y-12 xl:gap-[32px] xl:gap-y-[48px] ${
           columns === 4
             ? "lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
             : columns === 3
@@ -32,27 +32,52 @@ const {
         containerClass
       )}
     >
-      {items.map(({ title, description, icon, callToAction, classes: itemClasses = {} }) => (
-        <div class="intersect-once motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+      {items.map(({ title, description, icon, callToAction, flag, classes: itemClasses = {} }) => (
+        <div class="intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade">
           <div class={twMerge("flex flex-row max-w-md", panelClass, itemClasses?.panel)}>
             <div class="flex justify-center">
               {(icon || defaultIcon) && (
                 <Icon
                   name={icon || defaultIcon}
-                  class={twMerge("w-7 h-7 mr-2 rtl:mr-0 rtl:ml-2", defaultIconClass, itemClasses?.icon)}
+                  class={twMerge(
+                    "w-7 h-7 xl:w-[28px] xl:h-[28px] mr-2 xl:mr-[8px] rtl:mr-0 rtl:ml-2 rtl:xl:mr-[8px]",
+                    defaultIconClass,
+                    itemClasses?.icon
+                  )}
+                />
+              )}
+              {flag && (
+                <span
+                  class="text-4xl xl:text-[36px] xl:leading-[40px] pr-2 -mt-0.5 xl:pr-[8px] xl:-mt-[2px]"
+                  set:html={flag}
                 />
               )}
             </div>
-            <div class="mt-0.5">
-              {title && <h3 class={twMerge("text-xl font-bold", titleClass, itemClasses?.title)} set:html={title} />}
+            <div class="mt-0.5 xl:mt-[2px]">
+              {title && (
+                <h3
+                  class={twMerge("text-xl xl:text-[20px] xl:leading-[28px] font-bold", titleClass, itemClasses?.title)}
+                  set:html={title}
+                />
+              )}
               {description && (
                 <p
-                  class={twMerge(`${title ? "mt-3" : ""} text-muted`, descriptionClass, itemClasses?.description)}
+                  class={twMerge(
+                    `${title ? "mt-3 xl:mt-[12px]" : ""} text-muted text-base xl:text-[16px] xl:leading-[24px]`,
+                    descriptionClass,
+                    itemClasses?.description
+                  )}
                   set:html={description}
                 />
               )}
               {callToAction && (
-                <div class={twMerge(`${title || description ? "mt-3" : ""}`, actionClass, itemClasses?.actionClass)}>
+                <div
+                  class={twMerge(
+                    `${title || description ? "mt-3 xl:mt-[12px]" : ""}`,
+                    actionClass,
+                    itemClasses?.actionClass
+                  )}
+                >
                   <Button variant="link" {...callToAction} />
                 </div>
               )}

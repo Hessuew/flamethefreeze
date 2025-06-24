@@ -1,8 +1,8 @@
 ---
-import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
-import ItemGrid from "~/components/ui/ItemGrid.astro";
 import Headline from "~/components/ui/Headline.astro";
-import type { Features } from "~/types";
+import ItemGrid from "~/components/ui/ItemGrid.astro";
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import type { Features as Props } from "~/types";
 
 const {
   title = await Astro.slots.render("title"),
@@ -17,20 +17,26 @@ const {
   isDark = false,
   classes = {},
   bg = await Astro.slots.render("bg"),
-} = Astro.props as Features;
+} = Astro.props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ""}`} bg={bg}>
-  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline} />
+<WidgetWrapper
+  id={id}
+  isDark={isDark}
+  containerClass={`max-w-5xl xl:max-w-[1024px] ${classes?.container ?? ""}`}
+  bg={bg}
+>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
   <ItemGrid
     items={items}
     columns={columns}
     defaultIcon={defaultIcon}
     classes={{
       container: "",
-      title: "md:text-[1.3rem]",
-      icon: "text-white bg-neutral-800 dark:bg-primary rounded-full w-10 h-10 p-2 md:w-12 md:h-12 md:p-3 mr-4 rtl:ml-4 rtl:mr-0",
-      ...((classes?.items as unknown as Record<string, never>) ?? {}),
+      title: "md:text-[1.3rem] xl:text-[20px] xl:leading-[28px]",
+      icon: "text-white bg-primary rounded-full w-10 h-10 md:w-12 md:h-12 xl:w-[48px] xl:h-[48px] p-2 md:p-3 xl:p-[12px] mr-4 xl:mr-[16px] rtl:ml-4 rtl:xl:ml-[16px] rtl:mr-0",
+      panel: "max-w-none",
+      ...((classes?.items as Record<string, never>) ?? {}),
     }}
   />
 </WidgetWrapper>

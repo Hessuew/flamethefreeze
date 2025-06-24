@@ -133,7 +133,7 @@ const t = useTranslations(lang);
 
   <Content
     classes={{
-      headline: "lg:max-w-4xl",
+      headline: "lg:max-w-4xl xl:max-w-[896px]",
     }}
     isAfterContent
     whiteText={true}
@@ -147,7 +147,7 @@ const t = useTranslations(lang);
         {t("about.content.title1")}
       </p>
       <p
-        class="font-signature dark:text-white text-black text-5xl md:text-8xl font-bold leading-tighter tracking-tighter py-4"
+        class="text-black text-5xl md:text-6xl xl:text-[60px] xl:leading-[68px] font-signature dark:text-white font-bold leading-tighter tracking-tighter py-4 xl:py-[16px]"
       >
         {t("about.content.title2")}
       </p>
@@ -158,7 +158,7 @@ const t = useTranslations(lang);
       </p>
     </Fragment>
     <Fragment slot="content">
-      <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
+      <h3 class="text-xl sm:text-2xl xl:text-[24px] xl:leading-[32px] tracking-tight mb-2 xl:mb-[8px]">
         {t("about.content.content")}
       </h3>
     </Fragment>
