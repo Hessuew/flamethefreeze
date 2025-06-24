@@ -1,0 +1,74 @@
+name: GitHub Actions
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        bun-version:
+          - latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Bun ${{ matrix.bun-version }}
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: ${{ matrix.bun-version }}
+      - uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            workers/subscribe/node_modules
+          key: ${{ runner.os }}-${{ matrix.bun-version }}-bun-${{ hashFiles('**/bun.lockb') }}
+          restore-keys: |
+            ${{ runner.os }}-${{ matrix.bun-version }}-bun-
+      - name: Install root dependencies
+        run: bun install
+      - name: Install worker dependencies
+        run: |
+          if [ ! -d "workers/subscribe" ]; then
+            echo "Error: workers/subscribe directory not found"
+            exit 1
+          fi
+          cd workers/subscribe
+          bun install
+          cd ../..
+      - run: bun run build
+      # - run: bun test
+
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      - uses: actions/cache@v4
+        with:
+          path: |
+            node_modules
+            workers/subscribe/node_modules
+          key: ${{ runner.os }}-bun-latest-${{ hashFiles('**/bun.lockb') }}
+          restore-keys: |
+            ${{ runner.os }}-bun-latest-
+      - name: Install root dependencies
+        run: bun install
+      - name: Install worker dependencies
+        run: |
+          if [ ! -d "workers/subscribe" ]; then
+            echo "Error: workers/subscribe directory not found"
+            exit 1
+          fi
+          cd workers/subscribe
+          bun install
+          cd ../..
+      - name: Run check
+        run: bun run check
