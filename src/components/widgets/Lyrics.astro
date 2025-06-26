@@ -189,9 +189,15 @@ const t = useTranslations(lang);
     }
   }
 
-  // Initialize when the DOM is loaded
-  document.addEventListener("DOMContentLoaded", setupLyrics);
+  // Initialize navigation when the DOM is ready and after each page navigation
+  function initializeNavigation() {
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", setupLyrics);
+    } else {
+      setupLyrics();
+    }
+  }
 
-  // Also initialize when Astro view transitions are complete
-  document.addEventListener("astro:page-load", setupLyrics);
+  initializeNavigation();
+  document.addEventListener("astro:page-load", initializeNavigation);
 </script>
