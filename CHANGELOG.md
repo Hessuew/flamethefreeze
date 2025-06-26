@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.12.0](https://github.com/Hessuew/flamethefreeze/compare/v3.11.1...v3.12.0) (2025-06-26)
+
+
+### Features
+
+* add church assets and refine UI component styling ([#185](https://github.com/Hessuew/flamethefreeze/issues/185)) ([9217d19](https://github.com/Hessuew/flamethefreeze/commit/9217d192d35794b5adbe6c1aeda30d77cf392d86))
+* add github issue and pull request templates ([06eee71](https://github.com/Hessuew/flamethefreeze/commit/06eee717efeed3054ab21563ec44e41ceff69b6c))
+* add GitHub templates and workflows ([#181](https://github.com/Hessuew/flamethefreeze/issues/181)) ([44d2815](https://github.com/Hessuew/flamethefreeze/commit/44d28151cc40031a34d62f0f6c1640b2a8831cb3))
+* add Lyrics component for displaying song lyrics with interactive selection ([#184](https://github.com/Hessuew/flamethefreeze/issues/184)) ([6bfa23a](https://github.com/Hessuew/flamethefreeze/commit/6bfa23ac6d6d6dfd1dccf3b24d8e1dab8bac0c05))
+* enhance UI components with responsive design and XL breakpoints ([#180](https://github.com/Hessuew/flamethefreeze/issues/180)) ([c1f08e4](https://github.com/Hessuew/flamethefreeze/commit/c1f08e4436e315dbce48b0501cb9999b6b4a315a))
+* enhance UI with animations, theme toggle, and responsive navigation ([#183](https://github.com/Hessuew/flamethefreeze/issues/183)) ([8642836](https://github.com/Hessuew/flamethefreeze/commit/86428367bb4af4d609624a2311b608d4169fe0ff))
+* xl scaling cap for widgets ([58f550f](https://github.com/Hessuew/flamethefreeze/commit/58f550f486922f16cddc168de5bc7c38c8b5fe51))
+
 ## [3.11.1](https://github.com/Hessuew/flamethefreeze/compare/v3.11.0...v3.11.1) (2025-05-22)
 
 
