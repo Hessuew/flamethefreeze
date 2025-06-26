@@ -140,16 +140,15 @@ const t = useTranslations(lang);
                         {links.map(({ text: text2, href: href2, icon, description }) => (
                           <li class="block lg:hidden">
                             <a
-                              class:list={[
-                                "hover:text-primary py-2 px-4 block",
-                                { "aw-link-active": href2 === currentPath },
-                              ]}
-                              href={href2}
+                              class:list={["py-2 px-4 block group", { "aw-link-active": href2 === currentPath }]}
+                              href={getPermalink(`${lang}/${href2}`)}
                             >
-                              <div class="flex items-center gap-3 active:text-primary">
-                                {icon && <Icon name={icon} class="w-5 h-5 mt-0.5" />}
+                              <div class="flex items-center gap-3">
+                                {icon && <Icon name={icon} class="w-5 h-5 mt-0.5 group-active:text-orange-600" />}
                                 <div>
-                                  <div class="font-medium">{text2 ? t(text2 as keyof typeof ui.en) : text2}</div>
+                                  <div class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-black to-black dark:from-white dark:to-white group-active:from-orange-600 group-active:to-yellow-500">
+                                    {text2 ? t(text2 as keyof typeof ui.en) : text2}
+                                  </div>
                                   {description && (
                                     <div class="text-sm text-gray-500 dark:text-gray-400">
                                       {description ? t(description as keyof typeof ui.en) : description}
