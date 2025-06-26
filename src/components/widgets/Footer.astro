@@ -1,72 +1,96 @@
 ---
-import { Icon } from "astro-icon/components";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import { getPermalink } from "~/utils/permalinks";
-// import { SITE } from '~/utils/config';
-// import { getHomePermalink } from '~/utils/permalinks';
+import youtubeLogo from "~/assets/images/footer/rukous_seurakunta_youtube_logo.png";
+import prayerChurchLogo from "~/assets/images/footer/prayer-church-website-design-logo.webp";
+import Image from "astro/components/Image.astro";
+import { twMerge } from "tailwind-merge";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 
-interface Link {
-  text?: string;
-  href?: string;
-  ariaLabel?: string;
-  icon?: string;
-}
-
-interface Links {
-  title?: string;
-  links: Array<Link>;
-}
+import { Icon } from "astro-icon/components";
+import GradientText from "../ui/GradientText.astro";
 
 export interface Props {
-  links: Array<Links>;
-  secondaryLinks: Array<Link>;
-  socialLinks: Array<Link>;
   theme?: string;
 }
 
-const { socialLinks = [], secondaryLinks = [], links = [], theme = "light" } = Astro.props;
-
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const links = [
+  {
+    title: t("header.flameUp"),
+    links: [
+      { text: t("header.link1"), href: getPermalink("/word") },
+      { text: t("header.link2"), href: getPermalink("/prayer") },
+      { text: t("header.link3"), href: getPermalink("/church") },
+      { text: t("header.link4"), href: getPermalink("/devotions") },
+    ],
+  },
+  {
+    title: t("header.resources"),
+    links: [
+      { text: t("header.link5"), href: getPermalink("/witnesses") },
+      { text: t("header.link6"), href: getPermalink("/fivefold") },
+      { text: t("header.link7"), href: getPermalink("/events") },
+    ],
+  },
+];
+
+const socialLinks = [
+  {
+    ariaLabel: t("footer.about"),
+    icon: "tabler:flame",
+    iconClass: "text-orange-500",
+    href: getPermalink(`${lang}/about`),
+  },
+  {
+    ariaLabel: t("footer.prayerChurch"),
+    href: "https://prayerchurch.com",
+    image: {
+      src: prayerChurchLogo,
+      alt: "PrayerChurch",
+    },
+  },
+  {
+    ariaLabel: "YouTube",
+    href: "https://youtube.com/@flamethefreeze2613?si=wBdFBGx335N-vee-",
+    image: {
+      src: youtubeLogo,
+      alt: "YouTube FlameTheFreeze",
+    },
+  },
+];
+
+const { theme = "light" } = Astro.props;
 ---
 
 <footer class:list={[{ dark: theme === "dark" }, "relative border-t border-gray-200 dark:border-slate-800 not-prose"]}>
-  <div class="dark:bg-dark absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div
-    class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300 intersect-once intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
-  >
-    <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-0 py-8 md:py-0">
-      <!-- <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 py-8 md:py-12"> -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+  <div class="relative max-w-7xl xl:max-w-[1280px] mx-auto px-4 sm:px-6 xl:px-[24px] dark:text-slate-300">
+    <div
+      class="grid grid-cols-12 gap-4 sm:gap-8 xl:gap-[32px] gap-y-8 xl:gap-y-[32px] pt-8 pb-4 md:pt-12 xl:pt-[48px] md:pb-8 xl:pb-[32px]"
+    >
       <div class="col-span-12 lg:col-span-4">
-        <!-- <div class="mb-2">
-          <a class="inline-block font-bold text-xl" href={getHomePermalink()}>{SITE?.name}</a>
-        </div> -->
-        <div class="text-sm text-muted">
-          {
-            secondaryLinks.map(({ text, href }) => (
-              <a
-                class="text-muted hover:text-gray-700 dark:text-gray-400 hover:underline transition duration-150 ease-in-out mr-2 rtl:mr-0 rtl:ml-2"
-                href={href}
-                set:html={text}
-              />
-            ))
-          }
+        <div class="mb-2 xl:mb-[8px]">
+          <a class="inline-block font-bold text-xl xl:text-[20px] xl:leading-[28px]" href="/">Flame the Freeze</a>
+        </div>
+        <div class="text-sm xl:text-[14px] xl:leading-[20px] text-muted lg:max-w-[320px]">
+          {t("footer.titleDescription")}
         </div>
       </div>
       {
-        links.map(({ title, links }) => (
-          <div class="col-span-6 md:col-span-3 lg:col-span-2">
-            <div class="dark:text-gray-300 font-medium mb-2">{title}</div>
-            {links && Array.isArray(links) && links.length > 0 && (
-              <ul class="text-sm">
-                {links.map(({ text, href, ariaLabel }) => (
-                  <li class="mb-2">
+        links.map(({ title, links }, index) => (
+          <div class={twMerge("col-span-6 md:col-span-3 lg:col-span-2 lg:min-w-[200px]", index === 0 && "lg:min-w-0")}>
+            <div class="dark:text-gray-300 font-medium mb-2 xl:mb-[8px] xl:text-[16px] xl:leading-[24px]">{title}</div>
+            {links && Array.isArray(links) && (
+              <ul class="text-sm xl:text-[14px] xl:leading-[20px]">
+                {links.map(({ text, href }) => (
+                  <li class="mb-2 xl:mb-[8px]">
                     <a
                       class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
                       href={href}
-                      aria-label={ariaLabel}
                     >
-                      <Fragment set:html={text} />
+                      {text}
                     </a>
                   </li>
                 ))}
@@ -76,47 +100,63 @@ const t = useTranslations(lang);
         ))
       }
     </div>
-    <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
-      {
-        socialLinks?.length ? (
-          <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0 rtl:ml-0 rtl:-mr-2 rtl:md:ml-0 rtl:md:mr-4">
-            <li>
-              <p class="text-muted dark:text-gray-400 rounded-lg text-sm p-2.5 inline-flex items-center">
-                {t("footer.about")}{" "}
-              </p>
-            </li>
-            <li>
-              <a
-                class="text-orange-600 hover:bg-orange-300 dark:hover:bg-orange-900 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-                aria-label={"AboutPage"}
-                href={getPermalink(`${lang}/about`)}
-              >
-                <Icon name="tabler:flame" class="w-5 h-5" />
-              </a>
-            </li>
-            {socialLinks.map(({ ariaLabel, href, text, icon }) => (
-              <li>
-                <a
-                  class="text-muted dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-                  aria-label={ariaLabel}
-                  href={href}
-                >
-                  {icon && <Icon name={icon} class="w-5 h-5" />}
-                  <Fragment set:html={text} />
-                </a>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          ""
-        )
-      }
-
-      <div class="text-sm mr-4 dark:text-slate-400">
-        <!-- {t("footer.madeBy1")}<span class="text-blue-600 dark:text-gray-200 hover:underline">{t("footer.madeBy2")}</span> -->
-        <!-- {t("footer.madeBy3")} -->
-        <!-- {t("footer.madeBy1")}<span class="bg-gradient-to-r bg-clip-text font-semibold from-orange-600 to-orange-500 text-transparent hover:underline">{t("footer.madeBy2")}</span>
-        {t("footer.madeBy3")} -->
+    <div class="md:flex md:items-end md:justify-between py-6 xl:py-[24px]">
+      <div
+        class="text-sm text-center sm:text-left pb-4 sm:pb-0 xl:text-[14px] xl:leading-[20px] mr-4 xl:mr-[16px] dark:text-muted"
+      >
+        © {new Date().getFullYear()} Flame the Freeze · {t("footer.allRights")}
+      </div>
+      <div class="flex flex-col items-center sm:items-end sm:justify-end">
+        {
+          socialLinks?.length ? (
+            <nav aria-label="Social media links" class="flex mb-4">
+              {socialLinks.map(({ ariaLabel, href, image, icon, iconClass }) => (
+                <div class="group relative">
+                  <a
+                    class={twMerge(
+                      "transition-all duration-300 ease-in-out text-muted dark:text-orange-400 hover:scale-125 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:focus:ring-orange-700 rounded-lg text-sm xl:text-[14px] xl:leading-[20px] p-2.5 xl:p-[10px] inline-flex items-center"
+                    )}
+                    aria-label={ariaLabel}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {icon && <Icon name={icon} class={twMerge("w-5 h-5", iconClass)} />}
+                    {image && (
+                      <Image
+                        src={image.src}
+                        alt={image.alt}
+                        class="w-5 xl:w-[20px] h-5 xl:h-[20px] object-contain rounded"
+                        width={400}
+                        height={400}
+                        loading={"lazy"}
+                        decoding={"async"}
+                      />
+                    )}
+                  </a>
+                  <span class="absolute -top-10 xl:-top-[40px] left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 xl:px-[10px] py-1 xl:py-[8px] text-sm xl:text-[14px] xl:leading-[20px] text-white opacity-0 transition-opacity delay-500 group-hover:opacity-100 dark:bg-gray-200 dark:text-gray-800">
+                    {ariaLabel}
+                  </span>
+                </div>
+              ))}
+            </nav>
+          ) : (
+            ""
+          )
+        }
+        <div class="text-end">
+          <p class="text-sm xl:text-[14px] xl:leading-[20px] mr-3 xl:mr-[12px] dark:text-muted">
+            Designed and developed by
+            <a
+              href="https://cherubim-it.com"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="font-semibold transition-all duration-300 text-blue-600 hover:underline"
+            >
+              <GradientText text="Cherubim IT" />
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   </div>
