@@ -20,7 +20,16 @@ export interface Props extends Widget {
   containerClass?: string;
 }
 
-const { songs = [], title = "Song Lyrics", subtitle, tagline, id, isDark = false, containerClass, bg } = Astro.props;
+const {
+  songs = [],
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
+  tagline = await Astro.slots.render("tagline"),
+  id,
+  isDark = false,
+  containerClass,
+  bg,
+} = Astro.props;
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -30,15 +39,15 @@ const t = useTranslations(lang);
   <Headline {title} {subtitle} {tagline} />
 
   <!-- Song Selection Buttons -->
-  <div class="mb-12 xl:mb-16" id="lyrics-buttons">
-    <div class="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+  <div class="mb-12 xl:mb-[64px]" id="lyrics-buttons">
+    <div class="flex flex-wrap justify-center gap-3 xl:gap-[12px] max-w-4xl xl:max-w-[896px] mx-auto">
       {
         songs.map((song, index) => (
           <button
-            class="lyrics-button px-6 py-3 rounded-full border border-gray-300 dark:border-gray-600 
+            class="lyrics-button px-6 py-3 xl:px-[24px] xl:py-[12px] rounded-full border border-gray-300 dark:border-gray-600 
                  bg-white dark:bg-purple-900/40 text-gray-700 dark:text-gray-300 
                  hover:border-orange-500 hover:text-orange-600 dark:hover:text-orange-400
-                 transition-all duration-300 ease-in-out transform hover:scale-105
+                 transition-all duration-300 ease-in-out transform
                  font-medium text-sm xl:text-base shadow-md hover:shadow-lg
                  focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50"
             data-target={`lyrics-${index}`}
@@ -51,54 +60,49 @@ const t = useTranslations(lang);
   </div>
 
   <!-- Lyrics Content -->
-  <div id="lyrics-content" class="max-w-4xl mx-auto">
+  <div id="lyrics-content" class="max-w-4xl xl:max-w-[896px] mx-auto">
     {
       songs.map((song, index) => (
         <div id={`lyrics-${index}`} class="lyrics-panel hidden">
-          <div
-            class="bg-page 
-                    rounded-2xl p-8 xl:p-12 shadow-xl border border-gray-200 dark:border-gray-700"
-          >
+          <div class="bg-page rounded-lg p-8 xl:p-[24px] shadow-xl border border-gray-200 dark:border-gray-700">
             <h3
-              class="text-2xl xl:text-3xl font-bold text-center mb-8 xl:mb-12 
+              class="text-2xl xl:text-3xl font-bold text-center mb-8 xl:mb-[24px] 
                      text-gray-800 dark:text-white"
             >
               {song.title}
             </h3>
 
-            <div class="space-y-8 xl:space-y-10">
+            <div class="space-y-8 xl:space-y-[40px]">
               {song.verses.map((verse, verseIndex) => (
                 <div class="verse">
-                  <div class="flex items-center mb-4">
-                    <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">
+                  <div class="flex items-center mb-4 xl:mb-[16px]">
+                    <span class="bg-orange-500 text-white px-3 py-1 xl:px-[12px] xl:py-[4px] rounded-full text-sm font-semibold mr-3 xl:mr-[12px]">
                       {t("verse")} {verseIndex + 1}
                     </span>
                     <div class="flex-1 h-px bg-gradient-to-r from-orange-500 to-transparent" />
                   </div>
                   <p
                     class="text-lg xl:text-xl leading-relaxed text-gray-700 dark:text-gray-300 
-                         whitespace-pre-line pl-4 border-l-4 border-orange-200 dark:border-orange-800"
-                  >
-                    {verse}
-                  </p>
+                         whitespace-pre-line pl-4 xl:pl-[16px] border-l-4 border-orange-200 dark:border-orange-800"
+                    set:html={verse}
+                  />
                 </div>
               ))}
 
               {song.chorus && (
-                <div class="chorus mt-8 xl:mt-10">
+                <div class="chorus mt-8 xl:mt-[40px]">
                   <div class="flex items-center mb-4">
-                    <span class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">
+                    <span class="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-3 py-1 xl:px-[12px] xl:py-[4px] rounded-full text-sm font-semibold mr-3 xl:mr-[12px]">
                       {t("chorus")}
                     </span>
                     <div class="flex-1 h-px bg-gradient-to-r from-yellow-500 to-transparent" />
                   </div>
                   <p
                     class="text-lg xl:text-xl leading-relaxed text-gray-700 dark:text-gray-300 
-                         whitespace-pre-line pl-4 border-l-4 border-yellow-200 dark:border-yellow-800
-                         bg-yellow-50 dark:bg-yellow-900/20 rounded-r-lg py-4"
-                  >
-                    {song.chorus}
-                  </p>
+                         whitespace-pre-line pl-4 xl:pl-[16px] py-4 xl:py-[12px] border-l-4 border-yellow-200 dark:border-yellow-800
+                         bg-yellow-50 dark:bg-yellow-900/20 rounded-r-lg"
+                    set:html={song.chorus}
+                  />
                 </div>
               )}
             </div>
@@ -125,7 +129,7 @@ const t = useTranslations(lang);
 
         // Deactivate all buttons
         buttons.forEach((button) => {
-          button.classList.remove("bg-orange-500", "text-white", "border-orange-500", "shadow-lg", "scale-105");
+          button.classList.remove("text-white", "border-orange-500", "shadow-lg");
           button.classList.add(
             "border-gray-300",
             "dark:border-gray-600",
@@ -145,7 +149,7 @@ const t = useTranslations(lang);
           "text-gray-700",
           "dark:text-gray-300"
         );
-        target.classList.add("bg-orange-500", "text-white", "border-orange-500", "shadow-lg", "scale-105");
+        target.classList.add("text-white", "border-orange-500", "shadow-lg");
 
         // Hide all panels with fade effect
         panels.forEach((panel) => {
@@ -179,7 +183,7 @@ const t = useTranslations(lang);
           "text-gray-700",
           "dark:text-gray-300"
         );
-        firstButton.classList.add("bg-orange-500", "text-white", "border-orange-500", "shadow-lg", "scale-105");
+        firstButton.classList.add("text-white", "border-orange-500", "shadow-lg");
         panels[0].classList.remove("hidden");
       }
     }
