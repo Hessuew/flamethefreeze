@@ -107,6 +107,7 @@ export interface Headline {
   subtitle?: string;
   subtitle2?: string;
   tagline?: string;
+  tagline2?: string;
   classes?: Record<string, string>;
   hrefID?: string;
 }
@@ -253,6 +254,7 @@ export interface Testimonials extends Headline, Widget {
   columns?: number;
   callToAction?: CallToAction;
   numbers?: boolean;
+  animated?: boolean;
 }
 
 export interface Brands extends Headline, Widget {

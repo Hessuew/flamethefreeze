@@ -27,8 +27,7 @@ const t = useTranslations(lang);
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero>
-    <!-- <Hero tagline="Flame the Freeze — Where the Word of God and experience meets"> -->
+  <Hero tagline2="Flame the Freeze">
     <Fragment slot="title">
       {t("index.hero1.title1")}
       <br />
@@ -139,7 +138,12 @@ const t = useTranslations(lang);
     isReversed
     tagline={t("index.content1.tagline")}
     title={t("index.content1.title")}
-    whiteText={true}
+    defaultIcon="tabler:check"
+    classes={{
+      title: "text-white",
+      iconClass: "bg-green-600 dark:green-700",
+      iconTitle: "text-white",
+    }}
     items={[
       { title: t("index.content1.items1") },
       { title: t("index.content1.items2") },
@@ -170,9 +174,10 @@ const t = useTranslations(lang);
   <Content
     defaultIcon="tabler:x"
     isAfterContent
-    whiteText={true}
+    defaultIcon="tabler:x"
     classes={{
       iconClass: "bg-red-600 dark:red-700",
+      iconTitle: "text-white",
     }}
     items={[
       { title: t("index.content2.items1") },

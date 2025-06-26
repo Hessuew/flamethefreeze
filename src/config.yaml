@@ -1,5 +1,5 @@
 site:
-  name: FLAME the FREEZE
+  name: Flame the Freeze
   site: "https://flamethefreeze.com"
   base: "/"
   trailingSlash: false
@@ -7,14 +7,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: FLAME the FREEZE
+    default: Flame the Freeze
     template: "%s — flamethefreeze"
   description: "\U0001F680. Flame the Freeze — Where the Word of God and experience meets"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: FLAME the FREEZE
+    site_name: Flame the Freeze
     images:
       - url: "~/assets/images/default.jpg"
         width: 900
