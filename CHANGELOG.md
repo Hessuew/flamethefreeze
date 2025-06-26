@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.13.0](https://github.com/Hessuew/flamethefreeze/compare/v3.12.0...v3.13.0) (2025-06-26)
+
+
+### Features
+
+* refine UI styling and fix footer links ([#188](https://github.com/Hessuew/flamethefreeze/issues/188)) ([c446f51](https://github.com/Hessuew/flamethefreeze/commit/c446f51ee0bed481612ae80d380c1a4fa25044ef))
+
 ## [3.12.0](https://github.com/Hessuew/flamethefreeze/compare/v3.11.1...v3.12.0) (2025-06-26)
 
 
