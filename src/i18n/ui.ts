@@ -203,35 +203,36 @@ export const ui = {
     "events.hero.subtitle1":
       "The disciples prayed and continued in the Word of God. What followed? 'And they went forth, and preached every where, the Lord working with them, and confirming",
     "events.lyrics.title": "Jesus Fest Kuopio songs",
+    "events.lyrics.subtitle": "Here are the songs of the event. Event description can be found at ",
     chorus: "Chorus",
     verse: "Verse",
     "events.lyrics.song1.title": "We have come to Zion",
     "events.lyrics.song1.verse1":
-      "We have come to Zion\nTo Zion\nTo Zion\n\nWe have come to Zion\nThe place of encounter",
+      "We have come to Zion<br/>To Zion<br/>To Zion<br/><br/>We have come to Zion<br/>The place of encounter",
     "events.lyrics.song1.verse2":
-      "You have come to Zion\nTo Zion\nTo Zion\n\nYou have come to Zion\nThe place of encounter",
+      "You have come to Zion<br/>To Zion<br/>To Zion<br/><br/>You have come to Zion<br/>The place of encounter",
     "events.lyrics.song2.title": "Have faith in God",
     "events.lyrics.song2.verse1":
-      "Have faith in God when your pathway is lonely\nHe sees and knows all the way you have trod\nNever alone are the least of His children\nHave faith in God, have faith in God.",
+      "Have faith in God when your pathway is lonely<br/>He sees and knows all the way you have trod<br/>Never alone are the least of His children<br/>Have faith in God, have faith in God.",
     "events.lyrics.song2.verse2":
-      "Have faith in God when your prayers are unanswered,\nYour earnest plea He will never forget.\nWait on the Lord, trust His Word and be patient,\nHave faith in God, He’ll answer yet.",
+      "Have faith in God when your prayers are unanswered<br/>Your earnest plea He will never forget<br/>Wait on the Lord, trust His Word and be patient<br/>Have faith in God, He’ll answer yet.",
     "events.lyrics.song2.verse3":
-      "Have faith in God in your pain and your sorrow,\nHis heart is touched with your grief and despair\nCast all your cares and your burdens upon Him,\nAnd leave them there, oh, leave them there.",
+      "Have faith in God in your pain and your sorrow<br/>His heart is touched with your grief and despair<br/>Cast all your cares and your burdens upon Him<br/>And leave them there, oh, leave them there.",
     "events.lyrics.song2.verse4":
-      "Have faith in God though all else fail about you,\nHave faith in God, He provides for His own.\nHe cannot fail though all kingdoms shall perish,\nHe rules, He reigns upon His",
+      "Have faith in God though all else fail about you<br/>Have faith in God, He provides for His own<br/>He cannot fail though all kingdoms shall perish<br/>He rules, He reigns upon His",
     "events.lyrics.song2.chorus":
-      "Have faith in God, He’s on His throne\nHave faith in God, He watches o’er His own\nHe cannot fail, He must prevail\nHave faith in God, have faith in God.",
+      "Have faith in God, He’s on His throne<br/>Have faith in God, He watches o’er His own<br/>He cannot fail, He must prevail<br/>Have faith in God, have faith in God.",
     "events.lyrics.song3.title": "Let the blind see",
     "events.lyrics.song3.verse1":
-      "Let the blind see\nLet the deaf hear\nLet the crippled walk in Jesus name\n\nLet the sick be healed\nLet the pain be healed\nLet the miracle happen\nin Jesus name",
+      "Let the blind see<br/>Let the deaf hear<br/>Let the crippled walk in Jesus name<br/><br/>Let the sick be healed<br/>Let the pain be healed<br/>Let the miracle happen<br/>in Jesus name",
     "events.lyrics.song4.title": "Behold God is my salvation",
     "events.lyrics.song4.verse1":
-      "Behold, God is my salvation;\nI will trust, and not be afraid:\nFor the LORD JEHOVAH\nIs my strength and my song;\nHe also is become my salvation.",
+      "Behold, God is my salvation<br/>I will trust, and not be afraid<br/>For the LORD JEHOVAH<br/>Is my strength and my song<br/>He also is become my salvation.",
     "events.lyrics.song4.chorus":
-      "Therefore with joy shall ye draw water\nOut of the wells of salvation. \nTherefore with joy shall ye draw water\nOut of the wells of salvation.",
+      "Therefore with joy shall ye draw water<br/>Out of the wells of salvation. <br/>Therefore with joy shall ye draw water<br/>Out of the wells of salvation.",
     "events.lyrics.song5.title": "Command me Lord",
     "events.lyrics.song5.verse1":
-      "Command me Lord\nCommand me Lord\nThat I may be a commander\n\nCommand me Lord\nTo lead battalions\nThat will turn mens heart\nBack to God",
+      "Command me Lord<br/>Command me Lord<br/>That I may be a commander<br/><br/>Command me Lord<br/>To lead battalions<br/>That will turn mens heart<br/>Back to God",
     "events.hero.subtitle2": "with signs following. Amen.' Mark 16:20 KJV",
     "events.hero.subtitle.span": " the word ",
     "events.hero.callToAction": "Explore our meetings",
@@ -1348,34 +1349,36 @@ export const ui = {
     "events.hero.subtitle1":
       "Opetuslapset rukoilivat ja jatkoivat Jumalan Sanassa. Mikä tätä seurasi? 'Opetuslapset lähtivät ja saarnasivat kaikkialla. Ja Herra toimi yhdessä heidän kanssaan vahvistaen",
     "events.lyrics.title": "Jesus Fest Kuopio laulut",
+    "events.lyrics.subtitle": "Alla tapahtuman laulut. Tapahtuman kuvauksen löydät osoitteesta ",
     chorus: "Kertosäe",
     verse: "Säkeistö",
     "events.lyrics.song1.title": "Oomme tulleet Siioniin",
     "events.lyrics.song1.verse1":
-      "Oomme tulleet Siioniin\nSiioniin\nSiioniin\n\nOomme tulleet Siioniin\nKohtaamaan Herraa",
-    "events.lyrics.song1.verse2": "Olen tullut Siioniin\nSiioniin\nSiioniin\n\nOlen tullut Siioniin\nKohtaamaan Herraa",
+      "Oomme tulleet Siioniin<br/>Siioniin<br/>Siioniin<br/><br/>Oomme tulleet Siioniin<br/>Kohtaamaan Herraa",
+    "events.lyrics.song1.verse2":
+      "Olen tullut Siioniin<br/>Siioniin<br/>Siioniin<br/><br/>Olen tullut Siioniin<br/>Kohtaamaan Herraa",
     "events.lyrics.song2.title": "Usko Jumalaan",
     "events.lyrics.song2.verse1":
-      "Usko Jumalaan kun yksinäisyys vaivaa\nHän näkee mihin sinun askeleet vievät\nHänen lapsena et koskaan ole yksin\nUsko Jumalaan, siis usko vaan.",
+      "Usko Jumalaan kun yksinäisyys vaivaa<br/>Hän näkee mihin sinun askeleet vievät<br/>Hänen lapsena et koskaan ole yksin<br/>Usko Jumalaan, siis usko vaan.",
     "events.lyrics.song2.verse2":
-      "Usko Jumalaan kun rukousvastaus viipyy,\nSinun pyyntöäs Hän ei voi unohtaa.\nOdota Herraa, luota Raamatun sanaan,\nUsko Jumalaan niin vastauksen saat.",
+      "Usko Jumalaan kun rukousvastaus viipyy<br/>Sinun pyyntöäs Hän ei voi unohtaa<br/>Odota Herraa, luota Raamatun sanaan<br/>Usko Jumalaan niin vastauksen saat.",
     "events.lyrics.song2.verse3":
-      "Usko Jumalaan sinun murheissasi\nHänen sydän tuntee sinun epätoivon, surun\nHeitä huolesi ja taakkasi Hänen ylleen\nJa jätä ne Hänelle, oi, jätä Hänelle.",
+      "Usko Jumalaan sinun murheissasi<br/>Hänen sydän tuntee sinun epätoivon, surun<br/>Heitä huolesi ja taakkasi Hänen ylleen<br/>Ja jätä ne Hänelle, oi, jätä Hänelle.",
     "events.lyrics.song2.verse4":
-      "Usko Jumalaan vaikka kaikki muu kaatuu,\nUsko Jumalaan hän pitää huolta lapsistaan.\nHän pysyy vaikka kaikki valtakunnat kaatuis,\nHän hallitsee valtaistuimellaan.",
+      "Usko Jumalaan vaikka kaikki muu kaatuu<br/>Usko Jumalaan hän pitää huolta lapsistaan<br/>Hän pysyy vaikka kaikki valtakunnat kaatuis<br/>Hän hallitsee valtaistuimellaan.",
     "events.lyrics.song2.chorus":
-      "Usko Jumalaan, valtaistuimella,\nUsko Jumalaan, Hän paimentaa omiaan,\nEi epäonnistu, vaan voittaja on\nUsko Jumalaan, siis usko vaan.",
+      "Usko Jumalaan, valtaistuimella,<br/>Usko Jumalaan, Hän paimentaa omiaan,<br/>Ei epäonnistu, vaan voittaja on<br/>Usko Jumalaan, siis usko vaan.",
     "events.lyrics.song3.title": "Nähkää sokeat",
     "events.lyrics.song3.verse1":
-      "Nähkää sokeat\nKuulkaa kuurot\nRammat kävelkää\nnimeen Jeesuksen\n\nSairaat parantuu\nKipu parantuu\nIhme tapahtuu nimeen Jeesuksen",
+      "Nähkää sokeat<br/>Kuulkaa kuurot<br/>Rammat kävelkää<br/>nimeen Jeesuksen<br/><br/>Sairaat parantuu<br/>Kipu parantuu<br/>Ihme tapahtuu nimeen Jeesuksen",
     "events.lyrics.song4.title": "Katso, Herra on pelastajani",
     "events.lyrics.song4.verse1":
-      "Katso, Herra on pelastajani.\nLuotan enkä pelkää.\nSillä Herra JEHOVA\non voimani, lauluni.\nHän tuli minulle pelastukseksi.",
+      "Katso, Herra on pelastajani.<br/>Luotan enkä pelkää.<br/>Sillä Herra JEHOVA<br/>on voimani, lauluni.<br/>Hän tuli minulle pelastukseksi.",
     "events.lyrics.song4.chorus":
-      "Siksi saatte ilolla nostaa vettä\npelastuksen lähtehistä. \nSiksi saatte ilolla nostaa vettä \npelastuksen lähtehistä",
+      "Siksi saatte ilolla nostaa vettä<br/>pelastuksen lähtehistä.<br/>Siksi saatte ilolla nostaa vettä<br/>pelastuksen lähtehistä",
     "events.lyrics.song5.title": "Komenna minua",
     "events.lyrics.song5.verse1":
-      "Komenna minua\nKomenna minua\nEttä voin olla komentaja\n\nKomenna minua\nJohtamaan joukkoja\nJotka kääntävät sydämet\nJumalaan",
+      "Komenna minua<br/>Komenna minua<br/>Että voin olla komentaja<br/><br/>Komenna minua<br/>Johtamaan joukkoja<br/>Jotka kääntävät sydämet<br/>Jumalaan",
     "events.hero.subtitle2": "sitä seuraavien merkkien kautta.' Amen. Mar 16:20 FINRK",
     "events.hero.subtitle.span": " sanan ",
     "events.hero.callToAction": "Tutustu tapaamisiimme",
