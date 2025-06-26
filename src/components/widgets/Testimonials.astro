@@ -19,22 +19,22 @@ const {
   isDark = false,
   classes = {},
   bg = await Astro.slots.render("bg"),
-  noAnimation = false,
+  animated = true,
 } = Astro.props as Testimonials;
 ---
 
 <WidgetWrapper
   id={id}
   isDark={isDark}
-  containerClass={`max-w-6xl mx-auto ${classes?.container ?? ""}`}
+  containerClass={`max-w-6xl xl:max-w-[1152px] mx-auto ${classes?.container ?? ""}`}
   bg={bg}
-  noAnimation={noAnimation}
+  animated={animated}
 >
   <Headline title={title} subtitle={subtitle} tagline={tagline} />
 
   <div
     class={twMerge(
-      `grid mx-auto gap-8 md:gap-y-12 ${
+      `grid mx-auto gap-8 md:gap-y-12 xl:gap-[32px] xl:gap-y-[48px] ${
         columns === 4
           ? "lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2"
           : columns === 3
@@ -50,31 +50,39 @@ const {
         testimonials.map(({ title, testimonials, name, job, image }, index) => (
           <div class="flex h-auto no-intersect">
             {/* <div class="flex h-auto intersect-once motion-safe:md:intersect:animate-fade motion-safe:md:opacity-0 intersect-quarter"> */}
-            <div class="flex flex-col p-4 md:p-6 rounded-md shadow-xl dark:shadow-none border dark:border-neutral-600">
-              {numbers && <p class="text-muted -mt-2 lg:-mt-4 lg:-ml-3">{index + 1}.</p>}
-              {title && <h2 class="text-lg font-medium leading-6 pb-4">{title}</h2>}
+            <div class="flex flex-col p-4 md:p-6 xl:p-[24px] rounded-md shadow-xl dark:shadow-none border dark:border-neutral-600">
+              {numbers && (
+                <p class="text-muted xl:text-[16px] xl:leading-[24px] -mt-2 lg:-mt-4 xl:-mt-[16px] lg:-ml-3 xl:-ml-[12px]">
+                  {index + 1}.
+                </p>
+              )}
+              {title && <h2 class="text-lg xl:text-[18px] xl:leading-[28px] font-medium pb-4 xl:pb-[16px]">{title}</h2>}
               {testimonials && Array.isArray(testimonials)
                 ? testimonials.map((testimonial) => (
                     <blockquote class="flex-auto">
-                      <p class={twMerge("text-muted", classes.testimonial)}>“{testimonial}”</p>
+                      <p class={twMerge("text-muted xl:text-[16px] xl:leading-[24px]", classes.testimonial)}>
+                        “{testimonial}”
+                      </p>
                     </blockquote>
                   ))
                 : testimonials && (
                     <blockquote class="flex-auto">
-                      <p class={twMerge("text-muted", classes.testimonial)}>“{testimonials}”</p>
+                      <p class={twMerge("text-muted xl:text-[16px] xl:leading-[24px]", classes.testimonial)}>
+                        “{testimonials}”
+                      </p>
                     </blockquote>
                   )}
 
-              <hr class="border-slate-600 my-4" />
+              <hr class="border-slate-600 my-4 xl:my-[16px]" />
 
               <div class="flex items-center">
                 {image && (
-                  <div class="h-10 w-10 rounded-full border border-slate-600">
+                  <div class="h-10 w-10 xl:h-[40px] xl:w-[40px] rounded-full border border-slate-600">
                     {typeof image === "string" ? (
                       <Fragment set:html={image} />
                     ) : (
                       <Image
-                        class="h-10 w-10 rounded-full border border-slate-600 min-w-full min-h-full"
+                        class="h-10 w-10 xl:h-[40px] xl:w-[40px] rounded-full border border-slate-600 min-w-full min-h-full"
                         width={40}
                         height={40}
                         widths={[400, 768]}
@@ -85,9 +93,15 @@ const {
                   </div>
                 )}
 
-                <div class="grow ml-3 rtl:ml-0 rtl:mr-3">
-                  {name && <p class={twMerge("text-base font-semibold", classes.name)}>{name}</p>}
-                  {job && <p class={twMerge("text-sm text-muted", classes.job)}>{job}</p>}
+                <div class="grow ml-3 xl:ml-[12px] rtl:ml-0 rtl:mr-3 xl:rtl:mr-[12px]">
+                  {name && (
+                    <p class={twMerge("text-base font-semibold xl:text-[16px] xl:leading-[24px]", classes.name)}>
+                      {name}
+                    </p>
+                  )}
+                  {job && (
+                    <p class={twMerge("text-sm text-muted xl:text-[14px] xl:leading-[20px]", classes.job)}>{job}</p>
+                  )}
                 </div>
               </div>
             </div>
@@ -97,7 +111,7 @@ const {
   </div>
   {
     callToAction && (
-      <div class="flex justify-center mx-auto w-fit mt-8 md:mt-12 font-medium">
+      <div class="flex justify-center mx-auto w-fit mt-8 md:mt-12 xl:mt-[48px] font-medium">
         <Button {...callToAction} />
       </div>
     )

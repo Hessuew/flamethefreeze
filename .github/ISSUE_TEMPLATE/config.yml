@@ -1,0 +1,22 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions & Discussions
+    url: https://github.com/urFIT-child/discussions
+    about: Please ask and answer questions here.
+  
+  # - name: 🤝 Contributing Guidelines
+  #   url: https://github.com/urFIT-child/blob/main/CONTRIBUTING.md
+  #   about: Please read our contributing guidelines before creating an issue
+    
+  # - name: 🔒 Security Issues
+  #   url: https://github.com/urFIT-child/security/policy
+  #   about: ⚠️ For security vulnerabilities, please send an email to security@urfit-child.com instead of opening a public issue
+    
+  # - name: 📚 Documentation
+  #   url: https://github.com/urFIT-child/wiki
+  #   about: Check if your question is answered in our documentation
+    
+  - name: 🐞 Known Issues
+    url: https://github.com/urFIT-child/issues
+    about: Check if your issue is already reported in our known issues list
+  

@@ -1,14 +1,13 @@
 ---
+import Image from "~/components/common/Image.astro";
 import Headline from "~/components/ui/Headline.astro";
 import ItemGrid from "~/components/ui/ItemGrid.astro";
 import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
-import Image from "~/components/common/Image.astro";
-import type { Features } from "~/types";
+import type { Features as Props } from "~/types";
 
 const {
   title = await Astro.slots.render("title"),
   subtitle = await Astro.slots.render("subtitle"),
-  subtitle2 = await Astro.slots.render("subtitle2"),
   tagline = await Astro.slots.render("tagline"),
   image,
   items = [],
@@ -18,31 +17,33 @@ const {
   isAfterContent,
 
   id,
+  animated = true,
   isDark = false,
   classes = {},
   bg = await Astro.slots.render("bg"),
-} = Astro.props as Features;
+} = Astro.props;
 ---
 
 <WidgetWrapper
   id={id}
+  animated={animated}
   isDark={isDark}
-  containerClass={`${isBeforeContent ? "md:pb-8 lg:pb-12" : ""} ${isAfterContent ? "pt-0 md:pt-0 lg:pt-0" : ""} ${
+  containerClass={`${isBeforeContent ? "md:pb-8 lg:pb-12 xl:pb-[48px]" : ""} ${isAfterContent ? "pt-0 md:pt-0 lg:pt-0 xl:pt-0" : ""} ${
     classes?.container ?? ""
   }`}
   bg={bg}
 >
-  <Headline title={title} subtitle={subtitle} subtitle2={subtitle2} tagline={tagline} classes={classes?.headline} />
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
 
   <div aria-hidden="true" class="aspect-w-16 aspect-h-7">
     {
       image && (
-        <div class="w-full h-80 object-cover rounded-xl mx-auto bg-gray-500 shadow-lg">
+        <div class="w-full h-80 xl:h-[320px] object-cover rounded-xl mx-auto bg-gray-500 shadow-lg">
           {typeof image === "string" ? (
             <Fragment set:html={image} />
           ) : (
             <Image
-              class="w-full h-80 object-cover rounded-xl mx-auto bg-gray-500 shadow-lg"
+              class="w-full h-80 xl:h-[320px] object-cover rounded-xl mx-auto bg-gray-500 shadow-lg"
               width="auto"
               height={320}
               widths={[400, 768]}
@@ -60,12 +61,13 @@ const {
     columns={columns}
     defaultIcon={defaultIcon}
     classes={{
-      container: "mt-12",
+      container: "mt-12 xl:mt-[48px]",
       panel: "max-w-full sm:max-w-md",
-      title: "text-lg font-semibold",
-      description: "mt-0.5",
-      icon: "flex-shrink-0 mt-1 text-primary w-6 h-6",
-      ...((classes?.items as unknown as Record<string, never>) ?? {}),
+      title: "text-lg xl:text-[20px] xl:leading-[28px] font-semibold",
+      description: "mt-0.5 xl:mt-[2px]",
+      // icon: 'flex-shrink-0 mt-1 text-secondary w-6 h-6',
+      icon: "flex-shrink-0 mt-1 xl:mt-[4px] text-primary w-6 xl:w-[24px] h-6 xl:h-[24px]",
+      ...((classes?.items as object) ?? {}),
     }}
   />
 </WidgetWrapper>

@@ -12,9 +12,14 @@ const { title = await Astro.slots.render("title"), subtitle = await Astro.slots.
 <section
   class="bg-secondary dark:bg-purple-900/40 not-prose intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
 >
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 text-md text-center font-medium">
+  <div
+    class="max-w-6xl xl:max-w-[1152px] mx-auto px-4 sm:px-6 py-4 xl:px-[24px] xl:py-[16px] text-base xl:text-[16px] xl:leading-[24px] text-center font-medium"
+  >
     <span class="font-bold text-white">
-      <Icon name="tabler:info-square" class="w-5 h-5 inline-block align-text-bottom text-white" />
+      <Icon
+        name="tabler:info-square"
+        class="w-5 h-5 xl:w-[20px] xl:h-[20px] inline-block align-text-bottom text-white"
+      />
       {title}
     </span>
     <span class="text-white">

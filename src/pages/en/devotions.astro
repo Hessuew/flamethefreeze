@@ -135,7 +135,7 @@ const t = useTranslations(lang);
 
   <!-- Ebook Widget *************** -->
 
-  <div class="w-full flex justify-center pb-10 h-[520px] lg:h-[640px]">
+  <div class="w-full flex justify-center pb-10 xl:pb-[40px] h-[520px] lg:h-[640px]">
     <iframe
       aria-label="Flame the Freeze pdf"
       src={lang === "en"
@@ -145,9 +145,5 @@ const t = useTranslations(lang);
       height="100%"
       allow="autoplay"
       class="max-w-2xl"></iframe>
-    <!-- <p> {t("devotions.ebook.text1")} <a class="hover:underline" href={lang === "en" ?
-      "https://drive.google.com/file/d/1D5npgHt176KLtaEir-OE61LcndzssEjp/preview" :
-      "https://drive.google.com/file/d/1JY5xC1_A24QFWG75GzI0ul1JAv1iBjIk/preview"}
-      target="_blank">{t("devotions.ebook.a")}</a > {t("devotions.ebook.text2")}</p> -->
   </div>
 </Layout>

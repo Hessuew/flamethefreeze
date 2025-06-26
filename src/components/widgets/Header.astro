@@ -1,55 +1,58 @@
 ---
-import { Icon } from "astro-icon/components";
-import Logo from "~/components/Logo.astro";
-import ToggleTheme from "~/components/common/ToggleTheme.astro";
 import ToggleMenu from "~/components/common/ToggleMenu.astro";
-import Button from "~/components/ui/Button.astro";
-
-import { getHomePermalink, getPermalink } from "~/utils/permalinks";
-import { trimSlash, getAsset } from "~/utils/permalinks";
-import type { CallToAction } from "~/types";
-import LanguagePicker from "../common/LanguagePicker.astro";
+import ToggleTheme from "~/components/common/ToggleTheme.astro";
+import Logo from "~/components/Logo.astro";
+import HeaderNavigation from "~/components/widgets/HeaderNavigation.astro";
+import { getHomePermalink, getPermalink, trimSlash } from "~/utils/permalinks";
+import type { ImageMetadata } from "astro";
+import { Icon } from "astro-icon/components";
+import LanguagePicker from "~/components/common/LanguagePicker.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { twMerge } from "tailwind-merge";
 import type { ui } from "~/i18n/ui";
 
 interface Link {
   text?: string;
+  description?: string;
   href?: string;
   ariaLabel?: string;
   icon?: string;
+  image?: {
+    src: ImageMetadata;
+    alt: string;
+  };
 }
 
-interface MenuLink extends Link {
+export interface MenuLink extends Link {
   links?: Array<MenuLink>;
 }
 
 export interface Props {
   id?: string;
   links?: Array<MenuLink>;
-  actions?: Array<CallToAction>;
+  classes?: Record<string, string>;
   isSticky?: boolean;
   isDark?: boolean;
   isFullWidth?: boolean;
   showToggleTheme?: boolean;
-  showLangPicker?: boolean;
-  showRssFeed?: boolean;
   position?: string;
 }
 
 const {
   id = "header",
   links = [],
-  actions = [],
   isSticky = false,
   isDark = false,
   isFullWidth = false,
   showToggleTheme = false,
-  showLangPicker = true,
-  showRssFeed = false,
-  position = "center",
+  position = "right",
+  classes = {},
 } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
+
+const { nav: navClass = "" } = classes;
+
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -65,70 +68,120 @@ const t = useTranslations(lang);
   <div class="absolute inset-0"></div>
   <div
     class:list={[
-      "relative text-default py-3 px-3 xl:px-6 mx-auto w-full",
+      "relative text-default py-1 px-3 lg:px-6 xl:py-[4px] xl:px-[24px] mx-auto w-full",
       {
-        "xl:flex xl:justify-between": position !== "center",
+        "lg:flex lg:justify-between": position !== "center",
       },
       {
-        "xl:grid xl:grid-cols-3 xl:items-center": position === "center",
+        "lg:grid lg:grid-cols-3 lg:items-center": position === "center",
       },
       {
-        "max-w-7xl": !isFullWidth,
+        "max-w-7xl xl:max-w-[1280px]": !isFullWidth,
       },
     ]}
   >
     <div class:list={[{ "mr-auto rtl:mr-0 rtl:ml-auto": position === "right" }, "flex justify-between"]}>
-      <a class="flex items-center" href={getHomePermalink()}>
+      <a class="flex items-center justify-center relative pt-2 lg:pt-0" href={getHomePermalink()}>
         <Logo />
       </a>
-      <div class="flex items-center xl:hidden">
+      <div class="flex items-center lg:hidden">
         <ToggleMenu />
       </div>
     </div>
     <nav
-      class="items-center w-full xl:w-auto hidden xl:flex xl:mx-5 text-default overflow-y-auto overflow-x-hidden xl:overflow-y-visible xl:overflow-x-auto xl:justify-self-center"
+      class={twMerge(
+        navClass,
+        "items-center w-full lg:w-auto hidden lg:flex lg:mx-5 xl:mx-[20px] text-default overflow-y-auto overflow-x-hidden lg:overflow-y-visible lg:overflow-x-auto lg:justify-self-center"
+      )}
       aria-label="Main navigation"
     >
+      <div class="flex justify-between items-center py-2 px-6 xl:py-[8px] xl:px-[24px] lg:hidden">
+        <LanguagePicker />
+        <ToggleTheme />
+      </div>
       <ul
-        class="flex flex-col xl:flex-row xl:self-center w-full xl:w-auto text-xl xl:text-[0.9375rem] tracking-[0.01rem] font-medium xl:justify-center"
+        class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] xl:text-[15px] xl:tracking-[0.16px] font-medium lg:justify-center"
       >
         {
-          links.map(({ text, href, links }) => (
+          links.map(({ text, href, links, icon, description }, index) => (
             <li class={links?.length ? "dropdown" : ""}>
               {links?.length ? (
                 <>
                   <button
                     type="button"
-                    class="hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap"
+                    class={twMerge(
+                      "w-full px-2.5 py-3 xl:px-[10px] xl:py-[12px] flex items-center whitespace-nowrap justify-between border-b lg:border-b-0 border-gray-100 dark:border-gray-800 group"
+                    )}
+                    data-nav-button
+                    id={`nav-button-${index}`}
+                    data-mobile-toggle={`mobile-section-${index}`}
                   >
-                    {text}{" "}
-                    <Icon name="tabler:chevron-down" class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden xl:inline" />
+                    <div class="flex items-center">
+                      <Icon
+                        name="tabler:chevron-down"
+                        class="w-5 h-5 mr-2 text-black dark:text-white transition-transform duration-200 lg:hidden mobile-chevron"
+                      />
+
+                      <span class="font-bold lg:font-semibold text-transparent bg-clip-text bg-gradient-to-r from-black to-black dark:from-white dark:to-white group-hover:from-orange-600 group-hover:to-yellow-500">
+                        {text ? t(text as keyof typeof ui.en) : text}
+                        <Icon
+                          name="tabler:point"
+                          class="text-black dark:text-white transition-transform duration-300 transform group-hover:scale-150 group-hover:text-orange-400 w-3.5 h-3.5 ml-0.5 xl:w-[14px] xl:h-[14px] xl:ml-[2px] rtl:ml-0 rtl:mr-0.5 hidden lg:inline"
+                        />
+                      </span>
+                    </div>
                   </button>
-                  <ul class="dropdown-menu xl:backdrop-blur-md dark:xl:bg-dark rounded xl:absolute pl-4 xl:pl-0 xl:hidden font-medium xl:bg-white/90 xl:min-w-[200px] drop-shadow-xl">
-                    {links.map(({ text: text2, href: href2 }) => (
-                      <li>
-                        <a
-                          class:list={[
-                            "first:rounded-t last:rounded-b xl:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap",
-                            { "aw-link-active": href2 === currentPath },
-                          ]}
-                          href={href2}
-                        >
-                          {text2}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+                  <div
+                    class="mobile-submenu hidden lg:hidden overflow-hidden transition-all duration-300 ease-in-out"
+                    data-mobile-content={`mobile-section-${index}`}
+                  >
+                    <div class="w-full">
+                      <ul class="py-2 space-y-2">
+                        {links.map(({ text: text2, href: href2, icon, description }) => (
+                          <li class="block lg:hidden">
+                            <a
+                              class:list={[
+                                "hover:text-primary py-2 px-4 block",
+                                { "aw-link-active": href2 === currentPath },
+                              ]}
+                              href={href2}
+                            >
+                              <div class="flex items-center gap-3 active:text-primary">
+                                {icon && <Icon name={icon} class="w-5 h-5 mt-0.5" />}
+                                <div>
+                                  <div class="font-medium">{text2 ? t(text2 as keyof typeof ui.en) : text2}</div>
+                                  {description && (
+                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                      {description ? t(description as keyof typeof ui.en) : description}
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
                 </>
               ) : (
                 <a
                   class:list={[
-                    "hover:text-link dark:hover:text-white px-4 py-3 flex items-center whitespace-nowrap",
+                    "font-bold lg:font-normal ml-[16px] lg:pl-0 hover:text-primary px-2.5 xl:px-[10px] py-3 xl:py-[12px] flex items-center whitespace-nowrap",
                     { "aw-link-active": href === currentPath },
+                    "border-b lg:border-b-0 border-gray-100 dark:border-gray-800",
+                    index === 2 && "mr-[10px]",
                   ]}
                   href={getPermalink(`${lang}/${href}`)}
                 >
-                  {text ? t(text as keyof typeof ui.en) : text}
+                  <div class="hidden lg:flex">{text ? t(text as keyof typeof ui.en) : text}</div>
+                  <div class="flex lg:hidden items-center gap-3 active:text-primary pl-0">
+                    {icon && <Icon name={icon} class="w-5 h-5 mt-0.5" />}
+                    <div>
+                      <div class="font-bold">{text}</div>
+                      {description && <div class="text-sm text-gray-500 dark:text-gray-400">{description}</div>}
+                    </div>
+                  </div>
                 </a>
               )}
             </li>
@@ -136,40 +189,133 @@ const t = useTranslations(lang);
         }
       </ul>
     </nav>
+    <HeaderNavigation links={links.filter((link) => link.links?.length)} currentPath={currentPath} />
     <div
       class:list={[
         { "ml-auto rtl:ml-0 rtl:mr-auto": position === "left" },
-        "hidden xl:self-center xl:flex items-center xl:mb-0 fixed w-full xl:w-auto xl:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 xl:p-0 xl:justify-self-end",
+        "hidden lg:self-center lg:flex items-center lg:mb-0 fixed w-full lg:w-auto lg:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 lg:p-0 lg:justify-self-end z-50",
       ]}
     >
-      <div class="items-center flex justify-between w-full xl:w-auto">
-        <div class="flex">
-          {showLangPicker && <LanguagePicker />}
-          {showToggleTheme && <ToggleTheme iconClass="w-6 h-6 xl:w-5 xl:h-5 xl:inline-block" />}
-          {
-            showRssFeed && (
-              <a
-                class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-                aria-label="RSS Feed"
-                href={getAsset("/rss.xml")}
-              >
-                <Icon name="tabler:rss" class="w-5 h-5" />
-              </a>
-            )
-          }
-        </div>
-        {
-          actions?.length ? (
-            <span class="ml-4 rtl:ml-0 rtl:mr-4">
-              {actions.map((btnProps) => (
-                <Button {...btnProps} class="ml-2 py-2.5 px-5.5 xl:px-6 font-semibold shadow-none text-sm w-auto" />
-              ))}
-            </span>
-          ) : (
-            ""
-          )
-        }
+      <div class="hidden lg:flex flex-none items-center w-full lg:w-auto gap-3 xl:gap-[12px]">
+        <LanguagePicker />
+        {showToggleTheme && <ToggleTheme />}
       </div>
     </div>
   </div>
 </header>
+
+<script>
+  function setupMobileMenu(): void {
+    const toggleButtons = document.querySelectorAll("[data-mobile-toggle]");
+
+    // Prevent theme toggle from closing the mobile menu
+    // Target the entire toggle theme component and all its children
+    const themeToggleContainer = document.querySelector("nav .group.relative");
+    if (themeToggleContainer) {
+      // Stop propagation on the entire container
+      themeToggleContainer.addEventListener("click", (e) => {
+        e.stopPropagation();
+      });
+
+      // Also target specific elements to ensure complete coverage
+      const themeToggleElements = themeToggleContainer.querySelectorAll("*");
+      themeToggleElements.forEach((element) => {
+        element.addEventListener("click", (e) => {
+          e.stopPropagation();
+        });
+      });
+    }
+
+    // Track which menu is currently open
+    let currentOpenMenu: HTMLElement | null = null;
+
+    // Function to safely toggle menu items
+    function toggleMenuItem(
+      button: Element | null,
+      content: HTMLElement,
+      chevron: Element | null,
+      forceClose?: boolean
+    ): void {
+      // Determine if we should show or hide
+      let shouldShow = true;
+
+      if (forceClose === true) {
+        // Force close mode
+        shouldShow = false;
+      } else if (content === currentOpenMenu) {
+        // If this is already open, we're closing it
+        shouldShow = false;
+      } else {
+        // Otherwise we're opening it
+        shouldShow = true;
+      }
+
+      if (shouldShow) {
+        // Update tracking of open menu
+        currentOpenMenu = content;
+
+        // Show content
+        content.classList.remove("hidden");
+        content.classList.add("border-b", "lg:border-b-0", "border-gray-100", "dark:border-gray-800");
+        // Set initial height to 0 then animate to full height
+        content.style.maxHeight = "0px";
+        // Force browser to recognize the change before animating
+        void window.getComputedStyle(content).maxHeight;
+        // Now set the actual height
+        requestAnimationFrame(() => {
+          content.style.maxHeight = `${content.scrollHeight}px`;
+        });
+        chevron?.classList.add("rotate-180");
+      } else {
+        // Update tracking - if we're closing the current open menu, set to null
+        if (content === currentOpenMenu) {
+          currentOpenMenu = null;
+        }
+
+        // Hide content
+        content.style.maxHeight = "0px";
+        chevron?.classList.remove("rotate-180");
+        content.classList.remove("border-b", "lg:border-b-0", "border-gray-100", "dark:border-gray-800");
+        // Add hidden class after transition completes
+        setTimeout(() => {
+          content.classList.add("hidden");
+        }, 300);
+      }
+    }
+
+    // The toggleMenuItem function handles all menu state management
+
+    toggleButtons.forEach((button) => {
+      const sectionId = button.getAttribute("data-mobile-toggle");
+      if (!sectionId) return;
+
+      const content = document.querySelector(`[data-mobile-content="${sectionId}"]`) as HTMLElement | null;
+      const chevron = button.querySelector(".mobile-chevron");
+
+      if (button && content) {
+        button.addEventListener("click", (e) => {
+          // Only handle click for mobile view
+          if (window.innerWidth >= 1024) return;
+
+          // Stop event propagation to prevent the menu from closing
+          e.stopPropagation();
+          e.preventDefault();
+
+          // Toggle this menu item - no need to close other menus as toggleMenuItem handles this
+          toggleMenuItem(button, content, chevron);
+        });
+      }
+    });
+  }
+
+  // Initialize when the DOM is loaded
+  document.addEventListener("DOMContentLoaded", setupMobileMenu);
+
+  // Handle window resize to ensure mobile menu stays open when switching themes
+  window.addEventListener("resize", () => {
+    // This is a no-op function that ensures the mobile menu state is preserved during theme changes
+  });
+
+  // Also initialize when Astro view transitions are complete
+  document.addEventListener("astro:page-load", setupMobileMenu);
+</script>

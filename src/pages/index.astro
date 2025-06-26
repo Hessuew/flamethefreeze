@@ -27,8 +27,7 @@ const t = useTranslations(lang);
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero>
-    <!-- <Hero tagline="Flame the Freeze — Where the Word of God and experience meets"> -->
+  <Hero tagline2="Flame the Freeze">
     <Fragment slot="title">
       {t("index.hero1.title1")}
       <br />
@@ -43,11 +42,11 @@ const t = useTranslations(lang);
 
     <Fragment slot="subtitle2">
       {t("index.hero0.title1")}
-      <GradientText class="font-bold text-lg" text={t("index.hero0.title.span1")} />
+      <GradientText class="font-bold text-lg xl:text-[18px] xl:leading-[28px]" text={t("index.hero0.title.span1")} />
       {t("index.hero0.title2")}
-      <GradientText class="font-bold text-lg" text={t("index.hero0.title.span2")} />
+      <GradientText class="font-bold text-lg xl:text-[18px] xl:leading-[28px]" text={t("index.hero0.title.span2")} />
       {t("index.hero0.title3")}
-      <GradientText class="font-bold text-lg" text={t("index.hero0.title.span3")} />
+      <GradientText class="font-bold text-lg xl:text-[18px] xl:leading-[28px]" text={t("index.hero0.title.span3")} />
       {t("index.hero0.title4")}
     </Fragment>
   </Hero>
@@ -59,10 +58,10 @@ const t = useTranslations(lang);
   <!-- Image Widget ******************* -->
 
   <div
-    class="relative m-auto max-w-5xl pt-10 intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+    class="relative m-auto max-w-5xl xl:max-w-[1024px] pt-10 xl:pt-[40px] intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
   >
     <Image
-      class="mx-auto rounded-md w-full"
+      class="mx-auto rounded-md xl:rounded-[6px] w-full"
       widths={[400, 768, 1024, 2040]}
       sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
       loading="eager"
@@ -139,7 +138,12 @@ const t = useTranslations(lang);
     isReversed
     tagline={t("index.content1.tagline")}
     title={t("index.content1.title")}
-    whiteText={true}
+    defaultIcon="tabler:check"
+    classes={{
+      title: "text-white",
+      iconClass: "bg-green-600 dark:green-700",
+      iconTitle: "text-white",
+    }}
     items={[
       { title: t("index.content1.items1") },
       { title: t("index.content1.items2") },
@@ -170,9 +174,10 @@ const t = useTranslations(lang);
   <Content
     defaultIcon="tabler:x"
     isAfterContent
-    whiteText={true}
+    defaultIcon="tabler:x"
     classes={{
       iconClass: "bg-red-600 dark:red-700",
+      iconTitle: "text-white",
     }}
     items={[
       { title: t("index.content2.items1") },
@@ -233,8 +238,8 @@ const t = useTranslations(lang);
 
   <!-- Separator section -->
 
-  <div class="w-full flex flex-col items-center px-10">
-    <div class="my-40 h-[1px] bg-neutral-400 w-full"></div>
+  <div class="w-full flex flex-col items-center px-10 xl:px-[40px]">
+    <div class="my-40 xl:my-[160px] h-[1px] bg-neutral-400 w-full"></div>
   </div>
 
   <!-- Content Widget **************** -->
@@ -248,9 +253,9 @@ const t = useTranslations(lang);
     </Fragment>
 
     <Fragment slot="content">
-      <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
+      <h3 class="text-xl tracking-tight sm:text-2xl xl:text-[24px] xl:leading-[32px] mb-2 xl:mb-[8px]">
         <span class="font-semibold text-black dark:text-white">{t("index.content3.subtitle")}</span>
-        <p class="text-lg sm:text-xl">
+        <p class="text-lg sm:text-xl xl:text-[20px] xl:leading-[28px]">
           <GradientText class="font-semibold" style2>
             "{t("index.content3.subtitle1")}"
           </GradientText>
@@ -272,9 +277,9 @@ const t = useTranslations(lang);
 
   <Content>
     <Fragment slot="content">
-      <h3 class="text-xl tracking-tight sm:text-2xl mb-2">
+      <h3 class="text-xl tracking-tight sm:text-2xl xl:text-[24px] xl:leading-[32px] mb-2 xl:mb-[8px]">
         <span class="font-semibold text-black dark:text-white">{t("index.content4.subtitle")}</span>
-        <p class="text-lg sm:text-xl">
+        <p class="text-lg sm:text-xl xl:text-[20px] xl:leading-[28px]">
           <GradientText class="font-semibold" style2>
             "{t("index.content4.subtitle1")}"
           </GradientText>

@@ -27,9 +27,14 @@ const {
 } = Astro.props as Props;
 ---
 
-<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-6xl mx-auto ${classes?.container ?? ""}`} bg={bg}>
+<WidgetWrapper
+  id={id}
+  isDark={isDark}
+  containerClass={`max-w-6xl xl:max-w-[1152px] mx-auto ${classes?.container ?? ""}`}
+  bg={bg}
+>
   <div
-    class="max-w-3xl mx-auto text-center p-6 rounded-md shadow-xl dark:shadow-none dark:border dark:border-slate-600"
+    class="max-w-3xl xl:max-w-[768px] mx-auto text-center p-6 xl:p-[24px] rounded-md xl:rounded-[6px] shadow-xl dark:shadow-none dark:border dark:border-slate-600"
   >
     <Headline
       title={title}
@@ -38,13 +43,14 @@ const {
       tagline={tagline}
       classes={{
         container: "mb-0 md:mb-0",
-        title: "text-4xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading",
-        subtitle: "text-xl text-muted dark:text-slate-400",
+        title:
+          "text-4xl md:text-4xl xl:text-[36px] xl:leading-[40px] font-bold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading",
+        subtitle: "text-xl xl:text-[20px] xl:leading-[28px] text-muted dark:text-slate-400",
       }}
     />
     {
       actions && (
-        <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 mt-6">
+        <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 xl:gap-[16px] mt-6 xl:mt-[24px]">
           {Array.isArray(actions) ? (
             actions.map((action) => (
               <div class="flex w-full sm:w-auto">
