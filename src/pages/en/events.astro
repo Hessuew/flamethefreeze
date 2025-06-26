@@ -3,14 +3,13 @@ import CallToAction from "~/components/widgets/CallToAction.astro";
 import Content from "~/components/widgets/Content.astro";
 import Features2 from "~/components/widgets/Features2.astro";
 import Hero from "~/components/widgets/Hero.astro";
-import Image from "~/components/common/Image.astro";
 import Layout from "~/layouts/PageLayout.astro";
 import Note from "~/components/widgets/Note.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import Steps2 from "~/components/widgets/Steps2.astro";
 import { YouTube } from "astro-embed";
-import roman_soldier from "~/assets/images/roman_soldier.webp";
+import Lyrics from "~/components/widgets/Lyrics.astro";
 
 const metadata = {
   title: "Events",
@@ -18,17 +17,45 @@ const metadata = {
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const songs = [
+  {
+    title: t("events.lyrics.song1.title"),
+    verses: [t("events.lyrics.song1.verse1"), t("events.lyrics.song1.verse2")],
+  },
+  {
+    title: t("events.lyrics.song2.title"),
+    verses: [
+      t("events.lyrics.song2.verse1"),
+      t("events.lyrics.song2.verse2"),
+      t("events.lyrics.song2.verse3"),
+      t("events.lyrics.song2.verse4"),
+    ],
+    chorus: t("events.lyrics.song2.chorus"),
+  },
+  {
+    title: t("events.lyrics.song3.title"),
+    verses: [t("events.lyrics.song3.verse1")],
+  },
+  {
+    title: t("events.lyrics.song4.title"),
+    verses: [t("events.lyrics.song4.verse1")],
+    chorus: t("events.lyrics.song4.chorus"),
+  },
+  {
+    title: t("events.lyrics.song5.title"),
+    verses: [t("events.lyrics.song5.verse1")],
+  },
+];
 ---
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <Hero tagline={t("events.hero.tagline")}>
     <Fragment slot="title">
-      {t("events.hero.title1")}
       <GradientText isHeading={true} text={t("events.hero.title.span1")} />
-      {t("events.hero.title2")}
+      {t("events.hero.title1")}{" "}
       <GradientText isHeading={true} text={t("events.hero.title.span2")} />
-      {t("events.hero.title3")}
     </Fragment>
     <Fragment slot="subtitle">
       {t("events.hero.subtitle1")}
@@ -36,30 +63,11 @@ const t = useTranslations(lang);
     </Fragment>
   </Hero>
 
-  <!-- Anchor to leave the scroll to leave Features2 title visible ************** -->
-
-  <div id="songs"></div>
-
   <!-- Note Widget ******************* -->
 
   <Note title={t("events.note.title")} subtitle={t("events.note.subtitle")} />
 
-  <!-- Image Widget ******************* -->
-
-  <div
-    class="relative m-auto max-w-5xl xl:max-w-[1024px] pt-10 xl:pt-[40px] intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
-  >
-    <Image
-      class="mx-auto rounded-md xl:rounded-[6px] w-full"
-      widths={[400, 768, 1024, 2040]}
-      sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-      loading="eager"
-      width={1024}
-      height={576}
-      src={roman_soldier}
-      alt={"Roman soldier crying a battle cry"}
-    />
-  </div>
+  <Lyrics id="songs" songs={songs} title={t("events.lyrics.title")} />
 
   <!-- Features2 Widget ************** -->
 
