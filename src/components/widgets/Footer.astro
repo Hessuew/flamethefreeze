@@ -20,18 +20,18 @@ const links = [
   {
     title: t("header.flameUp"),
     links: [
-      { text: t("header.link1"), href: getPermalink("/word") },
-      { text: t("header.link2"), href: getPermalink("/prayer") },
-      { text: t("header.link3"), href: getPermalink("/church") },
-      { text: t("header.link4"), href: getPermalink("/devotions") },
+      { text: t("header.link1"), href: "word" },
+      { text: t("header.link2"), href: "prayer" },
+      { text: t("header.link3"), href: "church" },
+      { text: t("header.link4"), href: "devotions" },
     ],
   },
   {
     title: t("header.resources"),
     links: [
-      { text: t("header.link5"), href: getPermalink("/witnesses") },
-      { text: t("header.link6"), href: getPermalink("/fivefold") },
-      { text: t("header.link7"), href: getPermalink("/events") },
+      { text: t("header.link5"), href: "witnesses" },
+      { text: t("header.link6"), href: "fivefold" },
+      { text: t("header.link7"), href: "events" },
     ],
   },
 ];
@@ -88,7 +88,7 @@ const { theme = "light" } = Astro.props;
                   <li class="mb-2 xl:mb-[8px]">
                     <a
                       class="text-muted hover:text-gray-700 hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
-                      href={href}
+                      href={getPermalink(`${lang}/${href}`)}
                     >
                       {text}
                     </a>

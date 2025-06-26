@@ -67,7 +67,17 @@ const songs = [
 
   <Note title={t("events.note.title")} subtitle={t("events.note.subtitle")} />
 
-  <Lyrics id="songs" songs={songs} title={t("events.lyrics.title")} />
+  <Lyrics id="songs" songs={songs} title={t("events.lyrics.title")}>
+    <Fragment slot="subtitle">
+      {t("events.lyrics.subtitle")}<a
+        class="text-blue-600 dark:text-blue-600 hover:underline"
+        href="https://www.rukouksenseurakunta.fi/#tapahtumat"
+        target="_blank"
+      >
+        https://www.rukouksenseurakunta.fi/
+      </a>
+    </Fragment>
+  </Lyrics>
 
   <!-- Features2 Widget ************** -->
 
