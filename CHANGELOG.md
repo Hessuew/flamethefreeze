@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.13.1](https://github.com/Hessuew/flamethefreeze/compare/v3.13.0...v3.13.1) (2025-06-26)
+
+
+### Bug Fixes
+
+* display first lyrics panel by default ([#193](https://github.com/Hessuew/flamethefreeze/issues/193)) ([fd32f96](https://github.com/Hessuew/flamethefreeze/commit/fd32f96540d2c4bca7169e14cfb19630a2f28506))
+
 ## [3.13.0](https://github.com/Hessuew/flamethefreeze/compare/v3.12.0...v3.13.0) (2025-06-26)
 
 
