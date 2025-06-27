@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.13.2](https://github.com/Hessuew/flamethefreeze/compare/v3.13.1...v3.13.2) (2025-06-27)
+
+
+### Bug Fixes
+
+* lyrics initialization bug fix ([670c061](https://github.com/Hessuew/flamethefreeze/commit/670c06106927f53fd62126412fb8e017d1dd9f8c))
+* update lyrics panel init and dark mode background color ([#198](https://github.com/Hessuew/flamethefreeze/issues/198)) ([fc288ab](https://github.com/Hessuew/flamethefreeze/commit/fc288ab85680e85f80f243886d9fc64750f11944))
+
 ## [3.13.1](https://github.com/Hessuew/flamethefreeze/compare/v3.13.0...v3.13.1) (2025-06-26)
 
 
