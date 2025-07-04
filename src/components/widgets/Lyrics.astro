@@ -191,30 +191,13 @@ const t = useTranslations(lang);
 
   // Initialize navigation when the DOM is ready and after each page navigation
   function initializeNavigation() {
-    // Use a small delay and retry mechanism to ensure elements are available
-    const trySetupLyrics = (attempts = 0) => {
-      const maxAttempts = 10;
-      const lyricsButtonsContainer = document.getElementById("lyrics-buttons");
-      const lyricsContentContainer = document.getElementById("lyrics-content");
-      
-      if (lyricsButtonsContainer && lyricsContentContainer) {
-        setupLyrics();
-      } else if (attempts < maxAttempts) {
-        // Retry after a short delay
-        setTimeout(() => trySetupLyrics(attempts + 1), 50);
-      }
-    };
-
     if (document.readyState === "loading") {
-      document.addEventListener("DOMContentLoaded", () => trySetupLyrics());
+      document.addEventListener("DOMContentLoaded", setupLyrics);
     } else {
-      // Add a small delay to ensure elements are rendered
-      setTimeout(() => trySetupLyrics(), 10);
+      setupLyrics();
     }
   }
 
   initializeNavigation();
   document.addEventListener("astro:page-load", initializeNavigation);
-  // Also listen for astro:after-swap as a fallback
-  document.addEventListener("astro:after-swap", initializeNavigation);
 </script>
