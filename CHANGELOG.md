@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.14.0](https://github.com/Hessuew/flamethefreeze/compare/v3.13.2...v3.14.0) (2025-07-04)
+
+
+### Features
+
+* add zoom verification page ([ae26ded](https://github.com/Hessuew/flamethefreeze/commit/ae26dedeba893e824d22a5e030c1c29868808f0a))
+
+
+### Bug Fixes
+
+* simplify lyrics navigation initialization and add Zoom verification ([#203](https://github.com/Hessuew/flamethefreeze/issues/203)) ([b938ca8](https://github.com/Hessuew/flamethefreeze/commit/b938ca8f7ac868b3a6620c1a7f29901aa6ff71f8))
+
 ## [3.13.2](https://github.com/Hessuew/flamethefreeze/compare/v3.13.1...v3.13.2) (2025-06-27)
 
 
