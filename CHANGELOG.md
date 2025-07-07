@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.14.1](https://github.com/Hessuew/flamethefreeze/compare/v3.14.0...v3.14.1) (2025-07-07)
+
+
+### Bug Fixes
+
+* update Prayer Church URL and Zoom meeting links ([#208](https://github.com/Hessuew/flamethefreeze/issues/208)) ([de89f3b](https://github.com/Hessuew/flamethefreeze/commit/de89f3bc43639386ecc160f8a2ff2ff323a7917d))
+
 ## [3.14.0](https://github.com/Hessuew/flamethefreeze/compare/v3.13.2...v3.14.0) (2025-07-04)
 
 
