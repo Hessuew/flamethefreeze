@@ -2,18 +2,24 @@
 import Layout from "~/layouts/PageLayout.astro";
 
 import Hero from "~/components/widgets/Hero.astro";
-import Image from "~/components/common/Image.astro";
-import Note from "~/components/widgets/Note.astro";
+import prayer from "~/assets/images/prayer.webp";
+import word from "~/assets/images/word.webp";
+import derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
+import kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
+import koinonia from "~/assets/images/ministries/fire_of_god_and_fire_for_god-koinonia.webp";
+import prayer_church from "~/assets/images/ministries/fire_of_god_and_fire_for_god-prayer_church.webp";
+import { TextAnimate } from "~/components/magicui/text-animate";
 import Features from "~/components/widgets/Features.astro";
-import Features3 from "~/components/widgets/Features3.astro";
-import Content from "~/components/widgets/Content.astro";
-import GradientText from "~/components/ui/GradientText.astro";
+import StatsModern from "~/components/widgets/StatsModern.astro";
+import CTAModern from "~/components/widgets/CTAModern.astro";
+import ImageShowcase from "~/components/widgets/ImageShowcase.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import city_in_flame from "~/assets/images/city_in_flame.webp";
 import tree1 from "~/assets/images/tree1.webp";
 import tree2 from "~/assets/images/tree2.webp";
-
-import { YouTube } from "astro-embed";
+import Button from "~/components/ui/Button.astro";
+import { BlurFade } from "~/components/magicui/blur-fade";
+import VideoShowcase from "~/components/widgets/VideoShowcase.astro";
 
 const metadata = {
   title: "Flame the Freeze — Where the Word of God and experience meets",
@@ -26,51 +32,224 @@ const t = useTranslations(lang);
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
+  <div class="min-h-screen">
+    <Hero classes={{ containerClass: "text-left" }}>
+      <Fragment slot="title">
+        <TextAnimate
+          client:load
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading"
+          animation="blurInUp"
+          delay={1}
+          duration={0.6}
+          by="character"
+          text="Fire of God and"
+        />
 
-  <Hero tagline2="Flame the Freeze">
-    <Fragment slot="title">
-      {t("index.hero1.title1")}
-      <br />
-      <GradientText text={t("index.hero1.title.span")} />
-    </Fragment>
+        <TextAnimate
+          client:load
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading"
+          animation="blurInUp"
+          delay={1.6}
+          duration={0.6}
+          by="character"
+          text="fire for God in 2025?"
+        />
 
-    <Fragment slot="subtitle">
-      <span class="font-semibold">{t("index.hero1.subtitle.span1")}</span>
-      {t("index.hero1.subtitle1")}
-      <GradientText class="font-bold" text={t("index.hero1.subtitle.span2")} />{t("index.hero1.subtitle2")}
-    </Fragment>
+        <TextAnimate
+          client:load
+          className="text-xl xl:text-[20px] xl:leading-[28px] font-normal tracking-normal  text-muted dark:text-slate-300 "
+          animation="blurInUp"
+          delay={3}
+          duration={0.6}
+          by="line"
+          text="Yep! It can be done. Experience the fire of God\nand fire for God now! Lets go!"
+        />
+      </Fragment>
 
-    <Fragment slot="subtitle2">
-      {t("index.hero0.title1")}
-      <GradientText class="font-bold text-lg xl:text-[18px] xl:leading-[28px]" text={t("index.hero0.title.span1")} />
-      {t("index.hero0.title2")}
-      <GradientText class="font-bold text-lg xl:text-[18px] xl:leading-[28px]" text={t("index.hero0.title.span2")} />
-      {t("index.hero0.title3")}
-      <GradientText class="font-bold text-lg xl:text-[18px] xl:leading-[28px]" text={t("index.hero0.title.span3")} />
-      {t("index.hero0.title4")}
-    </Fragment>
-  </Hero>
-
-  <!-- Note Widget ******************* -->
-
-  <Note title={t("index.note.text1")} subtitle={t("index.note.text2")} />
-
-  <!-- Image Widget ******************* -->
-
-  <div
-    class="relative m-auto max-w-5xl xl:max-w-[1024px] pt-10 xl:pt-[40px] intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
-  >
-    <Image
-      class="mx-auto rounded-md xl:rounded-[6px] w-full"
-      widths={[400, 768, 1024, 2040]}
-      sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
-      loading="eager"
-      width={1024}
-      height={576}
-      src={city_in_flame}
-      alt={"Frozen city is melting by fire"}
-    />
+      <Fragment slot="subtitle">
+        <div class="flex gap-2">
+          <BlurFade client:load delay={4.2} direction="up" inView>
+            <Button class="rounded-sm h-10" text="Yes please!" href="#" variant="secondary" />
+          </BlurFade>
+          <BlurFade client:load delay={4.8} direction="up" inView>
+            <Button class="rounded-sm h-10" text="No thank you" href="#" variant="secondary" />
+          </BlurFade>
+        </div>
+      </Fragment>
+    </Hero>
   </div>
+
+  <!-- Image Showcase Widget ********* -->
+
+  <ImageShowcase
+    id="what"
+    tagline="What"
+    title="What is the fire of God?<br/>And what is fire for God?"
+    layout="featured"
+    classes={{
+      headline: {
+        subtitle: "max-w-md",
+      },
+    }}
+    images={[
+      {
+        src: tree2,
+        alt: "",
+        title: "Fire of God: God is consuming fire<br/>His word was fire in my heart",
+        description:
+          "God's word, and God himself, is the fire. It transferred from speakers heart to you like when Jesus spake to the disciples on the way to Emmaus.",
+      },
+      {
+        src: city_in_flame,
+        alt: "",
+        title: "Fire for God: The tangible presence of God in a person's life",
+        description:
+          "People's lives are changed by the fire of God that is in this person's life. He is not the fire by he is on fire for God.",
+      },
+      {
+        src: tree1,
+        alt: "",
+        title: "There is fire > there is life. Fire is never dead",
+        description:
+          "He shall be like a tree planted by the rivers of water, that bringeth his fruit in due season; his leaf shall not wither; and whatsoever he doeth shall prosper.",
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <span class="text-white">"Spirit filled souls are ablaze for God. </span>
+      They love with a love that glows. They serve with a faith that kindles. They serve with a devotion that consumes. They
+      hate sin with fierceness that burns. They rejoice with a joy that radiates. Love is perfected in the fire of God."
+      ~ Samuel Chadwick
+    </Fragment>
+  </ImageShowcase>
+
+  <!-- Services Widget *************** -->
+
+  <ImageShowcase
+    id="how"
+    tagline="How"
+    title="How can I receive<br/>the fire of God?"
+    type={3}
+    classes={{
+      headline: {
+        subtitle: "mx-0 max-w-md",
+      },
+    }}
+    images={[
+      {
+        title: "Right company",
+        description: "Join a company where the fire already is.",
+        src: tree1,
+        features: ["Log in a campfire", '"They prayed in one accord"'],
+      },
+      {
+        title: "Prayer",
+        description: "While he prayed his countenance altered.",
+        src: prayer,
+        features: ["Heartfelt / deep", "Fervent / passionate"],
+      },
+      {
+        title: "The Word",
+        description: "The Word of God is quick and powerful.",
+        src: word,
+        features: ["Setting the hearts on fire", "Revelation of Spirit changing lives"],
+      },
+      {
+        icon: true,
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <span class="text-white">The fire is not for a select few, but for all who believe.</span>
+      <br class="hidden md:block" />
+      For the promise is unto you, and to your children, and to all that are afar off, even as many as the Lord our God shall
+      call.
+    </Fragment>
+  </ImageShowcase>
+
+  <VideoShowcase
+    id="where"
+    tagline="Where"
+    title="Where can I receive<br/>the fire of God?"
+    type={4}
+    classes={{
+      headline: {
+        subtitle: "mx-0 max-w-md",
+      },
+    }}
+    videos={[
+      {
+        title: "Prayer Church - Flame the Freeze",
+        link: "#",
+        description: '"To open their eyes ... and from the power of Satan unto God."',
+        src: prayer_church,
+        features: ["Mystery of godliness unfolded", "Prayer", "Wisdom"],
+      },
+      {
+        title: "Koinonia",
+        link: "#",
+        description: "Intimacy | Partnership | Fellowship",
+        src: koinonia,
+        features: ["Balanced content of all subjects", "People of fire, who are relevant in this world"],
+      },
+      {
+        title: "Kenneth Hagin - Rhema",
+        link: "#",
+        description: "Go and teach my people faith",
+        src: kenneth_hagin,
+        objectPosition: "top center",
+        features: ["Faith", "Healing"],
+      },
+      {
+        title: "Derek Prince Ministries",
+        link: "#",
+        description: "Reaching the unreached, and teaching the untaught.",
+        src: derek_prince,
+        objectPosition: "top center",
+        features: ["Foundational pillars", "Deliverance / Curses", "Many other topics"],
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <span class="text-white">To be on fire for God you need a place where the fire of god is.</span>
+      Below are some'(example list, not exhaustive) ministries, and categories of what God has empowered them to do.
+    </Fragment>
+  </VideoShowcase>
+
+  <!-- Stats Widget ***************** -->
+
+  <StatsModern
+    id="stats"
+    tagline="How"
+    title="God's Faithfulness in Numbers"
+    subtitle="Witness the incredible impact of God's power through our ministry."
+    stats={[
+      {
+        amount: "500+",
+        title: "Lives Transformed",
+        description: "People touched by God's power",
+        icon: "tabler:users",
+      },
+      {
+        amount: "50+",
+        title: "Healing Testimonies",
+        description: "Miraculous healings witnessed",
+        icon: "tabler:heart-plus",
+      },
+      {
+        amount: "25+",
+        title: "Countries Reached",
+        description: "Global ministry impact",
+        icon: "tabler:world",
+      },
+      {
+        amount: "10+",
+        title: "Years of Ministry",
+        description: "Faithful service to God",
+        icon: "tabler:calendar-event",
+      },
+    ]}
+  />
 
   <!-- Features Widget *************** -->
 
@@ -110,192 +289,29 @@ const t = useTranslations(lang);
         description: t("index.features1.items6.description"),
         icon: "tabler:users-group",
       },
-      {
-        title: t("index.features1.items7.title"),
-        description: t("index.features1.items7.description"),
-        icon: "tabler:heart",
-      },
     ]}
   />
 
-  <!-- Features3 Widget ******************* -->
+  <!-- Call to Action Widget ********* -->
 
-  <Features3>
-    <Fragment slot="subtitle">
-      {t("index.features3-1.subtitle1")}
-      <span class="underline">
-        {t("index.features3-1.subtitle2")}
-      </span>
-      <br />
-      <br />
-      {t("index.features3-1.subtitle3")}
-    </Fragment>
-  </Features3>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    tagline={t("index.content1.tagline")}
-    title={t("index.content1.title")}
-    defaultIcon="tabler:check"
-    classes={{
-      title: "text-white",
-      iconClass: "bg-green-600 dark:green-700",
-      iconTitle: "text-white",
-    }}
-    items={[
-      { title: t("index.content1.items1") },
-      { title: t("index.content1.items2") },
-      { title: t("index.content1.items3") },
-      { title: t("index.content1.items4") },
-      { title: t("index.content1.items5") },
-      { title: t("index.content1.items6") },
-      { title: t("index.content1.items7") },
+  <CTAModern
+    id="cta"
+    tagline="Ready to Experience God?"
+    title="Step Into Your Divine Destiny"
+    subtitle="Don't wait another moment. God is calling you to experience His power and love in a deeper way. Join us and discover what He has in store for your life."
+    actions={[
+      {
+        variant: "primary",
+        text: "Join Our Ministry",
+        href: "#contact",
+        icon: "tabler:arrow-right",
+      },
+      {
+        variant: "secondary",
+        text: "Watch Testimonies",
+        href: "#testimonies",
+        icon: "tabler:play",
+      },
     ]}
-    image={{
-      src: tree1,
-      alt: "Image of Amazon forest",
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-xl font-semibold tracking-tight text-white sm:text-2xl mb-2">
-        {t("index.content1.content")}
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-neutral-800 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    defaultIcon="tabler:x"
-    isAfterContent
-    defaultIcon="tabler:x"
-    classes={{
-      iconClass: "bg-red-600 dark:red-700",
-      iconTitle: "text-white",
-    }}
-    items={[
-      { title: t("index.content2.items1") },
-      { title: t("index.content2.items2") },
-      { title: t("index.content2.items3") },
-      { title: t("index.content2.items4") },
-      { title: t("index.content2.items5") },
-      { title: t("index.content2.items6") },
-      { title: t("index.content2.items7") },
-    ]}
-    image={{
-      src: tree2,
-      alt: "Image of California wildfire",
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-xl font-semibold tracking-tight text-white sm:text-2xl mb-2">
-        {t("index.content2.content")}
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-neutral-800 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Features3 Widget ******************* -->
-
-  <Features3 subtitle={t("index.features3-2.subtitle")} />
-
-  <!-- Hero Widget ******************* -->
-
-  <Hero>
-    <Fragment slot="title">
-      {t("index.hero2.title")}
-      <GradientText text={t("index.hero2.title.span")} />
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      {t("index.hero2.subtitle1")}
-      <GradientText class="font-bold" text={t("index.hero2.subtitle.span")} />
-      {t("index.hero2.subtitle2")}
-      <br />
-      <br />
-      {t("index.hero2.subtitle3")}
-    </Fragment>
-  </Hero>
-
-  <!-- Hero Widget ******************* -->
-
-  <Hero subtitle={t("index.hero3.subtitle")}>
-    <Fragment slot="title">
-      {t("index.hero3.title1")}
-      <GradientText text={t("index.hero3.title.span")} />
-      {t("index.hero3.title2")}
-    </Fragment>
-  </Hero>
-
-  <!-- Separator section -->
-
-  <div class="w-full flex flex-col items-center px-10 xl:px-[40px]">
-    <div class="my-40 xl:my-[160px] h-[1px] bg-neutral-400 w-full"></div>
-  </div>
-
-  <!-- Content Widget **************** -->
-
-  <Content tagline={t("index.content3.tagline")} isReversed>
-    <Fragment slot="title">
-      {t("index.content3.title1")}<br />
-      <GradientText class="italic pr-3" text={t("index.content3.title.span1")} /><br />
-      {t("index.content3.title2")}
-      <!-- <GradientText text={t("index.content3.title.span2")} /> -->
-    </Fragment>
-
-    <Fragment slot="content">
-      <h3 class="text-xl tracking-tight sm:text-2xl xl:text-[24px] xl:leading-[32px] mb-2 xl:mb-[8px]">
-        <span class="font-semibold text-black dark:text-white">{t("index.content3.subtitle")}</span>
-        <p class="text-lg sm:text-xl xl:text-[20px] xl:leading-[28px]">
-          <GradientText class="font-semibold" style2>
-            "{t("index.content3.subtitle1")}"
-          </GradientText>
-          <br />
-          <br />
-          <span class="text-black dark:text-white">
-            {t("index.content3.subtitle2")}
-          </span>
-        </p>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="image">
-      <div class="relative">
-        <YouTube id="Z1J0yjSdiVY" title="Dr. Osaze's testimony" />
-      </div>
-    </Fragment>
-  </Content>
-
-  <Content>
-    <Fragment slot="content">
-      <h3 class="text-xl tracking-tight sm:text-2xl xl:text-[24px] xl:leading-[32px] mb-2 xl:mb-[8px]">
-        <span class="font-semibold text-black dark:text-white">{t("index.content4.subtitle")}</span>
-        <p class="text-lg sm:text-xl xl:text-[20px] xl:leading-[28px]">
-          <GradientText class="font-semibold" style2>
-            "{t("index.content4.subtitle1")}"
-          </GradientText>
-          <br />
-          <br />
-          <span class="text-black dark:text-white">
-            {t("index.content4.subtitle2")}
-          </span>
-        </p>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="image">
-      <div class="relative">
-        <YouTube id="g_y65xR5OYE" title="Excerpt from Jesus Fest Kuopio" />
-      </div>
-    </Fragment>
-  </Content>
+  />
 </Layout>

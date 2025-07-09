@@ -108,6 +108,7 @@ export interface Headline {
   subtitle2?: string;
   tagline?: string;
   tagline2?: string;
+  type?: number;
   classes?: Record<string, string>;
   hrefID?: string;
 }
@@ -127,8 +128,9 @@ interface Social {
 }
 
 export interface Stat {
-  amount?: number;
+  amount?: string;
   title?: string;
+  description?: string;
   icon?: string;
 }
 
@@ -316,3 +318,48 @@ export interface Content extends Headline, Widget {
 }
 
 export interface Contact extends Headline, Form, Widget {}
+
+export interface Services extends Omit<Headline, "classes">, Widget {
+  services?: Array<{
+    title: string;
+    description: string;
+    icon: string;
+    features?: Array<string>;
+  }>;
+}
+
+export interface Gallery extends Omit<Headline, "classes">, Widget {
+  images?: Array<{
+    src?: string;
+    alt?: string;
+    title?: string;
+    description?: string;
+    height?: number;
+  }>;
+  columns?: number;
+}
+
+export interface ImageShowcase extends Omit<Headline, "classes">, Widget {
+  images?: Array<{
+    src?: string | ImageMetadata;
+    alt?: string;
+    title?: string;
+    description?: string;
+    height?: number;
+    features?: Array<string>;
+    icon?: boolean;
+  }>;
+  layout?: "masonry" | "grid" | "featured";
+}
+
+export interface VideoShowcase extends Omit<Headline, "classes">, Widget {
+  videos?: Array<{
+    src: string | ImageMetadata;
+    alt?: string;
+    title: string;
+    description?: string;
+    features?: Array<string>;
+    link: string;
+    objectPosition?: string;
+  }>;
+}

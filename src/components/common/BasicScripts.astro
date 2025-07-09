@@ -10,11 +10,12 @@ import { UI } from "astrowind:config";
   window.basic_script = true;
 
   function applyTheme(theme) {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    document.documentElement.classList.add("dark");
+    // if (theme === "dark") {
+    //   document.documentElement.classList.add("dark");
+    // } else {
+    //   document.documentElement.classList.remove("dark");
+    // }
   }
 
   function getThemePreference() {

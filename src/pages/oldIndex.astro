@@ -1,0 +1,318 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+
+import Hero from "~/components/widgets/Hero.astro";
+import { TextAnimate } from "~/components/magicui/text-animate";
+import Image from "~/components/common/Image.astro";
+import Note from "~/components/widgets/Note.astro";
+import Features from "~/components/widgets/Features.astro";
+import Features3 from "~/components/widgets/Features3.astro";
+import Content from "~/components/widgets/Content.astro";
+import GradientText from "~/components/ui/GradientText.astro";
+import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import city_in_flame from "~/assets/images/city_in_flame.webp";
+import tree1 from "~/assets/images/tree1.webp";
+import tree2 from "~/assets/images/tree2.webp";
+
+import { YouTube } from "astro-embed";
+
+const metadata = {
+  title: "Flame the Freeze — Where the Word of God and experience meets",
+  ignoreTitleTemplate: true,
+};
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero classes={{ containerClass: "text-left" }}>
+    <Fragment slot="title">
+      <TextAnimate
+        client:load
+        className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading"
+        animation="blurInUp"
+        delay={1}
+        duration={0.6}
+        by="character"
+        text="Fire of God and power of"
+      />
+
+      <TextAnimate
+        client:load
+        className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading"
+        animation="blurInUp"
+        delay={1.6}
+        duration={0.6}
+        by="character"
+        text="the Holy Spirit in 2025"
+      />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <!-- <span class="font-semibold">{t("index.hero1.subtitle.span1")}</span>
+      {t("index.hero1.subtitle1")}
+      <GradientText class="font-bold" text={t("index.hero1.subtitle.span2")} />{t("index.hero1.subtitle2")} -->
+
+      <TextAnimate
+        client:load
+        className="text-xl xl:text-[20px] xl:leading-[28px] text-muted dark:text-slate-300 "
+        animation="blurInUp"
+        delay={2.4}
+        duration={0.6}
+        by="text"
+        text="Fire of God and the power of the Holy Spirit can be experienced in today.\nDo you want to experience them right now?"
+      />
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <Note title={t("index.note.text1")} subtitle={t("index.note.text2")} />
+
+  <!-- Image Widget ******************* -->
+
+  <div
+    class="relative m-auto max-w-5xl xl:max-w-[1024px] pt-10 xl:pt-[40px] intersect-once intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+  >
+    <Image
+      class="mx-auto rounded-md xl:rounded-[6px] w-full"
+      widths={[400, 768, 1024, 2040]}
+      sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
+      loading="eager"
+      width={1024}
+      height={576}
+      src={city_in_flame}
+      alt={"Frozen city is melting by fire"}
+    />
+  </div>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline={t("index.features1.tagline")}
+    title={t("index.features1.title")}
+    subtitle={t("index.features1.subtitle")}
+    items={[
+      {
+        title: t("index.features1.items1.title"),
+        description: t("index.features1.items1.description"),
+        icon: "tabler:alarm",
+      },
+      {
+        title: t("index.features1.items2.title"),
+        description: t("index.features1.items2.description"),
+        icon: "tabler:snowflake-off",
+      },
+      {
+        title: t("index.features1.items3.title"),
+        description: t("index.features1.items3.description"),
+        icon: "tabler:flame",
+      },
+      {
+        title: t("index.features1.items4.title"),
+        description: t("index.features1.items4.description"),
+        icon: "tabler:rocket",
+      },
+      {
+        title: t("index.features1.items5.title"),
+        description: t("index.features1.items5.description"),
+        icon: "tabler:barrier-block-off",
+      },
+      {
+        title: t("index.features1.items6.title"),
+        description: t("index.features1.items6.description"),
+        icon: "tabler:users-group",
+      },
+      {
+        title: t("index.features1.items7.title"),
+        description: t("index.features1.items7.description"),
+        icon: "tabler:heart",
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ******************* -->
+
+  <Features3>
+    <Fragment slot="subtitle">
+      {t("index.features3-1.subtitle1")}
+      <span class="underline">
+        {t("index.features3-1.subtitle2")}
+      </span>
+      <br />
+      <br />
+      {t("index.features3-1.subtitle3")}
+    </Fragment>
+  </Features3>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    tagline={t("index.content1.tagline")}
+    title={t("index.content1.title")}
+    defaultIcon="tabler:check"
+    classes={{
+      title: "text-white",
+      iconClass: "bg-green-600 dark:green-700",
+      iconTitle: "text-white",
+    }}
+    items={[
+      { title: t("index.content1.items1") },
+      { title: t("index.content1.items2") },
+      { title: t("index.content1.items3") },
+      { title: t("index.content1.items4") },
+      { title: t("index.content1.items5") },
+      { title: t("index.content1.items6") },
+      { title: t("index.content1.items7") },
+    ]}
+    image={{
+      src: tree1,
+      alt: "Image of Amazon forest",
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-xl font-semibold tracking-tight text-white sm:text-2xl mb-2">
+        {t("index.content1.content")}
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-neutral-800 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    defaultIcon="tabler:x"
+    isAfterContent
+    defaultIcon="tabler:x"
+    classes={{
+      iconClass: "bg-red-600 dark:red-700",
+      iconTitle: "text-white",
+    }}
+    items={[
+      { title: t("index.content2.items1") },
+      { title: t("index.content2.items2") },
+      { title: t("index.content2.items3") },
+      { title: t("index.content2.items4") },
+      { title: t("index.content2.items5") },
+      { title: t("index.content2.items6") },
+      { title: t("index.content2.items7") },
+    ]}
+    image={{
+      src: tree2,
+      alt: "Image of California wildfire",
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-xl font-semibold tracking-tight text-white sm:text-2xl mb-2">
+        {t("index.content2.content")}
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-neutral-800 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Features3 Widget ******************* -->
+
+  <Features3 subtitle={t("index.features3-2.subtitle")} />
+
+  <!-- Hero Widget ******************* -->
+
+  <Hero>
+    <Fragment slot="title">
+      {t("index.hero2.title")}
+      <GradientText text={t("index.hero2.title.span")} />
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      {t("index.hero2.subtitle1")}
+      <GradientText class="font-bold" text={t("index.hero2.subtitle.span")} />
+      {t("index.hero2.subtitle2")}
+      <br />
+      <br />
+      {t("index.hero2.subtitle3")}
+    </Fragment>
+  </Hero>
+
+  <!-- Hero Widget ******************* -->
+
+  <Hero subtitle={t("index.hero3.subtitle")}>
+    <Fragment slot="title">
+      {t("index.hero3.title1")}
+      <GradientText text={t("index.hero3.title.span")} />
+      {t("index.hero3.title2")}
+    </Fragment>
+  </Hero>
+
+  <!-- Separator section -->
+
+  <div class="w-full flex flex-col items-center px-10 xl:px-[40px]">
+    <div class="my-40 xl:my-[160px] h-[1px] bg-neutral-400 w-full"></div>
+  </div>
+
+  <!-- Content Widget **************** -->
+
+  <Content tagline={t("index.content3.tagline")} isReversed>
+    <Fragment slot="title">
+      {t("index.content3.title1")}<br />
+      <GradientText class="italic pr-3" text={t("index.content3.title.span1")} /><br />
+      {t("index.content3.title2")}
+      <!-- <GradientText text={t("index.content3.title.span2")} /> -->
+    </Fragment>
+
+    <Fragment slot="content">
+      <h3 class="text-xl tracking-tight sm:text-2xl xl:text-[24px] xl:leading-[32px] mb-2 xl:mb-[8px]">
+        <span class="font-semibold text-black dark:text-white">{t("index.content3.subtitle")}</span>
+        <p class="text-lg sm:text-xl xl:text-[20px] xl:leading-[28px]">
+          <GradientText class="font-semibold" style2>
+            "{t("index.content3.subtitle1")}"
+          </GradientText>
+          <br />
+          <br />
+          <span class="text-black dark:text-white">
+            {t("index.content3.subtitle2")}
+          </span>
+        </p>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative">
+        <YouTube id="Z1J0yjSdiVY" title="Dr. Osaze's testimony" />
+      </div>
+    </Fragment>
+  </Content>
+
+  <Content>
+    <Fragment slot="content">
+      <h3 class="text-xl tracking-tight sm:text-2xl xl:text-[24px] xl:leading-[32px] mb-2 xl:mb-[8px]">
+        <span class="font-semibold text-black dark:text-white">{t("index.content4.subtitle")}</span>
+        <p class="text-lg sm:text-xl xl:text-[20px] xl:leading-[28px]">
+          <GradientText class="font-semibold" style2>
+            "{t("index.content4.subtitle1")}"
+          </GradientText>
+          <br />
+          <br />
+          <span class="text-black dark:text-white">
+            {t("index.content4.subtitle2")}
+          </span>
+        </p>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="image">
+      <div class="relative">
+        <YouTube id="g_y65xR5OYE" title="Excerpt from Jesus Fest Kuopio" />
+      </div>
+    </Fragment>
+  </Content>
+</Layout>

@@ -1,0 +1,23 @@
+---
+import type { Headline as Props } from "~/types";
+import { twMerge } from "tailwind-merge";
+import { Icon } from "astro-icon/components";
+
+const { tagline, type = 1 } = Astro.props;
+---
+
+<div
+  class="flex gap-2 justify-start items-center intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+>
+  <Icon
+    name="tabler:point-filled"
+    class="text-orange-600 w-4 h-4 ml-0.5 xl:w-[16px] xl:h-[16px] xl:ml-[2px] rtl:ml-0 rtl:mr-0.5 hidden lg:inline"
+  />
+  <p
+    class={twMerge(
+      "inline-block w-auto bg-gradient-to-r from-orange-600 to-yellow-500 text-transparent bg-clip-text text-base xl:text-[16px] xl:leading-[20px] font-bold tracking-wide",
+      type === 1 ? "" : "self-start"
+    )}
+    set:html={tagline}
+  />
+</div>
