@@ -39,7 +39,7 @@ const {
         {videos.map((video, index) => (
           <div class="video-card flex-shrink-0 w-full sm:w-[calc(50%-12px)] xl:w-[calc(30%-16px)]">
             <a href={video.link} class="group block">
-              <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] bg-gray-100 dark:bg-slate-800 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
+              <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
                 <Image
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   src={video.src}
@@ -96,7 +96,7 @@ const {
     <!-- Navigation Arrow (shown when there are more than 3 videos) -->
     {videos.length > 3 && (
       <button 
-        class="nav-arrow absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 xl:translate-x-[16px] w-12 h-12 xl:w-[48px] xl:h-[48px] bg-white dark:bg-slate-800 rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
+        class="nav-arrow absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 xl:translate-x-[16px] w-12 h-12 xl:w-[48px] xl:h-[48px] bg-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
         aria-label="View more videos"
       >
         <Icon name="tabler:chevron-right" class="w-6 h-6 xl:w-[24px] xl:h-[24px] text-black" />

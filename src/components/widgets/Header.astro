@@ -110,7 +110,7 @@ const t = useTranslations(lang);
                   <button
                     type="button"
                     class={twMerge(
-                      "w-full px-2.5 py-3 xl:px-[10px] xl:py-[12px] flex items-center whitespace-nowrap justify-between border-b lg:border-b-0 border-gray-100 dark:border-gray-800 group"
+                      "w-full px-2.5 py-3 xl:px-[10px] xl:py-[12px] flex items-center whitespace-nowrap justify-between border-b lg:border-b-0 border-gray-800 group"
                     )}
                     data-nav-button
                     id={`nav-button-${index}`}
@@ -119,14 +119,14 @@ const t = useTranslations(lang);
                     <div class="flex items-center">
                       <Icon
                         name="tabler:chevron-down"
-                        class="w-5 h-5 mr-2 text-black dark:text-white transition-transform duration-200 lg:hidden mobile-chevron"
+                        class="w-5 h-5 mr-2 text-white transition-transform duration-200 lg:hidden mobile-chevron"
                       />
 
-                      <span class="font-bold lg:font-semibold text-transparent bg-clip-text bg-gradient-to-r from-black to-black dark:from-white dark:to-white group-hover:from-orange-600 group-hover:to-yellow-500">
+                      <span class="font-bold lg:font-semibold text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-hover:from-orange-600 group-hover:to-yellow-500">
                         {text ? t(text as keyof typeof ui.en) : text}
                         <Icon
                           name="tabler:point"
-                          class="text-black dark:text-white transition-transform duration-300 transform group-hover:scale-150 group-hover:text-orange-400 w-3.5 h-3.5 ml-0.5 xl:w-[14px] xl:h-[14px] xl:ml-[2px] rtl:ml-0 rtl:mr-0.5 hidden lg:inline"
+                          class="text-white transition-transform duration-300 transform group-hover:scale-150 group-hover:text-orange-400 w-3.5 h-3.5 ml-0.5 xl:w-[14px] xl:h-[14px] xl:ml-[2px] rtl:ml-0 rtl:mr-0.5 hidden lg:inline"
                         />
                       </span>
                     </div>
@@ -146,11 +146,11 @@ const t = useTranslations(lang);
                               <div class="flex items-center gap-3">
                                 {icon && <Icon name={icon} class="w-5 h-5 mt-0.5 group-active:text-orange-600" />}
                                 <div>
-                                  <div class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-black to-black dark:from-white dark:to-white group-active:from-orange-600 group-active:to-yellow-500">
+                                  <div class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-active:from-orange-600 group-active:to-yellow-500">
                                     {text2 ? t(text2 as keyof typeof ui.en) : text2}
                                   </div>
                                   {description && (
-                                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                                    <div class="text-sm text-gray-400">
                                       {description ? t(description as keyof typeof ui.en) : description}
                                     </div>
                                   )}
@@ -168,7 +168,7 @@ const t = useTranslations(lang);
                   class:list={[
                     "font-bold lg:font-normal ml-[16px] lg:pl-0 hover:text-primary px-2.5 xl:px-[10px] py-3 xl:py-[12px] flex items-center whitespace-nowrap",
                     { "aw-link-active": href === currentPath },
-                    "border-b lg:border-b-0 border-gray-100 dark:border-gray-800",
+                    "border-b lg:border-b-0 border-gray-800",
                     index === 2 && "mr-[10px]",
                   ]}
                   href={getPermalink(`${lang}/${href}`)}
@@ -177,8 +177,8 @@ const t = useTranslations(lang);
                   <div class="flex lg:hidden items-center gap-3 active:text-primary pl-0">
                     {icon && <Icon name={icon} class="w-5 h-5 mt-0.5" />}
                     <div>
-                      <div class="font-bold">{text}</div>
-                      {description && <div class="text-sm text-gray-500 dark:text-gray-400">{description}</div>}
+                      <div class="font-bold text-white">{text}</div>
+                      {description && <div class="text-sm text-gray-400">{description}</div>}
                     </div>
                   </div>
                 </a>
@@ -255,7 +255,7 @@ const t = useTranslations(lang);
 
         // Show content
         content.classList.remove("hidden");
-        content.classList.add("border-b", "lg:border-b-0", "border-gray-100", "dark:border-gray-800");
+        content.classList.add("border-b", "lg:border-b-0", "border-gray-800");
         // Set initial height to 0 then animate to full height
         content.style.maxHeight = "0px";
         // Force browser to recognize the change before animating
@@ -274,7 +274,7 @@ const t = useTranslations(lang);
         // Hide content
         content.style.maxHeight = "0px";
         chevron?.classList.remove("rotate-180");
-        content.classList.remove("border-b", "lg:border-b-0", "border-gray-100", "dark:border-gray-800");
+        content.classList.remove("border-b", "lg:border-b-0", "border-gray-800");
         // Add hidden class after transition completes
         setTimeout(() => {
           content.classList.add("hidden");
