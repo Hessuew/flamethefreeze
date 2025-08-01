@@ -10,7 +10,6 @@ import koinonia from "~/assets/images/ministries/fire_of_god_and_fire_for_god-ko
 import prayer_church from "~/assets/images/ministries/fire_of_god_and_fire_for_god-prayer_church.webp";
 import { TextAnimate } from "~/components/magicui/text-animate";
 import Features from "~/components/widgets/Features.astro";
-import StatsModern from "~/components/widgets/StatsModern.astro";
 import CTAModern from "~/components/widgets/CTAModern.astro";
 import ImageShowcase from "~/components/widgets/ImageShowcase.astro";
 import { getLangFromUrl, useTranslations } from "~/i18n/utils";
@@ -62,7 +61,7 @@ const t = useTranslations(lang);
           delay={3}
           duration={0.6}
           by="line"
-          text="Yep! It can be done. Experience the fire of God\nand fire for God now! Lets go!"
+          text="Yep! It can be done. Experience the fire of God\nand fire for God now, let's go!"
         />
       </Fragment>
 
@@ -211,45 +210,20 @@ const t = useTranslations(lang);
     ]}
   >
     <Fragment slot="subtitle">
-      <span class="text-white">To be on fire for God you need a place where the fire of god is.</span>
+      <span class="text-white">{`Be on fire for God => be in place where the fire of god is.`}</span>
       Below are some'(example list, not exhaustive) ministries, and categories of what God has empowered them to do.
     </Fragment>
   </VideoShowcase>
 
-  <!-- Stats Widget ***************** -->
+  <button>
+    <div class="button-outer">
+      <div class="button-inner">
+        <span>Push</span>
+      </div>
+    </div>
+  </button>
 
-  <StatsModern
-    id="stats"
-    tagline="How"
-    title="God's Faithfulness in Numbers"
-    subtitle="Witness the incredible impact of God's power through our ministry."
-    stats={[
-      {
-        amount: "500+",
-        title: "Lives Transformed",
-        description: "People touched by God's power",
-        icon: "tabler:users",
-      },
-      {
-        amount: "50+",
-        title: "Healing Testimonies",
-        description: "Miraculous healings witnessed",
-        icon: "tabler:heart-plus",
-      },
-      {
-        amount: "25+",
-        title: "Countries Reached",
-        description: "Global ministry impact",
-        icon: "tabler:world",
-      },
-      {
-        amount: "10+",
-        title: "Years of Ministry",
-        description: "Faithful service to God",
-        icon: "tabler:calendar-event",
-      },
-    ]}
-  />
+  <!-- Stats Widget ***************** -->
 
   <!-- Features Widget *************** -->
 
@@ -315,3 +289,36 @@ const t = useTranslations(lang);
     ]}
   />
 </Layout>
+
+<!-- <StatsModern
+    id="stats"
+    tagline="How"
+    title="God's Faithfulness in Numbers"
+    subtitle="Witness the incredible impact of God's power through our ministry."
+    stats={[
+      {
+        amount: "500+",
+        title: "Lives Transformed",
+        description: "People touched by God's power",
+        icon: "tabler:users",
+      },
+      {
+        amount: "50+",
+        title: "Healing Testimonies",
+        description: "Miraculous healings witnessed",
+        icon: "tabler:heart-plus",
+      },
+      {
+        amount: "25+",
+        title: "Countries Reached",
+        description: "Global ministry impact",
+        icon: "tabler:world",
+      },
+      {
+        amount: "10+",
+        title: "Years of Ministry",
+        description: "Faithful service to God",
+        icon: "tabler:calendar-event",
+      },
+    ]}
+  /> -->
