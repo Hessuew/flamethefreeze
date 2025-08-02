@@ -1,29 +1,113 @@
 ---
+export interface Props {
+  rebuildProgress?: {
+    current: number;
+    total: number;
+  };
+  siteRebuildStatus?: { status?: "notStarted" | "inProgress" | "completed", display?: boolean };
+}
 
+const { rebuildProgress = { current: 1, total: 18 }, siteRebuildStatus = { status: "notStarted", display: true } } = Astro.props;
+
+// Get the current URL path for page detection
+const currentPath = Astro.url.pathname;
+const pageName =
+  currentPath === "/"
+    ? "Home"
+    : currentPath
+        .split("/")
+        .pop()
+        ?.replace(/\.[^/.]+$/, "") || "Unknown";
 ---
 
+{siteRebuildStatus?.display && (
 <div
-  class="text-muted text-sm bg-[#dbeafe] dark:bg-transparent dark:border-b dark:border-slate-800 dark:text-slate-400 hidden md:block overflow-hidden px-3 py-2 relative text-ellipsis whitespace-nowrap"
+  class="text-sm bg-gradient-to-r from-black via-gray-900 to-black border-b border-orange-500/20 hidden md:block px-6 py-4 relative shadow-2xl backdrop-blur-sm overflow-hidden"
 >
-  <span
-    class="dark:bg-slate-700 bg-white/40 dark:text-slate-300 font-semibold px-1 py-0.5 text-xs mr-0.5 rtl:mr-0 rtl:ml-0.5 inline-block"
-    >NEW</span
-  >
-  <a href="https://astro.build/blog/astro-3/" class="text-muted hover:underline dark:text-slate-400 font-medium"
-    >Astro 3.0 is here! »</a
-  >
-  <a
-    target="_blank"
-    rel="noopener"
-    class="float-right rtl:float-left"
-    title="If you like AstroWind, give us a star."
-    href="https://github.com/onwidget/astrowind"
-  >
-    <img
-      src="https://img.shields.io/github/stars/onwidget/astrowind.svg?style=social&label=Stars&maxAge=86400"
-      alt="Follow @onWidget"
-      width="84"
-      height="20"
-    />
-  </a>
+  <!-- Animated background glow -->
+  <div class="absolute inset-0 bg-gradient-to-r from-orange-600/5 via-yellow-500/10 to-orange-600/5"></div>
+  <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent">
+  </div>
+
+  <!-- Left side: Rebuild Progress -->
+  <div class="flex items-center space-x-4 relative z-10">
+    <div class="flex items-center space-x-3">
+      <div class="relative">
+        <div
+          class="w-3 h-3 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse shadow-lg shadow-orange-500/50"
+        >
+        </div>
+        <div
+          class="absolute inset-0 w-3 h-3 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-ping opacity-30"
+        >
+        </div>
+      </div>
+      <span class="text-white font-semibold text-shadow-sm"> The flamethefreeze website is being rebuilt </span>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      <span class="text-xs text-orange-300/80 font-medium tracking-wide uppercase">Progress:</span>
+      <div class="flex items-center space-x-3">
+        <span
+          class="bg-gradient-to-r from-orange-600 to-yellow-500 text-black px-3 py-1.5 rounded-full text-xs font-bold shadow-lg shadow-orange-500/30 border border-orange-400/30"
+        >
+          {rebuildProgress.current}/{rebuildProgress.total}
+        </span>
+        <div class="w-24 h-2 bg-gray-800 rounded-full overflow-hidden border border-orange-500/20 shadow-inner">
+          <div
+            class="h-full bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-600 rounded-full transition-all duration-500 ease-out shadow-lg relative"
+            style={`width: ${(rebuildProgress.current / rebuildProgress.total) * 100}%`}
+          >
+            <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full"></div>
+          </div>
+        </div>
+        <span class="text-xs text-orange-300/60 font-medium">
+          {Math.round((rebuildProgress.current / rebuildProgress.total) * 100)}%
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right side: Current Page Status -->
+  <div class="absolute right-6 top-1/2 transform -translate-y-1/2 flex items-center space-x-4 z-10">
+    <div class="flex items-center space-x-3">
+      <span class="text-xs text-orange-300/80 font-medium tracking-wide uppercase">Current page:</span>
+      <span
+        class="text-white font-semibold capitalize bg-gradient-to-r from-orange-600/20 to-yellow-500/20 px-3 py-1 rounded-full border border-orange-500/30"
+      >
+        {pageName}
+      </span>
+    </div>
+
+    <div class="flex items-center space-x-3">
+      {
+        siteRebuildStatus?.status === "completed" && (
+          <div class="flex items-center space-x-2 bg-green-500/20 px-3 py-1.5 rounded-full border border-green-500/30">
+            <div class="w-2.5 h-2.5 bg-green-400 rounded-full shadow-lg shadow-green-400/50" />
+            <span class="text-green-300 text-xs font-semibold tracking-wide">COMPLETED</span>
+          </div>
+        )
+      }
+      {
+        siteRebuildStatus?.status === "inProgress" && (
+          <div class="flex items-center space-x-2 bg-gradient-to-r from-orange-600/20 to-yellow-500/20 px-3 py-1.5 rounded-full border border-orange-500/30">
+            <div class="relative">
+              <div class="w-2.5 h-2.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse shadow-lg shadow-orange-500/50" />
+              <div class="absolute inset-0 w-2.5 h-2.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-ping opacity-30" />
+            </div>
+            <span class="text-orange-300 text-xs font-semibold tracking-wide">IN PROGRESS</span>
+          </div>
+        )
+      }
+      {
+        siteRebuildStatus?.status === "notStarted" && (
+          <div class="flex items-center space-x-2 bg-gray-500/20 px-3 py-1.5 rounded-full border border-gray-500/30">
+            <div class="w-2.5 h-2.5 bg-gray-400 rounded-full shadow-lg shadow-gray-400/30" />
+            <span class="text-gray-300 text-xs font-semibold tracking-wide">NOT STARTED</span>
+          </div>
+        )
+      }
+    </div>
+  </div>
 </div>
+)}

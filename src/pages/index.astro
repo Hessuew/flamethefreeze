@@ -3,7 +3,9 @@ import Layout from "~/layouts/PageLayout.astro";
 
 import Hero from "~/components/widgets/Hero.astro";
 import prayer from "~/assets/images/prayer.webp";
-import word from "~/assets/images/word.webp";
+import fire from "~/assets/images/index/envato.jpg";
+import bible from "~/assets/images/index/bible.jpg";
+import company from "~/assets/images/index/company.jpg";
 import derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
 import kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
 import koinonia from "~/assets/images/ministries/fire_of_god_and_fire_for_god-koinonia.webp";
@@ -14,11 +16,11 @@ import ImageShowcase from "~/components/widgets/ImageShowcase.astro";
 // import { getLangFromUrl, useTranslations } from "~/i18n/utils";
 import city_in_flame from "~/assets/images/city_in_flame.webp";
 import tree1 from "~/assets/images/tree1.webp";
-import tree2 from "~/assets/images/tree2.webp";
 import { BlurFade } from "~/components/magicui/blur-fade";
 import VideoShowcase from "~/components/widgets/VideoShowcase.astro";
 import FireButton from "~/components/ui/FireButton.astro";
 import IceButton from "~/components/ui/IceButton.astro";
+import FreezeOverlay from "~/components/ui/FreezeOverlay.astro";
 
 const metadata = {
   title: "Flame the Freeze — Where the Word of God and experience meets",
@@ -29,10 +31,34 @@ const metadata = {
 // const t = useTranslations(lang);
 ---
 
-<Layout metadata={metadata}>
+<Layout metadata={metadata} siteRebuildStatus={{ status: "inProgress", display: false }}>
   <!-- Hero Widget ******************* -->
-  <div class="min-h-screen">
-    <Hero classes={{ containerClass: "text-left" }}>
+  <div class="min-h-screen relative overflow-hidden">
+    <!-- Video Background -->
+
+    <video
+      id="hero-video"
+      class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+      muted
+      loop
+      playsinline
+      preload="auto"
+    >
+      <source src="/src/assets/videos/test.mp4" type="video/mp4" />
+    </video>
+    <!-- Gradient mask for bottom fade to purple background -->
+    <div
+      class="absolute inset-0 z-5"
+      style="background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(26, 0, 36, 0.05) 60%, rgba(26, 0, 36, 0.15) 70%, rgba(26, 0, 36, 0.35) 80%, rgba(26, 0, 36, 0.65) 90%, rgba(26, 0, 36, 0.85) 95%, #1a0024 100%);"
+    >
+    </div>
+    <!-- Overlay for better text readability (only on video area) -->
+    <div
+      class="absolute inset-0 bg-black bg-opacity-30 z-10"
+      style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.15) 70%, transparent 85%);"
+    >
+    </div>
+    <Hero classes={{ containerClass: "text-left relative z-20" }}>
       <Fragment slot="title">
         <TextAnimate
           client:load
@@ -64,7 +90,7 @@ const metadata = {
           duration={0.6}
           by="line"
           once={true}
-          text="Yep! It can be done. Experience the fire of God\nand fire for God now, let's go!"
+          text="Yep! It can be done. Are you tired? Experience\n the fire of God and be on fire for God today!"
         />
       </Fragment>
 
@@ -86,7 +112,7 @@ const metadata = {
   <ImageShowcase
     id="what"
     tagline="What"
-    title="What is the fire of God?<br/>And what is fire for God?"
+    title="What is the fire of God 🔥?<br/>And what is fire for God ❤️‍🔥?"
     layout="featured"
     classes={{
       headline: {
@@ -95,25 +121,25 @@ const metadata = {
     }}
     images={[
       {
-        src: tree2,
+        src: fire,
         alt: "",
-        title: "Fire of God: God is consuming fire<br/>His word was fire in my heart",
+        title: "Fire of God 🔥: It is the Holy Ghost!",
         description:
-          "God's word, and God himself, is the fire. It transferred from speakers heart to you like when Jesus spake to the disciples on the way to Emmaus.",
+          "God himself is that fire. When the Holy Ghost is in a man that man can never be ordinary. He has got all the power of heaven residing in Him 🔋 and he can never be a lean soul 💪!",
       },
       {
         src: city_in_flame,
         alt: "",
-        title: "Fire for God: The tangible presence of God in a person's life",
+        title: "Fire for God ❤️‍🔥: The man is burrrrning hot",
         description:
-          "People's lives are changed by the fire of God that is in this person's life. He is not the fire by he is on fire for God.",
+          "Have you seen people who are just ablaze for God 💥⚡? Like their presence makes you think about your life and christianity. Do you want the same!",
       },
       {
         src: tree1,
         alt: "",
-        title: "There is fire > there is life. Fire is never dead",
+        title: "There is fire 🔥 > there is life 🌳<br/>How hot are you?",
         description:
-          "He shall be like a tree planted by the rivers of water, that bringeth his fruit in due season; his leaf shall not wither; and whatsoever he doeth shall prosper.",
+          "No, you cannot be silent, empty, miserable, and discontented when you are on fire. The Holy Spirit will keep you _soooo_ alive that you will be surprised of yourself 😄🙃",
       },
     ]}
   >
@@ -130,7 +156,7 @@ const metadata = {
   <ImageShowcase
     id="how"
     tagline="How"
-    title="How can I receive<br/>the fire of God?"
+    title="How can I receive<br/>the fire of God 📥🔥?"
     type={3}
     classes={{
       headline: {
@@ -141,7 +167,7 @@ const metadata = {
       {
         title: "Right company",
         description: "Join a company where the fire already is.",
-        src: tree1,
+        src: company,
         features: ["Log in a campfire", '"They prayed in one accord"'],
       },
       {
@@ -153,7 +179,7 @@ const metadata = {
       {
         title: "The Word",
         description: "The Word of God is quick and powerful.",
-        src: word,
+        src: bible,
         features: ["Setting the hearts on fire", "Revelation of Spirit changing lives"],
       },
       {
@@ -164,15 +190,15 @@ const metadata = {
     <Fragment slot="subtitle">
       <span class="text-white">The fire is not for a select few, but for all who believe.</span>
       <br class="hidden md:block" />
-      For the promise is unto you, and to your children, and to all that are afar off, even as many as the Lord our God shall
-      call.
+      But unfortunately many haven't tasted the fire of God. My friend. Are you discontented 😖, and looking for finally
+      find the real thing? Look no further 🏁🎉!
     </Fragment>
   </ImageShowcase>
 
   <VideoShowcase
     id="where"
     tagline="Where"
-    title="Where can I receive<br/>the fire of God?"
+    title="Where can I receive<br/>the fire of God? 🔎🤷‍♂️"
     type={4}
     classes={{
       headline: {
@@ -214,7 +240,8 @@ const metadata = {
   >
     <Fragment slot="subtitle">
       <span class="text-white">{`Be on fire for God => be in place where the fire of god is.`}</span>
-      Below are some'(example list, not exhaustive) ministries, and categories of what God has empowered them to do.
+      Below is `non exhaustive and exclusive` list of ministries, and categories of what God has empowered them to do. Fasten
+      your seatbelts 🍒😁!
     </Fragment>
   </VideoShowcase>
 
@@ -224,13 +251,13 @@ const metadata = {
     id="cta"
     tagline="Are you ready to be on fire for God?"
     title="Experience the fire of God today"
-    subtitle="Seriously, don't wait another moment. God is calling you to enter into your divine destiny now. God is ready, are you?"
+    subtitle={`Seriously, don't wait another second. God is calling you to evade every cold❄️🥶 and enter into a <span class="text-white underline">divine</span> fire 🔥🥵. Noooooow(!) is the time of salvation!`}
     actions={[
       {
         buttonType: "fire", // 🔥 Fire button
         variant: "primary",
         size: "medium",
-        text: "Yes, count me in",
+        text: "Yes, count me in!!",
         href: "#contact",
         icon: "tabler:arrow-right",
       },
@@ -238,7 +265,7 @@ const metadata = {
         buttonType: "ice", // ❄️ Ice button
         variant: "secondary",
         size: "medium",
-        text: "Maybe another time",
+        text: "Maybe another time..",
         href: "#testimonies",
         icon: "tabler:hand-stop",
       },
@@ -246,305 +273,23 @@ const metadata = {
   />
 
   <!-- Freeze Animation Overlay -->
-  <div id="freeze-overlay" class="freeze-overlay hidden">
-    <div class="freeze-content">
-      <div class="ice-crystals-large">
-        <div class="ice-crystal-large">❄</div>
-        <div class="ice-crystal-large">❅</div>
-        <div class="ice-crystal-large">❄</div>
-        <div class="ice-crystal-large">❅</div>
-        <div class="ice-crystal-large">❄</div>
-        <div class="ice-crystal-large">❅</div>
-      </div>
-      <div class="freeze-dialog">
-        <h2>Are you sure you want to leave?</h2>
-        <p>The warmth of this experience will be lost forever...</p>
-        <div class="freeze-buttons">
-          <button id="confirm-freeze" class="freeze-btn freeze-btn-confirm">Yes, freeze it all</button>
-          <button id="cancel-freeze" class="freeze-btn freeze-btn-cancel">No, keep the warmth</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <style>
-    .freeze-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: linear-gradient(
-        135deg,
-        rgba(224, 242, 254, 0.95) 0%,
-        rgba(187, 222, 251, 0.98) 25%,
-        rgba(129, 212, 250, 0.99) 50%,
-        rgba(100, 181, 246, 0.98) 75%,
-        rgba(66, 165, 245, 0.95) 100%
-      );
-      backdrop-filter: blur(20px) brightness(0.8);
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    .freeze-overlay.active {
-      opacity: 1;
-    }
-
-    .freeze-overlay.hidden {
-      display: none;
-    }
-
-    .freeze-content {
-      position: relative;
-      text-align: center;
-      transform: translateY(50px) scale(0.9);
-      transition: all 1s cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
-    }
-
-    .freeze-overlay.active .freeze-content {
-      transform: translateY(0) scale(1);
-    }
-
-    .ice-crystals-large {
-      position: absolute;
-      top: -100px;
-      left: -100px;
-      right: -100px;
-      bottom: -100px;
-      pointer-events: none;
-    }
-
-    .ice-crystal-large {
-      position: absolute;
-      font-size: 3rem;
-      color: rgba(255, 255, 255, 0.8);
-      text-shadow: 0 0 20px rgba(129, 212, 250, 0.8);
-      animation: freezeCrystalFloat 8s infinite linear;
-      opacity: 0;
-    }
-
-    .ice-crystal-large:nth-child(1) {
-      left: 10%;
-      animation-delay: 0s;
-    }
-
-    .ice-crystal-large:nth-child(2) {
-      left: 25%;
-      animation-delay: 1.5s;
-    }
-
-    .ice-crystal-large:nth-child(3) {
-      left: 50%;
-      animation-delay: 3s;
-    }
-
-    .ice-crystal-large:nth-child(4) {
-      left: 75%;
-      animation-delay: 4.5s;
-    }
-
-    .ice-crystal-large:nth-child(5) {
-      left: 90%;
-      animation-delay: 6s;
-    }
-
-    .ice-crystal-large:nth-child(6) {
-      left: 35%;
-      animation-delay: 7.5s;
-    }
-
-    @keyframes freezeCrystalFloat {
-      0% {
-        top: 100%;
-        opacity: 0;
-        transform: translateX(0) rotate(0deg) scale(0.5);
-      }
-      10% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0.9;
-        transform: translateX(-30px) rotate(180deg) scale(1.2);
-      }
-      90% {
-        opacity: 0.4;
-      }
-      100% {
-        top: -20%;
-        opacity: 0;
-        transform: translateX(20px) rotate(360deg) scale(1.5);
-      }
-    }
-
-    .freeze-dialog {
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(15px);
-      border-radius: 20px;
-      padding: 3rem;
-      box-shadow: 
-        0 20px 60px rgba(33, 150, 243, 0.3),
-        0 10px 30px rgba(129, 212, 250, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-      border: 2px solid rgba(129, 212, 250, 0.4);
-      max-width: 500px;
-      margin: 0 2rem;
-    }
-
-    .freeze-dialog h2 {
-      color: #0d47a1;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
-    }
-
-    .freeze-dialog p {
-      color: #1565c0;
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      opacity: 0.9;
-    }
-
-    .freeze-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .freeze-btn {
-      padding: 0.8rem 2rem;
-      border-radius: 50px;
-      border: none;
-      font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .freeze-btn-confirm {
-      background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
-      color: #0d47a1;
-      box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
-    }
-
-    .freeze-btn-confirm:hover {
-      background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 50%, #ce93d8 100%);
-      transform: translateY(-2px) scale(1.05);
-      box-shadow: 0 8px 25px rgba(33, 150, 243, 0.4);
-    }
-
-    .freeze-btn-cancel {
-      background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 50%, #ffcc02 100%);
-      color: #e65100;
-      box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
-    }
-
-    .freeze-btn-cancel:hover {
-      background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 50%, #ffd54f 100%);
-      transform: translateY(-2px) scale(1.05);
-      box-shadow: 0 8px 25px rgba(255, 152, 0, 0.4);
-    }
-
-    .freeze-btn:active {
-      transform: translateY(0) scale(0.98);
-    }
-
-    /* Freeze effect on page content */
-    .page-frozen {
-      filter: blur(2px) brightness(0.7) contrast(1.2);
-      transform: scale(0.98);
-      transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    .page-frozen::before {
-      content: '';
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: repeating-linear-gradient(
-        45deg,
-        rgba(129, 212, 250, 0.1) 0px,
-        rgba(129, 212, 250, 0.1) 2px,
-        transparent 2px,
-        transparent 10px
-      );
-      pointer-events: none;
-      z-index: 1;
-    }
-  </style>
+  <FreezeOverlay />
 
   <script>
-    document.addEventListener('astro:page-load', () => {
-      // Function to trigger freeze animation
-      window.triggerFreeze = function() {
-        const overlay = document.getElementById('freeze-overlay');
-        const body = document.body;
-        
-        if (overlay) {
-          // Add freeze effect to page content
-          body.classList.add('page-frozen');
-          
-          // Show overlay with animation
-          overlay.classList.remove('hidden');
-          
-          // Trigger animation after a small delay
-          setTimeout(() => {
-            overlay.classList.add('active');
-          }, 50);
-        }
-      };
-
-      // Function to cancel freeze animation
-      function cancelFreeze() {
-        const overlay = document.getElementById('freeze-overlay');
-        const body = document.body;
-        
-        if (overlay) {
-          overlay.classList.remove('active');
-          body.classList.remove('page-frozen');
-          
-          setTimeout(() => {
-            overlay.classList.add('hidden');
-          }, 1500);
-        }
-      }
-
-      // Function to confirm freeze (close page)
-      function confirmFreeze() {
-        // Add final freeze effect
-        const body = document.body;
-        body.style.filter = 'blur(5px) brightness(0.3)';
-        body.style.transform = 'scale(0.95)';
-        
-        // Close the page after animation
+    document.addEventListener("astro:page-load", () => {
+      // Start video after 6 seconds with fade-in effect
+      const heroVideo = document.getElementById("hero-video") as HTMLVideoElement;
+      if (heroVideo) {
         setTimeout(() => {
-          window.close();
-          // Fallback if window.close() doesn't work
-          if (!window.closed) {
-            window.location.href = 'about:blank';
-          }
-        }, 1000);
-      }
+          // Start playing the video
+          heroVideo.play().catch((error) => {
+            console.log("Video autoplay failed:", error);
+          });
 
-      // Bind event listeners
-      const confirmBtn = document.getElementById('confirm-freeze');
-      const cancelBtn = document.getElementById('cancel-freeze');
-      
-      if (confirmBtn) {
-        confirmBtn.addEventListener('click', confirmFreeze);
-      }
-      
-      if (cancelBtn) {
-        cancelBtn.addEventListener('click', cancelFreeze);
+          // Fade in the video
+          heroVideo.classList.remove("opacity-0");
+          heroVideo.classList.add("opacity-100");
+        }, 1000); // 6 seconds delay
       }
     });
   </script>
