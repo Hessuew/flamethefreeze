@@ -36,9 +36,9 @@ const {
 
   {
     layout === "masonry" && (
-      <div class="columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-4 xl:gap-[16px] mt-12 xl:mt-[48px] space-y-4 xl:space-y-[16px]">
+      <div class="columns-2 sm:columns-2 md:columns-3 lg:columns-4 mt-12 xl:mt-[48px] space-y-4 xl:space-y-[16px]">
         {images.map((image, index) => (
-          <div class="icon-container-hover break-inside-avoid group relative overflow-hidden rounded-xl xl:rounded-[12px] hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
+          <div class="icon-container-hover break-inside-avoid group relative overflow-hidden hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
             {image.src ? (
               <Image
                 class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
@@ -51,7 +51,7 @@ const {
             ) : (
               <div class="w-full aspect-[4/3] flex items-center justify-center rounded-3xl bg-gradient-to-br from-[#021408] to-green-800 p-2 xl:p-[4px]">
                 <div class="flex flex-col h-full w-full items-center justify-center text-center bg-page rounded-3xl">
-                  <div class="w-28 h-28 xl:w-[112px] xl:h-[112px] mx-auto mb-4 xl:mb-[16px] rounded-full flex items-center justify-center">
+                  <div class="w-16 h-16 md:w-20 md:h-20 lg:w-28 lg:h-28 xl:w-[112px] xl:h-[112px] mx-auto mb-1 md:mb-4 xl:mb-[16px] rounded-full flex items-center justify-center">
                     <AnimatedArrowRight classes="w-full h-full" delay={800} />
                   </div>
                   <p class="text-sm xl:text-[14px] text-muted">Get started</p>
@@ -61,8 +61,8 @@ const {
 
             {image.title && (
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
-                <div class="absolute top-0 left-0 right-0 p-4 xl:p-[16px]">
-                  <h3 class="text-white font-semibold text-lg xl:text-[18px] xl:leading-[24px] mb-1 xl:mb-[4px]">
+                <div class="absolute top-0 left-0 right-0 px-1 md:p-4 xl:p-[16px]">
+                  <h3 class="text-white font-semibold text-md xs:text-lg xl:text-[18px] xl:leading-[24px] md:mb-1 xl:mb-[4px]">
                     {image.title}
                   </h3>
                 </div>
@@ -71,18 +71,18 @@ const {
 
             {image.title && (
               <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div class="absolute bottom-0 left-0 right-0 flex flex-col gap-2 p-4 xl:p-[16px]">
+                <div class="absolute bottom-0 left-0 right-0 flex flex-col gap-0.5 md:gap-2 p-1 md:p-4 xl:p-[16px]">
                   {image.description && (
-                    <p class="text-white/90 text-sm xl:text-[14px] xl:leading-[20px]">{image.description}</p>
+                    <p class="text-white/90 text-xs md:text-sm xl:text-[14px] xl:leading-[20px]">{image.description}</p>
                   )}
 
                   {image.features && (
-                    <ul class="space-y-2 xl:space-y-[8px]">
+                    <ul class="space-y-0.5 md:space-y-2 xl:space-y-[8px]">
                       {image.features.map((feature) => (
-                        <li class="flex items-center text-sm xl:text-[14px] xl:leading-[20px] text-white">
+                        <li class="flex items-center text-[10px] sm:text-xs md:text-sm xl:text-[14px] xl:leading-[20px] text-white">
                           <Icon
                             name="tabler:check"
-                            class="w-4 h-4 xl:w-[16px] xl:h-[16px] text-white mr-2 xl:mr-[8px] flex-shrink-0"
+                            class="w-4 h-4 xl:w-[16px] xl:h-[16px] text-white mr-1 md:mr-2 xl:mr-[8px] flex-shrink-0"
                           />
                           {feature}
                         </li>
@@ -155,8 +155,8 @@ const {
 
   {
     layout === "featured" && images.length > 0 && (
-      <div class="grid gap-4 xl:gap-[16px] lg:grid-cols-3 mt-12 xl:mt-[48px] h-[600px]">
-        <div class="lg:col-span-2">
+      <div class="grid gap-4 xl:gap-[16px] md:grid-cols-3 mt-12 xl:mt-[48px]">
+        <div class="col-span-2">
           <div class="group relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 h-full hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
             {images[0]?.src ? (
               <Image
@@ -254,11 +254,14 @@ const {
                 <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
                   <div class="absolute top-0 left-0 right-0 p-4 xl:p-[16px] bg-gradient-to-b from-black/80 via-black/80 to-transparent">
                     <h3
-                      class="text-white font-semibold text-lg xl:text-[18px] xl:leading-[24px] mb-1 xl:mb-[4px]"
+                      class="text-white font-semibold text-md lg:text-lg xl:text-[18px] xl:leading-[24px] mb-1 xl:mb-[4px]"
                       set:html={image.title}
                     />
                     {image.description && (
-                      <p class="text-white/90 text-sm xl:text-[14px] xl:leading-[20px]" set:html={image.description} />
+                      <p
+                        class="text-white/90 text-xs lg:text-sm xl:text-[14px] xl:leading-[20px]"
+                        set:html={image.description}
+                      />
                     )}
                   </div>
                 </div>

@@ -2,10 +2,10 @@
 import Layout from "~/layouts/PageLayout.astro";
 
 import Hero from "~/components/widgets/Hero.astro";
-import prayer from "~/assets/images/prayer.webp";
-import fire from "~/assets/images/index/envato.jpg";
-import bible from "~/assets/images/index/bible.jpg";
-import company from "~/assets/images/index/company.jpg";
+import prayer from "~/assets/images/fire_of_god_and_fire_for_god-prayer.webp";
+import fire from "~/assets/images/index/fire_of_god_and_fire_for_god-fire.webp";
+import bible from "~/assets/images/index/fire_of_god_and_fire_for_god-bible.webp";
+import company from "~/assets/images/index/fire_of_god_and_fire_for_god-company.webp";
 import derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
 import kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
 import koinonia from "~/assets/images/ministries/fire_of_god_and_fire_for_god-koinonia.webp";
@@ -14,8 +14,8 @@ import { TextAnimate } from "~/components/magicui/text-animate";
 import CTAModern from "~/components/widgets/CTAModern.astro";
 import ImageShowcase from "~/components/widgets/ImageShowcase.astro";
 // import { getLangFromUrl, useTranslations } from "~/i18n/utils";
-import city_in_flame from "~/assets/images/city_in_flame.webp";
-import tree1 from "~/assets/images/tree1.webp";
+import city_in_flame from "~/assets/images/fire_of_god_and_fire_for_god-city_in_flame.webp";
+import tree1 from "~/assets/images/fire_of_god_and_fire_for_god-tree1.webp";
 import { BlurFade } from "~/components/magicui/blur-fade";
 import VideoShowcase from "~/components/widgets/VideoShowcase.astro";
 import FireButton from "~/components/ui/FireButton.astro";
@@ -44,7 +44,7 @@ const metadata = {
       playsinline
       preload="auto"
     >
-      <source src="/src/assets/videos/test.mp4" type="video/mp4" />
+      <source src="/src/assets/videos/test1-3.mp4" type="video/mp4" />
     </video>
     <!-- Gradient mask for bottom fade to purple background -->
     <div
@@ -58,7 +58,7 @@ const metadata = {
       style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.15) 70%, transparent 85%);"
     >
     </div>
-    <Hero classes={{ containerClass: "text-left relative z-20" }}>
+    <Hero classes={{ containerClass: "text-left relative z-20", subtitleContainerClass: "max-w-none" }}>
       <Fragment slot="title">
         <TextAnimate
           client:load
@@ -90,7 +90,7 @@ const metadata = {
           duration={0.6}
           by="line"
           once={true}
-          text="Yep! It can be done. Are you tired? Experience\n the fire of God and be on fire for God today!"
+          text="Yep! It can be done. Are you tired? Experience \nthe fire of God and be on fire for God today!"
         />
       </Fragment>
 
@@ -112,7 +112,6 @@ const metadata = {
   <ImageShowcase
     id="what"
     tagline="What"
-    title="What is the fire of God 🔥?<br/>And what is fire for God ❤️‍🔥?"
     layout="featured"
     classes={{
       headline: {
@@ -124,25 +123,29 @@ const metadata = {
         src: fire,
         alt: "",
         title: "Fire of God 🔥: It is the Holy Ghost!",
-        description:
-          "God himself is that fire. When the Holy Ghost is in a man that man can never be ordinary. He has got all the power of heaven residing in Him 🔋 and he can never be a lean soul 💪!",
+        // description:
+        //   "God himself is that fire. When the Holy Ghost is in a man that man can never be ordinary. He has got all the power of heaven residing in Him 🔋 and he can never be a lean soul 💪!",
       },
       {
         src: city_in_flame,
         alt: "",
-        title: "Fire for God ❤️‍🔥: The man is burrrrning hot",
+        title: "Fire for God ❤️‍🔥: The man is burrrrning hot for God",
         description:
-          "Have you seen people who are just ablaze for God 💥⚡? Like their presence makes you think about your life and christianity. Do you want the same!",
+          "Have you seen people who are just ablaze for God 💥⚡? Like their presence makes you think about your life and christianity.",
       },
       {
         src: tree1,
         alt: "",
         title: "There is fire 🔥 > there is life 🌳<br/>How hot are you?",
-        description:
-          "No, you cannot be silent, empty, miserable, and discontented when you are on fire. The Holy Spirit will keep you _soooo_ alive that you will be surprised of yourself 😄🙃",
+        // description:
+        //   "No, you cannot be silent, empty, miserable, and discontented when you are on fire. The Holy Spirit will keep you _soooo_ alive that you will be surprised of yourself 😄🙃",
       },
     ]}
   >
+    <Fragment slot="title">
+      What is the fire of God 🔥?
+      <br class="hidden sm:block" />&nbsp;And what is fire for God ❤️‍🔥?
+    </Fragment>
     <Fragment slot="subtitle">
       <span class="text-white">"Spirit filled souls are ablaze for God. </span>
       They love with a love that glows. They serve with a faith that kindles. They serve with a devotion that consumes. They
@@ -156,7 +159,7 @@ const metadata = {
   <ImageShowcase
     id="how"
     tagline="How"
-    title="How can I receive<br/>the fire of God 📥🔥?"
+    title='How can I receive<br class="hidden xs:block"/>the fire of God 📥🔥?'
     type={3}
     classes={{
       headline: {
@@ -190,8 +193,8 @@ const metadata = {
     <Fragment slot="subtitle">
       <span class="text-white">The fire is not for a select few, but for all who believe.</span>
       <br class="hidden md:block" />
-      But unfortunately many haven't tasted the fire of God. My friend. Are you discontented 😖, and looking for finally
-      find the real thing? Look no further 🏁🎉!
+      But unfortunately many haven't tasted the fire of God. My friend, are you discontented 😖, and looking to finally find
+      the real thing? Look no further 🏁🎉!
     </Fragment>
   </ImageShowcase>
 
@@ -207,9 +210,9 @@ const metadata = {
     }}
     videos={[
       {
-        title: "Prayer Church - Flame the Freeze",
+        title: "Prayer Church<span class='hidden xs:inline'> - Flame the Freeze</span>",
         link: "#",
-        description: "Mystery of godliness unfolded",
+        description: "Mystery of godliness unfolded, Fire for God",
         src: prayer_church,
         features: ["Prayer", "Wisdom"],
       },
@@ -223,7 +226,7 @@ const metadata = {
       {
         title: "Kenneth Hagin - Rhema",
         link: "#",
-        description: "Go and teach my people faith",
+        description: "Timeless teachings of faith",
         src: kenneth_hagin,
         objectPosition: "top center",
         features: ["Faith", "Healing"],
@@ -231,7 +234,7 @@ const metadata = {
       {
         title: "Derek Prince Ministries",
         link: "#",
-        description: "Reaching the unreached, and teaching the untaught.",
+        description: "Reaching the unreached, and teaching the untaught",
         src: derek_prince,
         objectPosition: "top center",
         features: ["Foundational pillars", "Deliverance / Curses", "Many other topics"],

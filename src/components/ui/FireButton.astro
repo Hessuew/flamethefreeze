@@ -15,9 +15,9 @@ const { text, href, variant = "primary", size = "medium", class: className = "",
 
 const Tag = href ? "a" : "button";
 const sizeClasses = {
-  small: "px-6 py-3 text-sm",
-  medium: "px-8 py-4 text-base",
-  large: "px-10 py-5 text-lg",
+  small: "px-6 py-3 xl:px-[24px] xl:py-[12px] text-sm xl:text-[14px] xl:leading-[20px]",
+  medium: "px-3 md:px-8 py-4 text-base xl:text-[16px] xl:leading-[24px]",
+  large: "px-10 py-5 xl:px-[40px] xl:py-[20px] text-lg xl:text-[20px] xl:leading-[28px]",
 };
 ---
 
@@ -27,7 +27,7 @@ const sizeClasses = {
   {...rest}
 >
   <!-- Fire Background Animation -->
-  <div class="fire-bg absolute inset-0 rounded-full"></div>
+  <div class="fire-bg absolute inset-0 rounded-full text-sm"></div>
 
   <!-- Floating Fire Particles -->
   <div class="fire-particles absolute inset-0 rounded-full overflow-hidden">

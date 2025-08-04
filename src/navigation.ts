@@ -1,5 +1,5 @@
 import type { MenuLink } from "./components/widgets/Header.astro";
-import prayer from "~/assets/images/prayer.webp";
+import prayer from "~/assets/images/fire_of_god_and_fire_for_god-prayer.webp";
 import word from "~/assets/images/word.webp";
 import smith from "~/assets/images/witnesses/flame_the_freeze_smith_wigglesworth.webp";
 
