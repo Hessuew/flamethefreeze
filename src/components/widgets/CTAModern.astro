@@ -1,0 +1,73 @@
+---
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import Button from "~/components/ui/Button.astro";
+import { Icon } from "astro-icon/components";
+import type { CallToAction as Props } from "~/types";
+
+const {
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
+  tagline = await Astro.slots.render("tagline"),
+  actions = [],
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render("bg"),
+} = Astro.props;
+---
+
+<WidgetWrapper
+  id={id}
+  isDark={isDark}
+  containerClass={`max-w-5xl xl:max-w-[1024px] ${classes?.container ?? ""}`}
+  bg={bg}
+>
+  <div class="relative overflow-hidden bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/10 dark:from-primary/10 dark:via-secondary/10 dark:to-primary/20 rounded-2xl xl:rounded-[16px] p-8 xl:p-[32px] lg:p-12 xl:lg:p-[48px] text-center border border-primary/10 dark:border-primary/20">
+    
+    {/* Background decorative elements */}
+    <div class="absolute top-0 left-0 w-32 h-32 xl:w-[128px] xl:h-[128px] bg-gradient-to-br from-primary/10 to-transparent rounded-full -translate-x-16 -translate-y-16"></div>
+    <div class="absolute bottom-0 right-0 w-24 h-24 xl:w-[96px] xl:h-[96px] bg-gradient-to-tl from-secondary/10 to-transparent rounded-full translate-x-12 translate-y-12"></div>
+    
+    <div class="relative z-10">
+      {tagline && (
+        <p class="text-base xl:text-[16px] xl:leading-[24px] text-primary font-semibold uppercase tracking-wide mb-4 xl:mb-[16px]">
+          {tagline}
+        </p>
+      )}
+      
+      {title && (
+        <h2 class="text-3xl xl:text-[32px] xl:leading-[40px] md:text-4xl xl:md:text-[40px] xl:md:leading-[48px] font-bold text-gray-900 dark:text-white mb-4 xl:mb-[16px]">
+          {title}
+        </h2>
+      )}
+      
+      {subtitle && (
+        <p class="text-xl xl:text-[20px] xl:leading-[28px] text-gray-600 dark:text-slate-300 mb-8 xl:mb-[32px] max-w-3xl mx-auto">
+          {subtitle}
+        </p>
+      )}
+      
+      {actions && actions.length > 0 && (
+        <div class="flex flex-col sm:flex-row gap-4 xl:gap-[16px] justify-center items-center">
+          {actions.map((action) => (
+            <Button
+              variant={action.variant || "primary"}
+              class={`group ${action.class || ""}`}
+              {...action}
+            >
+              <span class="flex items-center">
+                {action.text}
+                {action.icon && (
+                  <Icon 
+                    name={action.icon} 
+                    class="w-5 h-5 xl:w-[20px] xl:h-[20px] ml-2 xl:ml-[8px] group-hover:translate-x-1 transition-transform duration-200" 
+                  />
+                )}
+              </span>
+            </Button>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</WidgetWrapper>
