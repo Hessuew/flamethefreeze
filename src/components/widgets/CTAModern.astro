@@ -1,0 +1,290 @@
+---
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import Button from "~/components/ui/Button.astro";
+import FireButton from "~/components/ui/FireButton.astro";
+import IceButton from "~/components/ui/IceButton.astro";
+import { Icon } from "astro-icon/components";
+import type { CallToAction as Props } from "~/types";
+
+const {
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
+  tagline = await Astro.slots.render("tagline"),
+  actions = [],
+  id,
+  classes = {},
+  bg = await Astro.slots.render("bg"),
+} = Astro.props;
+---
+
+<WidgetWrapper id={id} containerClass={`max-w-6xl xl:max-w-[1200px] ${classes?.container ?? ""}`} bg={bg}>
+  <div
+    class="relative overflow-hidden rounded-3xl xl:rounded-[24px] p-12 xl:p-[48px] lg:p-16 xl:lg:p-[64px] text-center fire-cta-container"
+  >
+    {/* Animated fire background */}
+    <div class="absolute inset-0 fire-background"></div>
+
+    {/* Floating fire particles */}
+    <div class="absolute inset-0 fire-particles">
+      <div class="fire-particle fire-particle-1"></div>
+      <div class="fire-particle fire-particle-2"></div>
+      <div class="fire-particle fire-particle-3"></div>
+      <div class="fire-particle fire-particle-4"></div>
+      <div class="fire-particle fire-particle-5"></div>
+    </div>
+
+    {/* Glow effects */}
+    <div
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-radial from-orange-500/20 via-red-600/10 to-transparent rounded-full blur-3xl"
+    >
+    </div>
+
+    <div class="relative z-10">
+      {
+        tagline && (
+          <div class="inline-block mb-6 xl:mb-[24px]">
+            <span class="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-600 bg-clip-text text-transparent font-bold uppercase tracking-widest text-sm xl:text-[14px] xl:leading-[20px]">
+              🔥 {tagline} 🔥
+            </span>
+          </div>
+        )
+      }
+
+      {
+        title && (
+          <h2 class="text-4xl xl:text-[48px] xl:leading-[56px] md:text-5xl xl:md:text-[56px] xl:md:leading-[64px] lg:text-6xl xl:lg:text-[64px] xl:lg:leading-[72px] font-black text-white mb-6 xl:mb-[24px] fire-title">
+            <span class="bg-gradient-to-r from-yellow-200 via-orange-300 to-red-400 bg-clip-text text-transparent drop-shadow-2xl">
+              {title}
+            </span>
+          </h2>
+        )
+      }
+
+      {
+        subtitle && (
+          <p
+            class="text-xl xl:text-[24px] xl:leading-[32px] md:text-2xl xl:md:text-[28px] xl:md:leading-[36px] text-orange-100 mb-10 xl:mb-[40px] max-w-4xl mx-auto font-medium leading-relaxed"
+            set:html={subtitle}
+          />
+        )
+      }
+
+      {
+        actions && actions.length > 0 && (
+          <div class="flex flex-col sm:flex-row gap-6 xl:gap-[24px] justify-center items-center">
+            {actions.map((action) => {
+              const buttonType = action.buttonType || "fire"; // Default to fire
+              const buttonVariant = action.variant || "primary";
+              const buttonSize = action.size || "large";
+
+              if (buttonType === "ice") {
+                return (
+                  <IceButton
+                    text={action.text}
+                    variant={buttonVariant}
+                    size={buttonSize}
+                    href={action.href}
+                    icon={action.icon ? "tabler:arrow-right" : undefined}
+                    class={action.class || ""}
+                    {...action}
+                  />
+                );
+              } else if (buttonType === "fire") {
+                return (
+                  <FireButton
+                    text={action.text}
+                    variant={buttonVariant}
+                    size={buttonSize}
+                    href={action.href}
+                    icon={action.icon ? "tabler:arrow-right" : undefined}
+                    class={action.class || ""}
+                    {...action}
+                  />
+                );
+              } else {
+                // Fallback to regular Button for other types
+                console.log("Unknown button type: ", buttonType);
+                return (
+                  <Button variant={buttonVariant} class={`group ${action.class || ""}`} {...action}>
+                    <span class="flex items-center font-bold text-lg xl:text-[18px] xl:leading-[24px]">
+                      {action.text}
+                      {action.icon && (
+                        <Icon
+                          name={action.icon}
+                          class="w-6 h-6 xl:w-[24px] xl:h-[24px] ml-3 xl:ml-[12px] group-hover:translate-x-2 group-hover:scale-110 transition-all duration-300"
+                        />
+                      )}
+                    </span>
+                  </Button>
+                );
+              }
+            })}
+          </div>
+        )
+      }
+    </div>
+  </div>
+</WidgetWrapper>
+
+<style>
+  .fire-cta-container {
+    background: linear-gradient(
+      135deg,
+      #1a0000 0%,
+      #2d0a00 15%,
+      #4a1400 30%,
+      #6b1f00 45%,
+      #8b2500 60%,
+      #a02800 75%,
+      #b52a00 90%,
+      #cc2900 100%
+    );
+    border: 2px solid rgba(255, 165, 0, 0.3);
+    box-shadow:
+      0 0 50px rgba(255, 69, 0, 0.3),
+      0 0 100px rgba(255, 140, 0, 0.2),
+      inset 0 0 50px rgba(255, 69, 0, 0.1);
+  }
+
+  .fire-background {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 69, 0, 0.2) 0%,
+      rgba(255, 140, 0, 0.15) 25%,
+      rgba(255, 165, 0, 0.1) 50%,
+      transparent 75%
+    );
+    animation: fireGlow 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes fireGlow {
+    0% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  .fire-particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: radial-gradient(circle, #ff4500 0%, #ffa500 50%, transparent 100%);
+    border-radius: 50%;
+    animation: floatUp 6s infinite linear;
+  }
+
+  .fire-particle-1 {
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 8s;
+  }
+
+  .fire-particle-2 {
+    left: 25%;
+    animation-delay: 2s;
+    animation-duration: 6s;
+  }
+
+  .fire-particle-3 {
+    left: 50%;
+    animation-delay: 1s;
+    animation-duration: 7s;
+  }
+
+  .fire-particle-4 {
+    left: 75%;
+    animation-delay: 3s;
+    animation-duration: 5s;
+  }
+
+  .fire-particle-5 {
+    left: 90%;
+    animation-delay: 4s;
+    animation-duration: 9s;
+  }
+
+  @keyframes floatUp {
+    0% {
+      bottom: -10px;
+      opacity: 0;
+      transform: translateX(0) scale(0.5);
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      bottom: 100%;
+      opacity: 0;
+      transform: translateX(20px) scale(1.2);
+    }
+  }
+
+  .fire-glow {
+    text-shadow:
+      0 0 10px rgba(255, 165, 0, 0.8),
+      0 0 20px rgba(255, 69, 0, 0.6),
+      0 0 30px rgba(255, 140, 0, 0.4);
+    /* animation: textGlow 2s ease-in-out infinite alternate; */
+  }
+
+  /* @keyframes textGlow {
+    0% {
+      text-shadow:
+        0 0 10px rgba(255, 165, 0, 0.8),
+        0 0 20px rgba(255, 69, 0, 0.6),
+        0 0 30px rgba(255, 140, 0, 0.4);
+    }
+    100% {
+      text-shadow:
+        0 0 15px rgba(255, 165, 0, 1),
+        0 0 25px rgba(255, 69, 0, 0.8),
+        0 0 35px rgba(255, 140, 0, 0.6);
+    }
+  } */
+
+  .fire-title {
+    text-shadow:
+      0 0 20px rgba(255, 215, 0, 0.8),
+      0 0 40px rgba(255, 140, 0, 0.6),
+      0 0 60px rgba(255, 69, 0, 0.4);
+    /* animation: titlePulse 4s ease-in-out infinite; */
+  }
+
+  /* @keyframes titlePulse {
+    0%,
+    100% {
+      transform: scale(1);
+      text-shadow:
+        0 0 20px rgba(255, 215, 0, 0.8),
+        0 0 40px rgba(255, 140, 0, 0.6),
+        0 0 60px rgba(255, 69, 0, 0.4);
+    }
+    50% {
+      transform: scale(1.02);
+      text-shadow:
+        0 0 25px rgba(255, 215, 0, 1),
+        0 0 50px rgba(255, 140, 0, 0.8),
+        0 0 75px rgba(255, 69, 0, 0.6);
+    }
+  } */
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .fire-particle {
+      width: 3px;
+      height: 3px;
+    }
+
+    .fire-title {
+      font-size: 2.5rem !important;
+      line-height: 1.2 !important;
+    }
+  }
+</style>

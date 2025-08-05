@@ -18,7 +18,7 @@ const t = useTranslations(lang);
 ---
 
 <div
-  class="dropdown-menu absolute top-[56px] right-[10%] lg:backdrop-blur-md lg:bg-[#fff2dbb9]/80 dark:lg:bg-[#1a0024d2]/80 drop-shadow-xl lg:border border-gray-200 dark:border-gray-800 transition-all duration-300 ease-in-out opacity-0 pointer-events-none transform rounded-md"
+  class="dropdown-menu absolute top-[56px] right-[10%] lg:backdrop-blur-md lg:bg-[#1a0024d2]/80 drop-shadow-xl lg:border border-gray-800 transition-all duration-300 ease-in-out opacity-0 pointer-events-none transform rounded-md"
   data-navigation-menu
 >
   <div class="w-[492px]">
@@ -56,11 +56,11 @@ const t = useTranslations(lang);
                           {icon && (
                             <Icon
                               name={icon}
-                              class="w-7 h-7 xl:w-[28px] xl:h-[28px] text-black dark:text-white group-hover:text-orange-700"
+                              class="w-7 h-7 xl:w-[28px] xl:h-[28px] text-white group-hover:text-orange-700"
                             />
                           )}
                           <div class="flex flex-col">
-                            <span class="font-medium bg-fuchsia-700 xl:text-[16px] xl:leading-[24px] text-transparent bg-clip-text bg-gradient-to-r from-black to-black dark:from-white dark:to-white group-hover:from-orange-600 group-hover:to-yellow-500">
+                            <span class="inline-block font-medium xl:text-[16px] xl:leading-[24px] text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-hover:from-orange-600 group-hover:to-yellow-500">
                               {text ? t(text as keyof typeof ui.en) : text}
                             </span>
                             {description && (
@@ -80,7 +80,7 @@ const t = useTranslations(lang);
                   .map(({ text, href, image }) => (
                     <li class="group">
                       <a
-                        class="relative block h-24 xl:h-[96px] rounded-lg transform-gpu overflow-hidden ring-0 ring-white dark:ring-gray-700 group-hover:ring-1 transition duration-200"
+                        class="relative block h-24 xl:h-[96px] rounded-lg transform-gpu overflow-hidden ring-0 ring-gray-700 group-hover:ring-1 transition duration-200"
                         href={getPermalink(`${lang}/${href}`)}
                       >
                         {image && (
@@ -166,9 +166,6 @@ const t = useTranslations(lang);
       if (container) {
         container.style.height = `${height}px`;
       }
-      // if (menu) {
-      //   menu.style.left = index === 2 ? '31%' : '29%';
-      // }
 
       if (index !== activePanel) {
         panels?.forEach((panel, i) => {
@@ -203,6 +200,7 @@ const t = useTranslations(lang);
       if (menu) {
         menu.classList.remove("opacity-100", "pointer-events-auto");
         menu.classList.add("opacity-0", "pointer-events-none");
+        container.style.height = "0px";
       }
       clearActiveButton();
     }

@@ -1,0 +1,306 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  text: string;
+  href?: string;
+  variant?: "primary" | "secondary";
+  size?: "small" | "medium" | "large";
+  class?: string;
+  icon?: string;
+  [key: string]: unknown;
+}
+
+const { text, href, variant = "primary", size = "medium", class: className = "", icon, ...rest } = Astro.props;
+
+const Tag = href ? "a" : "button";
+const sizeClasses = {
+  small: "px-6 py-3 xl:px-[24px] xl:py-[12px] text-sm xl:text-[14px] xl:leading-[20px]",
+  medium: "px-3 md:px-8 py-4 text-base xl:text-[16px] xl:leading-[24px]",
+  large: "px-10 py-5 xl:px-[40px] xl:py-[20px] text-lg xl:text-[20px] xl:leading-[28px]",
+};
+---
+
+<Tag
+  class={`fire-button fire-button-${variant} fire-button-${size} ${className} relative inline-flex items-center justify-center font-bold rounded-full transition-all duration-300 overflow-hidden group ${sizeClasses[size]}`}
+  href={href}
+  {...rest}
+>
+  <!-- Fire Background Animation -->
+  <div class="fire-bg absolute inset-0 rounded-full text-sm"></div>
+
+  <!-- Floating Fire Particles -->
+  <div class="fire-particles absolute inset-0 rounded-full overflow-hidden">
+    <div class="fire-particle fire-particle-1"></div>
+    <div class="fire-particle fire-particle-2"></div>
+    <div class="fire-particle fire-particle-3"></div>
+    <div class="fire-particle fire-particle-4"></div>
+    <div class="fire-particle fire-particle-5"></div>
+    <div class="fire-particle fire-particle-6"></div>
+  </div>
+
+  <!-- Inner Glow -->
+  <div
+    class="fire-glow absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+  >
+  </div>
+
+  <!-- Button Content -->
+  <span class="relative z-10 flex items-center">
+    {text}
+    {
+      icon && (
+        <Icon
+          name={icon}
+          class="w-6 h-6 xl:w-[24px] xl:h-[24px] ml-3 xl:ml-[12px] group-hover:translate-x-2 group-hover:scale-110 transition-all duration-300"
+        />
+      )
+    }
+  </span>
+
+  <!-- Press Effect Overlay -->
+  <div
+    class="press-effect absolute inset-0 rounded-full opacity-0 group-active:opacity-100 transition-opacity duration-150"
+  >
+  </div>
+</Tag>
+
+<style>
+  .fire-button {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+    transform-style: preserve-3d;
+  }
+
+  /* Primary Fire Button */
+  .fire-button-primary {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 25%, #ff4500 50%, #dc2626 75%, #991b1b 100%);
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow:
+      0 4px 15px rgba(255, 69, 0, 0.4),
+      0 2px 10px rgba(255, 140, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .fire-button-primary:hover {
+    background: linear-gradient(135deg, #ff7849 0%, #ff8c42 25%, #ff5722 50%, #ef4444 75%, #b91c1c 100%);
+    box-shadow:
+      0 6px 25px rgba(255, 69, 0, 0.6),
+      0 4px 15px rgba(255, 140, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  .fire-button-primary:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow:
+      0 2px 10px rgba(255, 69, 0, 0.5),
+      0 1px 5px rgba(255, 140, 0, 0.3),
+      inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Secondary Fire Button */
+  .fire-button-secondary {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 165, 0, 0.2) 100%);
+    color: #ffa500;
+    border: 2px solid rgba(255, 165, 0, 0.6);
+    backdrop-filter: blur(10px);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .fire-button-secondary:hover {
+    background: linear-gradient(135deg, rgba(255, 165, 0, 0.2) 0%, rgba(255, 140, 0, 0.3) 100%);
+    border-color: #ffa500;
+    color: white;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.4);
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  .fire-button-secondary:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* Fire Background Animation */
+  .fire-bg {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 69, 0, 0.3) 0%,
+      rgba(255, 140, 0, 0.2) 30%,
+      rgba(255, 165, 0, 0.1) 60%,
+      transparent 100%
+    );
+    animation: fireFlicker 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes fireFlicker {
+    0% {
+      opacity: 0.7;
+      transform: scale(1) rotate(0deg);
+    }
+    25% {
+      opacity: 0.9;
+      transform: scale(1.05) rotate(1deg);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(0.98) rotate(-0.5deg);
+    }
+    75% {
+      opacity: 1;
+      transform: scale(1.02) rotate(0.8deg);
+    }
+    100% {
+      opacity: 0.9;
+      transform: scale(1.01) rotate(-0.3deg);
+    }
+  }
+
+  /* Fire Particles */
+  .fire-particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: radial-gradient(circle, #ff4500 0%, #ffa500 70%, transparent 100%);
+    border-radius: 50%;
+    animation: particleFloat 4s infinite linear;
+    opacity: 0;
+  }
+
+  .fire-particle-1 {
+    left: 15%;
+    animation-delay: 0s;
+    animation-duration: 3s;
+  }
+
+  .fire-particle-2 {
+    left: 30%;
+    animation-delay: 0.5s;
+    animation-duration: 4s;
+  }
+
+  .fire-particle-3 {
+    left: 50%;
+    animation-delay: 1s;
+    animation-duration: 3.5s;
+  }
+
+  .fire-particle-4 {
+    left: 70%;
+    animation-delay: 1.5s;
+    animation-duration: 4.5s;
+  }
+
+  .fire-particle-5 {
+    left: 85%;
+    animation-delay: 2s;
+    animation-duration: 3.2s;
+  }
+
+  .fire-particle-6 {
+    left: 45%;
+    animation-delay: 2.5s;
+    animation-duration: 3.8s;
+  }
+
+  @keyframes particleFloat {
+    0% {
+      bottom: 10%;
+      opacity: 0;
+      transform: translateX(0) scale(0.5);
+    }
+    10% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+      transform: translateX(10px) scale(1);
+    }
+    90% {
+      opacity: 0.3;
+    }
+    100% {
+      bottom: 90%;
+      opacity: 0;
+      transform: translateX(-5px) scale(1.2);
+    }
+  }
+
+  /* Inner Glow Effect */
+  .fire-glow {
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 215, 0, 0.4) 0%,
+      rgba(255, 140, 0, 0.3) 40%,
+      rgba(255, 69, 0, 0.2) 70%,
+      transparent 100%
+    );
+    animation: glowPulse 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes glowPulse {
+    0% {
+      opacity: 0.6;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  /* Press Effect */
+  .press-effect {
+    background: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent 100%
+    );
+  }
+
+  /* Hover Enhancements */
+  .fire-button:hover .fire-particle {
+    animation-duration: 2s;
+  }
+
+  .fire-button:hover .fire-bg {
+    animation-duration: 1s;
+  }
+
+  /* Size Variations */
+  .fire-button-small .fire-particle {
+    width: 2px;
+    height: 2px;
+  }
+
+  .fire-button-large .fire-particle {
+    width: 4px;
+    height: 4px;
+  }
+
+  /* Accessibility */
+  .fire-button:focus {
+    outline: 2px solid rgba(255, 165, 0, 0.8);
+    outline-offset: 2px;
+  }
+
+  .fire-button:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Disabled State */
+  .fire-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+  }
+
+  .fire-button:disabled .fire-particle,
+  .fire-button:disabled .fire-bg {
+    animation-play-state: paused;
+  }
+</style>

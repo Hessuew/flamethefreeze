@@ -1,0 +1,241 @@
+---
+// FreezeOverlay component with improved design and animations
+---
+
+<div id="freeze-overlay" class="freeze-overlay hidden">
+  <div class="freeze-content">
+    <!-- Improved Ice Crystals with better animations -->
+    <div class="ice-crystals">
+      <div class="ice-crystal">❄</div>
+      <div class="ice-crystal">❅</div>
+      <div class="ice-crystal">❄</div>
+      <div class="ice-crystal">❅</div>
+      <div class="ice-crystal">❄</div>
+      <div class="ice-crystal">❅</div>
+      <div class="ice-crystal">❄</div>
+      <div class="ice-crystal">❅</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .freeze-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: 
+      /* Light blue gradient - less transparent at top and bottom, more in middle */ linear-gradient(
+      to bottom,
+      rgba(140, 216, 241, 0.95) 0%,
+      rgba(134, 203, 231, 0.8) 15%,
+      rgba(176, 196, 222, 0.3) 35%,
+      rgba(200, 230, 255, 0.2) 50%,
+      rgba(176, 196, 222, 0.3) 65%,
+      rgba(135, 206, 235, 0.8) 85%,
+      rgba(140, 216, 241, 0.95) 100%
+    );
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+  }
+
+  .freeze-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .freeze-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Improved Ice Crystal Animations */
+  .ice-crystals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    animation: iceShimmer 3s ease-in-out infinite alternate;
+  }
+
+  .ice-crystal {
+    position: absolute;
+    font-size: 2rem;
+    color: rgba(173, 216, 230, 0.9);
+    text-shadow:
+      0 0 10px rgba(173, 216, 230, 0.8),
+      0 0 20px rgba(135, 206, 235, 0.6);
+    animation: snowfall 8s infinite linear;
+    opacity: 0;
+  }
+
+  /* Better snowfall animation */
+  @keyframes snowfall {
+    0% {
+      opacity: 0;
+      transform: translateY(-100px) translateX(0) rotate(0deg) scale(0.5);
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100vh) translateX(50px) rotate(360deg) scale(1.2);
+    }
+  }
+
+  @keyframes iceShimmer {
+    0% {
+      opacity: 0.6;
+      transform: scale(1) rotate(0deg);
+    }
+    25% {
+      opacity: 0.8;
+      transform: scale(1.02) rotate(-0.5deg);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(0.99) rotate(0.3deg);
+    }
+    75% {
+      opacity: 1;
+      transform: scale(1.01) rotate(-0.2deg);
+    }
+    100% {
+      opacity: 0.7;
+      transform: scale(1) rotate(0.1deg);
+    }
+  }
+
+  /* Distribute ice crystals */
+  .ice-crystal:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+    animation-duration: 6s;
+  }
+  .ice-crystal:nth-child(2) {
+    left: 25%;
+    animation-delay: 1s;
+    animation-duration: 8s;
+  }
+  .ice-crystal:nth-child(3) {
+    left: 40%;
+    animation-delay: 2s;
+    animation-duration: 7s;
+  }
+  .ice-crystal:nth-child(4) {
+    left: 55%;
+    animation-delay: 3s;
+    animation-duration: 9s;
+  }
+  .ice-crystal:nth-child(5) {
+    left: 70%;
+    animation-delay: 0.5s;
+    animation-duration: 6.5s;
+  }
+  .ice-crystal:nth-child(6) {
+    left: 85%;
+    animation-delay: 1.5s;
+    animation-duration: 8.5s;
+  }
+  .ice-crystal:nth-child(7) {
+    left: 15%;
+    animation-delay: 2.5s;
+    animation-duration: 7.5s;
+  }
+  .ice-crystal:nth-child(8) {
+    left: 75%;
+    animation-delay: 3.5s;
+    animation-duration: 9.5s;
+  }
+
+  /* Page freeze effect */
+  .page-frozen {
+    filter: blur(2px) brightness(0.6) contrast(1.2) saturate(0.8);
+    transform: scale(0.98);
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+</style>
+
+<script>
+  // TypeScript declaration for global function
+  declare global {
+    interface Window {
+      triggerFreeze: () => void;
+      waveObserver: IntersectionObserver;
+    }
+  }
+  document.addEventListener("astro:page-load", () => {
+    // Function to trigger freeze animation and confirm directly
+    window.triggerFreeze = function () {
+      const overlay = document.getElementById("freeze-overlay");
+      const body = document.body;
+
+      if (overlay) {
+        // Add freeze effect to page content
+        body.classList.add("page-frozen");
+
+        // Show overlay with animation
+        overlay.classList.remove("hidden");
+
+        // Trigger animation after a small delay
+        setTimeout(() => {
+          overlay.classList.add("active");
+        }, 100);
+
+        // Call confirm freeze directly after a brief delay to show the overlay
+        setTimeout(() => {
+          confirmFreeze();
+        }, 500);
+      }
+    };
+
+    // Function to confirm freeze (use browser modal)
+    function confirmFreeze() {
+      // Use native browser confirmation
+      const confirmed = confirm("Are you sure you want to leave this page? All progress will be lost.");
+
+      if (confirmed) {
+        // Add final freeze effect
+        const body = document.body;
+        body.style.filter = "blur(5px) brightness(0.3)";
+        body.style.transform = "scale(0.95)";
+
+        // Close the page after animation
+        setTimeout(() => {
+          window.close();
+          // Fallback if window.close() doesn't work
+          if (!window.closed) {
+            window.location.href = "about:blank";
+          }
+        }, 1000);
+      } else {
+        // User cancelled, remove freeze
+        const overlay = document.getElementById("freeze-overlay");
+        const body = document.body;
+
+        if (overlay) {
+          overlay.classList.remove("active");
+          body.classList.remove("page-frozen");
+
+          setTimeout(() => {
+            overlay.classList.add("hidden");
+          }, 800);
+        }
+      }
+    }
+  });
+</script>

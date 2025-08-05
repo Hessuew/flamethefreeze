@@ -1,45 +1,28 @@
 ---
-import "@fontsource-variable/inter";
-
-// 'DM Sans'
-// Nunito
-// Dosis
-// Outfit
-// Roboto
-// Literata
-// 'IBM Plex Sans'
-// Karla
-// Poppins
-// 'Fira Sans'
-// 'Libre Franklin'
-// Inconsolata
-// Raleway
-// Oswald
-// 'Space Grotesk'
-// Urbanist
+// Using system font stack for optimal performance
+// No font imports needed - using native OS fonts
 ---
 
 <style is:inline is:global>
   :root {
-    --aw-font-sans: "Inter Variable";
-    --aw-font-serif: var(--aw-font-sans);
-    --aw-font-heading: var(--aw-font-sans);
+    --aw-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --aw-font-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --aw-font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
-    --aw-color-primary: rgb(34, 34, 34);
-    --aw-color-secondary: rgb(34, 34, 34);
+    --aw-color-primary: rgb(83, 6, 113);
+    --aw-color-secondary: rgb(83, 6, 113);
     --aw-color-accent: rgb(109 40 217);
 
     --aw-color-text-heading: rgb(0 0 0);
     --aw-color-text-default: rgb(16 16 16);
-    --aw-color-text-muted: rgb(16 16 16 / 66%);
-    --aw-color-bg-page: #fff2db;
-
+    /* --aw-color-text-muted: rgb(16 16 16 / 66%); */
+    --aw-color-text-muted: rgb(229 236 246 / 66%);
+    --aw-color-bg-page: #1a0024;
     --aw-color-bg-page-dark: #1a0024;
-    /* --aw-color-bg-page-dark: rgb(18, 0, 26); */
-    /* --aw-color-bg-page-dark: rgb(13, 0, 18); */
 
     ::selection {
-      background-color: lavender;
+      background-color: black;
+      color: snow;
     }
   }
 
@@ -49,13 +32,12 @@ import "@fontsource-variable/inter";
     --aw-font-heading: var(--aw-font-sans);
 
     --aw-color-primary: rgb(83, 6, 113);
-    /* --aw-color-secondary: rgb(30 58 138); */
     --aw-color-secondary: rgb(83, 6, 113);
     --aw-color-accent: rgb(109 40 217);
 
     --aw-color-text-heading: rgb(0 0 0);
     --aw-color-text-default: rgb(229 236 246);
-    --aw-color-text-muted: rgb(229 236 246 / 66%);
+    --aw-color-text-muted: rgba(229, 236, 246, 0.75);
     --aw-color-bg-page: var(--aw-color-bg-page-dark);
 
     ::selection {

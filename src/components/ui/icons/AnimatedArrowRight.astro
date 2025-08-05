@@ -1,0 +1,141 @@
+---
+interface Props {
+  animate?: boolean;
+  classes?: string;
+  stroke?: string;
+  strokeWidth?: number;
+  delay?: number;
+  gradientFrom?: string;
+  gradientTo?: string;
+  gradientId?: string;
+}
+
+const {
+  animate = true,
+  classes= '',
+  stroke = 'currentColor',
+  strokeWidth = 2,
+  delay = 0,
+  gradientId = 'stoneGradient',
+  gradientFrom = '#021408',
+  gradientTo = '#166534',
+} = Astro.props;
+
+// Determine Tailwind color class
+const strokeClass = stroke.startsWith('text-') ? stroke : '';
+
+---
+<div class={animate ? 'wave-wrapper1 arrow-hover-container' : 'static-wrapper1 arrow-hover-container'}>
+  <svg 
+    class={`curvy-wave ${classes} ${strokeClass}`} 
+    viewBox='0 0 24 24'
+    xmlns="http://www.w3.org/2000/svg"
+  >
+      <defs>
+        <linearGradient id={gradientId} x1='0' y1='0' x2='1' y2='1'>
+          <stop offset='8%' stop-color={gradientFrom} />
+          <stop offset='100%' stop-color={gradientTo} />
+        </linearGradient>
+      </defs>
+
+      <path 
+        d="M3.338 7A10 10 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a10 10 0 0 1-8.662-5M12 16l4-4m0 0-4-4m4 4H2"
+        fill="none"
+        stroke={`url(#${gradientId})`}
+        stroke-width={strokeWidth} 
+        stroke-linecap="round"
+        class={animate ? 'wave-path1' : 'static-path1'}
+        style={animate ? `
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        animation-delay: ${delay}ms;
+      ` : ''}
+      />
+  </svg>
+
+  {animate && (
+    <>
+      <style is:inline>
+        .wave-wrapper1 {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          align-items: end;
+          display: flex;
+        }
+
+        .wave-path1 {
+          opacity: 0;
+        }
+
+        .wave-path1.visible {
+          opacity: 1;
+          animation: drawWave 4s ease-in-out forwards;
+        }
+
+        @keyframes drawWave {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+      </style>
+
+      <script>
+
+        function setupWaveObserver() {
+          if (window.waveObserver) {
+            window.waveObserver.disconnect();
+          }
+          window.waveObserver = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add('visible');
+                  entry.target.querySelector('.wave-path1')?.classList.add('visible');
+                  window.waveObserver.unobserve(entry.target);
+                }
+              });
+            },
+            { 
+              threshold: 0.1,
+              rootMargin: '50px'
+            }
+          );
+
+          document.querySelectorAll('.wave-wrapper1').forEach((wrapper) => {
+            if (wrapper && !wrapper.classList.contains('visible')) {
+              window.waveObserver.observe(wrapper);
+            }
+          });
+        }
+
+        // Run immediately
+        setupWaveObserver();
+
+        // Run again after page load to catch any dynamically loaded elements
+        window.addEventListener('load', setupWaveObserver);
+
+        // Run when Astro view transitions complete
+        document.addEventListener('astro:page-load', setupWaveObserver);
+
+      </script>
+    </>
+  )}
+</div>
+
+<style is:global>
+  .curvy-wave {
+    width: 100%;
+    height: 100%;
+  }
+
+  .static-wrapper1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .static-path1 {
+    opacity: 1;
+  }
+</style>

@@ -1,49 +1,152 @@
 ---
 import type { Headline as Props } from "~/types";
 import { twMerge } from "tailwind-merge";
+import Tagline from "./Tagline.astro";
 
 const {
   title = await Astro.slots.render("title"),
   subtitle = await Astro.slots.render("subtitle"),
   subtitle2 = await Astro.slots.render("subtitle2"),
   tagline,
+  type,
   classes = {},
 } = Astro.props;
 
 const {
   container: containerClass = "",
-  title: titleClass = "text-3xl md:text-4xl xl:text-[36px] xl:leading-[40px]",
-  subtitle: subtitleClass = "text-xl xl:text-[20px] xl:leading-[28px] max-w-5xl xl:max-w-[1080px] mx-auto",
-  subtitle2: subtitleClass2 = "text-xl xl:text-[20px] xl:leading-[28px] max-w-5xl xl:max-w-[1080px] mx-auto",
+  title: titleClass = "text-3xl md:text-5xl xl:text-[48px] xl:leading-[52px]",
+  subtitle: subtitleClass = "text-lg xl:text-[18px] xl:leading-[24px] max-w-5xl xl:max-w-[1080px] mx-auto",
+  subtitle2:
+    subtitleClass2 = "text-lg xl:text-[18px] xl:leading-[24px] font-semibold max-w-5xl xl:max-w-[1080px] mx-auto",
 } = classes;
 ---
 
 {
   (title || subtitle || tagline) && (
-    <div
-      class={twMerge(
-        "mb-8 md:mx-auto md:mb-12 xl:mb-[48px] text-center intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade",
-        containerClass
-      )}
-    >
-      {tagline && (
-        <p
-          class="bg-gradient-to-r from-orange-600 to-yellow-500 text-transparent bg-clip-text text-base xl:text-[16px] xl:leading-[24px] font-bold tracking-wide uppercase"
-          set:html={tagline}
-        />
-      )}
-      {title && (
-        <h2
-          class={twMerge(
-            "font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl xl:text-[36px] xl:leading-[40px]",
-            titleClass
+    <div class={twMerge("mb-8 md:mx-auto md:mb-12 xl:mb-[48px] text-center", containerClass)}>
+      {tagline && type && type !== 4 && <Tagline tagline={tagline} type={type} />}
+      {!type && (
+        <>
+          {tagline && (
+            <p
+              class="bg-gradient-to-r from-orange-600 to-yellow-500 text-transparent bg-clip-text text-base xl:text-[16px] xl:leading-[24px] font-bold tracking-wide uppercase"
+              set:html={tagline}
+            />
           )}
-          set:html={title}
-        />
+          {title && (
+            <h2
+              class={twMerge(
+                "font-bold leading-tighter tracking-tighter font-heading text-heading text-3xl xl:text-[36px] xl:leading-[40px]",
+                titleClass
+              )}
+              set:html={title}
+            />
+          )}
+
+          {subtitle && <p class={twMerge("mt-4 xl:mt-[16px] text-muted", subtitleClass)} set:html={subtitle} />}
+        </>
+      )}
+      {type === 1 && (
+        <>
+          {title && (
+            <h2
+              class={twMerge(
+                "font-semibold leading-tighter tracking-tighter font-heading text-heading text-4xl md:text-5xl xl:text-[48px] xl:leading-[52px]",
+                "intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade",
+                titleClass
+              )}
+              set:html={title}
+            />
+          )}
+
+          {subtitle && <p class={twMerge("mt-4 xl:mt-[16px] text-muted", subtitleClass)} set:html={subtitle} />}
+          {subtitle2 && <p class={twMerge("pt-10", subtitleClass2)} set:html={subtitle2} />}
+        </>
       )}
 
-      {subtitle && <p class={twMerge("mt-4 xl:mt-[16px] text-muted", subtitleClass)} set:html={subtitle} />}
-      {subtitle2 && <p class={twMerge("pt-10", subtitleClass2)} set:html={subtitle2} />}
+      {type === 2 && (
+        <div class="flex flex-col xl:flex-row gap-4 md:gap-8 xl:gap-[32px] justify-between text-left">
+          {title && (
+            <h2
+              class={twMerge(
+                "font-semibold leading-tighter tracking-tighter font-heading text-heading text-4xl md:text-5xl xl:text-[48px] xl:leading-[52px]",
+                "intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade",
+                titleClass
+              )}
+              set:html={title}
+            />
+          )}
+
+          {subtitle && (
+            <p
+              class={twMerge(
+                "mt-4 xl:mt-[16px] text-muted",
+                "intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade",
+                subtitleClass
+              )}
+              set:html={subtitle}
+            />
+          )}
+          {subtitle2 && <p class={twMerge("pt-10", subtitleClass2)} set:html={subtitle2} />}
+        </div>
+      )}
+
+      {type === 3 && (
+        <div class="flex-col text-left">
+          {title && (
+            <h2
+              class={twMerge(
+                "font-semibold leading-tighter tracking-tighter font-heading text-heading text-4xl md:text-5xl xl:text-[48px] xl:leading-[52px]",
+                "intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade",
+                titleClass
+              )}
+              set:html={title}
+            />
+          )}
+
+          {subtitle && (
+            <p
+              class={twMerge(
+                "mt-4 xl:mt-[16px] text-muted",
+                "intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade",
+                subtitleClass
+              )}
+              set:html={subtitle}
+            />
+          )}
+          {subtitle2 && <p class={twMerge("pt-10", subtitleClass2)} set:html={subtitle2} />}
+        </div>
+      )}
+
+      {type === 4 && (
+        <div class="flex flex-col-reverse xl:flex-row gap-4 md:gap-8 xl:gap-[32px] justify-between text-left">
+          {subtitle && (
+            <p
+              class={twMerge(
+                "mt-4 xl:mt-[16px] text-muted",
+                "intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade",
+                subtitleClass
+              )}
+              set:html={subtitle}
+            />
+          )}
+          {subtitle2 && <p class={twMerge("pt-10", subtitleClass2)} set:html={subtitle2} />}
+
+          {title && (
+            <div class="flex flex-col">
+              <Tagline tagline={tagline} type={type} />
+              <h2
+                class={twMerge(
+                  "font-semibold leading-tighter tracking-tighter font-heading text-heading text-4xl md:text-5xl xl:text-[48px] xl:leading-[52px]",
+                  "intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade",
+                  titleClass
+                )}
+                set:html={title}
+              />
+            </div>
+          )}
+        </div>
+      )}
     </div>
   )
 }

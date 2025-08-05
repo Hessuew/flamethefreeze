@@ -1,0 +1,316 @@
+---
+import Headline from "~/components/ui/Headline.astro";
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import Image from "~/components/common/Image.astro";
+import AnimatedArrowRight from "~/components/ui/icons/AnimatedArrowRight.astro";
+import { Icon } from "astro-icon/components";
+import type { ImageShowcase as Props } from "~/types";
+
+const {
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
+  tagline = await Astro.slots.render("tagline"),
+  images = [],
+  layout = "masonry", // masonry, grid, featured
+  id,
+  isDark = false,
+  classes = {},
+  type = 2,
+  bg = await Astro.slots.render("bg"),
+} = Astro.props;
+---
+
+<WidgetWrapper
+  id={id}
+  isDark={isDark}
+  containerClass={`max-w-7xl xl:max-w-[1280px] ${classes?.container ?? ""}`}
+  bg={bg}
+>
+  <Headline
+    type={type}
+    title={title}
+    subtitle={subtitle}
+    tagline={tagline}
+    classes={classes?.headline as Record<string, string>}
+  />
+
+  {
+    layout === "masonry" && (
+      <div class="columns-2 sm:columns-2 md:columns-3 lg:columns-4 mt-12 xl:mt-[48px] space-y-4 xl:space-y-[16px]">
+        {images.map((image, index) => {
+          const ItemWrapper = image.href ? "a" : "div";
+          const wrapperProps = image.href ? { href: image.href } : {};
+
+          return (
+            <ItemWrapper
+              {...wrapperProps}
+              class="icon-container-hover break-inside-avoid group relative overflow-hidden hover:scale-[1.02] focus-within:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl block focus-within:shadow-xl"
+              tabindex="0"
+            >
+              {image.src ? (
+                <Image
+                  class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500"
+                  src={image.src}
+                  alt={image.alt || `Showcase image ${index + 1}`}
+                  width={400}
+                  height={image.height || 300}
+                  loading="lazy"
+                />
+              ) : (
+                <div class="w-full aspect-[4/3] flex items-center justify-center rounded-3xl bg-gradient-to-br from-[#021408] to-green-800 p-2 xl:p-[4px]">
+                  <div class="flex flex-col h-full w-full items-center justify-center text-center bg-page rounded-3xl">
+                    <div class="w-16 h-16 md:w-20 md:h-20 lg:w-28 lg:h-28 xl:w-[112px] xl:h-[112px] mx-auto mb-1 md:mb-4 xl:mb-[16px] rounded-full flex items-center justify-center">
+                      <AnimatedArrowRight classes="w-full h-full" delay={800} />
+                    </div>
+                    <p class="text-sm md:text-base xl:text-[16px] xl:leading-[24px] text-white">Get started</p>
+                  </div>
+                </div>
+              )}
+
+              {image.title && (
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent">
+                  <div class="absolute top-0 left-0 right-0 px-1 md:p-4 xl:p-[16px]">
+                    <h3 class="text-white font-semibold text-md xs:text-xl xl:text-[20px] xl:leading-[28px] md:mb-1 xl:mb-[4px]">
+                      {image.title}
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent md:opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300">
+                  <div class="absolute bottom-0 left-0 right-0 flex flex-col gap-0.5 md:gap-2 p-1 md:p-4 xl:p-[16px]">
+                    {image.description && (
+                      <p class="hidden md:block text-white/90 text-xs md:text-sm xl:text-[14px] xl:leading-[20px]">
+                        {image.description}
+                      </p>
+                    )}
+
+                    {image.features && (
+                      <ul class="space-y-0.5 md:space-y-2 xl:space-y-[8px]">
+                        {image.features.map((feature) => (
+                          <li class="flex items-center text-[10px] sm:text-xs md:text-sm xl:text-[14px] xl:leading-[20px] text-white">
+                            <Icon
+                              name="tabler:check"
+                              class="w-4 h-4 xl:w-[16px] xl:h-[16px] text-white mr-1 md:mr-2 xl:mr-[8px] flex-shrink-0"
+                            />
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              )}
+            </ItemWrapper>
+          );
+        })}
+      </div>
+    )
+  }
+
+  {
+    layout === "grid" && (
+      <div class="grid gap-6 xl:gap-[24px] sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-12 xl:mt-[48px]">
+        {images.map((image, index) => (
+          <div
+            class="break-inside-avoid group relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+            tabindex="0"
+          >
+            {image.src ? (
+              <Image
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                src={image.src}
+                alt={image.alt || `Grid image ${index + 1}`}
+                width={300}
+                height={300}
+                loading="lazy"
+              />
+            ) : (
+              <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-800">
+                <div class="text-center">
+                  <div class="w-12 h-12 xl:w-[48px] xl:h-[48px] mx-auto mb-3 xl:mb-[12px] bg-slate-600 rounded-full flex items-center justify-center">
+                    <svg
+                      class="w-6 h-6 xl:w-[24px] xl:h-[24px] text-slate-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="text-xs xl:text-[12px] text-slate-400">Image</p>
+                </div>
+              </div>
+            )}
+
+            {image.title && (
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300">
+                <div class="absolute bottom-0 left-0 right-0 p-4 xl:p-[16px]">
+                  <h3 class="text-white font-semibold text-lg xl:text-[18px] xl:leading-[24px] mb-1 xl:mb-[4px]">
+                    {image.title}
+                  </h3>
+                  {image.description && (
+                    <p class="text-white/90 text-sm xl:text-[14px] xl:leading-[20px]">{image.description}</p>
+                  )}
+                </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    )
+  }
+
+  {
+    layout === "featured" && images.length > 0 && (
+      <div class="grid gap-4 xl:gap-[16px] md:grid-cols-3 mt-12 xl:mt-[48px]">
+        <div class="col-span-2">
+          <div
+            class="group relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 h-full hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl"
+            tabindex="0"
+          >
+            {images[0]?.src ? (
+              <Image
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                src={images[0].src}
+                alt={images[0].alt || "Featured image"}
+                width={860}
+                height={608}
+                loading="lazy"
+              />
+            ) : (
+              <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-800">
+                <div class="text-center">
+                  <div class="w-20 h-20 xl:w-[80px] xl:h-[80px] mx-auto mb-4 xl:mb-[16px] bg-slate-600 rounded-full flex items-center justify-center">
+                    <svg
+                      class="w-10 h-10 xl:w-[40px] xl:h-[40px] text-slate-400"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="text-lg xl:text-[18px] text-slate-400">Featured Image</p>
+                </div>
+              </div>
+            )}
+
+            {images[0].title && (
+              <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="absolute top-0 left-0 right-0 p-4 xl:p-[16px] bg-gradient-to-b from-black/80 via-black/60 to-transparent">
+                  <h3
+                    class="text-white font-semibold text-3xl xl:text-[30px] xl:leading-[36px] mb-2 xl:mb-[8px]"
+                    set:html={images[0].title}
+                  />
+                  <div class="flex max-w-md">
+                    {images[0].description && (
+                      <p
+                        class="text-white/90 text-base xl:text-[16px] xl:leading-[24px]"
+                        set:html={images[0].description}
+                      />
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4 xl:gap-[16px] h-full">
+          {images.slice(1, 3).map((image, index) => (
+            <div
+              tabindex="0"
+              class={`group relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl ${
+                index === 0 ? "flex-[2]" : "flex-[3]"
+              }`}
+            >
+              {image.src ? (
+                <Image
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  src={image.src}
+                  alt={image.alt || `Secondary image ${index + 1}`}
+                  width={400}
+                  height={index === 0 ? 236 : 354}
+                  loading="lazy"
+                />
+              ) : (
+                <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-800">
+                  <div class="text-center">
+                    <div class="w-12 h-12 xl:w-[48px] xl:h-[48px] mx-auto mb-2 xl:mb-[8px] bg-slate-600 rounded-full flex items-center justify-center">
+                      <svg
+                        class="w-6 h-6 xl:w-[24px] xl:h-[24px] text-slate-400"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                    <p class="text-sm xl:text-[14px] text-slate-400">Image</p>
+                  </div>
+                </div>
+              )}
+
+              {image.title && (
+                <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-transparent opacity-100 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300">
+                  <div class="absolute top-0 left-0 right-0 p-4 xl:p-[16px] bg-gradient-to-b from-black/80 via-black/80 to-transparent">
+                    <h3
+                      class="text-white font-semibold text-md lg:text-2xl xl:text-[24px] xl:leading-[32px] mb-1 xl:mb-[4px]"
+                      set:html={image.title}
+                    />
+                    {image.description && (
+                      <p
+                        class="text-white/90 text-xs lg:text-sm xl:text-[14px] xl:leading-[20px]"
+                        set:html={image.description}
+                      />
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+</WidgetWrapper>
+
+<style is:global>
+  @keyframes horizontalSpin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .icon-container-hover:hover .curvy-wave {
+    animation: horizontalSpin 1s ease-out !important;
+    transform-style: preserve-3d !important;
+  }
+
+  .icon-container-hover {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+
+  .icon-container-hover:hover {
+    transform: scale(1.02);
+  }
+</style>

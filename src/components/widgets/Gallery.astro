@@ -1,0 +1,87 @@
+---
+import Headline from "~/components/ui/Headline.astro";
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import Image from "~/components/common/Image.astro";
+import type { Gallery as Props } from "~/types";
+
+const {
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
+  tagline = await Astro.slots.render("tagline"),
+  images = [],
+  columns = 3,
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render("bg"),
+} = Astro.props;
+
+const gridCols = {
+  2: "sm:grid-cols-2",
+  3: "sm:grid-cols-2 lg:grid-cols-3",
+  4: "sm:grid-cols-2 lg:grid-cols-4",
+};
+const validColumns = columns in gridCols ? columns : 3;
+---
+
+<WidgetWrapper
+  id={id}
+  isDark={isDark}
+  containerClass={`max-w-7xl xl:max-w-[1280px] ${classes?.container ?? ""}`}
+  bg={bg}
+>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+
+  <div class={`grid gap-4 xl:gap-[16px] ${gridCols[validColumns]} mt-12 xl:mt-[48px]`}>
+    {
+      images.map((image, index) => (
+        <div class="group relative overflow-hidden rounded-xl xl:rounded-[12px] bg-gray-100 dark:bg-slate-800 aspect-square hover:scale-105 transition-all duration-500 shadow-lg hover:shadow-2xl">
+          {image.src ? (
+            <Image
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+              src={image.src}
+              alt={image.alt || `Gallery image ${index + 1}`}
+              width={400}
+              height={400}
+              loading="lazy"
+            />
+          ) : (
+            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-gray-200 to-gray-300 dark:from-slate-700 dark:to-slate-800">
+              <div class="text-center">
+                <div class="w-16 h-16 xl:w-[64px] xl:h-[64px] mx-auto mb-4 xl:mb-[16px] bg-white dark:bg-slate-600 rounded-full flex items-center justify-center">
+                  <svg
+                    class="w-8 h-8 xl:w-[32px] xl:h-[32px] text-gray-400 dark:text-slate-400"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <p class="text-sm xl:text-[14px] text-gray-500 dark:text-slate-400">Image placeholder</p>
+              </div>
+            </div>
+          )}
+
+          {image.title && (
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-0 left-0 right-0 p-4 xl:p-[16px]">
+                <h3 class="text-white font-semibold text-lg xl:text-[18px] xl:leading-[24px] mb-1 xl:mb-[4px]">
+                  {image.title}
+                </h3>
+                {image.description && (
+                  <p class="text-white/90 text-sm xl:text-[14px] xl:leading-[20px]">{image.description}</p>
+                )}
+              </div>
+            </div>
+          )}
+        </div>
+      ))
+    }
+  </div>
+</WidgetWrapper>
