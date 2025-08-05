@@ -44,7 +44,7 @@ const {
       )}
 
       {type === 2 && (
-        <div class="flex justify-between text-left">
+        <div class="flex flex-col xl:flex-row justify-between text-left">
           {title && (
             <h2
               class={twMerge(
@@ -98,7 +98,7 @@ const {
       )}
 
       {type === 4 && (
-        <div class="flex justify-between text-left">
+        <div class="flex flex-col-reverse xl:flex-row justify-between text-left">
           {subtitle && (
             <p
               class={twMerge(

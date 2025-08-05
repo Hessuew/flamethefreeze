@@ -37,7 +37,7 @@ const {
     <div class="video-showcase-container overflow-hidden">
       <div class="video-showcase-grid flex gap-6 xl:gap-[24px] transition-transform duration-500">
         {videos.map((video, index) => (
-          <div class="video-card flex-shrink-0 w-full sm:w-[calc(50%-12px)] xl:w-[calc(30%-16px)]">
+          <div class="video-card flex-shrink-0 w-[calc(50%-12px)] xs:w-[calc(40%-12px)] sm:w-[calc(30%-12px)] xl:w-[calc(30%-16px)]">
             <a href={video.link} class="group block">
               <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
                 <Image
@@ -61,9 +61,7 @@ const {
               <!-- Video Info (Always Visible) -->
               <div class="mt-4 xl:mt-[16px] space-y-2 xl:space-y-[8px]">
                 <div class="flex items-center gap-2">
-                  <h3 class="text-lg xl:text-[18px] xl:leading-[24px] font-semibold text-default group-hover:text-primary transition-colors duration-300">
-                    {video.title}
-                  </h3>
+                  <h3 class="text-md md:text-lg xl:text-[18px] xl:leading-[24px] font-semibold text-default group-hover:text-primary transition-colors duration-300" set:html={video.title}></h3>
                   <!-- Animated Arrow on Hover -->
                   <div class="arrow-container opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-[-8px] group-hover:translate-x-0">
                     <Icon name="tabler:arrow-right" class="w-5 h-5 xl:w-[20px] xl:h-[20px] text-primary" />
@@ -94,23 +92,38 @@ const {
       </div>
     </div>
 
-    <!-- Navigation Arrow (shown when there are more than 3 videos) -->
-    {videos.length > 3 && (
+    <!-- Navigation Arrows (responsive and always tabbable) -->
+    <div class="navigation-controls absolute inset-y-0 right-0 flex items-center z-10">
+      <!-- Previous Arrow -->
       <button 
-        class="nav-arrow absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 xl:translate-x-[16px] w-12 h-12 xl:w-[48px] xl:h-[48px] bg-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 z-10"
-        aria-label="View more videos"
+        class="nav-arrow nav-prev absolute right-16 sm:right-20 xl:right-[80px] w-10 h-10 sm:w-12 sm:h-12 xl:w-[48px] xl:h-[48px] bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+        aria-label="View previous videos"
+        tabindex="0"
       >
-        <Icon name="tabler:chevron-right" class="w-6 h-6 xl:w-[24px] xl:h-[24px] text-black" />
+        <Icon name="tabler:chevron-left" class="w-5 h-5 sm:w-6 sm:h-6 xl:w-[24px] xl:h-[24px] text-black" />
       </button>
-    )}
+      
+      <!-- Next Arrow -->
+      <button 
+        class="nav-arrow nav-next absolute right-0 translate-x-3 sm:translate-x-4 xl:translate-x-[16px] w-10 h-10 sm:w-12 sm:h-12 xl:w-[48px] xl:h-[48px] bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+        aria-label="View more videos"
+        tabindex="0"
+      >
+        <Icon name="tabler:chevron-right" class="w-5 h-5 sm:w-6 sm:h-6 xl:w-[24px] xl:h-[24px] text-black" />
+      </button>
+    </div>
   </div>
 </WidgetWrapper>
 
 <style>
   .video-showcase-container {
-    /* Show 3 full cards and partial 4th on xl screens */
+    /* Responsive container widths */
+    @media (min-width: 640px) {
+      width: calc(100% + 40px); /* Show partial next card on sm screens */
+      margin-right: -40px;
+    }
     @media (min-width: 1280px) {
-      width: calc(100% + 60px); /* Extra width to show partial 4th card */
+      width: calc(100% + 60px); /* Show partial next card on xl screens */
       margin-right: -60px;
     }
   }
@@ -134,33 +147,143 @@ const {
   .video-showcase-grid {
     scroll-behavior: smooth;
   }
+
+  /* Navigation arrow states */
+  .nav-arrow {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  .nav-arrow:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  .nav-arrow:focus {
+    opacity: 1;
+  }
+
+  .nav-arrow.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+
+  /* Responsive navigation positioning */
+  @media (max-width: 639px) {
+    .navigation-controls {
+      right: -8px;
+    }
+  }
 </style>
 
 <script>
   document.addEventListener('astro:page-load', () => {
-    const navArrow = document.querySelector('.nav-arrow');
+    const prevArrow = document.querySelector('.nav-prev') as HTMLButtonElement;
+    const nextArrow = document.querySelector('.nav-next') as HTMLButtonElement;
     const grid = document.querySelector('.video-showcase-grid') as HTMLElement;
     
-    if (navArrow && grid) {
+    if (prevArrow && nextArrow && grid) {
       let currentIndex = 0;
-      const cardWidth = 400; // Approximate card width including gap
-      const maxIndex = Math.max(0, grid.children.length - 3);
+      const totalVideos = grid.children.length;
       
-      navArrow.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % (maxIndex + 1);
+      // Calculate visible videos and max index based on screen size
+      function getVisibleVideosCount(): number {
+        const screenWidth = window.innerWidth;
+        if (screenWidth >= 1280) return 3; // xl screens
+        if (screenWidth >= 640) return 3;  // sm screens
+        return 2; // mobile screens
+      }
+      
+      function getCardWidth(): number {
+        const screenWidth = window.innerWidth;
+        if (screenWidth >= 1280) return 400; // xl: card + gap
+        if (screenWidth >= 640) return 320;  // sm: card + gap
+        if (screenWidth >= 480) return 292;  // sm: card + gap
+        return 200; // mobile: card + gap
+      }
+      
+      function updateArrowStates() {
+        const visibleVideos = getVisibleVideosCount();
+        const maxIndex = Math.max(0, totalVideos - visibleVideos);
+        
+        // Show/hide arrows based on necessity
+        if (totalVideos <= visibleVideos) {
+          prevArrow.style.display = 'none';
+          nextArrow.style.display = 'none';
+          return;
+        } else {
+          prevArrow.style.display = 'flex';
+          nextArrow.style.display = 'flex';
+        }
+        
+        // Update arrow states
+        if (currentIndex <= 0) {
+          prevArrow.classList.add('disabled');
+          prevArrow.setAttribute('aria-disabled', 'true');
+        } else {
+          prevArrow.classList.remove('disabled');
+          prevArrow.setAttribute('aria-disabled', 'false');
+        }
+        
+        if (currentIndex >= maxIndex) {
+          nextArrow.classList.add('disabled');
+          nextArrow.setAttribute('aria-disabled', 'true');
+        } else {
+          nextArrow.classList.remove('disabled');
+          nextArrow.setAttribute('aria-disabled', 'false');
+        }
+      }
+      
+      function navigate(direction: 'prev' | 'next') {
+        const visibleVideos = getVisibleVideosCount();
+        const maxIndex = Math.max(0, totalVideos - visibleVideos);
+        const cardWidth = getCardWidth();
+        
+        if (direction === 'next' && currentIndex < maxIndex) {
+          currentIndex++;
+        } else if (direction === 'prev' && currentIndex > 0) {
+          currentIndex--;
+        }
+        
         const translateX = currentIndex * cardWidth;
         grid.style.transform = `translateX(-${translateX}px)`;
-        
-        // Update arrow direction based on position
-        const icon = navArrow.querySelector('svg');
-        if (currentIndex === maxIndex) {
-          icon?.setAttribute('class', icon.getAttribute('class')?.replace('chevron-right', 'chevron-left') || '');
-          navArrow.setAttribute('aria-label', 'Go back to start');
-        } else {
-          icon?.setAttribute('class', icon.getAttribute('class')?.replace('chevron-left', 'chevron-right') || '');
-          navArrow.setAttribute('aria-label', 'View more videos');
+        updateArrowStates();
+      }
+      
+      // Event listeners
+      nextArrow.addEventListener('click', () => navigate('next'));
+      prevArrow.addEventListener('click', () => navigate('prev'));
+      
+      // Keyboard navigation
+      nextArrow.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          navigate('next');
         }
       });
+      
+      prevArrow.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          navigate('prev');
+        }
+      });
+      
+      // Handle window resize
+      let resizeTimeout: NodeJS.Timeout;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+          // Reset to first position on resize to avoid layout issues
+          currentIndex = 0;
+          grid.style.transform = 'translateX(0px)';
+          updateArrowStates();
+        }, 150);
+      });
+      
+      // Initial setup
+      updateArrowStates();
     }
   });
 </script>

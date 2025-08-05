@@ -20,7 +20,7 @@ const {
 } = Astro.props;
 
 const { labelContainer: labelContainerClass = "" } = classes;
-const { containerClass = "", titleClass = "" } = classes;
+const { containerClass = "", titleClass = "", subtitleClass = "", subtitleContainerClass = "" } = classes;
 ---
 
 <section class="relative md:-mt-[76px] not-prose" {...id ? { id } : {}}>
@@ -60,11 +60,14 @@ const { containerClass = "", titleClass = "" } = classes;
             />
           )
         }
-        <div class="max-w-3xl xl:max-w-[1080px] mx-auto">
+        <div class={twMerge("max-w-3xl xl:max-w-[1080px] mx-auto", subtitleContainerClass)}>
           {
             subtitle && (
               <p
-                class="text-xl xl:text-[20px] xl:leading-[28px] mb-6 xl:mb-[24px] text-slate-300 intersect-once intersect-tenth sm:intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
+                class={twMerge(
+                  "text-xl xl:text-[20px] xl:leading-[28px] mb-6 xl:mb-[24px] text-slate-300 intersect-once intersect-tenth sm:intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade",
+                  subtitleClass
+                )}
                 set:html={subtitle}
               />
             )
