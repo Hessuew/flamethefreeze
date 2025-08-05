@@ -316,7 +316,7 @@ const metadata = {
 
             // Start playing the video with Safari-specific handling
             const playPromise = heroVideo.play();
-            
+
             if (playPromise !== undefined) {
               playPromise
                 .then(() => {
@@ -325,18 +325,21 @@ const metadata = {
                 .catch((error) => {
                   console.log("Video autoplay failed:", error);
                   // For Safari, try to play on user interaction
-                  if (error.name === 'NotAllowedError') {
+                  if (error.name === "NotAllowedError") {
                     console.log("Autoplay blocked - will attempt to play on user interaction");
                     // Add click listener to start video on first user interaction
                     const startVideoOnInteraction = () => {
-                      heroVideo.play().then(() => {
-                        console.log("Video started after user interaction");
-                      }).catch(console.error);
-                      document.removeEventListener('click', startVideoOnInteraction);
-                      document.removeEventListener('touchstart', startVideoOnInteraction);
+                      heroVideo
+                        .play()
+                        .then(() => {
+                          console.log("Video started after user interaction");
+                        })
+                        .catch(console.error);
+                      document.removeEventListener("click", startVideoOnInteraction);
+                      document.removeEventListener("touchstart", startVideoOnInteraction);
                     };
-                    document.addEventListener('click', startVideoOnInteraction, { once: true });
-                    document.addEventListener('touchstart', startVideoOnInteraction, { once: true });
+                    document.addEventListener("click", startVideoOnInteraction, { once: true });
+                    document.addEventListener("touchstart", startVideoOnInteraction, { once: true });
                   }
                 });
             }
