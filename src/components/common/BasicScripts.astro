@@ -2,7 +2,7 @@
 
 ---
 
-<script is:inline>
+<script is:inline define:vars={{}}>
   if (window.basic_script) {
     return;
   }
@@ -123,12 +123,6 @@
 
   window.onload = onLoad;
   window.onpageshow = onPageShow;
-
-  // Handle Astro View Transitions
-  document.addEventListener("astro:before-swap", () => {
-    // Store current theme before transition
-    window.currentTheme = getThemePreference();
-  });
 
   document.addEventListener("astro:after-swap", () => {
     // Restore theme after transition
