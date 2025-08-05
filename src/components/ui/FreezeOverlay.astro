@@ -175,6 +175,7 @@
   declare global {
     interface Window {
       triggerFreeze: () => void;
+      waveObserver: IntersectionObserver;
     }
   }
   document.addEventListener("astro:page-load", () => {

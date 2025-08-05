@@ -38,7 +38,7 @@ const {
       <div class="video-showcase-grid flex gap-6 xl:gap-[24px] transition-transform duration-500">
         {videos.map((video, index) => (
           <div class="video-card flex-shrink-0 w-[calc(50%-12px)] xs:w-[calc(40%-12px)] sm:w-[calc(30%-12px)] xl:w-[calc(30%-16px)]">
-            <a href={video.link} class="group block">
+            <a href={video.link} target="_blank" class="group block">
               <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
                 <Image
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -116,13 +116,10 @@ const {
 
 <style>
   .video-showcase-container {
-    /* Responsive container widths */
-    @media (min-width: 640px) {
-      width: calc(100% + 40px); /* Show partial next card on sm screens */
-      margin-right: -40px;
-    }
+    width: calc(100% + 40px); 
+    margin-right: -40px;
     @media (min-width: 1280px) {
-      width: calc(100% + 60px); /* Show partial next card on xl screens */
+      width: calc(100% + 60px); 
       margin-right: -60px;
     }
   }
@@ -142,12 +139,10 @@ const {
     }
   }
 
-  /* Smooth scrolling for navigation */
   .video-showcase-grid {
     scroll-behavior: smooth;
   }
 
-  /* Navigation arrow states */
   .nav-arrow {
     opacity: 0.8;
     transition: all 0.3s ease;
@@ -168,7 +163,6 @@ const {
     cursor: not-allowed;
   }
 
-  /* Responsive navigation positioning */
   @media (max-width: 639px) {
     .navigation-controls {
       right: -8px;
@@ -195,11 +189,16 @@ const {
       }
       
       function getCardWidth(): number {
+
         const screenWidth = window.innerWidth;
-        if (screenWidth >= 1280) return 400; // xl: card + gap
-        if (screenWidth >= 640) return 320;  // sm: card + gap
-        if (screenWidth >= 480) return 292;  // sm: card + gap
-        return 200; // mobile: card + gap
+        const firstCard = grid.children[0] as HTMLElement;
+        let width = 200 // mobile: card + gap
+        if (screenWidth >= 1280) width = 400; // xl: card + gap
+        if (screenWidth >= 640) width = 320;  // sm: card + gap
+        if (screenWidth >= 480) width = 292;  // sm: card + gap
+
+        return firstCard ? firstCard.offsetWidth + 24 : width; // actual width + ga
+
       }
       
       function updateArrowStates() {
