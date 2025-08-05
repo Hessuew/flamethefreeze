@@ -37,7 +37,7 @@ const {
     <div class="video-showcase-container overflow-hidden">
       <div class="video-showcase-grid flex gap-6 xl:gap-[24px] transition-transform duration-500">
         {videos.map((video, index) => (
-          <div class="video-card flex-shrink-0 w-full sm:w-[calc(50%-12px)] xl:w-[calc(30%-16px)]">
+          <div class="video-card flex-shrink-0 w-full sm:w-[calc(50%-12px)] xl:w-[calc(28%-16px)]">
             <a href={video.link} class="group block">
               <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
                 <Image
@@ -75,7 +75,8 @@ const {
                 )}
 
 
-                  <p class="text-sm xl:text-[14px] xl:leading-[20px] text-muted">Topics:</p>
+                <p class="text-sm xl:text-[14px] xl:leading-[20px] text-muted pt-8 xl:pt-[18px]">Topics:</p>
+
                 {video.features && video.features.length > 0 && (
                   <ul class="space-y-1 xl:space-y-[4px]">
                     {video.features.map((feature) => (
@@ -109,8 +110,8 @@ const {
   .video-showcase-container {
     /* Show 3 full cards and partial 4th on xl screens */
     @media (min-width: 1280px) {
-      width: calc(100% + 120px); /* Extra width to show partial 4th card */
-      margin-right: -120px;
+      width: calc(100% + 60px); /* Extra width to show partial 4th card */
+      margin-right: -60px;
     }
   }
 
