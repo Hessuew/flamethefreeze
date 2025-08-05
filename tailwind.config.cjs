@@ -8,18 +8,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
+        primary: "var(--aw-color-primary)",
+        secondary: "var(--aw-color-secondary)",
+        accent: "var(--aw-color-accent)",
+        page: "var(--aw-color-page)",
+        // primary: {
+        //   DEFAULT: "hsl(var(--primary))",
+        //   foreground: "hsl(var(--primary-foreground))",
+        // },
+        // secondary: {
+        //   DEFAULT: "hsl(var(--secondary))",
+        //   foreground: "hsl(var(--secondary-foreground))",
+        // },
+        // accent: {
+        //   DEFAULT: "hsl(var(--accent))",
+        //   foreground: "hsl(var(--accent-foreground))",
+        // },
         default: "var(--aw-color-text-default)",
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -84,5 +88,5 @@ export default {
     }),
     animate,
   ],
-  darkMode: ["class", "class"],
+  darkMode: "class",
 };

@@ -1,6 +1,5 @@
 ---
 import ToggleMenu from "~/components/common/ToggleMenu.astro";
-import ToggleTheme from "~/components/common/ToggleTheme.astro";
 import Logo from "~/components/Logo.astro";
 import HeaderNavigation from "~/components/widgets/HeaderNavigation.astro";
 import { getHomePermalink, getPermalink, trimSlash } from "~/utils/permalinks";
@@ -44,7 +43,6 @@ const {
   isSticky = false,
   isDark = false,
   isFullWidth = false,
-  showToggleTheme = false,
   position = "right",
   classes = {},
 } = Astro.props;
@@ -60,12 +58,13 @@ const t = useTranslations(lang);
 <header
   class:list={[
     { sticky: isSticky, relative: !isSticky, dark: isDark },
-    "top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out",
+    "top-0 z-50 flex-none mx-auto w-full transition-all duration-500 ease-in-out",
   ]}
   {...isSticky ? { "data-aw-sticky-header": true } : {}}
   {...id ? { id } : {}}
 >
-  <div class="absolute inset-0"></div>
+  <!-- Enhanced background with gradient overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-primary/5 via-accent/3 to-primary/5"></div>
   <div
     class:list={[
       "relative text-default py-1 px-3 lg:px-6 xl:py-[4px] xl:px-[24px] mx-auto w-full",
@@ -81,8 +80,17 @@ const t = useTranslations(lang);
     ]}
   >
     <div class:list={[{ "mr-auto rtl:mr-0 rtl:ml-auto": position === "right" }, "flex justify-between"]}>
-      <a class="flex items-center justify-center relative pt-2 lg:pt-0" href={getHomePermalink()}>
-        <Logo />
+      <a
+        class="flex items-center justify-center relative pt-2 lg:pt-0 group transition-all duration-300 hover:scale-105"
+        href={getHomePermalink()}
+      >
+        <div class="relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          >
+          </div>
+          <Logo />
+        </div>
       </a>
       <div class="flex items-center lg:hidden">
         <ToggleMenu />
@@ -97,7 +105,6 @@ const t = useTranslations(lang);
     >
       <div class="flex justify-between items-center py-2 px-6 xl:py-[8px] xl:px-[24px] lg:hidden">
         <LanguagePicker />
-        <ToggleTheme />
       </div>
       <ul
         class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] xl:text-[15px] xl:tracking-[0.16px] font-medium lg:justify-center"
@@ -166,12 +173,14 @@ const t = useTranslations(lang);
               ) : (
                 <a
                   class:list={[
-                    "font-bold lg:font-normal ml-[16px] lg:pl-0 hover:text-primary px-2.5 xl:px-[10px] py-3 xl:py-[12px] flex items-center whitespace-nowrap",
-                    { "aw-link-active": href === currentPath },
-                    "border-b lg:border-b-0 border-gray-800",
-                    index === 2 && "mr-[10px]",
+                    "font-bold lg:font-normal ml-[16px] lg:pl-0 px-2.5 xl:px-[10px] py-3 xl:py-[12px] flex items-center whitespace-nowrap relative group transition-all duration-300 hover:text-white",
+                    {
+                      "text-primary after:w-full": href === currentPath,
+                      "hover:text-primary after:w-0 hover:after:w-full": href !== currentPath,
+                    },
+                    "after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-accent after:transition-all after:duration-300",
                   ]}
-                  href={getPermalink(`${lang}/${href}`)}
+                  href={href}
                 >
                   <div class="hidden lg:flex">{text ? t(text as keyof typeof ui.en) : text}</div>
                   <div class="flex lg:hidden items-center gap-3 active:text-primary pl-0">
@@ -197,7 +206,6 @@ const t = useTranslations(lang);
     >
       <div class="hidden lg:flex flex-none items-center w-full lg:w-auto gap-3 xl:gap-[12px]">
         <LanguagePicker />
-        {showToggleTheme && <ToggleTheme />}
       </div>
     </div>
   </div>

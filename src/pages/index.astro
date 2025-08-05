@@ -22,6 +22,7 @@ import FireButton from "~/components/ui/FireButton.astro";
 import IceButton from "~/components/ui/IceButton.astro";
 import FreezeOverlay from "~/components/ui/FreezeOverlay.astro";
 import { getPermalink } from "~/utils/permalinks";
+import { ENDPOINTS } from "~/config/endpoints";
 
 const metadata = {
   title: "Flame the Freeze — Where the Word of God and experience meets",
@@ -39,17 +40,19 @@ const metadata = {
 
     <video
       id="hero-video"
+      aria-label="fire of god and fire for god fire background"
       class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-1000 ease-in-out"
-      muted
+      data-src={`${ENDPOINTS.publicFiles}/fire_of_god_and_fire_for_god-fire_bg.mp4`}
       loop
-      playsinline
-      preload="auto"
+      muted
+      preload="none"
     >
-      <source src="/src/assets/videos/test1-3.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
     <!-- Gradient mask for bottom fade to purple background -->
     <div
-      class="absolute inset-0 z-5"
+      id="hero-gradient"
+      class="absolute inset-0 z-5 opacity-0 transition-opacity duration-1000 ease-in-out"
       style="background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(26, 0, 36, 0.05) 60%, rgba(26, 0, 36, 0.15) 70%, rgba(26, 0, 36, 0.35) 80%, rgba(26, 0, 36, 0.65) 90%, rgba(26, 0, 36, 0.85) 95%, #1a0024 100%);"
     >
     </div>
@@ -198,10 +201,10 @@ const metadata = {
     ]}
   >
     <Fragment slot="subtitle">
-      <span class="text-white">The fire is not for a select few, but for all who believe.</span>
-      <br class="hidden md:block" />
+      <span class="text-white">The fire of God is not for a select few, but for all who believe.</span>
+      <!-- <br class="hidden md:block" />
       But unfortunately many haven't tasted the fire of God. My friend, are you discontented 😖, and looking to finally find
-      the real thing? Look no further 🏁🎉!
+      the real thing? Look no further 🏁🎉! -->
     </Fragment>
   </ImageShowcase>
 
@@ -209,7 +212,7 @@ const metadata = {
     id="where"
     tagline="Where"
     title="Where can I receive<br/>the fire of God? 🔎🤷‍♂️"
-    type={4}
+    type={3}
     classes={{
       headline: {
         subtitle: "mx-0 max-w-md",
@@ -249,9 +252,9 @@ const metadata = {
     ]}
   >
     <Fragment slot="subtitle">
-      <span class="text-white">{`Be on fire for God => be in place where the fire of god is.`}</span>
-      Below is `non exhaustive and exclusive` list of ministries, and categories of what God has empowered them to do. Fasten
-      your seatbelts 🍒😁!
+      <span class="text-white">{`Be on fire for God => be in place where the fire of god is 🔥🏠`}</span>
+      <!-- Below is `non exhaustive and exclusive` list of ministries, and categories of what God has empowered them to do. Fasten
+      your seatbelts 🍒😁! -->
     </Fragment>
   </VideoShowcase>
 
@@ -287,19 +290,43 @@ const metadata = {
 
   <script>
     document.addEventListener("astro:page-load", () => {
-      // Start video after 6 seconds with fade-in effect
+      // Start video after 1 second with proper fade-in effect
       const heroVideo = document.getElementById("hero-video") as HTMLVideoElement;
+      const heroGradient = document.getElementById("hero-gradient") as HTMLVideoElement;
       if (heroVideo) {
         setTimeout(() => {
-          // Start playing the video
-          heroVideo.play().catch((error) => {
-            console.log("Video autoplay failed:", error);
-          });
+          const videoSrc = heroVideo.dataset.src;
 
-          // Fade in the video
-          heroVideo.classList.remove("opacity-0");
-          heroVideo.classList.add("opacity-100");
-        }, 1000); // 6 seconds delay
+          if (videoSrc && !heroVideo.src) {
+            heroVideo.src = videoSrc;
+            heroVideo.load(); // Ensure the video loads properly
+          }
+
+          // Set up event listener for when video has loaded enough data
+          const handleVideoLoaded = () => {
+            // Fade in the video only after it has loaded
+            heroVideo.classList.remove("opacity-0");
+            heroVideo.classList.add("opacity-100");
+            heroGradient.classList.remove("opacity-0");
+            heroGradient.classList.add("opacity-100");
+
+            // Start playing the video
+            heroVideo.play().catch((error) => {
+              console.log("Video autoplay failed:", error);
+            });
+
+            // Remove the event listener as it's no longer needed
+            heroVideo.removeEventListener("loadeddata", handleVideoLoaded);
+          };
+
+          // Add event listener for when video data is loaded
+          heroVideo.addEventListener("loadeddata", handleVideoLoaded);
+
+          // Fallback: if video is already loaded (cached), trigger immediately
+          if (heroVideo.readyState >= 2) {
+            handleVideoLoaded();
+          }
+        }, 1000); // 1 second delay
       }
     });
   </script>

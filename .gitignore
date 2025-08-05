@@ -23,3 +23,8 @@ package-lock.json
 pnpm-lock.yaml
 
 .astro
+
+# Cloudflare Workers
+.wrangler
+wrangler.toml
+.dev.vars
