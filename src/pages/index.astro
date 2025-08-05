@@ -2,13 +2,13 @@
 import Layout from "~/layouts/PageLayout.astro";
 
 import Hero from "~/components/widgets/Hero.astro";
+import logoUrl from "~/assets/images/default.jpg";
 import prayer from "~/assets/images/fire_of_god_and_fire_for_god-prayer.webp";
 import fire from "~/assets/images/index/fire_of_god_and_fire_for_god-fire.webp";
 import bible from "~/assets/images/index/fire_of_god_and_fire_for_god-bible.webp";
 import company from "~/assets/images/index/fire_of_god_and_fire_for_god-company.webp";
 import derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
 import kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
-import koinonia from "~/assets/images/ministries/fire_of_god_and_fire_for_god-koinonia.webp";
 import prayer_church from "~/assets/images/ministries/fire_of_god_and_fire_for_god-prayer_church.webp";
 import { TextAnimate } from "~/components/magicui/text-animate";
 import CTAModern from "~/components/widgets/CTAModern.astro";
@@ -25,7 +25,31 @@ import { getPermalink } from "~/utils/permalinks";
 import { ENDPOINTS } from "~/config/endpoints";
 
 const metadata = {
-  title: "Flame the Freeze — Where the Word of God and experience meets",
+  title: "Fire of God and Fire for God | Experience Divine Fire Today",
+  description:
+    "Discover the transformative fire of God and ignite your fire for God in 2025. Experience spiritual awakening, Holy Spirit baptism, and blazing Christian living.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://flamethefreeze.com",
+    siteName: "Flame the Freeze",
+    images: [
+      {
+        url: logoUrl.src,
+        width: 640,
+        height: 640,
+      },
+    ],
+  },
+  twitter: {
+    handle: "@FlameTheFreeze",
+    site: "@FlameTheFreeze",
+    cardType: "summary_large_image",
+  },
   ignoreTitleTemplate: true,
 };
 
@@ -228,15 +252,15 @@ const metadata = {
         src: prayer_church,
         features: ["Prayer", "Wisdom"],
       },
+      // {
+      //   title: "Koinonia",
+      //   link: "https://www.youtube.com/@KoinoniaGlobal",
+      //   description: "Intimacy | Partnership | Fellowship",
+      //   src: koinonia,
+      //   features: ["Balanced content of all subjects", "People of fire, who are relevant in this world"],
+      // },
       {
-        title: "Koinonia",
-        link: "https://www.youtube.com/@KoinoniaGlobal",
-        description: "Intimacy | Partnership | Fellowship",
-        src: koinonia,
-        features: ["Balanced content of all subjects", "People of fire, who are relevant in this world"],
-      },
-      {
-        title: "Kenneth Hagin - Rhema",
+        title: "Kenneth Hagin",
         link: "https://www.youtube.com/@RHEMAKennethEHagin",
         description: "Timeless teachings of faith",
         src: kenneth_hagin,
@@ -244,7 +268,7 @@ const metadata = {
         features: ["Faith", "Healing"],
       },
       {
-        title: "Derek Prince Ministries",
+        title: "Derek Prince",
         link: "https://www.youtube.com/@DerekPrinceMinistries",
         description: "Reaching the unreached, and teaching the untaught",
         src: derek_prince,
@@ -316,7 +340,7 @@ const metadata = {
 
             // Start playing the video with Safari-specific handling
             const playPromise = heroVideo.play();
-            
+
             if (playPromise !== undefined) {
               playPromise
                 .then(() => {
@@ -325,18 +349,21 @@ const metadata = {
                 .catch((error) => {
                   console.log("Video autoplay failed:", error);
                   // For Safari, try to play on user interaction
-                  if (error.name === 'NotAllowedError') {
+                  if (error.name === "NotAllowedError") {
                     console.log("Autoplay blocked - will attempt to play on user interaction");
                     // Add click listener to start video on first user interaction
                     const startVideoOnInteraction = () => {
-                      heroVideo.play().then(() => {
-                        console.log("Video started after user interaction");
-                      }).catch(console.error);
-                      document.removeEventListener('click', startVideoOnInteraction);
-                      document.removeEventListener('touchstart', startVideoOnInteraction);
+                      heroVideo
+                        .play()
+                        .then(() => {
+                          console.log("Video started after user interaction");
+                        })
+                        .catch(console.error);
+                      document.removeEventListener("click", startVideoOnInteraction);
+                      document.removeEventListener("touchstart", startVideoOnInteraction);
                     };
-                    document.addEventListener('click', startVideoOnInteraction, { once: true });
-                    document.addEventListener('touchstart', startVideoOnInteraction, { once: true });
+                    document.addEventListener("click", startVideoOnInteraction, { once: true });
+                    document.addEventListener("touchstart", startVideoOnInteraction, { once: true });
                   }
                 });
             }
