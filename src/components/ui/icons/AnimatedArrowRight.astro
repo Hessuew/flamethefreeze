@@ -81,14 +81,18 @@ const strokeClass = stroke.startsWith('text-') ? stroke : '';
       </style>
 
       <script>
+
         function setupWaveObserver() {
-          const observer = new IntersectionObserver(
+          if (window.waveObserver) {
+            window.waveObserver.disconnect();
+          }
+          window.waveObserver = new IntersectionObserver(
             (entries) => {
               entries.forEach((entry) => {
                 if (entry.isIntersecting) {
                   entry.target.classList.add('visible');
                   entry.target.querySelector('.wave-path1')?.classList.add('visible');
-                  observer.unobserve(entry.target);
+                  window.waveObserver.unobserve(entry.target);
                 }
               });
             },
@@ -100,7 +104,7 @@ const strokeClass = stroke.startsWith('text-') ? stroke : '';
 
           document.querySelectorAll('.wave-wrapper1').forEach((wrapper) => {
             if (wrapper && !wrapper.classList.contains('visible')) {
-              observer.observe(wrapper);
+              window.waveObserver.observe(wrapper);
             }
           });
         }
