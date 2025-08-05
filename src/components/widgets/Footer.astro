@@ -64,9 +64,9 @@ const socialLinks = [
 const { theme = "light" } = Astro.props;
 ---
 
-<footer class:list={[{ dark: theme === "dark" }, "relative border-t border-gray-200 dark:border-slate-800 not-prose"]}>
+<footer class:list={[{ dark: theme === "dark" }, "relative border-t border-slate-800 not-prose"]}>
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
-  <div class="relative max-w-7xl xl:max-w-[1280px] mx-auto px-4 sm:px-6 xl:px-[24px] dark:text-slate-300">
+  <div class="relative max-w-7xl xl:max-w-[1280px] mx-auto px-4 sm:px-6 xl:px-[24px] text-slate-300">
     <div
       class="grid grid-cols-12 gap-4 sm:gap-8 xl:gap-[32px] gap-y-8 xl:gap-y-[32px] pt-8 pb-4 md:pt-12 xl:pt-[48px] md:pb-8 xl:pb-[32px]"
     >
@@ -81,13 +81,13 @@ const { theme = "light" } = Astro.props;
       {
         links.map(({ title, links }, index) => (
           <div class={twMerge("col-span-6 md:col-span-3 lg:col-span-2 lg:min-w-[200px]", index === 0 && "lg:min-w-0")}>
-            <div class="dark:text-gray-300 font-medium mb-2 xl:mb-[8px] xl:text-[16px] xl:leading-[24px]">{title}</div>
+            <div class="text-gray-300 font-medium mb-2 xl:mb-[8px] xl:text-[16px] xl:leading-[24px]">{title}</div>
             {links && Array.isArray(links) && (
               <ul class="text-sm xl:text-[14px] xl:leading-[20px]">
                 {links.map(({ text, href }) => (
                   <li class="mb-2 xl:mb-[8px]">
                     <a
-                      class="text-muted hover:text-orange-500 hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
+                      class="text-muted hover:text-orange-500 hover:underline text-gray-400 transition duration-150 ease-in-out"
                       href={getPermalink(`${lang}/${href}`)}
                     >
                       {text}
@@ -102,7 +102,7 @@ const { theme = "light" } = Astro.props;
     </div>
     <div class="md:flex md:items-end md:justify-between py-6 xl:py-[24px]">
       <div
-        class="text-sm text-center sm:text-left pb-4 sm:pb-0 xl:text-[14px] xl:leading-[20px] mr-4 xl:mr-[16px] dark:text-muted"
+        class="text-sm text-center sm:text-left pb-4 sm:pb-0 xl:text-[14px] xl:leading-[20px] mr-4 xl:mr-[16px] text-muted"
       >
         © {new Date().getFullYear()} Flame the Freeze · {t("footer.allRights")}
       </div>
@@ -114,7 +114,7 @@ const { theme = "light" } = Astro.props;
                 <div class="group relative">
                   <a
                     class={twMerge(
-                      "transition-all duration-300 ease-in-out text-muted dark:text-orange-400 hover:scale-125 focus:outline-none focus:ring-2 focus:ring-orange-200 dark:focus:ring-orange-700 rounded-lg text-sm xl:text-[14px] xl:leading-[20px] p-2.5 xl:p-[10px] inline-flex items-center"
+                      "transition-all duration-300 ease-in-out text-muted text-orange-400 hover:scale-125 focus:outline-none focus:ring-2 focus:ring-orange-700 rounded-lg text-sm xl:text-[14px] xl:leading-[20px] p-2.5 xl:p-[10px] inline-flex items-center"
                     )}
                     aria-label={ariaLabel}
                     href={href}
@@ -134,7 +134,7 @@ const { theme = "light" } = Astro.props;
                       />
                     )}
                   </a>
-                  <span class="absolute -top-10 xl:-top-[40px] left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-gray-800 px-2 xl:px-[10px] py-1 xl:py-[8px] text-sm xl:text-[14px] xl:leading-[20px] text-white opacity-0 transition-opacity delay-500 group-hover:opacity-100 dark:bg-gray-200 dark:text-gray-800">
+                  <span class="absolute -top-10 xl:-top-[40px] left-1/2 -translate-x-1/2 whitespace-nowrap rounded px-2 xl:px-[10px] py-1 xl:py-[8px] text-sm xl:text-[14px] xl:leading-[20px] text-white opacity-0 transition-opacity delay-500 group-hover:opacity-100 bg-gray-200">
                     {ariaLabel}
                   </span>
                 </div>
@@ -145,7 +145,7 @@ const { theme = "light" } = Astro.props;
           )
         }
         <div class="text-end">
-          <p class="text-sm xl:text-[14px] xl:leading-[20px] mr-3 xl:mr-[12px] dark:text-muted">
+          <p class="text-sm xl:text-[14px] xl:leading-[20px] mr-3 xl:mr-[12px] text-muted">
             Designed and developed by
             <a
               href="https://cherubim-it.com"
