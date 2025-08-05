@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.16.0](https://github.com/Hessuew/flamethefreeze/compare/v3.15.0...v3.16.0) (2025-08-05)
+
+
+### Features
+
+* enforce dark theme and simplify file serving worker ([#222](https://github.com/Hessuew/flamethefreeze/issues/222)) ([f133d1d](https://github.com/Hessuew/flamethefreeze/commit/f133d1dc0bb584175d056e12dce30c1c582cddb7))
+* improve video safari autoPlay handling ([7f2d865](https://github.com/Hessuew/flamethefreeze/commit/7f2d865285ab2e367187c9d26b2fa78dfa9081ea))
+
+
+### Bug Fixes
+
+* improve video autoplay compatibility for Safari browsers ([#226](https://github.com/Hessuew/flamethefreeze/issues/226)) ([cff8b29](https://github.com/Hessuew/flamethefreeze/commit/cff8b2935fefc6352cb2ca2e489d4d5086bf78ce))
+* worker cors error, and remove redundant theme scripts ([5c36eca](https://github.com/Hessuew/flamethefreeze/commit/5c36eca4f67bfc90c78d5bed4eb79f21b65df109))
+
 ## [3.15.0](https://github.com/Hessuew/flamethefreeze/compare/v3.14.1...v3.15.0) (2025-08-05)
 
 
