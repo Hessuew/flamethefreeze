@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.17.0](https://github.com/Hessuew/flamethefreeze/compare/v3.16.0...v3.17.0) (2025-08-05)
+
+
+### Features
+
+* comment koinonia and update video showcase buttons ([bfc7ed5](https://github.com/Hessuew/flamethefreeze/commit/bfc7ed5dff6752da1a035667a6b7ce2fdf206141))
+* enhance SEO with comprehensive structured data schemas ([#232](https://github.com/Hessuew/flamethefreeze/issues/232)) ([4bbe22c](https://github.com/Hessuew/flamethefreeze/commit/4bbe22c7a7be273fde18d4a7b4400b9e5027ee1f))
+* updated metadata and structured data ([5338380](https://github.com/Hessuew/flamethefreeze/commit/53383804917a00e88f915709ec6e46ca1f9ca725))
+
+
+### Bug Fixes
+
+* improve VideoShowcase responsive layout and remove Koinonia ministry ([#231](https://github.com/Hessuew/flamethefreeze/issues/231)) ([0b299fe](https://github.com/Hessuew/flamethefreeze/commit/0b299fec0c37caab3bef54d1ae7889bda992f3ea))
+* increase video loading delay from 1 to 2 seconds ([#230](https://github.com/Hessuew/flamethefreeze/issues/230)) ([5d14ecc](https://github.com/Hessuew/flamethefreeze/commit/5d14ecc49d75227b7382dcfaafd9fcdc9530bc60))
+
 ## [3.16.0](https://github.com/Hessuew/flamethefreeze/compare/v3.15.0...v3.16.0) (2025-08-05)
 
 
