@@ -116,8 +116,10 @@ const {
 
 <style>
   .video-showcase-container {
+    @media (min-width: 689px) {
     width: calc(100% + 40px); 
     margin-right: -40px;
+    }
     @media (min-width: 1280px) {
       width: calc(100% + 60px); 
       margin-right: -60px;
@@ -159,7 +161,6 @@ const {
 
   .nav-arrow.disabled {
     opacity: 0.3;
-    pointer-events: none;
     cursor: not-allowed;
   }
 
