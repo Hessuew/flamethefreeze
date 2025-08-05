@@ -65,21 +65,11 @@
 /* Enhanced Mobile Menu */
 #header.expanded nav {
   position: fixed;
-  top: 70px;
+  top: 50px;
   left: 0;
   right: 0;
   bottom: 0px !important;
   padding: 0 5px;
-  background: linear-gradient(
-    135deg,
-    rgba(26, 0, 36, 0.98) 0%,
-    rgba(45, 27, 105, 0.95) 50%,
-    rgba(26, 0, 36, 0.98) 100%
-  );
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 -4px 32px rgba(0, 0, 0, 0.3);
 }
 
 /* Navigation Link Hover Effects */
@@ -172,6 +162,7 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
 :root {
   --hue: 223;
   --bg: hsl(var(--hue), 10%, 90%);
