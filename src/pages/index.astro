@@ -21,6 +21,7 @@ import VideoShowcase from "~/components/widgets/VideoShowcase.astro";
 import FireButton from "~/components/ui/FireButton.astro";
 import IceButton from "~/components/ui/IceButton.astro";
 import FreezeOverlay from "~/components/ui/FreezeOverlay.astro";
+import { getPermalink } from "~/utils/permalinks";
 
 const metadata = {
   title: "Flame the Freeze — Where the Word of God and experience meets",
@@ -82,16 +83,18 @@ const metadata = {
           text="fire for God in 2025?"
         />
 
-        <TextAnimate
-          client:load
-          className="text-xl xl:text-[20px] xl:leading-[28px] font-normal tracking-normal  text-muted dark:text-slate-300 "
-          animation="blurInUp"
-          delay={3}
-          duration={0.6}
-          by="line"
-          once={true}
-          text="Yep! It can be done. Are you tired? Experience \nthe fire of God and be on fire for God today!"
-        />
+        <div class="max-w-md">
+          <TextAnimate
+            client:load
+            className="text-xl xl:text-[20px] xl:leading-[28px] font-normal tracking-normal  text-muted dark:text-slate-300 "
+            animation="blurInUp"
+            delay={3}
+            duration={0.6}
+            by="line"
+            once={true}
+            text="Yep! It can be done. Are you tired? Experience the fire of God and be on fire for God today!"
+          />
+        </div>
       </Fragment>
 
       <Fragment slot="subtitle">
@@ -144,7 +147,7 @@ const metadata = {
   >
     <Fragment slot="title">
       What is the fire of God 🔥?
-      <br class="hidden sm:block" />&nbsp;And what is fire for God ❤️‍🔥?
+      <br class="hidden sm:block" />And what is fire for God ❤️‍🔥?
     </Fragment>
     <Fragment slot="subtitle">
       <span class="text-white">"Spirit filled souls are ablaze for God. </span>
@@ -172,21 +175,25 @@ const metadata = {
         description: "Join a company where the fire already is.",
         src: company,
         features: ["Log in a campfire", '"They prayed in one accord"'],
+        href: getPermalink("/en/church"),
       },
       {
         title: "Prayer",
         description: "While he prayed his countenance altered.",
         src: prayer,
         features: ["Heartfelt / deep", "Fervent / passionate"],
+        href: getPermalink("/en/prayer"),
       },
       {
         title: "The Word",
         description: "The Word of God is quick and powerful.",
         src: bible,
         features: ["Setting the hearts on fire", "Revelation of Spirit changing lives"],
+        href: getPermalink("/en/word"),
       },
       {
         icon: true,
+        href: getPermalink("/en/prayer"),
       },
     ]}
   >
@@ -211,21 +218,21 @@ const metadata = {
     videos={[
       {
         title: "Prayer Church<span class='hidden xs:inline'> - Flame the Freeze</span>",
-        link: "#",
+        link: "https://www.youtube.com/@Rukouksenseurakunta",
         description: "Mystery of godliness unfolded, Fire for God",
         src: prayer_church,
         features: ["Prayer", "Wisdom"],
       },
       {
         title: "Koinonia",
-        link: "#",
+        link: "https://www.youtube.com/@KoinoniaGlobal",
         description: "Intimacy | Partnership | Fellowship",
         src: koinonia,
         features: ["Balanced content of all subjects", "People of fire, who are relevant in this world"],
       },
       {
         title: "Kenneth Hagin - Rhema",
-        link: "#",
+        link: "https://www.youtube.com/@RHEMAKennethEHagin",
         description: "Timeless teachings of faith",
         src: kenneth_hagin,
         objectPosition: "top center",
@@ -233,7 +240,7 @@ const metadata = {
       },
       {
         title: "Derek Prince Ministries",
-        link: "#",
+        link: "https://www.youtube.com/@DerekPrinceMinistries",
         description: "Reaching the unreached, and teaching the untaught",
         src: derek_prince,
         objectPosition: "top center",
@@ -261,7 +268,7 @@ const metadata = {
         variant: "primary",
         size: "medium",
         text: "Yes, count me in!!",
-        href: "#contact",
+        href: getPermalink("/en/prayer"),
         icon: "tabler:arrow-right",
       },
       {
@@ -269,7 +276,7 @@ const metadata = {
         variant: "secondary",
         size: "medium",
         text: "Maybe another time..",
-        href: "#testimonies",
+        onClick: "triggerFreeze()",
         icon: "tabler:hand-stop",
       },
     ]}
