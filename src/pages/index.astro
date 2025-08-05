@@ -47,7 +47,7 @@ const metadata = {
       loop
       muted
       playsinline
-      preload="metadata"
+      preload="none"
     >
       Your browser does not support the video tag.
     </video>
@@ -301,6 +301,8 @@ const metadata = {
 
           if (videoSrc && !heroVideo.src) {
             heroVideo.src = videoSrc;
+            // Set preload to metadata now that we're ready to load
+            heroVideo.preload = "metadata";
             heroVideo.load(); // Ensure the video loads properly
           }
 
