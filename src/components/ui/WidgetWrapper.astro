@@ -10,7 +10,7 @@ export interface Props extends Widget {
   animated?: boolean;
 }
 
-const { id, isDark = false, containerClass = "", bg, as = "section", animated = true } = Astro.props;
+const { id, containerClass = "", bg, as = "section", animated = true } = Astro.props;
 
 const WrapperTag = as;
 ---
@@ -18,7 +18,7 @@ const WrapperTag = as;
 <WrapperTag class="relative not-prose scroll-mt-[72px]" {...id ? { id } : {}}>
   <div class="absolute inset-0 pointer-events-none -z-[1]" aria-hidden="true">
     <slot name="bg">
-      {bg ? <Fragment set:html={bg} /> : <Background isDark={isDark} />}
+      {bg ? <Fragment set:html={bg} /> : <Background isDark={true} />}
     </slot>
   </div>
   <div
@@ -30,7 +30,7 @@ const WrapperTag = as;
           : "",
         containerClass
       ),
-      { dark: isDark },
+      { dark: true },
     ]}
   >
     <slot />

@@ -1,37 +1,13 @@
 ---
-import { UI } from "astrowind:config";
+
 ---
 
-<script is:inline define:vars={{ defaultTheme: UI.theme }}>
+<script is:inline>
   if (window.basic_script) {
     return;
   }
 
   window.basic_script = true;
-
-  function applyTheme(theme) {
-    document.documentElement.classList.add("dark");
-    // if (theme === "dark") {
-    //   document.documentElement.classList.add("dark");
-    // } else {
-    //   document.documentElement.classList.remove("dark");
-    // }
-  }
-
-  function getThemePreference() {
-    if ((defaultTheme && defaultTheme.endsWith(":only")) || (!localStorage.theme && defaultTheme !== "system")) {
-      return defaultTheme.replace(":only", "");
-    } else if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      return "dark";
-    }
-    return "light";
-  }
-
-  // Initialize theme immediately
-  applyTheme(getThemePreference());
 
   function attachEvent(selector, event, fn) {
     const matches = typeof selector === "string" ? document.querySelectorAll(selector) : selector;
@@ -40,30 +16,6 @@ import { UI } from "astrowind:config";
         elem.addEventListener(event, (e) => fn(e, elem), false);
       });
     }
-  }
-
-  function setupThemeToggle() {
-    document.querySelectorAll("[data-aw-toggle-color-scheme]").forEach((elem) => {
-      // Remove existing listeners first
-      const newElem = elem.cloneNode(true);
-      elem.parentNode.replaceChild(newElem, elem);
-
-      // Set initial state based on current theme
-      const isDark = document.documentElement.classList.contains("dark");
-      if (newElem instanceof HTMLInputElement) {
-        newElem.checked = isDark;
-      }
-
-      newElem.addEventListener("click", function () {
-        // if (defaultTheme.endsWith(':only')) {
-        //   return;
-        // }
-        const isDark = document.documentElement.classList.contains("dark");
-        const newTheme = isDark ? "light" : "dark";
-        localStorage.theme = newTheme;
-        applyTheme(newTheme);
-      });
-    });
   }
 
   const onLoad = function () {
@@ -180,14 +132,9 @@ import { UI } from "astrowind:config";
 
   document.addEventListener("astro:after-swap", () => {
     // Restore theme after transition
-    applyTheme(window.currentTheme || getThemePreference());
-    setupThemeToggle();
     onLoad();
     onPageShow();
   });
-
-  // Initial setup
-  setupThemeToggle();
 </script>
 
 <script is:inline>
