@@ -5,11 +5,13 @@ import { SITE } from "astrowind:config";
 
 const optimizedLogo = await getImage({ src: logoUrl });
 
+// Organization Schema
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": SITE.site,
+  "@id": SITE.site + "#organization",
   name: "Flame the Freeze",
+  alternateName: "Fire of God and Fire for God Ministry",
   url: SITE.site,
   logo: {
     "@type": "ImageObject",
@@ -17,8 +19,177 @@ const organizationSchema = {
     width: "640",
     height: "640",
   },
-  description: "Where the Word of God and experience meets",
+  description:
+    "Christian ministry focused on experiencing the fire of God and being on fire for God through spiritual awakening, Holy Spirit baptism, and divine encounters.",
+  foundingDate: "2024",
+  keywords:
+    "fire of god, fire for god, holy spirit fire, spiritual awakening, christian ministry, divine fire, revival, pentecostal",
+  sameAs: ["https://www.youtube.com/@flamethefreeze2613"],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    availableLanguage: "English",
+  },
+};
+
+// Website Schema
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": SITE.site + "#website",
+  url: SITE.site,
+  name: "Flame the Freeze - Fire of God and Fire for God",
+  description:
+    "Experience the transformative fire of God and ignite your fire for God through spiritual awakening, Holy Spirit encounters, and passionate Christian living.",
+  publisher: {
+    "@id": SITE.site + "#organization",
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: SITE.site + "/search?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+// WebPage Schema
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": SITE.site + "#webpage",
+  url: SITE.site,
+  name: "Fire of God and Fire for God 2025 | Experience Divine Fire Today",
+  description:
+    "Discover the transformative fire of God and ignite your fire for God in 2025. Experience divine spiritual awakening, Holy Spirit baptism, and passionate Christian living.",
+  isPartOf: {
+    "@id": SITE.site + "#website",
+  },
+  about: {
+    "@type": "Thing",
+    name: "Fire of God",
+    description: "The transformative spiritual experience of receiving God's divine fire through the Holy Spirit",
+  },
+  mentions: [
+    {
+      "@type": "Thing",
+      name: "Fire for God",
+      description: "Being passionate and zealous for God's kingdom and purposes",
+    },
+    {
+      "@type": "Thing",
+      name: "Holy Spirit Fire",
+      description: "The baptism and filling of the Holy Spirit with divine fire",
+    },
+    {
+      "@type": "Thing",
+      name: "Spiritual Awakening",
+      description: "Divine encounters that transform and revive the human spirit",
+    },
+  ],
+  mainEntity: {
+    "@type": "Thing",
+    name: "Fire of God Experience",
+    description: "Transformative spiritual encounters with God's divine fire that ignite passion for His kingdom",
+  },
+};
+
+// Article Schema for the main content
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "@id": SITE.site + "#article",
+  headline: "Fire of God and Fire for God: Experience Divine Transformation in 2025",
+  description:
+    "Learn how to receive the fire of God and become passionate for God through spiritual awakening, Holy Spirit encounters, and divine transformation.",
+  author: {
+    "@type": "Organization",
+    name: "Flame the Freeze Ministry",
+    url: SITE.site,
+  },
+  publisher: {
+    "@id": SITE.site + "#organization",
+  },
+  datePublished: "2024-01-01",
+  dateModified: new Date().toISOString().split("T")[0],
+  mainEntityOfPage: {
+    "@id": SITE.site + "#webpage",
+  },
+  keywords:
+    "fire of god, fire for god, holy spirit fire, spiritual awakening, divine fire, christian revival, holy spirit baptism, spiritual passion, god's presence, christian transformation",
+  about: [
+    {
+      "@type": "Thing",
+      name: "Fire of God",
+      description: "The divine fire that transforms believers through the Holy Spirit",
+    },
+    {
+      "@type": "Thing",
+      name: "Fire for God",
+      description: "Passionate devotion and zeal for God's kingdom and purposes",
+    },
+  ],
+  mentions: [
+    {
+      "@type": "Person",
+      name: "Derek Prince",
+      description: "Bible teacher and author on spiritual foundations",
+    },
+    {
+      "@type": "Person",
+      name: "Kenneth Hagin",
+      description: "Pentecostal preacher and faith teacher",
+    },
+  ],
+};
+
+// FAQ Schema
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": SITE.site + "#faq",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is the fire of God?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The fire of God is the transformative presence and power of the Holy Spirit that purifies, empowers, and ignites believers with divine passion. It represents God's consuming love, holiness, and power working in and through believers.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What does it mean to be on fire for God?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Being on fire for God means having passionate devotion, zeal, and enthusiasm for God's kingdom, His Word, and His purposes. It's characterized by spiritual fervor, active faith, and a burning desire to serve and glorify God.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How can I receive the fire of God?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You can receive the fire of God through sincere prayer, seeking God's presence, studying His Word, participating in worship, and being open to the Holy Spirit's work in your life. It often comes through surrender, faith, and persistent seeking of God.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where can I experience the fire of God?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The fire of God can be experienced in personal prayer and worship, through Bible study, in church gatherings, during spiritual retreats, and through fellowship with other believers who are passionate for God.",
+      },
+    },
+  ],
+};
+
+// Combine all schemas
+const combinedSchema = {
+  "@context": "https://schema.org",
+  "@graph": [organizationSchema, websiteSchema, webPageSchema, articleSchema, faqSchema],
 };
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(combinedSchema)} />
