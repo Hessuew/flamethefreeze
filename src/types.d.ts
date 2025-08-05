@@ -345,6 +345,7 @@ export interface ImageShowcase extends Omit<Headline, "classes">, Widget {
     alt?: string;
     title?: string;
     description?: string;
+    href?: string;
     height?: number;
     features?: Array<string>;
     icon?: boolean;
