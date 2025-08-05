@@ -1,5 +1,27 @@
 # Changelog
 
+## [3.15.0](https://github.com/Hessuew/flamethefreeze/compare/v3.14.1...v3.15.0) (2025-08-05)
+
+
+### Features
+
+* add confetti and themed buttons with fire/ice effects ([#214](https://github.com/Hessuew/flamethefreeze/issues/214)) ([dd6f3f0](https://github.com/Hessuew/flamethefreeze/commit/dd6f3f0cf3ce0a2bc8bc7b07ed4ce39242ed7a9c))
+* add files worker and add backward compatibility for headline ([e345b0a](https://github.com/Hessuew/flamethefreeze/commit/e345b0a657c6edec1fd72cc396a3f4e0e813ae45))
+* add FreezeOverlay component and update homepage with new assets ([#215](https://github.com/Hessuew/flamethefreeze/issues/215)) ([3494cd7](https://github.com/Hessuew/flamethefreeze/commit/3494cd793f37b47badf003f8902695d116c62f6c))
+* add React integration and modern UI components ([#211](https://github.com/Hessuew/flamethefreeze/issues/211)) ([3e6baaa](https://github.com/Hessuew/flamethefreeze/commit/3e6baaa97db9b9de1f7364ad37d71dadfa054a57))
+* enhance UI with dark theme and add Cloudflare worker for file serving ([#218](https://github.com/Hessuew/flamethefreeze/issues/218)) ([b354a70](https://github.com/Hessuew/flamethefreeze/commit/b354a7064f35e70d2c45dfb5fcc10e84f6d1b849))
+* fire and ice buttons, index page leave ([d33e9cc](https://github.com/Hessuew/flamethefreeze/commit/d33e9cc7d15f1e2bcbf35c800b687a22d7449e18))
+* index page cta ([b32abdd](https://github.com/Hessuew/flamethefreeze/commit/b32abddf9bc53a46baaf57b1e32c4006128cf681))
+* magicui components, modern widgets, revamp(wip) index ([84e1475](https://github.com/Hessuew/flamethefreeze/commit/84e1475d0ff72f802ceaaff620b8e1afbfb40a30))
+* rename image files and improve responsive UI components ([#216](https://github.com/Hessuew/flamethefreeze/issues/216)) ([d708b8c](https://github.com/Hessuew/flamethefreeze/commit/d708b8c3b91f044a4e1d0ec0eb974943c3cbf66f))
+* switch to dark theme as default and remove light theme support ([#212](https://github.com/Hessuew/flamethefreeze/issues/212)) ([4d16e1d](https://github.com/Hessuew/flamethefreeze/commit/4d16e1d1c8fab17a322e122542eff44fc1f82fe1))
+
+
+### Bug Fixes
+
+* enhance UI components with improved accessibility and animations ([#219](https://github.com/Hessuew/flamethefreeze/issues/219)) ([3a01133](https://github.com/Hessuew/flamethefreeze/commit/3a011339f4f4b729a7a7104fb849617e3fde8f5e))
+* improve accessibility and potential memory leak ([ea03b37](https://github.com/Hessuew/flamethefreeze/commit/ea03b3730d03ba790a5b5aa03feb4b72d92ee1e2))
+
 ## [3.14.1](https://github.com/Hessuew/flamethefreeze/compare/v3.14.0...v3.14.1) (2025-07-07)
 
 
