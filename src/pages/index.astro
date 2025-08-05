@@ -43,9 +43,11 @@ const metadata = {
       aria-label="fire of god and fire for god fire background"
       class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-1000 ease-in-out"
       data-src={`${ENDPOINTS.publicFiles}/fire_of_god_and_fire_for_god-fire_bg.mp4`}
+      autoplay
       loop
       muted
-      preload="none"
+      playsinline
+      preload="metadata"
     >
       Your browser does not support the video tag.
     </video>
@@ -310,10 +312,32 @@ const metadata = {
             heroGradient.classList.remove("opacity-0");
             heroGradient.classList.add("opacity-100");
 
-            // Start playing the video
-            heroVideo.play().catch((error) => {
-              console.log("Video autoplay failed:", error);
-            });
+            // Start playing the video with Safari-specific handling
+            const playPromise = heroVideo.play();
+            
+            if (playPromise !== undefined) {
+              playPromise
+                .then(() => {
+                  console.log("Video autoplay started successfully");
+                })
+                .catch((error) => {
+                  console.log("Video autoplay failed:", error);
+                  // For Safari, try to play on user interaction
+                  if (error.name === 'NotAllowedError') {
+                    console.log("Autoplay blocked - will attempt to play on user interaction");
+                    // Add click listener to start video on first user interaction
+                    const startVideoOnInteraction = () => {
+                      heroVideo.play().then(() => {
+                        console.log("Video started after user interaction");
+                      }).catch(console.error);
+                      document.removeEventListener('click', startVideoOnInteraction);
+                      document.removeEventListener('touchstart', startVideoOnInteraction);
+                    };
+                    document.addEventListener('click', startVideoOnInteraction, { once: true });
+                    document.addEventListener('touchstart', startVideoOnInteraction, { once: true });
+                  }
+                });
+            }
 
             // Remove the event listener as it's no longer needed
             heroVideo.removeEventListener("loadeddata", handleVideoLoaded);
