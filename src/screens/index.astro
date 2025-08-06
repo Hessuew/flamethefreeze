@@ -1,0 +1,364 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import type { PageLayoutProps as Props } from "~/layouts/PageLayout.astro";
+
+import Hero from "~/components/widgets/Hero.astro";
+import prayer from "~/assets/images/fire_of_god_and_fire_for_god-prayer.webp";
+import fire from "~/assets/images/index/fire_of_god_and_fire_for_god-fire.webp";
+import jumalan_tuli from "~/assets/images/index/jumalan_tuli-nuori_mies_vastaanottaa_jumalan_tulen.webp";
+import bible from "~/assets/images/index/fire_of_god_and_fire_for_god-bible.webp";
+import company from "~/assets/images/index/fire_of_god_and_fire_for_god-company.webp";
+import derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
+import kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
+import prayer_church from "~/assets/images/ministries/fire_of_god_and_fire_for_god-prayer_church.webp";
+import { TextAnimate } from "~/components/magicui/text-animate";
+import CTAModern from "~/components/widgets/CTAModern.astro";
+import ImageShowcase from "~/components/widgets/ImageShowcase.astro";
+import { useTranslations } from "~/i18n/utils";
+import city_in_flame from "~/assets/images/fire_of_god_and_fire_for_god-city_in_flame.webp";
+import tree1 from "~/assets/images/fire_of_god_and_fire_for_god-tree1.webp";
+import { BlurFade } from "~/components/magicui/blur-fade";
+import VideoShowcase from "~/components/widgets/VideoShowcase.astro";
+import FireButton from "~/components/ui/FireButton.astro";
+import IceButton from "~/components/ui/IceButton.astro";
+import FreezeOverlay from "~/components/ui/FreezeOverlay.astro";
+import { getPermalink } from "~/utils/permalinks";
+import { ENDPOINTS } from "~/config/endpoints";
+
+const { metadata, siteRebuildStatus, lang } = Astro.props;
+
+const t = useTranslations(lang);
+---
+
+<Layout metadata={metadata} siteRebuildStatus={siteRebuildStatus} lang={lang}>
+  <!-- Hero Widget ******************* -->
+  <div class="min-h-screen relative overflow-hidden">
+    <!-- Video Background -->
+
+    <video
+      id="hero-video"
+      aria-label={t("index.hero.video.aria")}
+      class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-1000 ease-in-out"
+      data-src={`${ENDPOINTS.publicFiles}/fire_of_god_and_fire_for_god-fire_bg.mp4`}
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="none"
+    >
+      {t("index.hero.video.browser")}
+    </video>
+    <!-- Gradient mask for bottom fade to purple background -->
+    <div
+      id="hero-gradient"
+      class="absolute inset-0 z-5 opacity-0 transition-opacity duration-1000 ease-in-out"
+      style="background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(26, 0, 36, 0.05) 60%, rgba(26, 0, 36, 0.15) 70%, rgba(26, 0, 36, 0.35) 80%, rgba(26, 0, 36, 0.65) 90%, rgba(26, 0, 36, 0.85) 95%, #1a0024 100%);"
+    >
+    </div>
+    <!-- Overlay for better text readability (only on video area) -->
+    <div
+      class="absolute inset-0 bg-black bg-opacity-30 z-10"
+      style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.15) 70%, transparent 85%);"
+    >
+    </div>
+    <Hero classes={{ containerClass: "text-left relative z-20", subtitleContainerClass: "max-w-none" }}>
+      <Fragment slot="title">
+        <TextAnimate
+          client:load
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading"
+          animation="blurInUp"
+          delay={1}
+          duration={0.6}
+          by="character"
+          once={true}
+          text={t("index.hero.title.1")}
+        />
+
+        <TextAnimate
+          client:load
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading"
+          animation="blurInUp"
+          delay={1.6}
+          duration={0.6}
+          by="character"
+          once={true}
+          text={t("index.hero.title.2")}
+        />
+
+        <div class="max-w-md">
+          <TextAnimate
+            client:load
+            className="text-xl xl:text-[20px] xl:leading-[28px] font-normal tracking-normal  text-muted dark:text-slate-300 "
+            animation="blurInUp"
+            delay={3}
+            duration={0.6}
+            by="line"
+            once={true}
+            text={t("index.hero.subtitle")}
+          />
+        </div>
+      </Fragment>
+
+      <Fragment slot="subtitle">
+        <div class="flex gap-4">
+          <BlurFade client:load delay={4.2} direction="up" inView>
+            <FireButton
+              href="#what"
+              text={t("index.hero.button.yes")}
+              variant="primary"
+              size="small"
+              icon="tabler:arrow-right"
+            />
+          </BlurFade>
+          <BlurFade client:load delay={4.8} direction="up" inView>
+            <IceButton
+              text={t("index.hero.button.no")}
+              variant="primary"
+              size="small"
+              icon="tabler:x"
+              onClick="triggerFreeze()"
+            />
+          </BlurFade>
+        </div>
+      </Fragment>
+    </Hero>
+  </div>
+
+  <!-- Image Showcase Widget ********* -->
+
+  <ImageShowcase
+    id="what"
+    tagline={t("index.what.tagline")}
+    layout="featured"
+    classes={{
+      headline: {
+        subtitle: "max-w-md",
+      },
+    }}
+    images={[
+      {
+        src: lang === "en" ? fire : jumalan_tuli,
+        alt: t("index.what.images.1.alt"),
+        title: t("index.what.images.1.title"),
+      },
+      {
+        src: city_in_flame,
+        alt: t("index.what.images.2.alt"),
+        title: t("index.what.images.2.title"),
+        description: t("index.what.images.2.description"),
+      },
+      {
+        src: tree1,
+        alt: t("index.what.images.3.alt"),
+        title: t("index.what.images.3.title"),
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      {t("index.what.title.1")}
+      <br class="hidden sm:block" />{t("index.what.title.2")}
+    </Fragment>
+    <Fragment slot="subtitle">
+      <span class="text-white">{t("index.what.subtitle.1")}</span>
+      {t("index.what.subtitle.2")}
+    </Fragment>
+  </ImageShowcase>
+
+  <!-- Services Widget *************** -->
+
+  <ImageShowcase
+    id="how"
+    tagline={t("index.how.tagline")}
+    title={t("index.how.title.1")}
+    textGetStarted={t("index.how.textGetStarted")}
+    headlineType={3}
+    classes={{
+      headline: {
+        subtitle: "mx-0 max-w-md",
+      },
+    }}
+    images={[
+      {
+        title: t("index.how.images.1.title"),
+        description: t("index.how.images.1.description"),
+        features: [t("index.how.images.1.features.1"), t("index.how.images.1.features.2")],
+        src: company,
+        alt: t("index.what.images.3.alt"),
+        href: getPermalink("/en/church"),
+      },
+      {
+        title: t("index.how.images.2.title"),
+        description: t("index.how.images.2.description"),
+        features: [t("index.how.images.2.features.1"), t("index.how.images.2.features.2")],
+        src: prayer,
+        alt: t("index.what.images.3.alt"),
+        href: getPermalink("/en/prayer"),
+      },
+      {
+        title: t("index.how.images.3.title"),
+        description: t("index.how.images.3.description"),
+        features: [t("index.how.images.3.features.1"), t("index.how.images.3.features.2")],
+        src: bible,
+        alt: t("index.what.images.3.alt"),
+        href: getPermalink("/en/word"),
+      },
+      {
+        icon: true,
+        href: getPermalink("/en/prayer"),
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <span class="text-white">{t("index.how.subtitle.1")}</span>
+      <!-- <br class="hidden md:block" />
+      But unfortunately many haven't tasted the fire of God. My friend, are you discontented 😖, and looking to finally find
+      the real thing? Look no further 🏁🎉! -->
+    </Fragment>
+  </ImageShowcase>
+
+  <VideoShowcase
+    id="where"
+    tagline={t("index.where.tagline")}
+    title={t("index.where.title.1")}
+    headlineType={3}
+    classes={{
+      headline: {
+        subtitle: "mx-0 max-w-md",
+      },
+    }}
+    videos={[
+      {
+        title: t("index.where.images.1.title"),
+        link: "https://www.youtube.com/@Rukouksenseurakunta",
+        description: t("index.where.images.1.description"),
+        features: [t("index.where.images.1.features.1"), t("index.where.images.1.features.2")],
+        src: prayer_church,
+        alt: t("index.what.images.1.alt"),
+      },
+      {
+        title: t("index.where.images.2.title"),
+        link: "https://www.youtube.com/@RHEMAKennethEHagin",
+        description: t("index.where.images.2.description"),
+        features: [t("index.where.images.2.features.1"), t("index.where.images.2.features.2")],
+        src: kenneth_hagin,
+        alt: t("index.where.images.2.alt"),
+        objectPosition: "top center",
+      },
+      {
+        title: t("index.where.images.3.title"),
+        link: "https://www.youtube.com/@DerekPrinceMinistries",
+        description: t("index.where.images.3.description"),
+        features: [t("index.where.images.3.features.1"), t("index.where.images.3.features.2")],
+        src: derek_prince,
+        alt: t("index.where.images.3.alt"),
+        objectPosition: "top center",
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      <span class="text-white">{t("index.where.subtitle.1")}</span>
+      <!-- Below is `non exhaustive and exclusive` list of ministries, and categories of what God has empowered them to do. Fasten
+      your seatbelts 🍒😁! -->
+    </Fragment>
+  </VideoShowcase>
+
+  <!-- Call to Action Widget ********* -->
+
+  <CTAModern
+    id="cta"
+    tagline={t("index.cta.tagline")}
+    title={t("index.cta.title.1")}
+    subtitle={t("index.cta.subtitle.1")}
+    actions={[
+      {
+        buttonType: "fire", // 🔥 Fire button
+        variant: "primary",
+        size: "medium",
+        text: t("index.cta.button.yes"),
+        href: getPermalink("/en/prayer"),
+        icon: "tabler:arrow-right",
+      },
+      {
+        buttonType: "ice", // ❄️ Ice button
+        variant: "secondary",
+        size: "medium",
+        text: t("index.cta.button.no"),
+        onClick: "triggerFreeze()",
+        icon: "tabler:hand-stop",
+      },
+    ]}
+  />
+
+  <!-- Freeze Animation Overlay -->
+  <FreezeOverlay />
+
+  <script>
+    document.addEventListener("astro:page-load", () => {
+      // Start video after 1 second with proper fade-in effect
+      const heroVideo = document.getElementById("hero-video") as HTMLVideoElement;
+      const heroGradient = document.getElementById("hero-gradient") as HTMLVideoElement;
+      if (heroVideo) {
+        setTimeout(() => {
+          const videoSrc = heroVideo.dataset.src;
+
+          if (videoSrc && !heroVideo.src) {
+            heroVideo.src = videoSrc;
+            // Set preload to metadata now that we're ready to load
+            heroVideo.preload = "metadata";
+            heroVideo.load(); // Ensure the video loads properly
+          }
+
+          // Set up event listener for when video has loaded enough data
+          const handleVideoLoaded = () => {
+            // Fade in the video only after it has loaded
+            heroVideo.classList.remove("opacity-0");
+            heroVideo.classList.add("opacity-100");
+            heroGradient.classList.remove("opacity-0");
+            heroGradient.classList.add("opacity-100");
+
+            // Start playing the video with Safari-specific handling
+            const playPromise = heroVideo.play();
+
+            if (playPromise !== undefined) {
+              playPromise
+                .then(() => {
+                  console.log("Video autoplay started successfully");
+                })
+                .catch((error) => {
+                  console.log("Video autoplay failed:", error);
+                  // For Safari, try to play on user interaction
+                  if (error.name === "NotAllowedError") {
+                    console.log("Autoplay blocked - will attempt to play on user interaction");
+                    // Add click listener to start video on first user interaction
+                    const startVideoOnInteraction = () => {
+                      heroVideo
+                        .play()
+                        .then(() => {
+                          console.log("Video started after user interaction");
+                        })
+                        .catch(console.error);
+                      document.removeEventListener("click", startVideoOnInteraction);
+                      document.removeEventListener("touchstart", startVideoOnInteraction);
+                    };
+                    document.addEventListener("click", startVideoOnInteraction, { once: true });
+                    document.addEventListener("touchstart", startVideoOnInteraction, { once: true });
+                  }
+                });
+            }
+
+            // Remove the event listener as it's no longer needed
+            heroVideo.removeEventListener("loadeddata", handleVideoLoaded);
+          };
+
+          // Add event listener for when video data is loaded
+          heroVideo.addEventListener("loadeddata", handleVideoLoaded);
+
+          // Fallback: if video is already loaded (cached), trigger immediately
+          if (heroVideo.readyState >= 2) {
+            handleVideoLoaded();
+          }
+        }, 1000); // 1 second delay
+      }
+    });
+  </script>
+</Layout>

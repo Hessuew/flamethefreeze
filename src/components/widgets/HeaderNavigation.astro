@@ -3,18 +3,18 @@ import { getPermalink } from "~/utils/permalinks";
 import { Icon } from "astro-icon/components";
 import Image from "astro/components/Image.astro";
 import type { MenuLink } from "./Header.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 import { ui } from "~/i18n/ui";
 
 interface Props {
   links: Array<MenuLink>;
   currentPath: string;
+  lang?: "fi" | "en";
 }
 
-const { links, currentPath } = Astro.props;
+const { links, currentPath, lang } = Astro.props;
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const t = useTranslations(lang || "en");
 ---
 
 <div

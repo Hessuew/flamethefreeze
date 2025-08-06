@@ -108,7 +108,7 @@ export interface Headline {
   subtitle2?: string;
   tagline?: string;
   tagline2?: string;
-  type?: number;
+  headlineType?: number;
   classes?: Record<string, string>;
   hrefID?: string;
 }
@@ -351,6 +351,7 @@ export interface ImageShowcase extends Omit<Headline, "classes">, Widget {
     icon?: boolean;
   }>;
   layout?: "masonry" | "grid" | "featured";
+  textGetStarted?: string;
 }
 
 export interface VideoShowcase extends Omit<Headline, "classes">, Widget {

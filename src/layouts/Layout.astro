@@ -16,9 +16,10 @@ import { I18N } from "astrowind:config";
 
 export interface Props {
   metadata?: MetaDataType;
+  lang?: "fi" | "en";
 }
 
-const { metadata = {} } = Astro.props;
+const { metadata = {}, lang = "en" } = Astro.props;
 const { language, textDirection } = I18N;
 ---
 
@@ -32,7 +33,7 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
-    <StructuredData />
+    <StructuredData lang={lang} />
 
     <!-- Comment the line below to disable View Transitions -->
     <ClientRouter fallback="swap" />
@@ -45,8 +46,7 @@ const { language, textDirection } = I18N;
       <div class="absolute inset-0 bg-gradient-to-br from-[#0a0014] via-[#1a0024] to-[#2d1b69]"></div>
 
       <!-- Animated gradient overlay -->
-      <div class="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/10 to-primary/20 animate-pulse-slow">
-      </div>
+      <div class="absolute inset-0 bg-gradient-to-r from-primary/20 via-accent/10 to-primary/20"></div>
 
       <!-- Geometric pattern overlay -->
       <div class="absolute inset-0 opacity-[0.03]">

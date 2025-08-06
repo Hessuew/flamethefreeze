@@ -3,7 +3,7 @@ import type { Headline as Props } from "~/types";
 import { twMerge } from "tailwind-merge";
 import { Icon } from "astro-icon/components";
 
-const { tagline, type = 1 } = Astro.props;
+const { tagline, headlineType: type = 1 } = Astro.props;
 ---
 
 <div

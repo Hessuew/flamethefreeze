@@ -8,7 +8,7 @@ const {
   subtitle = await Astro.slots.render("subtitle"),
   subtitle2 = await Astro.slots.render("subtitle2"),
   tagline,
-  type,
+  headlineType: type,
   classes = {},
 } = Astro.props;
 
@@ -24,7 +24,7 @@ const {
 {
   (title || subtitle || tagline) && (
     <div class={twMerge("mb-8 md:mx-auto md:mb-12 xl:mb-[48px] text-center", containerClass)}>
-      {tagline && type && type !== 4 && <Tagline tagline={tagline} type={type} />}
+      {tagline && type && type !== 4 && <Tagline tagline={tagline} headlineType={type} />}
       {!type && (
         <>
           {tagline && (
@@ -134,7 +134,7 @@ const {
 
           {title && (
             <div class="flex flex-col">
-              <Tagline tagline={tagline} type={type} />
+              <Tagline tagline={tagline} headlineType={type} />
               <h2
                 class={twMerge(
                   "text-white font-semibold leading-tighter tracking-tighter font-heading text-heading text-4xl md:text-5xl xl:text-[48px] xl:leading-[52px]",

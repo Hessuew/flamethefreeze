@@ -15,8 +15,9 @@ const {
   id,
   isDark = false,
   classes = {},
-  type = 2,
+  headlineType: type = 2,
   bg = await Astro.slots.render("bg"),
+  textGetStarted,
 } = Astro.props;
 ---
 
@@ -27,7 +28,7 @@ const {
   bg={bg}
 >
   <Headline
-    type={type}
+    headlineType={type}
     title={title}
     subtitle={subtitle}
     tagline={tagline}
@@ -62,7 +63,7 @@ const {
                     <div class="w-16 h-16 md:w-20 md:h-20 lg:w-28 lg:h-28 xl:w-[112px] xl:h-[112px] mx-auto mb-1 md:mb-4 xl:mb-[16px] rounded-full flex items-center justify-center">
                       <AnimatedArrowRight classes="w-full h-full" delay={800} />
                     </div>
-                    <p class="text-sm md:text-base xl:text-[16px] xl:leading-[24px] text-white">Get started</p>
+                    <p class="text-sm md:text-base xl:text-[16px] xl:leading-[24px] text-white">{textGetStarted}</p>
                   </div>
                 </div>
               )}
@@ -206,7 +207,7 @@ const {
             )}
 
             {images[0].title && (
-              <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
                 <div class="absolute top-0 left-0 right-0 p-4 xl:p-[16px] bg-gradient-to-b from-black/80 via-black/60 to-transparent">
                   <h3
                     class="text-white font-semibold text-3xl xl:text-[30px] xl:leading-[36px] mb-2 xl:mb-[8px]"

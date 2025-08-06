@@ -16,7 +16,7 @@ const { text, href, variant = "primary", size = "medium", class: className = "",
 
 const Tag = href ? "a" : "button";
 const sizeClasses = {
-  small: "px-6 py-3 xl:px-[24px] xl:py-[12px] text-sm xl:text-[14px] xl:leading-[20px]",
+  small: "px-2 md:px-6 py-3 xl:px-[24px] xl:py-[12px] text-sm xl:text-[14px] xl:leading-[20px]",
   medium: "px-3 md:px-8 py-4 text-base xl:text-[16px] xl:leading-[24px]",
   large: "px-10 py-5 xl:px-[40px] xl:py-[20px] text-lg xl:text-[20px] xl:leading-[28px]",
 };
@@ -177,11 +177,16 @@ const sizeClasses = {
   /* Ice Crystals */
   .ice-crystal {
     position: absolute;
-    font-size: 16px;
-    color: rgba(129, 212, 250, 1);
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.95);
     animation: crystalFloat 6s infinite linear;
     opacity: 0;
-    text-shadow: 0 0 4px rgba(129, 212, 250, 0.6);
+    text-shadow:
+      0 0 8px rgba(129, 212, 250, 0.8),
+      0 0 4px rgba(255, 255, 255, 0.6),
+      0 0 2px rgba(33, 150, 243, 0.4);
+    filter: drop-shadow(0 0 3px rgba(129, 212, 250, 0.7));
+    z-index: 5;
   }
 
   .ice-crystal-1 {
@@ -234,24 +239,37 @@ const sizeClasses = {
 
   @keyframes crystalFloat {
     0% {
-      top: 100%;
+      top: -15%;
       opacity: 0;
-      transform: translateX(0) rotate(0deg) scale(0.5);
+      transform: translateX(0) translateY(0) rotate(0deg) scale(0.8);
     }
-    10% {
+    5% {
+      opacity: 0.9;
+    }
+    15% {
       opacity: 1;
+      transform: translateX(-5px) translateY(20px) rotate(45deg) scale(1);
     }
-    50% {
+    35% {
+      opacity: 0.9;
+      transform: translateX(8px) translateY(60px) rotate(135deg) scale(1.1);
+    }
+    55% {
       opacity: 0.8;
-      transform: translateX(-15px) rotate(180deg) scale(1);
+      transform: translateX(-3px) translateY(100px) rotate(225deg) scale(0.9);
     }
-    90% {
-      opacity: 0.3;
+    75% {
+      opacity: 0.6;
+      transform: translateX(6px) translateY(140px) rotate(315deg) scale(1);
+    }
+    95% {
+      opacity: 0.2;
+      transform: translateX(-2px) translateY(180px) rotate(405deg) scale(1.2);
     }
     100% {
-      top: -20%;
+      top: 115%;
       opacity: 0;
-      transform: translateX(10px) rotate(360deg) scale(1.2);
+      transform: translateX(4px) translateY(200px) rotate(450deg) scale(0.6);
     }
   }
 
@@ -305,24 +323,33 @@ const sizeClasses = {
 
   @keyframes frostDrift {
     0% {
-      top: 100%;
-      opacity: 0;
-      transform: translateX(0) scale(0.3);
-    }
-    10% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.7;
-      transform: translateX(-20px) scale(1);
-    }
-    90% {
-      opacity: 0.2;
-    }
-    100% {
       top: -10%;
       opacity: 0;
-      transform: translateX(15px) scale(1.5);
+      transform: translateX(0) translateY(0) scale(0.3);
+    }
+    10% {
+      opacity: 0.8;
+    }
+    25% {
+      opacity: 1;
+      transform: translateX(-8px) translateY(25px) scale(0.6);
+    }
+    50% {
+      opacity: 0.9;
+      transform: translateX(12px) translateY(50px) scale(0.8);
+    }
+    75% {
+      opacity: 0.6;
+      transform: translateX(-5px) translateY(75px) scale(1);
+    }
+    90% {
+      opacity: 0.3;
+      transform: translateX(8px) translateY(90px) scale(1.2);
+    }
+    100% {
+      top: 110%;
+      opacity: 0;
+      transform: translateX(-3px) translateY(100px) scale(1.5);
     }
   }
 
@@ -361,7 +388,9 @@ const sizeClasses = {
 
   /* Hover Enhancements */
   .ice-button:hover .ice-crystal {
-    animation-duration: 3s;
+    animation-duration: 4s;
+    opacity: 1;
+    filter: drop-shadow(0 0 6px rgba(129, 212, 250, 0.9));
   }
 
   .ice-button:hover .frost-particle {
@@ -374,7 +403,7 @@ const sizeClasses = {
 
   /* Size Variations */
   .ice-button-small .ice-crystal {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .ice-button-small .frost-particle {
@@ -383,7 +412,7 @@ const sizeClasses = {
   }
 
   .ice-button-large .ice-crystal {
-    font-size: 14px;
+    font-size: 22px;
   }
 
   .ice-button-large .frost-particle {
