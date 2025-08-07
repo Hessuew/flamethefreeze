@@ -58,8 +58,8 @@ const {
                   loading="lazy"
                 />
               ) : (
-                <div class="w-full aspect-[4/3] flex items-center justify-center rounded-3xl bg-gradient-to-br from-[#021408] to-green-800 p-2 xl:p-[4px]">
-                  <div class="flex flex-col h-full w-full items-center justify-center text-center bg-page rounded-3xl">
+                <div class="w-full aspect-[4/3] flex items-center justify-center border-4 border-green-950 p-2 xl:p-[4px]">
+                  <div class="flex flex-col h-full w-full items-center justify-center text-center">
                     <div class="w-16 h-16 md:w-20 md:h-20 lg:w-28 lg:h-28 xl:w-[112px] xl:h-[112px] mx-auto mb-1 md:mb-4 xl:mb-[16px] rounded-full flex items-center justify-center">
                       <AnimatedArrowRight classes="w-full h-full" delay={800} />
                     </div>
@@ -207,7 +207,7 @@ const {
             )}
 
             {images[0].title && (
-              <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-transparent opacity-100 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute inset-0 opacity-100 group-hover:opacity-100 transition-opacity duration-300">
                 <div class="absolute top-0 left-0 right-0 p-4 xl:p-[16px] bg-gradient-to-b from-black/80 via-black/60 to-transparent">
                   <h3
                     class="text-white font-semibold text-3xl xl:text-[30px] xl:leading-[36px] mb-2 xl:mb-[8px]"
@@ -269,7 +269,7 @@ const {
 
               {image.title && (
                 <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/20 to-transparent opacity-100 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-300">
-                  <div class="absolute top-0 left-0 right-0 p-4 xl:p-[16px] bg-gradient-to-b from-black/80 via-black/80 to-transparent">
+                  <div class="absolute top-0 left-0 right-0 p-4 xl:p-[16px] bg-gradient-to-b from-black/80 via-black/60 to-transparent">
                     <h3
                       class="text-white font-semibold text-md lg:text-2xl xl:text-[24px] xl:leading-[32px] mb-1 xl:mb-[4px]"
                       set:html={image.title}

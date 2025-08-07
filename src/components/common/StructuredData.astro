@@ -2,14 +2,15 @@
 import logoUrl from "~/assets/images/default.jpg";
 import { getImage } from "astro:assets";
 import { SITE } from "astrowind:config";
-
 import { useTranslations } from "~/i18n/utils";
+import type { MetaDataStructuredData } from "~/types";
 
 interface Props {
   lang?: "fi" | "en";
+  pageSpecificSchema?: MetaDataStructuredData;
 }
 
-const { lang = "en" } = Astro.props;
+const { lang = "en", pageSpecificSchema } = Astro.props;
 
 const t = useTranslations(lang);
 
@@ -190,9 +191,11 @@ const faqSchema = {
 };
 
 // Combine all schemas
+const schemas = [organizationSchema, websiteSchema, webPageSchema, articleSchema, faqSchema, pageSpecificSchema];
+
 const combinedSchema = {
   "@context": "https://schema.org",
-  "@graph": [organizationSchema, websiteSchema, webPageSchema, articleSchema, faqSchema],
+  "@graph": schemas,
 };
 ---
 

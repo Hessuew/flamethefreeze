@@ -1,0 +1,30 @@
+---
+import Template from "~/screens/prayer.astro";
+
+import logoUrl from "~/assets/images/prayer/prayer_for_works.webp";
+
+const metadata = {
+  title: "Fire of God and Fire for God | Experience Divine Fire Today",
+  description:
+    "Discover the transformative fire of God and ignite your fire for God in 2025. Experience spiritual awakening, Holy Spirit baptism, and blazing Christian living.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://flamethefreeze.com/miten-rukoilla",
+    siteName: "Flame the Freeze",
+    image: logoUrl,
+  },
+  twitter: {
+    handle: "@FlameTheFreeze",
+    site: "@FlameTheFreeze",
+    cardType: "summary_large_image",
+  },
+  ignoreTitleTemplate: true,
+};
+---
+
+<Template lang="fi" metadata={metadata} siteRebuildStatus={{ status: "inProgress", display: true }} />

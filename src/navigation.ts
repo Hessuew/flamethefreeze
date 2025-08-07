@@ -9,16 +9,6 @@ export const headerData: { links: Array<MenuLink> } = {
       text: "header.flameUp",
       links: [
         {
-          text: "header.link1",
-          href: "word",
-          icon: "tabler:bible",
-          description: "header.description1",
-          image: {
-            src: word,
-            alt: "flame_the_freeze_word",
-          },
-        },
-        {
           text: "header.link2",
           href: "prayer",
           icon: "tabler:pray",
@@ -26,6 +16,16 @@ export const headerData: { links: Array<MenuLink> } = {
           image: {
             src: prayer,
             alt: "flame_the_freeze_prayer",
+          },
+        },
+        {
+          text: "header.link1",
+          href: "word",
+          icon: "tabler:bible",
+          description: "header.description1",
+          image: {
+            src: word,
+            alt: "flame_the_freeze_word",
           },
         },
         {

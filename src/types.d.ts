@@ -56,6 +56,51 @@ export interface MetaData {
 
   openGraph?: MetaDataOpenGraph;
   twitter?: MetaDataTwitter;
+  structuredData?: MetaDataStructuredData;
+}
+
+export interface MetaDataStructuredData {
+  "@context"?: string;
+  "@type"?: string;
+  "@id"?: string;
+  headline?: string;
+  description?: string;
+  image?: string | MetaDataImage;
+  author?: {
+    "@type": string;
+    name: string;
+    url?: string;
+  };
+  publisher?: {
+    "@type": string;
+    name: string;
+    logo?: {
+      "@type": string;
+      url: string;
+    };
+  };
+  datePublished?: string;
+  dateModified?: string;
+  mainEntityOfPage?: {
+    "@type": string;
+    "@id": string;
+  };
+  url?: string;
+  keywords?: string;
+  articleSection?: string;
+  wordCount?: number;
+  about?: Array<{
+    "@type": string;
+    name: string;
+    description: string;
+  }>;
+  mentions?: Array<{
+    "@type": string;
+    name: string;
+    description: string;
+  }>;
+  // Allow for additional properties that might be needed
+  [key: string]: unknown;
 }
 
 export interface MetaDataRobots {
