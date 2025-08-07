@@ -3,17 +3,18 @@ import Layout from "~/layouts/PageLayout.astro";
 import HeroText from "~/components/widgets/HeroText.astro";
 import Steps from "~/components/widgets/Steps.astro";
 import GradientText from "~/components/ui/GradientText.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 
 const metadata = {
   title: "The Church",
 };
 
-const lang = getLangFromUrl(Astro.url);
+const { lang = "en" } = Astro.props;
+
 const t = useTranslations(lang);
 ---
 
-<Layout metadata={metadata}>
+<Layout lang={lang} metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
   <HeroText tagline={t("church.herotext.tagline")}>

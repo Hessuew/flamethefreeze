@@ -6,7 +6,7 @@ import Features from "~/components/widgets/Features.astro";
 import Features3 from "~/components/widgets/Features3.astro";
 import CallToAction from "~/components/widgets/CallToAction.astro";
 import GradientText from "~/components/ui/GradientText.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 import prayer from "~/assets/images/prayer.webp";
 import Features2 from "~/components/widgets/Features2.astro";
 
@@ -14,11 +14,12 @@ const metadata = {
   title: "Prayer",
 };
 
-const lang = getLangFromUrl(Astro.url);
+const { lang = "en" } = Astro.props;
+
 const t = useTranslations(lang);
 ---
 
-<Layout metadata={metadata}>
+<Layout lang={lang} metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
   <Hero tagline={t("prayer.herotext.tagline")}>

@@ -6,7 +6,7 @@ import Hero from "~/components/widgets/Hero.astro";
 import Layout from "~/layouts/PageLayout.astro";
 import Note from "~/components/widgets/Note.astro";
 import GradientText from "~/components/ui/GradientText.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 import Steps2 from "~/components/widgets/Steps2.astro";
 import { YouTube } from "astro-embed";
 import Lyrics from "~/components/widgets/Lyrics.astro";
@@ -15,7 +15,8 @@ const metadata = {
   title: "Events",
 };
 
-const lang = getLangFromUrl(Astro.url);
+const { lang = "en" } = Astro.props;
+
 const t = useTranslations(lang);
 
 const songs = [
@@ -49,7 +50,7 @@ const songs = [
 ];
 ---
 
-<Layout metadata={metadata}>
+<Layout lang={lang} metadata={metadata}>
   <!-- Hero Widget ******************* -->
   <Hero tagline={t("events.hero.tagline")}>
     <Fragment slot="title">

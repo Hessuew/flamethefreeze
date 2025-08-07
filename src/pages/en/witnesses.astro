@@ -4,17 +4,18 @@ import Features3 from "~/components/widgets/Features3.astro";
 import Hero from "~/components/widgets/Hero.astro";
 import Testimonials from "~/components/widgets/Testimonials.astro";
 import Layout from "~/layouts/PageLayout.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 
 const metadata = {
   title: "Witnesses",
 };
 
-const lang = getLangFromUrl(Astro.url);
+const { lang = "en" } = Astro.props;
+
 const t = useTranslations(lang);
 ---
 
-<Layout metadata={metadata}>
+<Layout lang={lang} metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <Hero tagline={t("witnesses.hero.title.tagline")} subtitle={t("witnesses.hero.title.subtitle")}>

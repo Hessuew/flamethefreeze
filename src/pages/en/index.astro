@@ -1,5 +1,7 @@
 ---
 import Home from "../index.astro";
+
+const { lang = "en" } = Astro.props;
 ---
 
-<Home />
+<Home lang={lang} />

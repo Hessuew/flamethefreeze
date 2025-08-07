@@ -1338,7 +1338,7 @@ export const ui = {
     "schema.faq.mainEntity.4.name": "Mistä voin saada Jumalan tulen?",
     "schema.faq.mainEntity.4.acceptedAnswer.text":
       "Paikalla ei ole väliä vaan sydän ratkaisee. Kun sydämesi on oikealla paikalla niin paikka voi olla missä vain.",
-    "announcement.text": "Flamethefreeze sivua rakennetaan uudelleen",
+    "announcement.text": "flamethefreeze sivua rakennetaan uudelleen",
     "announcement.progress": "EDISTYS:",
     "announcement.currentPage": "NYKYINEN SIVU:",
     "announcement.status.completed": "VALMIS",

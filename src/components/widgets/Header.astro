@@ -46,14 +46,14 @@ const {
   isFullWidth = false,
   position = "right",
   classes = {},
-  lang,
+  lang = "en",
 } = Astro.props;
 
 const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`;
 
 const { nav: navClass = "" } = classes;
 
-const t = useTranslations(lang || "en");
+const t = useTranslations(lang);
 ---
 
 <header
@@ -83,7 +83,7 @@ const t = useTranslations(lang || "en");
     <div class:list={[{ "mr-auto rtl:mr-0 rtl:ml-auto": position === "right" }, "flex justify-between"]}>
       <a
         class="flex items-center justify-center relative py-2 lg:py-0 group transition-all duration-300 hover:scale-105"
-        href={getHomePermalink()}
+        href={lang === "en" ? getHomePermalink() : getPermalink("/jumalan-tuli")}
       >
         <div class="relative">
           <div
@@ -105,7 +105,7 @@ const t = useTranslations(lang || "en");
       aria-label="Main navigation"
     >
       <div class="flex justify-between items-center py-2 px-6 xl:py-[8px] xl:px-[24px] lg:hidden">
-        <LanguagePicker />
+        <LanguagePicker lang={lang} />
       </div>
       <ul
         class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] xl:text-[15px] xl:tracking-[0.16px] font-medium lg:justify-center"
@@ -208,7 +208,7 @@ const t = useTranslations(lang || "en");
       ]}
     >
       <div class="hidden lg:flex flex-none items-center w-full lg:w-auto gap-3 xl:gap-[12px]">
-        <LanguagePicker />
+        <LanguagePicker lang={lang} />
       </div>
     </div>
   </div>
