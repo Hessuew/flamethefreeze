@@ -1,194 +1,50 @@
 ---
+import FireButton from "~/components/ui/FireButton.astro";
 import Layout from "~/layouts/Layout.astro";
 import { getHomePermalink } from "~/utils/permalinks";
 
-const title = `Error 404`;
+const title = `Page Not Found | Flame the Freeze`;
+const description = "The page you're looking for doesn't exist. Return to discover God's fire and purpose.";
 ---
 
-<Layout metadata={{ title }}>
-  <section class="flex items-center h-full p-16">
-    <div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-      <div class="max-w-md text-center">
-        <h2 class="mb-8 font-bold text-9xl">
-          <span class="sr-only">Error</span>
-          <span class="text-primary">404</span>
+<Layout metadata={{ title, description }}>
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Main Content -->
+    <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <!-- 404 Number with Fire Effect -->
+      <div class="relative mb-8">
+        <h1
+          class="text-8xl md:text-9xl lg:text-[12rem] font-bold bg-gradient-to-r from-orange-600 to-yellow-500 bg-clip-text text-transparent"
+        >
+          404
+        </h1>
+      </div>
+
+      <!-- Main Message -->
+      <div class="space-y-6 mb-12">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+          Lost in the <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
+            >Fire?</span
+          >
         </h2>
-        <p class="text-3xl font-semibold md:text-3xl">Sorry, we couldn't find this page.</p>
-        <p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">
-          But dont worry, you can find plenty of other things on our homepage.
+        <p class="text-xl md:text-2xl text-blue-100 leading-relaxed max-w-2xl mx-auto">
+          The page you're seeking has vanished like smoke.
         </p>
-        <a rel="noopener noreferrer" href={getHomePermalink()} class="btn ml-4">Back to homepage</a>
+        <p class="text-lg text-blue-200/80 max-w-xl mx-auto">
+          Don't let this detour extinguish your flame. Return to discover God's purpose and ignite your passion.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <FireButton
+          href={getHomePermalink()}
+          text="🔥 Return to the Fire"
+          variant="primary"
+          size="medium"
+          icon="tabler:arrow-back-up"
+        />
       </div>
     </div>
   </section>
 </Layout>
-
-<!-- <style is:inline>
-  #confetti-button {
-    all: unset;
-    cursor: pointer;
-    width: 300px;
-    height: 100px;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    border-radius: 999vw;
-    background-color: rgba(0, 0, 0, 0.75);
-    box-shadow:
-      -0.15em -0.15em 0.15em -0.075em rgba(5, 5, 5, 0.25),
-      0.0375em 0.0375em 0.0675em 0 rgba(5, 5, 5, 0.1);
-  }
-
-  #confetti-button::after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    width: calc(100% + 0.3em);
-    height: calc(100% + 0.3em);
-    top: -0.15em;
-    left: -0.15em;
-    border-radius: inherit;
-    background: linear-gradient(-135deg, rgba(5, 5, 5, 0.5), transparent 20%, transparent 100%);
-    filter: blur(0.0125em);
-    opacity: 0.25;
-    mix-blend-mode: multiply;
-  }
-
-  #confetti-button .button-outer {
-    position: relative;
-    z-index: 1;
-    height: 100px;
-    border-radius: inherit;
-    transition: box-shadow 300ms ease;
-    will-change: box-shadow;
-    box-shadow:
-      0 0.05em 0.05em -0.01em rgba(5, 5, 5, 1),
-      0 0.01em 0.01em -0.01em rgba(5, 5, 5, 0.5),
-      0.15em 0.3em 0.1em -0.01em rgba(5, 5, 5, 0.25);
-  }
-
-  #confetti-button:hover .button-outer {
-    box-shadow:
-      0 0 0 0 rgba(5, 5, 5, 1),
-      0 0 0 0 rgba(5, 5, 5, 0.5),
-      0 0 0 0 rgba(5, 5, 5, 0.25);
-  }
-
-  .button-inner {
-    --inset: 0.035em;
-    position: relative;
-    z-index: 1;
-    height: 100px;
-    border-radius: inherit;
-    padding: 1em 1.5em;
-    background-image: linear-gradient(135deg, rgba(230, 230, 230, 1), rgba(180, 180, 180, 1));
-    transition:
-      box-shadow 300ms ease,
-      clip-path 250ms ease,
-      background-image 250ms ease,
-      transform 250ms ease;
-    will-change: box-shadow, clip-path, background-image, transform;
-    overflow: clip;
-    clip-path: inset(0 0 0 0 round 999vw);
-    box-shadow:
-        /* 1 */
-      0 0 0 0 inset rgba(5, 5, 5, 0.1),
-      /* 2 */ -0.05em -0.05em 0.05em 0 inset rgba(5, 5, 5, 0.25),
-      /* 3 */ 0 0 0 0 inset rgba(5, 5, 5, 0.1),
-      /* 4 */ 0 0 0.05em 0.2em inset rgba(255, 255, 255, 0.25),
-      /* 5 */ 0.025em 0.05em 0.1em 0 inset rgba(255, 255, 255, 1),
-      /* 6 */ 0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
-      /* 7 */ -0.075em -0.25em 0.25em 0.1em inset rgba(5, 5, 5, 0.25);
-  }
-
-  #confetti-button:hover .button-inner {
-    clip-path: inset(
-      clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) clamp(1px, 0.0625em, 2px) round
-        999vw
-    );
-    box-shadow:
-        /* 1 */
-      0.1em 0.15em 0.05em 0 inset rgba(5, 5, 5, 0.75),
-      /* 2 */ -0.025em -0.03em 0.05em 0.025em inset rgba(5, 5, 5, 0.5),
-      /* 3 */ 0.25em 0.25em 0.2em 0 inset rgba(5, 5, 5, 0.5),
-      /* 4 */ 0 0 0.05em 0.5em inset rgba(255, 255, 255, 0.15),
-      /* 5 */ 0 0 0 0 inset rgba(255, 255, 255, 1),
-      /* 6 */ 0.12em 0.12em 0.12em inset rgba(255, 255, 255, 0.25),
-      /* 7 */ -0.075em -0.12em 0.2em 0.1em inset rgba(5, 5, 5, 0.25);
-  }
-
-  #confetti-button .button-inner span {
-    position: relative;
-    z-index: 4;
-    font-family: "Inter", sans-serif;
-    letter-spacing: -0.05em;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(135deg, rgba(25, 25, 25, 1), rgba(75, 75, 75, 1));
-    -webkit-background-clip: text;
-    background-clip: text;
-    transition: transform 250ms ease;
-    display: block;
-    will-change: transform;
-    text-shadow: rgba(0, 0, 0, 0.1) 0 0 0.1em;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  #confetti-button:hover .button-inner span {
-    transform: scale(0.975);
-  }
-
-  #confetti-button:active .button-inner {
-    transform: scale(0.975);
-  }
-</style> -->
-
-<!-- <div
-    class="flex flex-col gap-8 justify-center items-center h-screen intersect-once intersect-tenth sm:intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade"
-  >
-    <ButtonConfetti client:load />
-    <TextAnimate
-      client:load
-      className="text-2xl xs:text-3xl md:text-4xl xl:text-[40px] xl:leading-[48px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading"
-      animation="blurInUp"
-      delay={6}
-      duration={0.6}
-      by="character"
-      once={true}
-      text="Well that was nice but what's next?"
-    />
-  </div> -->
-
-<!-- <StatsModern
-    id="stats"
-    tagline="How"
-    title="God's Faithfulness in Numbers"
-    subtitle="Witness the incredible impact of God's power through our ministry."
-    stats={[
-      {
-        amount: "500+",
-        title: "Lives Transformed",
-        description: "People touched by God's power",
-        icon: "tabler:users",
-      },
-      {
-        amount: "50+",
-        title: "Healing Testimonies",
-        description: "Miraculous healings witnessed",
-        icon: "tabler:heart-plus",
-      },
-      {
-        amount: "25+",
-        title: "Countries Reached",
-        description: "Global ministry impact",
-        icon: "tabler:world",
-      },
-      {
-        amount: "10+",
-        title: "Years of Ministry",
-        description: "Faithful service to God",
-        icon: "tabler:calendar-event",
-      },
-    ]}
-  /> -->
