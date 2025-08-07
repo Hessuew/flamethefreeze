@@ -15,7 +15,7 @@ const { text, href, variant = "primary", size = "medium", class: className = "",
 
 const Tag = href ? "a" : "button";
 const sizeClasses = {
-  small: "px-6 py-3 xl:px-[24px] xl:py-[12px] text-sm xl:text-[14px] xl:leading-[20px]",
+  small: "px-2 md:px-6 py-3 xl:px-[24px] xl:py-[12px] text-sm xl:text-[14px] xl:leading-[20px]",
   medium: "px-3 md:px-8 py-4 text-base xl:text-[16px] xl:leading-[24px]",
   large: "px-10 py-5 xl:px-[40px] xl:py-[20px] text-lg xl:text-[20px] xl:leading-[28px]",
 };
@@ -162,12 +162,18 @@ const sizeClasses = {
   /* Fire Particles */
   .fire-particle {
     position: absolute;
-    width: 3px;
-    height: 3px;
-    background: radial-gradient(circle, #ff4500 0%, #ffa500 70%, transparent 100%);
+    width: 4px;
+    height: 4px;
+    background: radial-gradient(circle, #ffffff 0%, #ffff00 20%, #ff6600 50%, #ff4500 80%, #cc3300 100%);
     border-radius: 50%;
     animation: particleFloat 4s infinite linear;
     opacity: 0;
+    box-shadow:
+      0 0 6px rgba(255, 69, 0, 0.8),
+      0 0 3px rgba(255, 255, 0, 0.6),
+      0 0 2px rgba(255, 140, 0, 0.4);
+    filter: drop-shadow(0 0 4px rgba(255, 69, 0, 0.7));
+    z-index: 5;
   }
 
   .fire-particle-1 {
@@ -264,7 +270,13 @@ const sizeClasses = {
 
   /* Hover Enhancements */
   .fire-button:hover .fire-particle {
-    animation-duration: 2s;
+    animation-duration: 2.5s;
+    opacity: 1;
+    filter: drop-shadow(0 0 8px rgba(255, 69, 0, 0.9));
+    box-shadow:
+      0 0 10px rgba(255, 69, 0, 1),
+      0 0 6px rgba(255, 255, 0, 0.8),
+      0 0 3px rgba(255, 140, 0, 0.6);
   }
 
   .fire-button:hover .fire-bg {
@@ -273,13 +285,13 @@ const sizeClasses = {
 
   /* Size Variations */
   .fire-button-small .fire-particle {
-    width: 2px;
-    height: 2px;
+    width: 3px;
+    height: 3px;
   }
 
   .fire-button-large .fire-particle {
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
   }
 
   /* Accessibility */

@@ -4,17 +4,19 @@ import youtubeLogo from "~/assets/images/footer/rukous_seurakunta_youtube_logo.p
 import prayerChurchLogo from "~/assets/images/footer/prayer-church-website-design-logo.webp";
 import Image from "astro/components/Image.astro";
 import { twMerge } from "tailwind-merge";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 
 import { Icon } from "astro-icon/components";
 import GradientText from "../ui/GradientText.astro";
 
 export interface Props {
   theme?: string;
+  lang?: "fi" | "en";
 }
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const { lang } = Astro.props;
+
+const t = useTranslations(lang || "en");
 
 const links = [
   {
