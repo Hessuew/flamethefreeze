@@ -1,0 +1,362 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import { Icon } from "astro-icon/components";
+import { TextAnimate } from "~/components/magicui/text-animate";
+import { BlurFade } from "~/components/magicui/blur-fade";
+import FireButton from "~/components/ui/FireButton.astro";
+import prayer_works from "~/assets/images/prayer/prayer_for_works.webp";
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import PrayerPointsList from "~/components/widgets/PrayerPointsList.astro";
+import type { PrayerPoint } from "~/components/widgets/PrayerPointsList.astro";
+import { getPermalink } from "~/utils/permalinks";
+
+const { metadata, siteRebuildStatus, lang } = Astro.props;
+
+// Prayer points data array
+const prayerPoints: PrayerPoint[] = [
+  {
+    icon: "tabler:hammer",
+    title: "Transform yourself → transform your results",
+    subtitle:
+      "It is stupid to expect different results while doing the same thing 🤪. Don't focus on a good container but improve the content 🎓. More expensive content naturally needs a better container 💎. Diamonds are not stored in a milk bottle, and milk is not stored in a bank 🥛🏦",
+    bibleQuote:
+      '"Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth." - 2 Timothy 2:15',
+    color: "orange",
+  },
+  {
+    icon: "tabler:gift",
+    title: "Your gift <span class='italic'>makes</span> room for you",
+    subtitle:
+      "You don't need to teach a duck to swim, it already knows how to swim 🦆.  There is always space in the air for an eagle because it flies so high 🦅. The value of a diamond will make people all around the world to look for it 🔎💎. Your gift (your inward, inbuilt ability) makes you room you don't have to struggle to get 🏆.",
+    bibleQuote: `"A man's gift maketh room for him, and bringeth him before great men." - Proverbs 16:3`,
+    color: "blue",
+  },
+  {
+    icon: "tabler:building-factory-2",
+    title: "Value, Productivity, Diligence",
+    subtitle:
+      "Unrefined gold is worth nothing, unprocessed oil is just a black paste ⚜️🛢️. Nokia 1100 was the golden standard but now a museum item ☎️. Apple _produces_ new version every year and remains on top 🍏. One operation system is for vibe coders, but multiplying and distributing it makes Microsoft the king 👑. ",
+    bibleQuote:
+      '"Seest thou a man diligent in his business? he shall stand before kings; he shall not stand before mean men." - Proverbs 22:29',
+    color: "green",
+  },
+  {
+    icon: "tabler:heart",
+    title: "The Main Key: <span class='text-red-500'>Love for God</span>",
+    subtitle:
+      "A dying man will spent all his money to for a one more day, and dead man cannot win Eurojackpot ⌛🎟️. 10B spent on bombs is an outrage, but 1,000 spent on saving lives is a celebration 🤯🎉. The value of a money is dependant on the usage ⚖️. The eternal value of a soul is dependant on the love for God ❤️‍🔥",
+    bibleQuote:
+      '"For what shall it profit a man, if he shall gain the whole world, and lose his own soul?" - Mark 8:36',
+    color: "red",
+  },
+  {
+    icon: "tabler:ripple",
+    title: "Wisdom of God for the greatest results",
+    subtitle:
+      "Many men can carry many logs but a cart can carry many men and logs 🪵🧺. Gideon can travail for his life with 30,000 or win without a fight with 300 🪖🏖. Surely you can get power from the devil like drunkard happiness from a beer 🍺, but wisdom of God keeps you as a counselor from Nebuchadnezzar to Cyrus 👥. ",
+    bibleQuote: '"Wisdom strengtheneth the wise more than ten mighty men which are in the city." - Ecclesiastes 7:19',
+    color: "purple",
+  },
+  {
+    icon: "tabler:users",
+    title: "Walk with wise → be wise.</br>Walk with fools → be a fool.",
+    subtitle:
+      "Jesus can die on a cross but Joseph will give Him a tomb 🍙. Paul can be the apostle of the gentiles but Barnabas will bring him to Antioch 🏛️. Israel is the chosen people but Pharaoh gave them the Goshen 𓁈⚱️. You might have lived as a worst sinner but through Jesus you are a heir of God 🤴🏻. ",
+    bibleQuote: '"And Jesus increased in wisdom and stature, and in favour with God and man." - Luke 2:52',
+    color: "indigo",
+  },
+  {
+    icon: "tabler:volcano",
+    title: "Prayer to change the spiritual climate",
+    subtitle:
+      "You can look the greatest fool but on the day of Noah's flood only your ship will be saved ⛵. You can build the greatest city but Vesuvius will bury all the Pompeii in ashes 🌋. You can build the greatest life but without prayer you will toss that great ship miniature into the sea without knowing if it is calm or raging 🌊.",
+    bibleQuote:
+      '"And he spake a parable unto them to this end, that men ought always to pray, and not to faint." - Luke 18:1',
+    color: "yellow",
+  },
+];
+---
+
+<Layout lang={lang} metadata={metadata} siteRebuildStatus={siteRebuildStatus}>
+  <!-- Hero Section with Full Screen Image -->
+  <div class="min-h-screen relative overflow-hidden">
+    <!-- Background Image -->
+    <div
+      class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
+      style={`background-image: url(${prayer_works.src})`}
+    >
+    </div>
+
+    <!-- Gradient overlay for better text readability -->
+    <div
+      class="absolute inset-0 z-5"
+      style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(26, 0, 36, 0.6) 80%, #1a0024 100%);"
+    >
+    </div>
+
+    <!-- Text overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
+
+    <Hero classes={{ containerClass: "text-left relative z-20", subtitleContainerClass: "max-w-none" }}>
+      <Fragment slot="title">
+        <TextAnimate
+          client:load
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading text-white"
+          animation="blurInUp"
+          delay={1}
+          duration={0.6}
+          by="character"
+          once={true}
+          text="Prayer for Works:"
+        />
+
+        <TextAnimate
+          client:load
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading text-orange-400"
+          animation="blurInUp"
+          delay={1.6}
+          duration={0.6}
+          by="character"
+          once={true}
+          text="Transform Your Career"
+        />
+
+        <div class="max-w-md">
+          <TextAnimate
+            client:load
+            className="text-xl xl:text-[20px] xl:leading-[28px] font-normal tracking-normal text-gray-200"
+            animation="blurInUp"
+            delay={3}
+            duration={0.6}
+            by="line"
+            once={true}
+            text="Discover a 7-Point list to transform your career through prayer for works. 🔥🔥🔥🔥"
+          />
+        </div>
+      </Fragment>
+
+      <Fragment slot="subtitle">
+        <div class="flex gap-4 mb-8">
+          <BlurFade client:load delay={4.2} direction="up" inView>
+            <FireButton
+              href="#prayer-guide"
+              text="7-point list for prayer for works"
+              variant="primary"
+              size="small"
+              icon="tabler:corner-right-down"
+            />
+          </BlurFade>
+        </div>
+      </Fragment>
+    </Hero>
+  </div>
+
+  <!-- 7-Point Prayer Guide Listicle -->
+  <BlurFade client:load delay={5} direction="up">
+    <PrayerPointsList prayerPoints={prayerPoints} />
+  </BlurFade>
+
+  <!-- Testimonies Section -->
+  <WidgetWrapper id="testimonies" animated={false} containerClass="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+          Real Stories of <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
+            >Prayer at Work</span
+          >
+        </h2>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+          Discover how this 7-point list for prayer for work has transformed careers and brought divine favor into
+          professional experts.
+        </p>
+      </div>
+
+      <!-- Testimonies Grid - 2 Column Layout -->
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- Left Column - First and Second Testimonies Stacked -->
+        <div class="flex flex-col gap-8 h-full">
+          <!-- Testimony 1 - Takes 2/3 height -->
+          <div class="group relative flex-[2]">
+            <div
+              class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 border-orange-500/50 hover:border-orange-500/80 transition-all duration-300 h-full"
+            >
+              <!-- Profile Image -->
+              <div class="flex justify-center mb-6">
+                <div
+                  class="w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-white text-2xl font-bold shadow-lg"
+                >
+                  A
+                  <!-- <Image
+                    class="w-full h-auto object-cover rounded-full"
+                    src={andrew}
+                    alt="Showcase image"
+                    width={80}
+                    height={80}
+                    loading="lazy"
+                  /> -->
+                </div>
+              </div>
+
+              <!-- Testimony Content -->
+              <div class="text-center">
+                <div class="mb-6">
+                  <div class="flex justify-center mb-4">
+                    <div class="flex space-x-1">
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                    </div>
+                  </div>
+                  <blockquote class="text-gray-300 italic mb-6 text-lg leading-relaxed">
+                    "4 years ago my PHD went to the trash bin, but now I'm a professor and my work is being published in
+                    top-tier journals. Seek first the kingdom of God, and all other things shall be added to you."
+                  </blockquote>
+                </div>
+                <div class="border-t border-gray-600 pt-6">
+                  <p class="text-white font-semibold text-lg">Andrew A.</p>
+                  <p class="text-gray-400">
+                    Award-winning physician and professor (associate) of clinical epidemiology and child health
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimony 2 - Takes 1/3 height -->
+          <div class="group relative flex-1">
+            <div
+              class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-700 border-blue-500/50 hover:border-blue-500/80 transition-all duration-300 h-full"
+            >
+              <!-- Profile Image -->
+              <div class="flex justify-center mb-4">
+                <div
+                  class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-xl font-bold shadow-lg"
+                >
+                  G
+                </div>
+              </div>
+
+              <!-- Testimony Content -->
+              <div class="text-center">
+                <div class="mb-4">
+                  <div class="flex justify-center mb-3">
+                    <div class="flex space-x-1">
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                    </div>
+                  </div>
+                  <blockquote class="text-gray-300 italic mb-4 text-sm leading-relaxed">
+                    "I have experienced many miracles, and guidances of God in my career. I have already recognized some
+                    manifestations of the wisdom of God, and I believe He will fulfill everything He has said concerning
+                    me."
+                  </blockquote>
+                </div>
+                <div class="border-t border-gray-600 pt-4">
+                  <p class="text-white font-semibold">Greta J.</p>
+                  <p class="text-gray-400 text-sm">Researcher, PhD student</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Third Testimony and CTA -->
+        <div class="flex flex-col gap-8 h-full">
+          <!-- Your Testimony CTA - Takes 1/3 height -->
+          <div class="group relative flex-1">
+            <div
+              class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed border-purple-400/50 hover:border-purple-400 transition-all duration-300 h-full flex flex-col justify-center items-center text-center"
+            >
+              <!-- Plus Icon -->
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-600/20 border-2 border-dashed border-purple-400/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300"
+              >
+                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                </svg>
+              </div>
+
+              <!-- CTA Content -->
+              <div>
+                <h4 class="text-lg font-bold text-white mb-3">Your Testimony?</h4>
+                <p class="text-gray-300 text-sm mb-4 leading-relaxed">
+                  Have the prayer for works transformed your work life already?
+                </p>
+                <!-- <FireButton text="Share Your Story" variant="secondary" size="small" icon="tabler:heart" /> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimony 3 - Takes 2/3 height -->
+          <div class="group relative flex-[2]">
+            <div
+              class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 border-green-500/50 hover:border-green-500/80 transition-all duration-300 h-full"
+            >
+              <!-- Profile Image -->
+              <div class="flex justify-center mb-6">
+                <div
+                  class="w-20 h-20 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white text-2xl font-bold shadow-lg"
+                >
+                  J
+                </div>
+              </div>
+
+              <!-- Testimony Content -->
+              <div class="text-center">
+                <div class="mb-6">
+                  <div class="flex justify-center mb-4">
+                    <div class="flex space-x-1">
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                    </div>
+                  </div>
+                  <blockquote class="text-gray-300 italic mb-6 text-lg leading-relaxed">
+                    "I never was interested of creating websites. Now I'm designing, and developing them for global
+                    names. And this is just the tip of the iceberg of what God has spoken. We will do great exploits for
+                    our God as we expand the frontiers of His kingdom before Jesus returns!"
+                  </blockquote>
+                </div>
+                <div class="border-t border-gray-600 pt-6">
+                  <p class="text-white font-semibold text-lg">Juhani J.</p>
+                  <p class="text-gray-400">IT specialist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center mt-16 pt-16 border-t border-gray-700">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+          Ready to <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
+            >Ignite Your Prayer For Works</span
+          >?
+        </h2>
+        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          Start implementing these prayer strategies today and watch God work miracles in your professional journey.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <FireButton
+            href={getPermalink("/en/word")}
+            text="What's next?"
+            variant="primary"
+            size="large"
+            icon="tabler:rocket"
+          />
+        </div>
+      </div>
+    </div>
+  </WidgetWrapper>
+</Layout>

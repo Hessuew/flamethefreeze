@@ -33,7 +33,7 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
-    <StructuredData lang={lang} />
+    <StructuredData lang={lang} pageSpecificSchema={metadata?.structuredData} />
 
     <!-- Comment the line below to disable View Transitions -->
     <ClientRouter fallback="swap" />

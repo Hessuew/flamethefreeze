@@ -1,0 +1,110 @@
+---
+import Template from "~/screens/prayer.astro";
+
+import logoUrl from "~/assets/images/prayer/prayer_for_works.webp";
+
+const metadata = {
+  title: "7-Point Prayer for Works Guide 2025 | Flame the Freeze",
+  description:
+    "Discover the 7-point prayer for works that brings divine wisdom, career success & spiritual growth. Transform yourself → transform your results!",
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+  },
+  openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "https://flamethefreeze.com/prayer-for-works",
+    siteName: "Flame the Freeze",
+    title: "7-Point Prayer for Works Guide | Transform Your Career Through Prayer",
+    description:
+      "Discover the powerful 7-point prayer for works that transforms careers through divine wisdom. Learn biblical principles for professional success and spiritual growth in the workplace.",
+    image: {
+      url: logoUrl,
+      width: 1200,
+      height: 630,
+      alt: "Prayer for Works - 7-Point Guide to Transform Your Career",
+    },
+    article: {
+      publishedTime: "2025-01-07T00:00:00Z",
+      modifiedTime: "2025-01-07T15:05:41Z",
+      author: "Flame the Freeze Ministry",
+      section: "Prayer & Spirituality",
+      tags: [
+        "prayer for works",
+        "career prayer",
+        "workplace spirituality",
+        "professional success",
+        "divine wisdom",
+        "biblical principles",
+      ],
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@FlameTheFreeze",
+    creator: "@FlameTheFreeze",
+    title: "7-Point Prayer for Works Guide | Transform Your Career",
+    description:
+      "Discover powerful prayers that transform careers through divine wisdom. Learn biblical principles for professional success and workplace spirituality.",
+    image: logoUrl,
+  },
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://flamethefreeze.com/prayer-for-works#article",
+    headline: "7-Point Prayer for Works Guide: Transform Your Career Through Prayer",
+    description:
+      "Comprehensive guide to prayer for works featuring 7 powerful biblical principles for professional success, career transformation, and workplace spirituality.",
+    image: logoUrl,
+    author: {
+      "@type": "Organization",
+      name: "Flame the Freeze Ministry",
+      url: "https://flamethefreeze.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Flame the Freeze",
+      logo: {
+        "@type": "ImageObject",
+        url: logoUrl,
+      },
+    },
+    datePublished: "2025-01-07T00:00:00Z",
+    dateModified: "2025-01-07T15:05:41Z",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://flamethefreeze.com/prayer-for-works",
+    },
+    url: "https://flamethefreeze.com/prayer-for-works",
+    keywords:
+      "prayer for works, career prayer, workplace spirituality, professional success, divine wisdom, biblical principles, career transformation, spiritual growth",
+    articleSection: "Prayer & Spirituality",
+    wordCount: 1000,
+    about: [
+      {
+        "@type": "Thing",
+        name: "Prayer for Professional Success",
+        description:
+          "Biblical principles and prayers for achieving success in professional endeavors through divine guidance.",
+      },
+      {
+        "@type": "Thing",
+        name: "Workplace Spirituality",
+        description: "Integration of spiritual practices and biblical wisdom in professional environments.",
+      },
+      {
+        "@type": "Thing",
+        name: "Career Transformation",
+        description: "Personal and professional transformation through prayer, wisdom, and divine favor.",
+      },
+    ],
+  },
+  ignoreTitleTemplate: true,
+};
+---
+
+<Template lang="en" metadata={metadata} siteRebuildStatus={{ status: "completed", display: true }} />

@@ -100,7 +100,7 @@ const t = useTranslations(lang);
       </Fragment>
 
       <Fragment slot="subtitle">
-        <div class="flex gap-4">
+        <div class="flex gap-4 xl:gap-[16px]">
           <BlurFade client:load delay={4.2} direction="up" inView>
             <FireButton
               href="#what"
@@ -296,7 +296,7 @@ const t = useTranslations(lang);
     document.addEventListener("astro:page-load", () => {
       // Start video after 1 second with proper fade-in effect
       const heroVideo = document.getElementById("hero-video") as HTMLVideoElement;
-      const heroGradient = document.getElementById("hero-gradient") as HTMLVideoElement;
+      const heroGradient = document.getElementById("hero-gradient") as HTMLDivElement;
       if (heroVideo) {
         setTimeout(() => {
           const videoSrc = heroVideo.dataset.src;
