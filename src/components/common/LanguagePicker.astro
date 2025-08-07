@@ -1,15 +1,19 @@
 ---
-import { getLangFromUrl } from "~/i18n/utils";
 import { twMerge } from "tailwind-merge";
 
-const lang = getLangFromUrl(Astro.url);
+const { lang = "en" } = Astro.props;
 
 const changeLangInUrl = (targetLang: "en" | "fi") => {
   const currentPath = Astro.url.pathname;
 
   // If we're at the root path
   if (currentPath === "/" || currentPath === "") {
-    return targetLang === "en" ? "/en" : "/fi";
+    return targetLang === "en" ? "/" : "/jumalan-tuli";
+  }
+
+  // If we're at the jumalan-tuli path
+  if (currentPath === "/jumalan-tuli" || currentPath === "/jumalan-tuli/") {
+    return "/";
   }
 
   // For English target: add /en prefix if not already there

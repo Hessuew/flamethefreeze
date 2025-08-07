@@ -30,7 +30,7 @@ const { metadata, siteRebuildStatus, lang } = Astro.props;
 const t = useTranslations(lang);
 ---
 
-<Layout metadata={metadata} siteRebuildStatus={siteRebuildStatus} lang={lang}>
+<Layout lang={lang} metadata={metadata} siteRebuildStatus={siteRebuildStatus}>
   <!-- Hero Widget ******************* -->
   <div class="min-h-screen relative overflow-hidden">
     <!-- Video Background -->
