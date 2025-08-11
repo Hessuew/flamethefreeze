@@ -1,50 +1,15 @@
 ---
 import { twMerge } from "tailwind-merge";
+import { changeLangInUrl } from "~/navigation";
 
 const { lang = "en" } = Astro.props;
 
-const changeLangInUrl = (targetLang: "en" | "fi") => {
-  const currentPath = Astro.url.pathname;
-
-  // If we're at the root path
-  if (currentPath === "/" || currentPath === "") {
-    return targetLang === "en" ? "/" : "/jumalan-tuli";
-  }
-
-  // If we're at the jumalan-tuli path
-  if (currentPath === "/jumalan-tuli" || currentPath === "/jumalan-tuli/") {
-    return "/";
-  }
-
-  // For English target: add /en prefix if not already there
-  if (targetLang === "en") {
-    if (currentPath.startsWith("/fi/")) {
-      return currentPath.replace("/fi", "/en");
-    }
-    if (currentPath === "/fi") {
-      return "/en";
-    }
-    return currentPath;
-  }
-
-  // For Finnish target: remove /en prefix if present
-  if (targetLang === "fi") {
-    if (currentPath.startsWith("/en/")) {
-      return currentPath.replace("/en", "/fi");
-    }
-    if (currentPath === "/en") {
-      return "/fi";
-    }
-    return currentPath;
-  }
-
-  return currentPath;
-};
+const currentPath = Astro.url.pathname;
 ---
 
 <div class="flex items-center gap-1">
   <a
-    href={lang === "en" ? undefined : changeLangInUrl("en")}
+    href={lang === "en" ? undefined : changeLangInUrl(currentPath, "en")}
     class={twMerge(
       "p-2.5 rounded-lg transition-all duration-300 ease-in-out",
       "focus:outline-none focus:scale-110",
@@ -56,7 +21,7 @@ const changeLangInUrl = (targetLang: "en" | "fi") => {
     <span class="text-2xl">🇺🇸</span>
   </a>
   <a
-    href={lang === "fi" ? undefined : changeLangInUrl("fi")}
+    href={lang === "fi" ? undefined : changeLangInUrl(currentPath, "fi")}
     class={twMerge(
       "p-2.5 rounded-lg transition-all duration-300 ease-in-out",
       "focus:outline-none focus:scale-110",
