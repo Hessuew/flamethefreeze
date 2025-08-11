@@ -3,6 +3,82 @@ import prayer from "~/assets/images/fire_of_god_and_fire_for_god-prayer.webp";
 import word from "~/assets/images/word.webp";
 import smith from "~/assets/images/witnesses/flame_the_freeze_smith_wigglesworth.webp";
 
+// Language route pairs mapping
+export const routePairs: Record<string, string> = {
+  "/": "/jumalan-tuli",
+  "/prayer-for-works": "/miten-rukoilla",
+};
+
+// Helper function to get the opposite route
+export const getOppositeRoute = (path: string): string | null => {
+  // Check if current path is an English route
+  for (const [enRoute, fiRoute] of Object.entries(routePairs)) {
+    if (path === enRoute) return fiRoute;
+    if (path === fiRoute) return enRoute;
+  }
+  return null;
+};
+
+// Language route mapping function
+export const changeLangInUrl = (currentPath: string, targetLang: "en" | "fi"): string => {
+  // Handle specific route pairs
+  const oppositeRoute = getOppositeRoute(currentPath);
+  if (oppositeRoute !== null) {
+    if (targetLang === "en") {
+      // If we're switching to English, return the English route
+      return Object.keys(routePairs).find((enRoute) => routePairs[enRoute] === currentPath) || oppositeRoute;
+    } else {
+      // If we're switching to Finnish, return the Finnish route
+      return routePairs[currentPath] || oppositeRoute;
+    }
+  }
+
+  // Fallback to generic language switching for other routes
+  // For English target: add /en prefix if not already there
+  if (targetLang === "en") {
+    if (currentPath.startsWith("/fi/")) {
+      return currentPath.replace("/fi", "/en");
+    }
+    if (currentPath === "/fi") {
+      return "/en";
+    }
+    return currentPath;
+  }
+
+  // For Finnish target: remove /en prefix if present
+  if (targetLang === "fi") {
+    if (currentPath.startsWith("/en/")) {
+      return currentPath.replace("/en", "/fi");
+    }
+    if (currentPath === "/en") {
+      return "/fi";
+    }
+    return currentPath;
+  }
+
+  return currentPath;
+};
+
+// Helper function to get the correct route based on language and href
+export const getLanguageRoute = (href: string, targetLang: "en" | "fi"): string => {
+  // Map navigation hrefs to route pairs
+  const hrefToRouteMap: Record<string, string> = {
+    prayer: "/prayer-for-works",
+    // Add more mappings as needed for other navigation items
+  };
+
+  // Get the base route from href
+  const baseRoute = hrefToRouteMap[href] || `/${href}`;
+
+  // If we have a route pair mapping, use it
+  if (routePairs[baseRoute]) {
+    return targetLang === "fi" ? routePairs[baseRoute] : baseRoute;
+  }
+
+  // For routes not in pairs, use language prefix for both languages
+  return targetLang === "fi" ? `/fi/${href}` : `/en/${href}`;
+};
+
 export const headerData: { links: Array<MenuLink> } = {
   links: [
     {

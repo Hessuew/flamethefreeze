@@ -24,6 +24,7 @@ import IceButton from "~/components/ui/IceButton.astro";
 import FreezeOverlay from "~/components/ui/FreezeOverlay.astro";
 import { getPermalink } from "~/utils/permalinks";
 import { ENDPOINTS } from "~/config/endpoints";
+import { getLanguageRoute } from "~/navigation";
 
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 
@@ -184,7 +185,7 @@ const t = useTranslations(lang);
         features: [t("index.how.images.1.features.1"), t("index.how.images.1.features.2")],
         src: company,
         alt: t("index.what.images.3.alt"),
-        href: getPermalink("/en/church"),
+        href: getPermalink(getLanguageRoute("church", lang || "en")),
       },
       {
         title: t("index.how.images.2.title"),
@@ -192,7 +193,7 @@ const t = useTranslations(lang);
         features: [t("index.how.images.2.features.1"), t("index.how.images.2.features.2")],
         src: prayer,
         alt: t("index.what.images.3.alt"),
-        href: getPermalink("/en/prayer"),
+        href: getPermalink(getLanguageRoute("prayer", lang || "en")),
       },
       {
         title: t("index.how.images.3.title"),
@@ -200,11 +201,11 @@ const t = useTranslations(lang);
         features: [t("index.how.images.3.features.1"), t("index.how.images.3.features.2")],
         src: bible,
         alt: t("index.what.images.3.alt"),
-        href: getPermalink("/en/word"),
+        href: getPermalink(getLanguageRoute("word", lang || "en")),
       },
       {
         icon: true,
-        href: getPermalink("/en/prayer"),
+        href: getPermalink(getLanguageRoute("prayer", lang || "en")),
       },
     ]}
   >
