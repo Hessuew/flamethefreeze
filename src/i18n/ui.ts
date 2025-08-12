@@ -172,7 +172,7 @@ export const ui = {
     "prayer.testimonies.subtitle":
       "Discover how this 7-point list for prayer for work has transformed careers and brought divine favor into professional experts.",
     "prayer.testimonies.A.description":
-      "4 years ago my PHD went to the trash bin, but now I'm a professor and my work is being published in top-tier journals. Seek first the kingdom of God, and all other things shall be added to you.",
+      "5 years ago my PHD went to the trash bin, but now I'm a professor and my work is being published in top-tier journals. Seek first the kingdom of God, and all other things shall be added to you.",
     "prayer.testimonies.A.profession":
       "Award-winning physician and professor (associate) of clinical epidemiology and child health",
     "prayer.testimonies.G.description":
