@@ -1,10 +1,10 @@
 ---
-import { Icon } from "astro-icon/components";
 import { twMerge } from "tailwind-merge";
 import WidgetWrapper from "../ui/WidgetWrapper.astro";
+import PrayerIcons from "../ui/PrayerIcons.astro";
 
 export interface PrayerPoint {
-  icon: string; // Tabler icon name (e.g., "tabler:briefcase")
+  icon: string; // Custom prayer icon name (e.g., "transform", "gift", etc.)
   title: string;
   subtitle: string;
   bibleQuote: string;
@@ -103,7 +103,7 @@ const colorThemes = {
                   class={`flex-1 bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 ${theme.borderHover} transition-all duration-300`}
                 >
                   <div class="flex items-center mb-4">
-                    <Icon name={point.icon} class={`w-8 h-8 ${theme.iconColor} mr-3`} />
+                    <PrayerIcons name={point.icon} class={`w-8 h-8 ${theme.iconColor} mr-3`} size={32} />
                     <h3 class="text-2xl font-bold text-white" set:html={point.title} />
                   </div>
                   <p class="text-gray-300 mb-4 leading-relaxed" set:html={point.subtitle} />
