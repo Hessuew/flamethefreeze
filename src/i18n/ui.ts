@@ -1508,13 +1508,15 @@ export const ui = {
       "Me emme yksinkertaisesti tiedä tai ymmärrä kaikkea, mitä ja miten meidän tulee rukoilla. Siksi kielillä eli hengessä rukoilu on aivan mahtava Jumalan antama tapa rukoilla. Se on niin kuin paras lakimies maailmassa on valmistellut sinulle puolustuspuheen. Et edes ymmärrä paljoa termejä, mutta kun luet sen, niin sinun juttusi on voitettu 100% varmuudella.",
     "prayer.prayerPoints.7.bibleQuote":
       '"Kielillä puhuva ei näet puhu ihmisille vaan Jumalalle. Häntä ei ymmärrä kukaan, sillä hän puhuu salaisuuksia hengessä ... Mitä siis tehdä? Minun tulee rukoilla hengelläni mutta myös ymmärrykselläni. Minun tulee laulaa kiitosta hengelläni mutta myös ymmärrykselläni." - 1. kirje korinttilaisille 14:2,15',
-    "prayer.testimonies.title.1": "Todistuksia, miten rukoilla toimii, ja",
+    "prayer.testimonies.title.1": "Todistuksia rukouksesta ja",
     "prayer.testimonies.title.2": "Rukouksen voimasta",
     "prayer.testimonies.subtitle":
-      "Tässä esimerkkejä, miten 7 kohdan miten rukoilla -lista, on tuonut rukouksen voiman ihmisten elämään.",
-    "prayer.testimonies.A.description": "",
+      "Tässä esimerkkejä miten 7 kohdan miten rukoilla -lista on tuonut rukouksen voiman ihmisten elämään.",
+    "prayer.testimonies.A.description":
+      "Jos joku on väsynyt niin voit jo mennä nukkumaan. Olemme rukoilleet 6 tuntia, mutta vielä me jatkamme ... Me rukoilimme yhteensä 12 tuntia ja Pyhä Henki avasi meille mysteerejä Sanasta. Jotkut kertoivat rukouksen suoraan muuttaneen heitä ja jotkut kohtasivat Jumalan. Saatana kävi katsomassa, mitä tapahtuu, ja näin myös vilauksen Jeesuksesta, joka hymyili meille.",
     "prayer.testimonies.A.profession": "2010 > Pyhän Hengen ystävänä🫂🤗👐",
-    "prayer.testimonies.G.description": "",
+    "prayer.testimonies.G.description":
+      "Haluan oppia rukoilemaan. Tiedän, että rukous toimii ja se on tehokasta ja meillä on paljon rukousvastauksia. Rukouksia on myös monenlaisia, ei ole vain anomisia.",
     "prayer.testimonies.G.profession": "2022 > palavassa uskossa🔥🔥🔥",
     "prayer.testimonies.J.description":
       "Rukous on aivan mahtavaa! Vietän ihanasti aikaa Pyhän Hengen kanssa joka päivä ja Hän on niiiin ihana. Ja kun rukoilen tiedän, että Isä kuulee minut. On mahtava rukoilla kun tietää, että Jumala tykkää kun rukoilen, ja että Hän ainaa kuulee ja vastaa joka kerta.",
