@@ -128,6 +128,66 @@ export const ui = {
     "index.cta.subtitle.1": `Seriously, don't wait another second. God is calling you to evade every cold❄️🥶 and enter into a <span class="text-white underline">divine</span> fire 🔥🥵. Noooooow(!) is the time of salvation!`,
     "index.cta.button.yes": "Yes, count me in!!",
     "index.cta.button.no": "Maybe another time..",
+    "prayer.hero.title.1": "Prayer for Works:",
+    "prayer.hero.title.2": "Transform Your Career",
+    "prayer.hero.subtitle":
+      "Discover a 7-Point list to add the fire of God to your professional life through prayer for works 🔥🔥",
+    "prayer.hero.cta.button": "7-point list for prayer for works",
+    "prayer.prayerPoints.1.title": "Transform yourself → transform your results",
+    "prayer.prayerPoints.1.subtitle":
+      "It is stupid to expect different results while doing the same thing 🤪. Don't focus on a good container but improve the content 🎓. More expensive content naturally needs a better container 💎. Diamonds are not stored in a milk bottle, and milk is not stored in a bank 🥛🏦",
+    "prayer.prayerPoints.1.bibleQuote":
+      '"Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth." - 2 Timothy 2:15',
+    "prayer.prayerPoints.2.title": "Your gift <span class='italic'>makes</span> room for you",
+    "prayer.prayerPoints.2.subtitle":
+      "You don't need to teach a duck to swim, it already knows how to swim 🦆.  There is always space in the air for an eagle because it flies so high 🦅. The value of a diamond will make people all around the world to look for it 🔎💎. Your gift (your inward, inbuilt ability) makes you room you don't have to struggle to get 🏆.",
+    "prayer.prayerPoints.2.bibleQuote": `"A man's gift maketh room for him, and bringeth him before great men." - Proverbs 16:3`,
+    "prayer.prayerPoints.3.title": "Value, Productivity, Diligence",
+    "prayer.prayerPoints.3.subtitle":
+      "Unrefined gold is worth nothing, unprocessed oil is just a black paste ⚜️🛢️. Nokia 1100 was the golden standard but now a museum item ☎️. Apple _produces_ new version every year and remains on top 🍏. One operation system is for vibe coders, but multiplying and distributing it makes Microsoft the king 👑. ",
+    "prayer.prayerPoints.3.bibleQuote":
+      '"Seest thou a man diligent in his business? he shall stand before kings; he shall not stand before mean men." - Proverbs 22:29',
+    "prayer.prayerPoints.4.title": "The Main Key: <span class='text-red-500'>Love for God</span>",
+    "prayer.prayerPoints.4.subtitle":
+      "A dying man will spent all his money to for a one more day, and dead man cannot win Eurojackpot ⌛🎟️. 10B spent on bombs is an outrage, but 1,000 spent on saving lives is a celebration 🤯🎉. The value of a money is dependant on the usage ⚖️. The eternal value of a soul is dependant on the love for God ❤️‍🔥",
+    "prayer.prayerPoints.4.bibleQuote":
+      '"For what shall it profit a man, if he shall gain the whole world, and lose his own soul?" - Mark 8:36',
+    "prayer.prayerPoints.5.title": "Wisdom of God for the greatest results",
+    "prayer.prayerPoints.5.subtitle":
+      "Many men can carry many logs but a cart can carry many men and logs 🪵🧺. Gideon can travail for his life with 30,000 or win without a fight with 300 🪖🏖. Surely you can get power from the devil like drunkard happiness from a beer 🍺, but wisdom of God keeps you as a counselor from Nebuchadnezzar to Cyrus 👥. ",
+    "prayer.prayerPoints.5.bibleQuote":
+      '"Wisdom strengtheneth the wise more than ten mighty men which are in the city." - Ecclesiastes 7:19',
+    "prayer.prayerPoints.6.title": "Walk with wise → be wise.</br>Walk with fools → be a fool.",
+    "prayer.prayerPoints.6.subtitle":
+      "Jesus can die on a cross but Joseph will give Him a tomb 🍙. Paul can be the apostle of the gentiles but Barnabas will bring him to Antioch 🏛️. Israel is the chosen people but Pharaoh gave them the Goshen 𓁈⚱️. You might have lived as a worst sinner but through Jesus you are a heir of God 🤴🏻. ",
+    "prayer.prayerPoints.6.bibleQuote":
+      '"And Jesus increased in wisdom and stature, and in favour with God and man." - Luke 2:52',
+    "prayer.prayerPoints.7.title": "Prayer to change the spiritual climate",
+    "prayer.prayerPoints.7.subtitle":
+      "You can look the greatest fool but on the day of Noah's flood only your ship will be saved ⛵. You can build the greatest city but Vesuvius will bury all the Pompeii in ashes 🌋. You can build the greatest life but without prayer you will toss that great ship miniature into the sea without knowing if it is calm or raging 🌊.",
+    "prayer.prayerPoints.7.bibleQuote":
+      '"And he spake a parable unto them to this end, that men ought always to pray, and not to faint." - Luke 18:1',
+    "prayer.testimonies.title.1": "Real Stories of",
+    "prayer.testimonies.title.2": "Prayer at Work",
+    "prayer.testimonies.subtitle":
+      "Discover how this 7-point list for prayer for work has transformed careers and brought divine favor into professional experts.",
+    "prayer.testimonies.A.description":
+      "4 years ago my PHD went to the trash bin, but now I'm a professor and my work is being published in top-tier journals. Seek first the kingdom of God, and all other things shall be added to you.",
+    "prayer.testimonies.A.profession":
+      "Award-winning physician and professor (associate) of clinical epidemiology and child health",
+    "prayer.testimonies.G.description":
+      "I have experienced many miracles, and guidances of God in my career. I have already recognized some manifestations of the wisdom of God, and I believe He will fulfill everything He has said concerning me.",
+    "prayer.testimonies.G.profession": "Researcher, PhD student",
+    "prayer.testimonies.J.description":
+      "I never was interested of creating websites. Now I'm designing, and developing them for global names. And this is just the tip of the iceberg of what God has spoken. We will do great exploits for our God as we expand the frontiers of His kingdom before Jesus returns!",
+    "prayer.testimonies.J.profession": "IT specialist",
+    "prayer.testimonies.Y.title": "Your testimony?",
+    "prayer.testimonies.Y.description": "Have the prayer for works transformed your work life already?",
+    "prayer.cta.title.1": "Ready to",
+    "prayer.cta.title.2": "Ignite Your Prayer For Works",
+    "prayer.cta.subtitle.1":
+      "Start implementing these prayer strategies today and watch God work miracles in your professional journey.",
+    "prayer.cta.button": "What's next?",
     "": "",
     "about.herotext.tagline": "About us",
     "about.herotext.title1": "Here you will ",
@@ -1409,6 +1469,63 @@ export const ui = {
     "index.cta.subtitle.1": `Siis ihan tosissaan, älä pitkitä tätä enää yhtään sekuntia. Jumalan kutsuu sinua pois kylmästä❄️🥶 ja elämään <span class="text-white underline">Jumalan</span> tulessa🔥🥵. Nyttttt!`,
     "index.cta.button.yes": "Kyllä, olen mukana!!",
     "index.cta.button.no": "Ehkä toisella kerralla..",
+    "prayer.hero.title.1": "Miten rukoilla?",
+    "prayer.hero.title.2": "Rukouksen voima",
+    "prayer.hero.subtitle":
+      "Opi 7 kohdan listasta miten rukoilla, jotta rukouksen voima pääsee muuttamaan elämäsi Jumalan tulessa 🔥",
+    "prayer.hero.cta.button": "7 kohdan lista opettaa miten rukoilla",
+    "prayer.prayerPoints.1.title": "Henkilökohtainen usko Jeesukseen",
+    "prayer.prayerPoints.1.subtitle":
+      "Rukouksesi voivat toimia vain, jos Jeesus on sinun henkilökohtainen Herrasi ja pelastajasi. Jotkut eri uskonnot saavat vastauksia kyllä, mutta ne tulevat demoneilta. Sinun tulee olla uudesti syntynyt, vanhurkas ja pyhä. Ja Jeesuksen tulee olla Herrasi eli mitä Hän sanoo sanassaan, on se mitä tottelet.",
+    "prayer.prayerPoints.1.bibleQuote":
+      '"Jeesus vastasi: ”Minä olen tie, totuus ja elämä. Ei kukaan tule Isän luo muuten kuin minun kauttani." - Johannes 14:6',
+    "prayer.prayerPoints.2.title": "Anna anteeksi",
+    "prayer.prayerPoints.2.subtitle":
+      "Jumala kuulee rukouksesi jos olet antanut anteeksi kaikille. Jos et ole, elät synnissä ja Jumala ei kuule rukouksiasi, sillä ne ovat saastaisia. Rukouksiesi tulee nousta taivaan valtaistuimen eteen puhtaasta astiasta ja silloin ne ovat tarpeeksi puhtaita Kaikkivaltiaan eteen.",
+    "prayer.prayerPoints.2.bibleQuote": `"Kun seisotte rukoilemassa, antakaa anteeksi, jos teillä on jotakin jotakuta vastaan, niin että myös teidän Isänne, joka on taivaissa, antaisi teille anteeksi teidän rikkomuksenne." - Markus 11:25`,
+    "prayer.prayerPoints.3.title": "2 tai 3 Raamatun paikkaa",
+    "prayer.prayerPoints.3.subtitle":
+      "Sinulla tulee olla perustelut Raamatusta, miksi rukouksesi ansaitsee vastauksen. Rukouksien tulee pohjautua Raamattuun eikä omiin himoihin ja haluihin. Jos lapsi kinuaa laskinta, niin hyvä vanhempi ei osta sitä. Mutta jos lapsi näyttää viestin koulusta, jossa kerrotaan lapsen tarvitsevan laskin, niin vanhempi ostaa laskimen.",
+    "prayer.prayerPoints.3.bibleQuote":
+      '"Kolmannen kerran tulen nyt luoksenne, sillä jokainen asia on vahvistettava kahden tai kolmen todistajan suulla." - 2. Korinttilaisille 13:1',
+    "prayer.prayerPoints.4.title": "Kun rukoilet, usko",
+    "prayer.prayerPoints.4.subtitle":
+      "Kun rukoilet niin usko, että Jumala on jo lähettänyt taivaallisen paketin tulemaan, ja näet sen vain saapuvan ovellesi jonkin ajan päästä. Et tee postiin uutta tilausta, koska tiedät että aiempi on jo tulossa. Onko sinulla enemmän uskoa Postiin kuin Jumalaan? Eli usko Jumalaan.",
+    "prayer.prayerPoints.4.bibleQuote":
+      '" Sen tähden minä sanon teille: kaiken, mitä te rukoilette ja anotte, uskokaa, että olette sen jo saaneet, niin se tulee teille." - Markus 11:24',
+    "prayer.prayerPoints.5.title": "Erilaiset rukoukset eri tilanteisiin",
+    "prayer.prayerPoints.5.subtitle":
+      "On eritapohja rukoilla ja siksi Raamattu on antanut monia esimerkkejä rukouksesta. On sopimis rukousta, esirukousta, kiitos rukousta, ylistystä, sota rukousta (sotaa ei voiteta yhdellä pommilla 💣), ja muita. Eli rukoile tilannetta vastaavalla tavalla.",
+    "prayer.prayerPoints.5.bibleQuote":
+      '"Emmehän me taistele verta ja lihaa vastaan vaan hallituksia ja henkivaltoja vastaan, tässä pimeydessä hallitsevia maailmanvaltiaita ja taivaan avaruuden pahoja henkiolentoja vastaan." - Efesolaisille 6:12',
+    "prayer.prayerPoints.6.title": "Rukoile niin kuin Henki ohjaa",
+    "prayer.prayerPoints.6.subtitle":
+      "Tarvitsemme Pyhää Henkeä kaikessa. Jumala antaa nöyrille armon, mutta hän on ylpeitä vastaan. Ja jos Jumala on sinua vastaan niin älä luule, että hän vastaa rukouksiisi. Eli ole nöyrä ja ota vastaan kaikki ohjaus ja apu, mitä Pyhä Henki sinulle antaa.",
+    "prayer.prayerPoints.6.bibleQuote":
+      '"Tuuli puhaltaa, missä tahtoo, ja sinä kuulet sen huminan mutta et tiedä, mistä se tulee ja minne se menee. Näin on jokaisen Hengestä syntyneen laita." - Johannes 3:8',
+    "prayer.prayerPoints.7.title": "Rukoile hengessä",
+    "prayer.prayerPoints.7.subtitle":
+      "Me emme yksinkertaisesti tiedä tai ymmärrä kaikkea, mitä ja miten meidän tulee rukoilla. Siksi kielillä eli hengessä rukoilu on aivan mahtava Jumalan antama tapa rukoilla. Se on niin kuin paras lakimies maailmassa on valmistellut sinulle puolustuspuheen. Et edes ymmärrä paljoa termejä, mutta kun luet sen, niin sinun juttusi on voitettu 100% varmuudella.",
+    "prayer.prayerPoints.7.bibleQuote":
+      '"Kielillä puhuva ei näet puhu ihmisille vaan Jumalalle. Häntä ei ymmärrä kukaan, sillä hän puhuu salaisuuksia hengessä ... Mitä siis tehdä? Minun tulee rukoilla hengelläni mutta myös ymmärrykselläni. Minun tulee laulaa kiitosta hengelläni mutta myös ymmärrykselläni." - 1. kirje korinttilaisille 14:2,15',
+    "prayer.testimonies.title.1": "Todistuksia, miten rukoilla toimii, ja",
+    "prayer.testimonies.title.2": "Rukouksen voimasta",
+    "prayer.testimonies.subtitle":
+      "Tässä esimerkkejä, miten 7 kohdan miten rukoilla -lista, on tuonut rukouksen voiman ihmisten elämään.",
+    "prayer.testimonies.A.description": "",
+    "prayer.testimonies.A.profession": "2010 > Pyhän Hengen ystävänä🫂🤗👐",
+    "prayer.testimonies.G.description": "",
+    "prayer.testimonies.G.profession": "2022 > palavassa uskossa🔥🔥🔥",
+    "prayer.testimonies.J.description":
+      "Rukous on aivan mahtavaa! Vietän ihanasti aikaa Pyhän Hengen kanssa joka päivä ja Hän on niiiin ihana. Ja kun rukoilen tiedän, että Isä kuulee minut. On mahtava rukoilla kun tietää, että Jumala tykkää kun rukoilen, ja että Hän ainaa kuulee ja vastaa joka kerta.",
+    "prayer.testimonies.J.profession": "2020 > uudistuksen jälkeen💐🐝⛅",
+    "prayer.testimonies.Y.title": "Sinun todistuksesi?",
+    "prayer.testimonies.Y.description": "Oletko jo oppinut miten rukoilla ja rukouksen voima on elämässäsi?",
+    "prayer.cta.title.1": "Oletko valmis",
+    "prayer.cta.title.2": "Saaman rukouksen voiman elämääsi?",
+    "prayer.cta.subtitle.1":
+      "Ota tämä 7 kohdan miten rukoilla -lista käyttöösi ja kuinka alat saamaan vastauksia rukouksiisi. Rukouksen voima kuuluu myös sinulle.",
+    "prayer.cta.button": "Mitäs seuraavaksi?",
     "": "",
     "index.hero.title1": "2Fire of God and",
     "about.herotext.tagline": "Meistä",
