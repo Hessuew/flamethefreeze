@@ -25,42 +25,51 @@ const t = useTranslations(lang);
   data-should-slide-in={!siteRebuildStatus?.display}
   class={twMerge(
     "max-h-0 overflow-hidden transition-all duration-1000 ease-in-out transform",
-    siteRebuildStatus?.display ? "max-h-20" : ""
+    siteRebuildStatus?.display ? "max-h-32 sm:max-h-20 xl:max-h-[80px]" : ""
   )}
 >
   <div
-    class="text-sm bg-gradient-to-r from-black via-gray-900 to-black border-b border-orange-500/20 px-6 py-4 relative shadow-2xl backdrop-blur-sm overflow-hidden transition-transform duration-500 ease-out"
+    class="text-sm bg-gradient-to-r from-black via-gray-900 to-black border-b border-orange-500/20 px-3 sm:px-6 py-3 sm:py-4 xl:px-[24px] xl:py-[12px] relative shadow-2xl backdrop-blur-sm overflow-hidden transition-transform duration-500 ease-out"
   >
     <!-- Animated background glow -->
     <div class="absolute inset-0 bg-gradient-to-r from-orange-600/5 via-yellow-500/10 to-orange-600/5"></div>
     <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent">
     </div>
 
-    <!-- Left side: Rebuild Progress -->
-    <div class="flex items-center space-x-4 relative z-10">
-      <div class="flex items-center space-x-3">
-        <div class="relative">
+    <!-- Mobile Layout: Stack vertically -->
+    <div class="flex flex-col space-y-3 lg:hidden relative z-10">
+      <!-- Top row: Main announcement -->
+      <div class="flex items-center space-x-2">
+        <div class="relative flex-shrink-0">
           <div
-            class="w-3 h-3 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse shadow-lg shadow-orange-500/50"
+            class="w-2.5 h-2.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse shadow-lg shadow-orange-500/50"
           >
           </div>
           <div
-            class="absolute inset-0 w-3 h-3 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-ping opacity-30"
+            class="absolute inset-0 w-2.5 h-2.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-ping opacity-30"
           >
           </div>
         </div>
-        <span class="text-white font-semibold text-shadow-sm">{t("announcement.text")}</span>
+        <span class="text-white font-semibold text-shadow-sm text-sm leading-tight flex-1"
+          >{t("announcement.text")}</span
+        >
       </div>
 
-      <div class="flex items-center space-x-3">
-        <span class="text-xs text-orange-300/80 font-medium tracking-wide uppercase">{t("announcement.progress")}</span>
-        <div class="flex items-center space-x-3">
+      <!-- Bottom row: Progress and status -->
+      <div class="flex items-center justify-between text-xs">
+        <!-- Progress section -->
+        <div class="flex items-center space-x-2 flex-1 min-w-0">
+          <span class="text-orange-300/80 font-medium tracking-wide uppercase text-xs whitespace-nowrap"
+            >{t("announcement.progress")}</span
+          >
           <span
-            class="bg-gradient-to-r from-orange-600 to-yellow-500 text-black px-3 py-1.5 rounded-full text-xs font-bold shadow-lg shadow-orange-500/30 border border-orange-400/30"
+            class="bg-gradient-to-r from-orange-600 to-yellow-500 text-black px-2 py-1 rounded-full text-xs font-bold shadow-lg shadow-orange-500/30 border border-orange-400/30 whitespace-nowrap"
           >
             {rebuildProgress.current}/{rebuildProgress.total}
           </span>
-          <div class="w-24 h-2 bg-gray-800 rounded-full overflow-hidden border border-orange-500/20 shadow-inner">
+          <div
+            class="w-12 h-1.5 bg-gray-800 rounded-full overflow-hidden border border-orange-500/20 shadow-inner flex-shrink-0"
+          >
             <div
               class="h-full bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-600 rounded-full transition-all duration-500 ease-out shadow-lg relative"
               style={`width: ${(rebuildProgress.current / rebuildProgress.total) * 100}%`}
@@ -68,27 +77,111 @@ const t = useTranslations(lang);
               <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full"></div>
             </div>
           </div>
-          <span class="text-xs text-orange-300/60 font-medium">
+          <span class="text-orange-300/60 font-medium text-xs whitespace-nowrap">
+            {Math.round((rebuildProgress.current / rebuildProgress.total) * 100)}%
+          </span>
+        </div>
+
+        <!-- Status section -->
+        <div class="flex items-center space-x-1 flex-shrink-0 ml-2">
+          {
+            siteRebuildStatus?.status === "completed" && (
+              <div class="flex items-center space-x-1 bg-green-500/20 px-2 py-1 rounded-full border border-green-500/30">
+                <div class="w-2 h-2 bg-green-400 rounded-full shadow-lg shadow-green-400/50" />
+                <span class="text-green-300 text-xs font-semibold tracking-wide whitespace-nowrap">
+                  {t("announcement.status.completed")}
+                </span>
+              </div>
+            )
+          }
+          {
+            siteRebuildStatus?.status === "inProgress" && (
+              <div class="flex items-center space-x-1 bg-gradient-to-r from-orange-600/20 to-yellow-500/20 px-2 py-1 rounded-full border border-orange-500/30">
+                <div class="relative">
+                  <div class="w-2 h-2 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse shadow-lg shadow-orange-500/50" />
+                  <div class="absolute inset-0 w-2 h-2 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-ping opacity-30" />
+                </div>
+                <span class="text-orange-300 text-xs font-semibold tracking-wide whitespace-nowrap">
+                  {t("announcement.status.inProgress")}
+                </span>
+              </div>
+            )
+          }
+          {
+            siteRebuildStatus?.status === "notStarted" && (
+              <div class="flex items-center space-x-1 bg-gray-500/20 px-2 py-1 rounded-full border border-gray-500/30">
+                <div class="w-2 h-2 bg-gray-400 rounded-full shadow-lg shadow-gray-400/30" />
+                <span class="text-gray-300 text-xs font-semibold tracking-wide whitespace-nowrap">
+                  {t("announcement.status.notStarted")}
+                </span>
+              </div>
+            )
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Layout: Horizontal with absolute positioning -->
+    <div class="hidden lg:flex items-center space-x-4 xl:space-x-[16px] relative z-10">
+      <div class="flex items-center space-x-3 xl:space-x-[12px]">
+        <div class="relative">
+          <div
+            class="w-3 h-3 xl:w-[12px] xl:h-[12px] bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse shadow-lg shadow-orange-500/50"
+          >
+          </div>
+          <div
+            class="absolute inset-0 w-3 h-3 xl:w-[12px] xl:h-[12px] bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-ping opacity-30"
+          >
+          </div>
+        </div>
+        <span class="text-white font-semibold text-shadow-sm text-base xl:text-[16px] xl:leading-[24px]"
+          >{t("announcement.text")}</span
+        >
+      </div>
+
+      <div class="flex items-center space-x-3 xl:space-x-[12px]">
+        <span class="text-xs xl:text-[12px] xl:leading-[16px] text-orange-300/80 font-medium tracking-wide uppercase"
+          >{t("announcement.progress")}</span
+        >
+        <div class="flex items-center space-x-3 xl:space-x-[12px]">
+          <span
+            class="bg-gradient-to-r from-orange-600 to-yellow-500 text-black px-3 py-1.5 xl:px-[12px] xl:py-[6px] rounded-full text-xs xl:text-[12px] xl:leading-[16px] font-bold shadow-lg shadow-orange-500/30 border border-orange-400/30"
+          >
+            {rebuildProgress.current}/{rebuildProgress.total}
+          </span>
+          <div
+            class="w-24 h-2 xl:w-[96px] xl:h-[8px] bg-gray-800 rounded-full overflow-hidden border border-orange-500/20 shadow-inner"
+          >
+            <div
+              class="h-full bg-gradient-to-r from-orange-500 via-yellow-500 to-orange-600 rounded-full transition-all duration-500 ease-out shadow-lg relative"
+              style={`width: ${(rebuildProgress.current / rebuildProgress.total) * 100}%`}
+            >
+              <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent rounded-full"></div>
+            </div>
+          </div>
+          <span class="text-xs xl:text-[12px] xl:leading-[16px] text-orange-300/60 font-medium">
             {Math.round((rebuildProgress.current / rebuildProgress.total) * 100)}%
           </span>
         </div>
       </div>
     </div>
 
-    <!-- Right side: Current Page Status -->
-    <div class="absolute right-6 top-1/2 transform -translate-y-1/2 flex items-center space-x-4 z-10">
-      <div class="flex items-center space-x-3">
-        <span class="text-xs text-orange-300/80 font-medium tracking-wide uppercase"
+    <!-- Desktop Right side: Current Page Status -->
+    <div
+      class="hidden lg:flex absolute right-6 xl:right-[24px] top-1/2 transform -translate-y-1/2 items-center space-x-4 xl:space-x-[16px] z-10"
+    >
+      <div class="flex items-center space-x-3 xl:space-x-[12px]">
+        <span class="text-xs xl:text-[12px] xl:leading-[16px] text-orange-300/80 font-medium tracking-wide uppercase"
           >{t("announcement.currentPage")}</span
         >
       </div>
 
-      <div class="flex items-center space-x-3">
+      <div class="flex items-center space-x-3 xl:space-x-[12px]">
         {
           siteRebuildStatus?.status === "completed" && (
-            <div class="flex items-center space-x-2 bg-green-500/20 px-3 py-1.5 rounded-full border border-green-500/30">
-              <div class="w-2.5 h-2.5 bg-green-400 rounded-full shadow-lg shadow-green-400/50" />
-              <span class="text-green-300 text-xs font-semibold tracking-wide">
+            <div class="flex items-center space-x-2 xl:space-x-[8px] bg-green-500/20 px-3 py-1.5 xl:px-[12px] xl:py-[6px] rounded-full border border-green-500/30">
+              <div class="w-2.5 h-2.5 xl:w-[10px] xl:h-[10px] bg-green-400 rounded-full shadow-lg shadow-green-400/50" />
+              <span class="text-green-300 text-xs xl:text-[12px] xl:leading-[16px] font-semibold tracking-wide">
                 {t("announcement.status.completed")}
               </span>
             </div>
@@ -96,12 +189,12 @@ const t = useTranslations(lang);
         }
         {
           siteRebuildStatus?.status === "inProgress" && (
-            <div class="flex items-center space-x-2 bg-gradient-to-r from-orange-600/20 to-yellow-500/20 px-3 py-1.5 rounded-full border border-orange-500/30">
+            <div class="flex items-center space-x-2 bg-gradient-to-r from-orange-600/20 to-yellow-500/20 px-3 py-1.5 xl:px-[12px] xl:py-[6px] rounded-full border border-orange-500/30">
               <div class="relative">
-                <div class="w-2.5 h-2.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse shadow-lg shadow-orange-500/50" />
-                <div class="absolute inset-0 w-2.5 h-2.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-ping opacity-30" />
+                <div class="w-2.5 h-2.5 xl:w-[10px] xl:h-[10px] bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-pulse shadow-lg shadow-orange-500/50" />
+                <div class="absolute inset-0 w-2.5 h-2.5 xl:w-[10px] xl:h-[10px] bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-ping opacity-30" />
               </div>
-              <span class="text-orange-300 text-xs font-semibold tracking-wide">
+              <span class="text-orange-300 text-xs xl:text-[12px] xl:leading-[16px] font-semibold tracking-wide">
                 {t("announcement.status.inProgress")}
               </span>
             </div>
@@ -109,9 +202,9 @@ const t = useTranslations(lang);
         }
         {
           siteRebuildStatus?.status === "notStarted" && (
-            <div class="flex items-center space-x-2 bg-gray-500/20 px-3 py-1.5 rounded-full border border-gray-500/30">
-              <div class="w-2.5 h-2.5 bg-gray-400 rounded-full shadow-lg shadow-gray-400/30" />
-              <span class="text-gray-300 text-xs font-semibold tracking-wide">
+            <div class="flex items-center space-x-2 bg-gray-500/20 px-3 py-1.5 xl:px-[12px] xl:py-[6px] rounded-full border border-gray-500/30">
+              <div class="w-2.5 h-2.5 xl:w-[10px] xl:h-[10px] bg-gray-400 rounded-full shadow-lg shadow-gray-400/30" />
+              <span class="text-gray-300 text-xs xl:text-[12px] xl:leading-[16px] font-semibold tracking-wide">
                 {t("announcement.status.notStarted")}
               </span>
             </div>
@@ -136,7 +229,7 @@ const t = useTranslations(lang);
       setTimeout(() => {
         // Make it visible and animate in
         announcement.classList.remove("max-h-0");
-        announcement.classList.add("max-h-20");
+        announcement.classList.add("max-h-32", "sm:max-h-20", "xl:max-h-[80px]");
       }, 1000);
     }
   });

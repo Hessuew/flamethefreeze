@@ -40,6 +40,11 @@
       document.getElementById("header")?.classList.toggle("bg-page");
       document.querySelector("#header nav")?.classList.toggle("hidden");
       document.querySelector("#header > div > div:last-child")?.classList.toggle("hidden");
+      
+      // Set mobile nav top position based on scroll position
+      const scrollY = window.scrollY;
+      const mobileNavTop = scrollY >= 90 ? "50px" : "120px";
+      document.documentElement.style.setProperty("--mobile-nav-top", mobileNavTop);
     });
 
     attachEvent("[data-aw-social-share]", "click", function (_, elem) {
