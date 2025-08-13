@@ -17,52 +17,52 @@ const { metadata, siteRebuildStatus, lang } = Astro.props;
 
 const t = useTranslations(lang);
 
-// Prayer points data array
+// Prayer points data array with conditional icons based on language
 const prayerPoints: PrayerPoint[] = [
   {
-    icon: "tabler:hammer",
+    icon: lang === "fi" ? "faith" : "transform",
     title: t("prayer.prayerPoints.1.title"),
     subtitle: t("prayer.prayerPoints.1.subtitle"),
     bibleQuote: t("prayer.prayerPoints.1.bibleQuote"),
     color: "orange",
   },
   {
-    icon: "tabler:gift",
+    icon: lang === "fi" ? "forgiveness" : "gift",
     title: t("prayer.prayerPoints.2.title"),
     subtitle: t("prayer.prayerPoints.2.subtitle"),
     bibleQuote: t("prayer.prayerPoints.2.bibleQuote"),
     color: "blue",
   },
   {
-    icon: "tabler:building-factory-2",
+    icon: lang === "fi" ? "scripture" : "productivity",
     title: t("prayer.prayerPoints.3.title"),
     subtitle: t("prayer.prayerPoints.3.subtitle"),
     bibleQuote: t("prayer.prayerPoints.3.bibleQuote"),
     color: "green",
   },
   {
-    icon: "tabler:heart",
+    icon: lang === "fi" ? "belief" : "love",
     title: t("prayer.prayerPoints.4.title"),
     subtitle: t("prayer.prayerPoints.4.subtitle"),
     bibleQuote: t("prayer.prayerPoints.4.bibleQuote"),
     color: "red",
   },
   {
-    icon: "tabler:ripple",
+    icon: lang === "fi" ? "warfare" : "wisdom",
     title: t("prayer.prayerPoints.5.title"),
     subtitle: t("prayer.prayerPoints.5.subtitle"),
     bibleQuote: t("prayer.prayerPoints.5.bibleQuote"),
     color: "purple",
   },
   {
-    icon: "tabler:users",
+    icon: lang === "fi" ? "spirit-guidance" : "community",
     title: t("prayer.prayerPoints.6.title"),
     subtitle: t("prayer.prayerPoints.6.subtitle"),
     bibleQuote: t("prayer.prayerPoints.6.bibleQuote"),
     color: "indigo",
   },
   {
-    icon: "tabler:volcano",
+    icon: lang === "fi" ? "spiritual-prayer" : "prayer",
     title: t("prayer.prayerPoints.7.title"),
     subtitle: t("prayer.prayerPoints.7.subtitle"),
     bibleQuote: t("prayer.prayerPoints.7.bibleQuote"),
