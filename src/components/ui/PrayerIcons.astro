@@ -16,6 +16,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Transformation icon"
   >
     <!-- Transformation Icon - Clear before/after progression with arrow -->
     <defs>
@@ -56,6 +58,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Gift icon"
   >
     <!-- Divine Gift Icon - Clear gift box with bow and divine light -->
     <defs>
@@ -132,6 +136,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Productivity icon"
   >
     <!-- Productivity Icon - Gear with upward arrow and growth -->
     <defs>
@@ -178,6 +184,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Love icon"
   >
     <!-- Divine Love Icon - Sacred heart with flame -->
     <defs>
@@ -231,6 +239,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Wisdom icon"
   >
     <!-- Divine Wisdom Icon - Light bulb with brain and divine rays -->
     <defs>
@@ -294,6 +304,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Community icon"
   >
     <!-- Community/Fellowship Icon - Interlocked hands forming a circle -->
     <defs>
@@ -390,6 +402,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Prayer icon"
   >
     <!-- Spiritual Warfare/Prayer Icon - Mountain with divine lightning -->
     <defs>
@@ -462,6 +476,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Faith icon"
   >
     <!-- Personal Faith in Jesus Icon - Cross with divine light -->
     <defs>
@@ -494,6 +510,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Forgiveness icon"
   >
     <!-- Forgiveness Icon - Cleansed heart with washing water -->
     <defs>
@@ -527,6 +545,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Scripture icon"
   >
     <!-- Scripture/Bible Icon - Open book with divine verses -->
     <defs>
@@ -545,10 +565,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     <!-- Divine light from scripture -->
     <path d="M12 2l0.5 1.5M12 2l-0.5 1.5M12 2l1.2 1M12 2l-1.2 1" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
     <!-- Numbers 2 & 3 representing "2 or 3 Bible verses" -->
-    <circle cx="8" cy="16" r="1" fill="#fbbf24" opacity="0.8" />
-    <text x="8" y="17" text-anchor="middle" fill="#1f2937" font-size="10" font-weight="bold">2</text>
-    <circle cx="16" cy="16" r="1" fill="#fbbf24" opacity="0.8" />
-    <text x="16" y="17" text-anchor="middle" fill="#1f2937" font-size="10" font-weight="bold">3</text>
+    <circle cx="8" cy="14" r="1" fill="#fbbf24" opacity="0.8" />
+    <circle cx="16" cy="10" r="1" fill="#fbbf24" opacity="0.8" />
   </svg>
 )}
 
@@ -560,6 +578,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Belief icon"
   >
     <!-- Belief/Faith Icon - Beautiful styled checkmark -->
     <defs>
@@ -617,6 +637,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Warfare icon"
   >
     <!-- Spiritual Warfare Icon - Shield and sword with divine armor -->
     <defs>
@@ -647,6 +669,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Spirit guidance icon"
   >
     <!-- Holy Spirit Guidance Icon - Divine light appearing -->
     <defs>
@@ -725,6 +749,8 @@ const { name, class: className = "", size = 24 } = Astro.props;
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     class={className}
+    role="img"
+    aria-label="Spiritual prayer icon"
   >
     <!-- Spiritual Prayer/Tongues Icon - Praying figure with divine languages -->
     <defs>
@@ -747,11 +773,6 @@ const { name, class: className = "", size = 24 } = Astro.props;
     <path d="M8 4c1 0 2 1 2 2M16 4c-1 0-2 1-2 2" stroke="url(#tonguesGradient)" stroke-width="2" stroke-linecap="round" opacity="0.7" />
     <path d="M6 6c2 0 3 1 4 2M18 6c-2 0-3 1-4 2" stroke="url(#tonguesGradient)" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
     <path d="M4 8c3 0 4 1 6 2M20 8c-3 0-4 1-6 2" stroke="url(#tonguesGradient)" stroke-width="1" stroke-linecap="round" opacity="0.5" />
-    <!-- Spiritual words/symbols -->
-    <text x="8" y="3" fill="url(#tonguesGradient)" font-size="8" opacity="0.7">✦</text>
-    <text x="16" y="3" fill="url(#tonguesGradient)" font-size="8" opacity="0.7">✧</text>
-    <text x="5" y="7" fill="url(#tonguesGradient)" font-size="6" opacity="0.6">◊</text>
-    <text x="19" y="7" fill="url(#tonguesGradient)" font-size="6" opacity="0.6">◈</text>
     <!-- Divine presence -->
     <circle cx="12" cy="10" r="8" fill="none" stroke="url(#tonguesGradient)" stroke-width="0.5" opacity="0.3" />
   </svg>
