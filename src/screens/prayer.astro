@@ -95,7 +95,7 @@ const prayerPoints: PrayerPoint[] = [
       <Fragment slot="title">
         <TextAnimate
           client:load
-          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading text-white"
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter md:mb-4 xl:mb-[16px] font-heading text-white"
           animation="blurInUp"
           delay={1}
           duration={0.6}
@@ -130,7 +130,7 @@ const prayerPoints: PrayerPoint[] = [
       </Fragment>
 
       <Fragment slot="subtitle">
-        <div class="flex gap-4 mb-8">
+        <div class="flex gap-4 mb-8 xl:gap-[16px] xl:mb-[32px]">
           <BlurFade client:load delay={4.2} direction="up" inView>
             <FireButton
               href="#prayer-guide"
@@ -151,34 +151,34 @@ const prayerPoints: PrayerPoint[] = [
   </BlurFade>
 
   <!-- Testimonies Section -->
-  <WidgetWrapper id="testimonies" animated={false} containerClass="py-16 md:py-20">
-    <div class="max-w-6xl mx-auto">
+  <WidgetWrapper id="testimonies" animated={false} containerClass="py-16 md:py-20 xl:py-[80px]">
+    <div class="max-w-6xl mx-auto xl:max-w-[1152px]">
       <!-- Section Header -->
-      <div class="text-center mb-16">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+      <div class="text-center mb-16 xl:mb-[64px]">
+        <h2 class="text-4xl md:text-5xl xl:text-[48px] xl:leading-[56px] font-bold mb-6 xl:mb-[24px] text-white">
           {t("prayer.testimonies.title.1")}
           <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
             >{t("prayer.testimonies.title.2")}</span
           >
         </h2>
-        <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        <p class="text-xl xl:text-[20px] xl:leading-[28px] text-gray-300 max-w-3xl mx-auto xl:max-w-[768px]">
           {t("prayer.testimonies.subtitle")}
         </p>
       </div>
 
       <!-- Testimonies Grid - 2 Column Layout -->
-      <div class="grid lg:grid-cols-2 gap-8">
+      <div class="grid lg:grid-cols-2 gap-8 xl:gap-[32px]">
         <!-- Left Column - First and Second Testimonies Stacked -->
-        <div class="flex flex-col gap-8 h-full">
+        <div class="flex flex-col gap-8 xl:gap-[32px] h-full">
           <!-- Testimony 1 - Takes 2/3 height -->
           <div class="group relative flex-[2]">
             <div
-              class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 border-orange-500/50 hover:border-orange-500/80 transition-all duration-300 h-full"
+              class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl xl:rounded-[16px] p-8 xl:p-[32px] border border-gray-700 border-orange-500/50 hover:border-orange-500/80 transition-all duration-300 h-full"
             >
               <!-- Profile Image -->
-              <div class="flex justify-center mb-6">
+              <div class="flex justify-center mb-6 xl:mb-[24px]">
                 <div
-                  class="w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-white text-2xl font-bold shadow-lg"
+                  class="w-20 h-20 xl:w-[80px] xl:h-[80px] rounded-full bg-gradient-to-br from-orange-500 to-red-600 flex items-center justify-center text-white text-2xl xl:text-[24px] xl:leading-[32px] font-bold shadow-lg"
                 >
                   J
                 </div>
@@ -186,23 +186,25 @@ const prayerPoints: PrayerPoint[] = [
 
               <!-- Testimony Content -->
               <div class="text-center">
-                <div class="mb-6">
-                  <div class="flex justify-center mb-4">
-                    <div class="flex space-x-1">
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                <div class="mb-6 xl:mb-[24px]">
+                  <div class="flex justify-center mb-4 xl:mb-[16px]">
+                    <div class="flex space-x-1 xl:space-x-[4px]">
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
                     </div>
                   </div>
-                  <blockquote class="text-gray-300 italic mb-6 text-lg leading-relaxed">
+                  <blockquote
+                    class="text-gray-300 italic mb-6 xl:mb-[24px] text-lg xl:text-[20px] xl:leading-[28px] leading-relaxed"
+                  >
                     "{t("prayer.testimonies.J.description")}"
                   </blockquote>
                 </div>
-                <div class="border-t border-gray-600 pt-6">
-                  <p class="text-white font-semibold text-lg">Juhani J.</p>
-                  <p class="text-gray-400">
+                <div class="border-t border-gray-600 pt-6 xl:pt-[24px]">
+                  <p class="text-white font-semibold text-lg xl:text-[18px] xl:leading-[28px]">Juhani J.</p>
+                  <p class="text-gray-400 text-base xl:text-[16px] xl:leading-[24px]">
                     {t("prayer.testimonies.J.profession")}
                   </p>
                 </div>
@@ -213,12 +215,12 @@ const prayerPoints: PrayerPoint[] = [
           <!-- Testimony 2 - Takes 1/3 height -->
           <div class="group relative flex-1">
             <div
-              class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-700 border-blue-500/50 hover:border-blue-500/80 transition-all duration-300 h-full"
+              class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl xl:rounded-[16px] p-6 xl:p-[24px] border border-gray-700 border-blue-500/50 hover:border-blue-500/80 transition-all duration-300 h-full"
             >
               <!-- Profile Image -->
-              <div class="flex justify-center mb-4">
+              <div class="flex justify-center mb-4 xl:mb-[16px]">
                 <div
-                  class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-xl font-bold shadow-lg"
+                  class="w-16 h-16 xl:w-[64px] xl:h-[64px] rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-xl xl:text-[20px] xl:leading-[28px] font-bold shadow-lg"
                 >
                   G
                 </div>
@@ -226,23 +228,27 @@ const prayerPoints: PrayerPoint[] = [
 
               <!-- Testimony Content -->
               <div class="text-center">
-                <div class="mb-4">
-                  <div class="flex justify-center mb-3">
-                    <div class="flex space-x-1">
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                <div class="mb-4 xl:mb-[16px]">
+                  <div class="flex justify-center mb-3 xl:mb-[12px]">
+                    <div class="flex space-x-1 xl:space-x-[4px]">
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
                     </div>
                   </div>
-                  <blockquote class="text-gray-300 italic mb-4 text-sm leading-relaxed">
+                  <blockquote
+                    class="text-gray-300 italic mb-4 xl:mb-[16px] text-sm xl:text-[14px] xl:leading-[20px] leading-relaxed"
+                  >
                     {t("prayer.testimonies.G.description")}
                   </blockquote>
                 </div>
-                <div class="border-t border-gray-600 pt-4">
-                  <p class="text-white font-semibold">Greta J.</p>
-                  <p class="text-gray-400 text-sm">{t("prayer.testimonies.G.profession")}</p>
+                <div class="border-t border-gray-600 pt-4 xl:pt-[16px]">
+                  <p class="text-white font-semibold text-base xl:text-[16px] xl:leading-[24px]">Greta J.</p>
+                  <p class="text-gray-400 text-sm xl:text-[14px] xl:leading-[20px]">
+                    {t("prayer.testimonies.G.profession")}
+                  </p>
                 </div>
               </div>
             </div>
@@ -250,25 +256,32 @@ const prayerPoints: PrayerPoint[] = [
         </div>
 
         <!-- Right Column - Third Testimony and CTA -->
-        <div class="flex flex-col gap-8 h-full">
+        <div class="flex flex-col gap-8 xl:gap-[32px] h-full">
           <!-- Your Testimony CTA - Takes 1/3 height -->
           <div class="group relative flex-1">
             <div
-              class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-sm rounded-2xl p-6 border-2 border-dashed border-purple-400/50 hover:border-purple-400 transition-all duration-300 h-full flex flex-col justify-center items-center text-center"
+              class="bg-gradient-to-br from-purple-900/50 to-pink-900/50 backdrop-blur-sm rounded-2xl xl:rounded-[16px] p-6 xl:p-[24px] border-2 border-dashed border-purple-400/50 hover:border-purple-400 transition-all duration-300 h-full flex flex-col justify-center items-center text-center"
             >
               <!-- Plus Icon -->
               <div
-                class="w-16 h-16 rounded-full bg-gradient-to-br from-purple-500/20 to-pink-600/20 border-2 border-dashed border-purple-400/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300"
+                class="w-16 h-16 xl:w-[64px] xl:h-[64px] rounded-full bg-gradient-to-br from-purple-500/20 to-pink-600/20 border-2 border-dashed border-purple-400/50 flex items-center justify-center mb-4 xl:mb-[16px] group-hover:scale-110 transition-transform duration-300"
               >
-                <svg class="w-8 h-8 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  class="w-8 h-8 xl:w-[32px] xl:h-[32px] text-purple-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
                 </svg>
               </div>
 
               <!-- CTA Content -->
               <div>
-                <h4 class="text-lg font-bold text-white mb-3">{t("prayer.testimonies.Y.title")}</h4>
-                <p class="text-gray-300 text-sm mb-4 leading-relaxed">
+                <h4 class="text-lg xl:text-[20px] xl:leading-[28px] font-bold text-white mb-3 xl:mb-[12px]">
+                  {t("prayer.testimonies.Y.title")}
+                </h4>
+                <p class="text-gray-300 text-sm xl:text-[14px] xl:leading-[20px] mb-4 xl:mb-[16px] leading-relaxed">
                   {t("prayer.testimonies.Y.description")}
                 </p>
                 <!-- <FireButton text="Share Your Story" variant="secondary" size="small" icon="tabler:heart" /> -->
@@ -279,12 +292,12 @@ const prayerPoints: PrayerPoint[] = [
           <!-- Testimony 3 - Takes 2/3 height -->
           <div class="group relative flex-[2]">
             <div
-              class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl p-8 border border-gray-700 border-green-500/50 hover:border-green-500/80 transition-all duration-300 h-full"
+              class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl xl:rounded-[16px] p-8 xl:p-[32px] border border-gray-700 border-green-500/50 hover:border-green-500/80 transition-all duration-300 h-full"
             >
               <!-- Profile Image -->
-              <div class="flex justify-center mb-6">
+              <div class="flex justify-center mb-6 xl:mb-[32px]">
                 <div
-                  class="w-20 h-20 rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white text-2xl font-bold shadow-lg"
+                  class="w-20 h-20 xl:w-[80px] xl:h-[80px] rounded-full bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center text-white text-2xl xl:text-[24px] xl:leading-[32px] font-bold shadow-lg"
                 >
                   A
                 </div>
@@ -292,23 +305,27 @@ const prayerPoints: PrayerPoint[] = [
 
               <!-- Testimony Content -->
               <div class="text-center">
-                <div class="mb-6">
-                  <div class="flex justify-center mb-4">
-                    <div class="flex space-x-1">
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 text-yellow-400`} />
+                <div class="mb-6 xl:mb-[32px]">
+                  <div class="flex justify-center mb-4 xl:mb-[16px]">
+                    <div class="flex space-x-1 xl:space-x-[4px]">
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
                     </div>
                   </div>
-                  <blockquote class="text-gray-300 italic mb-6 text-lg leading-relaxed">
+                  <blockquote
+                    class="text-gray-300 italic mb-6 xl:mb-[24px] text-lg xl:text-[18px] xl:leading-[28px] leading-relaxed"
+                  >
                     {t("prayer.testimonies.A.description")}
                   </blockquote>
                 </div>
-                <div class="border-t border-gray-600 pt-6">
-                  <p class="text-white font-semibold text-lg">Andrew A.</p>
-                  <p class="text-gray-400">{t("prayer.testimonies.A.profession")}</p>
+                <div class="border-t border-gray-600 pt-6 xl:pt-[24px]">
+                  <p class="text-white font-semibold text-lg xl:text-[18px] xl:leading-[28px]">Andrew A.</p>
+                  <p class="text-gray-400 text-base xl:text-[16px] xl:leading-[24px]">
+                    {t("prayer.testimonies.A.profession")}
+                  </p>
                 </div>
               </div>
             </div>
@@ -317,18 +334,20 @@ const prayerPoints: PrayerPoint[] = [
       </div>
 
       <!-- Call to Action -->
-      <div class="text-center mt-16 pt-16 border-t border-gray-700">
-        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
+      <div class="text-center mt-16 pt-16 xl:mt-[64px] xl:pt-[64px] border-t border-gray-700">
+        <h2 class="text-4xl md:text-5xl xl:text-[48px] xl:leading-[56px] font-bold mb-6 xl:mb-[24px] text-white">
           {t("prayer.cta.title.1")}
           <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
             >{t("prayer.cta.title.2")}</span
           >?
         </h2>
-        <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+        <p
+          class="text-xl xl:text-[20px] xl:leading-[28px] text-gray-300 mb-8 xl:mb-[32px] max-w-2xl mx-auto xl:max-w-[672px]"
+        >
           {t("prayer.cta.subtitle.1")}
         </p>
 
-        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <div class="flex flex-col sm:flex-row gap-6 xl:gap-[24px] justify-center">
           <FireButton
             href={getPermalink(getLanguageRoute("word", lang || "en"))}
             text={t("prayer.cta.button")}
