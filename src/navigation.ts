@@ -7,6 +7,7 @@ import smith from "~/assets/images/witnesses/flame_the_freeze_smith_wigglesworth
 export const routePairs: Record<string, string> = {
   "/": "/jumalan-tuli",
   "/prayer-for-works": "/miten-rukoilla",
+  "/what-does-the-holy-ghost-do": "/fi/about",
 };
 
 // Helper function to get the opposite route
@@ -64,6 +65,7 @@ export const getLanguageRoute = (href: string, targetLang: "en" | "fi"): string 
   // Map navigation hrefs to route pairs
   const hrefToRouteMap: Record<string, string> = {
     prayer: "/prayer-for-works",
+    about: "/what-does-the-holy-ghost-do",
     // Add more mappings as needed for other navigation items
   };
 

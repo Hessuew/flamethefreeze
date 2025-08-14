@@ -115,9 +115,10 @@ const colorThemes = {
                     set:html={point.subtitle}
                   />
                   <div class={`bg-gray-900/50 rounded-lg p-4 xl:p-[16px] border-l-4 ${theme.borderLeft}`}>
-                    <p class={`${theme.textColor} italic text-base xl:text-[16px] xl:leading-[24px]`}>
-                      {point.bibleQuote}
-                    </p>
+                    <p
+                      class={`${theme.textColor} italic text-base xl:text-[16px] xl:leading-[24px]`}
+                      set:html={point.bibleQuote}
+                    ></p>
                   </div>
                 </div>
               </div>

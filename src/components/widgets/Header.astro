@@ -9,6 +9,7 @@ import LanguagePicker from "~/components/common/LanguagePicker.astro";
 import { useTranslations } from "~/i18n/utils";
 import { twMerge } from "tailwind-merge";
 import type { ui } from "~/i18n/ui";
+import { getLanguageRoute } from "~/navigation";
 
 interface Link {
   text?: string;
@@ -149,7 +150,7 @@ const t = useTranslations(lang);
                           <li class="block lg:hidden">
                             <a
                               class:list={["py-2 px-3 block group", { "aw-link-active": href2 === currentPath }]}
-                              href={getPermalink(`${lang}/${href2}`)}
+                              href={getPermalink(getLanguageRoute(href2 || "", lang || "en"))}
                             >
                               <div class="flex items-center gap-2">
                                 {icon && (
@@ -183,7 +184,7 @@ const t = useTranslations(lang);
                     },
                     "after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-accent after:transition-all after:duration-300",
                   ]}
-                  href={href}
+                  href={getPermalink(getLanguageRoute(href || "", lang || "en"))}
                 >
                   <div class="hidden lg:flex">{text ? t(text as keyof typeof ui.en) : text}</div>
                   <div class="flex lg:hidden items-center gap-3 active:text-primary pl-0">
