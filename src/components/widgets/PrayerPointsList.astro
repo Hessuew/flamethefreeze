@@ -1,0 +1,130 @@
+---
+import { twMerge } from "tailwind-merge";
+import WidgetWrapper from "../ui/WidgetWrapper.astro";
+import PrayerIcons from "../ui/PrayerIcons.astro";
+
+export interface PrayerPoint {
+  icon: string; // Custom prayer icon name (e.g., "transform", "gift", etc.)
+  title: string;
+  subtitle: string;
+  bibleQuote: string;
+  color: "orange" | "blue" | "green" | "purple" | "red" | "yellow" | "pink" | "indigo";
+}
+
+export interface Props {
+  prayerPoints: PrayerPoint[];
+  containerClass?: string;
+}
+
+const { prayerPoints, containerClass = "" } = Astro.props;
+
+// Color theme mappings
+const colorThemes = {
+  orange: {
+    gradient: "from-orange-500 to-red-600",
+    iconColor: "text-orange-400",
+    borderHover: "border-orange-500/50 hover:border-orange-500/80",
+    borderLeft: "border-orange-400",
+    textColor: "text-orange-200",
+  },
+  blue: {
+    gradient: "from-blue-500 to-purple-600",
+    iconColor: "text-blue-400",
+    borderHover: "border-blue-500/50 hover:border-blue-500/80",
+    borderLeft: "border-blue-400",
+    textColor: "text-blue-200",
+  },
+  green: {
+    gradient: "from-green-500 to-teal-600",
+    iconColor: "text-green-400",
+    borderHover: "border-green-500/50 hover:border-green-500/80",
+    borderLeft: "border-green-400",
+    textColor: "text-green-200",
+  },
+  purple: {
+    gradient: "from-purple-500 to-pink-600",
+    iconColor: "text-purple-400",
+    borderHover: "border-purple-500/50 hover:border-purple-500/80",
+    borderLeft: "border-purple-400",
+    textColor: "text-purple-200",
+  },
+  red: {
+    gradient: "from-red-500 to-red-800",
+    iconColor: "text-red-400",
+    borderHover: "border-red-500/50 hover:border-red-500/80",
+    borderLeft: "border-red-400",
+    textColor: "text-red-200",
+  },
+  yellow: {
+    gradient: "from-yellow-500 to-orange-600",
+    iconColor: "text-yellow-400",
+    borderHover: "border-yellow-500/50 hover:border-yellow-500/80",
+    borderLeft: "border-yellow-400",
+    textColor: "text-yellow-200",
+  },
+  pink: {
+    gradient: "from-red-500 to-pink-600",
+    iconColor: "text-red-400",
+    borderHover: "border-red-500/50 hover:border-red-500/80",
+    borderLeft: "border-pink-400",
+    textColor: "text-pink-200",
+  },
+  indigo: {
+    gradient: "from-indigo-500 to-blue-800",
+    iconColor: "text-indigo-400",
+    borderHover: "border-indigo-500/50 hover:border-indigo-500/80",
+    borderLeft: "border-indigo-400",
+    textColor: "text-indigo-200",
+  },
+};
+---
+
+<WidgetWrapper
+  id="prayer-guide"
+  animated={false}
+  containerClass={twMerge("z-30 -mt-60 xl:-mt-[240px] py-0 md:py-0 lg:py-0 xl:py-0 scroll-mt-[100px]", containerClass)}
+>
+  <div class="max-w-4xl xl:max-w-[896px] mx-auto">
+    <div class="space-y-12 xl:space-y-[48px]">
+      {
+        prayerPoints.map((point, index) => {
+          const theme = colorThemes[point.color];
+          return (
+            <div class="group relative">
+              <div class="flex flex-col sm:flex-row items-start space-x-6 xl:space-x-[24px] space-y-6 sm:space-y-0">
+                <div class="flex-shrink-0">
+                  <div
+                    class={`w-16 h-16 xl:w-[64px] xl:h-[64px] bg-gradient-to-br ${theme.gradient} rounded-full flex items-center justify-center text-white text-2xl xl:text-[24px] xl:leading-[32px] font-bold shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                  >
+                    {index + 1}
+                  </div>
+                </div>
+                <div
+                  class={`flex-1 bg-gray-800/50 backdrop-blur-sm rounded-2xl xl:rounded-[16px] p-8 border border-gray-700 ${theme.borderHover} transition-all duration-300`}
+                >
+                  <div class="flex items-center mb-4 xl:mb-[16px]">
+                    <PrayerIcons
+                      name={point.icon}
+                      class={`min-h-8 min-w-8 w-8 h-8 xl:w-[32px] xl:h-[32px] ${theme.iconColor} mr-3 xl:mr-[12px]`}
+                      size={32}
+                    />
+                    <h3 class="text-2xl xl:text-[24px] xl:leading-[32px] font-bold text-white" set:html={point.title} />
+                  </div>
+                  <p
+                    class="text-base xl:text-[16px] xl:leading-[24px] text-gray-300 mb-4 xl:mb-[16px] leading-relaxed"
+                    set:html={point.subtitle}
+                  />
+                  <div class={`bg-gray-900/50 rounded-lg p-4 xl:p-[16px] border-l-4 ${theme.borderLeft}`}>
+                    <p class={`${theme.textColor} italic text-base xl:text-[16px] xl:leading-[24px]`}>
+                      {point.bibleQuote}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</WidgetWrapper>

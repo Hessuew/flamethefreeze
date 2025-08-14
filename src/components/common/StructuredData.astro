@@ -2,6 +2,17 @@
 import logoUrl from "~/assets/images/default.jpg";
 import { getImage } from "astro:assets";
 import { SITE } from "astrowind:config";
+import { useTranslations } from "~/i18n/utils";
+import type { MetaDataStructuredData } from "~/types";
+
+interface Props {
+  lang?: "fi" | "en";
+  pageSpecificSchema?: MetaDataStructuredData;
+}
+
+const { lang = "en", pageSpecificSchema } = Astro.props;
+
+const t = useTranslations(lang);
 
 const optimizedLogo = await getImage({ src: logoUrl });
 
@@ -11,7 +22,7 @@ const organizationSchema = {
   "@type": "Organization",
   "@id": SITE.site + "#organization",
   name: "Flame the Freeze",
-  alternateName: "Fire of God and Fire for God Ministry",
+  alternateName: t("schema.organization.alternateName"),
   url: SITE.site,
   logo: {
     "@type": "ImageObject",
@@ -19,16 +30,14 @@ const organizationSchema = {
     width: "640",
     height: "640",
   },
-  description:
-    "Christian ministry focused on experiencing the fire of God and being on fire for God through spiritual awakening, Holy Spirit baptism, and divine encounters.",
+  description: t("schema.organization.description"),
   foundingDate: "2024",
-  keywords:
-    "fire of god, fire for god, holy spirit fire, spiritual awakening, christian ministry, divine fire, revival, pentecostal",
+  keywords: t("schema.organization.keywords"),
   sameAs: ["https://www.youtube.com/@flamethefreeze2613"],
   contactPoint: {
     "@type": "ContactPoint",
-    contactType: "customer service",
-    availableLanguage: "English",
+    contactType: t("schema.organization.customerService"),
+    availableLanguage: t("schema.organization.availableLanguage"),
   },
 };
 
@@ -38,9 +47,8 @@ const websiteSchema = {
   "@type": "WebSite",
   "@id": SITE.site + "#website",
   url: SITE.site,
-  name: "Flame the Freeze - Fire of God and Fire for God",
-  description:
-    "Experience the transformative fire of God and ignite your fire for God through spiritual awakening, Holy Spirit encounters, and passionate Christian living.",
+  name: t("schema.website.name"),
+  description: t("schema.website.description"),
   publisher: {
     "@id": SITE.site + "#organization",
   },
@@ -60,38 +68,37 @@ const webPageSchema = {
   "@type": "WebPage",
   "@id": SITE.site + "#webpage",
   url: SITE.site,
-  name: "Fire of God and Fire for God 2025 | Experience Divine Fire Today",
-  description:
-    "Discover the transformative fire of God and ignite your fire for God in 2025. Experience divine spiritual awakening, Holy Spirit baptism, and passionate Christian living.",
+  name: t("schema.webpage.name"),
+  description: t("schema.webpage.description"),
   isPartOf: {
     "@id": SITE.site + "#website",
   },
   about: {
     "@type": "Thing",
-    name: "Fire of God",
-    description: "The transformative spiritual experience of receiving God's divine fire through the Holy Spirit",
+    name: t("schema.website.about.name"),
+    description: t("schema.website.about.description"),
   },
   mentions: [
     {
       "@type": "Thing",
-      name: "Fire for God",
-      description: "Being passionate and zealous for God's kingdom and purposes",
+      name: t("schema.website.mentions.1.name"),
+      description: t("schema.website.mentions.1.description"),
     },
     {
       "@type": "Thing",
-      name: "Holy Spirit Fire",
-      description: "The baptism and filling of the Holy Spirit with divine fire",
+      name: t("schema.website.mentions.2.name"),
+      description: t("schema.website.mentions.2.description"),
     },
     {
       "@type": "Thing",
-      name: "Spiritual Awakening",
-      description: "Divine encounters that transform and revive the human spirit",
+      name: t("schema.website.mentions.3.name"),
+      description: t("schema.website.mentions.3.description"),
     },
   ],
   mainEntity: {
     "@type": "Thing",
-    name: "Fire of God Experience",
-    description: "Transformative spiritual encounters with God's divine fire that ignite passion for His kingdom",
+    name: t("schema.website.mainEntity.name"),
+    description: t("schema.website.mainEntity.description"),
   },
 };
 
@@ -100,12 +107,11 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "@id": SITE.site + "#article",
-  headline: "Fire of God and Fire for God: Experience Divine Transformation in 2025",
-  description:
-    "Learn how to receive the fire of God and become passionate for God through spiritual awakening, Holy Spirit encounters, and divine transformation.",
+  headline: t("schema.article.headline"),
+  description: t("schema.article.description"),
   author: {
     "@type": "Organization",
-    name: "Flame the Freeze Ministry",
+    name: t("schema.article.author.name"),
     url: SITE.site,
   },
   publisher: {
@@ -116,30 +122,29 @@ const articleSchema = {
   mainEntityOfPage: {
     "@id": SITE.site + "#webpage",
   },
-  keywords:
-    "fire of god, fire for god, holy spirit fire, spiritual awakening, divine fire, christian revival, holy spirit baptism, spiritual passion, god's presence, christian transformation",
+  keywords: t("schema.article.keywords"),
   about: [
     {
       "@type": "Thing",
-      name: "Fire of God",
-      description: "The divine fire that transforms believers through the Holy Spirit",
+      name: t("schema.article.about.1.name"),
+      description: t("schema.article.about.1.description"),
     },
     {
       "@type": "Thing",
-      name: "Fire for God",
-      description: "Passionate devotion and zeal for God's kingdom and purposes",
+      name: t("schema.article.about.2.name"),
+      description: t("schema.article.about.2.description"),
     },
   ],
   mentions: [
     {
       "@type": "Person",
-      name: "Derek Prince",
-      description: "Bible teacher and author on spiritual foundations",
+      name: t("schema.article.mentions.1.name"),
+      description: t("schema.article.mentions.1.description"),
     },
     {
       "@type": "Person",
-      name: "Kenneth Hagin",
-      description: "Pentecostal preacher and faith teacher",
+      name: t("schema.article.mentions.2.name"),
+      description: t("schema.article.mentions.2.description"),
     },
   ],
 };
@@ -152,43 +157,45 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is the fire of God?",
+      name: t("schema.faq.mainEntity.1.name"),
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The fire of God is the transformative presence and power of the Holy Spirit that purifies, empowers, and ignites believers with divine passion. It represents God's consuming love, holiness, and power working in and through believers.",
+        text: t("schema.faq.mainEntity.1.acceptedAnswer.text"),
       },
     },
     {
       "@type": "Question",
-      name: "What does it mean to be on fire for God?",
+      name: t("schema.faq.mainEntity.2.name"),
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Being on fire for God means having passionate devotion, zeal, and enthusiasm for God's kingdom, His Word, and His purposes. It's characterized by spiritual fervor, active faith, and a burning desire to serve and glorify God.",
+        text: t("schema.faq.mainEntity.2.acceptedAnswer.text"),
       },
     },
     {
       "@type": "Question",
-      name: "How can I receive the fire of God?",
+      name: t("schema.faq.mainEntity.3.name"),
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can receive the fire of God through sincere prayer, seeking God's presence, studying His Word, participating in worship, and being open to the Holy Spirit's work in your life. It often comes through surrender, faith, and persistent seeking of God.",
+        text: t("schema.faq.mainEntity.3.acceptedAnswer.text"),
       },
     },
     {
       "@type": "Question",
-      name: "Where can I experience the fire of God?",
+      name: t("schema.faq.mainEntity.4.name"),
       acceptedAnswer: {
         "@type": "Answer",
-        text: "The fire of God can be experienced in personal prayer and worship, through Bible study, in church gatherings, during spiritual retreats, and through fellowship with other believers who are passionate for God.",
+        text: t("schema.faq.mainEntity.4.acceptedAnswer.text"),
       },
     },
   ],
 };
 
 // Combine all schemas
+const schemas = [organizationSchema, websiteSchema, webPageSchema, articleSchema, faqSchema, pageSpecificSchema];
+
 const combinedSchema = {
   "@context": "https://schema.org",
-  "@graph": [organizationSchema, websiteSchema, webPageSchema, articleSchema, faqSchema],
+  "@graph": schemas,
 };
 ---
 

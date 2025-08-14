@@ -1,0 +1,111 @@
+---
+import Template from "~/screens/prayer.astro";
+
+import logoUrl from "~/assets/images/prayer/prayer_for_works.webp";
+
+const metadata = {
+  title: "Miten Rukoilla 2025 | 7 Kohdan Lista Rukouksen Voimaan | Flame the Freeze",
+  description:
+    "Opi miten rukoilla 7 kohdan listasta ja koe rukouksen voima elämässäsi. Saa vastauksia rukouksiisi Jumalan tulessa 🔥 Raamatullinen opetus rukouksesta.",
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+  },
+  openGraph: {
+    type: "article",
+    locale: "fi_FI",
+    url: "https://flamethefreeze.com/miten-rukoilla",
+    siteName: "Flame the Freeze",
+    title: "Miten Rukoilla | 7 Kohdan Lista Rukouksen Voimaan",
+    description:
+      "Opi miten rukoilla tehokkaasti 7 kohdan listasta. Koe rukouksen voima ja saa vastauksia rukouksiisi. Raamatullinen opetus rukouksesta ja hengellisestä kasvusta.",
+    image: {
+      url: logoUrl,
+      width: 630,
+      height: 630,
+      alt: "Miten Rukoilla - 7 Kohdan Lista Rukouksen Voimaan",
+    },
+    article: {
+      publishedTime: "2025-01-07T00:00:00Z",
+      modifiedTime: "2025-01-12T05:27:30Z",
+      author: "Flame the Freeze Ministry",
+      section: "Rukous ja Hengellisyys",
+      tags: [
+        "miten rukoilla",
+        "rukouksen voima",
+        "rukous opetus",
+        "hengellinen kasvu",
+        "raamatullinen rukous",
+        "pyhä henki",
+        "jeesus",
+      ],
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@FlameTheFreeze",
+    creator: "@FlameTheFreeze",
+    title: "Miten Rukoilla | 7 Kohdan Lista Rukouksen Voimaan",
+    description:
+      "Opi miten rukoilla tehokkaasti ja koe rukouksen voima elämässäsi. 7 kohdan raamatullinen opetus rukouksesta ja hengellisestä kasvusta.",
+    image: logoUrl,
+  },
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": "https://flamethefreeze.com/miten-rukoilla#article",
+    headline: "Miten Rukoilla: 7 Kohdan Lista Rukouksen Voimaan",
+    description:
+      "Kattava opas siitä miten rukoilla tehokkaasti. 7 kohdan raamatullinen lista rukouksen voimaan, joka muuttaa elämäsi Jumalan tulessa.",
+    image: logoUrl,
+    author: {
+      "@type": "Organization",
+      name: "Flame the Freeze Ministry",
+      url: "https://flamethefreeze.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Flame the Freeze",
+      logo: {
+        "@type": "ImageObject",
+        url: logoUrl,
+      },
+    },
+    datePublished: "2025-01-07T00:00:00Z",
+    dateModified: "2025-01-12T05:27:30Z",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://flamethefreeze.com/miten-rukoilla",
+    },
+    url: "https://flamethefreeze.com/miten-rukoilla",
+    keywords:
+      "miten rukoilla, rukouksen voima, rukous opetus, hengellinen kasvu, raamatullinen rukous, pyhä henki, jeesus, usko, anteeksianto, raamattu",
+    articleSection: "Rukous ja Hengellisyys",
+    wordCount: 1200,
+    about: [
+      {
+        "@type": "Thing",
+        name: "Miten Rukoilla Tehokkaasti",
+        description:
+          "Raamatulliset periaatteet ja käytännön ohjeet siihen, miten rukoilla tehokkaasti ja saada vastauksia rukouksiin.",
+      },
+      {
+        "@type": "Thing",
+        name: "Rukouksen Voima",
+        description: "Rukouksen voiman kokeminen elämässä ja sen muuttava vaikutus hengelliseen kasvuun.",
+      },
+      {
+        "@type": "Thing",
+        name: "Hengellinen Kasvu",
+        description: "Henkilökohtainen hengellinen kasvu rukouksen, uskon ja Pyhän Hengen johdatuksen kautta.",
+      },
+    ],
+  },
+  ignoreTitleTemplate: true,
+};
+---
+
+<Template lang="fi" metadata={metadata} siteRebuildStatus={{ status: "completed", display: true }} />

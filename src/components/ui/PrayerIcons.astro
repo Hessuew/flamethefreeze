@@ -1,0 +1,779 @@
+---
+export interface Props {
+  name: string;
+  class?: string;
+  size?: number;
+}
+
+const { name, class: className = "", size = 24 } = Astro.props;
+---
+
+{name === "transform" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Transformation icon"
+  >
+    <!-- Transformation Icon - Clear before/after progression with arrow -->
+    <defs>
+      <linearGradient id="transformGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#f7931e;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.8" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.2" />
+      </radialGradient>
+    </defs>
+    <!-- "Before" person (left side) - simple figure -->
+    <circle cx="6" cy="8" r="1.5" fill="url(#transformGradient)" opacity="0.6" />
+    <path d="M6 9.5c-1 0-1.5 0.5-1.5 1.5v4c0 0.5 0.5 1 1 1h1c0.5 0 1-0.5 1-1v-4c0-1-0.5-1.5-1.5-1.5z" fill="url(#transformGradient)" opacity="0.6" />
+    
+    <!-- Transformation arrow -->
+    <path d="M9 12h6M13 10l2 2-2 2" stroke="url(#transformGradient)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- "After" person (right side) - glowing, elevated figure -->
+    <circle cx="18" cy="6" r="2" fill="url(#glowGradient)" />
+    <circle cx="18" cy="6" r="1.5" fill="url(#transformGradient)" />
+    <path d="M18 8c-1.2 0-2 0.8-2 2v4c0 0.8 0.8 1.5 1.5 1.5h1c0.8 0 1.5-0.7 1.5-1.5v-4c0-1.2-0.8-2-2-2z" fill="url(#transformGradient)" />
+    
+    <!-- Divine light rays around transformed person -->
+    <path d="M18 3v1M20.5 4.5l-0.7 0.7M21 7h-1M20.5 9.5l-0.7-0.7M18 11v-1M15.5 9.5l0.7-0.7M15 7h1M15.5 4.5l0.7 0.7" stroke="url(#glowGradient)" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+    
+    <!-- Upward movement indicator -->
+    <path d="M18 15l0-1M17 15l1-1 1 1" stroke="url(#transformGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.7" />
+  </svg>
+)}
+
+{name === "gift" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Gift icon"
+  >
+    <!-- Divine Gift Icon - Clear gift box with bow and divine light -->
+    <defs>
+      <linearGradient id="giftGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="lightGradient" cx="50%" cy="30%" r="50%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.8" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.2" />
+      </radialGradient>
+    </defs>
+    <!-- Divine light rays from above -->
+    <path
+      d="M12 2l1 2M12 2l-1 2M12 2l1.5 1.5M12 2l-1.5 1.5M12 2l2 1M12 2l-2 1"
+      stroke="url(#lightGradient)"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <!-- Gift box base -->
+    <rect
+      x="6"
+      y="10"
+      width="12"
+      height="10"
+      rx="1"
+      fill="url(#giftGradient)"
+      stroke="url(#giftGradient)"
+      stroke-width="1"
+    />
+    <!-- Gift box ribbon (vertical) -->
+    <rect
+      x="11"
+      y="8"
+      width="2"
+      height="14"
+      fill="#fbbf24"
+      opacity="0.9"
+    />
+    <!-- Gift box ribbon (horizontal) -->
+    <rect
+      x="5"
+      y="14"
+      width="14"
+      height="2"
+      fill="#fbbf24"
+      opacity="0.9"
+    />
+    <!-- Beautiful bow on top -->
+    <path
+      d="M12 8c-2-1-3-2-2-3s2 0 2 1z"
+      fill="#fbbf24"
+    />
+    <path
+      d="M12 8c2-1 3-2 2-3s-2 0-2 1z"
+      fill="#fbbf24"
+    />
+    <!-- Bow center -->
+    <circle cx="12" cy="8" r="1" fill="#f59e0b" />
+    <!-- Sparkles around the gift -->
+    <circle cx="8" cy="7" r="0.5" fill="url(#lightGradient)" opacity="0.8" />
+    <circle cx="16" cy="9" r="0.5" fill="url(#lightGradient)" opacity="0.8" />
+    <circle cx="7" cy="12" r="0.5" fill="url(#lightGradient)" opacity="0.6" />
+    <circle cx="17" cy="17" r="0.5" fill="url(#lightGradient)" opacity="0.6" />
+  </svg>
+)}
+
+{name === "productivity" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Productivity icon"
+  >
+    <!-- Productivity Icon - Gear with upward arrow and growth -->
+    <defs>
+      <linearGradient id="productivityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <!-- Main gear -->
+    <path
+      d="M12 3c-0.5 0-1 0.5-1 1v1c-1 0.2-1.8 0.6-2.5 1.2l-0.7-0.7c-0.4-0.4-1-0.4-1.4 0s-0.4 1 0 1.4l0.7 0.7C6.6 8.2 6.2 9 6 10H5c-0.5 0-1 0.5-1 1s0.5 1 1 1h1c0.2 1 0.6 1.8 1.2 2.5l-0.7 0.7c-0.4 0.4-0.4 1 0 1.4s1 0.4 1.4 0l0.7-0.7C8.2 17.4 9 17.8 10 18v1c0 0.5 0.5 1 1 1s1-0.5 1-1v-1c1-0.2 1.8-0.6 2.5-1.2l0.7 0.7c0.4 0.4 1 0.4 1.4 0s0.4-1 0-1.4l-0.7-0.7c0.6-0.7 1-1.5 1.2-2.5h1c0.5 0 1-0.5 1-1s-0.5-1-1-1h-1c-0.2-1-0.6-1.8-1.2-2.5l0.7-0.7c0.4-0.4 0.4-1 0-1.4s-1-0.4-1.4 0l-0.7 0.7C15.8 6.6 15 6.2 14 6V5c0-0.5-0.5-1-1-1z"
+      fill="url(#productivityGradient)"
+      opacity="0.8"
+    />
+    <!-- Inner gear circle -->
+    <circle
+      cx="12"
+      cy="12"
+      r="3"
+      fill="none"
+      stroke="url(#productivityGradient)"
+      stroke-width="2"
+    />
+    <!-- Growth arrow -->
+    <path
+      d="M12 9v6M10 11l2-2 2 2"
+      stroke="#fbbf24"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <!-- Productivity indicators -->
+    <circle cx="18" cy="6" r="1.5" fill="#fbbf24" opacity="0.8" />
+    <circle cx="20" cy="8" r="1" fill="#fbbf24" opacity="0.6" />
+    <circle cx="19" cy="4" r="0.8" fill="#fbbf24" opacity="0.7" />
+  </svg>
+)}
+
+{name === "love" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Love icon"
+  >
+    <!-- Divine Love Icon - Sacred heart with flame -->
+    <defs>
+      <linearGradient id="loveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="flameGradient" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.8" />
+      </radialGradient>
+    </defs>
+    <!-- Sacred heart -->
+    <path
+      d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+      fill="url(#loveGradient)"
+    />
+    <!-- Divine flame on top -->
+    <path
+      d="M12 3c-0.5-1.5-1-2.5-1-2.5s0.5 0.5 1 1c0.5-0.5 1-1 1-1s-0.5 1-1 2.5z"
+      fill="url(#flameGradient)"
+    />
+    <path
+      d="M12 4c-0.3-1-0.7-1.8-0.7-1.8s0.3 0.3 0.7 0.8c0.4-0.5 0.7-0.8 0.7-0.8s-0.4 0.8-0.7 1.8z"
+      fill="url(#flameGradient)"
+      opacity="0.8"
+    />
+    <!-- Cross in the center -->
+    <path
+      d="M12 8v6M9 11h6"
+      stroke="#fbbf24"
+      stroke-width="1.5"
+      stroke-linecap="round"
+    />
+    <!-- Divine light rays -->
+    <path
+      d="M12 6l0.5 1.5M12 6l-0.5 1.5M12 6l1.3 1M12 6l-1.3 1"
+      stroke="url(#flameGradient)"
+      stroke-width="1"
+      stroke-linecap="round"
+      opacity="0.7"
+    />
+  </svg>
+)}
+
+{name === "wisdom" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Wisdom icon"
+  >
+    <!-- Divine Wisdom Icon - Light bulb with brain and divine rays -->
+    <defs>
+      <linearGradient id="wisdomGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="lightGradient" cx="50%" cy="40%" r="60%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3" />
+      </radialGradient>
+    </defs>
+    <!-- Light bulb outline -->
+    <path
+      d="M12 4c-3 0-5 2.5-5 5.5 0 2 1 3.5 2 4.5v2c0 1 1 2 2 2h2c1 0 2-1 2-2v-2c1-1 2-2.5 2-4.5 0-3-2-5.5-5-5.5z"
+      fill="url(#lightGradient)"
+      opacity="0.3"
+      stroke="url(#wisdomGradient)"
+      stroke-width="2"
+    />
+    <!-- Brain inside the bulb -->
+    <path
+      d="M10 8c0-1 1-1.5 2-1.5s2 0.5 2 1.5c0 0.5-0.5 1-1 1h-2c-0.5 0-1-0.5-1-1z"
+      fill="url(#wisdomGradient)"
+      opacity="0.8"
+    />
+    <path
+      d="M9.5 9.5c0-0.5 0.5-1 1-1h3c0.5 0 1 0.5 1 1s-0.5 1-1 1h-3c-0.5 0-1-0.5-1-1z"
+      fill="url(#wisdomGradient)"
+      opacity="0.7"
+    />
+    <path
+      d="M10 11c0-0.5 0.5-1 1-1h2c0.5 0 1 0.5 1 1s-0.5 1-1 1h-2c-0.5 0-1-0.5-1-1z"
+      fill="url(#wisdomGradient)"
+      opacity="0.6"
+    />
+    <!-- Light bulb base/screw -->
+    <rect x="10.5" y="16" width="3" height="1" fill="url(#wisdomGradient)" />
+    <rect x="10.5" y="17" width="3" height="1" fill="url(#wisdomGradient)" opacity="0.8" />
+    <!-- Divine wisdom rays -->
+    <path
+      d="M12 2v2M18 6l-1.5 1.5M22 12h-2M18 18l-1.5-1.5M12 22v-2M6 18l1.5-1.5M2 12h2M6 6l1.5 1.5"
+      stroke="url(#lightGradient)"
+      stroke-width="2"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <!-- Sparkles of wisdom -->
+    <circle cx="8" cy="5" r="0.8" fill="url(#lightGradient)" opacity="0.9" />
+    <circle cx="16" cy="5" r="0.8" fill="url(#lightGradient)" opacity="0.9" />
+    <circle cx="19" cy="9" r="0.6" fill="url(#lightGradient)" opacity="0.7" />
+    <circle cx="5" cy="9" r="0.6" fill="url(#lightGradient)" opacity="0.7" />
+  </svg>
+)}
+
+{name === "community" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Community icon"
+  >
+    <!-- Community/Fellowship Icon - Interlocked hands forming a circle -->
+    <defs>
+      <linearGradient id="communityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <!-- Central circle representing unity -->
+    <circle
+      cx="12"
+      cy="12"
+      r="3"
+      fill="none"
+      stroke="url(#communityGradient)"
+      stroke-width="1.5"
+      opacity="0.4"
+    />
+    <!-- Interlocked hands/people forming circle -->
+    <path
+      d="M12 2c1.5 1 2.5 2 2.5 3.5 0 1-0.5 2-1.5 2.5"
+      fill="none"
+      stroke="url(#communityGradient)"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <path
+      d="M22 12c-1 1.5-2 2.5-3.5 2.5-1 0-2-0.5-2.5-1.5"
+      fill="none"
+      stroke="url(#communityGradient)"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <path
+      d="M12 22c-1.5-1-2.5-2-2.5-3.5 0-1 0.5-2 1.5-2.5"
+      fill="none"
+      stroke="url(#communityGradient)"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <path
+      d="M2 12c1-1.5 2-2.5 3.5-2.5 1 0 2 0.5 2.5 1.5"
+      fill="none"
+      stroke="url(#communityGradient)"
+      stroke-width="2"
+      stroke-linecap="round"
+    />
+    <!-- Diagonal connections -->
+    <path
+      d="M18.5 5.5c-1 1.5-2 2-3 2-0.8 0-1.5-0.3-2-1"
+      fill="none"
+      stroke="url(#communityGradient)"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <path
+      d="M18.5 18.5c-1.5-1-2-2-2-3 0-0.8 0.3-1.5 1-2"
+      fill="none"
+      stroke="url(#communityGradient)"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <path
+      d="M5.5 18.5c1-1.5 2-2 3-2 0.8 0 1.5 0.3 2 1"
+      fill="none"
+      stroke="url(#communityGradient)"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <path
+      d="M5.5 5.5c1.5 1 2 2 2 3 0 0.8-0.3 1.5-1 2"
+      fill="none"
+      stroke="url(#communityGradient)"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <!-- Unity points -->
+    <circle cx="12" cy="5" r="1" fill="#fbbf24" opacity="0.8" />
+    <circle cx="19" cy="12" r="1" fill="#fbbf24" opacity="0.8" />
+    <circle cx="12" cy="19" r="1" fill="#fbbf24" opacity="0.8" />
+    <circle cx="5" cy="12" r="1" fill="#fbbf24" opacity="0.8" />
+  </svg>
+)}
+
+{name === "prayer" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Prayer icon"
+  >
+    <!-- Spiritual Warfare/Prayer Icon - Mountain with divine lightning -->
+    <defs>
+      <linearGradient id="prayerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#eab308;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#ca8a04;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="lightningGradient" cx="50%" cy="30%" r="70%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.8" />
+      </radialGradient>
+    </defs>
+    <!-- Mountain/altar -->
+    <path
+      d="M3 20l4-8 3 4 2-6 4 8 5-6v8H3z"
+      fill="url(#prayerGradient)"
+      opacity="0.7"
+    />
+    <!-- Divine lightning/power -->
+    <path
+      d="M12 2l-2 6h3l-2 6 4-4h-2l2-8z"
+      fill="url(#lightningGradient)"
+      stroke="url(#lightningGradient)"
+      stroke-width="0.5"
+    />
+    <!-- Praying hands silhouette -->
+    <path
+      d="M10 16c0-1 0.5-2 1-2.5 0.5 0.5 1 1.5 1 2.5v3c0 0.5-0.2 1-0.5 1.3-0.3-0.3-0.5-0.8-0.5-1.3v-3z"
+      fill="url(#prayerGradient)"
+      opacity="0.9"
+    />
+    <path
+      d="M9.5 16.5c-0.3 0.3-0.5 0.8-0.5 1.3v1.2c0 0.3 0.1 0.5 0.2 0.7 0.1-0.2 0.2-0.4 0.2-0.7v-1.2c0-0.5 0.2-1 0.5-1.3"
+      fill="url(#prayerGradient)"
+      opacity="0.7"
+    />
+    <path
+      d="M12.5 16.5c0.3 0.3 0.5 0.8 0.5 1.3v1.2c0 0.3-0.1 0.5-0.2 0.7-0.1-0.2-0.2-0.4-0.2-0.7v-1.2c0-0.5-0.2-1-0.5-1.3"
+      fill="url(#prayerGradient)"
+      opacity="0.7"
+    />
+    <!-- Divine presence rays -->
+    <path
+      d="M12 1v2M8 3l1 1.5M16 3l-1 1.5M6 6l1.5 1M18 6l-1.5 1"
+      stroke="url(#lightningGradient)"
+      stroke-width="1"
+      stroke-linecap="round"
+      opacity="0.6"
+    />
+    <!-- Spiritual atmosphere -->
+    <circle
+      cx="12"
+      cy="8"
+      r="6"
+      fill="none"
+      stroke="url(#lightningGradient)"
+      stroke-width="0.5"
+      opacity="0.3"
+    />
+  </svg>
+)}
+
+<!-- Finnish prayer icons -->
+
+{name === "faith" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Faith icon"
+  >
+    <!-- Personal Faith in Jesus Icon - Cross with divine light -->
+    <defs>
+      <linearGradient id="faithGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#f7931e;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="divineLight" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.8" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.2" />
+      </radialGradient>
+    </defs>
+    <!-- Divine light emanation -->
+    <circle cx="12" cy="12" r="10" fill="url(#divineLight)" opacity="0.3" />
+    <!-- Cross -->
+    <path d="M12 4v16M6 12h12" stroke="url(#faithGradient)" stroke-width="3" stroke-linecap="round" />
+    <!-- Heart at center representing personal faith -->
+    <path d="M12 14.5c-2-2-4-1.5-4 0.5s1 2.5 3 2c0.5-0.2 1-0.5 1-1z" fill="url(#faithGradient)" opacity="0.8" />
+    <path d="M12 14.5c2-2 4-1.5 4 0.5s-1 2.5-3 2c-0.5-0.2-1-0.5-1-1z" fill="url(#faithGradient)" opacity="0.8" />
+    <!-- Divine rays -->
+    <path d="M12 2l1 2M12 2l-1 2M12 2l1.5 1.5M12 2l-1.5 1.5" stroke="url(#divineLight)" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+  </svg>
+)}
+
+{name === "forgiveness" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Forgiveness icon"
+  >
+    <!-- Forgiveness Icon - Cleansed heart with washing water -->
+    <defs>
+      <linearGradient id="forgivenessGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="cleansingGradient" cx="50%" cy="30%" r="70%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.6" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.1" />
+      </radialGradient>
+    </defs>
+    <!-- Cleansing water drops -->
+    <path d="M8 4c0-1 1-2 2-2s2 1 2 2-1 2-2 2-2-1-2-2z" fill="url(#forgivenessGradient)" opacity="0.7" />
+    <path d="M14 6c0-0.8 0.8-1.5 1.5-1.5s1.5 0.7 1.5 1.5-0.8 1.5-1.5 1.5-1.5-0.7-1.5-1.5z" fill="url(#forgivenessGradient)" opacity="0.6" />
+    <path d="M6 8c0-0.6 0.6-1 1-1s1 0.4 1 1-0.6 1-1 1-1-0.4-1-1z" fill="url(#forgivenessGradient)" opacity="0.5" />
+    <!-- Pure heart -->
+    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="url(#forgivenessGradient)" opacity="0.8" />
+    <!-- Cleansing light inside heart -->
+    <circle cx="12" cy="12" r="4" fill="url(#cleansingGradient)" opacity="0.6" />
+    <!-- Cross in heart -->
+    <path d="M12 9v6M9.5 12h5" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" opacity="0.9" />
+  </svg>
+)}
+
+{name === "scripture" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Scripture icon"
+  >
+    <!-- Scripture/Bible Icon - Open book with divine verses -->
+    <defs>
+      <linearGradient id="scriptureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <!-- Open book -->
+    <path d="M4 6c0-1.1 0.9-2 2-2h12c1.1 0 2 0.9 2 2v12c0 1.1-0.9 2-2 2H6c-1.1 0-2-0.9-2-2V6z" fill="none" stroke="url(#scriptureGradient)" stroke-width="1.5" />
+    <!-- Book spine -->
+    <line x1="12" y1="4" x2="12" y2="20" stroke="url(#scriptureGradient)" stroke-width="2" />
+    <!-- Bible verses (2-3 references) -->
+    <path d="M6 8h4M6 10h3M6 12h4M6 14h3" stroke="url(#scriptureGradient)" stroke-width="1" stroke-linecap="round" opacity="0.7" />
+    <path d="M14 8h4M14 10h3M14 12h4M14 14h3" stroke="url(#scriptureGradient)" stroke-width="1" stroke-linecap="round" opacity="0.7" />
+    <!-- Divine light from scripture -->
+    <path d="M12 2l0.5 1.5M12 2l-0.5 1.5M12 2l1.2 1M12 2l-1.2 1" stroke="#fbbf24" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+    <!-- Numbers 2 & 3 representing "2 or 3 Bible verses" -->
+    <circle cx="8" cy="14" r="1" fill="#fbbf24" opacity="0.8" />
+    <circle cx="16" cy="10" r="1" fill="#fbbf24" opacity="0.8" />
+  </svg>
+)}
+
+{name === "belief" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Belief icon"
+  >
+    <!-- Belief/Faith Icon - Beautiful styled checkmark -->
+    <defs>
+      <linearGradient id="beliefGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="heavenlyGradient" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3" />
+      </radialGradient>
+    </defs>
+    <!-- Beautiful checkmark -->
+    <path
+      d="M6 12l4 4 8-8"
+      stroke="url(#beliefGradient)"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"
+    />
+    <!-- Checkmark glow effect -->
+    <path
+      d="M6 12l4 4 8-8"
+      stroke="url(#heavenlyGradient)"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"
+      opacity="0.4"
+    />
+    <!-- Divine sparkles around checkmark -->
+    <circle cx="5" cy="10" r="0.8" fill="url(#heavenlyGradient)" opacity="0.9" />
+    <circle cx="19" cy="6" r="0.8" fill="url(#heavenlyGradient)" opacity="0.9" />
+    <circle cx="8" cy="18" r="0.6" fill="url(#heavenlyGradient)" opacity="0.8" />
+    <circle cx="16" cy="4" r="0.6" fill="url(#heavenlyGradient)" opacity="0.8" />
+    <circle cx="12" cy="20" r="0.5" fill="url(#heavenlyGradient)" opacity="0.7" />
+    <circle cx="3" cy="14" r="0.5" fill="url(#heavenlyGradient)" opacity="0.7" />
+    <!-- Additional light rays -->
+    <path
+      d="M10 16l1 1M10 16l-1 1M10 16l0 2M10 16l-2 0"
+      stroke="url(#heavenlyGradient)"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.6"
+    />
+  </svg>
+)}
+
+{name === "warfare" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Warfare icon"
+  >
+    <!-- Spiritual Warfare Icon - Shield and sword with divine armor -->
+    <defs>
+      <linearGradient id="warfareGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <!-- Shield of faith -->
+    <path d="M12 2l-6 4v6c0 4 6 8 6 8s6-4 6-8V6l-6-4z" fill="none" stroke="url(#warfareGradient)" stroke-width="2" />
+    <!-- Cross on shield -->
+    <path d="M12 6v8M9 10h6" stroke="url(#warfareGradient)" stroke-width="1.5" stroke-linecap="round" />
+    <!-- Sword of the Spirit -->
+    <path d="M16 8l4 4-2 2-4-4" stroke="url(#warfareGradient)" stroke-width="2" stroke-linecap="round" />
+    <circle cx="18" cy="12" r="1" fill="url(#warfareGradient)" />
+    <!-- Spiritual battle elements -->
+    <path d="M4 16c1-1 2-1 3 0M4 18c1-1 2-1 3 0" stroke="url(#warfareGradient)" stroke-width="1" stroke-linecap="round" opacity="0.6" />
+    <!-- Divine protection aura -->
+    <circle cx="12" cy="12" r="9" fill="none" stroke="#fbbf24" stroke-width="0.5" opacity="0.4" />
+  </svg>
+)}
+
+{name === "spirit-guidance" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Spirit guidance icon"
+  >
+    <!-- Holy Spirit Guidance Icon - Divine light appearing -->
+    <defs>
+      <linearGradient id="spiritGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="divineGradient" cx="50%" cy="50%" r="60%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+        <stop offset="30%" style="stop-color:#f59e0b;stop-opacity:0.8" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.1" />
+      </radialGradient>
+    </defs>
+    <!-- Central divine light -->
+    <circle
+      cx="12"
+      cy="12"
+      r="4"
+      fill="url(#spiritGradient)"
+      opacity="0.9"
+    />
+    <!-- Inner bright core -->
+    <circle
+      cx="12"
+      cy="12"
+      r="2"
+      fill="url(#divineGradient)"
+    />
+    <!-- Divine light rays extending outward -->
+    <path
+      d="M12 4v4M12 16v4M4 12h4M16 12h4"
+      stroke="url(#divineGradient)"
+      stroke-width="3"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+    <!-- Diagonal light rays -->
+    <path
+      d="M6.3 6.3l2.8 2.8M14.9 14.9l2.8 2.8M17.7 6.3l-2.8 2.8M9.1 14.9l-2.8 2.8"
+      stroke="url(#divineGradient)"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      opacity="0.7"
+    />
+    <!-- Smaller radiating rays -->
+    <path
+      d="M12 2v1M12 21v1M2 12h1M21 12h1"
+      stroke="url(#divineGradient)"
+      stroke-width="2"
+      stroke-linecap="round"
+      opacity="0.6"
+    />
+    <!-- Additional gentle rays -->
+    <path
+      d="M5.5 5.5l1 1M17.5 17.5l1 1M18.5 5.5l-1 1M6.5 17.5l-1 1"
+      stroke="url(#divineGradient)"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.5"
+    />
+    <!-- Divine sparkles around the light -->
+    <circle cx="8" cy="6" r="0.8" fill="url(#spiritGradient)" opacity="0.8" />
+    <circle cx="16" cy="6" r="0.8" fill="url(#spiritGradient)" opacity="0.8" />
+    <circle cx="6" cy="16" r="0.6" fill="url(#spiritGradient)" opacity="0.7" />
+    <circle cx="18" cy="18" r="0.6" fill="url(#spiritGradient)" opacity="0.7" />
+    <circle cx="6" cy="8" r="0.4" fill="url(#spiritGradient)" opacity="0.6" />
+    <circle cx="18" cy="16" r="0.4" fill="url(#spiritGradient)" opacity="0.6" />
+  </svg>
+)}
+
+{name === "spiritual-prayer" && (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    class={className}
+    role="img"
+    aria-label="Spiritual prayer icon"
+  >
+    <!-- Spiritual Prayer/Tongues Icon - Praying figure with divine languages -->
+    <defs>
+      <linearGradient id="spiritualGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#eab308;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#ca8a04;stop-opacity:1" />
+      </linearGradient>
+      <radialGradient id="tonguesGradient" cx="50%" cy="30%" r="70%">
+        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.8" />
+        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.2" />
+      </radialGradient>
+    </defs>
+    <!-- Praying figure -->
+    <circle cx="12" cy="6" r="2" fill="url(#spiritualGradient)" opacity="0.8" />
+    <path d="M12 8c-1 0-2 1-2 2v6c0 1 1 2 2 2s2-1 2-2v-6c0-1-1-2-2-2z" fill="url(#spiritualGradient)" opacity="0.7" />
+    <!-- Praying hands -->
+    <path d="M10 12c-0.5-0.5-1-1-1-1.5 0-0.5 0.5-1 1-1 0.5 0 1 0.5 1 1v3" fill="url(#spiritualGradient)" opacity="0.9" />
+    <path d="M14 12c0.5-0.5 1-1 1-1.5 0-0.5-0.5-1-1-1-0.5 0-1 0.5-1 1v3" fill="url(#spiritualGradient)" opacity="0.9" />
+    <!-- Divine languages/tongues flowing upward -->
+    <path d="M8 4c1 0 2 1 2 2M16 4c-1 0-2 1-2 2" stroke="url(#tonguesGradient)" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <path d="M6 6c2 0 3 1 4 2M18 6c-2 0-3 1-4 2" stroke="url(#tonguesGradient)" stroke-width="1.5" stroke-linecap="round" opacity="0.6" />
+    <path d="M4 8c3 0 4 1 6 2M20 8c-3 0-4 1-6 2" stroke="url(#tonguesGradient)" stroke-width="1" stroke-linecap="round" opacity="0.5" />
+    <!-- Divine presence -->
+    <circle cx="12" cy="10" r="8" fill="none" stroke="url(#tonguesGradient)" stroke-width="0.5" opacity="0.3" />
+  </svg>
+)}

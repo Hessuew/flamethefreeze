@@ -7,7 +7,7 @@ import Features from "~/components/widgets/Features.astro";
 import Heart from "~/components/widgets/Heart.astro";
 import Testimonials from "~/components/widgets/Testimonials.astro";
 import GradientText from "~/components/ui/GradientText.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 import no_cake_and_coffee from "~/assets/images/no_cake_and_coffee.webp";
 import andrew_and_juhani from "~/assets/images/andrew_and_juhani.webp";
 
@@ -15,11 +15,12 @@ const metadata = {
   title: "About us",
 };
 
-const lang = getLangFromUrl(Astro.url);
+const { lang = "en" } = Astro.props;
+
 const t = useTranslations(lang);
 ---
 
-<Layout metadata={metadata}>
+<Layout lang={lang} metadata={metadata}>
   <!-- HeroText Widget ******************* -->
 
   <Hero

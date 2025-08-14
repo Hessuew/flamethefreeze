@@ -65,7 +65,7 @@
 /* Enhanced Mobile Menu */
 #header.expanded nav {
   position: fixed;
-  top: 50px;
+  top: var(--mobile-nav-top, 120px);
   left: 0;
   right: 0;
   bottom: 0px !important;

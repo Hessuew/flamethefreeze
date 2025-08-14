@@ -3,18 +3,19 @@ import { getPermalink } from "~/utils/permalinks";
 import { Icon } from "astro-icon/components";
 import Image from "astro/components/Image.astro";
 import type { MenuLink } from "./Header.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 import { ui } from "~/i18n/ui";
+import { getLanguageRoute } from "~/navigation";
 
 interface Props {
   links: Array<MenuLink>;
   currentPath: string;
+  lang?: "fi" | "en";
 }
 
-const { links, currentPath } = Astro.props;
+const { links, currentPath, lang } = Astro.props;
 
-const lang = getLangFromUrl(Astro.url);
-const t = useTranslations(lang);
+const t = useTranslations(lang || "en");
 ---
 
 <div
@@ -50,7 +51,7 @@ const t = useTranslations(lang);
                           "first:rounded-t last:rounded-b py-1 xl:py-[4px] px-2 xl:px-[8px] block whitespace-no-wrap group",
                           { "aw-link-active": href === currentPath },
                         ]}
-                        href={getPermalink(`${lang}/${href}`)}
+                        href={getPermalink(getLanguageRoute(href || "", lang || "en"))}
                       >
                         <div class="flex items-center gap-2 xl:gap-[8px]">
                           {icon && (
@@ -81,7 +82,7 @@ const t = useTranslations(lang);
                     <li class="group">
                       <a
                         class="relative block h-24 xl:h-[96px] rounded-lg transform-gpu overflow-hidden ring-0 ring-gray-700 group-hover:ring-1 transition duration-200"
-                        href={getPermalink(`${lang}/${href}`)}
+                        href={getPermalink(getLanguageRoute(href || "", lang || "en"))}
                       >
                         {image && (
                           <Image

@@ -7,18 +7,19 @@ import Content from "~/components/widgets/Content.astro";
 import Features from "~/components/widgets/Features.astro";
 import Features3 from "~/components/widgets/Features3.astro";
 import GradientText from "~/components/ui/GradientText.astro";
-import { getLangFromUrl, useTranslations } from "~/i18n/utils";
+import { useTranslations } from "~/i18n/utils";
 import { YouTube } from "astro-embed";
 
 const metadata = {
   title: "The Five Fold",
 };
 
-const lang = getLangFromUrl(Astro.url);
+const { lang = "en" } = Astro.props;
+
 const t = useTranslations(lang);
 ---
 
-<Layout metadata={metadata}>
+<Layout lang={lang} metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
   <Hero tagline={t("fivefold.hero.tagline")} subtitle={t("fivefold.hero.subtitle")}>

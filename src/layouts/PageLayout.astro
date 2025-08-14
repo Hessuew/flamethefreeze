@@ -8,25 +8,32 @@ import { headerData } from "~/navigation";
 
 import type { MetaData } from "~/types";
 
-export interface Props {
+interface Props {
   metadata?: MetaData;
   siteRebuildStatus?: { status?: "notStarted" | "inProgress" | "completed"; display?: boolean };
+  lang?: "fi" | "en";
 }
 
-const { metadata, siteRebuildStatus } = Astro.props;
+export type PageLayoutProps = {
+  metadata: Props["metadata"];
+  siteRebuildStatus: Props["siteRebuildStatus"];
+  lang: "fi" | "en";
+};
+
+const { metadata, siteRebuildStatus, lang } = Astro.props;
 ---
 
 <Layout metadata={metadata}>
   <slot name="announcement">
-    <Announcement siteRebuildStatus={siteRebuildStatus} />
+    <Announcement lang={lang} siteRebuildStatus={siteRebuildStatus} />
   </slot>
   <slot name="header">
-    <Header {...headerData} showToggleTheme={false} isSticky />
+    <Header {...headerData} lang={lang} showToggleTheme={false} isSticky />
   </slot>
   <main>
     <slot />
   </main>
   <slot name="footer">
-    <Footer />
+    <Footer lang={lang} />
   </slot>
 </Layout>
