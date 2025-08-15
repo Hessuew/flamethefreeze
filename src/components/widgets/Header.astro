@@ -154,12 +154,16 @@ const t = useTranslations(lang);
                             >
                               <div class="flex items-center gap-2">
                                 {icon && (
-                                  <Icon name={icon} class="w-5 h-5 mt-0.5 text-white group-active:text-orange-600" />
+                                  <Icon
+                                    name={icon}
+                                    class="min-w-5 min-h-5 w-5 h-5 mt-0.5 text-white group-active:text-orange-600"
+                                  />
                                 )}
                                 <div>
-                                  <div class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-active:from-orange-600 group-active:to-yellow-500">
-                                    {text2 ? t(text2 as keyof typeof ui.en) : text2}
-                                  </div>
+                                  <div
+                                    class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-active:from-orange-600 group-active:to-yellow-500"
+                                    set:html={text2 ? t(text2 as keyof typeof ui.en) : text2}
+                                  />
                                   {description && (
                                     <div class="text-sm text-gray-400">
                                       {description ? t(description as keyof typeof ui.en) : description}
