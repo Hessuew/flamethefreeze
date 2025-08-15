@@ -94,9 +94,10 @@ const t = useTranslations(lang || "en");
                         )}
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20" />
                         <div class="absolute bottom-0 left-0 p-4 xl:p-[16px] py-2 xl:py-[8px]">
-                          <span class="text-white font-medium xl:text-[16px] xl:leading-[24px]">
-                            {text ? t(text as keyof typeof ui.en) : text}
-                          </span>
+                          <span
+                            class="text-white font-medium xl:text-[16px] xl:leading-[24px]"
+                            set:html={text ? t(text as keyof typeof ui.en) : text}
+                          ></span>
                         </div>
                       </a>
                     </li>
