@@ -2,11 +2,13 @@ import type { MenuLink } from "./components/widgets/Header.astro";
 import prayer from "~/assets/images/fire_of_god_and_fire_for_god-prayer.webp";
 import word from "~/assets/images/word.webp";
 import smith from "~/assets/images/witnesses/flame_the_freeze_smith_wigglesworth.webp";
+import free_you_from_your_sins from "~/assets/images/holyGhost/what_does_the_holy_ghost_do-free_you_from_your_sins.webp";
 
 // Language route pairs mapping
 export const routePairs: Record<string, string> = {
   "/": "/jumalan-tuli",
   "/prayer-for-works": "/miten-rukoilla",
+  "/what-does-the-holy-ghost-do": "/pyhä-henki",
 };
 
 // Helper function to get the opposite route
@@ -64,6 +66,8 @@ export const getLanguageRoute = (href: string, targetLang: "en" | "fi"): string 
   // Map navigation hrefs to route pairs
   const hrefToRouteMap: Record<string, string> = {
     prayer: "/prayer-for-works",
+    about: "/what-does-the-holy-ghost-do",
+    "holy-ghost": "/what-does-the-holy-ghost-do",
     // Add more mappings as needed for other navigation items
   };
 
@@ -128,6 +132,12 @@ export const headerData: { links: Array<MenuLink> } = {
           description: "header.description5",
         },
         {
+          text: "header.link7",
+          href: "events",
+          icon: "tabler:calendar-event",
+          description: "header.description7",
+        },
+        {
           text: "header.link6",
           href: "fivefold",
           icon: "tabler:diamond",
@@ -138,10 +148,14 @@ export const headerData: { links: Array<MenuLink> } = {
           },
         },
         {
-          text: "header.link7",
-          href: "events",
-          icon: "tabler:calendar-event",
-          description: "header.description7",
+          text: "header.link8",
+          href: "holy-ghost",
+          icon: "tabler:brand-tailwind",
+          description: "header.description8",
+          image: {
+            src: free_you_from_your_sins,
+            alt: "What does the Holy Ghost do? Free you from your sins",
+          },
         },
       ],
     },

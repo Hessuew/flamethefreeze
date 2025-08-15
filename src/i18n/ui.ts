@@ -188,6 +188,58 @@ export const ui = {
     "prayer.cta.subtitle.1":
       "Start implementing these prayer strategies today and watch God work miracles in your professional journey.",
     "prayer.cta.button": "What's next?",
+    "about.hero.title.1": "What does the",
+    "about.hero.title.2": "Holy Ghost do?",
+    "about.hero.subtitle": "Discover what does the Holy Ghost do with a 7-Point list. Power of the Holy Ghost in 2025?",
+    "about.hero.cta.button": "7-point: What does the Holy Ghost do?",
+    "about.prayerPoints.1.title": "What is the Holy Ghost?",
+    "about.prayerPoints.1.subtitle":
+      "Can a rock speak? 🪨 Can a cloud act? 🌧 Does water have a will? 🌊 Can a tree feel? 🌳 Can a plant have identity? 🌿 Is car a 'he' or 'she'? 🚗 Naturally no. Then naturally the Holy Ghost is a person: 'When he is come.. he will guide you' ... 'The Holy Ghost said, Separate unto me'. <br /> Is a finger of God part of God? ☝️ Did God lead the Israelites in the wilderness and was grieved with them? 🏞️😔 Naturally yes. So the Holy Ghost is God, 'If I with the finger of God cast out devils' ... 'Wherefore (as the Holy Ghost saith .. Wherefore I was grieved with that generation'",
+    "about.prayerPoints.1.bibleQuote":
+      '"The grace of the Lord Jesus Christ, and the love of God, <span class="underline">and the communion of the Holy Ghost</span>, be with you all. Amen" - 2 Corinthians 13:14',
+    "about.prayerPoints.2.title": "He reveals",
+    "about.prayerPoints.2.subtitle":
+      "The Holy Ghost is a revealer of secrets. 🔐 The things of the spirit cannot be discerned easily but the spirit of God is an expert in this matter. 🏆 First he reveals Jesus, and his work at Calvary. ✝️ Second he opens the word of God. 📜 Third He reveals the Father. 👨‍👦 Fourth he reveals the mysteries of the kingdom of God. 👑",
+    "about.prayerPoints.2.bibleQuote": `"But God hath revealed them unto us by his Spirit: for the Spirit searcheth all things, yea, the deep things of God." - 1 Corinthians 2:10`,
+    "about.prayerPoints.3.title": "He is a friend",
+    "about.prayerPoints.3.subtitle":
+      "Jesus never performed a miracle without the Holy Ghost.❌ Jesus could not perform a miracle without him. Only after he came the supernatural began.🌟 You cannot know God without him. 🤝 You cannot even approach God without him. All these things are enabled, and made possible by him.✅ But it all comes through a fellowship. 🤝 He is a friend.",
+    "about.prayerPoints.3.bibleQuote":
+      '"A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother." - Proverbs 18:24',
+    "about.prayerPoints.4.title": "He brings heaven to the earth",
+    "about.prayerPoints.4.subtitle":
+      "The only authorized messenger to bring heaven to the earth is the Holy Ghost. 📦 Angels bring messages or help as God commands them but the Holy Spirit brings heaven itself to the earth.🌅 Heaven is something you can experience or see others experience. 😄 The perfect inner rest, peace, and joy are marks that this heaven has come to dwell and remain within a person. 💚🏕️🌿🌲🌳☘️",
+    "about.prayerPoints.4.bibleQuote":
+      '"For the kingdom of God is not meat and drink; but righteousness, and peace, and joy in the Holy Ghost." - Romans 14:17',
+    "about.prayerPoints.5.title": "He is a bestseller",
+    "about.prayerPoints.5.subtitle":
+      "Who has written the bestseller of all times?🖊️ The Holy Ghost. He wrote the Bible. His skill, and understanding of the Bible is without a match.⛓️‍💥 Therefore when he comes the scriptures became so vivid, and alive, like you would be watching a movie in the biggest rollercoaster in the world.🎢 And it sinks to the heart.❤️ The change of an individual from a murderer to the most kind, and respectful person is by him.🦋",
+    "about.prayerPoints.5.bibleQuote":
+      '"Knowing this first, that no prophecy of the scripture is of any private interpretation. For the prophecy came not in old time by the will of man: but holy men of God spake as they were moved by the Holy Ghost." - 2 Peter 1:20-21',
+    "about.prayerPoints.6.title": "He is the Greater One",
+    "about.prayerPoints.6.subtitle":
+      "You don't own your body after the Holy Ghost comes to live within.🏠 The old things are past away, and now your life is to glorify Jesus.👉👑 But the ability does not comes from you but from the Greater One himself.🌀 He will do the work. But you must let him work.👀 So you lose your ability, and he will bring his own. It's an exchange from the natural, and weak to the divine, and strong.🚀",
+    "about.prayerPoints.6.bibleQuote":
+      '"But ye shall receive power, after that the Holy Ghost is come upon you." - Acts 1:8',
+    "about.prayerPoints.7.title": "He will finish the work upon earth",
+    "about.prayerPoints.7.subtitle":
+      "The fields are ready to harvest but the laborers are few.🤏 Why don't you then ask the Lord of the harvest to send some more labourers?➕ Let the wind blow the harvest in to the barns of heaven.📦📦📦 Something needs to be learned: when he is come he will show to the world.👐 Only he can show God to the world. There is no human method for that, only the power of the Holy Ghost can turn the hearts of men back to God ❤️❤️☝️🌅",
+    "about.prayerPoints.7.bibleQuote":
+      '"No man can come to me, except the Father which hath sent me draw him" - John 6:44',
+    "about.what.title.1": "What does the",
+    "about.what.title.2": "Holy Ghost",
+    "about.what.title.3": "do? 👨‍💻",
+    "about.what.tagline": "What",
+    "about.what.subtitle.1": "Sometimes you cannot explain it. You just need to experience it yourself 👥",
+    "about.what.subtitle.2": "You can only ",
+    "about.what.subtitle.3": "really",
+    "about.what.subtitle.4": " understand what does the Holy Ghost do when you have a personal encounter.🤜🤛",
+    "about.what.images.1.alt": "What does the Holy Ghost do: Set your heart on fire",
+    "about.what.images.1.title": "Ask him to reveal himself to you. And ask forgiveness for neglecting him before 🙏",
+    "about.what.images.2.alt": "What does the Holy Ghost do: Fill you, and use you",
+    "about.what.images.2.title": "Ask his divine life to fill you completely. 'Fill me, use me, shape me'🍷🚰",
+    "about.what.images.3.alt": "What does the Holy Ghost do: Free you from your sins",
+    "about.what.images.3.title": "Ask his power to break your sins. 'Free me forever, I'm yours now'🧎",
     "": "",
     "about.herotext.tagline": "About us",
     "about.herotext.title1": "Here you will ",
@@ -657,16 +709,15 @@ export const ui = {
       "So if your local church is full of grown-up adult babies either on the pew or pulpit, screaming daily for spiritual feeding bottles, it is a spiritual emergency! Please kindly invite a teacher.",
     "fivefold.content5.content1": "From the Greek, didaskalos:",
     "fivefold.content5.content2": "one who seeks and shares the truth",
-    "footer.about": "About us",
     "footer.prayerChurch": "Prayer Church",
     "footer.titleDescription": "Flaming the whole globe for Jesus with the Holy Ghost and with power.",
     "footer.allRights": "All rights reserved",
     "header.flameUp": "Flame Up",
     "header.resources": "Resources",
-    "header.link1": "Word",
-    "header.description1": "The word of God is quick and powerful",
-    "header.link2": "Prayer",
-    "header.description2": "We can't without God, and God won't without us",
+    "header.link1": "The power of the words",
+    "header.description1": "Explore how the power of the words can shape your life and bring forth a change",
+    "header.link2": "Prayer for works",
+    "header.description2": "Discover a 7-Point list to add the fire of God to your profession through prayer for works",
     "header.link3": "Church",
     "header.description3": "How does a biblical church look like in 2100 century?",
     "header.link4": "Devotions",
@@ -677,6 +728,8 @@ export const ui = {
     "header.description6": "When he ascended up on high he gave gifts unto men",
     "header.link7": "Events",
     "header.description7": "They continued steadfastly in doctrine and fellowship",
+    "header.link8": "What does the<br />Holy Ghost do?",
+    "header.description8": "Discover 7-point list of what the Holy Ghost does.",
     "index.hero0.title1": "Our purpose is not to build a megachurch, but to",
     "index.hero0.title2": " the whole body of Christ in the",
     "index.hero0.title3": " of the Spirit,",
@@ -1528,6 +1581,62 @@ export const ui = {
     "prayer.cta.subtitle.1":
       "Ota tämä 7 kohdan miten rukoilla -lista käyttöösi ja kuinka alat saamaan vastauksia rukouksiisi. Rukouksen voima kuuluu myös sinulle.",
     "prayer.cta.button": "Mitäs seuraavaksi?",
+    "about.hero.title.1": "Pyhä Henki,",
+    "about.hero.title.2": "Mitä hän tekee?",
+    "about.hero.subtitle": "Opi, mitä Pyhä Henki tekee 7 kohdan listan kautta. Pyhän Hengen voima vuonna 2025?",
+    "about.hero.cta.button": "7 kohtaa: Pyhä Henki, mitä hän tekee?",
+    "about.prayerPoints.1.title": "Mikä Pyhä Henki on?",
+    "about.prayerPoints.1.subtitle":
+      "Voiko kivi puhua?🪨 Voiko pilvi tehdä jotain?🌧 Onko vedellä oma tahto?🌊 Voiko puu tuntea?🌳 Onko kasvilla persoona?🌿 Onko auto 'hän'?🚗 Tietenkään ei. Joten luonnollisesti Pyhä Henki on henkilö: 'Kun hän tulee.. hän ohjaa teidät' ... 'Pyhä Henki sanoi, erottakaa minulle'. <br /> Onko Jumalan sormi osa Jumalaa?☝️ Johtiko Jumala Israelilaisia autiomaassa ja oliko hän heille vihainen?🏞️😔 Tietenkin kyllä. Joten Pyhä Henki on Jumala, 'Jos minä Jumalan sormella ajan ulos pahoja henkiä' ... 'Sen tähden, niin kuin Pyhä Henki sanoo .. Minä vihastuin tähän sukupolveen'",
+    "about.prayerPoints.1.bibleQuote":
+      '"Herran Jeesuksen Kristuksen armo, Jumalan rakkaus <span class="underline">ja Pyhän Hengen yhteys</span> olkoon kaikkien teidän kanssanne! " - 2 Korinttilaisille 13:13',
+    "about.prayerPoints.2.title": "Hän paljastaa",
+    "about.prayerPoints.2.subtitle":
+      "Pyhä Henki paljastaa salaisuuksia.🔐 Hengen asioita ei voi helposti havaita, mutta Pyhä Henki on expertti tässä asiassa.🏆 Ensin hän paljastaa Jeesuksen ja hänen ristintyönsä.✝️ Toiseksi hän avaa Jumalan Sanan.📜 Kolmanneksi hän paljastaa Isän.👨‍👦 Neljänneksi hän paljastaa Jumalan valtakunnan salaisuudet.👑",
+    "about.prayerPoints.2.bibleQuote": `"Sen Jumala on meille ilmoittanut Henkensä kautta, sillä Henki tutkii kaiken, Jumalan syvyydetkin." - 1 Korinttilaisille 2:10`,
+    "about.prayerPoints.3.title": "Hän on ystävä",
+    "about.prayerPoints.3.subtitle":
+      "Jeesus ei ikinä tehnyt yhtään ihmettä ilman Pyhää Henkeä.❌ Jeesus ei pystynyt tekemään mitään ilman häntä. Vasta sen jälkeen kun hän tuli yliluonnollinen alkoi.🌟 Et voi tuntea Jumalaa ilman häntä.🤝 Et voi edes lähestyä Jumalaa ilman häntä. Kaikki nämä asiat ovat mahdollisia hänen kauttaan.✅ Mutta tämä kaikki tapahtuu yhteyden kautta.🤝 Hän on ystävä.",
+    "about.prayerPoints.3.bibleQuote":
+      '"Vahingokseen mies on monien ystävä, mutta on myös ystäviä, veljiäkin uskollisempia. " - Sananlaskust 18:24',
+    "about.prayerPoints.4.title": "Hän tuo taivaan maan päälle",
+    "about.prayerPoints.4.subtitle":
+      "Ainut valtuutettu lähettiläs, joka tuo taivaan maan päälle, on Pyhä Henki.📦 Enkelit tuovat viestejä tai apua Jumalan käskyjen mukaan, mutta Pyhä Henki tuo itsensä taivaan maan päälle.🌅 Taivas on jotain jonka voit kokea tai nähdä toisen kokevan sen.😄 Täydellinen sisäisen lepo, rauha ja ilo ovat merkkejä, että tämä taivas on tullut asumaan ja jäämään henkilön sisimpään.💚🏕️🌿🌲🌳☘",
+    "about.prayerPoints.4.bibleQuote":
+      '"Sillä Jumalan valtakunta ei ole syömistä ja juomista vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä." - Roomalaisille 14:17',
+    "about.prayerPoints.5.title": "Hän on bestseller",
+    "about.prayerPoints.5.subtitle":
+      "Kuka on kirjoittanut kaikkien aikojen bestsellerin?🖊️ Pyhä Henki tietenkin. Hän kirjoitti Raamatun. Hänen Raamatun taitonsa ja ymmärryksensä ovat vailla vertaa.⛓️‍💥 Eli kun hän tulee niin Sana tulee eläväksi ja niin aidoksi, ihan kuin katsoisit elokuvaa maailman parhaassa vuoristoradassa.🎢 Ja se uppoaa sydämeen.❤️ Se, että murhaaja muuttuu kiltiksi ja kunnioitettavaksi henkilöksi, on hänen työnsä tulosta.🦋",
+    "about.prayerPoints.5.bibleQuote":
+      '"Ennen kaikkea teidän tulee tietää, ettei yksikään Raamatun profetia ole kenenkään omin neuvoin selitettävissä, sillä mitään profetiaa ei ole koskaan tuotu esiin ihmisen tahdosta, vaan Pyhän Hengen johtamina ihmiset ovat puhuneet sen, minkä saivat Jumalalta." - 2 Pietari 1:20-21',
+    "about.prayerPoints.6.title": "Hän se 'Suurempi'",
+    "about.prayerPoints.6.subtitle":
+      "Et omista kehoasi, kun Pyhä Henki on tullut asumaan sydämeesi.🏠 Vanhat asiat ovat poissa ja nyt elämäsi on Jeesuksen kirkastamiseksi.👉👑 Mutta tämä kyky ei tule sinusta vaan tältä 'Suuremmalta' auttajalta.🌀 Hän tekee työn. Mutta sinun tulee antaa hänen tehdä työ.👀 Joten menetät omat kykysi ja hän antaa omansa. Kyseessä on luonnollisen ja heikon vaihtokauppa yliluonnolliseen ja vahvaan.🚀",
+    "about.prayerPoints.6.bibleQuote":
+      '"Mutta te saatte voiman, kun Pyhä Henki tulee teidän päällenne." - Apostolien teot 1:8',
+    "about.prayerPoints.7.title": "Hän viimeistelee työn maan päällä",
+    "about.prayerPoints.7.subtitle":
+      "Viljapellot ovat valmiina korjattavaksi, mutta työmiehiä on vähän.🤏 Miksemme sitten pyydä elon Herralta lisää työmiehiä?➕ Antaa tuulen puhaltaa vilja taivaan varastoihin.📦📦 Jotain on opittava: kun hän tulee hän näyttää maailmalle.👐 Vain hän voi näyttää Jumalan maailmalle. Mikään ihmis metodi ei pysty siihen, ainoastaan Pyhän Hengen voima voi kääntää ihmisten sydämet takaisin Jumalan puoleen ❤️❤️☝️🌅",
+    "about.prayerPoints.7.bibleQuote":
+      '"Ei kukaan voi tulla minun luokseni, ellei Isä, joka on minut lähettänyt, vedä häntä." - Johannes 6:44',
+    "about.what.title.1": "Pyhä Henki,",
+    "about.what.title.2": "Mitä hän tekee",
+    "about.what.title.3": "? 👨‍💻",
+    "about.what.tagline": "Mitä",
+    "about.what.subtitle.1": "Joskus et vain voi selittää sitä. Sinun vain täytyy kokea se itse 👥",
+    "about.what.subtitle.2": "Voit vasta ",
+    "about.what.subtitle.3": "todella",
+    "about.what.subtitle.4":
+      " ymmärtää, mitä Pyhä Henki tekee, kun saat henkilökohtaisen kohtaamisen Jumalan kanssa.🤜🤛",
+    "about.what.images.1.alt": "Mitä Pyhä Henki tekee: Sytyttää sydämesi tuleen",
+    "about.what.images.1.title":
+      "Pyydä, että hän ilmaisee itsensä sinulle. Ja pyydä anteeksi, että olet sivuuttanut hänet aikaisemmin 🙏",
+    "about.what.images.2.alt": "Mitä Pyhä Henki tekee: täyttää sinut ja käyttää sinua",
+    "about.what.images.2.title":
+      "Pyydä, että hänen elämänsä täyttää sinut kokonaan. 'Täytä minua, käytä minua, muokkaa minua'🍷🚰",
+    "about.what.images.3.alt": "Mitä Pyhä Henki tekee: vapauttaa sinut synneistäsi",
+    "about.what.images.3.title":
+      "Pyydä, että hänen voimansa vapauttaa sinut synnistä. 'Vapauta minut ikuisesti, minä ole nyt sinun'🧎",
     "": "",
     "index.hero.title1": "2Fire of God and",
     "about.herotext.tagline": "Meistä",
@@ -1961,16 +2070,15 @@ export const ui = {
     "fivefold.content5.items3.title": "Huomioita:",
     "fivefold.content5.items3.description":
       "Paikallisseurakuntasi voi olla täynä fyysisesti aukuisia, mutta hengellisesti vauvoja, on sitten kyse laumasta tai paimenesta. He huutavat jatkuvasti hengellisten tuttipullojensa perään. Tämä on hengellinen hätä tilanne! Kutsu nopeasti paikalle opettaja.",
-    "footer.about": "Meistä",
     "footer.prayerChurch": "Rukousseurakunta",
     "footer.titleDescription": "Sytyttämässä koko maailmaan tuleen Jeesukselle Pyhän Hengen ja voiman kautta.",
     "footer.allRights": "Kaikki oikeudet pidetään",
     "header.flameUp": "Syty tuleen",
     "header.resources": "Resursseja",
-    "header.link1": "Sana",
-    "header.description1": "Jumalan sana on elävä ja voimallinen",
-    "header.link2": "Rukous",
-    "header.description2": "Emme voi toimia ilman Jumalaa, ja Jumala ei toimi ilman meitä",
+    "header.link1": "Jumalan Sana",
+    "header.description1": "Opi miten Jumalan Sana muutaa elämääsi ja tekee sinussa valtavan muutoksen",
+    "header.link2": "Miten rukous toimii?",
+    "header.description2": "Opi 7 kohdan listasta miten rukoilla",
     "header.link3": "Seurakunta",
     "header.description3": "Miltä Raamatun seurakunta näyttää 2000-luvulla?",
     "header.link4": "Päivän sana",
@@ -1981,6 +2089,8 @@ export const ui = {
     "header.description6": "Kun hän nousi korkeuteen hän antoi lahjoja ihmisille",
     "header.link7": "Tapahtumat",
     "header.description7": "He jatkoivat uskollisesti opissa ja yhteydessä",
+    "header.link8": 'Pyhä Henki, <br class="hidden lg:block" />Mitä hän tekee?',
+    "header.description8": "Opi, mitä Pyhä Henki tekee 7 kohdan listan kautta.",
     "index.hero0.title1": "Emme hajota Kristuksen ruumista, vaan",
     "index.hero0.title2": " sen ",
     "index.hero0.title3": "ja ",

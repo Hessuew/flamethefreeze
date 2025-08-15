@@ -95,7 +95,7 @@ const prayerPoints: PrayerPoint[] = [
       <Fragment slot="title">
         <TextAnimate
           client:load
-          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter md:mb-4 xl:mb-[16px] font-heading text-white"
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tight tracking-tighter md:mb-4 xl:mb-[16px] font-heading text-white"
           animation="blurInUp"
           delay={1}
           duration={0.6}
@@ -106,7 +106,7 @@ const prayerPoints: PrayerPoint[] = [
 
         <TextAnimate
           client:load
-          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tighter tracking-tighter mb-4 xl:mb-[16px] font-heading text-orange-400"
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tight tracking-tighter mb-4 xl:mb-[16px] font-heading text-orange-400"
           animation="blurInUp"
           delay={1.6}
           duration={0.6}
@@ -114,8 +114,10 @@ const prayerPoints: PrayerPoint[] = [
           once={true}
           text={t("prayer.hero.title.2")}
         />
+      </Fragment>
 
-        <div class="max-w-md">
+      <Fragment slot="subtitle">
+        <div class="max-w-md mb-8 xl:mb-[32px]">
           <TextAnimate
             client:load
             className="text-xl xl:text-[20px] xl:leading-[28px] font-normal tracking-normal text-gray-200"
@@ -127,20 +129,16 @@ const prayerPoints: PrayerPoint[] = [
             text={t("prayer.hero.subtitle")}
           />
         </div>
-      </Fragment>
 
-      <Fragment slot="subtitle">
-        <div class="flex gap-4 mb-8 xl:gap-[16px] xl:mb-[32px]">
-          <BlurFade client:load delay={4.2} direction="up" inView>
-            <FireButton
-              href="#prayer-guide"
-              text={t("prayer.hero.cta.button")}
-              variant="primary"
-              size="small"
-              icon="tabler:corner-right-down"
-            />
-          </BlurFade>
-        </div>
+        <BlurFade client:load delay={4.2} direction="up" inView>
+          <FireButton
+            href="#prayer-guide"
+            text={t("prayer.hero.cta.button")}
+            variant="primary"
+            size="small"
+            icon="tabler:corner-right-down"
+          />
+        </BlurFade>
       </Fragment>
     </Hero>
   </div>
@@ -189,11 +187,31 @@ const prayerPoints: PrayerPoint[] = [
                 <div class="mb-6 xl:mb-[24px]">
                   <div class="flex justify-center mb-4 xl:mb-[16px]">
                     <div class="flex space-x-1 xl:space-x-[4px]">
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
                     </div>
                   </div>
                   <blockquote
@@ -231,11 +249,31 @@ const prayerPoints: PrayerPoint[] = [
                 <div class="mb-4 xl:mb-[16px]">
                   <div class="flex justify-center mb-3 xl:mb-[12px]">
                     <div class="flex space-x-1 xl:space-x-[4px]">
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
                     </div>
                   </div>
                   <blockquote
@@ -267,6 +305,8 @@ const prayerPoints: PrayerPoint[] = [
                 class="w-16 h-16 xl:w-[64px] xl:h-[64px] rounded-full bg-gradient-to-br from-purple-500/20 to-pink-600/20 border-2 border-dashed border-purple-400/50 flex items-center justify-center mb-4 xl:mb-[16px] group-hover:scale-110 transition-transform duration-300"
               >
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   class="w-8 h-8 xl:w-[32px] xl:h-[32px] text-purple-400"
                   fill="none"
                   stroke="currentColor"
@@ -308,11 +348,31 @@ const prayerPoints: PrayerPoint[] = [
                 <div class="mb-6 xl:mb-[32px]">
                   <div class="flex justify-center mb-4 xl:mb-[16px]">
                     <div class="flex space-x-1 xl:space-x-[4px]">
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
-                      <Icon name={"tabler:star-filled"} class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`} />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
+                      <Icon
+                        aria-hidden="true"
+                        name={"tabler:star-filled"}
+                        class={`w-4 h-4 xl:w-[16px] xl:h-[16px] text-yellow-400`}
+                      />
                     </div>
                   </div>
                   <blockquote

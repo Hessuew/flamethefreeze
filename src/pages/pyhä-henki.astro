@@ -1,0 +1,151 @@
+---
+import Template from "~/screens/holy-ghost.astro";
+
+import free_you_from_your_sins from "~/assets/images/holyGhost/what_does_the_holy_ghost_do-free_you_from_your_sins.webp";
+
+const metadata = {
+  title: "Pyhä Henki | Pyhän Hengen Voima ja Persoona 2025",
+  description:
+    "Tutustu Pyhä Henki -opetukseen ja koe Pyhän Hengen voima. Opi Pyhän Hengen persoonasta, jumalallisesta ohjauksesta ja hengellisestä muutoksesta.",
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+  },
+  openGraph: {
+    type: "article",
+    locale: "fi_FI",
+    url: "https://flamethefreeze.com/pyhä-henki",
+    siteName: "Flame the Freeze",
+    title: "Pyhä Henki | Pyhän Hengen Voima ja Persoona",
+    description:
+      "Tutustu Pyhä Henki -opetukseen ja koe Pyhän Hengen voima. Opi Pyhän Hengen persoonasta ja jumalallisesta ohjauksesta.",
+    image: free_you_from_your_sins,
+  },
+  twitter: {
+    handle: "@FlameTheFreeze",
+    site: "@FlameTheFreeze",
+    cardType: "summary_large_image",
+    title: "Pyhä Henki | Pyhän Hengen Voima ja Persoona",
+    description:
+      "Tutustu Pyhä Henki -opetukseen ja koe Pyhän Hengen voima. Opi Pyhän Hengen persoonasta ja jumalallisesta ohjauksesta.",
+  },
+  ignoreTitleTemplate: true,
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://flamethefreeze.com/#organization",
+      name: "Flame the Freeze",
+      url: "https://flamethefreeze.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://flamethefreeze.com" + free_you_from_your_sins,
+      },
+      description: "Kristillinen palvelutyö keskittyen Pyhä Henki -opetukseen ja hengelliseen muutokseen",
+      sameAs: ["https://twitter.com/FlameTheFreeze"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://flamethefreeze.com/#website",
+      url: "https://flamethefreeze.com",
+      name: "Flame the Freeze",
+      publisher: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://flamethefreeze.com/pyhä-henki#webpage",
+      url: "https://flamethefreeze.com/pyhä-henki",
+      name: "Pyhä Henki | Pyhän Hengen Voima ja Persoona",
+      description:
+        "Tutustu Pyhä Henki -opetukseen ja koe Pyhän Hengen voima. Opi Pyhän Hengen persoonasta, jumalallisesta ohjauksesta ja hengellisestä muutoksesta.",
+      isPartOf: {
+        "@id": "https://flamethefreeze.com/#website",
+      },
+      about: [
+        {
+          "@type": "Thing",
+          name: "Pyhä Henki",
+          description: "Kolminaisuuden kolmas persoona, joka voimaannuttaa, ohjaa ja muuttaa uskovia",
+        },
+        {
+          "@type": "Thing",
+          name: "Pyhän Hengen Voima",
+          description: "Pyhän Hengen antama yliluonnollinen voimaannutus ja lahjat uskovia varten",
+        },
+      ],
+      mainEntity: {
+        "@id": "https://flamethefreeze.com/pyhä-henki#article",
+      },
+    },
+    {
+      "@type": "Article",
+      "@id": "https://flamethefreeze.com/pyhä-henki#article",
+      headline: "Pyhä Henki: Pyhän Hengen Voiman ja Persoona",
+      description: "Kattava opas Pyhä Henki -opetukseen ja Pyhän Hengen voiman kokemiseen hengellisessä elämässäsi.",
+      author: {
+        "@type": "Organization",
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      publisher: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      datePublished: "2025-01-01",
+      dateModified: "2025-01-15",
+      mainEntityOfPage: {
+        "@id": "https://flamethefreeze.com/pyhä-henki#webpage",
+      },
+      keywords:
+        "pyhä henki, pyhän hengen voima, pyhän hengen persoona, jumalallinen ohjaus, hengellinen muutos, pyhän hengen kaste, helluntailainen voima, yliluonnollinen voimaannutus",
+      about: ["Pyhä Henki", "Pyhän Hengen Voima", "Pyhän Hengen Lahjat", "Jumalallinen Ohjaus", "Hengellinen Muutos"],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://flamethefreeze.com/pyhä-henki#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Mitä Pyhä Henki tekee uskojan elämässä?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Pyhä Henki voimaannuttaa uskovia hengellisillä lahjoilla, antaa jumalallista ohjausta, muuttaa sydämiä, vakuuttaa synnistä ja mahdollistaa yliluonnollisen elämän. Pyhän Hengen voima ilmenee lahjojen kuten profetian, parantamisen, kielten ja viisauden kautta.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kuinka voin kokea Pyhän Hengen voiman?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Voit kokea Pyhän Hengen voiman rukouksen, uskon, Pyhän Hengen kasteen, Raamatun lukemisen ja Jumalan tahdolle antautumisen kautta. Pyhä Henki vaikuttaa halukkaisiin sydämiin, jotka etsivät hengellistä muutosta.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Mitä ovat Pyhän Hengen lahjat?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Pyhän Hengen lahjat sisältävät viisauden, tiedon, uskon, parantamisen, ihmeet, profetian, henkien erottelun, kielet ja kielten tulkinnan. Nämä yliluonnolliset lahjat osoittavat Pyhän Hengen voimaa uskovien elämässä.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Onko Pyhä Henki sama kuin Pyhä Henki?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Kyllä, Pyhä Henki viittaa Jumalan Henkeen - kolminaisuuden kolmanteen jäseneen. Pyhä Henki asuu uskovina ja osoittaa voimaansa hengellisten lahjojen ja muutoksen kautta.",
+          },
+        },
+      ],
+    },
+  ],
+};
+---
+
+<Template lang="fi" metadata={{ ...metadata, structuredData }} siteRebuildStatus={{ status: "completed" }} />

@@ -1,5 +1,4 @@
 ---
-import { getPermalink } from "~/utils/permalinks";
 import { Icon } from "astro-icon/components";
 import Image from "astro/components/Image.astro";
 import type { MenuLink } from "./Header.astro";
@@ -51,7 +50,7 @@ const t = useTranslations(lang || "en");
                           "first:rounded-t last:rounded-b py-1 xl:py-[4px] px-2 xl:px-[8px] block whitespace-no-wrap group",
                           { "aw-link-active": href === currentPath },
                         ]}
-                        href={getPermalink(getLanguageRoute(href || "", lang || "en"))}
+                        href={getLanguageRoute(href || "", lang || "en")}
                       >
                         <div class="flex items-center gap-2 xl:gap-[8px]">
                           {icon && (
@@ -82,7 +81,7 @@ const t = useTranslations(lang || "en");
                     <li class="group">
                       <a
                         class="relative block h-24 xl:h-[96px] rounded-lg transform-gpu overflow-hidden ring-0 ring-gray-700 group-hover:ring-1 transition duration-200"
-                        href={getPermalink(getLanguageRoute(href || "", lang || "en"))}
+                        href={getLanguageRoute(href || "", lang || "en")}
                       >
                         {image && (
                           <Image
@@ -95,9 +94,10 @@ const t = useTranslations(lang || "en");
                         )}
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20" />
                         <div class="absolute bottom-0 left-0 p-4 xl:p-[16px] py-2 xl:py-[8px]">
-                          <span class="text-white font-medium xl:text-[16px] xl:leading-[24px]">
-                            {text ? t(text as keyof typeof ui.en) : text}
-                          </span>
+                          <span
+                            class="text-white font-medium xl:text-[16px] xl:leading-[24px]"
+                            set:html={text ? t(text as keyof typeof ui.en) : text}
+                          ></span>
                         </div>
                       </a>
                     </li>

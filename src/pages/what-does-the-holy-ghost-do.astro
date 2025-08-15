@@ -1,0 +1,158 @@
+---
+import Template from "~/screens/holy-ghost.astro";
+
+import free_you_from_your_sins from "~/assets/images/holyGhost/what_does_the_holy_ghost_do-free_you_from_your_sins.webp";
+
+const metadata = {
+  title: "What Does the Holy Ghost Do? | Power of Holy Ghost 2025",
+  description:
+    "Discover what does the holy ghost do and experience the power of the Holy Ghost. Learn about Holy Spirit, divine guidance & transformation.",
+  robots: {
+    index: true,
+    follow: true,
+    "max-snippet": -1,
+    "max-image-preview": "large",
+    "max-video-preview": -1,
+  },
+  openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "https://flamethefreeze.com/what-does-the-holy-ghost-do",
+    siteName: "Flame the Freeze",
+    title: "What Does the Holy Ghost Do? | The Power of the Holy Ghost",
+    description:
+      "Discover what does the holy ghost do and experience the power of the Holy Ghost. Learn about Holy Spirit gifts, divine guidance, and spiritual transformation.",
+    image: free_you_from_your_sins,
+  },
+  twitter: {
+    handle: "@FlameTheFreeze",
+    site: "@FlameTheFreeze",
+    cardType: "summary_large_image",
+    title: "What Does the Holy Ghost Do? | The Power of the Holy Ghost",
+    description:
+      "Discover what does the holy ghost do and experience the power of the Holy Ghost. Learn about Holy Spirit gifts and divine guidance.",
+  },
+  ignoreTitleTemplate: true,
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://flamethefreeze.com/#organization",
+      name: "Flame the Freeze",
+      url: "https://flamethefreeze.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://flamethefreeze.com" + free_you_from_your_sins,
+      },
+      description: "Christian ministry focused on the power of the Holy Ghost and spiritual transformation",
+      sameAs: ["https://twitter.com/FlameTheFreeze"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://flamethefreeze.com/#website",
+      url: "https://flamethefreeze.com",
+      name: "Flame the Freeze",
+      publisher: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://flamethefreeze.com/what-does-the-holy-ghost-do#webpage",
+      url: "https://flamethefreeze.com/what-does-the-holy-ghost-do",
+      name: "What Does the Holy Ghost Do? | The Power of the Holy Ghost",
+      description:
+        "Discover what does the holy ghost do and experience the power of the Holy Ghost. Learn about Holy Spirit gifts, divine guidance, and spiritual transformation.",
+      isPartOf: {
+        "@id": "https://flamethefreeze.com/#website",
+      },
+      about: [
+        {
+          "@type": "Thing",
+          name: "Holy Ghost",
+          description: "The third person of the Trinity who empowers, guides, and transforms believers",
+        },
+        {
+          "@type": "Thing",
+          name: "Power of the Holy Ghost",
+          description: "The supernatural empowerment and gifts given by the Holy Spirit to believers",
+        },
+      ],
+      mainEntity: {
+        "@id": "https://flamethefreeze.com/what-does-the-holy-ghost-do#article",
+      },
+    },
+    {
+      "@type": "Article",
+      "@id": "https://flamethefreeze.com/what-does-the-holy-ghost-do#article",
+      headline: "What Does the Holy Ghost Do? Understanding the Power of the Holy Ghost",
+      description:
+        "Comprehensive guide to understanding what does the holy ghost do and experiencing the power of the Holy Ghost in your spiritual life.",
+      author: {
+        "@type": "Organization",
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      publisher: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      datePublished: "2025-01-01",
+      dateModified: "2025-01-15",
+      mainEntityOfPage: {
+        "@id": "https://flamethefreeze.com/what-does-the-holy-ghost-do#webpage",
+      },
+      keywords:
+        "what does the holy ghost do, power of the holy ghost, holy spirit gifts, divine guidance, spiritual transformation, holy spirit baptism, pentecostal power, supernatural empowerment",
+      about: [
+        "Holy Ghost",
+        "Power of the Holy Ghost",
+        "Holy Spirit gifts",
+        "Divine guidance",
+        "Spiritual transformation",
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://flamethefreeze.com/what-does-the-holy-ghost-do#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What does the Holy Ghost do in a believer's life?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The Holy Ghost empowers believers with spiritual gifts, provides divine guidance, transforms hearts, convicts of sin, and enables supernatural living. The power of the Holy Ghost manifests through gifts like prophecy, healing, tongues, and wisdom.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How can I experience the power of the Holy Ghost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can experience the power of the Holy Ghost through prayer, faith, baptism in the Holy Spirit, reading Scripture, and yielding to God's will. The Holy Ghost works through willing hearts that seek spiritual transformation.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the gifts of the Holy Ghost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The gifts of the Holy Ghost include wisdom, knowledge, faith, healing, miracles, prophecy, discernment of spirits, tongues, and interpretation of tongues. These supernatural gifts demonstrate the power of the Holy Ghost in believers' lives.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is the Holy Ghost the same as the Holy Spirit?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, the Holy Ghost and Holy Spirit refer to the same divine person - the third member of the Trinity. Both terms describe God's Spirit who dwells in believers and demonstrates His power through spiritual gifts and transformation.",
+          },
+        },
+      ],
+    },
+  ],
+};
+---
+
+<Template lang="en" metadata={{ ...metadata, structuredData }} siteRebuildStatus={{ status: "completed" }} />

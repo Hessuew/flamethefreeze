@@ -1,0 +1,191 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import { useTranslations } from "~/i18n/utils";
+import { TextAnimate } from "~/components/magicui/text-animate";
+import { BlurFade } from "~/components/magicui/blur-fade";
+import FireButton from "~/components/ui/FireButton.astro";
+import set_your_heart_on_fire from "~/assets/images/holyGhost/what_does_the_holy_ghost_do-set_your_heart_on_fire.webp";
+import fill_you_and_use_you from "~/assets/images/holyGhost/what_does_the_holy_ghost_do-fill_you_and_use_you.webp";
+import free_you_from_your_sins from "~/assets/images/holyGhost/what_does_the_holy_ghost_do-free_you_from_your_sins.webp";
+import PrayerPointsList from "~/components/widgets/PrayerPointsList.astro";
+import type { PrayerPoint } from "~/components/widgets/PrayerPointsList.astro";
+import ImageShowcase from "~/components/widgets/ImageShowcase.astro";
+
+const { metadata, siteRebuildStatus, lang } = Astro.props;
+
+const t = useTranslations(lang);
+
+// Prayer points data array with Holy Ghost specific icons
+const prayerPoints: PrayerPoint[] = [
+  {
+    icon: "holy-ghost-identity",
+    title: t("about.prayerPoints.1.title"),
+    subtitle: t("about.prayerPoints.1.subtitle"),
+    bibleQuote: t("about.prayerPoints.1.bibleQuote"),
+    color: "orange",
+  },
+  {
+    icon: "revelation",
+    title: t("about.prayerPoints.2.title"),
+    subtitle: t("about.prayerPoints.2.subtitle"),
+    bibleQuote: t("about.prayerPoints.2.bibleQuote"),
+    color: "blue",
+  },
+  {
+    icon: "friendship",
+    title: t("about.prayerPoints.3.title"),
+    subtitle: t("about.prayerPoints.3.subtitle"),
+    bibleQuote: t("about.prayerPoints.3.bibleQuote"),
+    color: "green",
+  },
+  {
+    icon: "heaven-to-earth",
+    title: t("about.prayerPoints.4.title"),
+    subtitle: t("about.prayerPoints.4.subtitle"),
+    bibleQuote: t("about.prayerPoints.4.bibleQuote"),
+    color: "red",
+  },
+  {
+    icon: "scripture-author",
+    title: t("about.prayerPoints.5.title"),
+    subtitle: t("about.prayerPoints.5.subtitle"),
+    bibleQuote: t("about.prayerPoints.5.bibleQuote"),
+    color: "purple",
+  },
+  {
+    icon: "greater-one",
+    title: t("about.prayerPoints.6.title"),
+    subtitle: t("about.prayerPoints.6.subtitle"),
+    bibleQuote: t("about.prayerPoints.6.bibleQuote"),
+    color: "indigo",
+  },
+  {
+    icon: "harvest-work",
+    title: t("about.prayerPoints.7.title"),
+    subtitle: t("about.prayerPoints.7.subtitle"),
+    bibleQuote: t("about.prayerPoints.7.bibleQuote"),
+    color: "yellow",
+  },
+];
+---
+
+<Layout lang={lang} metadata={metadata} siteRebuildStatus={siteRebuildStatus}>
+  <!-- Hero Section with Full Screen Image -->
+  <div class="-z-0 min-h-screen relative overflow-hidden">
+    <!-- Background Image -->
+    <div
+      class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
+      style={`background-image: url(${free_you_from_your_sins.src})`}
+    >
+    </div>
+
+    <!-- Gradient overlay for better text readability -->
+    <div
+      class="absolute inset-0 z-5"
+      style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(26, 0, 36, 0.6) 80%, #1a0024 100%);"
+    >
+    </div>
+
+    <!-- Text overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
+
+    <Hero classes={{ containerClass: "text-left relative z-20", subtitleContainerClass: "max-w-none" }}>
+      <Fragment slot="title">
+        <TextAnimate
+          client:load
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tight tracking-tighter md:mb-4 xl:mb-[16px] font-heading text-white"
+          animation="blurInUp"
+          delay={1}
+          duration={0.6}
+          by="character"
+          once={true}
+          text={t("about.hero.title.1")}
+        />
+
+        <TextAnimate
+          client:load
+          className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tight tracking-tighter mb-4 xl:mb-[16px] font-heading text-orange-400"
+          animation="blurInUp"
+          delay={1.6}
+          duration={0.6}
+          by="character"
+          once={true}
+          text={t("about.hero.title.2")}
+        />
+      </Fragment>
+
+      <Fragment slot="subtitle">
+        <div class="max-w-md mb-8 xl:mb-[32px]">
+          <TextAnimate
+            client:load
+            className="text-xl xl:text-[20px] xl:leading-[28px] font-normal tracking-normal text-gray-200"
+            animation="blurInUp"
+            delay={3}
+            duration={0.6}
+            by="line"
+            once={true}
+            text={t("about.hero.subtitle")}
+          />
+        </div>
+
+        <BlurFade client:load delay={4.2} direction="up" inView>
+          <FireButton
+            href="#prayer-guide"
+            text={t("about.hero.cta.button")}
+            variant="primary"
+            size="small"
+            icon="tabler:corner-right-down"
+          />
+        </BlurFade>
+      </Fragment>
+    </Hero>
+  </div>
+
+  <!-- 7-Point Prayer Guide Listicle -->
+  <BlurFade client:load delay={5} direction="up">
+    <PrayerPointsList prayerPoints={prayerPoints} />
+  </BlurFade>
+
+  <!-- Image Showcase Widget ********* -->
+
+  <ImageShowcase
+    id="what"
+    tagline={t("about.what.tagline")}
+    layout="featured"
+    classes={{
+      headline: {
+        subtitle: "max-w-md",
+      },
+    }}
+    images={[
+      {
+        src: set_your_heart_on_fire,
+        alt: t("about.what.images.1.alt"),
+        title: t("about.what.images.1.title"),
+      },
+      {
+        src: fill_you_and_use_you,
+        alt: t("about.what.images.2.alt"),
+        title: t("about.what.images.2.title"),
+      },
+      {
+        src: free_you_from_your_sins,
+        alt: t("about.what.images.3.alt"),
+        title: t("about.what.images.3.title"),
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      {t("about.what.title.1")}&nbsp;
+      <br class="hidden sm:block" /><span class="text-orange-400">{t("about.what.title.2")}</span>
+      {t("about.what.title.3")}
+    </Fragment>
+    <Fragment slot="subtitle">
+      <span class="text-white">{t("about.what.subtitle.1")}</span>
+      {t("about.what.subtitle.2")}
+      <span class="text-white">{t("about.what.subtitle.3")}</span>
+      {t("about.what.subtitle.4")}
+    </Fragment>
+  </ImageShowcase>
+</Layout>
