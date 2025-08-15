@@ -8,6 +8,7 @@ import { useTranslations } from "~/i18n/utils";
 
 import { Icon } from "astro-icon/components";
 import GradientText from "../ui/GradientText.astro";
+import { getLanguageRoute } from "~/navigation";
 
 export interface Props {
   theme?: string;
@@ -90,7 +91,7 @@ const { theme = "light" } = Astro.props;
                   <li class="mb-2 xl:mb-[8px]">
                     <a
                       class="text-muted hover:text-orange-500 hover:underline text-gray-400 transition duration-150 ease-in-out"
-                      href={getPermalink(`${lang}/${href}`)}
+                      href={getPermalink(getLanguageRoute(href || "", lang || "en"))}
                     >
                       {text}
                     </a>

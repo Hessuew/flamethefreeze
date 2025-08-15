@@ -85,8 +85,10 @@ const t = useTranslations(lang);
           once={true}
           text={t("index.hero.title.2")}
         />
+      </Fragment>
 
-        <div class="max-w-md">
+      <Fragment slot="subtitle">
+        <div class="max-w-md mb-8 xl:mb-[32px]">
           <TextAnimate
             client:load
             className="text-xl xl:text-[20px] xl:leading-[28px] font-normal tracking-normal  text-muted dark:text-slate-300 "
@@ -98,9 +100,7 @@ const t = useTranslations(lang);
             text={t("index.hero.subtitle")}
           />
         </div>
-      </Fragment>
 
-      <Fragment slot="subtitle">
         <div class="flex gap-4 xl:gap-[16px]">
           <BlurFade client:load delay={4.2} direction="up" inView>
             <FireButton
