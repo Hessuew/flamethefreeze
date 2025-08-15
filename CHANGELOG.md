@@ -1,5 +1,38 @@
 # Changelog
 
+## [3.18.0](https://github.com/Hessuew/flamethefreeze/compare/v3.17.0...v3.18.0) (2025-08-15)
+
+
+### Features
+
+* add aria labels and roles to PrayerIcons ([8e14c29](https://github.com/Hessuew/flamethefreeze/commit/8e14c299bc69bdab707f5bda4fcfaedb058dee17))
+* add bilingual index page ([860c756](https://github.com/Hessuew/flamethefreeze/commit/860c756ad1ffaac814ffaa7fdade3c86b8ca1a42))
+* add custom prayer icons and update rebuild progress ([#245](https://github.com/Hessuew/flamethefreeze/issues/245)) ([45c3053](https://github.com/Hessuew/flamethefreeze/commit/45c305348d5ca30c5a5ccd35d534dfcf263dff00))
+* add Finnish Holy Ghost page and enhance SEO metadata ([#253](https://github.com/Hessuew/flamethefreeze/issues/253)) ([56b3276](https://github.com/Hessuew/flamethefreeze/commit/56b32763681ef266ce36de8aa29b89a925b17e24))
+* add Finnish translation and improve UI components ([#237](https://github.com/Hessuew/flamethefreeze/issues/237)) ([06745b6](https://github.com/Hessuew/flamethefreeze/commit/06745b638edc9ef3553164ea73d62786a9e64076))
+* Add Holy Ghost page ([9962e53](https://github.com/Hessuew/flamethefreeze/commit/9962e536beb79421fa238db24e2c84c61ed9098a))
+* add Holy Ghost page with content and fix language routing ([#251](https://github.com/Hessuew/flamethefreeze/issues/251)) ([56a3cd2](https://github.com/Hessuew/flamethefreeze/commit/56a3cd2b6a06aacba1372f5f947d6ab0b52d17b5))
+* add Holy Ghost specific icons and update navigation ([#252](https://github.com/Hessuew/flamethefreeze/issues/252)) ([50a6f19](https://github.com/Hessuew/flamethefreeze/commit/50a6f193dcc8dc3a341945c4ce37e70767843b44))
+* add Prayer for Works page with 7-point guide and testimonials ([#240](https://github.com/Hessuew/flamethefreeze/issues/240)) ([141ab1b](https://github.com/Hessuew/flamethefreeze/commit/141ab1bab3f33ef602baa17d18fc9fd46c4c43b7))
+* add prayer testimonials fi content and improve UI spacing ([#247](https://github.com/Hessuew/flamethefreeze/issues/247)) ([c9c5b2c](https://github.com/Hessuew/flamethefreeze/commit/c9c5b2ce3c6a0420d56b5212eab6eaa196eac0d6))
+* banner & PrayerPointsList mobile sizing, and dynamic header height ([5f9a87c](https://github.com/Hessuew/flamethefreeze/commit/5f9a87c16135d6d12d2e2514aa8e13b6f191a197))
+* enhance mobile menu and announcement banner responsiveness ([#246](https://github.com/Hessuew/flamethefreeze/issues/246)) ([03807d8](https://github.com/Hessuew/flamethefreeze/commit/03807d880409ba3ec4ccd92c3eab8e4b88420611))
+* Finnish index page, updated lang defining ([ae1ceaa](https://github.com/Hessuew/flamethefreeze/commit/ae1ceaa703f0c57606d2549d589d9764430aafb3))
+* holy ghost icons and finnish translation ([91f08ea](https://github.com/Hessuew/flamethefreeze/commit/91f08ea87ae76f6682c223c866f5625c00eb8c2d))
+* holy ghost pages seo ([1c16557](https://github.com/Hessuew/flamethefreeze/commit/1c16557004ffaee18bae412726346139193fa403))
+* improve language switching and announcement banner animation ([#238](https://github.com/Hessuew/flamethefreeze/issues/238)) ([c06617d](https://github.com/Hessuew/flamethefreeze/commit/c06617d8df2f4bcf225c9b65168c58831e91de44))
+* prayer for works screen and components ([658f0c1](https://github.com/Hessuew/flamethefreeze/commit/658f0c1482625fe86cea37680e27035ed5812df1))
+* prayer page xl responsiveness ([79dd85a](https://github.com/Hessuew/flamethefreeze/commit/79dd85a250e710ff33256fcb74ad35f24b54c26d))
+* prayer site i18n translation (wip) ([dd873b6](https://github.com/Hessuew/flamethefreeze/commit/dd873b60be5f440b5aacee76a6fbd7335ed52fee))
+* prayer site i18n translation (wip) ([#244](https://github.com/Hessuew/flamethefreeze/issues/244)) ([c229520](https://github.com/Hessuew/flamethefreeze/commit/c229520dc6db09dc6e9c9bc81911c65193a58860))
+* rebuild 404 page ([2e34f10](https://github.com/Hessuew/flamethefreeze/commit/2e34f105af1cecfbddf05edcb5c81a92a2e98cd7))
+* redesign 404 page with fire theme and improved UI ([#239](https://github.com/Hessuew/flamethefreeze/issues/239)) ([f321bd3](https://github.com/Hessuew/flamethefreeze/commit/f321bd3fb48f80286db401cf8cb8902534c9a76e))
+* update navigation to include route pairs ([c1ae09b](https://github.com/Hessuew/flamethefreeze/commit/c1ae09bda5309a03050881231d47be85b99a8ef6))
+* update navigation to include route pairs ([#241](https://github.com/Hessuew/flamethefreeze/issues/241)) ([3e59d9c](https://github.com/Hessuew/flamethefreeze/commit/3e59d9ccb6c9a8fc6d5d70184ad6f89f958b4ec1))
+* update Prayer for Works page with enhanced SEO metadata ([#242](https://github.com/Hessuew/flamethefreeze/issues/242)) ([0770ce5](https://github.com/Hessuew/flamethefreeze/commit/0770ce5d24e8bc428592d659bd8c60f4c8086876))
+* update rebuild progress and improve header navigation text ([#254](https://github.com/Hessuew/flamethefreeze/issues/254)) ([d1a3c31](https://github.com/Hessuew/flamethefreeze/commit/d1a3c3138d8217251416c219e3ffe6f0a1f6868b))
+* updated prayer points list icons ([84a9da7](https://github.com/Hessuew/flamethefreeze/commit/84a9da71b491c6e2295696e291d7ede23d8cd8ee))
+
 ## [3.17.0](https://github.com/Hessuew/flamethefreeze/compare/v3.16.0...v3.17.0) (2025-08-05)
 
 
