@@ -1,0 +1,30 @@
+---
+import Template from "~/screens/word.astro";
+
+import logoUrl from "~/assets/images/default.jpg";
+
+const metadata = {
+  title: "The Power of the Words | Koe Jumalan tuli tänään!",
+  description:
+    "Jumalan tuli 2025? Löydä Jumalan muuttava tuli ja sytytä oma liekkisi Jumalalle. Koe hengellinen herätys, Pyhän Hengen kaste ja palavasti elävä kristillisyys.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "fi_FI",
+    url: "https://flamethefreeze.com/jumalan-tuli",
+    siteName: "Flame the Freeze",
+    image: logoUrl,
+  },
+  twitter: {
+    handle: "@FlameTheFreeze",
+    site: "@FlameTheFreeze",
+    cardType: "summary_large_image",
+  },
+  ignoreTitleTemplate: true,
+};
+---
+
+<Template lang="fi" metadata={metadata} siteRebuildStatus={{ status: "completed", display: true }} />
