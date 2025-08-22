@@ -8,17 +8,19 @@ import { BlurFade } from "~/components/magicui/blur-fade";
 import FireButton from "~/components/ui/FireButton.astro";
 import WordList from "~/components/widgets/WordList.astro";
 // Word images
-import word_bible from "~/assets/images/index/fire_of_god_and_fire_for_god-bible.webp";
-import word_fire from "~/assets/images/index/fire_of_god_and_fire_for_god-fire.webp";
-import word_company from "~/assets/images/index/fire_of_god_and_fire_for_god-company.webp";
-import word_prayer from "~/assets/images/fire_of_god_and_fire_for_god-prayer.webp";
-import word_tree from "~/assets/images/fire_of_god_and_fire_for_god-tree1.webp";
-import word_city from "~/assets/images/fire_of_god_and_fire_for_god-city_in_flame.webp";
-import word_derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
+import word_bible from "~/assets/images/word/1.jpg";
+import word_fire from "~/assets/images/word/asd.jpg";
+import word_company from "~/assets/images/word/4.jpg";
+import word_prayer from "~/assets/images/word/3b.jpg";
+import word_tree from "~/assets/images/word/5.jpg";
+import word_city from "~/assets/images/word/6.jpg";
+import word_derek_prince from "~/assets/images/word/7.jpg";
 import word_kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
 import word_koinonia from "~/assets/images/ministries/fire_of_god_and_fire_for_god-koinonia.webp";
 import word_prayer_church from "~/assets/images/ministries/fire_of_god_and_fire_for_god-prayer_church.webp";
-// import { ENDPOINTS } from "~/config/endpoints";
+// import Stats from "~/components/widgets/Stats.astro";
+// import GradientText from "~/components/ui/GradientText.astro";
+// import { ENDPOINTS } from "~/config/endpoints";A man listening carefully a hand behind his ear.
 
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 
@@ -28,93 +30,83 @@ const t = useTranslations(lang);
 const wordItems = [
   {
     image: word_bible,
-    title: "The Word is Life",
-    subtitle: "Scripture brings transformation",
-    description:
-      "God's Word is living and active, sharper than any double-edged sword. It penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes of the heart.",
+    title: t("word.wordItems.title.1"),
+    subtitle: t("word.wordItems.subtitle.1"),
+    description: t("word.wordItems.description.1"),
     color: "blue" as const,
-    emoji: "📖",
+    emoji: "🤫",
   },
   {
     image: word_fire,
-    title: "Fire of His Presence",
-    subtitle: "Divine fire purifies and empowers",
-    description:
-      "The fire of God's presence burns away impurities and ignites passion for righteousness. His fire refines us like gold and silver, making us vessels of honor.",
+    title: t("word.wordItems.title.2"),
+    subtitle: t("word.wordItems.subtitle.2"),
+    description: t("word.wordItems.description.2"),
     color: "orange" as const,
-    emoji: "🔥",
+    emoji: "👂",
   },
   {
     image: word_prayer,
-    title: "Prayer Changes Everything",
-    subtitle: "Communication with the Almighty",
-    description:
-      "Through prayer, we align our hearts with God's will. It's our direct line to heaven, where miracles are born and destinies are shaped by divine intervention.",
+    title: t("word.wordItems.title.3"),
+    subtitle: t("word.wordItems.subtitle.3"),
+    description: t("word.wordItems.description.3"),
     color: "purple" as const,
-    emoji: "🙏",
+    emoji: "",
   },
   {
     image: word_company,
-    title: "Fellowship of Believers",
-    subtitle: "Unity in the Spirit",
-    description:
-      "Iron sharpens iron, and believers sharpen one another. In fellowship, we find encouragement, accountability, and the power of agreement in prayer.",
+    title: t("word.wordItems.title.4"),
+    subtitle: t("word.wordItems.subtitle.4"),
+    description: t("word.wordItems.description.4"),
     color: "green" as const,
-    emoji: "🤝",
+    emoji: "",
   },
   {
     image: word_tree,
-    title: "Rooted in Truth",
-    subtitle: "Growing in spiritual maturity",
-    description:
-      "Like a tree planted by streams of water, those rooted in God's Word yield fruit in season. Their leaves do not wither, and whatever they do prospers.",
+    title: t("word.wordItems.title.5"),
+    subtitle: t("word.wordItems.subtitle.5"),
+    description: t("word.wordItems.description.5"),
     color: "indigo" as const,
-    emoji: "🌳",
+    emoji: "",
   },
   {
     image: word_city,
-    title: "City on a Hill",
-    subtitle: "Light in the darkness",
-    description:
-      "We are called to be a city on a hill, a light that cannot be hidden. Our lives should illuminate the path to salvation for all who see our good works.",
+    title: t("word.wordItems.title.6"),
+    subtitle: t("word.wordItems.subtitle.6"),
+    description: t("word.wordItems.description.6"),
     color: "yellow" as const,
-    emoji: "🏙️",
+    emoji: "",
   },
   {
     image: word_derek_prince,
-    title: "Wisdom of the Ages",
-    subtitle: "Learning from spiritual fathers",
-    description:
-      "God raises up teachers and prophets to guide His people. Through their wisdom and revelation, we gain deeper understanding of His ways and purposes.",
+    title: t("word.wordItems.title.7"),
+    subtitle: t("word.wordItems.subtitle.7"),
+    description: t("word.wordItems.description.7"),
     color: "red" as const,
-    emoji: "🧠",
+    emoji: "",
   },
   {
     image: word_kenneth_hagin,
-    title: "Faith that Moves Mountains",
-    subtitle: "Walking in supernatural power",
-    description:
-      "Faith comes by hearing, and hearing by the Word of God. When we speak in faith, mountains move and impossibilities become possibilities through Christ.",
+    title: t("word.wordItems.title.8"),
+    subtitle: t("word.wordItems.subtitle.8"),
+    description: t("word.wordItems.description.8"),
     color: "pink" as const,
-    emoji: "⛰️",
+    emoji: "",
   },
   {
     image: word_koinonia,
-    title: "Divine Partnership",
-    subtitle: "Koinonia with the Holy Spirit",
-    description:
-      "True fellowship is koinonia - a divine partnership where heaven and earth unite. In this sacred communion, we experience God's presence and power.",
+    title: t("word.wordItems.title.9"),
+    subtitle: t("word.wordItems.subtitle.9"),
+    description: t("word.wordItems.description.9"),
     color: "blue" as const,
-    emoji: "🤲",
+    emoji: "",
   },
   {
     image: word_prayer_church,
-    title: "House of Prayer",
-    subtitle: "Where heaven touches earth",
-    description:
-      "My house shall be called a house of prayer for all nations. In the place of prayer, miracles happen, lives are transformed, and God's kingdom advances.",
+    title: t("word.wordItems.title.10"),
+    subtitle: t("word.wordItems.subtitle.10"),
+    description: t("word.wordItems.description.10"),
     color: "orange" as const,
-    emoji: "⛪",
+    emoji: "",
   },
 ];
 ---
@@ -125,11 +117,10 @@ const wordItems = [
 
     <!-- data-src={`${ENDPOINTS.publicFiles}/fire_of_god_and_fire_for_god-fire_bg.mp4`} -->
     <video
-      id="hero-video"
+      id="word-hero-video"
       aria-label={t("index.hero.video.aria")}
       class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-1000 ease-in-out"
       data-src={power_of_the_words}
-      autoplay
       loop
       muted
       playsinline
@@ -159,7 +150,7 @@ const wordItems = [
             duration={0.6}
             by="character"
             once={true}
-            text={"Transform your speech"}
+            text={t("word.hero.title.2")}
           />
         </div>
       </Fragment>
@@ -252,12 +243,14 @@ const wordItems = [
       </Fragment>
     </Hero>
 
-    <!-- Actions positioned at bottom right of the full screen -->
-    <div class="absolute bottom-40 right-8 lg:right-12 flex z-20">
+    <!-- Actions positioned at bottom center on mobile, bottom right on larger screens -->
+    <div
+      class="absolute bottom-40 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-4 lg:right-12 flex z-20 min-w-[324px]"
+    >
       <BlurFade client:load delay={4.2} direction="up" inView>
         <FireButton
           id="show-video-btn"
-          text={"I want the power of the words in my life ✋"}
+          text={t("word.hero.cta.button")}
           variant="primary"
           size="small"
           icon="tabler:arrow-right"
@@ -267,11 +260,29 @@ const wordItems = [
   </div>
 
   <WordList wordItems={wordItems} />
+
+  <!-- Stats Widget ****************** -->
+
+  <!-- <Stats
+    subtitle={t("word.hero.subtitle")}
+    stats={[
+      { title: t("word.stats.title1"), amount: t("word.stats.amount1") },
+      { title: t("word.stats.title2"), amount: t("word.stats.amount2") },
+      { title: t("word.stats.title3"), amount: t("word.stats.amount3") },
+      { title: t("word.stats.title4"), amount: t("word.stats.amount4") },
+    ]}
+  >
+    <Fragment slot="title">
+      {t("word.hero.title1")}
+      <GradientText text={t("word.hero.title.span")} />
+      {t("word.hero.title2")}
+    </Fragment>
+  </Stats> -->
 </Layout>
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    const heroVideo = document.getElementById("hero-video") as HTMLVideoElement;
+    const heroVideo = document.getElementById("word-hero-video") as HTMLVideoElement;
     const showVideoBtn = document.getElementById("show-video-btn") as HTMLElement;
     let videoLoaded = false;
     let videoDisplayed = false;

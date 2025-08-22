@@ -37,7 +37,7 @@ const t = useTranslations(lang);
     <!-- Video Background -->
 
     <video
-      id="hero-video"
+      id="index-hero-video"
       aria-label={t("index.hero.video.aria")}
       class="absolute inset-0 w-full h-full object-cover z-0 opacity-0 transition-opacity duration-1000 ease-in-out"
       data-src={`${ENDPOINTS.publicFiles}/fire_of_god_and_fire_for_god-fire_bg.mp4`}
@@ -51,7 +51,7 @@ const t = useTranslations(lang);
     </video>
     <!-- Gradient mask for bottom fade to purple background -->
     <div
-      id="hero-gradient"
+      id="index-hero-gradient"
       class="absolute inset-0 z-5 opacity-0 transition-opacity duration-1000 ease-in-out"
       style="background: linear-gradient(to bottom, transparent 0%, transparent 50%, rgba(26, 0, 36, 0.05) 60%, rgba(26, 0, 36, 0.15) 70%, rgba(26, 0, 36, 0.35) 80%, rgba(26, 0, 36, 0.65) 90%, rgba(26, 0, 36, 0.85) 95%, #1a0024 100%);"
     >
@@ -296,8 +296,8 @@ const t = useTranslations(lang);
   <script>
     document.addEventListener("astro:page-load", () => {
       // Start video after 1 second with proper fade-in effect
-      const heroVideo = document.getElementById("hero-video") as HTMLVideoElement;
-      const heroGradient = document.getElementById("hero-gradient") as HTMLDivElement;
+      const heroVideo = document.getElementById("index-hero-video") as HTMLVideoElement;
+      const heroGradient = document.getElementById("index-hero-gradient") as HTMLDivElement;
       if (heroVideo) {
         setTimeout(() => {
           const videoSrc = heroVideo.dataset.src;
