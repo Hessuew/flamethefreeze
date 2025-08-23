@@ -7,6 +7,7 @@ export const defaultLang = "en";
 
 export const ui = {
   en: {
+    new: "New",
     "schema.organization.alternateName": "Fire of God and Fire for God Ministry",
     "schema.organization.description":
       "Christian ministry focused on experiencing the fire of God and being on fire for God through spiritual awakening, Holy Spirit baptism, and divine encounters.",
@@ -1460,6 +1461,7 @@ export const ui = {
     "zoom.info": "First time joining? Download the Zoom app for the best experience",
   },
   fi: {
+    new: "Uusi",
     "schema.organization.alternateName": "Jumalan tuli ja tulessa Jumalalle ministry",
     "schema.organization.description":
       "Kristillinen ministry joka keskittyy Jumalan tulen ja tulessa Jumalalle oloon. Tämä tapahtuu hengellisen heräämisen, Pyhän Hengen kasteen ja yliluonnollisten kokemusten kautta.",
