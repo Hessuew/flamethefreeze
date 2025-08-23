@@ -415,3 +415,15 @@ export interface VideoShowcase extends Omit<Headline, "classes">, Widget {
     objectPosition?: string;
   }>;
 }
+
+export interface ZoomLink {
+  title: string;
+  description?: string;
+  url: string;
+  icon?: string;
+  time?: string;
+  recurring?: string;
+  meetingId?: string;
+  passcode?: string;
+  weekType?: "even" | "odd";
+}
