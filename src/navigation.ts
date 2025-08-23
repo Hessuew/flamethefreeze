@@ -8,6 +8,7 @@ import free_you_from_your_sins from "~/assets/images/holyGhost/what_does_the_hol
 export const routePairs: Record<string, string> = {
   "/": "/jumalan-tuli",
   "/prayer-for-works": "/miten-rukoilla",
+  "/the-power-of-the-words": "/jumalan-sana",
   "/what-does-the-holy-ghost-do": "/pyhä-henki",
 };
 
@@ -68,6 +69,7 @@ export const getLanguageRoute = (href: string, targetLang: "en" | "fi"): string 
     prayer: "/prayer-for-works",
     about: "/what-does-the-holy-ghost-do",
     "holy-ghost": "/what-does-the-holy-ghost-do",
+    word: "/the-power-of-the-words",
     // Add more mappings as needed for other navigation items
   };
 

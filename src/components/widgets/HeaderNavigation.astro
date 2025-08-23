@@ -90,6 +90,7 @@ const t = useTranslations(lang || "en");
                             width={400}
                             height={300}
                             class="absolute inset-0 w-full h-full object-cover object-center opacity-60 group-hover:opacity-80 group-hover:scale-105 transition duration-500 transform-gpu"
+                            loading="lazy"
                           />
                         )}
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20" />
@@ -97,7 +98,7 @@ const t = useTranslations(lang || "en");
                           <span
                             class="text-white font-medium xl:text-[16px] xl:leading-[24px]"
                             set:html={text ? t(text as keyof typeof ui.en) : text}
-                          ></span>
+                          />
                         </div>
                       </a>
                     </li>

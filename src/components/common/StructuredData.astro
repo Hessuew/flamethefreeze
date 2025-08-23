@@ -149,49 +149,8 @@ const articleSchema = {
   ],
 };
 
-// FAQ Schema
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": SITE.site + "#faq",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: t("schema.faq.mainEntity.1.name"),
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: t("schema.faq.mainEntity.1.acceptedAnswer.text"),
-      },
-    },
-    {
-      "@type": "Question",
-      name: t("schema.faq.mainEntity.2.name"),
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: t("schema.faq.mainEntity.2.acceptedAnswer.text"),
-      },
-    },
-    {
-      "@type": "Question",
-      name: t("schema.faq.mainEntity.3.name"),
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: t("schema.faq.mainEntity.3.acceptedAnswer.text"),
-      },
-    },
-    {
-      "@type": "Question",
-      name: t("schema.faq.mainEntity.4.name"),
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: t("schema.faq.mainEntity.4.acceptedAnswer.text"),
-      },
-    },
-  ],
-};
-
 // Combine all schemas
-const schemas = [organizationSchema, websiteSchema, webPageSchema, articleSchema, faqSchema, pageSpecificSchema];
+const schemas = [organizationSchema, websiteSchema, webPageSchema, articleSchema, pageSpecificSchema];
 
 const combinedSchema = {
   "@context": "https://schema.org",
