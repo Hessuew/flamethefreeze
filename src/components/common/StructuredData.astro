@@ -150,7 +150,7 @@ const articleSchema = {
 };
 
 // Combine all schemas
-const schemas = [organizationSchema, websiteSchema, webPageSchema, articleSchema, pageSpecificSchema];
+const schemas = [organizationSchema, websiteSchema, webPageSchema, articleSchema, pageSpecificSchema].filter(Boolean);
 
 const combinedSchema = {
   "@context": "https://schema.org",
