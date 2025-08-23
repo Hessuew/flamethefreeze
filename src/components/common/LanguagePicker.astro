@@ -9,7 +9,7 @@ const currentPath = Astro.url.pathname;
 
 <div class="flex items-center gap-1">
   <a
-    href={changeLangInUrl(currentPath, "en")}
+    href={changeLangInUrl(currentPath, "en") || "/"}
     class={twMerge(
       "p-2.5 rounded-lg transition-all duration-300 ease-in-out",
       "focus:outline-none focus:scale-110",
@@ -21,7 +21,7 @@ const currentPath = Astro.url.pathname;
     <span class="text-2xl">🇺🇸</span>
   </a>
   <a
-    href={changeLangInUrl(currentPath, "fi")}
+    href={changeLangInUrl(currentPath, "fi") || "/jumalan-tuli"}
     class={twMerge(
       "p-2.5 rounded-lg transition-all duration-300 ease-in-out",
       "focus:outline-none focus:scale-110",
