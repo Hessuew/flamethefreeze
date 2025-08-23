@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.19.0](https://github.com/Hessuew/flamethefreeze/compare/v3.18.0...v3.19.0) (2025-08-23)
+
+
+### Features
+
+* add "New" label to menu items and refactor header components ([#263](https://github.com/Hessuew/flamethefreeze/issues/263)) ([1eb4c5e](https://github.com/Hessuew/flamethefreeze/commit/1eb4c5e160d9e7c64ed2f001defcdc81145d18dd))
+
 ## [3.18.0](https://github.com/Hessuew/flamethefreeze/compare/v3.17.0...v3.18.0) (2025-08-15)
 
 
