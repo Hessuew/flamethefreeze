@@ -1,13 +1,14 @@
-import type { MenuLink } from "./components/widgets/Header.astro";
 import prayer from "~/assets/images/fire_of_god_and_fire_for_god-prayer.webp";
-import word from "~/assets/images/word.webp";
 import smith from "~/assets/images/witnesses/flame_the_freeze_smith_wigglesworth.webp";
+import less from "~/assets/images/word/the_power_of_the_words-less.webp";
 import free_you_from_your_sins from "~/assets/images/holyGhost/what_does_the_holy_ghost_do-free_you_from_your_sins.webp";
+import type { MenuLink } from "./components/widgets/HeaderNavigation.astro";
 
 // Language route pairs mapping
 export const routePairs: Record<string, string> = {
   "/": "/jumalan-tuli",
   "/prayer-for-works": "/miten-rukoilla",
+  "/the-power-of-the-words": "/jumalan-sana",
   "/what-does-the-holy-ghost-do": "/pyhä-henki",
 };
 
@@ -68,6 +69,7 @@ export const getLanguageRoute = (href: string, targetLang: "en" | "fi"): string 
     prayer: "/prayer-for-works",
     about: "/what-does-the-holy-ghost-do",
     "holy-ghost": "/what-does-the-holy-ghost-do",
+    word: "/the-power-of-the-words",
     // Add more mappings as needed for other navigation items
   };
 
@@ -89,36 +91,38 @@ export const headerData: { links: Array<MenuLink> } = {
       text: "header.flameUp",
       links: [
         {
-          text: "header.link2",
+          description: "header.description2",
           href: "prayer",
           icon: "tabler:pray",
-          description: "header.description2",
           image: {
             src: prayer,
             alt: "flame_the_freeze_prayer",
           },
+          new: true,
+          text: "header.link2",
         },
         {
-          text: "header.link1",
+          description: "header.description1",
           href: "word",
           icon: "tabler:bible",
-          description: "header.description1",
           image: {
-            src: word,
+            src: less,
             alt: "flame_the_freeze_word",
           },
+          new: true,
+          text: "header.link1",
         },
         {
-          text: "header.link3",
+          description: "header.description3",
           href: "church",
           icon: "tabler:flame",
-          description: "header.description3",
+          text: "header.link3",
         },
         {
-          text: "header.link4",
+          description: "header.description4",
           href: "devotions",
           icon: "tabler:notebook",
-          description: "header.description4",
+          text: "header.link4",
         },
       ],
     },
@@ -126,36 +130,37 @@ export const headerData: { links: Array<MenuLink> } = {
       text: "header.resources",
       links: [
         {
-          text: "header.link5",
+          description: "header.description5",
           href: "witnesses",
           icon: "tabler:users",
-          description: "header.description5",
+          text: "header.link5",
         },
         {
-          text: "header.link7",
+          description: "header.description7",
           href: "events",
           icon: "tabler:calendar-event",
-          description: "header.description7",
+          text: "header.link7",
         },
         {
-          text: "header.link6",
+          description: "header.description6",
           href: "fivefold",
           icon: "tabler:diamond",
-          description: "header.description6",
           image: {
             src: smith,
             alt: "Smith Wigglesworth flamed the freeze in his own life time",
           },
+          text: "header.link6",
         },
         {
-          text: "header.link8",
+          description: "header.description8",
           href: "holy-ghost",
           icon: "tabler:brand-tailwind",
-          description: "header.description8",
           image: {
             src: free_you_from_your_sins,
             alt: "What does the Holy Ghost do? Free you from your sins",
           },
+          new: true,
+          text: "header.link8",
         },
       ],
     },

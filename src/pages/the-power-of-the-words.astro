@@ -1,0 +1,111 @@
+---
+import Template from "~/screens/word.astro";
+
+import less from "~/assets/images/word/the_power_of_the_words-less.webp";
+
+const metadata = {
+  title: "The Power of the Words | Power of your speech",
+  description:
+    "Unlock the transformative potential of your speech with Flame the Freeze. Explore how the power of the words can shape your life and bring forth positive change",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  canonical: "https://flamethefreeze.com/the-power-of-the-words",
+  openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "https://flamethefreeze.com/the-power-of-the-words",
+    siteName: "Flame the Freeze",
+    title: "The Power of the Words | Power of your speech",
+    description:
+      "Unlock the transformative potential of your speech with Flame the Freeze. Explore how the power of the words can shape your life and bring forth positive change",
+    images: [
+      {
+        url: less,
+        alt: "The Power of the Words - Flame the Freeze Ministry",
+        width: 630,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    handle: "@FlameTheFreeze",
+    site: "@FlameTheFreeze",
+    cardType: "summary_large_image",
+    title: "The Power of the Words - Transform Your Life",
+    description:
+      "Discover how the power of the words transforms reality through biblical confessions and spoken declarations.",
+  },
+  ignoreTitleTemplate: true,
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://flamethefreeze.com/the-power-of-the-words#article",
+      isPartOf: {
+        "@id": "https://flamethefreeze.com/the-power-of-the-words#webpage",
+      },
+      author: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      headline: "The Power of the Words - Transform Your Life Through Speech",
+      description:
+        "Discover the power of the words and how your speech transforms reality. Learn biblical principles about the power of words, spoken declarations, and life-changing confessions that bring breakthrough and divine transformation.",
+      datePublished: "2024-01-01T00:00:00+00:00",
+      dateModified: "2025-01-01T00:00:00+00:00",
+      mainEntityOfPage: {
+        "@id": "https://flamethefreeze.com/the-power-of-the-words#webpage",
+      },
+      publisher: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      image: {
+        "@type": "ImageObject",
+        url: less,
+        width: 630,
+        height: 630,
+      },
+      articleSection: "Spiritual Teaching",
+      keywords: [
+        "the power of the words",
+        "power of words",
+        "biblical confessions",
+        "spoken declarations",
+        "transformative speech",
+        "divine breakthrough",
+        "life and death in the tongue",
+        "word of faith",
+        "prophetic words",
+        "spiritual transformation",
+      ],
+      about: [
+        {
+          "@type": "Thing",
+          name: "Biblical Confessions",
+          description: "Spoken declarations based on biblical principles that transform circumstances",
+        },
+        {
+          "@type": "Thing",
+          name: "Power of Speech",
+          description: "The transformative ability of spoken words to create change in the spiritual and natural realm",
+        },
+        {
+          "@type": "Thing",
+          name: "Divine Declarations",
+          description: "Faith-filled statements that align with God's word and bring breakthrough",
+        },
+      ],
+    },
+  ],
+};
+---
+
+<Template
+  lang="en"
+  metadata={{ ...metadata, structuredData }}
+  siteRebuildStatus={{ status: "completed", display: true }}
+/>

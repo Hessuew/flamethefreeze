@@ -1,10 +1,27 @@
 ---
 import { Icon } from "astro-icon/components";
 import Image from "astro/components/Image.astro";
-import type { MenuLink } from "./Header.astro";
 import { useTranslations } from "~/i18n/utils";
 import { ui } from "~/i18n/ui";
 import { getLanguageRoute } from "~/navigation";
+import type { ImageMetadata } from "astro";
+
+interface Link {
+  ariaLabel?: string;
+  description?: string;
+  href?: string;
+  icon?: string;
+  image?: {
+    src: ImageMetadata;
+    alt: string;
+  };
+  new?: boolean;
+  text?: string;
+}
+
+export interface MenuLink extends Link {
+  links?: Array<MenuLink>;
+}
 
 interface Props {
   links: Array<MenuLink>;
@@ -59,8 +76,8 @@ const t = useTranslations(lang || "en");
                               class="w-7 h-7 xl:w-[28px] xl:h-[28px] text-white group-hover:text-orange-700"
                             />
                           )}
-                          <div class="flex flex-col">
-                            <span class="inline-block font-medium xl:text-[16px] xl:leading-[24px] text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-hover:from-orange-600 group-hover:to-yellow-500">
+                          <div class="flex flex-col items-start">
+                            <span class="font-medium xl:text-[16px] xl:leading-[24px] text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-hover:from-orange-600 group-hover:to-yellow-500 w-fit">
                               {text ? t(text as keyof typeof ui.en) : text}
                             </span>
                             {description && (
@@ -74,10 +91,10 @@ const t = useTranslations(lang || "en");
                     </li>
                   ))}
               </ul>
-              <ul class="lg:w-1/2 lg:space-y-2 xl:space-y-[8px] lg:block">
+              <ul class="lg:w-1/2 lg:space-y-2 xl:space-y-[8px] hidden lg:flex lg:flex-col">
                 {headerLinks.links
                   ?.filter((link) => link.image)
-                  .map(({ text, href, image }) => (
+                  .map(({ text, href, image, new: isNew }) => (
                     <li class="group">
                       <a
                         class="relative block h-24 xl:h-[96px] rounded-lg transform-gpu overflow-hidden ring-0 ring-gray-700 group-hover:ring-1 transition duration-200"
@@ -90,6 +107,7 @@ const t = useTranslations(lang || "en");
                             width={400}
                             height={300}
                             class="absolute inset-0 w-full h-full object-cover object-center opacity-60 group-hover:opacity-80 group-hover:scale-105 transition duration-500 transform-gpu"
+                            loading="lazy"
                           />
                         )}
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20" />
@@ -97,8 +115,15 @@ const t = useTranslations(lang || "en");
                           <span
                             class="text-white font-medium xl:text-[16px] xl:leading-[24px]"
                             set:html={text ? t(text as keyof typeof ui.en) : text}
-                          ></span>
+                          />
                         </div>
+                        {isNew && (
+                          <div class="absolute top-0 right-2 xl:right-[8px]">
+                            <span class="text-white font-medium text-sm xl:text-[14px] xl:leading-[20px]">
+                              {t("new")}
+                            </span>
+                          </div>
+                        )}
                       </a>
                     </li>
                   ))}

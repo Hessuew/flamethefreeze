@@ -1,0 +1,408 @@
+---
+import { Icon } from "astro-icon/components";
+import { BlurFade } from "~/components/magicui/blur-fade";
+import type { ZoomLink } from "~/types";
+import { useTranslations } from "~/i18n/utils";
+
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  zoomLinks: ZoomLink[];
+  classes?: Record<string, string>;
+  lang?: "en" | "fi";
+}
+
+const {
+  title = "Join Our Zoom Sessions",
+  subtitle = "Connect with us online for prayer, worship, and fellowship",
+  zoomLinks = [],
+  classes = {},
+  lang = "en",
+} = Astro.props;
+
+
+const t = useTranslations(lang);
+
+// Function to determine if a meeting is currently live
+function isLive(weekType?: "even" | "odd"): boolean {
+  if (!weekType) return false;
+  
+  const now = new Date();
+  
+  // Convert to Helsinki time (Europe/Helsinki timezone)
+  const helsinkiTime = new Date(now.toLocaleString("en-US", { timeZone: "Europe/Helsinki" }));
+  
+  // Check if it's Saturday (6) and between 18:00-23:00 GMT+2
+  const isSaturday = helsinkiTime.getDay() === 6;
+  const hour = helsinkiTime.getHours();
+  const isInTimeRange = hour >= 18 && hour < 23;
+  
+  if (!isSaturday || !isInTimeRange) return false;
+  
+  // Calculate ISO week number properly
+  // This is much closer to the ISO 8601 definition:
+  // - Finds the first Thursday of the year (Jan 4 is always in week 1).
+  // - Steps back to the Monday of that week.
+  // - Calculates weeks relative to that reference Monday.
+  const firstThursday = new Date(helsinkiTime.getFullYear(), 0, 4);
+  firstThursday.setDate(firstThursday.getDate() - (firstThursday.getDay() + 6) % 7);
+  const weekNumber = Math.ceil(((helsinkiTime.getTime() - firstThursday.getTime()) / 86400000 + 1) / 7);
+   
+   //
+
+
+  
+  // Check if current week matches the meeting type
+  const isEvenWeek = weekNumber % 2 === 0;
+  
+  return (weekType === "even" && isEvenWeek) || (weekType === "odd" && !isEvenWeek);
+}
+
+// Function to calculate time until next meeting
+function getNextMeetingTime(weekType?: "even" | "odd"): Date | null {
+  if (!weekType) return null;
+  
+  const now = new Date();
+  // Convert to Helsinki time properly
+  const helsinkiFormatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Europe/Helsinki',
+    year: 'numeric', month: 'numeric', day: 'numeric',
+    hour: 'numeric', minute: 'numeric', second: 'numeric'
+  });
+  const helsinkiParts = helsinkiFormatter.formatToParts(now);
+  const partsMap = Object.fromEntries(helsinkiParts.map(p => [p.type, p.value]));
+
+  const helsinkiTime = new Date(
+    Number(partsMap.year),
+    Number(partsMap.month) - 1,
+    Number(partsMap.day),
+    Number(partsMap.hour),
+    Number(partsMap.minute),
+    Number(partsMap.second)
+  );
+
+  
+  // Start from current week's Saturday at 18:00
+  let nextSaturday = new Date(helsinkiTime);
+  nextSaturday.setDate(helsinkiTime.getDate() + (6 - helsinkiTime.getDay()));
+  nextSaturday.setHours(18, 0, 0, 0);
+  
+  // If it's already past this Saturday's meeting time, move to next week
+  if (nextSaturday <= helsinkiTime) {
+    nextSaturday.setDate(nextSaturday.getDate() + 7);
+  }
+   // Find the correct week type
+  let iterations = 0;
+  const maxIterations = 52; // Safety limit: max 1 year ahead
+  while (iterations < maxIterations) {
+    // Calculate ISO week number properly
+    const firstThursday = new Date(nextSaturday.getFullYear(), 0, 4);
+    firstThursday.setDate(firstThursday.getDate() - (firstThursday.getDay() + 6) % 7);
+    const weekNumber = Math.ceil(((nextSaturday.getTime() - firstThursday.getTime()) / 86400000 + 1) / 7);
+    const isEvenWeek = weekNumber % 2 === 0;
+     
+    const weekMatches = (weekType === "even" && isEvenWeek) || (weekType === "odd" && !isEvenWeek);
+     
+    if (weekMatches) {
+     // Return the date in UTC
+     return new Date(Date.UTC(
+       nextSaturday.getFullYear(),
+       nextSaturday.getMonth(),
+       nextSaturday.getDate(),
+       16, 0, 0 // 18:00 Helsinki is typically 16:00 UTC (adjust for DST)
+     ));
+    }
+    
+    nextSaturday.setDate(nextSaturday.getDate() + 7);
+    iterations++;
+   }
+  
+  return null; // Safety fallback 
+}
+---
+
+<section class={`py-16 md:py-20 xl:py-[80px] ${classes.container ?? ""}`} id="zoom-links">
+  <div class="mx-auto max-w-7xl xl:max-w-[1280px] px-4 sm:px-6 xl:px-[24px]">
+    <!-- Header -->
+    <div class="mb-12 xl:mb-[48px] text-center">
+      <BlurFade client:load delay={0.2} direction="up" inView>
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl xl:text-[36px] xl:leading-[40px]">
+          {title}
+        </h2>
+      </BlurFade>
+      {subtitle && (
+        <BlurFade client:load delay={0.4} direction="up" inView>
+          <p class="mt-4 xl:mt-[16px] text-lg xl:text-[18px] xl:leading-[28px] text-gray-300 max-w-2xl mx-auto xl:max-w-[672px]">
+            {subtitle}
+          </p>
+        </BlurFade>
+      )}
+    </div>
+
+    <!-- Zoom Links Grid -->
+    <div class="grid gap-6 md:gap-8 xl:gap-[32px] sm:grid-cols-2">
+      {zoomLinks.map((link) => (
+          <div class="zoom-link-card group relative overflow-hidden intersect-once intersect-tenth sm:intersect-quarter intercept-no-queue motion-safe:opacity-0 motion-safe:intersect:animate-fade">
+            <!-- Animated Border -->
+            <div class="absolute inset-0 rounded-2xl xl:rounded-[16px] bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-[2px]">
+              <div class="w-full h-full bg-gradient-to-br from-[#0a0014] via-[#1a0024] to-[#2d1b69] rounded-2xl xl:rounded-[16px]"></div>
+            </div>
+
+            <!-- Content -->
+            <div class="relative p-8 xl:p-[32px] h-full flex flex-col">
+              <!-- Icon -->
+              <div class="flex items-center justify-center w-16 h-16 xl:w-[64px] xl:h-[64px] mx-auto mb-6 xl:mb-[24px] rounded-2xl xl:rounded-[16px] bg-gradient-to-br from-blue-500 to-purple-600 group-hover:shadow-blue-500/25 transition-all duration-300 group-hover:scale-110">
+                <Icon 
+                  name={link.icon || "tabler:video"} 
+                  class="w-8 h-8 xl:w-[32px] xl:h-[32px] text-white group-hover:scale-110 transition-transform duration-300" 
+                />
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-xl xl:text-[20px] xl:leading-[28px] font-semibold text-white mb-3 xl:mb-[12px] text-center group-hover:text-blue-400 transition-colors duration-300">
+                {link.title}
+              </h3>
+
+              <!-- Description -->
+              {link.description && (
+                <p class="text-base xl:text-[16px] xl:leading-[24px] text-gray-300 text-center mb-6 xl:mb-[24px] flex-grow">
+                  {link.description}
+                </p>
+              )}
+
+              <!-- Meeting Info -->
+              <div class="space-y-3 xl:space-y-[12px] mb-6 xl:mb-[24px]">
+                {link.time && (
+                  <div class="flex items-center justify-center text-sm xl:text-[14px] xl:leading-[20px] text-gray-400">
+                    <Icon name="tabler:clock" class="w-4 h-4 xl:w-[16px] xl:h-[16px] mr-2 xl:mr-[8px]" />
+                    {link.time}
+                  </div>
+                )}
+                {link.recurring && (
+                  <div class="flex items-center justify-center text-sm xl:text-[14px] xl:leading-[20px] text-gray-400">
+                    <Icon name="tabler:repeat" class="w-4 h-4 xl:w-[16px] xl:h-[16px] mr-2 xl:mr-[8px]" />
+                    {link.recurring}
+                  </div>
+                )}
+                {link.meetingId && (
+                  <div class="flex items-center justify-center text-sm xl:text-[14px] xl:leading-[20px] text-gray-400 font-mono">
+                    <Icon name="tabler:hash" class="w-4 h-4 xl:w-[16px] xl:h-[16px] mr-2 xl:mr-[8px]" />
+                    ID: {link.meetingId}
+                  </div>
+                )}
+              </div>
+
+              <!-- Join Button -->
+              {isLive(link.weekType) ? (
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Join ${link.title} meeting - Live now`}
+                  role="button"
+                  class="zoom-join-btn relative inline-flex items-center justify-center px-6 py-3 xl:px-[24px] xl:py-[12px] text-sm xl:text-[14px] xl:leading-[20px] font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl hover:shadow-blue-500/25 transition-all duration-300 group-hover:scale-105 active:scale-95 overflow-hidden"
+                >
+                  <!-- Button Background Animation -->
+                  <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  <!-- Button Content -->
+                  <div class="relative flex items-center">
+                    <Icon name="tabler:video" class="w-4 h-4 xl:w-[16px] xl:h-[16px] mr-2 xl:mr-[8px] group-hover:animate-pulse" />
+                    {t("zoom.cta.join")}
+                    <Icon name="tabler:external-link" class="w-4 h-4 xl:w-[16px] xl:h-[16px] ml-2 xl:ml-[8px] group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
+
+                  <!-- Shine Effect -->
+                  <div class="absolute inset-0 -top-2 xl:-top-[8px] -bottom-2 xl:-bottom-[8px] bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                </a>
+              ) : (
+                <div class="space-y-3 xl:space-y-[12px]">
+                  <button
+                    disabled
+                    class="zoom-join-btn-disabled relative inline-flex items-center justify-center px-6 py-3 xl:px-[24px] xl:py-[12px] text-sm xl:text-[14px] xl:leading-[20px] font-medium text-gray-400 bg-gradient-to-r from-gray-600 to-gray-700 rounded-xl shadow-lg cursor-not-allowed opacity-60 w-full"
+                  >
+                    <div class="relative flex items-center">
+                      <Icon name="tabler:clock" class="w-4 h-4 xl:w-[16px] xl:h-[16px] mr-2 xl:mr-[8px]" />
+                      {t("zoom.cta.notLive")}
+                    </div>
+                  </button>
+                  
+                  <!-- Countdown Timer -->
+                  <div 
+                    class="countdown-timer text-center text-xs xl:text-[14px] xl:leading-[20px] text-gray-400"
+                    data-next-meeting={getNextMeetingTime(link.weekType)?.toISOString()}
+                  >
+                    <div class="flex justify-center space-x-4 xl:space-x-[16px]">
+                      <div class="flex flex-col items-center">
+                        <span class="countdown-days font-mono text-sm xl:text-[14px] xl:leading-[20px] text-blue-400">--</span>
+                        <span class="text-xs xl:text-[12px] xl:leading-[16px]">{t("zoom.countdown.days")}</span>
+                      </div>
+                      <div class="flex flex-col items-center">
+                        <span class="countdown-hours font-mono text-sm xl:text-[14px] xl:leading-[20px] text-blue-400">--</span>
+                        <span class="text-xs xl:text-[12px] xl:leading-[16px]">{t("zoom.countdown.hours")}</span>
+                      </div>
+                      <div class="flex flex-col items-center">
+                        <span class="countdown-minutes font-mono text-sm xl:text-[14px] xl:leading-[20px] text-blue-400">--</span>
+                        <span class="text-xs xl:text-[12px] xl:leading-[16px]">{t("zoom.countdown.minutes")}</span>
+                      </div>
+                      <div class="flex flex-col items-center">
+                        <span class="countdown-seconds font-mono text-sm xl:text-[14px] xl:leading-[20px] text-blue-400">--</span>
+                        <span class="text-xs xl:text-[12px] xl:leading-[16px]">{t("zoom.countdown.seconds")}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              <!-- Status Indicator -->
+              {isLive(link.weekType) && (
+                <div class="absolute top-4 xl:top-[16px] right-4 xl:right-[16px] flex items-center">
+                  <div class="w-3 h-3 xl:w-[12px] xl:h-[12px] bg-red-500 rounded-full animate-pulse mr-2 xl:mr-[8px]"></div>
+                  <span class="text-xs xl:text-[12px] xl:leading-[16px] font-medium text-red-400 uppercase tracking-wide">{t("zoom.badge.live")}</span>
+                </div>
+              )}
+            </div>
+          </div>
+      ))}
+    </div>
+
+    <!-- Call to Action -->
+    <BlurFade client:load delay={1.0} direction="up" inView>
+      <div class="mt-12 xl:mt-[48px] text-center">
+        <div class="inline-flex items-center px-6 py-3 xl:px-[24px] xl:py-[12px] rounded-full bg-gradient-to-r from-blue-900/20 to-purple-900/20 border border-blue-800">
+          <Icon name="tabler:info-circle" class="w-5 h-5 xl:w-[20px] xl:h-[20px] text-blue-400 mr-2 xl:mr-[8px]" />
+          <span class="text-sm xl:text-[14px] xl:leading-[20px] text-blue-300">
+            {t("zoom.info")}
+          </span>
+        </div>
+      </div>
+    </BlurFade>
+  </div>
+</section>
+
+<style>
+  .zoom-link-card {
+    @apply relative transform transition-all duration-300 hover:-translate-y-2 hover:scale-105;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    backdrop-filter: blur(20px);
+  }
+
+  .zoom-link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+      rgba(59, 130, 246, 0.1) 0%,
+      rgba(147, 51, 234, 0.1) 50%,
+      rgba(251, 146, 60, 0.1) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 16px;
+    z-index: -1;
+  }
+
+  .zoom-link-card:hover::before {
+    opacity: 1;
+  }
+
+  .zoom-join-btn {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .zoom-join-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+
+  .zoom-join-btn:hover::before {
+    left: 100%;
+  }
+
+  /* Dark theme as default */
+  .zoom-link-card {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .zoom-link-card {
+      @apply hover:scale-105 hover:-translate-y-1;
+    }
+  }
+
+  /* Animation keyframes */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .zoom-link-card:hover .floating-icon {
+    animation: float 2s ease-in-out infinite;
+  }
+</style>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    function updateCountdowns() {
+      const countdownElements = document.querySelectorAll('.countdown-timer');
+      
+      countdownElements.forEach(element => {
+        const nextMeetingISO = element.getAttribute('data-next-meeting');
+        if (!nextMeetingISO) return;
+        
+        const nextMeeting = new Date(nextMeetingISO);
+        const now = new Date();
+        const timeDiff = nextMeeting.getTime() - now.getTime();
+        
+        if (timeDiff <= 0) {
+          // Meeting time has passed, refresh the page to update live status
+          // Add protection against reload loops
+          const lastReload = sessionStorage.getItem('lastZoomReload');
+          const now = Date.now();
+          if (!lastReload || now - parseInt(lastReload) > 60000) { // Allow reload only once per minute
+            sessionStorage.setItem('lastZoomReload', now.toString());
+            window.location.reload();
+          }
+          return;
+        }
+        
+        // Calculate time components
+        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+        
+        // Update display
+        const daysEl = element.querySelector('.countdown-days');
+        const hoursEl = element.querySelector('.countdown-hours');
+        const minutesEl = element.querySelector('.countdown-minutes');
+        const secondsEl = element.querySelector('.countdown-seconds');
+        
+        if (daysEl) daysEl.textContent = days.toString().padStart(2, '0');
+        if (hoursEl) hoursEl.textContent = hours.toString().padStart(2, '0');
+        if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');
+        if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');
+      });
+    }
+    
+    // Update immediately and then every second
+    updateCountdowns();
+    const countdownInterval = setInterval(updateCountdowns, 1000);
+    
+    // Clean up interval when page is unloaded
+    document.addEventListener("astro:before-preparation", () => {
+      clearInterval(countdownInterval);
+    });
+  });
+</script>

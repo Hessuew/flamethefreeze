@@ -319,12 +319,16 @@ const TextAnimateBase = ({
   const MotionComponent = motion.create(Component);
 
   let segments: string[] = [];
+  let isCharacterMode = false;
+
   switch (by) {
     case "word":
       segments = text.split(/(\s+)/);
       break;
     case "character":
-      segments = text.split("");
+      // Split into words first, then we'll handle characters within each word
+      segments = text.split(/(\s+)/);
+      isCharacterMode = true;
       break;
     case "line":
       segments = text.split("\n");
@@ -335,6 +339,11 @@ const TextAnimateBase = ({
       break;
   }
 
+  // Calculate total character count for proper stagger timing in character mode
+  const totalCharacters = isCharacterMode
+    ? segments.reduce((acc, segment) => acc + (segment.trim() ? segment.length : 1), 0)
+    : segments.length;
+
   const finalVariants = variants
     ? {
         container: {
@@ -344,13 +353,13 @@ const TextAnimateBase = ({
             transition: {
               opacity: { duration: 0.01, delay },
               delayChildren: delay,
-              staggerChildren: duration / segments.length,
+              staggerChildren: duration / totalCharacters,
             },
           },
           exit: {
             opacity: 0,
             transition: {
-              staggerChildren: duration / segments.length,
+              staggerChildren: duration / totalCharacters,
               staggerDirection: -1,
             },
           },
@@ -365,13 +374,13 @@ const TextAnimateBase = ({
               ...defaultItemAnimationVariants[animation].container.show,
               transition: {
                 delayChildren: delay,
-                staggerChildren: duration / segments.length,
+                staggerChildren: duration / totalCharacters,
               },
             },
             exit: {
               ...defaultItemAnimationVariants[animation].container.exit,
               transition: {
-                staggerChildren: duration / segments.length,
+                staggerChildren: duration / totalCharacters,
                 staggerDirection: -1,
               },
             },
@@ -392,20 +401,45 @@ const TextAnimateBase = ({
         viewport={{ once }}
         {...props}
       >
-        {segments.map((segment, i) => (
-          <motion.span
-            key={`${by}-${segment}-${i}`}
-            variants={finalVariants.item}
-            custom={i * staggerTimings[by]}
-            className={cn(
-              by === "line" ? "block" : "inline-block whitespace-pre",
-              by === "character" && "",
-              segmentClassName
-            )}
-          >
-            {segment}
-          </motion.span>
-        ))}
+        {segments.map((segment, segmentIndex) => {
+          // Calculate the starting index for this segment's characters
+          let characterStartIndex = 0;
+          for (let i = 0; i < segmentIndex; i++) {
+            characterStartIndex += segments[i].trim() ? segments[i].length : 1;
+          }
+
+          if (isCharacterMode && segment.trim()) {
+            // For character mode, wrap each word in a span to prevent breaking
+            return (
+              <span key={`word-${segmentIndex}`} className="inline-block">
+                {segment.split("").map((char, charIndex) => (
+                  <motion.span
+                    key={`${by}-${char}-${segmentIndex}-${charIndex}`}
+                    variants={finalVariants.item}
+                    // custom={(characterStartIndex + charIndex) * staggerTimings[by]}
+                    transition={{ delay: (characterStartIndex + charIndex) * staggerTimings[by] }}
+                    className={cn("inline-block", segmentClassName)}
+                  >
+                    {char}
+                  </motion.span>
+                ))}
+              </span>
+            );
+          } else {
+            // For spaces and other modes, render normally
+            return (
+              <motion.span
+                key={`${by}-${segment}-${segmentIndex}`}
+                variants={finalVariants.item}
+                // custom={characterStartIndex * staggerTimings[by]}
+                transition={{ delay: characterStartIndex * staggerTimings[by] }}
+                className={cn(by === "line" ? "block" : "inline-block whitespace-pre", segmentClassName)}
+              >
+                {segment}
+              </motion.span>
+            );
+          }
+        })}
       </MotionComponent>
     </AnimatePresence>
   );
