@@ -11,20 +11,95 @@ const metadata = {
     index: true,
     follow: true,
   },
+  canonical: "https://flamethefreeze.com/the-power-of-the-words",
   openGraph: {
-    type: "website",
+    type: "article",
     locale: "en_US",
     url: "https://flamethefreeze.com/the-power-of-the-words",
     siteName: "Flame the Freeze",
+    title: "The Power of the Words - Transform Your Life Through Speech",
+    description:
+      "Unlock the transformative power of the words. Learn how biblical confessions and spoken declarations create breakthrough and divine transformation in your life.",
     image: logoUrl,
+    imageAlt: "The Power of the Words - Flame the Freeze Ministry",
   },
   twitter: {
     handle: "@FlameTheFreeze",
     site: "@FlameTheFreeze",
     cardType: "summary_large_image",
+    title: "The Power of the Words - Transform Your Life",
+    description:
+      "Discover how the power of the words transforms reality through biblical confessions and spoken declarations.",
   },
   ignoreTitleTemplate: true,
 };
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://flamethefreeze.com/the-power-of-the-words#article",
+      isPartOf: {
+        "@id": "https://flamethefreeze.com/the-power-of-the-words#webpage",
+      },
+      author: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      headline: "The Power of the Words - Transform Your Life Through Speech",
+      description:
+        "Discover the power of the words and how your speech transforms reality. Learn biblical principles about the power of words, spoken declarations, and life-changing confessions that bring breakthrough and divine transformation.",
+      datePublished: "2024-01-01T00:00:00+00:00",
+      dateModified: "2025-01-01T00:00:00+00:00",
+      mainEntityOfPage: {
+        "@id": "https://flamethefreeze.com/the-power-of-the-words#webpage",
+      },
+      publisher: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      image: {
+        "@type": "ImageObject",
+        url: logoUrl,
+        width: 1200,
+        height: 630,
+      },
+      articleSection: "Spiritual Teaching",
+      keywords: [
+        "the power of the words",
+        "power of words",
+        "biblical confessions",
+        "spoken declarations",
+        "transformative speech",
+        "divine breakthrough",
+        "life and death in the tongue",
+        "word of faith",
+        "prophetic words",
+        "spiritual transformation",
+      ],
+      about: [
+        {
+          "@type": "Thing",
+          name: "Biblical Confessions",
+          description: "Spoken declarations based on biblical principles that transform circumstances",
+        },
+        {
+          "@type": "Thing",
+          name: "Power of Speech",
+          description: "The transformative ability of spoken words to create change in the spiritual and natural realm",
+        },
+        {
+          "@type": "Thing",
+          name: "Divine Declarations",
+          description: "Faith-filled statements that align with God's word and bring breakthrough",
+        },
+      ],
+    },
+  ],
+};
 ---
 
-<Template lang="en" metadata={metadata} siteRebuildStatus={{ status: "inProgress", display: true }} />
+<Template
+  lang="en"
+  metadata={{ ...metadata, structuredData }}
+  siteRebuildStatus={{ status: "completed", display: true }}
+/>

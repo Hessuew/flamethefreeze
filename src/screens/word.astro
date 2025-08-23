@@ -181,23 +181,27 @@ const wordItems = [
 
       <Fragment slot="subtitle">
         <div class="flex justify-center mb-8 xl:mb-[32px]">
-          <div class="max-w-2xl px-4">
+          <div class="max-w-2xl xl:max-w-[673px] px-4 xl:px-[16px]">
             <BlurFade client:load delay={3} direction="up" inView>
               <div class="hero-subtitle-card group relative overflow-hidden">
                 <!-- Glass Morphism Background -->
-                <div class="absolute inset-0 backdrop-blur-xl bg-black/20 border border-white/10 rounded-2xl shadow-xl">
+                <div
+                  class="absolute inset-0 backdrop-blur-xl bg-black/20 border border-white/10 rounded-2xl xl:rounded-[16px] shadow-xl"
+                >
                 </div>
 
                 <!-- Animated Border -->
                 <div
-                  class="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-[2px]"
+                  class="absolute inset-0 rounded-2xl xl:rounded-[16px] bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-[2px]"
                 >
-                  <div class="w-full h-full bg-gradient-to-br from-[#0a0014] via-[#1a0024] to-[#2d1b69] rounded-2xl">
+                  <div
+                    class="w-full h-full bg-gradient-to-br from-[#0a0014] via-[#1a0024] to-[#2d1b69] rounded-2xl xl:rounded-[16px]"
+                  >
                   </div>
                 </div>
 
                 <!-- Content -->
-                <div class="relative p-8 h-full flex flex-col">
+                <div class="relative p-8 xl:p-[32px] h-full flex flex-col">
                   <!-- Text content -->
                   <div class="relative text-center">
                     <span
@@ -207,19 +211,19 @@ const wordItems = [
                     </span>
 
                     <!-- Enhanced decorative elements -->
-                    <div class="flex justify-center mt-6">
-                      <div class="flex items-center space-x-4">
+                    <div class="flex justify-center mt-6 xl:mt-[24px]">
+                      <div class="flex items-center space-x-4 xl:space-x-[16px]">
                         <div
-                          class="w-12 h-0.5 bg-gradient-to-r from-transparent via-blue-400/80 to-blue-400/80 rounded-full group-hover:via-blue-300 transition-colors duration-300"
+                          class="w-12 xl:w-[48px] h-0.5 xl:h-[2px] bg-gradient-to-r from-transparent via-blue-400/80 to-blue-400/80 rounded-full"
                         >
                         </div>
                         <div
-                          class="w-3 h-3 bg-white/80 rounded-full shadow-lg group-hover:bg-blue-300 transition-colors duration-300"
+                          class="w-3 xl:w-[12px] h-3 xl:h-[12px] bg-white/80 rounded-full shadow-lg group-hover:bg-blue-300 transition-colors duration-300"
                           style="box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);"
                         >
                         </div>
                         <div
-                          class="w-12 h-0.5 bg-gradient-to-l from-transparent via-orange-400/80 to-orange-400/80 rounded-full group-hover:via-orange-300 transition-colors duration-300"
+                          class="w-12 xl:w-[48px] h-0.5 xl:h-[2px] bg-gradient-to-l from-transparent via-orange-400/80 to-orange-400/80 rounded-full"
                         >
                         </div>
                       </div>
@@ -227,17 +231,28 @@ const wordItems = [
                   </div>
 
                   <!-- Meeting Info Style Elements -->
-                  <div class="flex justify-center space-x-6 mt-4 text-xs text-gray-400">
+                  <div
+                    class="flex justify-center space-x-6 xl:space-x-[24px] mt-4 xl:mt-[16px] text-xs xl:text-[12px] xl:leading-[16px] text-gray-400"
+                  >
                     <div class="flex items-center">
-                      <div class="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-pulse"></div>
+                      <div
+                        class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-blue-400 rounded-full mr-2 xl:mr-[8px] animate-pulse"
+                      >
+                      </div>
                       <span>Divine</span>
                     </div>
                     <div class="flex items-center">
-                      <div class="w-2 h-2 bg-purple-400 rounded-full mr-2 animate-pulse delay-300"></div>
+                      <div
+                        class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-purple-400 rounded-full mr-2 xl:mr-[8px] animate-pulse delay-300"
+                      >
+                      </div>
                       <span>Fire</span>
                     </div>
                     <div class="flex items-center">
-                      <div class="w-2 h-2 bg-orange-400 rounded-full mr-2 animate-pulse delay-700"></div>
+                      <div
+                        class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-orange-400 rounded-full mr-2 xl:mr-[8px] animate-pulse delay-700"
+                      >
+                      </div>
                       <span>Word</span>
                     </div>
                   </div>
@@ -251,7 +266,7 @@ const wordItems = [
 
     <!-- Actions positioned at bottom center on mobile, bottom right on larger screens -->
     <div
-      class="absolute bottom-40 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-4 lg:right-12 flex z-20 min-w-[324px]"
+      class="absolute bottom-40 xl:bottom-[160px] left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-4 lg:right-12 xl:right-[48px] flex z-20 min-w-[324px]"
     >
       <BlurFade client:load delay={4.2} direction="up" inView>
         <FireButton
@@ -352,7 +367,7 @@ const wordItems = [
 
 <style>
   .hero-subtitle-card {
-    @apply relative transform transition-all duration-300 hover:-translate-y-2 hover:scale-105;
+    @apply relative transform transition-all duration-300;
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
     backdrop-filter: blur(20px);
   }
@@ -396,9 +411,5 @@ const wordItems = [
     50% {
       transform: translateY(-10px);
     }
-  }
-
-  .hero-subtitle-card:hover .floating-icon {
-    animation: float 2s ease-in-out infinite;
   }
 </style>
