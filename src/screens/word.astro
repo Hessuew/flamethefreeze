@@ -307,7 +307,6 @@ const wordItems = [
         // Set up event listener for when video has loaded enough data
         const handleVideoLoaded = () => {
           videoLoaded = true;
-          console.log("Video loaded and ready to display");
           heroVideo.removeEventListener("loadeddata", handleVideoLoaded);
         };
 
@@ -322,37 +321,46 @@ const wordItems = [
 
     // Function to display video and handle auto-scroll
     const displayVideo = () => {
-      if (!videoLoaded || videoDisplayed) return;
-
+      if (videoDisplayed) return;
       videoDisplayed = true;
 
-      // Fade in the video and gradient
-      heroVideo.classList.remove("opacity-0");
-      heroVideo.classList.add("opacity-100");
-
-      // Start playing the video
-      const playPromise = heroVideo.play();
-
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            console.log("Video started successfully");
-          })
-          .catch((error) => {
-            console.log("Video autoplay failed:", error);
-          });
-      }
-
-      // Auto-scroll to #word-list after 2 seconds of video display
-      setTimeout(() => {
-        const wordListSection = document.getElementById("word-list");
-        if (wordListSection) {
-          wordListSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
+      const revealAndPlay = () => {
+        heroVideo.classList.remove("opacity-0");
+        heroVideo.classList.add("opacity-100");
+        const playPromise = heroVideo.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            /* ignore autoplay errors */
           });
         }
-      }, 3200);
+        // Auto-scroll to #word-list after ~3.2 seconds of video display
+        setTimeout(() => {
+          const wordListSection = document.getElementById("word-list");
+          wordListSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 3200);
+      };
+
+      if (!videoLoaded) {
+        const videoSrc = heroVideo.dataset.src;
+        if (videoSrc && !heroVideo.src) {
+          heroVideo.src = videoSrc;
+          heroVideo.preload = "metadata";
+          heroVideo.load();
+        }
+        const onLoaded = () => {
+          heroVideo.removeEventListener("loadeddata", onLoaded);
+          videoLoaded = true;
+          revealAndPlay();
+        };
+        heroVideo.addEventListener("loadeddata", onLoaded);
+        if (heroVideo.readyState >= 2) {
+          heroVideo.removeEventListener("loadeddata", onLoaded);
+          videoLoaded = true;
+          revealAndPlay();
+        }
+      } else {
+        revealAndPlay();
+      }
     };
 
     // Add click event listener to fire button

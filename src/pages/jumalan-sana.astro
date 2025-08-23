@@ -4,27 +4,103 @@ import Template from "~/screens/word.astro";
 import logoUrl from "~/assets/images/default.jpg";
 
 const metadata = {
-  title: "The Power of the Words | Koe Jumalan tuli tänään!",
+  title: "Jumalan Sana | Sanojen voima ja muuttava puhe",
   description:
-    "Jumalan tuli 2025? Löydä Jumalan muuttava tuli ja sytytä oma liekkisi Jumalalle. Koe hengellinen herätys, Pyhän Hengen kaste ja palavasti elävä kristillisyys.",
+    "Löydä sanojen voima ja kuinka puheesi muuttaa todellisuutta. Opi raamatullisia periaatteita sanojen voimasta, puhuttujen julistusten ja elämää muuttavien tunnustusten kautta.",
   robots: {
     index: true,
     follow: true,
   },
+  canonical: "https://flamethefreeze.com/jumalan-sana",
   openGraph: {
-    type: "website",
+    type: "article",
     locale: "fi_FI",
-    url: "https://flamethefreeze.com/jumalan-tuli",
+    url: "https://flamethefreeze.com/jumalan-sana",
     siteName: "Flame the Freeze",
+    title: "Jumalan Sana | Sanojen voima ja muuttava puhe",
+    description:
+      "Löydä sanojen voima ja kuinka puheesi muuttaa todellisuutta. Opi raamatullisia periaatteita sanojen voimasta, puhuttujen julistusten ja elämää muuttavien tunnustusten kautta.",
     image: logoUrl,
+    imageAlt: "Jumalan Sana - Flame the Freeze Ministeri",
   },
   twitter: {
     handle: "@FlameTheFreeze",
     site: "@FlameTheFreeze",
     cardType: "summary_large_image",
+    title: "Jumalan Sana - Muuta elämäsi sanojen voimalla",
+    description:
+      "Löydä kuinka sanojen voima muuttaa todellisuutta raamatullisten tunnustusten ja puhuttujen julistusten kautta.",
   },
   ignoreTitleTemplate: true,
 };
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://flamethefreeze.com/jumalan-sana#article",
+      isPartOf: {
+        "@id": "https://flamethefreeze.com/jumalan-sana#webpage",
+      },
+      author: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      headline: "Jumalan Sana - Muuta elämäsi puheen voimalla",
+      description:
+        "Löydä sanojen voima ja kuinka puheesi muuttaa todellisuutta. Opi raamatullisia periaatteita sanojen voimasta, puhuttujen julistusten ja elämää muuttavien tunnustusten kautta, jotka tuovat läpimurtoja ja jumalallista muutosta.",
+      datePublished: "2024-01-01T00:00:00+00:00",
+      dateModified: "2025-01-01T00:00:00+00:00",
+      mainEntityOfPage: {
+        "@id": "https://flamethefreeze.com/jumalan-sana#webpage",
+      },
+      publisher: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      image: {
+        "@type": "ImageObject",
+        url: logoUrl,
+        width: 1200,
+        height: 630,
+      },
+      articleSection: "Hengellinen opetus",
+      keywords: [
+        "jumalan sana",
+        "raamatun sana",
+        "sanojen voima",
+        "raamatulliset tunnustukset",
+        "puhutut julistukset",
+        "muuttava puhe",
+        "jumalallinen läpimurto",
+        "elämä ja kuolema kielessä",
+        "uskon sana",
+        "profeettiset sanat",
+        "hengellinen muutos",
+      ],
+      about: [
+        {
+          "@type": "Thing",
+          name: "Raamatulliset tunnustukset",
+          description: "Puhutut julistukset, jotka perustuvat raamatullisiin periaatteisiin ja muuttavat olosuhteita",
+        },
+        {
+          "@type": "Thing",
+          name: "Puheen voima",
+          description: "Puhuttujen sanojen muuttava kyky luoda muutosta hengellisessä ja luonnollisessa maailmassa",
+        },
+        {
+          "@type": "Thing",
+          name: "Jumalliset julistukset",
+          description: "Uskontäyteisiä lausuntoja, jotka ovat linjassa Jumalan sanan kanssa ja tuovat läpimurtoja",
+        },
+      ],
+    },
+  ],
+};
 ---
 
-<Template lang="fi" metadata={metadata} siteRebuildStatus={{ status: "notStarted", display: true }} />
+<Template
+  lang="fi"
+  metadata={{ ...metadata, structuredData }}
+  siteRebuildStatus={{ status: "inProgress", display: true }}
+/>
