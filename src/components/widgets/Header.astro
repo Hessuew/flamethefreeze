@@ -1,31 +1,14 @@
 ---
 import ToggleMenu from "~/components/common/ToggleMenu.astro";
 import Logo from "~/components/Logo.astro";
-import HeaderNavigation from "~/components/widgets/HeaderNavigation.astro";
+import HeaderNavigation, { type MenuLink } from "~/components/widgets/HeaderNavigation.astro";
 import { getHomePermalink, getPermalink, trimSlash } from "~/utils/permalinks";
-import type { ImageMetadata } from "astro";
 import { Icon } from "astro-icon/components";
 import LanguagePicker from "~/components/common/LanguagePicker.astro";
 import { useTranslations } from "~/i18n/utils";
 import { twMerge } from "tailwind-merge";
 import type { ui } from "~/i18n/ui";
 import { getLanguageRoute } from "~/navigation";
-
-interface Link {
-  text?: string;
-  description?: string;
-  href?: string;
-  ariaLabel?: string;
-  icon?: string;
-  image?: {
-    src: ImageMetadata;
-    alt: string;
-  };
-}
-
-export interface MenuLink extends Link {
-  links?: Array<MenuLink>;
-}
 
 export interface Props {
   id?: string;
@@ -146,7 +129,7 @@ const t = useTranslations(lang);
                   >
                     <div class="w-full">
                       <ul class="py-2 space-y-2">
-                        {links.map(({ text: text2, href: href2, icon, description }) => (
+                        {links.map(({ text: text2, href: href2, icon, description, new: isNew }) => (
                           <li class="block lg:hidden">
                             <a
                               class:list={["py-2 px-3 block group", { "aw-link-active": href2 === currentPath }]}
@@ -159,11 +142,18 @@ const t = useTranslations(lang);
                                     class="min-w-5 min-h-5 w-5 h-5 mt-0.5 text-white group-active:text-orange-600"
                                   />
                                 )}
-                                <div>
-                                  <div
-                                    class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-active:from-orange-600 group-active:to-yellow-500"
-                                    set:html={text2 ? t(text2 as keyof typeof ui.en) : text2}
-                                  />
+                                <div class="w-full">
+                                  <div class="flex w-full flex-row items-center justify-between">
+                                    <span
+                                      class="font-medium text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-active:from-orange-600 group-active:to-yellow-500"
+                                      set:html={text2 ? t(text2 as keyof typeof ui.en) : text2}
+                                    />
+                                    {isNew && (
+                                      <span class="text-white font-medium text-sm xl:text-[14px] xl:leading-[20px]">
+                                        - {t("new")}
+                                      </span>
+                                    )}
+                                  </div>
                                   {description && (
                                     <div class="text-sm text-gray-400">
                                       {description ? t(description as keyof typeof ui.en) : description}
