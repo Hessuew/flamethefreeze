@@ -245,11 +245,11 @@ export const ui = {
     "word.hero.subtitle.1": "Does you words have power? Know how you can receive the power of the words in your life.",
     "word.hero.cta.button": "I want the power of the words in my life ✋",
     "word.wordItems.title.1": "Speak less",
-    "word.wordItems.subtitle.1": "Practical: Study to be quiet",
+    "word.wordItems.subtitle.1": "Practical: Study to be quiet.",
     "word.wordItems.description.1":
       "Even a fool is counted wise if he keeps quiet: and he that simply shuts his lips is esteemed a man of understanding.🧐🤐 <br/><br/>On the other hand you can distinguish a fool from many words: and in the multitude of the words sin will not be lacking 🤬👿",
     "word.wordItems.title.2": "Listen before you speak",
-    "word.wordItems.subtitle.2": "Practical: Be the last person to speak",
+    "word.wordItems.subtitle.2": "Practical: Be the last person to speak.",
     "word.wordItems.description.2":
       "Don’t rush to be the first one to speak. Practice patience, listen to others first, and then share your thoughts clearly.🥈🥉😗 <br/><br/>When you listen first, you gain their key points and conclusions — and your reply becomes better, and smarter.🆓☝️",
     "word.wordItems.title.3": "Speak with purpose",
