@@ -1,7 +1,7 @@
 import type { MenuLink } from "./components/widgets/Header.astro";
 import prayer from "~/assets/images/fire_of_god_and_fire_for_god-prayer.webp";
 import smith from "~/assets/images/witnesses/flame_the_freeze_smith_wigglesworth.webp";
-import word_bible from "~/assets/images/word/1.jpg";
+import less from "~/assets/images/word/the_power_of_the_words-less.webp";
 import free_you_from_your_sins from "~/assets/images/holyGhost/what_does_the_holy_ghost_do-free_you_from_your_sins.webp";
 
 // Language route pairs mapping
@@ -106,7 +106,7 @@ export const headerData: { links: Array<MenuLink> } = {
           icon: "tabler:bible",
           description: "header.description1",
           image: {
-            src: word_bible,
+            src: less,
             alt: "flame_the_freeze_word",
           },
         },
