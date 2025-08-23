@@ -235,6 +235,11 @@ export interface CallToAction extends HTMLAttributes<a> {
   text?: string;
   icon?: string;
   classes?: Record<string, string>;
+  buttonType?: "fire" | "ice" | "default";
+  size?: "small" | "medium" | "large";
+  zoomMeetingId?: string;
+  zoomPasscode?: string;
+  zoomJoinUrl?: string;
 }
 
 export interface ItemGrid {
