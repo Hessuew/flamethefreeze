@@ -109,7 +109,8 @@ export interface MetaDataRobots {
 }
 
 export interface MetaDataImage {
-  url: string;
+  alt: string;
+  url: string | ImageMetadata;
   width?: number;
   height?: number;
 }
@@ -235,11 +236,16 @@ export interface CallToAction extends HTMLAttributes<a> {
   text?: string;
   icon?: string;
   classes?: Record<string, string>;
+  size?: "small" | "medium" | "large";
+}
+
+export interface CallToActionModern extends HTMLAttributes<a> {
+  variant?: "primary" | "secondary" | "tertiary" | "link";
+  text?: string;
+  icon?: string;
+  classes?: Record<string, string>;
   buttonType?: "fire" | "ice" | "default";
   size?: "small" | "medium" | "large";
-  zoomMeetingId?: string;
-  zoomPasscode?: string;
-  zoomJoinUrl?: string;
 }
 
 export interface ItemGrid {
