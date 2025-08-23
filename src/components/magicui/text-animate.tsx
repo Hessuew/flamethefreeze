@@ -320,7 +320,7 @@ const TextAnimateBase = ({
 
   let segments: string[] = [];
   let isCharacterMode = false;
-  
+
   switch (by) {
     case "word":
       segments = text.split(/(\s+)/);
@@ -340,7 +340,7 @@ const TextAnimateBase = ({
   }
 
   // Calculate total character count for proper stagger timing in character mode
-  const totalCharacters = isCharacterMode 
+  const totalCharacters = isCharacterMode
     ? segments.reduce((acc, segment) => acc + (segment.trim() ? segment.length : 1), 0)
     : segments.length;
 
@@ -416,7 +416,8 @@ const TextAnimateBase = ({
                   <motion.span
                     key={`${by}-${char}-${segmentIndex}-${charIndex}`}
                     variants={finalVariants.item}
-                    custom={(characterStartIndex + charIndex) * staggerTimings[by]}
+                    // custom={(characterStartIndex + charIndex) * staggerTimings[by]}
+                    transition={{ delay: (characterStartIndex + charIndex) * staggerTimings[by] }}
                     className={cn("inline-block", segmentClassName)}
                   >
                     {char}
@@ -430,11 +431,9 @@ const TextAnimateBase = ({
               <motion.span
                 key={`${by}-${segment}-${segmentIndex}`}
                 variants={finalVariants.item}
-                custom={characterStartIndex * staggerTimings[by]}
-                className={cn(
-                  by === "line" ? "block" : "inline-block whitespace-pre",
-                  segmentClassName
-                )}
+                // custom={characterStartIndex * staggerTimings[by]}
+                transition={{ delay: characterStartIndex * staggerTimings[by] }}
+                className={cn(by === "line" ? "block" : "inline-block whitespace-pre", segmentClassName)}
               >
                 {segment}
               </motion.span>

@@ -296,8 +296,10 @@ const t = useTranslations(lang);
   <script>
     document.addEventListener("astro:page-load", () => {
       // Start video after 1 second with proper fade-in effect
-      const heroVideo = document.getElementById("index-hero-video") as HTMLVideoElement;
-      const heroGradient = document.getElementById("index-hero-gradient") as HTMLDivElement;
+      const heroVideo = document.getElementById("index-hero-video") as HTMLVideoElement | null;
+      const heroGradient = document.getElementById("index-hero-gradient") as HTMLDivElement | null;
+      if (!heroVideo || !heroGradient) return;
+
       if (heroVideo) {
         setTimeout(() => {
           const videoSrc = heroVideo.dataset.src;
