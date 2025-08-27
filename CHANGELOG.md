@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.20.0](https://github.com/Hessuew/flamethefreeze/compare/v3.19.0...v3.20.0) (2025-08-27)
+
+
+### Features
+
+* finnish translation to word page, image fixes on metadata ([62cc3fa](https://github.com/Hessuew/flamethefreeze/commit/62cc3fa671df1b8d79c55c1dd034077b6ad7823c))
+* improve LanguagePicker component ([566a624](https://github.com/Hessuew/flamethefreeze/commit/566a62400a666d2a95cdfbeeee63e2f0eecf1a1d))
+
+
+### Bug Fixes
+
+* add default route to language picker ([7b73baa](https://github.com/Hessuew/flamethefreeze/commit/7b73baac4f8f512824f5fa95ebf715e47bd89bcc))
+* improve accessibility and cursor styling in LanguagePicker ([#271](https://github.com/Hessuew/flamethefreeze/issues/271)) ([2a0ed40](https://github.com/Hessuew/flamethefreeze/commit/2a0ed40c3115dc7ade499c4c9955d6996cfff37a))
+* improve timezone handling in ZoomLinks component ([#269](https://github.com/Hessuew/flamethefreeze/issues/269)) ([9c9289d](https://github.com/Hessuew/flamethefreeze/commit/9c9289d64490c35c7e8bc10afe7b6b1c80a9f71b))
+
 ## [3.19.0](https://github.com/Hessuew/flamethefreeze/compare/v3.18.0...v3.19.0) (2025-08-23)
 
 
