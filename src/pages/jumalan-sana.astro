@@ -1,7 +1,7 @@
 ---
 import Template from "~/screens/word.astro";
 
-import logoUrl from "~/assets/images/default.jpg";
+import less from "~/assets/images/word/the_power_of_the_words-less.webp";
 
 const metadata = {
   title: "Jumalan Sana | Sanojen voima ja muuttava puhe",
@@ -20,8 +20,14 @@ const metadata = {
     title: "Jumalan Sana | Sanojen voima ja muuttava puhe",
     description:
       "Löydä sanojen voima ja kuinka puheesi muuttaa todellisuutta. Opi raamatullisia periaatteita sanojen voimasta, puhuttujen julistusten ja elämää muuttavien tunnustusten kautta.",
-    image: logoUrl,
-    imageAlt: "Jumalan Sana - Flame the Freeze Ministeri",
+    images: [
+      {
+        url: less,
+        alt: "Jumalan Sana - Flame the Freeze",
+        width: 630,
+        height: 630,
+      },
+    ],
   },
   twitter: {
     handle: "@FlameTheFreeze",
@@ -59,8 +65,8 @@ const structuredData = {
       },
       image: {
         "@type": "ImageObject",
-        url: logoUrl,
-        width: 1200,
+        url: less,
+        width: 630,
         height: 630,
       },
       articleSection: "Hengellinen opetus",
@@ -102,5 +108,5 @@ const structuredData = {
 <Template
   lang="fi"
   metadata={{ ...metadata, structuredData }}
-  siteRebuildStatus={{ status: "inProgress", display: true }}
+  siteRebuildStatus={{ status: "completed", display: true }}
 />
