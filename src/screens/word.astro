@@ -185,7 +185,7 @@ const wordItems = [
               <div class="hero-subtitle-card group relative overflow-hidden">
                 <!-- Glass Morphism Background -->
                 <div
-                  class="absolute inset-0 backdrop-blur-xl bg-black/20 border border-white/10 rounded-2xl xl:rounded-[16px] shadow-xl"
+                  class="absolute inset-0 bg-black/20 border border-white/10 rounded-2xl xl:rounded-[16px] shadow-xl"
                 >
                 </div>
 
@@ -238,21 +238,21 @@ const wordItems = [
                         class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-blue-400 rounded-full mr-2 xl:mr-[8px] animate-pulse"
                       >
                       </div>
-                      <span>Divine</span>
+                      <span>{t("word.hero.subtitle.item.1")}</span>
                     </div>
                     <div class="flex items-center">
                       <div
                         class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-purple-400 rounded-full mr-2 xl:mr-[8px] animate-pulse delay-300"
                       >
                       </div>
-                      <span>Fire</span>
+                      <span>{t("word.hero.subtitle.item.2")}</span>
                     </div>
                     <div class="flex items-center">
                       <div
                         class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-orange-400 rounded-full mr-2 xl:mr-[8px] animate-pulse delay-700"
                       >
                       </div>
-                      <span>Word</span>
+                      <span>{t("word.hero.subtitle.item.3")}</span>
                     </div>
                   </div>
                 </div>
@@ -371,52 +371,3 @@ const wordItems = [
     }
   });
 </script>
-
-<style>
-  .hero-subtitle-card {
-    @apply relative transform transition-all duration-300;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1));
-    backdrop-filter: blur(20px);
-  }
-
-  .hero-subtitle-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      135deg,
-      rgba(59, 130, 246, 0.1) 0%,
-      rgba(147, 51, 234, 0.1) 50%,
-      rgba(251, 146, 60, 0.1) 100%
-    );
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 1rem;
-    z-index: -1;
-  }
-
-  .hero-subtitle-card:hover::before {
-    opacity: 1;
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 640px) {
-    .hero-subtitle-card {
-      @apply hover:scale-105 hover:-translate-y-1;
-    }
-  }
-
-  /* Animation keyframes */
-  @keyframes float {
-    0%,
-    100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-</style>

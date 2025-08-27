@@ -3,6 +3,8 @@ import { Icon } from "astro-icon/components";
 import { BlurFade } from "~/components/magicui/blur-fade";
 import type { ZoomLink } from "~/types";
 import { useTranslations } from "~/i18n/utils";
+import { fromZonedTime, toZonedTime } from 'date-fns-tz';
+import { getISOWeek, getDay, getHours, addWeeks, setHours, setMinutes, setSeconds, setMilliseconds, addDays, isBefore } from 'date-fns';
 
 export interface Props {
   title?: string;
@@ -20,48 +22,25 @@ const {
   lang = "en",
 } = Astro.props;
 
-
 const t = useTranslations(lang);
+const HELSINKI_TZ = 'Europe/Helsinki';
 
 // Function to determine if a meeting is currently live
 function isLive(weekType?: "even" | "odd"): boolean {
   if (!weekType) return false;
   
   const now = new Date();
+  const helsinkiTime = toZonedTime(now, HELSINKI_TZ);
   
-  // Convert to Helsinki time (robust, locale-agnostic)
-  const helsinkiParts = new Intl.DateTimeFormat("en-US", {
-    timeZone: "Europe/Helsinki",
-    year: "numeric", month: "numeric", day: "numeric",
-    hour: "numeric", minute: "numeric", second: "numeric"
-  }).formatToParts(now);
-  const hp = Object.fromEntries(helsinkiParts.map(p => [p.type, p.value]));
-  const helsinkiTime = new Date(
-    Number(hp.year), Number(hp.month) - 1, Number(hp.day),
-    Number(hp.hour), Number(hp.minute), Number(hp.second)
-  );
-  
-  // Check if it's Saturday (6) and between 18:00-23:00 GMT+2
-  const isSaturday = helsinkiTime.getDay() === 6;
-  const hour = helsinkiTime.getHours();
+  // Check if it's Saturday (6) and between 18:00-23:00 Helsinki time
+  const isSaturday = getDay(helsinkiTime) === 6;
+  const hour = getHours(helsinkiTime);
   const isInTimeRange = hour >= 18 && hour < 23;
   
   if (!isSaturday || !isInTimeRange) return false;
   
-  // Calculate ISO week number properly
-  // This is much closer to the ISO 8601 definition:
-  // - Finds the first Thursday of the year (Jan 4 is always in week 1).
-  // - Steps back to the Monday of that week.
-  // - Calculates weeks relative to that reference Monday.
-  const firstThursday = new Date(helsinkiTime.getFullYear(), 0, 4);
-  firstThursday.setDate(firstThursday.getDate() - (firstThursday.getDay() + 6) % 7);
-  const weekNumber = Math.ceil(((helsinkiTime.getTime() - firstThursday.getTime()) / 86400000 + 1) / 7);
-   
-   //
-
-
-  
-  // Check if current week matches the meeting type
+  // Get ISO week number (handles year boundaries correctly)
+  const weekNumber = getISOWeek(helsinkiTime);
   const isEvenWeek = weekNumber % 2 === 0;
   
   return (weekType === "even" && isEvenWeek) || (weekType === "odd" && !isEvenWeek);
@@ -72,60 +51,43 @@ function getNextMeetingTime(weekType?: "even" | "odd"): Date | null {
   if (!weekType) return null;
   
   const now = new Date();
-  // Convert to Helsinki time properly
-  const helsinkiFormatter = new Intl.DateTimeFormat('en-US', {
-    timeZone: 'Europe/Helsinki',
-    year: 'numeric', month: 'numeric', day: 'numeric',
-    hour: 'numeric', minute: 'numeric', second: 'numeric'
-  });
-  const helsinkiParts = helsinkiFormatter.formatToParts(now);
-  const partsMap = Object.fromEntries(helsinkiParts.map(p => [p.type, p.value]));
-
-  const helsinkiTime = new Date(
-    Number(partsMap.year),
-    Number(partsMap.month) - 1,
-    Number(partsMap.day),
-    Number(partsMap.hour),
-    Number(partsMap.minute),
-    Number(partsMap.second)
-  );
-
+  const helsinkiTime = toZonedTime(now, HELSINKI_TZ);
   
-  // Start from current week's Saturday at 18:00
-  let nextSaturday = new Date(helsinkiTime);
-  nextSaturday.setDate(helsinkiTime.getDate() + (6 - helsinkiTime.getDay()));
-  nextSaturday.setHours(18, 0, 0, 0);
+  // Start from current week's Saturday at 18:00 Helsinki time
+  let nextSaturday = helsinkiTime;
+  const daysUntilSaturday = (6 - getDay(helsinkiTime) + 7) % 7;
+  if (daysUntilSaturday > 0) {
+    nextSaturday = addDays(helsinkiTime, daysUntilSaturday);
+  }
+  
+  // Set to 18:00:00.000
+  nextSaturday = setHours(setMinutes(setSeconds(setMilliseconds(nextSaturday, 0), 0), 0), 18);
   
   // If it's already past this Saturday's meeting time, move to next week
-  if (nextSaturday <= helsinkiTime) {
-    nextSaturday.setDate(nextSaturday.getDate() + 7);
+  if (isBefore(nextSaturday, helsinkiTime) || 
+      (getDay(helsinkiTime) === 6 && getHours(helsinkiTime) >= 23)) {
+    nextSaturday = addWeeks(nextSaturday, 1);
   }
-   // Find the correct week type
+  
+  // Find the correct week type (max 52 iterations for safety)
   let iterations = 0;
-  const maxIterations = 52; // Safety limit: max 1 year ahead
+  const maxIterations = 52;
+  
   while (iterations < maxIterations) {
-    // Calculate ISO week number properly
-    const firstThursday = new Date(nextSaturday.getFullYear(), 0, 4);
-    firstThursday.setDate(firstThursday.getDate() - (firstThursday.getDay() + 6) % 7);
-    const weekNumber = Math.ceil(((nextSaturday.getTime() - firstThursday.getTime()) / 86400000 + 1) / 7);
+    const weekNumber = getISOWeek(nextSaturday);
     const isEvenWeek = weekNumber % 2 === 0;
-     
     const weekMatches = (weekType === "even" && isEvenWeek) || (weekType === "odd" && !isEvenWeek);
-     
+    
     if (weekMatches) {
-      // Create a local Date at 18:00 Helsinki, then adjust by its timezone offset
-      const local = new Date(nextSaturday);
-      local.setHours(18, 0, 0, 0);
-      // getTimezoneOffset is minutes to add to local time to get UTC (negative if ahead)
-      const utcTimestamp = local.getTime() + local.getTimezoneOffset() * 60_000;
-      return new Date(utcTimestamp);
+      // Convert Helsinki time back to UTC for consistent handling
+      return fromZonedTime(nextSaturday, HELSINKI_TZ);
     }
     
-    nextSaturday.setDate(nextSaturday.getDate() + 7);
+    nextSaturday = addWeeks(nextSaturday, 1);
     iterations++;
-   }
+  }
   
-  return null; // Safety fallback 
+  return null; // Safety fallback
 }
 ---
 

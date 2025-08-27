@@ -8,28 +8,50 @@ const currentPath = Astro.url.pathname;
 ---
 
 <div class="flex items-center gap-1">
-  <a
-    href={changeLangInUrl(currentPath, "en") || "/"}
-    class={twMerge(
-      "p-2.5 rounded-lg transition-all duration-300 ease-in-out",
-      "focus:outline-none focus:scale-110",
-      lang === "en" ? "cursor-default" : "opacity-60 hover:opacity-100"
-    )}
-    aria-current={lang === "en" ? "page" : undefined}
-    aria-label="English"
-  >
-    <span class="text-2xl">🇺🇸</span>
-  </a>
-  <a
-    href={changeLangInUrl(currentPath, "fi") || "/jumalan-tuli"}
-    class={twMerge(
-      "p-2.5 rounded-lg transition-all duration-300 ease-in-out",
-      "focus:outline-none focus:scale-110",
-      lang === "fi" ? "cursor-default" : "opacity-60 hover:opacity-100"
-    )}
-    aria-current={lang === "fi" ? "page" : undefined}
-    aria-label="Finnish"
-  >
-    <span class="text-2xl">🇫🇮</span>
-  </a>
+  {/* English */}
+  {
+    lang !== "en" ? (
+      <a
+        href={changeLangInUrl(currentPath, "en")}
+        class={twMerge(
+          "p-2.5 rounded-lg transition-all duration-300 ease-in-out",
+          "focus:outline-none focus:scale-110",
+          "cursor-default",
+
+          "opacity-60 hover:opacity-100"
+        )}
+        aria-current="page"
+        aria-label="English"
+      >
+        <span class="text-2xl">🇺🇸</span>
+      </a>
+    ) : (
+      <div class={twMerge("p-2.5 rounded-lg")}>
+        <span class="text-2xl">🇺🇸</span>
+      </div>
+    )
+  }
+
+  {/* Finnish */}
+  {
+    lang !== "fi" ? (
+      <a
+        href={changeLangInUrl(currentPath, "fi")}
+        class={twMerge(
+          "p-2.5 rounded-lg transition-all duration-300 ease-in-out",
+          "focus:outline-none focus:scale-110",
+          "cursor-default",
+          "opacity-60 hover:opacity-100"
+        )}
+        aria-current="page"
+        aria-label="Finnish"
+      >
+        <span class="text-2xl">🇫🇮</span>
+      </a>
+    ) : (
+      <div class={twMerge("p-2.5 rounded-lg")}>
+        <span class="text-2xl">🇫🇮</span>
+      </div>
+    )
+  }
 </div>
