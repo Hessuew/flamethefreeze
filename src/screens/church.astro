@@ -1,0 +1,93 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+import Hero from "~/components/widgets/Hero.astro";
+import { useTranslations } from "~/i18n/utils";
+import { TextAnimate } from "~/components/magicui/text-animate";
+import { BlurFade } from "~/components/magicui/blur-fade";
+import FireButton from "~/components/ui/FireButton.astro";
+import church_today from "~/assets/images/church/biblical_church-church_today.webp";
+import SubtitleContainer from "~/components/ui/SubtitleContainer.astro";
+import GradientText from "~/components/ui/GradientText.astro";
+import ContentListExample from "~/examples/ContentListExample.astro";
+
+const { metadata, siteRebuildStatus, lang } = Astro.props;
+
+const t = useTranslations(lang);
+---
+
+<Layout lang={lang} metadata={metadata} siteRebuildStatus={siteRebuildStatus}>
+  <div class="min-h-screen relative overflow-hidden">
+    <!-- Background Image -->
+    <div
+      class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
+      style={`background-image: url(${church_today.src})`}
+    >
+    </div>
+
+    <!-- Gradient overlay for better text readability -->
+    <div
+      class="absolute inset-0 z-5"
+      style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(26, 0, 36, 0.6) 80%, #1a0024 100%);"
+    >
+    </div>
+
+    <!-- Text overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-20 z-10"></div>
+
+    <Hero classes={{ containerClass: "relative z-10" }}>
+      <Fragment slot="title">
+        <div class="flex flex-col justify-center">
+          <TextAnimate
+            client:load
+            className="text-10xl md:text-9xl xl:text-[128px] xl:leading-[128px] font-semibold leading-tight tracking-tighter md:mb-4 xl:mb-[16px] font-heading text-white"
+            animation="blurInUp"
+            delay={1}
+            duration={0.6}
+            by="character"
+            once={true}
+            text={"Biblical Church"}
+          />
+          <TextAnimate
+            client:load
+            className="text-xl md:text-2xl xl:text-[20px] xl:leading-[28px] font-normal leading-tight tracking-tighter md:mb-4 xl:mb-[16px] font-heading text-white"
+            animation="blurInUp"
+            delay={1.6}
+            duration={0.6}
+            by="character"
+            once={true}
+            text={"Biblical Church in 2025?"}
+          />
+        </div>
+      </Fragment>
+
+      <Fragment slot="subtitle">
+        <SubtitleContainer label1={"Jesus"} label2={"Church"} label3={"Righteousness"}>
+          <Fragment slot="subtitle">
+            {t("church.herotext.subtitle1")}
+            <span class="font-semibold">{t("church.herotext.subtitle.span1")} </span>
+            {t("church.herotext.subtitle2")}
+            <GradientText class="font-bold" text={t("church.herotext.subtitle.span2")} />
+            {t("church.herotext.subtitle3")}
+          </Fragment>
+        </SubtitleContainer>
+      </Fragment>
+    </Hero>
+
+    <!-- Actions positioned at bottom center on mobile, bottom right on larger screens -->
+    <div
+      class="absolute bottom-40 xl:bottom-[160px] left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-4 lg:right-12 xl:right-[48px] flex z-20 min-w-[324px]"
+    >
+      <BlurFade client:load delay={4.2} direction="up" inView>
+        <FireButton
+          id="show-video-btn"
+          text={t("word.hero.cta.button")}
+          variant="primary"
+          size="small"
+          icon="tabler:arrow-right"
+        />
+      </BlurFade>
+    </div>
+  </div>
+
+  <ContentListExample />
+</Layout>

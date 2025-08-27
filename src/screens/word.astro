@@ -19,6 +19,7 @@ import principles from "~/assets/images/word/the_power_of_the_words-principles.w
 import believe from "~/assets/images/word/the_power_of_the_words-believe.webp";
 import from_heart from "~/assets/images/word/the_power_of_the_words-from_heart.webp";
 import { ENDPOINTS } from "~/config/endpoints";
+import SubtitleContainer from "~/components/ui/SubtitleContainer.astro";
 
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 
@@ -179,87 +180,12 @@ const wordItems = [
       </Fragment>
 
       <Fragment slot="subtitle">
-        <div class="flex justify-center mb-8 xl:mb-[32px]">
-          <div class="max-w-2xl xl:max-w-[673px] px-4 xl:px-[16px]">
-            <BlurFade client:load delay={3} direction="up" inView>
-              <div class="hero-subtitle-card group relative overflow-hidden">
-                <!-- Glass Morphism Background -->
-                <div
-                  class="absolute inset-0 bg-black/20 border border-white/10 rounded-2xl xl:rounded-[16px] shadow-xl"
-                >
-                </div>
-
-                <!-- Animated Border -->
-                <div
-                  class="absolute inset-0 rounded-2xl xl:rounded-[16px] bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-[2px]"
-                >
-                  <div
-                    class="w-full h-full bg-gradient-to-br from-[#0a0014] via-[#1a0024] to-[#2d1b69] rounded-2xl xl:rounded-[16px]"
-                  >
-                  </div>
-                </div>
-
-                <!-- Content -->
-                <div class="relative p-4 lg:p-8 xl:p-[32px] h-full flex flex-col">
-                  <!-- Text content -->
-                  <div class="relative text-center">
-                    <span
-                      class="block text-xl xl:text-[20px] xl:leading-[28px] tracking-normal text-white group-hover:text-blue-400 transition-colors duration-300"
-                    >
-                      {t("word.hero.subtitle.1")}
-                    </span>
-
-                    <!-- Enhanced decorative elements -->
-                    <div class="flex justify-center mt-6 xl:mt-[24px]">
-                      <div class="flex items-center space-x-4 xl:space-x-[16px]">
-                        <div
-                          class="w-12 xl:w-[48px] h-0.5 xl:h-[2px] bg-gradient-to-r from-transparent via-blue-400/80 to-blue-400/80 rounded-full"
-                        >
-                        </div>
-                        <div
-                          class="w-3 xl:w-[12px] h-3 xl:h-[12px] bg-white/80 rounded-full shadow-lg group-hover:bg-blue-300 transition-colors duration-300"
-                          style="box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);"
-                        >
-                        </div>
-                        <div
-                          class="w-12 xl:w-[48px] h-0.5 xl:h-[2px] bg-gradient-to-l from-transparent via-orange-400/80 to-orange-400/80 rounded-full"
-                        >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Meeting Info Style Elements -->
-                  <div
-                    class="flex justify-center space-x-6 xl:space-x-[24px] mt-4 xl:mt-[16px] text-xs xl:text-[12px] xl:leading-[16px] text-gray-400"
-                  >
-                    <div class="flex items-center">
-                      <div
-                        class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-blue-400 rounded-full mr-2 xl:mr-[8px] animate-pulse"
-                      >
-                      </div>
-                      <span>{t("word.hero.subtitle.item.1")}</span>
-                    </div>
-                    <div class="flex items-center">
-                      <div
-                        class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-purple-400 rounded-full mr-2 xl:mr-[8px] animate-pulse delay-300"
-                      >
-                      </div>
-                      <span>{t("word.hero.subtitle.item.2")}</span>
-                    </div>
-                    <div class="flex items-center">
-                      <div
-                        class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-orange-400 rounded-full mr-2 xl:mr-[8px] animate-pulse delay-700"
-                      >
-                      </div>
-                      <span>{t("word.hero.subtitle.item.3")}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </BlurFade>
-          </div>
-        </div>
+        <SubtitleContainer
+          subtitle={t("word.hero.subtitle.1")}
+          label1={t("word.hero.subtitle.item.1")}
+          label2={t("word.hero.subtitle.item.2")}
+          label3={t("word.hero.subtitle.item.3")}
+        />
       </Fragment>
     </Hero>
 
