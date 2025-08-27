@@ -244,6 +244,9 @@ export const ui = {
     "word.hero.title.1": "The Power of the Words:",
     "word.hero.title.2": "Transform your speech",
     "word.hero.subtitle.1": "Does you words have power? Know how you can receive the power of the words in your life.",
+    "word.hero.subtitle.item.1": "Divine",
+    "word.hero.subtitle.item.2": "Fire",
+    "word.hero.subtitle.item.3": "Word",
     "word.hero.cta.button": "I want the power of the words in my life ✋",
     "word.wordItems.title.1": "Speak less",
     "word.wordItems.subtitle.1": "Practical: Study to be quiet.",
@@ -285,7 +288,8 @@ export const ui = {
     "word.wordItems.description.10":
       "If you only read from notes, your message stays on the paper and the people will eat paper.📄🙈 <br/><br/>But when you speak from the heart, you connect with eyes, reactions, and lives — your words land where they matter most: in the heart.❤️👥",
     "zoom.title": "→ Transform the Power of your Words",
-    "zoom.subtitle": "Join Our Zoom Sessions: transformation takes time, and depends on what you put into your heart.",
+    "zoom.subtitle":
+      "Join Our Zoom Sessions: total transformation of the mind takes time with the word and in prayers, and depends on what you put into your heart.",
     "zoom.bible.title": "Bible Study",
     "zoom.bible.description": "Deep dive into God's Word with fellowship and discussion",
     "zoom.bible.time": "Saturdays of odd weeks at 18:00 GMT+2",
@@ -1710,6 +1714,9 @@ export const ui = {
     "word.hero.title.2": "Muuta puheesi",
     "word.hero.subtitle.1":
       "Onko Jumalan sana muuttanut puheesi? Opi miten Jumalan sana ja Raamatun sana muuttaa elämäsi.",
+    "word.hero.subtitle.item.1": "Voima",
+    "word.hero.subtitle.item.2": "Tuli",
+    "word.hero.subtitle.item.3": "Sana",
     "word.hero.cta.button": "Haluan Jumalan sana minun elämääni ✋",
     "word.wordItems.title.1": "Puhu vähän",
     "word.wordItems.subtitle.1": "Käytäntö: Opittele olemaan hiljaa.",
@@ -1750,8 +1757,9 @@ export const ui = {
     "word.wordItems.subtitle.10": "Käytäntö: Katso ihmisiä, älä paperia.",
     "word.wordItems.description.10":
       "Jos vain luet muistiinpanoista viestisi pysyy paperissa ja ihmiset kuulevat vain paperia.📄🙈 <br/><br/>Mutta kun puhut sydämestä tavoitat ihmisten silmiä, reaktioita ja elämiä — sanasi pääsevät sinne, jossa niillä on eniten merkitystä: sydämeen.❤️👥",
-    "zoom.title": "Liity Zoom-istuntoihimme",
-    "zoom.subtitle": "Yhdisty kanssamme verkossa rukoukseen, ylistykseen ja yhteyteen",
+    "zoom.title": "→ Jumalan Sana: Muuta elämäsi",
+    "zoom.subtitle":
+      "Liity Zoom-istuntoihimme: täysi mielen muutos vie aikaa Jumalan Sanassa ja rukouksessa, sekä riippuu siitä, mitä istutat sydämeesi.",
     "zoom.bible.title": "Sanan tutkiminen",
     "zoom.bible.description": "Sukella syvälle Jumalan Sanaan yhdessä muiden kanssa",
     "zoom.bible.time": "Parittomien viikkojen lauantaina klo 18:00 GMT+2",
