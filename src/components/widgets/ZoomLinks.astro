@@ -29,8 +29,17 @@ function isLive(weekType?: "even" | "odd"): boolean {
   
   const now = new Date();
   
-  // Convert to Helsinki time (Europe/Helsinki timezone)
-  const helsinkiTime = new Date(now.toLocaleString("en-US", { timeZone: "Europe/Helsinki" }));
+  // Convert to Helsinki time (robust, locale-agnostic)
+  const helsinkiParts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Europe/Helsinki",
+    year: "numeric", month: "numeric", day: "numeric",
+    hour: "numeric", minute: "numeric", second: "numeric"
+  }).formatToParts(now);
+  const hp = Object.fromEntries(helsinkiParts.map(p => [p.type, p.value]));
+  const helsinkiTime = new Date(
+    Number(hp.year), Number(hp.month) - 1, Number(hp.day),
+    Number(hp.hour), Number(hp.minute), Number(hp.second)
+  );
   
   // Check if it's Saturday (6) and between 18:00-23:00 GMT+2
   const isSaturday = helsinkiTime.getDay() === 6;
@@ -104,13 +113,12 @@ function getNextMeetingTime(weekType?: "even" | "odd"): Date | null {
     const weekMatches = (weekType === "even" && isEvenWeek) || (weekType === "odd" && !isEvenWeek);
      
     if (weekMatches) {
-     // Return the date in UTC
-     return new Date(Date.UTC(
-       nextSaturday.getFullYear(),
-       nextSaturday.getMonth(),
-       nextSaturday.getDate(),
-       16, 0, 0 // 18:00 Helsinki is typically 16:00 UTC (adjust for DST)
-     ));
+      // Create a local Date at 18:00 Helsinki, then adjust by its timezone offset
+      const local = new Date(nextSaturday);
+      local.setHours(18, 0, 0, 0);
+      // getTimezoneOffset is minutes to add to local time to get UTC (negative if ahead)
+      const utcTimestamp = local.getTime() + local.getTimezoneOffset() * 60_000;
+      return new Date(utcTimestamp);
     }
     
     nextSaturday.setDate(nextSaturday.getDate() + 7);
