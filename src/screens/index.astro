@@ -276,7 +276,7 @@ const t = useTranslations(lang);
         variant: "primary",
         size: "medium",
         text: t("index.cta.button.yes"),
-        href: getPermalink("/en/prayer"),
+        href: getPermalink(getLanguageRoute("holy-ghost", lang || "en")),
         icon: "tabler:arrow-right",
       },
       {

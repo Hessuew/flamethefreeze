@@ -11,6 +11,9 @@ import free_you_from_your_sins from "~/assets/images/holyGhost/what_does_the_hol
 import PrayerPointsList from "~/components/widgets/PrayerPointsList.astro";
 import type { PrayerPoint } from "~/components/widgets/PrayerPointsList.astro";
 import ImageShowcase from "~/components/widgets/ImageShowcase.astro";
+import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
+import { getPermalink } from "~/utils/permalinks";
+import { getLanguageRoute } from "~/navigation";
 
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 
@@ -188,4 +191,31 @@ const prayerPoints: PrayerPoint[] = [
       {t("about.what.subtitle.4")}
     </Fragment>
   </ImageShowcase>
+
+  <!-- Call to Action -->
+  <WidgetWrapper>
+    <div class="text-center mt-16 pt-16 xl:mt-[64px] xl:pt-[64px] border-t border-gray-700">
+      <h2 class="text-4xl md:text-5xl xl:text-[48px] xl:leading-[56px] font-bold mb-6 xl:mb-[24px] text-white">
+        {t("about.cta.title.1")}
+        <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
+          >{t("about.cta.title.2")}</span
+        >?
+      </h2>
+      <p
+        class="text-xl xl:text-[20px] xl:leading-[28px] text-gray-300 mb-8 xl:mb-[32px] max-w-2xl mx-auto xl:max-w-[672px]"
+      >
+        {t("about.cta.subtitle.1")}
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-6 xl:gap-[24px] justify-center">
+        <FireButton
+          href={getPermalink(getLanguageRoute("about", lang || "en"))}
+          text={t("about.cta.button")}
+          variant="primary"
+          size="large"
+          icon="tabler:hand-finger-right"
+        />
+      </div>
+    </div>
+  </WidgetWrapper>
 </Layout>
