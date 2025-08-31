@@ -4,9 +4,9 @@ import Template from "~/screens/church.astro";
 import church_today from "~/assets/images/church/biblical_church-church_today.webp";
 
 const metadata = {
-  title: "Biblical Church | Church Today",
+  title: '"Flame the Freeze": A Modern Take on Biblical Church in 2100s',
   description:
-    "Unlock the transformative potential of your speech with Flame the Freeze. Explore how the power of the words can shape your life and bring forth positive change",
+    "Explore Flame the Freeze: a bold vision of the 2100s biblical church, the Spirit’s power, true holiness, and God’s movement shaping today’s faith.",
   robots: {
     index: true,
     follow: true,
@@ -17,9 +17,9 @@ const metadata = {
     locale: "en_US",
     url: "https://flamethefreeze.com/biblical-church",
     siteName: "Flame the Freeze",
-    title: "Biblical Church | Church Today",
+    title: "Flame the Freeze: A Modern Take on Biblical Church in 2100s",
     description:
-      "Unlock the transformative potential of your speech with Flame the Freeze. Explore how the power of the words can shape your life and bring forth positive change",
+      "Explore Flame the Freeze: a bold vision of the 2100s biblical church, the Spirit’s power, true holiness, and God’s movement shaping today’s faith.",
     images: [
       {
         url: church_today,
@@ -33,79 +33,12 @@ const metadata = {
     handle: "@FlameTheFreeze",
     site: "@FlameTheFreeze",
     cardType: "summary_large_image",
-    title: "Biblical Church - Transform Your Life",
+    title: "Flame the Freeze: A Modern Take on Biblical Church in 2100s",
     description:
-      "Discover how the power of the words transforms reality through biblical confessions and spoken declarations.",
+      "Explore Flame the Freeze: a bold vision of the 2100s biblical church, the Spirit’s power, true holiness, and God’s movement shaping today’s faith.",
   },
   ignoreTitleTemplate: true,
 };
-
-const structuredData = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Article",
-      "@id": "https://flamethefreeze.com/biblical-church#article",
-      isPartOf: {
-        "@id": "https://flamethefreeze.com/biblical-church#webpage",
-      },
-      author: {
-        "@id": "https://flamethefreeze.com/#organization",
-      },
-      headline: "Biblical Church - Transform Your Life Through Speech",
-      description:
-        "Discover the power of the words and how your speech transforms reality. Learn biblical principles about the power of words, spoken declarations, and life-changing confessions that bring breakthrough and divine transformation.",
-      datePublished: "2024-01-01T00:00:00+00:00",
-      dateModified: "2025-01-01T00:00:00+00:00",
-      mainEntityOfPage: {
-        "@id": "https://flamethefreeze.com/biblical-church#webpage",
-      },
-      publisher: {
-        "@id": "https://flamethefreeze.com/#organization",
-      },
-      image: {
-        "@type": "ImageObject",
-        url: church_today,
-        width: 630,
-        height: 630,
-      },
-      articleSection: "Spiritual Teaching",
-      keywords: [
-        "biblical church",
-        "church today",
-        "biblical confessions",
-        "spoken declarations",
-        "transformative speech",
-        "divine breakthrough",
-        "life and death in the tongue",
-        "word of faith",
-        "prophetic words",
-        "spiritual transformation",
-      ],
-      about: [
-        {
-          "@type": "Thing",
-          name: "Biblical Confessions",
-          description: "Spoken declarations based on biblical principles that transform circumstances",
-        },
-        {
-          "@type": "Thing",
-          name: "Church Today",
-          description: "The transformative ability of spoken words to create change in the spiritual and natural realm",
-        },
-        {
-          "@type": "Thing",
-          name: "Divine Declarations",
-          description: "Faith-filled statements that align with God's word and bring breakthrough",
-        },
-      ],
-    },
-  ],
-};
 ---
 
-<Template
-  lang="en"
-  metadata={{ ...metadata, structuredData }}
-  siteRebuildStatus={{ status: "inProgress", display: true }}
-/>
+<Template lang="en" metadata={metadata} siteRebuildStatus={{ status: "completed", display: true }} />

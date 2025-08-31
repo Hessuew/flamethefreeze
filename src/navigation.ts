@@ -10,7 +10,7 @@ export const routePairs: Record<string, string> = {
   "/prayer-for-works": "/miten-rukoilla",
   "/the-power-of-the-words": "/jumalan-sana",
   "/what-does-the-holy-ghost-do": "/pyh%C3%A4-henki",
-  "/biblical-church": "/biblical-church",
+  "/biblical-church": "/kuopio-seurakunta",
 };
 
 // Helper function to get the opposite route
