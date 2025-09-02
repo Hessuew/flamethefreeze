@@ -142,41 +142,36 @@ const contentItems = [
     <!-- Star Layer 1 - Far background -->
     <BlurFade client:load className="absolute inset-0 parallax-layer z-20" delay={3.4} direction="up" inView>
       <div class="absolute inset-0 parallax-layer z-20" data-speed="0.1">
-        <div class="star-symbol star-1">⟡</div>
-        <div class="star-symbol star-2">⟡</div>
-        <div class="star-symbol star-3">⟡</div>
+        <div class="star-symbol text-white/70 top-[15%] left-[20%] text-[50px]">⟡</div>
+        <div class="star-symbol text-white/60 top-[30%] right-[45%] text-[32px]">⟡</div>
+        <div class="star-symbol text-white/65 top-[60%] left-[35%] text-[44px]">⟡</div>
       </div>
     </BlurFade>
 
     <!-- Star Layer 2 - Mid background -->
     <BlurFade client:load className="absolute inset-0 parallax-layer z-30" delay={3.45} direction="up" inView>
       <div class="absolute inset-0 parallax-layer z-30" data-speed="0.3">
-        <div class="star-symbol star-4">⟡</div>
-        <div class="star-symbol star-5">⟡</div>
-        <div class="star-symbol star-6">⟡</div>
+        <div class="star-symbol text-white top-[21%] right-[25%] text-[30px]">⟡</div>
+        <div class="star-symbol text-white/75 top-[45%] right-[15%] text-[40px]">⟡</div>
+        <div class="star-symbol text-white/70 top-[70%] left-[40%] text-[28px]">⟡</div>
       </div>
     </BlurFade>
 
     <!-- Star Layer 3 - Foreground -->
     <BlurFade client:load className="absolute inset-0 parallax-layer z-40" delay={3.5} direction="up" inView>
       <div class="absolute inset-0 parallax-layer z-40" data-speed="0.6">
-        <div class="star-symbol star-7">⟡</div>
-        <div class="star-symbol star-8">⟡</div>
+        <div class="star-symbol text-white top-[17%] right-[23%] text-[44px]">⟡</div>
+        <div class="star-symbol text-white/90 top-[55%] right-[30%] text-[32px]">⟡</div>
       </div>
     </BlurFade>
 
     <!-- Star Layer 4 - Foreground -->
     <BlurFade client:load className="absolute inset-0 parallax-layer z-50" delay={3.55} direction="up" inView>
       <div class="absolute inset-0 parallax-layer z-50" data-speed="0.6">
-        <div class="star-symbol star-9">⟡</div>
-        <div class="star-symbol star-10">⟡</div>
+        <div class="star-symbol text-white top-[90%] right-[10%] text-[60px]">⟡</div>
+        <div class="star-symbol text-white/90 top-[80%] right-[40%] text-[44px]">⟡</div>
       </div>
     </BlurFade>
-
-    <!-- Cloud Layer - Bottom parallax -->
-    <!-- <div class="absolute inset-0 parallax-layer z-50" data-speed="0.3">
-      <div class="cloud-layer" style={`background-image: url(${cloud.src})`}></div>
-    </div> -->
 
     <Hero classes={{ containerClass: "relative z-10" }}>
       <Fragment slot="title">
@@ -246,113 +241,13 @@ const contentItems = [
   .star-symbol {
     position: absolute;
     filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
-    color: rgba(255, 255, 255, 0.9);
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
-    font-family:
-      system-ui,
-      -apple-system,
-      sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* Layer 1 stars - Far background */
-  .star-1 {
-    font-size: 50px;
-    top: 15%;
-    left: 20%;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .star-2 {
-    font-size: 32px;
-    top: 30%;
-    right: 45%;
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .star-3 {
-    font-size: 44px;
-    top: 60%;
-    left: 35%;
-    color: rgba(255, 255, 255, 0.65);
-  }
-
-  /* Layer 2 stars - Mid background */
-  .star-4 {
-    font-size: 30px;
-    top: 21%;
-    right: 25%;
-    color: rgba(255, 255, 255, 1);
-  }
-
-  .star-5 {
-    font-size: 40px;
-    top: 45%;
-    right: 15%;
-    color: rgba(255, 255, 255, 0.75);
-  }
-
-  .star-6 {
-    font-size: 28px;
-    top: 70%;
-    left: 40%;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  /* Layer 3 stars - Foreground */
-  .star-7 {
-    font-size: 44px;
-    top: 17%;
-    right: 23%;
-    color: rgba(255, 255, 255, 1);
-  }
-
-  .star-8 {
-    font-size: 32px;
-    top: 55%;
-    right: 30%;
-    color: rgba(255, 255, 255, 0.9);
-  }
-
-  /* Layer 4 stars - Foreground */
-  .star-9 {
-    font-size: 60px;
-    top: 90%;
-    right: 10%;
-    color: rgba(255, 255, 255, 1);
-  }
-
-  .star-10 {
-    font-size: 44px;
-    top: 80%;
-    right: 40%;
-    color: rgba(255, 255, 255, 0.9);
-  }
-
-  /* Cloud Layer */
-  .cloud-layer {
-    position: fixed;
-    bottom: -400px;
-    left: 0;
-    right: 0;
-    height: 600px;
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    z-index: 60;
   }
 
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .star-symbol {
       transform: scale(0.8);
-    }
-
-    .cloud-layer {
-      bottom: -250px;
-      height: 400px;
     }
   }
 </style>
