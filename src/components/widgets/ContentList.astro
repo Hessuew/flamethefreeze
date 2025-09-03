@@ -1,0 +1,233 @@
+---
+import { twMerge } from "tailwind-merge";
+import WidgetWrapper from "../ui/WidgetWrapper.astro";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+export interface ContentDescription {
+  text: string;
+  subtitle?: boolean;
+}
+
+export interface ContentItem {
+  image?: ImageMetadata;
+  title: string;
+  description: ContentDescription[];
+  color: "orange" | "blue" | "green" | "purple" | "red" | "yellow" | "pink" | "indigo";
+  icon?: string;
+  emoji?: string;
+}
+
+export interface Props {
+  contentItems: ContentItem[];
+  containerClass?: string;
+  tagline?: string;
+  title?: string;
+  isReversed?: boolean;
+}
+
+const { contentItems, containerClass = "", tagline, title, isReversed = false } = Astro.props;
+
+// Enhanced color theme mappings with solid backgrounds for performance
+const colorThemes = {
+  orange: {
+    gradient: "from-orange-500 to-red-600",
+    solidBg: "bg-orange-500/10",
+    border: "border-orange-500/30",
+    borderHover: "hover:border-orange-500/60",
+    accent: "bg-orange-500",
+    textAccent: "text-orange-400",
+    iconBg: "bg-gradient-to-br from-orange-500 to-red-600",
+  },
+  blue: {
+    gradient: "from-blue-500 to-purple-600", 
+    solidBg: "bg-blue-500/10",
+    border: "border-blue-500/30",
+    borderHover: "hover:border-blue-500/60",
+    accent: "bg-blue-500",
+    textAccent: "text-blue-400",
+    iconBg: "bg-gradient-to-br from-blue-500 to-purple-600",
+  },
+  green: {
+    gradient: "from-green-500 to-teal-600",
+    solidBg: "bg-green-500/10", 
+    border: "border-green-500/30",
+    borderHover: "hover:border-green-500/60",
+    accent: "bg-green-500",
+    textAccent: "text-green-400",
+    iconBg: "bg-gradient-to-br from-green-500 to-teal-600",
+  },
+  purple: {
+    gradient: "from-purple-500 to-pink-600",
+    solidBg: "bg-purple-500/10",
+    border: "border-purple-500/30", 
+    borderHover: "hover:border-purple-500/60",
+    accent: "bg-purple-500",
+    textAccent: "text-purple-400",
+    iconBg: "bg-gradient-to-br from-purple-500 to-pink-600",
+  },
+  red: {
+    gradient: "from-red-500 to-red-800",
+    solidBg: "bg-red-500/10",
+    border: "border-red-500/30",
+    borderHover: "hover:border-red-500/60", 
+    accent: "bg-red-500",
+    textAccent: "text-red-400",
+    iconBg: "bg-gradient-to-br from-red-500 to-red-800",
+  },
+  yellow: {
+    gradient: "from-yellow-500 to-orange-600",
+    solidBg: "bg-yellow-500/10",
+    border: "border-yellow-500/30",
+    borderHover: "hover:border-yellow-500/60",
+    accent: "bg-yellow-500", 
+    textAccent: "text-yellow-400",
+    iconBg: "bg-gradient-to-br from-yellow-500 to-orange-600",
+  },
+  pink: {
+    gradient: "from-red-500 to-pink-600",
+    solidBg: "bg-pink-500/10",
+    border: "border-pink-500/30",
+    borderHover: "hover:border-pink-500/60",
+    accent: "bg-pink-500",
+    textAccent: "text-pink-400", 
+    iconBg: "bg-gradient-to-br from-red-500 to-pink-600",
+  },
+  indigo: {
+    gradient: "from-indigo-500 to-blue-800",
+    solidBg: "bg-indigo-500/10",
+    border: "border-indigo-500/30",
+    borderHover: "hover:border-indigo-500/60",
+    accent: "bg-indigo-500",
+    textAccent: "text-indigo-400",
+    iconBg: "bg-gradient-to-br from-indigo-500 to-blue-800",
+  },
+};
+---
+
+<WidgetWrapper
+  id="content-list"
+  animated={false}
+  containerClass={twMerge("py-16 xl:py-20 scroll-mt-[100px]", containerClass)}
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {/* Header Section */}
+    {(tagline || title) && (
+      <div class="text-center mb-16 xl:mb-20">
+        {tagline && (
+          <p class="text-base text-blue-400 font-semibold tracking-wide uppercase mb-4">
+            {tagline}
+          </p>
+        )}
+        {title && (
+          <h2 class="text-4xl xl:text-5xl font-bold text-white mb-6">
+            {title}
+          </h2>
+        )}
+      </div>
+    )}
+
+    {/* Content Items */}
+    <div class="space-y-12 xl:space-y-16">
+      {
+        contentItems.map((item, index) => {
+          const theme = colorThemes[item.color];
+          const isEven = index % 2 === 0;
+          const layoutReversed = isReversed ? !isEven : isEven;
+
+          return (
+            <div class="group relative">
+              <div class={`flex flex-col ${layoutReversed ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 xl:gap-12 items-start`}>
+                
+                {/* Image Section (if provided) */}
+                {item.image && (
+                  <div class="flex-shrink-0 w-full lg:w-96 xl:w-[420px]">
+                    <div class="relative overflow-hidden rounded-2xl xl:rounded-3xl shadow-2xl group-hover:shadow-3xl transition-all duration-700">
+                      <div class="aspect-[4/3] relative">
+                        <Image
+                          src={item.image}
+                          alt={item.title}
+                          class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                        {/* Subtle overlay for better text contrast */}
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Content Section */}
+                <div class="flex-1 min-w-0">
+                  <div class={`relative bg-gray-900/80 ${theme.solidBg} rounded-2xl xl:rounded-3xl p-8 xl:p-10 border-2 ${theme.border} ${theme.borderHover} transition-all duration-500 shadow-xl`}>
+                    
+                    {/* Header with Icon/Emoji */}
+                    <div class="flex items-start gap-6 xl:gap-8 mb-8 xl:mb-10">
+                      {/* Icon or Number Badge */}
+                      <div class="flex-shrink-0">
+                        {item.icon ? (
+                          <div class={`w-16 h-16 xl:w-20 xl:h-20 ${theme.iconBg} rounded-2xl xl:rounded-3xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                            <i class={`${item.icon} text-white text-2xl xl:text-3xl`}></i>
+                          </div>
+                        ) : (
+                          <div class={`w-16 h-16 xl:w-20 xl:h-20 ${theme.iconBg} rounded-2xl xl:rounded-3xl flex items-center justify-center text-white text-2xl xl:text-3xl font-bold shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500`}>
+                            {index + 1}
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Title and Emoji */}
+                      <div class="flex-1 min-w-0">
+                        <div class="flex items-center gap-4 xl:gap-6 mb-4">
+                          <h3 class="text-2xl xl:text-3xl font-bold text-white leading-tight">
+                            {item.title}
+                          </h3>
+                          {item.emoji && (
+                            <span class="text-3xl xl:text-4xl flex-shrink-0">{item.emoji}</span>
+                          )}
+                        </div>
+                        
+                        {/* Decorative accent line */}
+                        <div class={`w-24 xl:w-32 h-1 ${theme.accent} rounded-full opacity-60`} />
+                      </div>
+                    </div>
+
+                    {/* Content Description */}
+                    <div class="space-y-4 xl:space-y-5">
+                      {item.description.map((desc, descIndex) => (
+                        <div key={descIndex} class="relative">
+                          {desc.subtitle ? (
+                            <h4 class={`text-xl xl:text-2xl font-semibold ${theme.textAccent} mb-3 xl:mb-4 flex items-center gap-3`}>
+                              <div class={`w-2 h-2 ${theme.accent} rounded-full flex-shrink-0`} />
+                              <span set:html={desc.text} />
+                            </h4>
+                          ) : (
+                            <div class="flex items-start gap-4 xl:gap-5">
+                              <div class={`w-1.5 h-1.5 ${theme.accent} rounded-full flex-shrink-0 mt-3`} />
+                              <p class="text-gray-200 text-lg xl:text-xl leading-relaxed xl:leading-relaxed font-light" set:html={desc.text} />
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Bottom decorative elements */}
+                    <div class="mt-8 xl:mt-10 flex justify-between items-center">
+                      <div class={`w-20 xl:w-24 h-0.5 bg-gradient-to-r ${theme.gradient} opacity-40 rounded-full`} />
+                      <div class="flex gap-2">
+                        <div class={`w-2 h-2 ${theme.accent} rounded-full opacity-60`} />
+                        <div class={`w-2 h-2 ${theme.accent} rounded-full opacity-40`} />
+                        <div class={`w-2 h-2 ${theme.accent} rounded-full opacity-20`} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</WidgetWrapper>

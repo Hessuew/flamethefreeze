@@ -1,0 +1,62 @@
+---
+import ContentList from "~/components/widgets/ContentList.astro";
+import { useTranslations } from "~/i18n/utils";
+
+// Example usage of ContentList widget with church.astro-style content
+const { lang = "en" } = Astro.props;
+const t = useTranslations(lang);
+
+// Example content items that match the church.astro structure
+const exampleContentItems = [
+  {
+    title: t("church.steps.items1.title"),
+    description: [
+      { text: t("church.steps.items1.description1") },
+      { text: t("church.steps.items1.description2") },
+      { text: t("church.steps.items1.description3") },
+    ],
+    color: "blue" as const,
+    emoji: "🔥",
+  },
+  {
+    title: t("church.steps.items2.title"),
+    description: [
+      { text: t("church.steps.items2.description1") },
+      { text: t("church.steps.items2.description2") },
+      { text: t("church.steps.items2.description3") },
+    ],
+    color: "orange" as const,
+    icon: "tabler:heart",
+  },
+  {
+    title: t("church.steps.items4.title"),
+    description: [
+      { text: t("church.steps.items4.description1") },
+      { text: t("church.steps.items4.description2") },
+      { subtitle: true, text: t("church.steps.items4.description3") },
+      { text: t("church.steps.items4.description4") },
+      { text: t("church.steps.items4.description5") },
+      { subtitle: true, text: t("church.steps.items4.description6") },
+      { text: t("church.steps.items4.description7") },
+      { text: t("church.steps.items4.description8") },
+    ],
+    color: "purple" as const,
+    emoji: "⛪",
+  },
+  {
+    title: t("church.steps.items5.title"),
+    description: [
+      { text: t("church.steps.items5.description1") },
+      { text: t("church.steps.items5.description2") },
+      { subtitle: true, text: t("church.steps.items5.description3") },
+      { text: t("church.steps.items5.description4") },
+      { text: t("church.steps.items5.description5") },
+    ],
+    color: "green" as const,
+    icon: "tabler:users",
+  },
+];
+---
+
+<!-- Example usage of ContentList widget -->
+<ContentList contentItems={exampleContentItems} />

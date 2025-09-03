@@ -378,7 +378,7 @@ export const ui = {
     "church.herotext.title.span": " a true",
     "church.herotext.subtitle1": "There are",
     "church.herotext.subtitle2":
-      "churches and denominations today that you get your head spinning trying to figure out what is genuine. Does the true church of",
+      "churches and denominations today that you get your head spinning trying to figure out what is genuine. Does a biblical church of",
     "church.herotext.subtitle3": " exist today? Can you identify it?",
     "church.herotext.subtitle.span1": " so many",
     "church.herotext.subtitle.span2": " Jesus Christ",
