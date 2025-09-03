@@ -317,76 +317,18 @@ export const ui = {
     "zoom.countdown.hours": "hours",
     "zoom.countdown.minutes": "minutes",
     "zoom.countdown.seconds": "seconds",
-    "": "",
-    "about.herotext.tagline": "About us",
-    "about.herotext.title1": "Here you will ",
-    "about.herotext.title2": " find cake🍰 and coffee☕, pursuits for fame or power⭐, or petitions for money💸",
-    "about.herotext.subtitle.span": "not!",
-    "about.herotext.title.span": "not!",
-    "about.herotext.subtitle1":
-      "We will offer the pure word of God without partiality, a word that will divide asunder soul and spirit and discern the thoughts and intents ",
-    "about.herotext.subtitle.span1": "of your heart (Heb 4:12). ",
-    "about.herotext.subtitle2": "A word that will sancify and mold your life to be holy as ",
-    "about.herotext.subtitle.span2": "He is holy. ",
-    "about.herotext.subtitle3": "So that in the end, by the process of the Holy Spirit and the word of God...",
-    "about.steps.title": "...like Abraham, you have laid all these on the altar as a sacrifice...",
-    "about.steps.items1.title": "Country to live in,",
-    "about.steps.items1.description1": "(Gen 12:1, God's initial call.)",
-    "about.steps.items2.title": "Relatives and father's house",
-    "about.steps.items2.description1": "(Gen 12:1, God's initial call.)",
-    "about.steps.items3.title": "Friends, possessions and wealth,",
-    "about.steps.items3.description1":
-      "(Gen 13:9-14, Lot separated from Abram and chose the good-looking land of Sodom and Gomorrah.)",
-    "about.steps.items4.title": "Fears",
-    "about.steps.items4.description1": "(Gen 20:11-13, 17, Abraham feared and lied about Sarah.)",
-    "about.steps.items5.title": "Own plans and honor",
-    "about.steps.items5.description1": "(Gen 21:9-14, Abraham sent away Hagar and Ishmael.)",
-    "about.steps.items6.title": "Partner,",
-    "about.steps.items6.description1": "(Gen 22:1-3, Abraham left to sacrifice Isaac without telling Sarah.)",
-    "about.steps.items7.title": "Your deepest affections and desires.",
-    "about.steps.items7.description1":
-      "(Gen 22:10, 'And Abraham stretched forth his hand, and took the knife to slay his son.')",
-    "about.features2.title1": "...and now your ",
-    "about.features2.title2": ", oh, your ",
-    "about.features2.title3": ", is pumping for",
-    "about.features2.title.span": "heart",
-    "about.h2": "God",
-    "about.content.title1": "Created by ",
-    "about.content.title2": "Andrew Agbaje & Juhani Juusola",
-    "about.content.subtitle":
-      "Andrew Agbaje and Juhani Juusola have received a mandate from our Lord Jesus Christ to all the world and to the Church, which is the body of Christ.",
-    "about.content.content":
-      "Andrew, a physician, and Juhani, a programmer, are based in Kuopio, Finland. They are involved in strengthening and edifying local churches, preaching the gospel everywhere, discipling and maturing young believers, organizing global prayer conferences, conducting inspirational and revelatory bible studies with the demonstration of the power and the gift of the Holy Spirit, through mighty miracles, signs and wonders in the name of our Lord Jesus Christ. To the body of Christ, these brothers are ambassadors of the mystery of the glory of God hidden from ages now made known to the saints by the spirit of wisdom, to prepare a glorious church for the Bridegroom's return.",
-    "about.testimonials.items1.name": "Mark 16:17,18 KJV",
-    "about.testimonials.items1.t1":
-      "And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; they shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover.",
-    "about.testimonials.items2.name": "Ephesians 3:2-5 KJV",
-    "about.testimonials.items2.t1":
-      "Ye have heard of the dispensation of the grace of God which is given me to you-ward: how that by revelation he made known unto me the mystery; (as I wrote afore in few words, whereby, when ye read, ye may understand my knowledge in the mystery of Christ) which in other ages was not made known unto the sons of men, as it is now revealed unto his holy apostles and prophets by the Spirit.",
-    "about.testimonials.items3.name": "Ephesians 5:27 AMPC",
-    "about.testimonials.items3.t1":
-      "That He might present the church to Himself in glorious splendor, without spot or wrinkle or any such things [that she might be holy and faultless].",
-    "about.testimonials.items4.name": "1 Corinthians 4:1 KJV",
-    "about.testimonials.items4.t1":
-      "Let a man so account of us, as of the ministers of Christ, and stewards of the mysteries of God.",
-    "about.testimonials.items5.name": "Acts 13:2 AMPC",
-    "about.testimonials.items5.t1":
-      "While they were worshiping the Lord and fasting, the Holy Spirit said, Separate now for Me Barnabas and Saul for the work to which I have called them.",
-    "about.testimonials.items6.name": "1 Corinthians 2:7 KJV",
-    "about.testimonials.items6.t1":
-      "But we speak the wisdom of God in a mystery, even the hidden wisdom, which God ordained before the world unto our glory.",
-    "about.features.title":
-      "But arise and stand upon your feet; for I have appeared to you for this purpose, that I might appoint you to serve as [My] minister and to bear witness both to what you have seen of Me and to that in which I will appear to you, choosing you out [selecting you for Myself] and delivering you from among this [Jewish] people and the Gentiles to whom I am sending you— to open their eyes that they may turn from darkness to light and from the power of Satan to God, so that they may thus receive forgiveness and release from their sins and a place and portion among those who are consecrated and purified by faith in Me. Acts 26:16-18 AMPC",
-    "church.herotext.tagline": "The true church",
-    "church.herotext.title1": "What is",
-    "church.herotext.title2": " church?",
-    "church.herotext.title.span": " a true",
+    "church.herotext.title.1": "Biblical Church",
+    "church.herotext.title.2": "Biblical Church in 2025?",
     "church.herotext.subtitle1": "There are",
     "church.herotext.subtitle2":
       "churches and denominations today that you get your head spinning trying to figure out what is genuine. Does a biblical church of",
     "church.herotext.subtitle3": " exist today? Can you identify it?",
     "church.herotext.subtitle.span1": " so many",
     "church.herotext.subtitle.span2": " Jesus Christ",
+    "church.contentList.tagline": "How",
+    "church.contentList.title": "How to identify a biblical church?",
+    "church.contentList.subtitle":
+      "You can spot a biblical church by asking a few practical questions. 🤔💭 Check these 10 key aspects and see how the church measures up. 📐👷 🏛️",
     "church.steps.tagline": "An eye opener",
     "church.steps.title": "The church to attend is where:",
     "church.steps.items1.title": "Jesus is glorified",
@@ -498,6 +440,70 @@ export const ui = {
       "For the kingdom of God is not meat and drink; but righteousness, and peace, and joy in the Holy Ghost. Rom 14:17 KJV.",
     "church.steps.items10.description2":
       "Now the Lord is that Spirit: and where the Spirit of the Lord is, there is liberty. 2 Cor 3:17 KJV.",
+    "": "",
+    "about.herotext.tagline": "About us",
+    "about.herotext.title1": "Here you will ",
+    "about.herotext.title2": " find cake🍰 and coffee☕, pursuits for fame or power⭐, or petitions for money💸",
+    "about.herotext.subtitle.span": "not!",
+    "about.herotext.title.span": "not!",
+    "about.herotext.subtitle1":
+      "We will offer the pure word of God without partiality, a word that will divide asunder soul and spirit and discern the thoughts and intents ",
+    "about.herotext.subtitle.span1": "of your heart (Heb 4:12). ",
+    "about.herotext.subtitle2": "A word that will sancify and mold your life to be holy as ",
+    "about.herotext.subtitle.span2": "He is holy. ",
+    "about.herotext.subtitle3": "So that in the end, by the process of the Holy Spirit and the word of God...",
+    "about.steps.title": "...like Abraham, you have laid all these on the altar as a sacrifice...",
+    "about.steps.items1.title": "Country to live in,",
+    "about.steps.items1.description1": "(Gen 12:1, God's initial call.)",
+    "about.steps.items2.title": "Relatives and father's house",
+    "about.steps.items2.description1": "(Gen 12:1, God's initial call.)",
+    "about.steps.items3.title": "Friends, possessions and wealth,",
+    "about.steps.items3.description1":
+      "(Gen 13:9-14, Lot separated from Abram and chose the good-looking land of Sodom and Gomorrah.)",
+    "about.steps.items4.title": "Fears",
+    "about.steps.items4.description1": "(Gen 20:11-13, 17, Abraham feared and lied about Sarah.)",
+    "about.steps.items5.title": "Own plans and honor",
+    "about.steps.items5.description1": "(Gen 21:9-14, Abraham sent away Hagar and Ishmael.)",
+    "about.steps.items6.title": "Partner,",
+    "about.steps.items6.description1": "(Gen 22:1-3, Abraham left to sacrifice Isaac without telling Sarah.)",
+    "about.steps.items7.title": "Your deepest affections and desires.",
+    "about.steps.items7.description1":
+      "(Gen 22:10, 'And Abraham stretched forth his hand, and took the knife to slay his son.')",
+    "about.features2.title1": "...and now your ",
+    "about.features2.title2": ", oh, your ",
+    "about.features2.title3": ", is pumping for",
+    "about.features2.title.span": "heart",
+    "about.h2": "God",
+    "about.content.title1": "Created by ",
+    "about.content.title2": "Andrew Agbaje & Juhani Juusola",
+    "about.content.subtitle":
+      "Andrew Agbaje and Juhani Juusola have received a mandate from our Lord Jesus Christ to all the world and to the Church, which is the body of Christ.",
+    "about.content.content":
+      "Andrew, a physician, and Juhani, a programmer, are based in Kuopio, Finland. They are involved in strengthening and edifying local churches, preaching the gospel everywhere, discipling and maturing young believers, organizing global prayer conferences, conducting inspirational and revelatory bible studies with the demonstration of the power and the gift of the Holy Spirit, through mighty miracles, signs and wonders in the name of our Lord Jesus Christ. To the body of Christ, these brothers are ambassadors of the mystery of the glory of God hidden from ages now made known to the saints by the spirit of wisdom, to prepare a glorious church for the Bridegroom's return.",
+    "about.testimonials.items1.name": "Mark 16:17,18 KJV",
+    "about.testimonials.items1.t1":
+      "And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; they shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover.",
+    "about.testimonials.items2.name": "Ephesians 3:2-5 KJV",
+    "about.testimonials.items2.t1":
+      "Ye have heard of the dispensation of the grace of God which is given me to you-ward: how that by revelation he made known unto me the mystery; (as I wrote afore in few words, whereby, when ye read, ye may understand my knowledge in the mystery of Christ) which in other ages was not made known unto the sons of men, as it is now revealed unto his holy apostles and prophets by the Spirit.",
+    "about.testimonials.items3.name": "Ephesians 5:27 AMPC",
+    "about.testimonials.items3.t1":
+      "That He might present the church to Himself in glorious splendor, without spot or wrinkle or any such things [that she might be holy and faultless].",
+    "about.testimonials.items4.name": "1 Corinthians 4:1 KJV",
+    "about.testimonials.items4.t1":
+      "Let a man so account of us, as of the ministers of Christ, and stewards of the mysteries of God.",
+    "about.testimonials.items5.name": "Acts 13:2 AMPC",
+    "about.testimonials.items5.t1":
+      "While they were worshiping the Lord and fasting, the Holy Spirit said, Separate now for Me Barnabas and Saul for the work to which I have called them.",
+    "about.testimonials.items6.name": "1 Corinthians 2:7 KJV",
+    "about.testimonials.items6.t1":
+      "But we speak the wisdom of God in a mystery, even the hidden wisdom, which God ordained before the world unto our glory.",
+    "about.features.title":
+      "But arise and stand upon your feet; for I have appeared to you for this purpose, that I might appoint you to serve as [My] minister and to bear witness both to what you have seen of Me and to that in which I will appear to you, choosing you out [selecting you for Myself] and delivering you from among this [Jewish] people and the Gentiles to whom I am sending you— to open their eyes that they may turn from darkness to light and from the power of Satan to God, so that they may thus receive forgiveness and release from their sins and a place and portion among those who are consecrated and purified by faith in Me. Acts 26:16-18 AMPC",
+    "church.herotext.tagline": "The true church",
+    "church.herotext.title1": "What is",
+    "church.herotext.title2": " church?",
+    "church.herotext.title.span": " a true",
     "devotions.hero.tagline": "Daily devotionals",
     "devotions.hero.title.title1": " food for",
     "devotions.hero.title.title2": " beings!",
@@ -1815,6 +1821,130 @@ export const ui = {
     "zoom.countdown.hours": "tuntia",
     "zoom.countdown.minutes": "minuuttia",
     "zoom.countdown.seconds": "sekuntia",
+    "church.herotext.title.1": "Raamatullinen seurakunta",
+    "church.herotext.title.2": "Raamatullinen seurakunta vuonna 2025?",
+    "church.herotext.subtitle1": "Nykyään on",
+    "church.herotext.subtitle2":
+      "seurakuntia ja kirkkokuntia, että saat pääsi pyörälle yrittäessäsi selvittää, mikä on aitoa. Onko aito",
+    "church.herotext.subtitle3": " seurakuntaa olemassa tänään? Voitko tunnistaa sen?",
+    "church.herotext.subtitle.span1": " niin monia",
+    "church.herotext.subtitle.span2": " Jeesuksen Kristuksen",
+    "church.contentList.tagline": "Miten",
+    "church.contentList.title": "Miten tunnistaa Raamatullinen seurakunta?",
+    "church.contentList.subtitle":
+      "Pystyt tunnistamaan Raamatullisen seurakunnan muutaman käytännöllisen kysymyksen avulla. 🤔💭 Tarkista nämä 10 keskeistä näkökohtaa ja katso miten seurakunta vertaa niihin. 📐👷 🏛️",
+    "church.steps.tagline": "Silmienavaaja",
+    "church.steps.title": "Seurakunta, johon osallistua, on missä:",
+    "church.steps.items1.title": "Jeesus on kirkastettu",
+    "church.steps.items1.question":
+      "Question:<br/> Is the focus that people will love Jesus, and yield their whole lives to him without holding anything back?",
+    "church.steps.items1.description1": "Mutta joka kerskaa, hänen kerskauksenaan olkoon Herra. 2 Kor 10:17 FINRK",
+    "church.steps.items1.description2":
+      "Hän kirkastaa minut, sillä hän ottaa minun omastani ja ilmoittaa teille. Joh 16:14 FINRK",
+    "church.steps.items1.description3":
+      "Syöttepä siis tai juotte tai teettepä mitä tahansa, tehkää kaikki Jumalan kunniaksi. 1 Kor 10:31 FINRK",
+    "church.steps.items2.title": "Ristiä saarnataan",
+    "church.steps.items2.question": "Question: Where is the solution found? In Jesus or in other things?",
+    "church.steps.items2.description1":
+      "Mutta me saarnaamme ristiinnaulittua Kristusta. Hän on juutalaisille pahennus ja pakanoille hullutus, mutta kutsutuille, niin juutalaisille kuin kreikkalaisillekin, Kristus on Jumalan voima ja Jumalan viisaus. 1 Kor 1:23,24 FINRK",
+    "church.steps.items2.description2":
+      "Israelin miehet, kuulkaa nämä sanat! Jeesus Nasaretilainen oli mies, josta Jumala todisti teille voimateoilla, ihmeillä ja merkeillä, joita Jumala teki hänen kauttaan teidän keskuudessanne, niin kuin itse tiedätte. Hänet Jumala antoi teidän käsiinne edeltäpäin tekemänsä päätöksen ja ennaltatietämisensä mukaisesti, ja hänet te laista tietämättömien miesten kätten kautta naulitsitte ristiin ja tapoitte. Mutta Jumala herätti hänet ja päästi hänet kuoleman tuskista. Eihän ollut edes mahdollista, että kuolema olisi voinut pitää häntä vallassaan. Apt 2:22-24 FINRK",
+    "church.steps.items2.description3":
+      "Veljet, minä palautan mieleenne sen evankeliumin, jonka olen teille julistanut ja jonka olette ottaneet vastaan ja jossa myös pysytte. Sen kautta te myös pelastutte, jos pidätte kiinni siitä sellaisena kuin minä sen teille julistin. Muuten olette aivan turhaan uskoneet. Ennen kaikkea annoin teille tiedoksi sen, minkä myös itse olin saanut: Kristus kuoli meidän syntiemme tähden Kirjoitusten mukaan, hänet haudattiin ja hänet herätettiin kolmantena päivänä Kirjoitusten mukaan. 1 Kor 15:1-4",
+    "church.steps.items3.title":
+      "Rakkaus Jumalaa ja veljiä kohtaan on runsasta puhtaasta sydämestä, hyvästä omastatunnosta ja vilpittömästä uskosta",
+    "church.steps.items3.subtitle":
+      "Love to God and to brethren abounds out of a pure heart, of good conscience and of faith unfeigned.",
+    "church.steps.items3.question":
+      "Question: Does the people genuinely love others? Now just inside the church but in free time also?",
+    "church.steps.items3.description1":
+      "Käskymme päämääränä on rakkaus, joka tulee puhtaasta sydämestä, hyvästä omastatunnosta ja vilpittömästä uskosta. 1 Tim 1:5 FINRK",
+    "church.steps.items3.description2":
+      "Häntä te rakastatte, vaikka ette ole häntä nähneet, häneen te uskotte, vaikka ette häntä nyt näe, ja te riemuitsette sanoin kuvaamattomalla ja kirkastuneella ilolla. 1 Pie 1:8 FINRK",
+    "church.steps.items3.description3":
+      "Tämä käsky meillä on häneltä: joka rakastaa Jumalaa, rakastakoon myös veljeään. 1 Joh 4:21 FINRK",
+    "church.steps.items4.title": "Rakkaus maailmaa kohtaan kuolee ja rakkaus maailman asioita kohtaan kuolee",
+    "church.steps.items4.subtitle": "The love of the world dies, and the love of the things of the world dies.",
+    "church.steps.items4.question": "Question:<br/>Are the people there not into video games🎮, and social media📲?",
+    "church.steps.items4.description1":
+      "Te avionrikkojat! Ettekö tiedä, että maailman ystävyys on vihollisuutta Jumalaa vastaan. Joka siis tahtoo olla maailman ystävä, hänestä tulee Jumalan vihollinen. Jaa 4:4 FINRK",
+    "church.steps.items4.description2":
+      "Älkää rakastako maailmaa älkääkä sitä, mikä maailmassa on. Jos joku rakastaa maailmaa, Isän rakkaus ei ole hänessä. Sillä kaikki, mikä maailmassa on, lihan himo, silmien halu ja elämän korskeus, se ei ole Isästä vaan maailmasta. 1 Joh 2:15,16 FINRK",
+    "church.steps.items4.description3":
+      "Mikään tässä maailmassa ei tyydytä sinua enää, haluat vain Jeesuksen ja enemmän Häntä.",
+    "church.steps.items4.description4":
+      "Uskossa nämä kaikki kuolivat eivätkä saaneet sitä, mikä oli luvattu. Kaukaa he olivat sen nähneet ja sitä tervehtineet ja tunnustaneet olevansa vieraita ja muukalaisia maan päällä. Ne, jotka näin puhuvat, ilmaisevat etsivänsä isänmaata. Hep 11:13,14",
+    "church.steps.items4.description5":
+      "Haluan tuntea Kristuksen ja hänen ylösnousemuksensa voiman ja hänen kärsimystensä osallisuuden ja tulla hänen kaltaisekseen samastumalla hänen kuolemaansa. Fil 3:10 FINRK",
+    "church.steps.items4.description6":
+      "Jos olet alkanut rukoilla enemmän, jos olet alkanut lukea Raamattua enemmän, jos olet alkanut saarnata evankeliumia enemmän, olet oikeassa paikassa.",
+    "church.steps.items4.description7": "Me itse tahdomme pysyä rukouksessa ja sanan palveluksessa. Apt 6:4 FINRK",
+    "church.steps.items4.description8":
+      "Olkaa siis, rakkaat veljeni, lujia ja järkähtämättömiä, aina innokkaita Herran työssä, ja tietäkää, että vaivannäkönne Herrassa ei ole turhaa. 1 Kor 15:58",
+    "church.steps.items5.title":
+      "Intohimosi rukoilla yhdessä ja erikseen syttyy täyteen liekkiin ja vain kasvaa päivä päivältä. Haluat rukoilla tuntikausia",
+    "church.steps.items5.subtitle":
+      "Your passion to pray together and individually is kindled to full flame and just enlarges day by day. Wanting to pray for hours and hours.",
+    "church.steps.items5.question":
+      "Question: Is the prayer meeting the most crowded meeting with hours and hours focused on pure prayers?",
+    "church.steps.items5.description1":
+      "Jeesus kertoi heille vertauksen siitä, että heidän tuli aina rukoilla lannistumatta. Luk 18:1 FINRK",
+    "church.steps.items5.description2":
+      "Kehotan teitä, veljet, Herramme Jeesuksen Kristuksen kautta ja Hengen rakkauden kautta auttamaan minua taistelussani rukoilemalla puolestani Jumalaa. Rom 15:30 FINRK",
+    "church.steps.items5.description3":
+      "Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämen pohjasta lähteviä ja Hengen ja Sanan täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat henkeen ja vereen syntiä, *niin* oikeassa paikassa. Jos näin ei ole, seurakunta on menettänyt ensirakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
+    "church.steps.items5.description4":
+      "Vapaaksi päästyään apostolit menivät omiensa luo ja kertoivat kaiken, mitä ylipapit ja vanhimmat olivat heille sanoneet. Sen kuultuaan he kaikki yksimielisesti korottivat äänensä Jumalan puoleen ja sanoivat ... Apt 4:23, 24a FINRK",
+    "church.steps.items5.description5":
+      "Te kyykäärmeiden sikiöt, kuinka te voisitte puhua hyvää, kun itse olette pahoja! Sydämen kyllyydestä suu puhuu. Mat 12:34 FINRK",
+    "church.steps.items6.title": "Enemmän ihmisiä pelastuu sinun kauttasi",
+    "church.steps.items6.question":
+      "Question: Is there dedicated time for evangelism; Does the people in the church speak about the salvation of souls?",
+    "church.steps.items6.description1": "Vanhurskaan hedelmä on elämän puu, ja viisas voittaa sieluja. San 11:30 FINRK",
+    "church.steps.items6.description2":
+      "Hän sanoi heille: ”Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaikille luoduille. Mar 16:15 FINRK",
+    "church.steps.items6.description3":
+      "Jeesus tuli heidän luokseen ja sanoi heille: 'Minulle on annettu kaikki valta taivaassa ja maan päällä. Menkää siis ja tehkää kaikista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää. Ja katso, minä olen teidän kanssanne joka päivä maailmanajan loppuun saakka.' Mat 28:18-20 FINRK",
+    "church.steps.items7.title": "Pyhyyttä saarnataan ja se näkyy ihmisten elämässä",
+    "church.steps.items7.subtitle": "Holiness is preached and is evident in the lives of people.",
+    "church.steps.items7.question":
+      "Question: Do the people directly say no to evil? No any blank and gray areas, nothing between black and white.",
+    "church.steps.items7.description1":
+      "Te olette todistajamme, samoin Jumala, kuinka pyhiä, oikeamielisiä ja nuhteettomia olimme teitä kohtaan, jotka uskotte. 1 Tes 2:10 FINRK",
+    "church.steps.items7.description2":
+      "Tulkaa sen kaikessa vaelluksessanne pyhiksi, niin kuin sinun kutsujannekin on pyhä. Onhan kirjoitettu: ”Olkaa pyhät, sillä minä olen pyhä.” Jos te siis Isänänne huudatte avuksi häntä, henkilöön katsomatta tuomit joka jokaisen hänen tekojensa mukaan, niin vaeltakaa jumalanpelossa tämä muukalaisuutenne aika. tuotteenttehän, että teitä ei ole lunastettu isiltä perimästänne turhasta vaelluksesta katoavilla aarteilla, hopealla tai kullalla, vaan Kristuksen, kuin virheettömän ja tahrattoman Karitsan, kalliilla verellä. Hänet oli kyllä ​​ennalta ehkäistä jo ennen maailman perustamista, mutta vasta viimeisinä aikana paikalla on tuotu julki teitä varten. 1 Pie 1:15-20 FINRK",
+    "church.steps.items7.description3":
+      "Rakkaani, nyt me olemme Jumalan lapsia, eikä vielä ole käynyt ilmi, mitä meistä tulee. Me tiedämme tulevamme hänen kaltaisikseen, kun hän ilmestyy, sillä me saamme nähdä hänet sellaisena kuin hän on. Jokainen, joka panee häneen tämän toivon, puhdistaa itsensä, niin kuin hän on puhdas. 1 Joh 3:2,3 FINRK",
+    "church.steps.items8.title": "Syntiä vihataan ja se tuomitaan",
+    "church.steps.items8.question":
+      "Question: There is an open rebuke for sin. No one is allowed to have small sins in their lives.",
+    "church.steps.items8.description1":
+      "Temppelissä hän tapasi niitä, jotka myivät härkiä, lampaita ja kyyhkysiä. tarjolla oli myös rahanvaihtajia istumassa. Hän teki köydenpätkistä ruoskan ja ajoissa kaikki ulos temppelialueelta lamppuaineen ja härkinen. Rahanvaihtajien rahat hän kaatoi maahan, ja heidän pöytänsä hän työnsi kumoon. Kyyhkysten myyjille hän sanoi: 'Viekää nämä pois täältä! Älkää tehkö minun Isäni huoneesta markkinapaikkaa. Joh 2:14-16 FINRK",
+    "church.steps.items8.description2":
+      "Vaikka minä ruumiillisesti olen poissa, olen kuitenkin hengessä läsnä ja kuin läsnä on jo langennut tuomion sille, joka on tehnyt tuollaista. Kun olette Herran Jeesuksen nimessä nauttineet yhteen ja minun henkeni ja Herramme Jeesuksen voima ovat läsnä, tuo mies luovutettava Saatanan haltuun lihan turmioksi, jotta hänen henkensä pelastuisi Herran päivänä. Kerskailunne ei ole hyväksi. Ettekö tiedä, että pieni määrä hapatetta hapattaa koko taikinan? 1 Kor 15:3-6 FINRK",
+    "church.steps.items8.description3":
+      "Toiset pelastakaa tulesta temmaten, toisia taas armahtakaa kavahtaen heitä, inhoten ruumiin tahraamaa vaatettakin. Jud 1:23 FINRK",
+    "church.steps.items9.title":
+      "Synti lakkaa elämästäsi, vapaudut sorrosta, riippuvuudet murtuvat, sairaudet parantuvat, demonit karkotetaan, ELÄMÄT muuttuvat JUMALAN VOIMALLA!",
+    "church.steps.items9.subtitle":
+      "Sin ceases from your life, you are released from your oppressions, the addictions are broken, sicknesses are healed, demons are being cast out, and lives are being transformed by the POWER of God!",
+    "church.steps.items9.question":
+      "Question: The power of God is clearly manifested in every meeting, and peoples lives are genuinely transformed.",
+    "church.steps.items9.description1":
+      "Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi. Mark 16:17,18 FINRK",
+    "church.steps.items9.description2":
+      "Herran Henki on minun päälläni, sillä hän on voidellut minut julistamaan evankeliumia köyhille. Hän on lähettänyt minut julistamaan vangituille vapautusta ja sokeille näkönsä saamista, päästämään sorretut vapauteen. Luk 4:18 FINRK",
+    "church.steps.items9.description3":
+      "Te myös tiedätte, kuinka Jumala oli voidellut Pyhällä Hengellä ja voimalla nasaretilaisen Jeesuksen, hänet, joka kulki paikasta toiseen, teki hyvää ja paransi kaikki Paholaisen valtaan joutuneet, sillä Jumala oli hänen kanssaan. Apt 10:38 FINRK",
+    "church.steps.items9.description4":
+      "Puheeni ja julistukseni ei ollut inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista, jotta teidän uskonne ei perustuisi ihmisviisauteen vaan Jumalan voimaan. 1 Kor 2:4,5 FINRK",
+    "church.steps.items10.title": "Pyhän Hengen vapaus, vanhurskaus, ilo ja rauha on läsnä",
+    "church.steps.items10.subtitle": "There is liberty, righteousness, joy, and peace in the Holy Ghost.",
+    "church.steps.items10.question": "Question:<br />Holy Spirit moves in the meetings. He is recognized, and revered.",
+    "church.steps.items10.description1":
+      "Sillä Jumalan valtakunta ei ole syömistä ja juomista vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä. Rom 14:17 FINRK",
+    "church.steps.items10.description2": "Herra on Henki, ja missä Herran Henki on, siellä on vapaus. 2 Kor 3:17 FINRK",
+    "church.herotext.subtitle.span": "",
     "": "",
     "index.hero.title1": "2Fire of God and",
     "about.herotext.tagline": "Meistä",
@@ -1880,98 +2010,6 @@ export const ui = {
     "church.herotext.title1": "Mikä on",
     "church.herotext.title2": " seurakunta?",
     "church.herotext.title.span": " aito",
-    "church.herotext.subtitle1": "Nykyään on",
-    "church.herotext.subtitle2":
-      "seurakuntia ja kirkkokuntia, että saat pääsi pyörälle yrittäessäsi selvittää, mikä on aitoa. Onko aito",
-    "church.herotext.subtitle3": " seurakuntaa olemassa tänään? Voitko tunnistaa sen?",
-    "church.herotext.subtitle.span1": " niin monia",
-    "church.herotext.subtitle.span2": " Jeesuksen Kristuksen",
-    "church.steps.tagline": "Silmienavaaja",
-    "church.steps.title": "Seurakunta, johon osallistua, on missä:",
-    "church.steps.items1.title": "Jeesus on kirkastettu",
-    "church.steps.items1.description1": "Mutta joka kerskaa, hänen kerskauksenaan olkoon Herra. 2 Kor 10:17 FINRK",
-    "church.steps.items1.description2":
-      "Hän kirkastaa minut, sillä hän ottaa minun omastani ja ilmoittaa teille. Joh 16:14 FINRK",
-    "church.steps.items1.description3":
-      "Syöttepä siis tai juotte tai teettepä mitä tahansa, tehkää kaikki Jumalan kunniaksi. 1 Kor 10:31 FINRK",
-    "church.steps.items2.title": "Ristiä saarnataan",
-    "church.steps.items2.description1":
-      "Mutta me saarnaamme ristiinnaulittua Kristusta. Hän on juutalaisille pahennus ja pakanoille hullutus, mutta kutsutuille, niin juutalaisille kuin kreikkalaisillekin, Kristus on Jumalan voima ja Jumalan viisaus. 1 Kor 1:23,24 FINRK",
-    "church.steps.items2.description2":
-      "Israelin miehet, kuulkaa nämä sanat! Jeesus Nasaretilainen oli mies, josta Jumala todisti teille voimateoilla, ihmeillä ja merkeillä, joita Jumala teki hänen kauttaan teidän keskuudessanne, niin kuin itse tiedätte. Hänet Jumala antoi teidän käsiinne edeltäpäin tekemänsä päätöksen ja ennaltatietämisensä mukaisesti, ja hänet te laista tietämättömien miesten kätten kautta naulitsitte ristiin ja tapoitte. Mutta Jumala herätti hänet ja päästi hänet kuoleman tuskista. Eihän ollut edes mahdollista, että kuolema olisi voinut pitää häntä vallassaan. Apt 2:22-24 FINRK",
-    "church.steps.items2.description3":
-      "Veljet, minä palautan mieleenne sen evankeliumin, jonka olen teille julistanut ja jonka olette ottaneet vastaan ja jossa myös pysytte. Sen kautta te myös pelastutte, jos pidätte kiinni siitä sellaisena kuin minä sen teille julistin. Muuten olette aivan turhaan uskoneet. Ennen kaikkea annoin teille tiedoksi sen, minkä myös itse olin saanut: Kristus kuoli meidän syntiemme tähden Kirjoitusten mukaan, hänet haudattiin ja hänet herätettiin kolmantena päivänä Kirjoitusten mukaan. 1 Kor 15:1-4",
-    "church.steps.items3.title":
-      "Rakkaus Jumalaa ja veljiä kohtaan on runsasta puhtaasta sydämestä, hyvästä omastatunnosta ja vilpittömästä uskosta",
-    "church.steps.items3.description1":
-      "Käskymme päämääränä on rakkaus, joka tulee puhtaasta sydämestä, hyvästä omastatunnosta ja vilpittömästä uskosta. 1 Tim 1:5 FINRK",
-    "church.steps.items3.description2":
-      "Häntä te rakastatte, vaikka ette ole häntä nähneet, häneen te uskotte, vaikka ette häntä nyt näe, ja te riemuitsette sanoin kuvaamattomalla ja kirkastuneella ilolla. 1 Pie 1:8 FINRK",
-    "church.steps.items3.description3":
-      "Tämä käsky meillä on häneltä: joka rakastaa Jumalaa, rakastakoon myös veljeään. 1 Joh 4:21 FINRK",
-    "church.steps.items4.title": "Rakkaus maailmaa kohtaan kuolee ja rakkaus maailman asioita kohtaan kuolee",
-    "church.steps.items4.description1":
-      "Te avionrikkojat! Ettekö tiedä, että maailman ystävyys on vihollisuutta Jumalaa vastaan. Joka siis tahtoo olla maailman ystävä, hänestä tulee Jumalan vihollinen. Jaa 4:4 FINRK",
-    "church.steps.items4.description2":
-      "Älkää rakastako maailmaa älkääkä sitä, mikä maailmassa on. Jos joku rakastaa maailmaa, Isän rakkaus ei ole hänessä. Sillä kaikki, mikä maailmassa on, lihan himo, silmien halu ja elämän korskeus, se ei ole Isästä vaan maailmasta. 1 Joh 2:15,16 FINRK",
-    "church.steps.items4.description3":
-      "Mikään tässä maailmassa ei tyydytä sinua enää, haluat vain Jeesuksen ja enemmän Häntä.",
-    "church.steps.items4.description4":
-      "Uskossa nämä kaikki kuolivat eivätkä saaneet sitä, mikä oli luvattu. Kaukaa he olivat sen nähneet ja sitä tervehtineet ja tunnustaneet olevansa vieraita ja muukalaisia maan päällä. Ne, jotka näin puhuvat, ilmaisevat etsivänsä isänmaata. Hep 11:13,14",
-    "church.steps.items4.description5":
-      "Haluan tuntea Kristuksen ja hänen ylösnousemuksensa voiman ja hänen kärsimystensä osallisuuden ja tulla hänen kaltaisekseen samastumalla hänen kuolemaansa. Fil 3:10 FINRK",
-    "church.steps.items4.description6":
-      "Jos olet alkanut rukoilla enemmän, jos olet alkanut lukea Raamattua enemmän, jos olet alkanut saarnata evankeliumia enemmän, olet oikeassa paikassa.",
-    "church.steps.items4.description7": "Me itse tahdomme pysyä rukouksessa ja sanan palveluksessa. Apt 6:4 FINRK",
-    "church.steps.items4.description8":
-      "Olkaa siis, rakkaat veljeni, lujia ja järkähtämättömiä, aina innokkaita Herran työssä, ja tietäkää, että vaivannäkönne Herrassa ei ole turhaa. 1 Kor 15:58",
-    "church.steps.items5.title":
-      "Intohimosi rukoilla yhdessä ja erikseen syttyy täyteen liekkiin ja vain kasvaa päivä päivältä. Haluat rukoilla tuntikausia",
-    "church.steps.items5.description1":
-      "Jeesus kertoi heille vertauksen siitä, että heidän tuli aina rukoilla lannistumatta. Luk 18:1 FINRK",
-    "church.steps.items5.description2":
-      "Kehotan teitä, veljet, Herramme Jeesuksen Kristuksen kautta ja Hengen rakkauden kautta auttamaan minua taistelussani rukoilemalla puolestani Jumalaa. Rom 15:30 FINRK",
-    "church.steps.items5.description3":
-      "Sen, kuinka elävä seurakunta on, huomaa suoraan sen rukouskokouksesta. Jos haluat tietää seurakunnan tilan, mene rukouskokoukseen. Jos se on täynnä intohimoa, intoa, sydämen pohjasta lähteviä ja Hengen ja Sanan täyttämiä rukouksia, olet oikeassa paikassa. Jos he rukoilevat sielujen puolesta, kärsivät tuskasta kuolleiden seurakuntien puolesta, itkevät harhaan joutuneiden puolesta, makaavat tuskassa kadonneiden puolesta, rukoilevat yleistä herätystä, pyrkivät evankeliumin edistämiseen ja vastustavat henkeen ja vereen syntiä, *niin* oikeassa paikassa. Jos näin ei ole, seurakunta on menettänyt ensirakkautensa ja sillä on nimi, mutta se on kuollut. Sillä sydämen kyllyydestä suu puhuu.",
-    "church.steps.items5.description4":
-      "Vapaaksi päästyään apostolit menivät omiensa luo ja kertoivat kaiken, mitä ylipapit ja vanhimmat olivat heille sanoneet. Sen kuultuaan he kaikki yksimielisesti korottivat äänensä Jumalan puoleen ja sanoivat ... Apt 4:23, 24a FINRK",
-    "church.steps.items5.description5":
-      "Te kyykäärmeiden sikiöt, kuinka te voisitte puhua hyvää, kun itse olette pahoja! Sydämen kyllyydestä suu puhuu. Mat 12:34 FINRK",
-    "church.steps.items6.title": "Enemmän ihmisiä pelastuu sinun kauttasi",
-    "church.steps.items6.description1": "Vanhurskaan hedelmä on elämän puu, ja viisas voittaa sieluja. San 11:30 FINRK",
-    "church.steps.items6.description2":
-      "Hän sanoi heille: ”Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaikille luoduille. Mar 16:15 FINRK",
-    "church.steps.items6.description3":
-      "Jeesus tuli heidän luokseen ja sanoi heille: 'Minulle on annettu kaikki valta taivaassa ja maan päällä. Menkää siis ja tehkää kaikista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää. Ja katso, minä olen teidän kanssanne joka päivä maailmanajan loppuun saakka.' Mat 28:18-20 FINRK",
-    "church.steps.items7.title": "Pyhyyttä saarnataan ja se näkyy ihmisten elämässä",
-    "church.steps.items7.description1":
-      "Te olette todistajamme, samoin Jumala, kuinka pyhiä, oikeamielisiä ja nuhteettomia olimme teitä kohtaan, jotka uskotte. 1 Tes 2:10 FINRK",
-    "church.steps.items7.description2":
-      "Tulkaa sen kaikessa vaelluksessanne pyhiksi, niin kuin sinun kutsujannekin on pyhä. Onhan kirjoitettu: ”Olkaa pyhät, sillä minä olen pyhä.” Jos te siis Isänänne huudatte avuksi häntä, henkilöön katsomatta tuomit joka jokaisen hänen tekojensa mukaan, niin vaeltakaa jumalanpelossa tämä muukalaisuutenne aika. tuotteenttehän, että teitä ei ole lunastettu isiltä perimästänne turhasta vaelluksesta katoavilla aarteilla, hopealla tai kullalla, vaan Kristuksen, kuin virheettömän ja tahrattoman Karitsan, kalliilla verellä. Hänet oli kyllä ​​ennalta ehkäistä jo ennen maailman perustamista, mutta vasta viimeisinä aikana paikalla on tuotu julki teitä varten. 1 Pie 1:15-20 FINRK",
-    "church.steps.items7.description3":
-      "Rakkaani, nyt me olemme Jumalan lapsia, eikä vielä ole käynyt ilmi, mitä meistä tulee. Me tiedämme tulevamme hänen kaltaisikseen, kun hän ilmestyy, sillä me saamme nähdä hänet sellaisena kuin hän on. Jokainen, joka panee häneen tämän toivon, puhdistaa itsensä, niin kuin hän on puhdas. 1 Joh 3:2,3 FINRK",
-    "church.steps.items8.title": "Syntiä vihataan ja se tuomitaan",
-    "church.steps.items8.description1":
-      "Temppelissä hän tapasi niitä, jotka myivät härkiä, lampaita ja kyyhkysiä. tarjolla oli myös rahanvaihtajia istumassa. Hän teki köydenpätkistä ruoskan ja ajoissa kaikki ulos temppelialueelta lamppuaineen ja härkinen. Rahanvaihtajien rahat hän kaatoi maahan, ja heidän pöytänsä hän työnsi kumoon. Kyyhkysten myyjille hän sanoi: 'Viekää nämä pois täältä! Älkää tehkö minun Isäni huoneesta markkinapaikkaa. Joh 2:14-16 FINRK",
-    "church.steps.items8.description2":
-      "Vaikka minä ruumiillisesti olen poissa, olen kuitenkin hengessä läsnä ja kuin läsnä on jo langennut tuomion sille, joka on tehnyt tuollaista. Kun olette Herran Jeesuksen nimessä nauttineet yhteen ja minun henkeni ja Herramme Jeesuksen voima ovat läsnä, tuo mies luovutettava Saatanan haltuun lihan turmioksi, jotta hänen henkensä pelastuisi Herran päivänä. Kerskailunne ei ole hyväksi. Ettekö tiedä, että pieni määrä hapatetta hapattaa koko taikinan? 1 Kor 15:3-6 FINRK",
-    "church.steps.items8.description3":
-      "Toiset pelastakaa tulesta temmaten, toisia taas armahtakaa kavahtaen heitä, inhoten ruumiin tahraamaa vaatettakin. Jud 1:23 FINRK",
-    "church.steps.items9.title":
-      "Synti lakkaa elämästäsi, vapaudut sorrosta, riippuvuudet murtuvat, sairaudet parantuvat, demonit karkotetaan, ELÄMÄT muuttuvat JUMALAN VOIMALLA!",
-    "church.steps.items9.description1":
-      "Nämä merkit seuraavat niitä, jotka uskovat: Minun nimessäni he ajavat ulos riivaajia, puhuvat uusilla kielillä, nostavat käsin käärmeitä. Jos he juovat jotakin kuolettavaa, se ei vahingoita heitä. He panevat kätensä sairaiden päälle, ja nämä tulevat terveiksi. Mark 16:17,18 FINRK",
-    "church.steps.items9.description2":
-      "Herran Henki on minun päälläni, sillä hän on voidellut minut julistamaan evankeliumia köyhille. Hän on lähettänyt minut julistamaan vangituille vapautusta ja sokeille näkönsä saamista, päästämään sorretut vapauteen. Luk 4:18 FINRK",
-    "church.steps.items9.description3":
-      "Te myös tiedätte, kuinka Jumala oli voidellut Pyhällä Hengellä ja voimalla nasaretilaisen Jeesuksen, hänet, joka kulki paikasta toiseen, teki hyvää ja paransi kaikki Paholaisen valtaan joutuneet, sillä Jumala oli hänen kanssaan. Apt 10:38 FINRK",
-    "church.steps.items9.description4":
-      "Puheeni ja julistukseni ei ollut inhimillisen viisauden suostuttelevia sanoja vaan Hengen ja voiman osoittamista, jotta teidän uskonne ei perustuisi ihmisviisauteen vaan Jumalan voimaan. 1 Kor 2:4,5 FINRK",
-    "church.steps.items10.title": "Pyhän Hengen vapaus, vanhurskaus, ilo ja rauha on läsnä",
-    "church.steps.items10.description1":
-      "Sillä Jumalan valtakunta ei ole syömistä ja juomista vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä. Rom 14:17 FINRK",
-    "church.steps.items10.description2": "Herra on Henki, ja missä Herran Henki on, siellä on vapaus. 2 Kor 3:17 FINRK",
-    "church.herotext.subtitle.span": "",
     "devotions.hero.tagline": "Päivän omistautuminen",
     "devotions.hero.title.title1": " ruokaa",
     "devotions.hero.title.title2": "olennoille!",

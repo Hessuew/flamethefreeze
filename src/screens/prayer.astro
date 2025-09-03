@@ -10,8 +10,7 @@ import prayer_works from "~/assets/images/prayer/prayer_for_works.webp";
 import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
 import PrayerPointsList from "~/components/widgets/PrayerPointsList.astro";
 import type { PrayerPoint } from "~/components/widgets/PrayerPointsList.astro";
-import { getPermalink } from "~/utils/permalinks";
-import { getLanguageRoute } from "~/navigation";
+import CallToAction2 from "~/components/widgets/CallToAction2.astro";
 
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 
@@ -392,31 +391,19 @@ const prayerPoints: PrayerPoint[] = [
           </div>
         </div>
       </div>
-
-      <!-- Call to Action -->
-      <div class="text-center mt-16 pt-16 xl:mt-[64px] xl:pt-[64px] border-t border-gray-700">
-        <h2 class="text-4xl md:text-5xl xl:text-[48px] xl:leading-[56px] font-bold mb-6 xl:mb-[24px] text-white">
-          {t("prayer.cta.title.1")}
-          <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
-            >{t("prayer.cta.title.2")}</span
-          >?
-        </h2>
-        <p
-          class="text-xl xl:text-[20px] xl:leading-[28px] text-gray-300 mb-8 xl:mb-[32px] max-w-2xl mx-auto xl:max-w-[672px]"
-        >
-          {t("prayer.cta.subtitle.1")}
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-6 xl:gap-[24px] justify-center">
-          <FireButton
-            href={getPermalink(getLanguageRoute("word", lang || "en"))}
-            text={t("prayer.cta.button")}
-            variant="primary"
-            size="large"
-            icon="tabler:rocket"
-          />
-        </div>
-      </div>
     </div>
   </WidgetWrapper>
+
+  <CallToAction2
+    id="cta"
+    title={t("prayer.cta.title.1")}
+    title2={t("prayer.cta.title.2")}
+    subtitle={t("prayer.cta.subtitle.1")}
+    button={{
+      href: "word",
+      text: t("prayer.cta.button"),
+      icon: "tabler:rocket",
+    }}
+    lang={lang}
+  />
 </Layout>

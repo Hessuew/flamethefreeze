@@ -7,6 +7,7 @@ import church_today from "~/assets/images/church/biblical_church-church_today.we
 import SubtitleContainer from "~/components/ui/SubtitleContainer.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import ContentList from "~/components/widgets/ContentList.astro";
+import { BlurFade } from "~/components/magicui/blur-fade";
 
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 
@@ -130,7 +131,7 @@ const contentItems = [
 ---
 
 <Layout lang={lang} metadata={metadata} siteRebuildStatus={siteRebuildStatus}>
-  <div class="min-h-screen top-[64px] relative parallax-scene" id="parallax-container">
+  <div class="min-h-screen md:top-[64px] relative parallax-scene" id="parallax-container">
     <!-- Background Image -->
     <div
       class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
@@ -139,30 +140,38 @@ const contentItems = [
     </div>
 
     <!-- Star Layer 1 - Far background -->
-    <div class="absolute inset-0 parallax-layer z-20" data-speed="0.1">
-      <div class="star-symbol star-1">⟡</div>
-      <div class="star-symbol star-2">⟡</div>
-      <div class="star-symbol star-3">⟡</div>
-    </div>
+    <BlurFade client:load className="absolute inset-0 parallax-layer z-20" delay={3.4} direction="up" inView>
+      <div class="absolute inset-0 parallax-layer z-20" data-speed="0.1">
+        <div class="star-symbol star-1">⟡</div>
+        <div class="star-symbol star-2">⟡</div>
+        <div class="star-symbol star-3">⟡</div>
+      </div>
+    </BlurFade>
 
     <!-- Star Layer 2 - Mid background -->
-    <div class="absolute inset-0 parallax-layer z-30" data-speed="0.3">
-      <div class="star-symbol star-4">⟡</div>
-      <div class="star-symbol star-5">⟡</div>
-      <div class="star-symbol star-6">⟡</div>
-    </div>
+    <BlurFade client:load className="absolute inset-0 parallax-layer z-30" delay={3.45} direction="up" inView>
+      <div class="absolute inset-0 parallax-layer z-30" data-speed="0.3">
+        <div class="star-symbol star-4">⟡</div>
+        <div class="star-symbol star-5">⟡</div>
+        <div class="star-symbol star-6">⟡</div>
+      </div>
+    </BlurFade>
 
     <!-- Star Layer 3 - Foreground -->
-    <div class="absolute inset-0 parallax-layer z-40" data-speed="0.6">
-      <div class="star-symbol star-7">⟡</div>
-      <div class="star-symbol star-8">⟡</div>
-    </div>
+    <BlurFade client:load className="absolute inset-0 parallax-layer z-40" delay={3.5} direction="up" inView>
+      <div class="absolute inset-0 parallax-layer z-40" data-speed="0.6">
+        <div class="star-symbol star-7">⟡</div>
+        <div class="star-symbol star-8">⟡</div>
+      </div>
+    </BlurFade>
 
     <!-- Star Layer 4 - Foreground -->
-    <div class="absolute inset-0 parallax-layer z-50" data-speed="0.6">
-      <div class="star-symbol star-9">⟡</div>
-      <div class="star-symbol star-10">⟡</div>
-    </div>
+    <BlurFade client:load className="absolute inset-0 parallax-layer z-50" delay={3.55} direction="up" inView>
+      <div class="absolute inset-0 parallax-layer z-50" data-speed="0.6">
+        <div class="star-symbol star-9">⟡</div>
+        <div class="star-symbol star-10">⟡</div>
+      </div>
+    </BlurFade>
 
     <!-- Cloud Layer - Bottom parallax -->
     <!-- <div class="absolute inset-0 parallax-layer z-50" data-speed="0.3">
@@ -180,17 +189,17 @@ const contentItems = [
             duration={0.6}
             by="character"
             once={true}
-            text={"Biblical Church"}
+            text={t("church.herotext.title.1")}
           />
           <TextAnimate
             client:load
             className="text-xl md:text-2xl xl:text-[20px] xl:leading-[28px] font-normal leading-tight tracking-tighter md:mb-4 xl:mb-[16px] font-heading text-black"
             animation="blurInUp"
             delay={1.6}
-            duration={0.6}
+            duration={0.4}
             by="character"
             once={true}
-            text={"Biblical Church in 2025?"}
+            text={t("church.herotext.title.2")}
           />
         </div>
       </Fragment>
@@ -212,8 +221,8 @@ const contentItems = [
   <ContentList
     headlineType={2}
     tagline="How"
-    title="How to identify a biblical church?"
-    subtitle="You can spot a biblical church by asking a few practical questions. 🤔💭 Check these 10 key aspects and see how the church measures up. 📐👷‍♂️🏛️"
+    title={t("church.contentList.title")}
+    subtitle={t("church.contentList.subtitle")}
     contentItems={contentItems}
     classes={{
       headline: {
@@ -250,21 +259,21 @@ const contentItems = [
 
   /* Layer 1 stars - Far background */
   .star-1 {
-    font-size: 38px;
+    font-size: 50px;
     top: 15%;
     left: 20%;
     color: rgba(255, 255, 255, 0.7);
   }
 
   .star-2 {
-    font-size: 20px;
+    font-size: 32px;
     top: 30%;
-    right: 25%;
+    right: 45%;
     color: rgba(255, 255, 255, 0.6);
   }
 
   .star-3 {
-    font-size: 32px;
+    font-size: 44px;
     top: 60%;
     left: 35%;
     color: rgba(255, 255, 255, 0.65);
@@ -272,21 +281,21 @@ const contentItems = [
 
   /* Layer 2 stars - Mid background */
   .star-4 {
-    font-size: 18px;
-    top: 25%;
-    left: 60%;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    top: 21%;
+    right: 25%;
+    color: rgba(255, 255, 255, 1);
   }
 
   .star-5 {
-    font-size: 28px;
+    font-size: 40px;
     top: 45%;
     right: 15%;
     color: rgba(255, 255, 255, 0.75);
   }
 
   .star-6 {
-    font-size: 16px;
+    font-size: 28px;
     top: 70%;
     left: 40%;
     color: rgba(255, 255, 255, 0.7);
@@ -294,14 +303,14 @@ const contentItems = [
 
   /* Layer 3 stars - Foreground */
   .star-7 {
-    font-size: 32px;
-    top: 20%;
-    right: 40%;
+    font-size: 44px;
+    top: 17%;
+    right: 23%;
     color: rgba(255, 255, 255, 1);
   }
 
   .star-8 {
-    font-size: 20px;
+    font-size: 32px;
     top: 55%;
     right: 30%;
     color: rgba(255, 255, 255, 0.9);
@@ -309,14 +318,14 @@ const contentItems = [
 
   /* Layer 4 stars - Foreground */
   .star-9 {
-    font-size: 48px;
+    font-size: 60px;
     top: 90%;
     right: 10%;
     color: rgba(255, 255, 255, 1);
   }
 
   .star-10 {
-    font-size: 32px;
+    font-size: 44px;
     top: 80%;
     right: 40%;
     color: rgba(255, 255, 255, 0.9);
