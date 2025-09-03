@@ -10,6 +10,7 @@ export const routePairs: Record<string, string> = {
   "/prayer-for-works": "/miten-rukoilla",
   "/the-power-of-the-words": "/jumalan-sana",
   "/what-does-the-holy-ghost-do": "/pyh%C3%A4-henki",
+  "/biblical-church": "/biblical-church",
 };
 
 // Helper function to get the opposite route
@@ -70,6 +71,7 @@ export const getLanguageRoute = (href: string, targetLang: "en" | "fi"): string 
     about: "/what-does-the-holy-ghost-do",
     "holy-ghost": "/what-does-the-holy-ghost-do",
     word: "/the-power-of-the-words",
+    church: "/biblical-church",
     // Add more mappings as needed for other navigation items
   };
 
@@ -116,6 +118,7 @@ export const headerData: { links: Array<MenuLink> } = {
           description: "header.description3",
           href: "church",
           icon: "tabler:flame",
+          new: true,
           text: "header.link3",
         },
         {

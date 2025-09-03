@@ -1,7 +1,15 @@
 ---
+import { twMerge } from "tailwind-merge";
 import { BlurFade } from "~/components/magicui/blur-fade";
 
-const { subtitle = await Astro.slots.render("subtitle"), label1 = "", label2 = "", label3 = "" } = Astro.props;
+const {
+  subtitle = await Astro.slots.render("subtitle"),
+  label1 = "",
+  label2 = "",
+  label3 = "",
+  classes = {},
+  theme = "dark",
+} = Astro.props;
 ---
 
 <div class="flex justify-center mb-8 xl:mb-[32px]">
@@ -9,7 +17,13 @@ const { subtitle = await Astro.slots.render("subtitle"), label1 = "", label2 = "
     <BlurFade client:load delay={3} direction="up" inView>
       <div class="hero-subtitle-card group relative overflow-hidden">
         <!-- Glass Morphism Background -->
-        <div class="absolute inset-0 bg-black/20 border border-white/10 rounded-2xl xl:rounded-[16px] shadow-xl"></div>
+        <div
+          class={twMerge(
+            "absolute inset-0 bg-black/20 border border-white/10 rounded-2xl xl:rounded-[16px] shadow-xl",
+            theme === "dark" ? "bg-black/20" : "bg-white/20"
+          )}
+        >
+        </div>
 
         <!-- Animated Border -->
         <div
@@ -26,12 +40,16 @@ const { subtitle = await Astro.slots.render("subtitle"), label1 = "", label2 = "
           <!-- Text content -->
           <div class="relative text-center">
             <span
-              class="block text-xl xl:text-[20px] xl:leading-[28px] tracking-normal text-white group-hover:text-blue-400 transition-colors duration-300"
+              class={twMerge(
+                "block text-base md:text-xl xl:text-[20px] xl:leading-[28px] tracking-normal text-white group-hover:text-blue-400 transition-colors duration-300",
+                theme === "dark" ? "text-white" : "text-black",
+                classes?.subtitle ?? ""
+              )}
               set:html={subtitle}
             />
 
             <!-- Enhanced decorative elements -->
-            <div class="flex justify-center mt-6 xl:mt-[24px]">
+            <div class="flex justify-center mt-3 md:mt-6 xl:mt-[24px]">
               <div class="flex items-center space-x-4 xl:space-x-[16px]">
                 <div
                   class="w-12 xl:w-[48px] h-0.5 xl:h-[2px] bg-gradient-to-r from-transparent via-blue-400/80 to-blue-400/80 rounded-full"
@@ -52,7 +70,11 @@ const { subtitle = await Astro.slots.render("subtitle"), label1 = "", label2 = "
 
           <!-- Meeting Info Style Elements -->
           <div
-            class="flex justify-center space-x-6 xl:space-x-[24px] mt-4 xl:mt-[16px] text-xs xl:text-[12px] xl:leading-[16px] text-gray-400"
+            class={twMerge(
+              "flex justify-center space-x-6 xl:space-x-[24px] mt-4 xl:mt-[16px] text-xs xl:text-[12px] xl:leading-[16px] text-gray-400 group-hover:text-blue-400 transition-colors duration-300",
+              theme === "dark" ? "text-white" : "text-black",
+              classes?.meetingInfo ?? ""
+            )}
           >
             <div class="flex items-center">
               <div class="w-2 h-2 xl:w-[8px] xl:h-[8px] bg-blue-400 rounded-full mr-2 xl:mr-[8px] animate-pulse"></div>

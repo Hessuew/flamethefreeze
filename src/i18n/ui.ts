@@ -241,13 +241,18 @@ export const ui = {
     "about.what.images.2.title": "Ask his divine life to fill you completely. 'Fill me, use me, shape me'🍷🚰",
     "about.what.images.3.alt": "What does the Holy Ghost do: Free you from your sins",
     "about.what.images.3.title": "Ask his power to break your sins. 'Free me forever, I'm yours now'🧎",
+    "about.cta.title.1": "What's",
+    "about.cta.title.2": "next",
+    "about.cta.subtitle.1":
+      "After you know what does the Holy Ghost do 🛠️, and have a personal encounter with him, you can now move to develop that relationship by forming a strong a robust prayer life. 🙏 That relationship will change your work life also, and Jesus will show there to others ☝️✨.",
+    "about.cta.button": "Learn about prayer for works",
     "word.hero.title.1": "The Power of the Words:",
     "word.hero.title.2": "Transform your speech",
     "word.hero.subtitle.1": "Does you words have power? Know how you can receive the power of the words in your life.",
     "word.hero.subtitle.item.1": "Divine",
     "word.hero.subtitle.item.2": "Fire",
     "word.hero.subtitle.item.3": "Word",
-    "word.hero.cta.button": "I want the power of the words in my life ✋",
+    "word.hero.cta.button": "I want the power of the words ✋",
     "word.wordItems.title.1": "Speak less",
     "word.wordItems.subtitle.1": "Practical: Study to be quiet.",
     "word.wordItems.description.1":
@@ -287,9 +292,9 @@ export const ui = {
     "word.wordItems.subtitle.10": "Practical: Look at people, not paper.",
     "word.wordItems.description.10":
       "If you only read from notes, your message stays on the paper and the people will eat paper.📄🙈 <br/><br/>But when you speak from the heart, you connect with eyes, reactions, and lives — your words land where they matter most: in the heart.❤️👥",
-    "zoom.title": "→ Transform the Power of your Words",
+    "zoom.title": "→ How to transform the Power of your Words? 🪫↠🔋",
     "zoom.subtitle":
-      "Join Our Zoom Sessions: total transformation of the mind takes time with the word and in prayers, and depends on what you put into your heart.",
+      "The shell changes when the content has been transformed.🐚🦋 Join Our Zoom Sessions: total transformation of the mind takes time with the word and in prayers, and depends on what you put into your heart.⌛📥 Join the Zoom meetings, and you will be changed. And when you are changed by the Word of God, your words will change.💎💰🎁✨ 'For of the abundance of his heart his mouth speaketh'.",
     "zoom.bible.title": "Bible Study",
     "zoom.bible.description": "Deep dive into God's Word with fellowship and discussion",
     "zoom.bible.time": "Saturdays of odd weeks at 18:00 GMT+2",
@@ -384,28 +389,36 @@ export const ui = {
     "church.herotext.subtitle.span2": " Jesus Christ",
     "church.steps.tagline": "An eye opener",
     "church.steps.title": "The church to attend is where:",
-    "church.steps.items1.title": "Jesus is glorified.",
+    "church.steps.items1.title": "Jesus is glorified",
+    "church.steps.items1.question":
+      "Question:<br/> Is the focus that people will love Jesus, and yield their whole lives to him without holding anything back?",
     "church.steps.items1.description1": "But he that glorieth, let him glory in the Lord. 2 Cor 10:17 KJV",
     "church.steps.items1.description2":
       "He shall glorify me: for he shall receive of mine, and shall shew it unto you. Joh 16:14 KJV",
     "church.steps.items1.description3":
       "Whether therefore ye eat, or drink, or whatsoever ye do, do all to the glory of God. 1 Cor 10:31 KJV",
-    "church.steps.items2.title": "The cross is preached.",
+    "church.steps.items2.title": "The cross is preached",
+    "church.steps.items2.question": "Question: Where is the solution found? In Jesus or in other things?",
     "church.steps.items2.description1":
       "But we preach Christ crucified, unto the Jews a stumblingblock, and unto the Greeks foolishness. But unto them which are called, both Jews and Greeks, Christ the power of God, and the wisdom of God. 1 Cor 1:23,24 KJV",
     "church.steps.items2.description2":
       "Ye men of Israel, hear these words; Jesus of Nazareth, a man approved of God among you by miracles and wonders and signs, which God did by him in the midst of you, as ye yourselves also know: Him, being delivered by the determinate counsel and foreknowledge of God, ye have taken, and by wicked hands have crucified and slain: Whom God hath raised up, having loosed the pains of death: because it was not possible that he should be holden of it. Acts 2:22-24 KJV",
     "church.steps.items2.description3":
       "Moreover, brethren, I declare unto you the gospel which I preached unto you, which also ye have received, and wherein ye stand; By which also ye are saved, if ye keep in memory what I preached unto you, unless ye have believed in vain. For I delivered unto you first of all that which I also received, how that Christ died for our sins according to the scriptures; And that he was buried, and that he rose again the third day according to the scriptures. 1 Cor 15:1-4 KJV",
-    "church.steps.items3.title":
+    "church.steps.items3.title": "Genuine love",
+    "church.steps.items3.subtitle":
       "Love to God and to brethren abounds out of a pure heart, of good conscience and of faith unfeigned.",
+    "church.steps.items3.question":
+      "Question: Does the people genuinely love others? Now just inside the church but in free time also?",
     "church.steps.items3.description1":
       "Now the end of the commandment is charity out of a pure heart, and of a good conscience, and of faith unfeigned. 1 Tim 1:5 KJV",
     "church.steps.items3.description2":
       "Whom having not seen, ye love; in whom, though now ye see him not, yet believing, ye rejoice with joy unspeakable and full of glory. 1 Pet 1:8 KJV",
     "church.steps.items3.description3":
       "And this commandment have we from him, That he who loveth God love his brother also. 1 Joh 4:21 KJV",
-    "church.steps.items4.title": "The love of the world dies, and the love of the things of the world dies.",
+    "church.steps.items4.title": "The love of the world dies",
+    "church.steps.items4.subtitle": "The love of the world dies, and the love of the things of the world dies.",
+    "church.steps.items4.question": "Question:<br/>Are the people there not into video games🎮, and social media📲?",
     "church.steps.items4.description1":
       "Ye adulterers and adulteresses, know ye not that the friendship of the world is enmity with God? whosoever therefore will be a friend of the world is the enemy of God. Jam 4:4 KJV",
     "church.steps.items4.description2":
@@ -422,8 +435,11 @@ export const ui = {
       "But we will give ourselves continually to prayer, and to the ministry of the word. Acts 6:4 KJV",
     "church.steps.items4.description8":
       "Therefore, my beloved brethren, be ye stedfast, unmovable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord. 1 Cor 15:58 KJV.",
-    "church.steps.items5.title":
+    "church.steps.items5.title": "Passion to pray is on full flame🔥",
+    "church.steps.items5.subtitle":
       "Your passion to pray together and individually is kindled to full flame and just enlarges day by day. Wanting to pray for hours and hours.",
+    "church.steps.items5.question":
+      "Question: Is the prayer meeting the most crowded meeting with hours and hours focused on pure prayers?",
     "church.steps.items5.description1":
       "And he spake a parable unto them to this end, that men ought always to pray, and not to faint. Luk 18:1 KJV",
     "church.steps.items5.description2":
@@ -434,29 +450,39 @@ export const ui = {
       "And being let go, they went to their own company, and reported all that the chief priests and elders had said unto them. And when they heard that, they lifted up their voice to God with one accord ... Acts 4:23, 24a KJV",
     "church.steps.items5.description5":
       "O generation of vipers, how can ye, being evil, speak good things? for out of the abundance of the heart the mouth speaketh. Mat 12:34 KJV",
-    "church.steps.items6.title": "You get more people saved.",
+    "church.steps.items6.title": "You get more people saved",
+    "church.steps.items6.question":
+      "Question: Is there dedicated time for evangelism; Does the people in the church speak about the salvation of souls?",
     "church.steps.items6.description1":
       "The fruit of the righteous is a tree of life; and he that winneth souls is wise. Pro 11:30 KJV",
     "church.steps.items6.description2":
       "And he said unto them, Go ye into all the world, and preach the gospel to every creature. Mark 16:15 KJV",
     "church.steps.items6.description3":
       "And Jesus came and spake unto them, saying, All power is given unto me in heaven and in earth. Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you always, even unto the end of the world. Amen. Mat 28:18-20 KJV.",
-    "church.steps.items7.title": "Holiness is preached and is evident in the lives of people.",
+    "church.steps.items7.title": "Holiness is evident",
+    "church.steps.items7.subtitle": "Holiness is preached and is evident in the lives of people.",
+    "church.steps.items7.question":
+      "Question: Do the people directly say no to evil? No any blank and gray areas, nothing between black and white.",
     "church.steps.items7.description1":
       "Ye are witnesses, and God also, how holily and justly and unblameably we behaved ourselves among you that believe. 1 The 2:10 KJV",
     "church.steps.items7.description2":
       "But as he which hath called you is holy, so be ye holy in all manner of conversation; Because it is written, Be ye holy; for I am holy. And if ye call on the Father, who without respect of persons judgeth according to every man's work, pass the time of your sojourning here in fear: Forasmuch as ye know that ye were not redeemed with corruptible things, as silver and gold, from your vain conversation received by tradition from your fathers; But with the precious blood of Christ, as of a lamb without blemish and without spot. 1 Pet 1:15-20 KJV.",
     "church.steps.items7.description3":
       "Beloved, now are we the sons of God, and it doth not yet appear what we shall be: but we know that, when he shall appear, we shall be like him; for we shall see him as he is. And every man that hath this hope in him purifieth himself, even as he is pure. 1 Joh 3:2,3 KJV.",
-    "church.steps.items8.title": "Sin is hated and judged.",
+    "church.steps.items8.title": "Sin is hated and judged",
+    "church.steps.items8.question":
+      "Question: There is an open rebuke for sin. No one is allowed to have small sins in their lives.",
     "church.steps.items8.description1":
       "And found in the temple those that sold oxen and sheep and doves, and the changers of money sitting: And when he had made a scourge of small cords, he drove them all out of the temple, and the sheep, and the oxen; and poured out the changers' money, and overthrew the tables; And said unto them that sold doves, Take these things hence; make not my Father's house an house of merchandise. Joh 2:14-16 KJV",
     "church.steps.items8.description2":
       "And others save with fear, pulling them out of the fire; hating even the garment spotted by the flesh. Jud 1:23 KJV",
     "church.steps.items8.description3":
       "For I verily, as absent in body, but present in spirit, have judged already, as though I were present, concerning him that hath so done this deed, In the name of our Lord Jesus Christ, when ye are gathered together, and my spirit, with the power of our Lord Jesus Christ, To deliver such an one unto Satan for the destruction of the flesh, that the spirit may be saved in the day of the Lord Jesus. Your glorying is not good. Know ye not that a little leaven leaveneth the whole lump? 1 Cor 5:3-6 KJV.",
-    "church.steps.items9.title":
+    "church.steps.items9.title": "POWER of God is present!",
+    "church.steps.items9.subtitle":
       "Sin ceases from your life, you are released from your oppressions, the addictions are broken, sicknesses are healed, demons are being cast out, and lives are being transformed by the POWER of God!",
+    "church.steps.items9.question":
+      "Question: The power of God is clearly manifested in every meeting, and peoples lives are genuinely transformed.",
     "church.steps.items9.description1":
       "And these signs shall follow them that believe; In my name shall they cast out devils; they shall speak with new tongues; They shall take up serpents; and if they drink any deadly thing, it shall not hurt them; they shall lay hands on the sick, and they shall recover. Mark 16:17,18 KJV.",
     "church.steps.items9.description2":
@@ -465,7 +491,9 @@ export const ui = {
       "How God anointed Jesus of Nazareth with the Holy Ghost and with power: who went about doing good, and healing all that were oppressed of the devil; for God was with him. Acts 10:38 KJV.",
     "church.steps.items9.description4":
       "And my speech and my preaching was not with enticing words of man's wisdom, but in demonstration of the Spirit and of power: That your faith should not stand in the wisdom of men, but in the power of God. 1 Cor 2:4,5 KJV.",
-    "church.steps.items10.title": "There is liberty, righteousness, joy, and peace in the Holy Ghost.",
+    "church.steps.items10.title": "The Holy Spirit is present",
+    "church.steps.items10.subtitle": "There is liberty, righteousness, joy, and peace in the Holy Ghost.",
+    "church.steps.items10.question": "Question:<br />Holy Spirit moves in the meetings. He is recognized, and revered.",
     "church.steps.items10.description1":
       "For the kingdom of God is not meat and drink; but righteousness, and peace, and joy in the Holy Ghost. Rom 14:17 KJV.",
     "church.steps.items10.description2":
@@ -1650,7 +1678,7 @@ export const ui = {
     "prayer.testimonies.Y.title": "Sinun todistuksesi?",
     "prayer.testimonies.Y.description": "Oletko jo oppinut miten rukoilla ja rukouksen voima on elämässäsi?",
     "prayer.cta.title.1": "Oletko valmis",
-    "prayer.cta.title.2": "Saaman rukouksen voiman elämääsi?",
+    "prayer.cta.title.2": "Saaman rukouksen voiman elämääsi",
     "prayer.cta.subtitle.1":
       "Ota tämä 7 kohdan miten rukoilla -lista käyttöösi ja kuinka alat saamaan vastauksia rukouksiisi. Rukouksen voima kuuluu myös sinulle.",
     "prayer.cta.button": "Mitäs seuraavaksi?",
@@ -1710,6 +1738,11 @@ export const ui = {
     "about.what.images.3.alt": "Mitä Pyhä Henki tekee: vapauttaa sinut synneistäsi",
     "about.what.images.3.title":
       "Pyydä, että hänen voimansa vapauttaa sinut synnistä. 'Vapauta minut ikuisesti, minä ole nyt sinun'🧎",
+    "about.cta.title.1": "Mitä",
+    "about.cta.title.2": "seuraavaksi",
+    "about.cta.subtitle.1":
+      "Sen jälkeen kun tiedät mitä Pyhä Henki tekee🛠️ ja sinulla on henkilökohtainen suhde hänen kanssaan voit jatkaa kehittämään tätä suhdetta kehittämällä vahvan ja vankkumattoman rukouselämän.🙏☝️✨.",
+    "about.cta.button": "Opi miten rukous toimii",
     "word.hero.title.1": "Jumalan Sana & Raamatun sana:",
     "word.hero.title.2": "Muuta puheesi",
     "word.hero.subtitle.1":
@@ -1717,7 +1750,7 @@ export const ui = {
     "word.hero.subtitle.item.1": "Voima",
     "word.hero.subtitle.item.2": "Tuli",
     "word.hero.subtitle.item.3": "Sana",
-    "word.hero.cta.button": "Haluan Jumalan sana minun elämääni ✋",
+    "word.hero.cta.button": "Haluan Jumalan sanan elämääni ✋",
     "word.wordItems.title.1": "Puhu vähän",
     "word.wordItems.subtitle.1": "Käytäntö: Opittele olemaan hiljaa.",
     "word.wordItems.description.1":
@@ -1726,7 +1759,7 @@ export const ui = {
     "word.wordItems.subtitle.2": "Käytäntö: Puhu viimeisenä.",
     "word.wordItems.description.2":
       "Älä kiirehdi puhumaan ensimmäisenä. Harjoita kärsivällisyyttä, kuuntele muita ja jaa ajatuksesi sen jälkeen selkeästi.🥈🥉😗 <br/><br/>Kun kuuntelet ensin vastaanotat toisten avainkohdat ja päätelmät — omasta vastauksestasi tulee parempi ja järkevämpi.🆓☝️",
-    "word.wordItems.title.3": "Puhu tarkoituksenmukaisesti",
+    "word.wordItems.title.3": "Puhu aina tarkoituksen kera",
     "word.wordItems.subtitle.3": `Käytäntö: "Onko puheeni merkityksellistä?" Jos ei niin älä puhu.`,
     "word.wordItems.description.3":
       "Älä puhu vain puhumisen iloksi. Lisää sanoillasi keskustelun arvoa niin puheesi erottuu aina joukosta.🎯✨ <br/><br/>Kun olet keskittynyt positiiviseen vaikuttamiseen, jopa vähät sanat vaikuttavat paljon.💡🔥",
@@ -1757,9 +1790,9 @@ export const ui = {
     "word.wordItems.subtitle.10": "Käytäntö: Katso ihmisiä, älä paperia.",
     "word.wordItems.description.10":
       "Jos vain luet muistiinpanoista viestisi pysyy paperissa ja ihmiset kuulevat vain paperia.📄🙈 <br/><br/>Mutta kun puhut sydämestä tavoitat ihmisten silmiä, reaktioita ja elämiä — sanasi pääsevät sinne, jossa niillä on eniten merkitystä: sydämeen.❤️👥",
-    "zoom.title": "→ Jumalan Sana: Muuta elämäsi",
+    "zoom.title": "→ Miten Jumalan Sana muuttaa elämäsi? 🪫↠🔋",
     "zoom.subtitle":
-      "Liity Zoom-istuntoihimme: täysi mielen muutos vie aikaa Jumalan Sanassa ja rukouksessa, sekä riippuu siitä, mitä istutat sydämeesi.",
+      "Ulkokuori muuttuu, kun sisin on muuttunut.🐚🦋  Zoom tapaamiset: täysi mielen muutos vie aikaa Jumalan Sanassa ja rukouksessa, sekä riippuu siitä, mitä istutat sydämeesi.⌛📥 Liity siis Zoom tapaamisiin ja muutut. Ja kun sinä muutut Jumalan Sanan kautta niin puheesi muuttuu,💎💰🎁✨ 'Mitä sydän on täynnä sitä suu puhuu'.",
     "zoom.bible.title": "Sanan tutkiminen",
     "zoom.bible.description": "Sukella syvälle Jumalan Sanaan yhdessä muiden kanssa",
     "zoom.bible.time": "Parittomien viikkojen lauantaina klo 18:00 GMT+2",

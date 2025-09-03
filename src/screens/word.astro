@@ -10,8 +10,8 @@ import ZoomLinks from "~/components/widgets/ZoomLinks.astro";
 // Word images
 import less from "~/assets/images/word/the_power_of_the_words-less.webp";
 import listen from "~/assets/images/word/the_power_of_the_words-listen.webp";
-import purpose from "~/assets/images/word/the_power_of_the_words-purpose.webp";
 import questions from "~/assets/images/word/the_power_of_the_words-questions.webp";
+import purpose from "~/assets/images/word/the_power_of_the_words-purpose.webp";
 import apprentice from "~/assets/images/word/the_power_of_the_words-apprentice.webp";
 import build_up from "~/assets/images/word/the_power_of_the_words-build_up.webp";
 import simple from "~/assets/images/word/the_power_of_the_words-simple.webp";
@@ -70,7 +70,7 @@ const wordItems = [
     emoji: "👂",
   },
   {
-    image: questions,
+    image: purpose,
     title: t("word.wordItems.title.3"),
     subtitle: t("word.wordItems.subtitle.3"),
     description: t("word.wordItems.description.3"),
@@ -78,7 +78,7 @@ const wordItems = [
     emoji: "🤔",
   },
   {
-    image: purpose,
+    image: questions,
     title: t("word.wordItems.title.4"),
     subtitle: t("word.wordItems.subtitle.4"),
     description: t("word.wordItems.description.4"),
@@ -191,7 +191,7 @@ const wordItems = [
 
     <!-- Actions positioned at bottom center on mobile, bottom right on larger screens -->
     <div
-      class="absolute bottom-40 xl:bottom-[160px] left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-4 lg:right-12 xl:right-[48px] flex z-20 min-w-[324px]"
+      class="absolute bottom-40 xl:bottom-[160px] left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-4 lg:right-12 xl:right-[48px] flex justify-center md:justify-start z-20 w-full md:w-auto md:min-w-[324px]"
     >
       <BlurFade client:load delay={4.2} direction="up" inView>
         <FireButton

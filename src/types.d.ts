@@ -320,6 +320,11 @@ export interface Brands extends Headline, Widget {
   images?: Array<Image>;
 }
 
+export interface ContentList extends Omit<Headline, "classes">, Widget {
+  contentItems: ContentItem[];
+  containerClass?: string;
+}
+
 export interface Features extends Omit<Headline, "classes">, Widget {
   animated?: boolean;
   image?: string | unknown;
