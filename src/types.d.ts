@@ -320,6 +320,21 @@ export interface Brands extends Headline, Widget {
   images?: Array<Image>;
 }
 
+export interface ContentDescription {
+  text: string;
+  subtitle?: boolean;
+  emoji?: string;
+}
+
+export interface ContentItem {
+  title: string;
+  subtitle?: string;
+  question?: string;
+  description: ContentDescription[];
+  color: "orange" | "blue" | "green" | "purple" | "red" | "yellow" | "pink" | "indigo";
+  emoji?: string;
+}
+
 export interface ContentList extends Omit<Headline, "classes">, Widget {
   contentItems: ContentItem[];
   containerClass?: string;

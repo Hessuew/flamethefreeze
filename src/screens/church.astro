@@ -15,115 +15,111 @@ const t = useTranslations(lang);
 
 const contentItems = [
   {
-    title: t("church.steps.items1.title"),
-    question: t("church.steps.items1.question"),
+    title: t("church.steps.items.1.title"),
+    question: t("church.steps.items.1.question"),
     description: [
-      { text: t("church.steps.items1.description1"), emoji: "☝️" },
-      { text: t("church.steps.items1.description2"), emoji: "👀" },
-      { text: t("church.steps.items1.description3"), emoji: "🍖" },
+      { text: t("church.steps.items.1.description1"), emoji: "☝️" },
+      { text: t("church.steps.items.1.description2"), emoji: "👀" },
+      { text: t("church.steps.items.1.description3"), emoji: "🍖" },
     ],
     color: "blue" as const,
   },
   {
-    title: t("church.steps.items2.title"),
-    question: t("church.steps.items2.question"),
+    title: t("church.steps.items.2.title"),
+    question: t("church.steps.items.2.question"),
     description: [
-      { text: t("church.steps.items2.description1"), emoji: "😵" },
-      { text: t("church.steps.items2.description2"), emoji: "☠️" },
-      { text: t("church.steps.items2.description3"), emoji: "📜" },
+      { text: t("church.steps.items.2.description1"), emoji: "😵" },
+      { text: t("church.steps.items.2.description3"), emoji: "📜" },
     ],
     color: "orange" as const,
   },
   {
-    title: t("church.steps.items3.title"),
-    subtitle: t("church.steps.items3.subtitle"),
-    question: t("church.steps.items3.question"),
+    title: t("church.steps.items.3.title"),
+    subtitle: t("church.steps.items.3.subtitle"),
+    question: t("church.steps.items.3.question"),
     description: [
-      { text: t("church.steps.items3.description1"), emoji: "❤️" },
-      { text: t("church.steps.items3.description2"), emoji: "😁" },
-      { text: t("church.steps.items3.description3"), emoji: "🫂" },
+      { text: t("church.steps.items.3.description1"), emoji: "❤️" },
+      { text: t("church.steps.items.3.description2"), emoji: "😁" },
+      { text: t("church.steps.items.3.description3"), emoji: "🫂" },
     ],
     color: "purple" as const,
   },
   {
-    title: t("church.steps.items4.title"),
-    subtitle: t("church.steps.items4.subtitle"),
-    question: t("church.steps.items4.question"),
+    title: t("church.steps.items.4.title"),
+    subtitle: t("church.steps.items.4.subtitle"),
+    question: t("church.steps.items.4.question"),
     description: [
-      { text: t("church.steps.items4.description1"), emoji: "❎" },
-      { text: t("church.steps.items4.description2"), emoji: "🤔" },
-      { subtitle: true, text: t("church.steps.items4.description3") },
-      { text: t("church.steps.items4.description4"), emoji: "🚶" },
-      { text: t("church.steps.items4.description5"), emoji: "👁️" },
-      { subtitle: true, text: t("church.steps.items4.description6") },
-      { text: t("church.steps.items4.description7"), emoji: "📈" },
-      { text: t("church.steps.items4.description8"), emoji: "👷" },
+      { text: t("church.steps.items.4.description1"), emoji: "❎" },
+      { text: t("church.steps.items.4.description2"), emoji: "💔" },
+      { subtitle: true, text: t("church.steps.items.4.description3") },
+      { text: t("church.steps.items.4.description4"), emoji: "🚶" },
+      { text: t("church.steps.items.4.description5"), emoji: "👁️" },
+      { subtitle: true, text: t("church.steps.items.4.description6") },
+      { text: t("church.steps.items.4.description7"), emoji: "📈" },
+      { text: t("church.steps.items.4.description8"), emoji: "👷" },
     ],
     color: "purple" as const,
   },
   {
-    title: t("church.steps.items5.title"),
-    subtitle: t("church.steps.items5.subtitle"),
-    question: t("church.steps.items5.question"),
+    title: t("church.steps.items.5.title"),
+    subtitle: t("church.steps.items.5.subtitle"),
+    question: t("church.steps.items.5.question"),
     description: [
-      { text: t("church.steps.items5.description1"), emoji: "∞" },
-      { text: t("church.steps.items5.description2"), emoji: "🙋‍♂️🙋‍♂️" },
-      { subtitle: true, text: t("church.steps.items5.description3") },
-      { text: t("church.steps.items5.description4"), emoji: "➔" },
-      { text: t("church.steps.items5.description5"), emoji: "🐍" },
+      { text: t("church.steps.items.5.description1"), emoji: "🔄" },
+      { subtitle: true, text: t("church.steps.items.5.description3") },
+      { text: t("church.steps.items.5.description4"), emoji: "➡️" },
+      { text: t("church.steps.items.5.description5"), emoji: "🐍" },
     ],
     color: "green" as const,
   },
   {
-    title: t("church.steps.items6.title"),
-    question: t("church.steps.items6.question"),
+    title: t("church.steps.items.6.title"),
+    question: t("church.steps.items.6.question"),
     description: [
-      { text: t("church.steps.items6.description1"), emoji: "🖤⃝🤍" },
-      { text: t("church.steps.items6.description2"), emoji: "🌍" },
-      { text: t("church.steps.items6.description3"), emoji: "❤️‍🔥" },
+      { text: t("church.steps.items.6.description1"), emoji: "🖤⃝🤍" },
+      { text: t("church.steps.items.6.description2"), emoji: "🌍📣" },
     ],
     color: "red" as const,
   },
   {
-    title: t("church.steps.items7.title"),
-    subtitle: t("church.steps.items7.subtitle"),
-    question: t("church.steps.items7.question"),
+    title: t("church.steps.items.7.title"),
+    subtitle: t("church.steps.items.7.subtitle"),
+    question: t("church.steps.items.7.question"),
     description: [
-      { text: t("church.steps.items7.description1"), emoji: "💯" },
-      { text: t("church.steps.items7.description2"), emoji: "🩸" },
-      { text: t("church.steps.items7.description3"), emoji: "🧹" },
+      { text: t("church.steps.items.7.description1"), emoji: "💯" },
+      { text: t("church.steps.items.7.description2"), emoji: "😇" },
+      { text: t("church.steps.items.7.description3"), emoji: "🧹" },
     ],
     color: "yellow" as const,
   },
   {
-    title: t("church.steps.items8.title"),
-    question: t("church.steps.items8.question"),
+    title: t("church.steps.items.8.title"),
+    question: t("church.steps.items.8.question"),
     description: [
-      { text: t("church.steps.items8.description1"), emoji: "𓀝" },
-      { text: t("church.steps.items8.description2"), emoji: "🔥" },
-      { text: t("church.steps.items8.description3"), emoji: "👨‍⚖️" },
+      { text: t("church.steps.items.8.description1"), emoji: "𓀝" },
+      { text: t("church.steps.items.8.description2"), emoji: "🔥" },
+      { text: t("church.steps.items.8.description3"), emoji: "👨‍⚖️" },
     ],
     color: "orange" as const,
   },
   {
-    title: t("church.steps.items9.title"),
-    subtitle: t("church.steps.items9.subtitle"),
-    question: t("church.steps.items9.question"),
+    title: t("church.steps.items.9.title"),
+    subtitle: t("church.steps.items.9.subtitle"),
+    question: t("church.steps.items.9.question"),
     description: [
-      { text: t("church.steps.items9.description1"), emoji: "💥" },
-      { text: t("church.steps.items9.description2"), emoji: "🌬️" },
-      { text: t("church.steps.items9.description3"), emoji: "✅" },
-      { text: t("church.steps.items9.description4"), emoji: "🏛️" },
+      { text: t("church.steps.items.9.description2"), emoji: "💥" },
+      { text: t("church.steps.items.9.description3"), emoji: "✅" },
+      { text: t("church.steps.items.9.description4"), emoji: "🏛️" },
     ],
     color: "blue" as const,
   },
   {
-    title: t("church.steps.items10.title"),
-    subtitle: t("church.steps.items10.subtitle"),
-    question: t("church.steps.items10.question"),
+    title: t("church.steps.items.10.title"),
+    subtitle: t("church.steps.items.10.subtitle"),
+    question: t("church.steps.items.10.question"),
     description: [
-      { text: t("church.steps.items10.description1"), emoji: "🙅‍♂️🍖" },
-      { text: t("church.steps.items10.description2"), emoji: "𝓯𝓻𝓮𝓮" },
+      { text: t("church.steps.items.10.description1"), emoji: "🙅‍♂️🍖" },
+      { text: t("church.steps.items.10.description2"), emoji: "𝓯𝓻𝓮𝓮" },
     ],
     color: "green" as const,
   },
@@ -140,36 +136,56 @@ const contentItems = [
     </div>
 
     <!-- Star Layer 1 - Far background -->
-    <BlurFade client:load className="absolute inset-0 parallax-layer z-20" delay={3.4} direction="up" inView>
+    <BlurFade client:load className="absolute inset-0 pointer-events-none z-20" delay={3.4} direction="up" inView>
       <div class="absolute inset-0 parallax-layer z-20" data-speed="0.1">
-        <div class="star-symbol text-white/70 top-[15%] left-[20%] text-[50px]">⟡</div>
-        <div class="star-symbol text-white/60 top-[30%] right-[45%] text-[32px]">⟡</div>
-        <div class="star-symbol text-white/65 top-[60%] left-[35%] text-[44px]">⟡</div>
+        <div class="star-symbol text-white/70 top-[15%] left-[20%] text-[50px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
+        <div class="star-symbol text-white/60 top-[30%] right-[45%] text-[32px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
+        <div class="star-symbol text-white/65 top-[60%] left-[35%] text-[44px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
       </div>
     </BlurFade>
 
     <!-- Star Layer 2 - Mid background -->
-    <BlurFade client:load className="absolute inset-0 parallax-layer z-30" delay={3.45} direction="up" inView>
+    <BlurFade client:load className="absolute inset-0 pointer-events-none z-30" delay={3.45} direction="up" inView>
       <div class="absolute inset-0 parallax-layer z-30" data-speed="0.3">
-        <div class="star-symbol text-white top-[21%] right-[25%] text-[30px]">⟡</div>
-        <div class="star-symbol text-white/75 top-[45%] right-[15%] text-[40px]">⟡</div>
-        <div class="star-symbol text-white/70 top-[70%] left-[40%] text-[28px]">⟡</div>
+        <div class="star-symbol text-white top-[21%] right-[25%] text-[30px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
+        <div class="star-symbol text-white/75 top-[45%] right-[15%] text-[40px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
+        <div class="star-symbol text-white/70 top-[70%] left-[40%] text-[28px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
       </div>
     </BlurFade>
 
     <!-- Star Layer 3 - Foreground -->
-    <BlurFade client:load className="absolute inset-0 parallax-layer z-40" delay={3.5} direction="up" inView>
+    <BlurFade client:load className="absolute inset-0 pointer-events-none z-40" delay={3.5} direction="up" inView>
       <div class="absolute inset-0 parallax-layer z-40" data-speed="0.6">
-        <div class="star-symbol text-white top-[17%] right-[23%] text-[44px]">⟡</div>
-        <div class="star-symbol text-white/90 top-[55%] right-[30%] text-[32px]">⟡</div>
+        <div class="star-symbol text-white top-[17%] right-[23%] text-[44px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
+        <div class="star-symbol text-white/90 top-[55%] right-[30%] text-[32px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
       </div>
     </BlurFade>
 
     <!-- Star Layer 4 - Foreground -->
-    <BlurFade client:load className="absolute inset-0 parallax-layer z-50" delay={3.55} direction="up" inView>
+    <BlurFade client:load className="absolute inset-0 pointer-events-none z-50" delay={3.55} direction="up" inView>
       <div class="absolute inset-0 parallax-layer z-50" data-speed="0.6">
-        <div class="star-symbol text-white top-[90%] right-[10%] text-[60px]">⟡</div>
-        <div class="star-symbol text-white/90 top-[80%] right-[40%] text-[44px]">⟡</div>
+        <div class="star-symbol text-white top-[90%] right-[10%] text-[60px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
+        <div class="star-symbol text-white/90 top-[80%] right-[40%] text-[44px]" aria-hidden="true" role="presentation">
+          ⟡
+        </div>
       </div>
     </BlurFade>
 
@@ -253,59 +269,110 @@ const contentItems = [
 </style>
 
 <script>
+  // document.addEventListener("astro:page-load", () => {
+  //   const parallaxLayers = document.querySelectorAll(".parallax-layer") as NodeListOf<HTMLElement>;
+
+  //   let ticking = false;
+
+  //   function updateParallax() {
+  //     const scrollTop = window.pageYOffset;
+
+  //     parallaxLayers.forEach((layer) => {
+  //       const speed = parseFloat(layer.dataset.speed || "0");
+  //       const yPos = -(scrollTop * speed);
+  //       layer.style.transform = `translate3d(0, ${yPos}px, 0)`;
+  //     });
+
+  //     ticking = false;
+  //   }
+
+  //   function requestTick() {
+  //     if (!ticking) {
+  //       requestAnimationFrame(updateParallax);
+  //       ticking = true;
+  //     }
+  //   }
+
+  //   // Mouse movement parallax
+  //   function handleMouseMove(e: MouseEvent) {
+  //     const mouseX = e.clientX / window.innerWidth;
+  //     const mouseY = e.clientY / window.innerHeight;
+
+  //     parallaxLayers.forEach((layer) => {
+  //       const speed = parseFloat(layer.dataset.speed || "0");
+  //       const xMove = (mouseX - 0.5) * 60 * speed;
+  //       const yMove = (mouseY - 0.5) * 60 * speed;
+  //       const scrollY = window.pageYOffset * speed;
+
+  //       layer.style.transform = `translate3d(${xMove}px, ${yMove - scrollY}px, 0)`;
+  //     });
+  //   }
+
+  //   // Event listeners
+  //   window.addEventListener("scroll", requestTick, { passive: true });
+  //   window.addEventListener("mousemove", handleMouseMove, { passive: true });
+
+  //   // Initial call
+  //   updateParallax();
+
+  //   // Cleanup function
+  //   function cleanup() {
+  //     window.removeEventListener("scroll", requestTick);
+  //     window.removeEventListener("mousemove", handleMouseMove);
+  //   }
+
+  //   // Cleanup on page unload
+  //   document.addEventListener("astro:before-preparation", cleanup);
+  //   document.addEventListener("astro:before-swap", cleanup);
+  //   window.addEventListener("beforeunload", cleanup);
+  // });
   document.addEventListener("astro:page-load", () => {
-    const parallaxLayers = document.querySelectorAll(".parallax-layer") as NodeListOf<HTMLElement>;
+    const parallaxLayers = document.querySelectorAll(".parallax-layer");
+    const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+    if (reduceMotion || !parallaxLayers.length) return;
 
-    let ticking = false;
+    let rafId = 0;
+    let pending = false;
+    let mx = 0.5;
+    let my = 0.5;
+    let scrollTop = window.pageYOffset;
 
-    function updateParallax() {
-      const scrollTop = window.pageYOffset;
-
-      parallaxLayers.forEach((layer) => {
+    function render() {
+      pending = false;
+      parallaxLayers.forEach((layer: HTMLElement) => {
         const speed = parseFloat(layer.dataset.speed || "0");
-        const yPos = -(scrollTop * speed);
-        layer.style.transform = `translate3d(0, ${yPos}px, 0)`;
-      });
-
-      ticking = false;
-    }
-
-    function requestTick() {
-      if (!ticking) {
-        requestAnimationFrame(updateParallax);
-        ticking = true;
-      }
-    }
-
-    // Mouse movement parallax
-    function handleMouseMove(e: MouseEvent) {
-      const mouseX = e.clientX / window.innerWidth;
-      const mouseY = e.clientY / window.innerHeight;
-
-      parallaxLayers.forEach((layer) => {
-        const speed = parseFloat(layer.dataset.speed || "0");
-        const xMove = (mouseX - 0.5) * 60 * speed;
-        const yMove = (mouseY - 0.5) * 60 * speed;
-        const scrollY = window.pageYOffset * speed;
-
-        layer.style.transform = `translate3d(${xMove}px, ${yMove - scrollY}px, 0)`;
+        const xMove = (mx - 0.5) * 60 * speed;
+        const yMove = (my - 0.5) * 60 * speed;
+        const y = yMove - scrollTop * speed;
+        layer.style.transform = `translate3d(${xMove}px, ${y}px, 0)`;
       });
     }
 
-    // Event listeners
-    window.addEventListener("scroll", requestTick, { passive: true });
-    window.addEventListener("mousemove", handleMouseMove, { passive: true });
+    function schedule() {
+      if (pending) return;
+      pending = true;
+      rafId = requestAnimationFrame(render);
+    }
 
-    // Initial call
-    updateParallax();
+    function onScroll() {
+      scrollTop = window.pageYOffset;
+      schedule();
+    }
+    function onMouseMove(e) {
+      mx = e.clientX / window.innerWidth;
+      my = e.clientY / window.innerHeight;
+      schedule();
+    }
 
-    // Cleanup function
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("mousemove", onMouseMove, { passive: true });
+    schedule();
+
     function cleanup() {
-      window.removeEventListener("scroll", requestTick);
-      window.removeEventListener("mousemove", handleMouseMove);
+      cancelAnimationFrame(rafId);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("mousemove", onMouseMove);
     }
-
-    // Cleanup on page unload
     document.addEventListener("astro:before-preparation", cleanup);
     document.addEventListener("astro:before-swap", cleanup);
     window.addEventListener("beforeunload", cleanup);

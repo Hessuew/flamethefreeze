@@ -4,20 +4,6 @@ import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
 import type { ContentList as Props } from "~/types";
 import Headline from "~/components/ui/Headline.astro";
 
-export interface ContentDescription {
-  text: string;
-  subtitle?: boolean;
-}
-
-export interface ContentItem {
-  title: string;
-  subtitle?: string;
-  question?: string;
-  description: ContentDescription[];
-  color: "orange" | "blue" | "green" | "purple" | "red" | "yellow" | "pink" | "indigo";
-  emoji?: string;
-}
-
 const {
   title = await Astro.slots.render("title"),
   subtitle = await Astro.slots.render("subtitle"),
@@ -194,7 +180,7 @@ const colorThemes = {
                                             class={`w-1 h-full min-h-[60px] bg-gradient-to-b ${theme.gradient} rounded-full flex-shrink-0 mt-1`}
                                           />
                                           <div class="flex-1">
-                                            <h4 class="text-white text-base xl:text-lg leading-relaxed xl:leading-loose font-normal tracking-wide">
+                                            <h4 class="text-white text-base xl:text-lg leading-relaxed xl:leading-loose font-normal">
                                               <span set:html={desc.text} />
                                             </h4>
                                           </div>
