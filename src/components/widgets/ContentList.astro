@@ -3,6 +3,7 @@ import { twMerge } from "tailwind-merge";
 import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
 import type { ContentList as Props } from "~/types";
 import Headline from "~/components/ui/Headline.astro";
+import Image from "~/components/common/Image.astro";
 
 const {
   title = await Astro.slots.render("title"),
@@ -16,79 +17,124 @@ const {
   classes = {},
 } = Astro.props;
 
-// Enhanced color theme mappings with solid backgrounds for performance
+// Enhanced color theme mappings with beautiful gradients
 const colorThemes = {
   orange: {
-    gradient: "from-orange-500 to-red-600",
+    gradient: "from-yellow-400 via-orange-500 to-red-600",
     solidBg: "bg-orange-500/10",
     border: "border-orange-500/30",
     borderHover: "hover:border-orange-500/60",
     accent: "bg-orange-500",
     textAccent: "text-orange-400",
-    iconBg: "bg-gradient-to-br from-orange-500 to-red-600",
+    iconBg: "bg-gradient-to-br from-yellow-400 via-orange-500 to-red-600",
   },
   blue: {
-    gradient: "from-blue-500 to-purple-600",
+    gradient: "from-blue-400 via-blue-600 to-indigo-700",
     solidBg: "bg-blue-500/10",
     border: "border-blue-500/30",
     borderHover: "hover:border-blue-500/60",
     accent: "bg-blue-500",
     textAccent: "text-blue-400",
-    iconBg: "bg-gradient-to-br from-blue-500 to-purple-600",
+    iconBg: "bg-gradient-to-br from-blue-400 via-blue-600 to-indigo-700",
   },
   green: {
-    gradient: "from-green-500 to-teal-600",
+    gradient: "from-emerald-400 via-green-500 to-teal-600",
     solidBg: "bg-green-500/10",
     border: "border-green-500/30",
     borderHover: "hover:border-green-500/60",
     accent: "bg-green-500",
     textAccent: "text-green-400",
-    iconBg: "bg-gradient-to-br from-green-500 to-teal-600",
+    iconBg: "bg-gradient-to-br from-emerald-400 via-green-500 to-teal-600",
   },
   purple: {
-    gradient: "from-purple-500 to-pink-600",
+    gradient: "from-purple-400 via-purple-600 to-indigo-700",
     solidBg: "bg-purple-500/10",
     border: "border-purple-500/30",
     borderHover: "hover:border-purple-500/60",
     accent: "bg-purple-500",
     textAccent: "text-purple-400",
-    iconBg: "bg-gradient-to-br from-purple-500 to-pink-600",
+    iconBg: "bg-gradient-to-br from-purple-400 via-purple-600 to-indigo-700",
   },
   red: {
-    gradient: "from-red-500 to-red-800",
+    gradient: "from-rose-400 via-red-600 to-red-900",
     solidBg: "bg-red-500/10",
     border: "border-red-500/30",
     borderHover: "hover:border-red-500/60",
     accent: "bg-red-500",
     textAccent: "text-red-400",
-    iconBg: "bg-gradient-to-br from-red-500 to-red-800",
+    iconBg: "bg-gradient-to-br from-rose-400 via-red-600 to-red-900",
   },
   yellow: {
-    gradient: "from-yellow-500 to-orange-600",
+    gradient: "from-yellow-300 via-yellow-500 to-orange-600",
     solidBg: "bg-yellow-500/10",
     border: "border-yellow-500/30",
     borderHover: "hover:border-yellow-500/60",
     accent: "bg-yellow-500",
     textAccent: "text-yellow-400",
-    iconBg: "bg-gradient-to-br from-yellow-500 to-orange-600",
+    iconBg: "bg-gradient-to-br from-yellow-300 via-yellow-500 to-orange-600",
   },
   pink: {
-    gradient: "from-red-500 to-pink-600",
+    gradient: "from-pink-400 via-rose-500 to-red-600",
     solidBg: "bg-pink-500/10",
     border: "border-pink-500/30",
     borderHover: "hover:border-pink-500/60",
     accent: "bg-pink-500",
     textAccent: "text-pink-400",
-    iconBg: "bg-gradient-to-br from-red-500 to-pink-600",
+    iconBg: "bg-gradient-to-br from-pink-400 via-rose-500 to-red-600",
   },
   indigo: {
-    gradient: "from-indigo-500 to-blue-800",
+    gradient: "from-indigo-400 via-indigo-600 to-purple-700",
     solidBg: "bg-indigo-500/10",
     border: "border-indigo-500/30",
     borderHover: "hover:border-indigo-500/60",
     accent: "bg-indigo-500",
     textAccent: "text-indigo-400",
-    iconBg: "bg-gradient-to-br from-indigo-500 to-blue-800",
+    iconBg: "bg-gradient-to-br from-indigo-400 via-indigo-600 to-purple-700",
+  },
+  teal: {
+    gradient: "from-teal-400 via-cyan-500 to-blue-600",
+    solidBg: "bg-teal-500/10",
+    border: "border-teal-500/30",
+    borderHover: "hover:border-teal-500/60",
+    accent: "bg-teal-500",
+    textAccent: "text-teal-400",
+    iconBg: "bg-gradient-to-br from-teal-400 via-cyan-500 to-blue-600",
+  },
+  emerald: {
+    gradient: "from-emerald-400 via-emerald-600 to-green-700",
+    solidBg: "bg-emerald-500/10",
+    border: "border-emerald-500/30",
+    borderHover: "hover:border-emerald-500/60",
+    accent: "bg-emerald-500",
+    textAccent: "text-emerald-400",
+    iconBg: "bg-gradient-to-br from-emerald-400 via-emerald-600 to-green-700",
+  },
+  lightning: {
+    gradient: "from-yellow-200 via-yellow-400 to-yellow-600",
+    solidBg: "bg-yellow-400/10",
+    border: "border-yellow-400/30",
+    borderHover: "hover:border-yellow-400/60",
+    accent: "bg-yellow-400",
+    textAccent: "text-yellow-300",
+    iconBg: "bg-gradient-to-br from-yellow-200 via-yellow-400 to-yellow-600",
+  },
+  cream: {
+    gradient: "from-amber-100 via-orange-200 to-yellow-300",
+    solidBg: "bg-amber-200/10",
+    border: "border-amber-200/30",
+    borderHover: "hover:border-amber-200/60",
+    accent: "bg-amber-200",
+    textAccent: "text-amber-100",
+    iconBg: "bg-gradient-to-br from-amber-100 via-orange-200 to-yellow-300",
+  },
+  poison: {
+    gradient: "from-lime-400 via-green-500 to-green-800",
+    solidBg: "bg-lime-500/10",
+    border: "border-lime-500/30",
+    borderHover: "hover:border-lime-500/60",
+    accent: "bg-lime-500",
+    textAccent: "text-lime-400",
+    iconBg: "bg-gradient-to-br from-lime-400 via-green-500 to-green-800",
   },
 };
 ---
@@ -110,20 +156,21 @@ const colorThemes = {
           const isLeft = index % 2 !== 0; // 1st left (0), 2nd right (1), 3rd left (2)
 
           return (
-            <div class="group relative">
+            <div class="group relative transition-all duration-500 ease-out hover:scale-[1.01] intersect-once intersect-tenth sm:intersect-quarter motion-safe:opacity-0 motion-safe:intersect:animate-fade">
               <div class="flex flex-col sm:flex-row items-start space-x-6 xl:space-x-[24px] space-y-6 sm:space-y-0">
                 <div class="flex-1">
                   <div
-                    class={`relative bg-gradient-to-br from-gray-800/60 via-gray-800/50 to-gray-900/60 rounded-2xl xl:rounded-[20px] p-2 border border-gray-600/40 ${theme.borderHover} transition-all duration-500 overflow-hidden`}
+                    class={`relative bg-gradient-to-br from-gray-800/60 via-gray-800/50 to-gray-900/60 rounded-2xl xl:rounded-[20px] p-2 border border-gray-600/40 ${theme.borderHover} transition-all duration-500 overflow-hidden group-hover:bg-gradient-to-br group-hover:from-orange-500/10 group-hover:to-red-500/10 group-hover:shadow-xl group-hover:shadow-orange-500/20`}
                   >
+                    <span class="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-orange-400 to-red-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-left rounded-b-2xl xl:rounded-b-[20px]" />
                     <div
                       class={`flex flex-col lg:flex-row ${isLeft ? "lg:flex-row-reverse lg:pr-10 xl:pr-[40px]" : " lg:pl-10 xl:pl-[40px]"} gap-6 xl:gap-[24px] lg:items-center`}
                     >
                       {/* Large Number Badge Section */}
                       <div class="flex justify-center lg:justify-start flex-shrink-0">
-                        <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] transition-all duration-500 w-24 h-24 md:w-60 md:h-60 xl:w-[240px] xl:h-[240px]">
+                        <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] transition-all duration-700 w-24 h-24 md:w-60 md:h-60 xl:w-[240px] xl:h-[240px]">
                           <div class={`w-full h-full ${theme.iconBg} flex items-center justify-center rounded-full`}>
-                            <div class="text-center">
+                            <div class="text-center relative z-10">
                               <div class="text-white text-5xl md:text-7xl xl:text-8xl xl:text-[96px] font-bold drop-shadow-2xl">
                                 {index + 1}
                               </div>
@@ -140,25 +187,50 @@ const colorThemes = {
 
                         {/* Header Section */}
                         <div class="mb-8 xl:mb-[32px] relative">
-                          <div class="flex items-center gap-3 xl:gap-[12px]">
-                            {/* <span class="text-4xl xl:text-[32px] drop-shadow-lg">{item.emoji}</span> */}
-                            <div
-                              class={`w-12 mb-4 xl:mb-[16px] h-0.5 bg-gradient-to-r ${theme.gradient} rounded-full opacity-60`}
-                            />
+                          <div class="flex flex-row gap-4 xl:gap-[16px] pb-4 sm:pb-0 items-start">
+                            <div class="flex-shrink-0 relative group/image">
+                              <div class="absolute inset-0 bg-gradient-to-br from-orange-400/20 to-red-500/20 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm" />
+                              <Image
+                                class="relative z-10 rounded-xl w-24 h-24 xl:w-[160px] xl:h-[160px] object-cover shadow-lg border border-white/10 group-hover:border-orange-400/30 transition-all duration-500 group-hover:shadow-xl group-hover:shadow-orange-500/25 group-hover:scale-105"
+                                loading="lazy"
+                                width={160}
+                                height={160}
+                                alt={"Content illustration"}
+                                {...item.image}
+                              />
+                            </div>
+
+                            <div class="flex-1 min-w-0">
+                              <div class="flex items-center gap-3 xl:gap-[12px] mb-3 xl:mb-4">
+                                <div
+                                  class={`flex-1 h-0.5 bg-gradient-to-r ${theme.gradient} rounded-full opacity-60 group-hover:opacity-100 transition-opacity duration-500`}
+                                />
+                              </div>
+
+                              <p
+                                class="text-2xl xl:text-[28px] xl:leading-[36px] font-bold text-white mb-3 xl:mb-[12px] drop-shadow-sm"
+                                set:html={item.title}
+                              />
+
+                              <p
+                                class="hidden sm:block text-base xl:text-[16px] xl:leading-[24px] text-white mb-3 xl:mb-[12px]"
+                                set:html={item.subtitle}
+                              />
+
+                              <p
+                                class="hidden sm:block text-xl xl:text-[20px] xl:leading-[28px] text-blue-200 font-medium tracking-wide"
+                                set:html={item.question}
+                              />
+                            </div>
                           </div>
 
                           <p
-                            class="text-2xl xl:text-[28px] xl:leading-[36px] font-bold text-white mb-3 xl:mb-[12px] drop-shadow-sm"
-                            set:html={item.title}
-                          />
-
-                          <p
-                            class="text-base xl:text-[16px] xl:leading-[24px] text-white mb-3 xl:mb-[12px]"
+                            class="block sm:hidden text-base xl:text-[16px] xl:leading-[24px] text-white mb-3 xl:mb-[12px]"
                             set:html={item.subtitle}
                           />
 
                           <p
-                            class="text-xl xl:text-[20px] xl:leading-[28px] text-blue-200 font-medium tracking-wide"
+                            class="block sm:hidden text-xl xl:text-[20px] xl:leading-[28px] text-blue-200 font-medium tracking-wide"
                             set:html={item.question}
                           />
                         </div>

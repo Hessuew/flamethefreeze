@@ -11,6 +11,7 @@ import company from "~/assets/images/index/fire_of_god_and_fire_for_god-company.
 import derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
 import kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
 import prayer_church from "~/assets/images/ministries/fire_of_god_and_fire_for_god-prayer_church.webp";
+import find_more from "~/assets/images/index/fire_of_god_and_fire_for_god-find_more.webp";
 import { TextAnimate } from "~/components/magicui/text-animate";
 import CTAModern from "~/components/widgets/CTAModern.astro";
 import ImageShowcase from "~/components/widgets/ImageShowcase.astro";
@@ -251,6 +252,15 @@ const t = useTranslations(lang);
         description: t("index.where.images.3.description"),
         features: [t("index.where.images.3.features.1"), t("index.where.images.3.features.2")],
         src: derek_prince,
+        alt: t("index.where.images.3.alt"),
+        objectPosition: "top center",
+      },
+      {
+        title: t("index.where.images.3.title"),
+        link: "https://www.youtube.com/@DerekPrinceMinistries",
+        description: t("index.where.images.3.description"),
+        features: [t("index.where.images.3.features.1"), t("index.where.images.3.features.2")],
+        src: find_more,
         alt: t("index.where.images.3.alt"),
         objectPosition: "top center",
       },
