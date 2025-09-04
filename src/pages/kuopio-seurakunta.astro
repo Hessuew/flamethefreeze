@@ -1,0 +1,44 @@
+---
+import Template from "~/screens/church.astro";
+
+import church_today from "~/assets/images/church/biblical_church-church_today.webp";
+
+const metadata = {
+  title: 'Kuopio Seurakunta: Sytytä jää Tuleen - "Flame the Freeze"',
+  description:
+    "Flame the Freeze: Löydä Raamatullinen seurakunta Kuopiosta, jossa Hengen voima, todellinen pyhyys ja Jumalan liikehdintä muovaa elämiä tänä päivänä.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  canonical: "https://flamethefreeze.com/kuopio-seurakunta",
+  openGraph: {
+    type: "article",
+    locale: "fi_FI",
+    url: "https://flamethefreeze.com/kuopio-seurakunta",
+    siteName: "Flame the Freeze",
+    title: 'Kuopio Seurakunta: Sytytä jää Tuleen - "Flame the Freeze"',
+    description:
+      "Flame the Freeze: Löydä Raamatullinen seurakunta Kuopiosta, jossa Hengen voima, todellinen pyhyys ja Jumalan liikehdintä muovaa elämiä tänä päivänä.",
+    images: [
+      {
+        url: church_today,
+        alt: "Kuopio Seurakunta - Flame the Freeze",
+        width: 630,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    handle: "@FlameTheFreeze",
+    site: "@FlameTheFreeze",
+    cardType: "summary_large_image",
+    title: 'Kuopio Seurakunta: Sytytä jää Tuleen - "Flame the Freeze"',
+    description:
+      "Flame the Freeze: Löydä Raamatullinen seurakunta Kuopiosta, jossa Hengen voima, todellinen pyhyys ja Jumalan liikehdintä muovaa elämiä tänä päivänä.",
+  },
+  ignoreTitleTemplate: true,
+};
+---
+
+<Template lang="fi" metadata={metadata} siteRebuildStatus={{ status: "completed", display: true }} />

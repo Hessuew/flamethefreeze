@@ -11,6 +11,7 @@ import free_you_from_your_sins from "~/assets/images/holyGhost/what_does_the_hol
 import PrayerPointsList from "~/components/widgets/PrayerPointsList.astro";
 import type { PrayerPoint } from "~/components/widgets/PrayerPointsList.astro";
 import ImageShowcase from "~/components/widgets/ImageShowcase.astro";
+import CallToAction2 from "~/components/widgets/CallToAction2.astro";
 
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 
@@ -188,4 +189,18 @@ const prayerPoints: PrayerPoint[] = [
       {t("about.what.subtitle.4")}
     </Fragment>
   </ImageShowcase>
+
+  <!-- Call to Action -->
+  <CallToAction2
+    id="cta"
+    title={t("about.cta.title.1")}
+    title2={t("about.cta.title.2")}
+    subtitle={t("about.cta.subtitle.1")}
+    button={{
+      href: "about",
+      text: t("about.cta.button"),
+      icon: "tabler:hand-finger-right",
+    }}
+    lang={lang}
+  />
 </Layout>

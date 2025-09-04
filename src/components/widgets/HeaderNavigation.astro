@@ -1,6 +1,5 @@
 ---
 import { Icon } from "astro-icon/components";
-import Image from "astro/components/Image.astro";
 import { useTranslations } from "~/i18n/utils";
 import { ui } from "~/i18n/ui";
 import { getLanguageRoute } from "~/navigation";
@@ -60,7 +59,7 @@ const t = useTranslations(lang || "en");
               <ul class="w-1/2">
                 {headerLinks.links
                   ?.filter((link) => !link.image)
-                  .map(({ text, href, icon, description }) => (
+                  .map(({ text, href, icon, description, new: isNew }) => (
                     <li>
                       <a
                         class:list={[
@@ -77,9 +76,16 @@ const t = useTranslations(lang || "en");
                             />
                           )}
                           <div class="flex flex-col items-start">
-                            <span class="font-medium xl:text-[16px] xl:leading-[24px] text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-hover:from-orange-600 group-hover:to-yellow-500 w-fit">
-                              {text ? t(text as keyof typeof ui.en) : text}
-                            </span>
+                            <div class="flex w-full justify-between">
+                              <span class="font-medium xl:text-[16px] xl:leading-[24px] text-transparent bg-clip-text bg-gradient-to-r from-white to-white group-hover:from-orange-600 group-hover:to-yellow-500 w-fit">
+                                {text ? t(text as keyof typeof ui.en) : text}
+                              </span>
+                              {isNew && (
+                                <span class="text-white font-medium text-sm xl:text-[14px] xl:leading-[20px]">
+                                  {`{${t("new")}}`}
+                                </span>
+                              )}
+                            </div>
                             {description && (
                               <span class="text-sm xl:text-[14px] xl:leading-[20px] text-muted">
                                 {description ? t(description as keyof typeof ui.en) : description}
@@ -101,13 +107,13 @@ const t = useTranslations(lang || "en");
                         href={getLanguageRoute(href || "", lang || "en")}
                       >
                         {image && (
-                          <Image
-                            src={image.src}
+                          <img
+                            data-lazy-src={image.src.src}
                             alt={image?.alt}
                             width={400}
                             height={300}
-                            class="absolute inset-0 w-full h-full object-cover object-center opacity-60 group-hover:opacity-80 group-hover:scale-105 transition duration-500 transform-gpu"
-                            loading="lazy"
+                            class="absolute inset-0 w-full h-full object-cover object-center opacity-60 group-hover:opacity-80 group-hover:scale-105 transition duration-500 transform-gpu lazy-image"
+                            style="background-color: #1a0024;"
                           />
                         )}
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-black/20" />
@@ -120,7 +126,7 @@ const t = useTranslations(lang || "en");
                         {isNew && (
                           <div class="absolute top-0 right-2 xl:right-[8px]">
                             <span class="text-white font-medium text-sm xl:text-[14px] xl:leading-[20px]">
-                              {t("new")}
+                              {`{${t("new")}}`}
                             </span>
                           </div>
                         )}
@@ -175,11 +181,25 @@ const t = useTranslations(lang || "en");
       });
     }
 
+    function loadLazyImages() {
+      const lazyImages = menu?.querySelectorAll(".lazy-image[data-lazy-src]");
+      lazyImages?.forEach((img) => {
+        const lazySrc = img.getAttribute("data-lazy-src");
+        if (lazySrc && !img.getAttribute("src")) {
+          img.setAttribute("src", lazySrc);
+          img.removeAttribute("data-lazy-src");
+        }
+      });
+    }
+
     function showPanel(index: number) {
       if (!isMediumScreen()) return;
 
       const direction = index > activePanel ? 1 : -1;
       const height = index === 0 ? 232 : index === 2 ? 144 : 232;
+
+      // Load lazy images when menu is first opened
+      loadLazyImages();
 
       // Show menu with smooth animation
       if (menu) {

@@ -1,0 +1,44 @@
+---
+import Template from "~/screens/church.astro";
+
+import church_today from "~/assets/images/church/biblical_church-church_today.webp";
+
+const metadata = {
+  title: '"Flame the Freeze": A Modern Take on Biblical Church in 2100s',
+  description:
+    "Explore Flame the Freeze: a bold vision of the 2100s biblical church, the Spirit’s power, true holiness, and God’s movement shaping today’s faith.",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  canonical: "https://flamethefreeze.com/biblical-church",
+  openGraph: {
+    type: "article",
+    locale: "en_US",
+    url: "https://flamethefreeze.com/biblical-church",
+    siteName: "Flame the Freeze",
+    title: "Flame the Freeze: A Modern Take on Biblical Church in 2100s",
+    description:
+      "Explore Flame the Freeze: a bold vision of the 2100s biblical church, the Spirit’s power, true holiness, and God’s movement shaping today’s faith.",
+    images: [
+      {
+        url: church_today,
+        alt: "Biblical Church - Flame the Freeze Ministry",
+        width: 630,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    handle: "@FlameTheFreeze",
+    site: "@FlameTheFreeze",
+    cardType: "summary_large_image",
+    title: "Flame the Freeze: A Modern Take on Biblical Church in 2100s",
+    description:
+      "Explore Flame the Freeze: a bold vision of the 2100s biblical church, the Spirit’s power, true holiness, and God’s movement shaping today’s faith.",
+  },
+  ignoreTitleTemplate: true,
+};
+---
+
+<Template lang="en" metadata={metadata} siteRebuildStatus={{ status: "completed", display: true }} />
