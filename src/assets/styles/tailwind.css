@@ -38,8 +38,10 @@
   }
 }
 
-h1 {
-  font-size: inherit;
+@layer base {
+  h1 {
+    font-size: inherit;
+  }
 }
 
 /* Professional Header Styling */
