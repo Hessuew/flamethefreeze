@@ -106,7 +106,7 @@ const colorThemes = {
     <div class="space-y-16 xl:space-y-[64px]">
       {
         contentItems.map((item, index) => {
-          const theme = colorThemes[item.color];
+          const theme = colorThemes[item.color] ?? colorThemes.blue;
           const isLeft = index % 2 !== 0; // 1st left (0), 2nd right (1), 3rd left (2)
 
           return (

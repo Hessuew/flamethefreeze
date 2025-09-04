@@ -388,7 +388,7 @@ export const ui = {
     "church.steps.items.5.description2":
       "Now I beseech you, brethren, for the Lord Jesus Christ's sake, and for the love of the Spirit, that ye strive together with me in your prayers to God for me. Rom 15:30 KJV.",
     "church.steps.items.5.description3":
-      "How alive a church is can be noticed from its' prayer meetings directly.🔍👀 If you want to know the state of the church, go to the prayer meeting. If it is full of passion, fervor, heartfelt, and Spirit and scripture-filled prayers, then you are at the right place.❤️‍🔥💥 If they pray for souls, agonize for dead churches, cry for the wayward, lay down in pain for the lost, travail for general revival, strive for the advancement of the gospel, and resist to blood against sin, *then* you are at the right place.🐑🏰 If these are not found, the church has lost its first love and has a name but is dead.🙅‍♂️☠️ For out of the abundance of the heart, the mouth speaks.🔋🔊",
+      "How alive a church is can be seen directly from its prayer meetings.🔍👀 If you want to know the state of the church, go to the prayer meeting. If it is full of passion, fervor, heartfelt, and Spirit and scripture-filled prayers, then you are at the right place.❤️‍🔥💥 If they pray for souls, agonize for dead churches, cry for the wayward, lay down in pain for the lost, travail for general revival, strive for the advancement of the gospel, and resist to blood against sin, *then* you are at the right place.🐑🏰 If these are not found, the church has lost its first love and has a name but is dead.🙅‍♂️☠️ For out of the abundance of the heart, the mouth speaks.🔋🔊",
     "church.steps.items.5.description4":
       "And being let go, they reported all that the chief priests and elders had said unto them. And when they heard that, they lifted up their voice to God with one accord ... Acts 4:23,24 KJV",
     "church.steps.items.5.description5":
@@ -1684,7 +1684,7 @@ export const ui = {
     "prayer.testimonies.Y.title": "Sinun todistuksesi?",
     "prayer.testimonies.Y.description": "Oletko jo oppinut miten rukoilla ja rukouksen voima on elämässäsi?",
     "prayer.cta.title.1": "Oletko valmis",
-    "prayer.cta.title.2": "Saaman rukouksen voiman elämääsi",
+    "prayer.cta.title.2": "Saamaan rukouksen voiman elämääsi",
     "prayer.cta.subtitle.1":
       "Ota tämä 7 kohdan miten rukoilla -lista käyttöösi ja kuinka alat saamaan vastauksia rukouksiisi. Rukouksen voima kuuluu myös sinulle.",
     "prayer.cta.button": "Mitäs seuraavaksi?",
@@ -1867,7 +1867,7 @@ export const ui = {
     "church.steps.items.4.question":
       "Kysymys:<br />Ovatko ihmiset kiinnostuneita videopeleistä🎮 tai kiinni sosiaalisessa mediassa📲? Vai onko suuri intohimo rukoilla ja lukea Sanaa tunteja ja tunteja?📜❤️‍🔥",
     "church.steps.items.4.description1":
-      "Te avionrikkojat! Ettekö tiedä, että maailman ystävyys on vihollisuutta Jumalaa vastaan. Joka siis tahtoo olla maailman ystävä, hänestä tulee Jumalan vihollinen. Jaa 4:4",
+      "Te avionrikkojat! Ettekö tiedä, että maailman ystävyys on vihollisuutta Jumalaa vastaan. Joka siis tahtoo olla maailman ystävä, hänestä tulee Jumalan vihollinen. Jaak 4:4",
     "church.steps.items.4.description2":
       "Älkää rakastako maailmaa älkääkä sitä, mikä maailmassa on. Jos joku rakastaa maailmaa, Isän rakkaus ei ole hänessä. 1 Joh 2:15",
     "church.steps.items.4.description3":
@@ -1902,8 +1902,6 @@ export const ui = {
     "church.steps.items.6.description1": "Vanhurskaan hedelmä on elämän puu, ja viisas voittaa sieluja. San 11:30",
     "church.steps.items.6.description2":
       "Hän sanoi heille: ”Menkää kaikkialle maailmaan ja julistakaa evankeliumia kaikille luoduille. Mar 16:15",
-    "church.steps.items.6.description3":
-      "Jeesus tuli heidän luokseen ja sanoi heille: 'Minulle on annettu kaikki valta taivaassa ja maan päällä. Menkää siis ja tehkää kaikista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää. Ja katso, minä olen teidän kanssanne joka päivä maailmanajan loppuun saakka.' Mat 28:18-20",
     "church.steps.items.7.title": "Pyhyys näkyy",
     "church.steps.items.7.subtitle": "Pyhyyttä saarnataan ja se näkyy ihmisten elämässä",
     "church.steps.items.7.question":
@@ -1920,7 +1918,7 @@ export const ui = {
     "church.steps.items.8.description1":
       "Hän teki köydenpätkistä ruoskan ja ajoissa kaikki ulos temppelialueelta lamppuaineen ja härkinen. Rahanvaihtajien rahat hän kaatoi maahan, ja heidän pöytänsä hän työnsi kumoon. ..Hän sanoi: 'Älkää tehkö minun Isäni huoneesta markkinapaikkaa. Joh 2:14-16",
     "church.steps.items.8.description2":
-      "Vaikka minä ruumiillisesti olen poissa, olen kuitenkin hengessä läsnä ja kuin läsnä on jo langennut tuomion sille, joka on tehnyt tuollaista. 1 Kor 15:3",
+      "Vaikka minä ruumiillisesti olen poissa, olen kuitenkin hengessä läsnä ja kuin läsnä on jo langennut tuomion sille, joka on tehnyt tuollaista. 1 Kor 5:3",
     "church.steps.items.8.description3":
       "Toiset pelastakaa tulesta temmaten, toisia taas armahtakaa kavahtaen heitä, inhoten ruumiin tahraamaa vaatettakin. Jud 1:23",
     "church.steps.items.9.title": "Jumalan VOIMA on läsnä!",
