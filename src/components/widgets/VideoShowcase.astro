@@ -3,9 +3,12 @@ import Headline from "~/components/ui/Headline.astro";
 import WidgetWrapper from "~/components/ui/WidgetWrapper.astro";
 import Image from "~/components/common/Image.astro";
 import { Icon } from "astro-icon/components";
+import { useTranslations } from "~/i18n/utils";
+
 import type { VideoShowcase as Props } from "~/types";
 
 const {
+  lang = "en",
   title = await Astro.slots.render("title"),
   subtitle = await Astro.slots.render("subtitle"),
   tagline = await Astro.slots.render("tagline"),
@@ -16,6 +19,9 @@ const {
   headlineType: type = 2,
   bg = await Astro.slots.render("bg"),
 } = Astro.props;
+
+
+const t = useTranslations(lang);
 ---
 
 <WidgetWrapper
@@ -38,7 +44,7 @@ const {
       <div class="video-showcase-grid flex gap-6 xl:gap-[24px] transition-transform duration-500">
         {videos.map((video, index) => (
           <div class="video-card flex-shrink-0 w-[calc(50%-12px)] xs:w-[calc(40%-12px)] sm:w-[calc(30%-12px)] xl:w-[calc(30%-16px)]">
-            <a href={video.link} target="_blank" class="group block">
+            <a href={video.link || video.href} target="_blank" class="group block">
               <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
                 <Image
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -51,11 +57,13 @@ const {
                 />
                 
                 <!-- Play Button Overlay -->
+                {video.link && (
                 <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors duration-300">
                   <div class="w-16 h-16 xl:w-[64px] xl:h-[64px] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <Icon name="tabler:play" class="w-8 h-8 xl:w-[32px] xl:h-[32px] text-white/70 ml-1" />
                   </div>
                 </div>
+                )}
               </div>
 
               <!-- Video Info (Always Visible) -->
@@ -72,7 +80,9 @@ const {
                   <p class="text-sm xl:text-[14px] xl:leading-[20px] text-muted" set:html={video.description} />
                 )}
 
-                <p class="text-sm xl:text-[14px] xl:leading-[20px] text-muted pt-8 xl:pt-[18px]">Topics:</p>
+                {video.features && video.features.length > 0 && (
+                <p class="text-sm xl:text-[14px] xl:leading-[20px] text-muted pt-8 xl:pt-[18px]">{t("index.where.topics")}:</p>
+                )}
 
                 {video.features && video.features.length > 0 && (
                   <ul class="space-y-1 xl:space-y-[4px]">
