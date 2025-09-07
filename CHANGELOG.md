@@ -1,5 +1,20 @@
 # Changelog
 
+## [3.21.0](https://github.com/Hessuew/flamethefreeze/compare/v3.20.0...v3.21.0) (2025-09-07)
+
+
+### Features
+
+* add biblical church images and enhance ContentList component ([#281](https://github.com/Hessuew/flamethefreeze/issues/281)) ([9bad8ce](https://github.com/Hessuew/flamethefreeze/commit/9bad8ce568c877e5f28907f4f79974a40e4452cc))
+* enhance ContentList with keyboard navigation and update church images ([#282](https://github.com/Hessuew/flamethefreeze/issues/282)) ([47bad03](https://github.com/Hessuew/flamethefreeze/commit/47bad03ff246f3ca35116fce6f2cde5b32faa2a5))
+* update the ContentList component animations ([b1bac43](https://github.com/Hessuew/flamethefreeze/commit/b1bac4387840a8a9032dce9397e6e8841ce5e417))
+
+
+### Bug Fixes
+
+* grammar fixes and update github action ([43f056e](https://github.com/Hessuew/flamethefreeze/commit/43f056e7fda918cef92beb6a82265111be8351f3))
+* remove worker dependencies and fix text/type issues ([#280](https://github.com/Hessuew/flamethefreeze/issues/280)) ([2802fdf](https://github.com/Hessuew/flamethefreeze/commit/2802fdfca279fcb739710e0b426bdc5cc6b465ce))
+
 ## [3.20.0](https://github.com/Hessuew/flamethefreeze/compare/v3.19.0...v3.20.0) (2025-08-27)
 
 
