@@ -130,7 +130,7 @@ export interface MetaDataTwitter {
 }
 
 export interface Image {
-  src: string;
+  src: string | ImageMetadata;
   alt?: string;
 }
 
@@ -331,8 +331,9 @@ export interface ContentItem {
   subtitle?: string;
   question?: string;
   description: ContentDescription[];
-  color: "orange" | "blue" | "green" | "purple" | "red" | "yellow" | "pink" | "indigo";
+  color: "orange" | "blue" | "green" | "purple" | "red" | "yellow" | "pink" | "indigo" | "teal" | "emerald" | "lightning" | "cream" | "poison";
   emoji?: string;
+  image: Image;
 }
 
 export interface ContentList extends Omit<Headline, "classes">, Widget {

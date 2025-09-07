@@ -332,6 +332,7 @@ export const ui = {
     "church.steps.tagline": "An eye opener",
     "church.steps.title": "The church to attend is where:",
     "church.steps.items.1.title": "Jesus is glorified",
+    "church.steps.items.1.imageAlt": "Biblical church 1. Jesus is glorified",
     "church.steps.items.1.question":
       "Question:<br/> Is the focus that people will love Jesus, and yield their whole lives to him without holding anything back?",
     "church.steps.items.1.description1": "But he that glorieth, let him glory in the Lord. 2 Cor 10:17 KJV",
@@ -340,6 +341,7 @@ export const ui = {
     "church.steps.items.1.description3":
       "Whether therefore ye eat, or drink, or whatsoever ye do, do all to the glory of God. 1 Cor 10:31 KJV",
     "church.steps.items.2.title": "The cross is preached",
+    "church.steps.items.2.imageAlt": "Biblical church 2. The cross is preached",
     "church.steps.items.2.question": "Question: Where is the solution found? In Jesus or in other things?",
     "church.steps.items.2.description1":
       "But we preach Christ crucified, unto the Jews a stumblingblock, and unto the Greeks foolishness. But unto them which are called, both Jews and Greeks, Christ the power of God, and the wisdom of God. 1 Cor 1:23,24 KJV",
@@ -348,6 +350,7 @@ export const ui = {
     "church.steps.items.2.description3":
       "Moreover, brethren, I declare unto you the gospel ... Christ died for our sins; And that he was buried, and that he rose again the third day according to the scriptures. 1 Cor 15:1-4 KJV",
     "church.steps.items.3.title": "Genuine love",
+    "church.steps.items.3.imageAlt": "Biblical church 3. Genuine love",
     "church.steps.items.3.subtitle":
       "Love to God and to brethren abounds out of a pure heart, of good conscience and of faith unfeigned.",
     "church.steps.items.3.question":
@@ -359,6 +362,7 @@ export const ui = {
     "church.steps.items.3.description3":
       "And this commandment have we from him, That he who loveth God love his brother also. 1 Joh 4:21 KJV",
     "church.steps.items.4.title": "The love of the world dies",
+    "church.steps.items.4.imageAlt": "Biblical church 4. The love of the world dies",
     "church.steps.items.4.subtitle": "The love of the world dies, and the love of the things of the world dies.",
     "church.steps.items.4.question":
       "Question:<br/>Are the people there into video games🎮, and attached to social media📲? Or is their passion to pray, and read the Bible for hours and hours?❤️‍🔥📜",
@@ -379,6 +383,7 @@ export const ui = {
     "church.steps.items.4.description8":
       "Therefore, my beloved brethren, be ye stedfast, unmovable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord. 1 Cor 15:58 KJV.",
     "church.steps.items.5.title": "Passion to pray is on full flame🔥",
+    "church.steps.items.5.imageAlt": "Biblical church 5. Passion to pray is on full flame",
     "church.steps.items.5.subtitle":
       "Your passion to pray together and individually is kindled to full flame and just enlarges day by day. Wanting to pray for hours and hours.",
     "church.steps.items.5.question":
@@ -394,6 +399,7 @@ export const ui = {
     "church.steps.items.5.description5":
       "O generation of vipers, how can ye, being evil, speak good things? for out of the abundance of the heart the mouth speaketh. Mat 12:34 KJV",
     "church.steps.items.6.title": "You get more people saved",
+    "church.steps.items.6.imageAlt": "Biblical church 6. You get more people saved",
     "church.steps.items.6.question":
       "Question: Is there dedicated time for evangelism; Do the people in the church speak about the salvation of souls?",
     "church.steps.items.6.description1":
@@ -401,6 +407,7 @@ export const ui = {
     "church.steps.items.6.description2":
       "And he said unto them, Go ye into all the world, and preach the gospel to every creature. Mark 16:15 KJV",
     "church.steps.items.7.title": "Holiness is evident",
+    "church.steps.items.7.imageAlt": "Biblical church 7. Holiness is evident",
     "church.steps.items.7.subtitle": "Holiness is preached and is evident in the lives of people.",
     "church.steps.items.7.question":
       "Question: Do the people directly say no to evil? No any blank and gray areas, nothing between black and white.",
@@ -411,6 +418,7 @@ export const ui = {
     "church.steps.items.7.description3":
       "...When he shall appear, we shall be like him; for we shall see him as he is. And every man that hath this hope in him purifieth himself, even as he is pure. 1 Joh 3:2,3 KJV.",
     "church.steps.items.8.title": "Sin is hated and judged",
+    "church.steps.items.8.imageAlt": "Biblical church 8. Sin is hated and judged",
     "church.steps.items.8.question":
       "Question: There is an open rebuke for sin. No one is allowed to have small sins in their lives.",
     "church.steps.items.8.description1":
@@ -420,6 +428,7 @@ export const ui = {
     "church.steps.items.8.description3":
       "For I verily, as absent in body, but present in spirit, have judged already, as though I were present, concerning him that hath so done this deed. 1 Cor 5:3 KJV.",
     "church.steps.items.9.title": "POWER of God is present!",
+    "church.steps.items.9.imageAlt": "Biblical church 9. POWER of God is present!",
     "church.steps.items.9.subtitle":
       "Sin ceases from your life, you are released from your oppressions, the addictions are broken, sicknesses are healed, demons are being cast out, and lives are being transformed by the POWER of God!",
     "church.steps.items.9.question":
@@ -433,6 +442,7 @@ export const ui = {
     "church.steps.items.9.description4":
       "And my speech and my preaching was not with enticing words of man's wisdom, but in demonstration of the Spirit and of power. 1 Cor 2:4 KJV",
     "church.steps.items.10.title": "God is present",
+    "church.steps.items.10.imageAlt": "Biblical church 10. God is present",
     "church.steps.items.10.subtitle": "There is liberty, righteousness, joy, and peace in the Holy Ghost.",
     "church.steps.items.10.question":
       "Question:<br />The Holy Spirit moves in the meetings. He is recognized, and revered.",
@@ -440,6 +450,9 @@ export const ui = {
       "For the kingdom of God is not meat and drink; but righteousness, and peace, and joy in the Holy Ghost. Rom 14:17 KJV.",
     "church.steps.items.10.description2":
       "Now the Lord is that Spirit: and where the Spirit of the Lord is, there is liberty. 2 Cor 3:17 KJV.",
+    "church.videoShowcase.title": "Where can I find<br />a Biblical church?🔎🤷",
+    "church.videoShowcase.subtitle.1":
+      "Biblical churches can be found around the history.📜 There are many even today but by God's guidance we are not associating ourselves here to many wonderful ministries and biblical churches who do a lot work for the kingdom of God even today.",
     "": "",
     "about.herotext.tagline": "About us",
     "about.herotext.title1": "Here you will ",
