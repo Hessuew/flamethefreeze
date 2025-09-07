@@ -1,19 +1,36 @@
 ---
 import Layout from "~/layouts/PageLayout.astro";
+import type { PageLayoutProps as Props } from "~/layouts/PageLayout.astro";
 import Hero from "~/components/widgets/Hero.astro";
 import { useTranslations } from "~/i18n/utils";
 import { TextAnimate } from "~/components/magicui/text-animate";
-import church_today from "~/assets/images/church/biblical_church-church_today.webp";
+import derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
+import kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
+import prayer_church from "~/assets/images/ministries/fire_of_god_and_fire_for_god-prayer_church.webp";
+import church_today from "~/assets/images/church/biblical_church-church_today_beautiful.webp";
 import SubtitleContainer from "~/components/ui/SubtitleContainer.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import ContentList from "~/components/widgets/ContentList.astro";
 import { BlurFade } from "~/components/magicui/blur-fade";
+import glorify_jesus from "~/assets/images/church/biblical_church-glorify_jesus.webp";
+import deny_yourself from "~/assets/images/church/biblical_church-deny_yourself.webp";
+import genuine_love from "~/assets/images/church/biblical_church-genuine_love.webp";
+import hate_sin from "~/assets/images/church/biblical_church-hate_sin.webp";
+import full_flame_prayer from "~/assets/images/church/biblical_church-full_flame_prayer.webp";
+import save_souls from "~/assets/images/church/biblical_church-save_souls.webp";
+import evident_holiness from "~/assets/images/church/biblical_church-evident_holiness.webp";
+import judge_sin from "~/assets/images/church/biblical_church-judge_sin.webp";
+import presence_of_god from "~/assets/images/church/biblical_church-presence_of_god.webp";
+import holy_spirit from "~/assets/images/church/biblical_church-holy_spirit.webp";
+import type { ContentItem } from "~/types";
+import VideoShowcase from "~/components/widgets/VideoShowcase.astro";
+import CallToAction2 from "~/components/widgets/CallToAction2.astro";
 
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 
 const t = useTranslations(lang);
 
-const contentItems = [
+const contentItems: ContentItem[] = [
   {
     title: t("church.steps.items.1.title"),
     question: t("church.steps.items.1.question"),
@@ -22,7 +39,8 @@ const contentItems = [
       { text: t("church.steps.items.1.description2"), emoji: "👀" },
       { text: t("church.steps.items.1.description3"), emoji: "🍖" },
     ],
-    color: "blue" as const,
+    color: "yellow" as const,
+    image: { src: glorify_jesus, alt: t("church.steps.items.1.imageAlt") },
   },
   {
     title: t("church.steps.items.2.title"),
@@ -31,7 +49,8 @@ const contentItems = [
       { text: t("church.steps.items.2.description1"), emoji: "😵" },
       { text: t("church.steps.items.2.description3"), emoji: "📜" },
     ],
-    color: "orange" as const,
+    color: "purple" as const,
+    image: { src: deny_yourself, alt: t("church.steps.items.2.imageAlt") },
   },
   {
     title: t("church.steps.items.3.title"),
@@ -42,7 +61,8 @@ const contentItems = [
       { text: t("church.steps.items.3.description2"), emoji: "😁" },
       { text: t("church.steps.items.3.description3"), emoji: "🫂" },
     ],
-    color: "purple" as const,
+    color: "red" as const,
+    image: { src: genuine_love, alt: t("church.steps.items.3.imageAlt") },
   },
   {
     title: t("church.steps.items.4.title"),
@@ -52,13 +72,14 @@ const contentItems = [
       { text: t("church.steps.items.4.description1"), emoji: "❎" },
       { text: t("church.steps.items.4.description2"), emoji: "💔" },
       { subtitle: true, text: t("church.steps.items.4.description3") },
-      { text: t("church.steps.items.4.description4"), emoji: "🚶" },
+      // { text: t("church.steps.items.4.description4"), emoji: "🚶" },
       { text: t("church.steps.items.4.description5"), emoji: "👁️" },
-      { subtitle: true, text: t("church.steps.items.4.description6") },
       { text: t("church.steps.items.4.description7"), emoji: "📈" },
-      { text: t("church.steps.items.4.description8"), emoji: "👷" },
+      { subtitle: true, text: t("church.steps.items.4.description6") },
+      // { text: t("church.steps.items.4.description8"), emoji: "👷" },
     ],
-    color: "purple" as const,
+    color: "poison" as const,
+    image: { src: hate_sin, alt: t("church.steps.items.4.imageAlt") },
   },
   {
     title: t("church.steps.items.5.title"),
@@ -70,7 +91,8 @@ const contentItems = [
       { text: t("church.steps.items.5.description4"), emoji: "➡️" },
       { text: t("church.steps.items.5.description5"), emoji: "🐍" },
     ],
-    color: "green" as const,
+    color: "orange" as const,
+    image: { src: full_flame_prayer, alt: t("church.steps.items.5.imageAlt") },
   },
   {
     title: t("church.steps.items.6.title"),
@@ -79,7 +101,8 @@ const contentItems = [
       { text: t("church.steps.items.6.description1"), emoji: "🖤⃝🤍" },
       { text: t("church.steps.items.6.description2"), emoji: "🌍📣" },
     ],
-    color: "red" as const,
+    color: "emerald" as const,
+    image: { src: save_souls, alt: t("church.steps.items.6.imageAlt") },
   },
   {
     title: t("church.steps.items.7.title"),
@@ -90,7 +113,8 @@ const contentItems = [
       { text: t("church.steps.items.7.description2"), emoji: "😇" },
       { text: t("church.steps.items.7.description3"), emoji: "🧹" },
     ],
-    color: "yellow" as const,
+    color: "teal" as const,
+    image: { src: evident_holiness, alt: t("church.steps.items.8.imageAlt") },
   },
   {
     title: t("church.steps.items.8.title"),
@@ -100,7 +124,8 @@ const contentItems = [
       { text: t("church.steps.items.8.description2"), emoji: "🔥" },
       { text: t("church.steps.items.8.description3"), emoji: "👨‍⚖️" },
     ],
-    color: "orange" as const,
+    color: "cream" as const,
+    image: { src: judge_sin, alt: t("church.steps.items.8.imageAlt") },
   },
   {
     title: t("church.steps.items.9.title"),
@@ -111,7 +136,8 @@ const contentItems = [
       { text: t("church.steps.items.9.description3"), emoji: "✅" },
       { text: t("church.steps.items.9.description4"), emoji: "🏛️" },
     ],
-    color: "blue" as const,
+    color: "indigo" as const,
+    image: { src: presence_of_god, alt: t("church.steps.items.9.imageAlt") },
   },
   {
     title: t("church.steps.items.10.title"),
@@ -121,7 +147,8 @@ const contentItems = [
       { text: t("church.steps.items.10.description1"), emoji: "🙅‍♂️🍖" },
       { text: t("church.steps.items.10.description2"), emoji: "𝓯𝓻𝓮𝓮" },
     ],
-    color: "green" as const,
+    color: "pink" as const,
+    image: { src: holy_spirit, alt: t("church.steps.items.10.imageAlt") },
   },
 ];
 ---
@@ -129,10 +156,16 @@ const contentItems = [
 <Layout lang={lang} metadata={metadata} siteRebuildStatus={siteRebuildStatus}>
   <div class="min-h-screen md:top-[64px] relative parallax-scene" id="parallax-container">
     <!-- Background Image -->
-    <div
-      class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
-      style={`background-image: url(${church_today.src})`}
-    >
+    <div class="absolute inset-0 w-full h-full z-0 overflow-hidden">
+      <img
+        src={church_today.src}
+        alt="Beautiful church today"
+        class="w-full h-full church-background-image"
+        style="min-height: 100vh; min-width: 100%;"
+        loading="eager"
+        decoding="async"
+      />
+      <!-- Subtle overlay to ensure text readability -->
     </div>
 
     <!-- Star Layer 1 - Far background -->
@@ -241,6 +274,63 @@ const contentItems = [
       },
     }}
   />
+
+  <VideoShowcase
+    id="where"
+    tagline={t("index.where.tagline")}
+    title={t("church.videoShowcase.title")}
+    headlineType={3}
+    classes={{
+      headline: {
+        subtitle: "mx-0 max-w-md",
+      },
+    }}
+    videos={[
+      {
+        title: t("index.where.images.1.title"),
+        link: "https://www.youtube.com/@Rukouksenseurakunta",
+        description: t("index.where.images.1.description"),
+        features: [t("index.where.images.1.features.1"), t("index.where.images.1.features.2")],
+        src: prayer_church,
+        alt: t("index.what.images.1.alt"),
+      },
+      {
+        title: t("index.where.images.2.title"),
+        link: "https://www.youtube.com/@RHEMAKennethEHagin",
+        description: t("index.where.images.2.description"),
+        features: [t("index.where.images.2.features.1"), t("index.where.images.2.features.2")],
+        src: kenneth_hagin,
+        alt: t("index.where.images.2.alt"),
+        objectPosition: "top center",
+      },
+      {
+        title: t("index.where.images.3.title"),
+        link: "https://www.youtube.com/@DerekPrinceMinistries",
+        description: t("index.where.images.3.description"),
+        features: [t("index.where.images.3.features.1"), t("index.where.images.3.features.2")],
+        src: derek_prince,
+        alt: t("index.where.images.3.alt"),
+        objectPosition: "top center",
+      },
+    ]}
+  >
+    <Fragment slot="subtitle">
+      {t("church.videoShowcase.subtitle.1")}
+    </Fragment>
+  </VideoShowcase>
+
+  <CallToAction2
+    id="cta"
+    title={t("church.cta.title.1")}
+    title2={t("church.cta.title.2")}
+    subtitle={t("church.cta.subtitle.1")}
+    button={{
+      href: "devotions",
+      text: t("church.cta.button"),
+      icon: "tabler:growth",
+    }}
+    lang={lang}
+  />
 </Layout>
 
 <style>
@@ -260,72 +350,30 @@ const contentItems = [
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
   }
 
+  /* Enhanced image display */
+  .church-background-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    /* Ensure smooth loading */
+    transition: opacity 0.3s ease-in-out;
+  }
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .star-symbol {
       transform: scale(0.8);
     }
+
+    .church-background-image {
+      object-fit: cover;
+      object-position: center center;
+    }
   }
 </style>
 
 <script>
-  // document.addEventListener("astro:page-load", () => {
-  //   const parallaxLayers = document.querySelectorAll(".parallax-layer") as NodeListOf<HTMLElement>;
-
-  //   let ticking = false;
-
-  //   function updateParallax() {
-  //     const scrollTop = window.pageYOffset;
-
-  //     parallaxLayers.forEach((layer) => {
-  //       const speed = parseFloat(layer.dataset.speed || "0");
-  //       const yPos = -(scrollTop * speed);
-  //       layer.style.transform = `translate3d(0, ${yPos}px, 0)`;
-  //     });
-
-  //     ticking = false;
-  //   }
-
-  //   function requestTick() {
-  //     if (!ticking) {
-  //       requestAnimationFrame(updateParallax);
-  //       ticking = true;
-  //     }
-  //   }
-
-  //   // Mouse movement parallax
-  //   function handleMouseMove(e: MouseEvent) {
-  //     const mouseX = e.clientX / window.innerWidth;
-  //     const mouseY = e.clientY / window.innerHeight;
-
-  //     parallaxLayers.forEach((layer) => {
-  //       const speed = parseFloat(layer.dataset.speed || "0");
-  //       const xMove = (mouseX - 0.5) * 60 * speed;
-  //       const yMove = (mouseY - 0.5) * 60 * speed;
-  //       const scrollY = window.pageYOffset * speed;
-
-  //       layer.style.transform = `translate3d(${xMove}px, ${yMove - scrollY}px, 0)`;
-  //     });
-  //   }
-
-  //   // Event listeners
-  //   window.addEventListener("scroll", requestTick, { passive: true });
-  //   window.addEventListener("mousemove", handleMouseMove, { passive: true });
-
-  //   // Initial call
-  //   updateParallax();
-
-  //   // Cleanup function
-  //   function cleanup() {
-  //     window.removeEventListener("scroll", requestTick);
-  //     window.removeEventListener("mousemove", handleMouseMove);
-  //   }
-
-  //   // Cleanup on page unload
-  //   document.addEventListener("astro:before-preparation", cleanup);
-  //   document.addEventListener("astro:before-swap", cleanup);
-  //   window.addEventListener("beforeunload", cleanup);
-  // });
   document.addEventListener("astro:page-load", () => {
     const parallaxLayers = document.querySelectorAll(".parallax-layer");
     const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;

@@ -6,7 +6,6 @@ import Image from "astro/components/Image.astro";
 import { twMerge } from "tailwind-merge";
 import { useTranslations } from "~/i18n/utils";
 
-import GradientText from "../ui/GradientText.astro";
 import { getLanguageRoute } from "~/navigation";
 
 export interface Props {
@@ -83,10 +82,12 @@ const { theme = "light" } = Astro.props;
                 {links.map(({ text, href }) => (
                   <li class="mb-2 xl:mb-[8px]">
                     <a
-                      class="text-muted hover:text-orange-500 hover:underline text-gray-400 transition duration-150 ease-in-out"
+                      class="group relative text-gray-400 transition-all duration-300 ease-in-out hover:text-orange-400 inline-block py-1 px-2 rounded-md hover:bg-gradient-to-r hover:from-orange-500/10 hover:to-red-500/10 hover:shadow-lg hover:shadow-orange-500/20 hover:scale-105 hover:translate-x-1"
                       href={getPermalink(getLanguageRoute(href || "", lang || "en"))}
                     >
-                      {text}
+                      <span class="relative z-10">{text}</span>
+                      <span class="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-orange-400 to-red-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left" />
+                      <span class="absolute inset-0 bg-gradient-to-r from-orange-500/5 to-red-500/5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out" />
                     </a>
                   </li>
                 ))}
@@ -110,18 +111,19 @@ const { theme = "light" } = Astro.props;
                 <div class="group relative">
                   <a
                     class={twMerge(
-                      "transition-all duration-300 ease-in-out text-muted text-orange-400 hover:scale-125 focus:outline-none focus:ring-2 focus:ring-orange-700 rounded-lg text-sm xl:text-[14px] xl:leading-[20px] p-2.5 xl:p-[10px] inline-flex items-center"
+                      "relative transition-all duration-300 ease-in-out text-orange-400 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-orange-700 rounded-lg text-sm xl:text-[14px] xl:leading-[20px] p-2.5 xl:p-[10px] inline-flex items-center hover:bg-gradient-to-br hover:from-orange-500/20 hover:to-red-500/20 hover:shadow-xl hover:shadow-orange-500/30 hover:rotate-3 hover:-translate-y-1"
                     )}
                     aria-label={ariaLabel}
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <span class="absolute inset-0 bg-gradient-to-br from-orange-400/10 to-red-400/10 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></span>
                     {image && (
                       <Image
                         src={image.src}
                         alt={image.alt}
-                        class="w-5 xl:w-[20px] h-5 xl:h-[20px] object-contain rounded"
+                        class="relative z-10 w-5 xl:w-[20px] h-5 xl:h-[20px] object-contain rounded transition-all duration-300 group-hover:brightness-110 group-hover:contrast-110"
                         width={400}
                         height={400}
                         loading={"lazy"}
@@ -129,8 +131,9 @@ const { theme = "light" } = Astro.props;
                       />
                     )}
                   </a>
-                  <span class="absolute -top-10 xl:-top-[40px] left-1/2 -translate-x-1/2 whitespace-nowrap rounded px-2 xl:px-[10px] py-1 xl:py-[8px] text-sm xl:text-[14px] xl:leading-[20px] text-white opacity-0 transition-opacity delay-500 group-hover:opacity-100 bg-page">
+                  <span class="absolute -top-12 xl:-top-[48px] left-1/2 -translate-x-1/2 whitespace-nowrap rounded-lg px-3 xl:px-[12px] py-2 xl:py-[10px] text-sm xl:text-[14px] xl:leading-[20px] text-white opacity-0 transition-all duration-300 delay-200 group-hover:opacity-100 group-hover:-translate-y-1 bg-gradient-to-r from-orange-600 to-red-600 shadow-lg shadow-orange-500/25 backdrop-blur-sm border border-orange-400/30">
                     {ariaLabel}
+                    <span class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-orange-600"></span>
                   </span>
                 </div>
               ))}
@@ -146,9 +149,14 @@ const { theme = "light" } = Astro.props;
               href="https://cherubim-it.com"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              class="font-semibold transition-all duration-300 text-blue-600 hover:underline"
+              class="group relative font-semibold transition-all duration-500 ease-out text-orange-600 hover:text-transparent inline-block hover:scale-110 hover:-rotate-1 hover:shadow-2xl hover:shadow-orange-500/40"
             >
-              <GradientText text="Cherubim IT" />
+              <span class="relative z-10 bg-gradient-to-r from-orange-400 via-red-500 to-yellow-400 bg-clip-text text-transparent group-hover:from-yellow-300 group-hover:via-orange-400 group-hover:to-red-500 transition-all duration-500">
+                Cherubim IT
+              </span>
+              <span class="absolute inset-0 bg-gradient-to-r from-orange-500/20 via-red-500/20 to-yellow-500/20 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-pulse"></span>
+              <span class="absolute -inset-1 bg-gradient-to-r from-orange-600 via-red-600 to-yellow-600 rounded-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-sm"></span>
+              <span class="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-orange-400 via-red-500 to-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-out origin-center"></span>
             </a>
           </p>
         </div>
