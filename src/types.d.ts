@@ -331,7 +331,20 @@ export interface ContentItem {
   subtitle?: string;
   question?: string;
   description: ContentDescription[];
-  color: "orange" | "blue" | "green" | "purple" | "red" | "yellow" | "pink" | "indigo" | "teal" | "emerald" | "lightning" | "cream" | "poison";
+  color:
+    | "orange"
+    | "blue"
+    | "green"
+    | "purple"
+    | "red"
+    | "yellow"
+    | "pink"
+    | "indigo"
+    | "teal"
+    | "emerald"
+    | "lightning"
+    | "cream"
+    | "poison";
   emoji?: string;
   image: Image;
 }
@@ -432,13 +445,15 @@ export interface ImageShowcase extends Omit<Headline, "classes">, Widget {
 }
 
 export interface VideoShowcase extends Omit<Headline, "classes">, Widget {
+  lang?: "en" | "fi";
   videos?: Array<{
     src: string | ImageMetadata;
     alt?: string;
     title: string;
     description?: string;
     features?: Array<string>;
-    link: string;
+    link?: string;
+    href?: string;
     objectPosition?: string;
   }>;
 }

@@ -220,6 +220,7 @@ const t = useTranslations(lang);
 
   <VideoShowcase
     id="where"
+    lang={lang}
     tagline={t("index.where.tagline")}
     title={t("index.where.title.1")}
     headlineType={3}
@@ -256,13 +257,11 @@ const t = useTranslations(lang);
         objectPosition: "top center",
       },
       {
-        title: t("index.where.images.3.title"),
-        link: "https://www.youtube.com/@DerekPrinceMinistries",
-        description: t("index.where.images.3.description"),
-        features: [t("index.where.images.3.features.1"), t("index.where.images.3.features.2")],
+        title: t("index.where.images.4.title"),
+        href: getPermalink(getLanguageRoute("church", lang || "en")),
+        description: t("index.where.images.4.description"),
         src: find_more,
-        alt: t("index.where.images.3.alt"),
-        objectPosition: "top center",
+        alt: t("index.where.images.4.alt"),
       },
     ]}
   >

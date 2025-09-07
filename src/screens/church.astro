@@ -7,7 +7,7 @@ import { TextAnimate } from "~/components/magicui/text-animate";
 import derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
 import kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
 import prayer_church from "~/assets/images/ministries/fire_of_god_and_fire_for_god-prayer_church.webp";
-import church_today from "~/assets/images/church/biblical_church-church_today.webp";
+import church_today from "~/assets/images/church/biblical_church-church_today_beautiful.webp";
 import SubtitleContainer from "~/components/ui/SubtitleContainer.astro";
 import GradientText from "~/components/ui/GradientText.astro";
 import ContentList from "~/components/widgets/ContentList.astro";
@@ -72,11 +72,11 @@ const contentItems: ContentItem[] = [
       { text: t("church.steps.items.4.description1"), emoji: "❎" },
       { text: t("church.steps.items.4.description2"), emoji: "💔" },
       { subtitle: true, text: t("church.steps.items.4.description3") },
-      { text: t("church.steps.items.4.description4"), emoji: "🚶" },
+      // { text: t("church.steps.items.4.description4"), emoji: "🚶" },
       { text: t("church.steps.items.4.description5"), emoji: "👁️" },
-      { subtitle: true, text: t("church.steps.items.4.description6") },
       { text: t("church.steps.items.4.description7"), emoji: "📈" },
-      { text: t("church.steps.items.4.description8"), emoji: "👷" },
+      { subtitle: true, text: t("church.steps.items.4.description6") },
+      // { text: t("church.steps.items.4.description8"), emoji: "👷" },
     ],
     color: "poison" as const,
     image: { src: hate_sin, alt: t("church.steps.items.4.imageAlt") },
@@ -156,10 +156,16 @@ const contentItems: ContentItem[] = [
 <Layout lang={lang} metadata={metadata} siteRebuildStatus={siteRebuildStatus}>
   <div class="min-h-screen md:top-[64px] relative parallax-scene" id="parallax-container">
     <!-- Background Image -->
-    <div
-      class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
-      style={`background-image: url(${church_today.src})`}
-    >
+    <div class="absolute inset-0 w-full h-full z-0 overflow-hidden">
+      <img
+        src={church_today.src}
+        alt="Beautiful church today"
+        class="w-full h-full church-background-image"
+        style="min-height: 100vh; min-width: 100%;"
+        loading="eager"
+        decoding="async"
+      />
+      <!-- Subtle overlay to ensure text readability -->
     </div>
 
     <!-- Star Layer 1 - Far background -->
@@ -309,21 +315,19 @@ const contentItems: ContentItem[] = [
     ]}
   >
     <Fragment slot="subtitle">
-      <span class="text-white">{t("church.videoShowcase.subtitle.1")}</span>
-      <!-- Below is `non exhaustive and exclusive` list of ministries, and categories of what God has empowered them to do. Fasten
-      your seatbelts 🍒😁! -->
+      {t("church.videoShowcase.subtitle.1")}
     </Fragment>
   </VideoShowcase>
 
   <CallToAction2
     id="cta"
-    title={t("prayer.cta.title.1")}
-    title2={t("prayer.cta.title.2")}
-    subtitle={t("prayer.cta.subtitle.1")}
+    title={t("church.cta.title.1")}
+    title2={t("church.cta.title.2")}
+    subtitle={t("church.cta.subtitle.1")}
     button={{
-      href: "word",
-      text: t("prayer.cta.button"),
-      icon: "tabler:rocket",
+      href: "devotions",
+      text: t("church.cta.button"),
+      icon: "tabler:growth",
     }}
     lang={lang}
   />
@@ -346,10 +350,25 @@ const contentItems: ContentItem[] = [
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
   }
 
+  /* Enhanced image display */
+  .church-background-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    /* Ensure smooth loading */
+    transition: opacity 0.3s ease-in-out;
+  }
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .star-symbol {
       transform: scale(0.8);
+    }
+
+    .church-background-image {
+      object-fit: cover;
+      object-position: center center;
     }
   }
 </style>
