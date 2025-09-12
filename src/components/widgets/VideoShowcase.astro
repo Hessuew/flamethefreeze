@@ -13,6 +13,7 @@ const {
   subtitle = await Astro.slots.render("subtitle"),
   tagline = await Astro.slots.render("tagline"),
   videos = [],
+  rows = 1,
   id,
   isDark = false,
   classes = {},
@@ -38,12 +39,98 @@ const t = useTranslations(lang);
     classes={classes?.headline as Record<string, string>}
   />
 
-  <div class="relative mt-12 xl:mt-[48px]">
-    <!-- Video Grid Container -->
-    <div class="video-showcase-container overflow-hidden">
-      <div class="video-showcase-grid flex gap-6 xl:gap-[24px] transition-transform duration-500">
+  {rows === 1 ? (
+    // <!-- Single Row with Navigation -->
+    <div class="relative mt-12 xl:mt-[48px]">
+      <!-- Video Grid Container -->
+      <div class="video-showcase-container overflow-hidden">
+        <div class="video-showcase-grid flex gap-6 xl:gap-[24px] transition-transform duration-500">
+          {videos.map((video, index) => (
+            <div class="video-card flex-shrink-0 w-[calc(50%-12px)] xs:w-[calc(40%-12px)] sm:w-[calc(30%-12px)] xl:w-[calc(30%-16px)]">
+              <a href={video.link || video.href} target="_blank" class="group block">
+                <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <Image
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    src={video.src}
+                    alt={video.alt || `Video ${index + 1}`}
+                    width={440}
+                    height={440}
+                    objectPosition={video?.objectPosition || "top top"}
+                    loading="lazy"
+                  />
+                  
+                  <!-- Play Button Overlay -->
+                  {video.link && (
+                  <div class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors duration-300">
+                    <div class="w-16 h-16 xl:w-[64px] xl:h-[64px] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Icon name="tabler:play" class="w-8 h-8 xl:w-[32px] xl:h-[32px] text-white/70 ml-1" />
+                    </div>
+                  </div>
+                  )}
+                </div>
+
+                <!-- Video Info (Always Visible) -->
+                <div class="mt-4 xl:mt-[16px] space-y-2 xl:space-y-[8px]">
+                  <div class="flex items-center gap-2">
+                    <h3 class="text-md md:text-lg xl:text-[18px] xl:leading-[24px] font-semibold text-default transition-colors duration-300" set:html={video.title}></h3>
+                    <!-- Animated Arrow on Hover -->
+                    <div class="arrow-container opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-[-8px] group-hover:translate-x-0">
+                      <Icon name="tabler:arrow-right" class="w-5 h-5 xl:w-[20px] xl:h-[20px] text-white" />
+                    </div>
+                  </div>
+
+                  {video.description && (
+                    <p class="text-sm xl:text-[14px] xl:leading-[20px] text-muted" set:html={video.description} />
+                  )}
+
+                  {video.features && video.features.length > 0 && (
+                  <p class="text-sm xl:text-[14px] xl:leading-[20px] text-muted pt-8 xl:pt-[18px]">{t("index.where.topics")}:</p>
+                  )}
+
+                  {video.features && video.features.length > 0 && (
+                    <ul class="space-y-1 xl:space-y-[4px]">
+                      {video.features.map((feature) => (
+                        <li class="flex items-center text-sm xl:text-[14px] xl:leading-[20px] text-muted">
+                          <Icon name="tabler:check" class="w-4 h-4 xl:w-[16px] xl:h-[16px] text-white mr-2 xl:mr-[8px] flex-shrink-0" />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Navigation Arrows (responsive and always tabbable) -->
+      <div class="navigation-controls absolute inset-y-0 right-0 flex items-center z-10">
+        <!-- Previous Arrow -->
+        <button 
+          class="nav-arrow nav-prev absolute right-16 sm:right-20 xl:right-[80px] w-10 h-10 sm:w-12 sm:h-12 xl:w-[48px] xl:h-[48px] bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          aria-label="View previous videos"
+          tabindex="0"
+        >
+          <Icon name="tabler:chevron-left" class="w-5 h-5 sm:w-6 sm:h-6 xl:w-[24px] xl:h-[24px] text-black" />
+        </button>
+        
+        <!-- Next Arrow -->
+        <button 
+          class="nav-arrow nav-next absolute right-0 translate-x-1 sm:translate-x-2 xl:translate-x-[8px] w-10 h-10 sm:w-12 sm:h-12 xl:w-[48px] xl:h-[48px] bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          aria-label="View more videos"
+          tabindex="0"
+        >
+          <Icon name="tabler:chevron-right" class="w-5 h-5 sm:w-6 sm:h-6 xl:w-[24px] xl:h-[24px] text-black" />
+        </button>
+      </div>
+    </div>
+  ) : (
+    // <!-- Multiple Rows Grid Layout -->
+    <div class="mt-12 xl:mt-[48px]">
+      <div class={`grid gap-6 xl:gap-[24px] grid-cols-2 sm:grid-cols-2 lg:grid-cols-3`}>
         {videos.map((video, index) => (
-          <div class="video-card flex-shrink-0 w-[calc(50%-12px)] xs:w-[calc(40%-12px)] sm:w-[calc(30%-12px)] xl:w-[calc(30%-16px)]">
+          <div class="video-card">
             <a href={video.link || video.href} target="_blank" class="group block">
               <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] bg-slate-800 hover:scale-[1.02] transition-all duration-300 shadow-lg hover:shadow-xl">
                 <Image
@@ -81,7 +168,7 @@ const t = useTranslations(lang);
                 )}
 
                 {video.features && video.features.length > 0 && (
-                <p class="text-sm xl:text-[14px] xl:leading-[20px] text-muted pt-8 xl:pt-[18px]">{t("index.where.topics")}:</p>
+                <p class="text-sm xl:text-[14px] xl:leading-[20px] text-muted pt-4 xl:pt-[18px]">{t("index.where.topics")}:</p>
                 )}
 
                 {video.features && video.features.length > 0 && (
@@ -100,28 +187,7 @@ const t = useTranslations(lang);
         ))}
       </div>
     </div>
-
-    <!-- Navigation Arrows (responsive and always tabbable) -->
-    <div class="navigation-controls absolute inset-y-0 right-0 flex items-center z-10">
-      <!-- Previous Arrow -->
-      <button 
-        class="nav-arrow nav-prev absolute right-16 sm:right-20 xl:right-[80px] w-10 h-10 sm:w-12 sm:h-12 xl:w-[48px] xl:h-[48px] bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-        aria-label="View previous videos"
-        tabindex="0"
-      >
-        <Icon name="tabler:chevron-left" class="w-5 h-5 sm:w-6 sm:h-6 xl:w-[24px] xl:h-[24px] text-black" />
-      </button>
-      
-      <!-- Next Arrow -->
-      <button 
-        class="nav-arrow nav-next absolute right-0 translate-x-1 sm:translate-x-2 xl:translate-x-[8px] w-10 h-10 sm:w-12 sm:h-12 xl:w-[48px] xl:h-[48px] bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-        aria-label="View more videos"
-        tabindex="0"
-      >
-        <Icon name="tabler:chevron-right" class="w-5 h-5 sm:w-6 sm:h-6 xl:w-[24px] xl:h-[24px] text-black" />
-      </button>
-    </div>
-  </div>
+  )}
 </WidgetWrapper>
 
 <style>
@@ -187,6 +253,7 @@ const t = useTranslations(lang);
     const nextArrow = document.querySelector('.nav-next') as HTMLButtonElement;
     const grid = document.querySelector('.video-showcase-grid') as HTMLElement;
     
+    // Only initialize navigation for single row layout
     if (prevArrow && nextArrow && grid) {
       let currentIndex = 0;
       const totalVideos = grid.children.length;
@@ -208,7 +275,7 @@ const t = useTranslations(lang);
         if (screenWidth >= 640) width = 320;  // sm: card + gap
         if (screenWidth >= 480) width = 292;  // sm: card + gap
 
-        return firstCard ? firstCard.offsetWidth + 24 : width; // actual width + ga
+        return firstCard ? firstCard.offsetWidth + 24 : width; // actual width + gap
 
       }
       

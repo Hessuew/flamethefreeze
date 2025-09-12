@@ -4,7 +4,10 @@ import type { PageLayoutProps as Props } from "~/layouts/PageLayout.astro";
 import Hero from "~/components/widgets/Hero.astro";
 import { useTranslations } from "~/i18n/utils";
 import { TextAnimate } from "~/components/magicui/text-animate";
-import derek_prince from "~/assets/images/ministries/fire_of_god_and_fire_for_god-derek_prince.webp";
+import derek_prince from "~/assets/images/church/biblical_church_based_on_word-derek_prince.webp";
+import myles_munroe from "~/assets/images/church/modern_biblical_church-myles_munroe.webp";
+import david_wilkerson from "~/assets/images/church/biblical_church_genuinly-david_wilkerson.webp";
+import reinhard_bonnke from "~/assets/images/church/biblical_church_in_africa-reinhard_bonnke.webp";
 import kenneth_hagin from "~/assets/images/ministries/fire_of_god_and_fire_for_god-kenneth_hagin.webp";
 import prayer_church from "~/assets/images/ministries/fire_of_god_and_fire_for_god-prayer_church.webp";
 import church_today from "~/assets/images/church/biblical_church-church_today_beautiful.webp";
@@ -154,7 +157,7 @@ const contentItems: ContentItem[] = [
 ---
 
 <Layout lang={lang} metadata={metadata} siteRebuildStatus={siteRebuildStatus}>
-  <div class="min-h-screen md:top-[64px] relative parallax-scene" id="parallax-container">
+  <div class="min-h-screen md:min-h-[100vw] md:top-[64px] relative parallax-scene" id="parallax-container">
     <!-- Background Image -->
     <div class="absolute inset-0 w-full h-full z-0 overflow-hidden">
       <img
@@ -280,6 +283,7 @@ const contentItems: ContentItem[] = [
     tagline={t("index.where.tagline")}
     title={t("church.videoShowcase.title")}
     headlineType={3}
+    rows={2}
     classes={{
       headline: {
         subtitle: "mx-0 max-w-md",
@@ -295,6 +299,15 @@ const contentItems: ContentItem[] = [
         alt: t("index.what.images.1.alt"),
       },
       {
+        title: t("index.where.images.3.title"),
+        link: "https://www.youtube.com/@DerekPrinceMinistries",
+        description: t("index.where.images.3.description"),
+        features: [t("index.where.images.3.features.1"), t("index.where.images.3.features.2")],
+        src: derek_prince,
+        alt: t("index.where.images.3.alt"),
+        objectPosition: "top center",
+      },
+      {
         title: t("index.where.images.2.title"),
         link: "https://www.youtube.com/@RHEMAKennethEHagin",
         description: t("index.where.images.2.description"),
@@ -304,12 +317,30 @@ const contentItems: ContentItem[] = [
         objectPosition: "top center",
       },
       {
-        title: t("index.where.images.3.title"),
-        link: "https://www.youtube.com/@DerekPrinceMinistries",
-        description: t("index.where.images.3.description"),
-        features: [t("index.where.images.3.features.1"), t("index.where.images.3.features.2")],
-        src: derek_prince,
-        alt: t("index.where.images.3.alt"),
+        title: t("church.videoShowcase.images.6.title"),
+        link: "https://www.youtube.com/watch?v=_LFRBKPk_as",
+        description: t("church.videoShowcase.images.6.description"),
+        features: [t("church.videoShowcase.images.6.features.1"), t("church.videoShowcase.images.6.features.2")],
+        src: reinhard_bonnke,
+        alt: t("church.videoShowcase.images.6.alt"),
+        objectPosition: "top center",
+      },
+      {
+        title: t("church.videoShowcase.images.5.title"),
+        link: "https://www.youtube.com/watch?v=lGMG_PVaJoI",
+        description: t("church.videoShowcase.images.5.description"),
+        features: [t("church.videoShowcase.images.5.features.1"), t("church.videoShowcase.images.5.features.2")],
+        src: david_wilkerson,
+        alt: t("church.videoShowcase.images.5.alt"),
+        objectPosition: "top center",
+      },
+      {
+        title: t("church.videoShowcase.images.4.title"),
+        link: "https://www.youtube.com/@MunroeGlobal",
+        description: t("church.videoShowcase.images.4.description"),
+        features: [t("church.videoShowcase.images.4.features.1"), t("church.videoShowcase.images.4.features.2")],
+        src: myles_munroe,
+        alt: t("church.videoShowcase.images.4.alt"),
         objectPosition: "top center",
       },
     ]}

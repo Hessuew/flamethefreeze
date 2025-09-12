@@ -446,6 +446,7 @@ export interface ImageShowcase extends Omit<Headline, "classes">, Widget {
 
 export interface VideoShowcase extends Omit<Headline, "classes">, Widget {
   lang?: "en" | "fi";
+  rows?: 1 | 2 | 3;
   videos?: Array<{
     src: string | ImageMetadata;
     alt?: string;
