@@ -191,11 +191,11 @@ const colorThemes = {
 
                         {/* Header Section */}
                         <div class="mb-8 xl:mb-[32px] relative">
-                          <div class="flex flex-row gap-4 xl:gap-[16px] pb-4 sm:pb-0 items-start">
-                            <div class="flex-shrink-0 relative group/image">
+                          <div class="flex flex-col md:flex-row gap-4 xl:gap-[16px] pb-4 sm:pb-0 items-start">
+                            <div class="flex-shrink-0 relative group/image self-center">
                               <div class="absolute inset-0 bg-gradient-to-br from-orange-400/20 to-red-500/20 rounded-xl opacity-0 group-focus:opacity-100 transition-opacity duration-500" />
                               <Image
-                                class="relative z-10 rounded-xl w-24 h-24 xl:w-[160px] xl:h-[160px] object-cover shadow-lg border border-white/10 group-focus:border-orange-400/30 transition-all duration-500 group-focus:shadow-xl group-focus:shadow-orange-500/25 group-focus:scale-105"
+                                class="relative z-10 rounded-xl w-40 h-40 md:w-[160px] md:h-[160px] object-cover shadow-lg border border-white/10 group-focus:border-orange-400/30 transition-all duration-500 group-focus:shadow-xl group-focus:shadow-orange-500/25 group-focus:scale-105"
                                 loading="lazy"
                                 width={160}
                                 height={160}
@@ -300,63 +300,123 @@ const colorThemes = {
     const contentItems = document.querySelectorAll(".content-item");
     let currentIndex = 0;
     let isScrolling = false;
+    let keyboardThrottle = false;
 
     // Cache element references for performance
     const itemsArray = Array.from(contentItems) as HTMLElement[];
     const itemsLength = itemsArray.length;
 
+    // Performance optimization: Track observed items to manage memory
+    const observedItems = new Set<HTMLElement>();
+    const VIEWPORT_BUFFER = 3; // Number of items to keep observed outside viewport
+
+    // Optimized IntersectionObserver with dynamic observation management
     const observer = new IntersectionObserver(
       (entries) => {
         if (isScrolling) return; // Skip during programmatic scrolling
 
+        // Process entries in a single batch for better performance
+        let newFocusIndex = -1;
+
         for (const entry of entries) {
           if (entry.isIntersecting) {
             const index = parseInt(entry.target.getAttribute("data-index") || "0");
-            if (index !== currentIndex) {
-              currentIndex = index;
-              (entry.target as HTMLElement).focus({ preventScroll: true });
+            if (index !== currentIndex && newFocusIndex === -1) {
+              newFocusIndex = index;
             }
-            break; // Only process first intersecting entry
           }
+        }
+
+        // Only update focus if we found a new intersecting item
+        if (newFocusIndex !== -1 && newFocusIndex !== currentIndex) {
+          currentIndex = newFocusIndex;
+          (itemsArray[currentIndex] as HTMLElement).focus({ preventScroll: true });
+
+          // Optimize observation: unobserve items that are far from current viewport
+          optimizeObservation();
         }
       },
       {
-        threshold: 0.6,
-        rootMargin: "-15% 0px -15% 0px",
+        threshold: 0.3,
+        rootMargin: "50px 0px 50px 0px", // Slightly larger margin for smoother transitions
       }
     );
 
-    // Observe items
-    itemsArray.forEach(observer.observe.bind(observer));
+    // Dynamic observation management for performance
+    const optimizeObservation = () => {
+      const startIndex = Math.max(0, currentIndex - VIEWPORT_BUFFER);
+      const endIndex = Math.min(itemsLength - 1, currentIndex + VIEWPORT_BUFFER);
 
-    // Optimized keyboard navigation with RAF
-    let isKeyPressed = false;
+      // Unobserve items outside the buffer range
+      observedItems.forEach((item) => {
+        const index = parseInt(item.getAttribute("data-index") || "0");
+        if (index < startIndex || index > endIndex) {
+          observer.unobserve(item);
+          observedItems.delete(item);
+        }
+      });
 
+      // Observe items within the buffer range
+      for (let i = startIndex; i <= endIndex; i++) {
+        const item = itemsArray[i];
+        if (item && !observedItems.has(item)) {
+          observer.observe(item);
+          observedItems.add(item);
+        }
+      }
+    };
+
+    // Initial observation setup - only observe first few items
+    const initialObserveCount = Math.min(VIEWPORT_BUFFER * 2 + 1, itemsLength);
+    for (let i = 0; i < initialObserveCount; i++) {
+      observer.observe(itemsArray[i]);
+      observedItems.add(itemsArray[i]);
+    }
+
+    // Focus first item initially when component loads
+    if (itemsArray.length > 0) {
+      requestAnimationFrame(() => {
+        itemsArray[0].focus({ preventScroll: true });
+        currentIndex = 0;
+      });
+    }
+
+    // Throttled keyboard navigation for better performance
     const navigateToIndex = (newIndex: number) => {
-      if (newIndex === currentIndex || isKeyPressed) return;
+      if (newIndex === currentIndex || keyboardThrottle) return;
 
-      isKeyPressed = true;
+      keyboardThrottle = true;
       currentIndex = newIndex;
       isScrolling = true;
 
-      // Use RAF for smoother performance
+      // Use RAF for smoother performance and batch DOM operations
       requestAnimationFrame(() => {
-        itemsArray[currentIndex].focus();
-        itemsArray[currentIndex].scrollIntoView({ behavior: "smooth", block: "center" });
+        const targetElement = itemsArray[currentIndex];
+        targetElement.focus();
+        targetElement.scrollIntoView({ behavior: "smooth", block: "center" });
 
-        // Reset flags after animation
+        // Optimize observation around new position
+        optimizeObservation();
+
+        // Reset flags with shorter timeout for more responsive navigation
         setTimeout(() => {
           isScrolling = false;
-          isKeyPressed = false;
-        }, 250);
+          keyboardThrottle = false;
+        }, 150); // Reduced from 250ms for better responsiveness
       });
     };
 
-    // Event delegation for better performance
-    document.addEventListener(
-      "keydown",
-      (e: KeyboardEvent) => {
-        if (isKeyPressed) return;
+    // Optimized keyboard event handling with throttling
+    let keydownTimeout: NodeJS.Timeout | null = null;
+
+    const handleKeydown = (e: KeyboardEvent) => {
+      // Clear any pending keydown to prevent event buildup
+      if (keydownTimeout) {
+        clearTimeout(keydownTimeout);
+      }
+
+      keydownTimeout = setTimeout(() => {
+        if (keyboardThrottle) return;
 
         switch (e.key) {
           case "ArrowDown":
@@ -376,8 +436,30 @@ const colorThemes = {
               navigateToIndex(Math.max(currentIndex - 1, 0));
             }
         }
-      },
-      { passive: false }
-    );
+        keydownTimeout = null;
+      }, 16); // ~60fps throttling
+    };
+
+    // Use passive listeners where possible for better scroll performance
+    document.addEventListener("keydown", handleKeydown, { passive: false });
+
+    // Cleanup function for better memory management
+    const cleanup = () => {
+      observer.disconnect();
+      observedItems.clear();
+      document.removeEventListener("keydown", handleKeydown);
+      if (keydownTimeout) {
+        clearTimeout(keydownTimeout);
+      }
+    };
+
+    // Clean up on page navigation
+    document.addEventListener("astro:before-preparation", cleanup);
+
+    // Store cleanup function for potential manual cleanup
+    interface WindowWithCleanup extends Window {
+      __contentListCleanup?: () => void;
+    }
+    (window as WindowWithCleanup).__contentListCleanup = cleanup;
   });
 </script>
