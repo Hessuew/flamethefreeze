@@ -171,7 +171,7 @@ const colorThemes = {
                       class={`flex flex-col lg:flex-row ${isLeft ? "lg:flex-row-reverse lg:pr-10 xl:pr-[40px]" : " lg:pl-10 xl:pl-[40px]"} gap-6 xl:gap-[24px] lg:items-center`}
                     >
                       {/* Large Number Badge Section */}
-                      <div class="flex justify-center lg:justify-start flex-shrink-0">
+                      <div class="absolute md:relative flex justify-center lg:justify-start flex-shrink-0 z-20">
                         <div class="relative overflow-hidden rounded-xl xl:rounded-[12px] transition-all duration-700 w-24 h-24 md:w-60 md:h-60 xl:w-[240px] xl:h-[240px]">
                           <div class={`w-full h-full ${theme.iconBg} flex items-center justify-center rounded-full`}>
                             <div class="text-center relative z-10">
@@ -191,33 +191,33 @@ const colorThemes = {
 
                         {/* Header Section */}
                         <div class="mb-8 xl:mb-[32px] relative">
-                          <div class="flex flex-col md:flex-row gap-4 xl:gap-[16px] pb-4 sm:pb-0 items-start">
+                          <div class="flex flex-col md:flex-row gap-4 xl:gap-[16px] pb-0 items-start">
                             <div class="flex-shrink-0 relative group/image self-center">
                               <div class="absolute inset-0 bg-gradient-to-br from-orange-400/20 to-red-500/20 rounded-xl opacity-0 group-focus:opacity-100 transition-opacity duration-500" />
                               <Image
-                                class="relative z-10 rounded-xl w-40 h-40 md:w-[160px] md:h-[160px] object-cover shadow-lg border border-white/10 group-focus:border-orange-400/30 transition-all duration-500 group-focus:shadow-xl group-focus:shadow-orange-500/25 group-focus:scale-105"
+                                class="relative z-10 rounded-xl w-80 h-80 md:w-[160px] md:h-[160px] object-cover shadow-lg border border-white/10 group-focus:border-orange-400/30 transition-all duration-500 group-focus:shadow-xl group-focus:shadow-orange-500/25 group-focus:scale-105"
                                 loading="lazy"
-                                width={160}
-                                height={160}
+                                width={320}
+                                height={320}
                                 alt={"Content illustration"}
                                 {...item.image}
                               />
                             </div>
 
                             <div class="flex-1 min-w-0">
-                              <div class="flex items-center gap-3 xl:gap-[12px] mb-3 xl:mb-4">
+                              <div class="flex items-center gap-3 xl:gap-[12px] md:mb-3 xl:mb-4">
                                 <div
                                   class={`flex-1 h-0.5 bg-gradient-to-r ${theme.gradient} rounded-full opacity-60 group-focus:opacity-100 transition-opacity duration-500`}
                                 />
                               </div>
 
                               <p
-                                class="text-2xl xl:text-[28px] xl:leading-[36px] font-bold text-white mb-3 xl:mb-[12px] drop-shadow-sm"
+                                class="text-2xl xl:text-[28px] xl:leading-[36px] font-bold text-white md:mb-3 xl:mb-[12px] drop-shadow-sm"
                                 set:html={item.title}
                               />
 
                               <p
-                                class="hidden sm:block text-base xl:text-[16px] xl:leading-[24px] text-white mb-3 xl:mb-[12px]"
+                                class="hidden sm:block text-base xl:text-[16px] xl:leading-[24px] text-white md:mb-3 xl:mb-[12px]"
                                 set:html={item.subtitle}
                               />
 

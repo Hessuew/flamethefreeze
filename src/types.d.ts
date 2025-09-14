@@ -1,3 +1,4 @@
+import type { ImageMetadata } from "astro";
 import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import type { HTMLAttributes } from "astro/types";
 
@@ -65,7 +66,7 @@ export interface MetaDataStructuredData {
   "@id"?: string;
   headline?: string;
   description?: string;
-  image?: string | MetaDataImage;
+  image?: string | MetaDataImage | ImageMetadata;
   author?: {
     "@type": string;
     name: string;
@@ -76,7 +77,7 @@ export interface MetaDataStructuredData {
     name: string;
     logo?: {
       "@type": string;
-      url: string;
+      url: string | ImageMetadata;
     };
   };
   datePublished?: string;
