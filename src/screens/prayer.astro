@@ -22,49 +22,83 @@ const prayerPoints: PrayerPoint[] = [
   {
     icon: lang === "fi" ? "faith" : "transform",
     title: t("prayer.prayerPoints.1.title"),
-    subtitle: t("prayer.prayerPoints.1.subtitle"),
+    subtitle: [
+      t("prayer.prayerPoints.1.subtitle.1"),
+      t("prayer.prayerPoints.1.subtitle.2"),
+      t("prayer.prayerPoints.1.subtitle.3"),
+      t("prayer.prayerPoints.1.subtitle.4"),
+    ],
     bibleQuote: t("prayer.prayerPoints.1.bibleQuote"),
     color: "orange",
   },
   {
     icon: lang === "fi" ? "forgiveness" : "gift",
     title: t("prayer.prayerPoints.2.title"),
-    subtitle: t("prayer.prayerPoints.2.subtitle"),
+    subtitle: [
+      t("prayer.prayerPoints.2.subtitle.1"),
+      t("prayer.prayerPoints.2.subtitle.2"),
+      t("prayer.prayerPoints.2.subtitle.3"),
+      t("prayer.prayerPoints.2.subtitle.4"),
+    ],
     bibleQuote: t("prayer.prayerPoints.2.bibleQuote"),
     color: "blue",
   },
   {
     icon: lang === "fi" ? "scripture" : "productivity",
     title: t("prayer.prayerPoints.3.title"),
-    subtitle: t("prayer.prayerPoints.3.subtitle"),
+    subtitle: [
+      t("prayer.prayerPoints.3.subtitle.1"),
+      t("prayer.prayerPoints.3.subtitle.2"),
+      t("prayer.prayerPoints.3.subtitle.3"),
+      t("prayer.prayerPoints.3.subtitle.4"),
+    ],
     bibleQuote: t("prayer.prayerPoints.3.bibleQuote"),
     color: "green",
   },
   {
     icon: lang === "fi" ? "belief" : "love",
     title: t("prayer.prayerPoints.4.title"),
-    subtitle: t("prayer.prayerPoints.4.subtitle"),
+    subtitle: [
+      t("prayer.prayerPoints.4.subtitle.1"),
+      t("prayer.prayerPoints.4.subtitle.2"),
+      t("prayer.prayerPoints.4.subtitle.3"),
+      t("prayer.prayerPoints.4.subtitle.4"),
+    ],
     bibleQuote: t("prayer.prayerPoints.4.bibleQuote"),
     color: "red",
   },
   {
     icon: lang === "fi" ? "warfare" : "wisdom",
     title: t("prayer.prayerPoints.5.title"),
-    subtitle: t("prayer.prayerPoints.5.subtitle"),
+    subtitle: [
+      t("prayer.prayerPoints.5.subtitle.1"),
+      t("prayer.prayerPoints.5.subtitle.2"),
+      t("prayer.prayerPoints.5.subtitle.3"),
+      t("prayer.prayerPoints.5.subtitle.4"),
+    ],
     bibleQuote: t("prayer.prayerPoints.5.bibleQuote"),
     color: "purple",
   },
   {
     icon: lang === "fi" ? "spirit-guidance" : "community",
     title: t("prayer.prayerPoints.6.title"),
-    subtitle: t("prayer.prayerPoints.6.subtitle"),
+    subtitle: [
+      t("prayer.prayerPoints.6.subtitle.1"),
+      t("prayer.prayerPoints.6.subtitle.2"),
+      t("prayer.prayerPoints.6.subtitle.3"),
+      t("prayer.prayerPoints.6.subtitle.4"),
+    ],
     bibleQuote: t("prayer.prayerPoints.6.bibleQuote"),
     color: "indigo",
   },
   {
     icon: lang === "fi" ? "spiritual-prayer" : "prayer",
     title: t("prayer.prayerPoints.7.title"),
-    subtitle: t("prayer.prayerPoints.7.subtitle"),
+    subtitle: [
+      t("prayer.prayerPoints.7.subtitle.1"),
+      t("prayer.prayerPoints.7.subtitle.2"),
+      t("prayer.prayerPoints.7.subtitle.3"),
+    ],
     bibleQuote: t("prayer.prayerPoints.7.bibleQuote"),
     color: "yellow",
   },
@@ -144,9 +178,24 @@ const prayerPoints: PrayerPoint[] = [
   </div>
 
   <!-- 7-Point Prayer Guide Listicle -->
-  <BlurFade client:load delay={5} direction="up">
-    <PrayerPointsList prayerPoints={prayerPoints} />
-  </BlurFade>
+  <section id="prayer-guide" class="py-16 md:py-20 xl:py-[80px]">
+    <div class="max-w-6xl mx-auto xl:max-w-[1152px] px-4 sm:px-6">
+      <div class="text-center mb-16 xl:mb-[64px]">
+        <h2 class="text-4xl md:text-5xl xl:text-[48px] xl:leading-[56px] font-bold mb-6 xl:mb-[24px] text-white">
+          {t("prayer.hero.prayerPoints.title.1")}
+          <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
+            >{t("prayer.hero.prayerPoints.title.2")}</span
+          >
+          {t("prayer.hero.prayerPoints.title.3")}
+        </h2>
+        <p class="text-xl xl:text-[20px] xl:leading-[28px] text-gray-300 max-w-3xl mx-auto xl:max-w-[768px]">
+          {t("prayer.hero.prayerPoints.subtitle")}
+        </p>
+      </div>
+
+      <PrayerPointsList prayerPoints={prayerPoints} />
+    </div>
+  </section>
 
   <!-- Testimonies Section -->
   <WidgetWrapper id="testimonies" animated={false} containerClass="py-16 md:py-20 xl:py-[80px]">
@@ -170,9 +219,10 @@ const prayerPoints: PrayerPoint[] = [
         <div class="flex flex-col gap-8 xl:gap-[32px] h-full">
           <!-- Testimony 1 - Takes 2/3 height -->
           <div class="group relative flex-[2]">
-            <div
+            <article
               class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl xl:rounded-[16px] p-8 xl:p-[32px] border border-gray-700 border-orange-500/50 hover:border-orange-500/80 transition-all duration-300 h-full"
             >
+              <h3 class="sr-only">{t("prayer.testimonies.J.title")}</h3>
               <!-- Profile Image -->
               <div class="flex justify-center mb-6 xl:mb-[24px]">
                 <div
@@ -227,14 +277,15 @@ const prayerPoints: PrayerPoint[] = [
                   </p>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
 
           <!-- Testimony 2 - Takes 1/3 height -->
           <div class="group relative flex-1">
-            <div
+            <article
               class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl xl:rounded-[16px] p-6 xl:p-[24px] border border-gray-700 border-blue-500/50 hover:border-blue-500/80 transition-all duration-300 h-full"
             >
+              <h3 class="sr-only">{t("prayer.testimonies.G.title")}</h3>
               <!-- Profile Image -->
               <div class="flex justify-center mb-4 xl:mb-[16px]">
                 <div
@@ -289,7 +340,7 @@ const prayerPoints: PrayerPoint[] = [
                   </p>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
 
@@ -331,9 +382,10 @@ const prayerPoints: PrayerPoint[] = [
 
           <!-- Testimony 3 - Takes 2/3 height -->
           <div class="group relative flex-[2]">
-            <div
+            <article
               class="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl xl:rounded-[16px] p-8 xl:p-[32px] border border-gray-700 border-green-500/50 hover:border-green-500/80 transition-all duration-300 h-full"
             >
+              <h3 class="sr-only">{t("prayer.testimonies.A.title")}</h3>
               <!-- Profile Image -->
               <div class="flex justify-center mb-6 xl:mb-[32px]">
                 <div
@@ -388,7 +440,7 @@ const prayerPoints: PrayerPoint[] = [
                   </p>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>

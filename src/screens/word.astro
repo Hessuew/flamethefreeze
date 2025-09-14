@@ -154,12 +154,12 @@ const wordItems = [
       {t("index.hero.video.browser")}
     </video>
 
-    <Hero classes={{ containerClass: "relative z-10" }}>
+    <Hero classes={{ containerClass: "relative z-10", titleClass: "mb-0 md:mb-4 xl:mb-[16px]" }}>
       <Fragment slot="title">
         <div class="flex flex-col justify-center">
           <TextAnimate
             client:load
-            className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tight tracking-tighter md:mb-4 xl:mb-[16px] font-heading text-white"
+            className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tight tracking-tighter mb-0 md:mb-4 xl:mb-[16px] font-heading text-white"
             animation="blurInUp"
             delay={1}
             duration={0.6}
@@ -169,7 +169,7 @@ const wordItems = [
           />
           <TextAnimate
             client:load
-            className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tight tracking-tighter mb-4 xl:mb-[16px] font-heading text-orange-400"
+            className="text-4xl xs:text-5xl md:text-6xl xl:text-[60px] xl:leading-[64px] font-semibold leading-tight tracking-tighter mb-0 md:mb-4 xl:mb-[16px] font-heading text-orange-400"
             animation="blurInUp"
             delay={1.6}
             duration={0.6}
