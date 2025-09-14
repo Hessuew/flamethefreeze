@@ -6,7 +6,7 @@ import PrayerIcons from "../ui/PrayerIcons.astro";
 export interface PrayerPoint {
   icon: string; // Custom prayer icon name (e.g., "transform", "gift", etc.)
   title: string;
-  subtitle: string;
+  subtitle: string | string[];
   bibleQuote: string;
   color: "orange" | "blue" | "green" | "purple" | "red" | "yellow" | "pink" | "indigo";
 }
@@ -82,7 +82,7 @@ const colorThemes = {
 <WidgetWrapper
   id="prayer-guide"
   animated={false}
-  containerClass={twMerge("z-30 -mt-60 xl:-mt-[240px] py-0 md:py-0 lg:py-0 xl:py-0 scroll-mt-[100px]", containerClass)}
+  containerClass={twMerge("z-30 py-0 md:py-0 lg:py-0 xl:py-0 scroll-mt-[100px]", containerClass)}
 >
   <div class="max-w-4xl xl:max-w-[896px] mx-auto">
     <div class="space-y-12 xl:space-y-[48px]">
@@ -110,11 +110,22 @@ const colorThemes = {
                     />
                     <p class="text-2xl xl:text-[24px] xl:leading-[32px] font-bold text-white" set:html={point.title} />
                   </div>
-                  <p
-                    class="text-base xl:text-[16px] xl:leading-[24px] text-gray-300 mb-4 xl:mb-[16px] leading-relaxed"
-                    set:html={point.subtitle}
-                  />
-                  <div class={`bg-gray-900/50 rounded-lg p-4 xl:p-[16px] border-l-4 ${theme.borderLeft}`}>
+                  {Array.isArray(point.subtitle) ? (
+                    point.subtitle.map((subtitle) => (
+                      <p
+                        class="text-base xl:text-[16px] xl:leading-[24px] text-gray-300 mb-1 xl:mb-[4px] leading-relaxed"
+                        set:html={subtitle}
+                      />
+                    ))
+                  ) : (
+                    <p
+                      class="text-base xl:text-[16px] xl:leading-[24px] text-gray-300 mb-4 xl:mb-[16px] leading-relaxed"
+                      set:html={point.subtitle}
+                    />
+                  )}
+                  <div
+                    class={`bg-gray-900/50 rounded-lg p-4 mt-6 xl:p-[16px] xl:mt-[24px] border-l-4 ${theme.borderLeft}`}
+                  >
                     <p
                       class={`${theme.textColor} text-base xl:text-[16px] xl:leading-[24px]`}
                       set:html={point.bibleQuote}

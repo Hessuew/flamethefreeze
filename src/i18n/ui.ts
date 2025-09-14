@@ -136,62 +136,165 @@ export const ui = {
     "prayer.hero.title.1": "Prayer for Works:",
     "prayer.hero.title.2": "Transform Your Career",
     "prayer.hero.subtitle":
-      "Discover a 7-Point list to add the fire of God to your professional life through prayer for works 🔥🔥",
-    "prayer.hero.cta.button": "7-point list for prayer for works",
-    "prayer.prayerPoints.1.title": "Transform yourself → transform your results",
-    "prayer.prayerPoints.1.subtitle":
-      "It is stupid to expect different results while doing the same thing 🤪. Don't focus on a good container but improve the content 🎓. More expensive content naturally needs a better container 💎. Diamonds are not stored in a milk bottle, and milk is not stored in a bank 🥛🏦",
+      "Discover powerful prayer strategies for work success. This 7-point prayer guide brings divine wisdom and workplace blessings through biblical prayer for works 🔥🔥",
+    "prayer.hero.cta.button": "Get the 7-point prayer for works guide",
+    "prayer.hero.prayerPoints.title.1": "7-Point ",
+    "prayer.hero.prayerPoints.title.2": "Prayer for Works",
+    "prayer.hero.prayerPoints.title.3": "Guide",
+    "prayer.hero.prayerPoints.subtitle":
+      "Transform your career through biblical prayer strategies. Each point builds divine wisdom for workplace success.",
+    "prayer.prayerPoints.1.title": "Transform yourself → transform your career results",
+    "prayer.prayerPoints.1.subtitle.1": `
+    1. It is stupid to expect different results while doing the same thing 🤪.
+    <br/>&nbsp;&nbsp;• Career transformation begins with personal transformation through prayer
+    `,
+    "prayer.prayerPoints.1.subtitle.2": `
+    2. Don't focus on a good container but improve the content 🎓.
+    <br/>&nbsp;&nbsp;• Don't focus on external changes but improve your inner character through workplace prayer
+    `,
+    "prayer.prayerPoints.1.subtitle.3": `
+    3. more expensive content naturally needs a better container 💎.
+    <br/>&nbsp;&nbsp;• when your professional output changes, your surroundings must change: it's a spiritual law.
+    `,
+    "prayer.prayerPoints.1.subtitle.4": `
+    4. Diamonds are not stored in a milk bottle, and milk is not stored in a bank 🥛🏦.
+    <br/>&nbsp;&nbsp;• Divine wisdom attracts naturally better opportunities. Check where you are now > do prayer for works
+    `,
     "prayer.prayerPoints.1.bibleQuote":
       '"Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth." - 2 Timothy 2:15',
-    "prayer.prayerPoints.2.title": "Your gift <span class='italic'>makes</span> room for you",
-    "prayer.prayerPoints.2.subtitle":
-      "You don't need to teach a duck to swim, it already knows how to swim 🦆.  There is always space in the air for an eagle because it flies so high 🦅. The value of a diamond will make people all around the world to look for it 🔎💎. Your gift (your inward, inbuilt ability) makes you room you don't have to struggle to get 🏆.",
+    "prayer.prayerPoints.2.title": "Your divine gift <span class='italic'>creates</span> career opportunities",
+    "prayer.prayerPoints.2.subtitle.1": `
+    1. You don't need to teach a duck to swim, it already knows how to swim 🦆.
+    <br/>&nbsp;&nbsp;• God-given talents naturally find their place in the workplace through prayer.
+    `,
+    "prayer.prayerPoints.2.subtitle.2": `
+    2. There is always space in the air for an eagle because it flies so high 🦅.
+    <br/>&nbsp;&nbsp;• Professional excellence creates opportunities like eagles soar above competition.
+    `,
+    "prayer.prayerPoints.2.subtitle.3": `
+    3. The value of a diamond will make people all around the world to look for it 🔎💎.
+    <br/>&nbsp;&nbsp;• Your unique abilities, developed through prayer for works, attract the right career connections.
+    `,
+    "prayer.prayerPoints.2.subtitle.4": `
+    4. Your gift (your inward, inbuilt ability) makes you room you don't have to struggle to get 🏆.
+    <br/>&nbsp;&nbsp;• Divine gifts make room for advancement without struggle when aligned with God's purpose.
+    `,
     "prayer.prayerPoints.2.bibleQuote": `"A man's gift maketh room for him, and bringeth him before great men." - Proverbs 16:3`,
-    "prayer.prayerPoints.3.title": "Value, Productivity, Diligence",
-    "prayer.prayerPoints.3.subtitle":
-      "Unrefined gold is worth nothing, unprocessed oil is just a black paste ⚜️🛢️. Nokia 1100 was the golden standard but now a museum item ☎️. Apple _produces_ new version every year and remains on top 🍏. One operation system is for vibe coders, but multiplying and distributing it makes Microsoft the king 👑. ",
+    "prayer.prayerPoints.3.title": "Workplace Excellence Through Prayer: Value, Productivity, Diligence",
+    "prayer.prayerPoints.3.subtitle.1": `
+    1. Unrefined gold is worth nothing, unprocessed oil is just a black paste ⚜️🛢️.
+    <br/>&nbsp;&nbsp;• Raw talent needs prayer-guided development to create career value.
+      `,
+    "prayer.prayerPoints.3.subtitle.2": `
+    2. Nokia 1100 was the golden standard but now a museum item ☎️.
+    <br/>&nbsp;&nbsp;• Yesterday's success requires today's prayer for continued workplace relevance.
+    `,
+    "prayer.prayerPoints.3.subtitle.3": `
+    3. Apple _produces_ new version every year and remains on top 🍏.
+    <br/>&nbsp;&nbsp;• Consistent prayer for works produces continuous professional growth and innovation.
+    `,
+    "prayer.prayerPoints.3.subtitle.4": `
+    4. One operation system is for vibe coders, but multiplying and distributing it makes Microsoft the king 👑.
+    <br/>&nbsp;&nbsp;• Divine wisdom multiplies your impact across your entire career field.
+    `,
     "prayer.prayerPoints.3.bibleQuote":
       '"Seest thou a man diligent in his business? he shall stand before kings; he shall not stand before mean men." - Proverbs 22:29',
-    "prayer.prayerPoints.4.title": "The Main Key: <span class='text-red-500'>Love for God</span>",
-    "prayer.prayerPoints.4.subtitle":
-      "A dying man will spent all his money to for a one more day, and dead man cannot win Eurojackpot ⌛🎟️. 10B spent on bombs is an outrage, but 1,000 spent on saving lives is a celebration 🤯🎉. The value of a money is dependant on the usage ⚖️. The eternal value of a soul is dependant on the love for God ❤️‍🔥",
+    "prayer.prayerPoints.4.title": "The Foundation of Career Prayer: <span class='text-red-500'>Love for God</span>",
+    "prayer.prayerPoints.4.subtitle.1": `
+    1. A dying man will spent all his money to for a one more day, and dead man cannot win Eurojackpot ⌛🎟️.
+    <br/>&nbsp;&nbsp;• Career success without spiritual foundation is temporary.
+    `,
+    "prayer.prayerPoints.4.subtitle.2": `
+    2. 10B spent on bombs is an outrage, but 1,000 spent on saving lives is a celebration 🤯🎉.
+    <br/>&nbsp;&nbsp;• Workplace achievements gain eternal value when rooted in prayer for works.
+    `,
+    "prayer.prayerPoints.4.subtitle.3": `
+    3. The value of a money is dependant on the usage ⚖️.
+    <br/>&nbsp;&nbsp;• Professional decisions guided by divine love create lasting impact.
+    `,
+    "prayer.prayerPoints.4.subtitle.4": `
+    4. The eternal value of a soul is dependant on the love for God ❤️
+    <br/>&nbsp;&nbsp;• The eternal value of your career depends on your love for God expressed through workplace prayer.
+    `,
     "prayer.prayerPoints.4.bibleQuote":
       '"For what shall it profit a man, if he shall gain the whole world, and lose his own soul?" - Mark 8:36',
-    "prayer.prayerPoints.5.title": "Wisdom of God for the greatest results",
-    "prayer.prayerPoints.5.subtitle":
-      "Many men can carry many logs but a cart can carry many men and logs 🪵🧺. Gideon can travail for his life with 30,000 or win without a fight with 300 🪖🏖. Surely you can get power from the devil like drunkard happiness from a beer 🍺, but wisdom of God keeps you as a counselor from Nebuchadnezzar to Cyrus 👥. ",
+    "prayer.prayerPoints.5.title": "Divine Wisdom Through Prayer for Maximum Career Results",
+    "prayer.prayerPoints.5.subtitle.1": `
+      1. Many men can carry many logs but a cart can carry many men and logs 🪵🧺.
+      <br/>&nbsp;&nbsp;• Strategic prayer brings supernatural efficiency to workplace challenges.
+      `,
+    "prayer.prayerPoints.5.subtitle.2": `
+      2. Gideon can travail for his life with 30,000 or win without a fight with 300 🪖🏖.
+      <br/>&nbsp;&nbsp;• Divine wisdom through prayer for works achieves more with less, like Gideon's victory.
+    `,
+    "prayer.prayerPoints.5.subtitle.3": `
+      3. Surely you can get power from the devil like drunkard happiness from a beer 🍺.
+      <br/>&nbsp;&nbsp;• Worldly shortcuts offer temporary gains.
+    `,
+    "prayer.prayerPoints.5.subtitle.4": `
+      4. But wisdom of God keeps you as a counselor from Nebuchadnezzar to Cyrus 👥.
+      <br/>&nbsp;&nbsp;• Prayer-guided wisdom provides lasting career success and divine favor from leadership.
+    `,
     "prayer.prayerPoints.5.bibleQuote":
       '"Wisdom strengtheneth the wise more than ten mighty men which are in the city." - Ecclesiastes 7:19',
-    "prayer.prayerPoints.6.title": "Walk with wise → be wise.</br>Walk with fools → be a fool.",
-    "prayer.prayerPoints.6.subtitle":
-      "Jesus can die on a cross but Joseph will give Him a tomb 🍙. Paul can be the apostle of the gentiles but Barnabas will bring him to Antioch 🏛️. Israel is the chosen people but Pharaoh gave them the Goshen 𓁈⚱️. You might have lived as a worst sinner but through Jesus you are a heir of God 🤴🏻. ",
+    "prayer.prayerPoints.6.title": "Prayer-Guided Relationships: Choose Wise Workplace Connections",
+    "prayer.prayerPoints.6.subtitle.1": `
+     1. Jesus can die on a cross but Joseph will give Him a tomb 🍙.
+     <br/>&nbsp;&nbsp;• Divine connections support your career journey through prayer for works.
+    `,
+    "prayer.prayerPoints.6.subtitle.2": `
+     2. Paul can be the apostle of the gentiles but Barnabas will bring him to Antioch 🏛️.
+     <br/>&nbsp;&nbsp;• God provides mentors and advocates when you seek His guidance in workplace relationships.
+    `,
+    "prayer.prayerPoints.6.subtitle.3": `
+     3. Israel is the chosen people but Pharaoh gave them the Goshen 𓁈⚱️.
+     <br/>&nbsp;&nbsp;• Prayer opens doors to favor with leadership and colleagues.
+    `,
+    "prayer.prayerPoints.6.subtitle.4": `
+     4. You might have lived as a worst sinner but through Jesus you are a heir of God 🤴🏻.
+     <br/>&nbsp;&nbsp;• Through prayer for works, you become an heir to divine career blessings.
+    `,
     "prayer.prayerPoints.6.bibleQuote":
       '"And Jesus increased in wisdom and stature, and in favour with God and man." - Luke 2:52',
-    "prayer.prayerPoints.7.title": "Prayer to change the spiritual climate",
-    "prayer.prayerPoints.7.subtitle":
-      "You can look the greatest fool but on the day of Noah's flood only your ship will be saved ⛵. You can build the greatest city but Vesuvius will bury all the Pompeii in ashes 🌋. You can build the greatest life but without prayer you will toss that great ship miniature into the sea without knowing if it is calm or raging 🌊.",
+    "prayer.prayerPoints.7.title": "Workplace Prayer: Transforming Your Professional Spiritual Climate",
+    "prayer.prayerPoints.7.subtitle.1": `
+      1. You can look the greatest fool but on the day of Noah's flood only your ship will be saved ⛵.
+      <br/>&nbsp;&nbsp;• Prayer for works creates divine protection in uncertain career seasons.
+      `,
+    "prayer.prayerPoints.7.subtitle.2": `
+      2. You can build the greatest city but Vesuvius will bury all the Pompeii in ashes 🌋.
+      <br/>&nbsp;&nbsp;• Economic storms destroy unprepared careers, but prayer-covered professionals remain secure.
+    `,
+    "prayer.prayerPoints.7.subtitle.3": `
+      3. You can build the greatest life but without prayer you will toss that great ship miniature into the sea without knowing if it is calm or raging 🌊.
+      <br/>&nbsp;&nbsp;• Consistent workplace prayer provides divine navigation through professional storms.
+    `,
     "prayer.prayerPoints.7.bibleQuote":
       '"And he spake a parable unto them to this end, that men ought always to pray, and not to faint." - Luke 18:1',
     "prayer.testimonies.title.1": "Real Stories of",
-    "prayer.testimonies.title.2": "Prayer at Work",
+    "prayer.testimonies.title.2": "Prayer for Works Success",
     "prayer.testimonies.subtitle":
-      "Discover how this 7-point list for prayer for work has transformed careers and brought divine favor into professional experts.",
+      "Discover how this 7-point prayer for works guide has transformed careers, brought divine favor, and created breakthrough moments for workplace professionals through strategic prayer.",
+    "prayer.testimonies.A.title": "Prayer for Works Success Story - Professor Career Transformation",
     "prayer.testimonies.A.description":
-      "5 years ago my PHD went to the trash bin, but now I'm a professor and my work is being published in top-tier journals. Seek first the kingdom of God, and all other things shall be added to you.",
+      "5 years ago my PHD went to the trash bin, but through prayer for works and seeking God's kingdom first, I'm now a professor with publications in top-tier journals. Prayer transformed my career completely.",
     "prayer.testimonies.A.profession":
       "Award-winning physician and professor (associate) of clinical epidemiology and child health",
+    "prayer.testimonies.G.title": "Prayer for Works Testimony - Research Career Divine Guidance",
     "prayer.testimonies.G.description":
-      "I have experienced many miracles, and guidances of God in my career. I have already recognized some manifestations of the wisdom of God, and I believe He will fulfill everything He has said concerning me.",
+      "Through consistent prayer for works, I've experienced career miracles and divine guidance. God's wisdom manifests in my professional decisions, and I trust He will fulfill every career promise through continued workplace prayer and prayer for wisdom.",
     "prayer.testimonies.G.profession": "Researcher, PhD student",
+    "prayer.testimonies.J.title": "Prayer for Works Success - IT Career Transformation Through Divine Calling",
     "prayer.testimonies.J.description":
-      "I never was interested of creating websites. Now I'm designing, and developing them for global names. And this is just the tip of the iceberg of what God has spoken. We will do great exploits for our God as we expand the frontiers of His kingdom before Jesus returns!",
+      "I never had interest in web development, but prayer for works revealed God's plan. Now I design and develop for global names. This career transformation through workplace prayer is just the beginning of God's promises for my professional life!",
     "prayer.testimonies.J.profession": "IT specialist",
     "prayer.testimonies.Y.title": "Your testimony?",
-    "prayer.testimonies.Y.description": "Have the prayer for works transformed your work life already?",
+    "prayer.testimonies.Y.description":
+      "Has prayer for works already transformed your career? Share how workplace prayer brought divine breakthrough in your professional journey.",
     "prayer.cta.title.1": "Ready to",
-    "prayer.cta.title.2": "Ignite Your Prayer For Works",
+    "prayer.cta.title.2": "Ignite Your Prayer For Works Journey",
     "prayer.cta.subtitle.1":
-      "Start implementing these prayer strategies today and watch God work miracles in your professional journey.",
+      "Start implementing these powerful prayer for works strategies today and watch God work career miracles in your professional journey through divine workplace prayer.",
     "prayer.cta.button": "What's next?",
     "about.hero.title.1": "What does the",
     "about.hero.title.2": "Holy Ghost do?",
