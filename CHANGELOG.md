@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.22.0](https://github.com/Hessuew/flamethefreeze/compare/v3.21.0...v3.22.0) (2025-09-14)
+
+
+### Features
+
+* add "In a biblical church" prefix to all church step titles ([#288](https://github.com/Hessuew/flamethefreeze/issues/288)) ([02d2d53](https://github.com/Hessuew/flamethefreeze/commit/02d2d530df608a85046cc3d91800e8880c3fbfa0))
+* enhance prayer page with responsive design and expanded content ([#287](https://github.com/Hessuew/flamethefreeze/issues/287)) ([5b95d96](https://github.com/Hessuew/flamethefreeze/commit/5b95d96aa575788b032c3e1787123849002f7bff))
+
 ## [3.21.0](https://github.com/Hessuew/flamethefreeze/compare/v3.20.0...v3.21.0) (2025-09-07)
 
 
