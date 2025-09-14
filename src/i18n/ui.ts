@@ -438,7 +438,7 @@ export const ui = {
       "You can spot a biblical church by asking a few practical questions. 🤔💭 Check these 10 key aspects and see how the church measures up. 📐👷 🏛️",
     "church.steps.tagline": "An eye opener",
     "church.steps.title": "The church to attend is where:",
-    "church.steps.items.1.title": "Jesus is glorified",
+    "church.steps.items.1.title": "In a biblical church, Jesus is glorified",
     "church.steps.items.1.imageAlt": "Biblical church 1. Jesus is glorified",
     "church.steps.items.1.question":
       "Question:<br/> Is the focus that people will love Jesus, and yield their whole lives to him without holding anything back?",
@@ -447,7 +447,7 @@ export const ui = {
       "He shall glorify me: for he shall receive of mine, and shall shew it unto you. Joh 16:14 KJV",
     "church.steps.items.1.description3":
       "Whether therefore ye eat, or drink, or whatsoever ye do, do all to the glory of God. 1 Cor 10:31 KJV",
-    "church.steps.items.2.title": "The cross is preached",
+    "church.steps.items.2.title": "In a biblical church, the cross is preached",
     "church.steps.items.2.imageAlt": "Biblical church 2. The cross is preached",
     "church.steps.items.2.question": "Question: Where is the solution found? In Jesus or in other things?",
     "church.steps.items.2.description1":
@@ -456,7 +456,7 @@ export const ui = {
       "Him ye have taken, and crucified and slain: Whom God hath raised up, having loosed the pains of death: because it was not possible that he should be holden of it. Acts 2:23,24 KJV",
     "church.steps.items.2.description3":
       "Moreover, brethren, I declare unto you the gospel ... Christ died for our sins; And that he was buried, and that he rose again the third day according to the scriptures. 1 Cor 15:1-4 KJV",
-    "church.steps.items.3.title": "Genuine love",
+    "church.steps.items.3.title": "In a biblical church, there is genuine love",
     "church.steps.items.3.imageAlt": "Biblical church 3. Genuine love",
     "church.steps.items.3.subtitle":
       "Love to God and to brethren abounds out of a pure heart, of good conscience and of faith unfeigned.",
@@ -468,7 +468,7 @@ export const ui = {
       "Whom having not seen, ye love; in whom, though now ye see him not, yet believing, ye rejoice with joy unspeakable and full of glory. 1 Pet 1:8 KJV",
     "church.steps.items.3.description3":
       "And this commandment have we from him, That he who loveth God love his brother also. 1 Joh 4:21 KJV",
-    "church.steps.items.4.title": "The love of the world dies",
+    "church.steps.items.4.title": "In a biblical church, the love of the world dies",
     "church.steps.items.4.imageAlt": "Biblical church 4. The love of the world dies",
     "church.steps.items.4.subtitle": "The love of the world dies, and the love of the things of the world dies.",
     "church.steps.items.4.question":
@@ -489,7 +489,7 @@ export const ui = {
       "But we will give ourselves continually to prayer, and to the ministry of the word. Acts 6:4 KJV",
     "church.steps.items.4.description8":
       "Therefore, my beloved brethren, be ye stedfast, unmovable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord. 1 Cor 15:58 KJV.",
-    "church.steps.items.5.title": "Passion to pray is on full flame🔥",
+    "church.steps.items.5.title": "In a biblical church, passion to pray is on full flame🔥",
     "church.steps.items.5.imageAlt": "Biblical church 5. Passion to pray is on full flame",
     "church.steps.items.5.subtitle":
       "Your passion to pray together and individually is kindled to full flame and just enlarges day by day. Wanting to pray for hours and hours.",
@@ -505,7 +505,7 @@ export const ui = {
       "And being let go, they reported all that the chief priests and elders had said unto them. And when they heard that, they lifted up their voice to God with one accord ... Acts 4:23,24 KJV",
     "church.steps.items.5.description5":
       "O generation of vipers, how can ye, being evil, speak good things? for out of the abundance of the heart the mouth speaketh. Mat 12:34 KJV",
-    "church.steps.items.6.title": "You get more people saved",
+    "church.steps.items.6.title": "In a biblical church, you get more people saved",
     "church.steps.items.6.imageAlt": "Biblical church 6. You get more people saved",
     "church.steps.items.6.question":
       "Question: Is there dedicated time for evangelism; Do the people in the church speak about the salvation of souls?",
@@ -513,7 +513,7 @@ export const ui = {
       "The fruit of the righteous is a tree of life; and he that winneth souls is wise. Pro 11:30 KJV",
     "church.steps.items.6.description2":
       "And he said unto them, Go ye into all the world, and preach the gospel to every creature. Mark 16:15 KJV",
-    "church.steps.items.7.title": "Holiness is evident",
+    "church.steps.items.7.title": "In a biblical church, holiness is evident",
     "church.steps.items.7.imageAlt": "Biblical church 7. Holiness is evident",
     "church.steps.items.7.subtitle": "Holiness is preached and is evident in the lives of people.",
     "church.steps.items.7.question":
@@ -524,7 +524,8 @@ export const ui = {
       "But as he which hath called you is holy, so be ye holy in all manner of conversation; Because it is written, Be ye holy; for I am holy. 1 Pet 1:15 KJV.",
     "church.steps.items.7.description3":
       "...When he shall appear, we shall be like him; for we shall see him as he is. And every man that hath this hope in him purifieth himself, even as he is pure. 1 Joh 3:2,3 KJV.",
-    "church.steps.items.8.title": 'Sin is hated and <span class="underline text-amber-100">judged</span>',
+    "church.steps.items.8.title":
+      'In a biblical church, sin is hated and <span class="underline text-amber-100">judged</span>',
     "church.steps.items.8.imageAlt": "Biblical church 8. Sin is hated and judged",
     "church.steps.items.8.question":
       "Question: There is an open rebuke for sin. No one is allowed to have small sins in their lives.",
@@ -534,7 +535,7 @@ export const ui = {
       "And others save with fear, pulling them out of the fire; hating even the garment spotted by the flesh. Jud 1:23 KJV",
     "church.steps.items.8.description3":
       "For I verily, as absent in body, but present in spirit, have judged already, as though I were present, concerning him that hath so done this deed. 1 Cor 5:3 KJV.",
-    "church.steps.items.9.title": "POWER of God is present!",
+    "church.steps.items.9.title": "In a biblical church, the power of God is present!",
     "church.steps.items.9.imageAlt": "Biblical church 9. POWER of God is present!",
     "church.steps.items.9.subtitle":
       "Sin ceases from your life, you are released from your oppressions, the addictions are broken, sicknesses are healed, demons are being cast out, and lives are being transformed by the POWER of God!",
@@ -548,7 +549,7 @@ export const ui = {
       "How God anointed Jesus of Nazareth with the Holy Ghost and with power: who went about doing good, and healing all that were oppressed of the devil; for God was with him.",
     "church.steps.items.9.description4":
       "And my speech and my preaching was not with enticing words of man's wisdom, but in demonstration of the Spirit and of power. 1 Cor 2:4 KJV",
-    "church.steps.items.10.title": "God is present",
+    "church.steps.items.10.title": "In a biblical church, God is present",
     "church.steps.items.10.imageAlt": "Biblical church 10. God is present",
     "church.steps.items.10.subtitle": "There is liberty, righteousness, joy, and peace in the Holy Ghost.",
     "church.steps.items.10.question":
