@@ -23,49 +23,84 @@ const prayerPoints: PrayerPoint[] = [
   {
     icon: "holy-ghost-identity",
     title: t("about.prayerPoints.1.title"),
-    subtitle: t("about.prayerPoints.1.subtitle"),
+    subtitle: [
+      t("about.prayerPoints.1.subtitle.1"),
+      t("about.prayerPoints.1.subtitle.2"),
+      t("about.prayerPoints.1.subtitle.3"),
+      t("about.prayerPoints.1.subtitle.4"),
+    ],
     bibleQuote: t("about.prayerPoints.1.bibleQuote"),
     color: "orange",
   },
   {
     icon: "revelation",
     title: t("about.prayerPoints.2.title"),
-    subtitle: t("about.prayerPoints.2.subtitle"),
+    subtitle: [
+      t("about.prayerPoints.2.subtitle.1"),
+      t("about.prayerPoints.2.subtitle.2"),
+      t("about.prayerPoints.2.subtitle.3"),
+      t("about.prayerPoints.2.subtitle.4"),
+    ],
     bibleQuote: t("about.prayerPoints.2.bibleQuote"),
     color: "blue",
   },
   {
     icon: "friendship",
     title: t("about.prayerPoints.3.title"),
-    subtitle: t("about.prayerPoints.3.subtitle"),
+    subtitle: [
+      t("about.prayerPoints.3.subtitle.1"),
+      t("about.prayerPoints.3.subtitle.2"),
+      t("about.prayerPoints.3.subtitle.3"),
+      t("about.prayerPoints.3.subtitle.4"),
+    ],
     bibleQuote: t("about.prayerPoints.3.bibleQuote"),
     color: "green",
   },
   {
     icon: "heaven-to-earth",
     title: t("about.prayerPoints.4.title"),
-    subtitle: t("about.prayerPoints.4.subtitle"),
+    subtitle: [
+      t("about.prayerPoints.4.subtitle.1"),
+      t("about.prayerPoints.4.subtitle.2"),
+      t("about.prayerPoints.4.subtitle.3"),
+      t("about.prayerPoints.4.subtitle.4"),
+    ],
     bibleQuote: t("about.prayerPoints.4.bibleQuote"),
     color: "red",
   },
   {
     icon: "scripture-author",
     title: t("about.prayerPoints.5.title"),
-    subtitle: t("about.prayerPoints.5.subtitle"),
+    subtitle: [
+      t("about.prayerPoints.5.subtitle.1"),
+      t("about.prayerPoints.5.subtitle.2"),
+      t("about.prayerPoints.5.subtitle.3"),
+      t("about.prayerPoints.5.subtitle.4"),
+    ],
     bibleQuote: t("about.prayerPoints.5.bibleQuote"),
     color: "purple",
   },
   {
     icon: "greater-one",
     title: t("about.prayerPoints.6.title"),
-    subtitle: t("about.prayerPoints.6.subtitle"),
+    subtitle: [
+      t("about.prayerPoints.6.subtitle.1"),
+      t("about.prayerPoints.6.subtitle.2"),
+      t("about.prayerPoints.6.subtitle.3"),
+      t("about.prayerPoints.6.subtitle.4"),
+    ],
     bibleQuote: t("about.prayerPoints.6.bibleQuote"),
     color: "indigo",
   },
   {
     icon: "harvest-work",
     title: t("about.prayerPoints.7.title"),
-    subtitle: t("about.prayerPoints.7.subtitle"),
+    subtitle: [
+      t("about.prayerPoints.7.subtitle.1"),
+      t("about.prayerPoints.7.subtitle.2"),
+      t("about.prayerPoints.7.subtitle.3"),
+      t("about.prayerPoints.7.subtitle.4"),
+    ],
     bibleQuote: t("about.prayerPoints.7.bibleQuote"),
     color: "yellow",
   },
@@ -144,10 +179,25 @@ const prayerPoints: PrayerPoint[] = [
     </Hero>
   </div>
 
-  <!-- 7-Point Prayer Guide Listicle -->
-  <BlurFade client:load delay={5} direction="up">
-    <PrayerPointsList prayerPoints={prayerPoints} />
-  </BlurFade>
+  <!-- 7-Point Holy Ghost Guide Listicle -->
+  <section id="holy-ghost-guide" class="py-16 md:py-20 xl:py-[80px]">
+    <div class="max-w-6xl mx-auto xl:max-w-[1152px] px-4 sm:px-6">
+      <div class="text-center mb-16 xl:mb-[64px]">
+        <h2 class="text-4xl md:text-5xl xl:text-[48px] xl:leading-[56px] font-bold mb-6 xl:mb-[24px] text-white">
+          {t("about.hero.prayerPoints.title.1")}
+          <span class="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent"
+            >{t("about.hero.prayerPoints.title.2")}</span
+          >
+          {t("about.hero.prayerPoints.title.3")}
+        </h2>
+        <p class="text-xl xl:text-[20px] xl:leading-[28px] text-gray-300 max-w-3xl mx-auto xl:max-w-[768px]">
+          {t("about.hero.prayerPoints.subtitle")}
+        </p>
+      </div>
+
+      <PrayerPointsList prayerPoints={prayerPoints} />
+    </div>
+  </section>
 
   <!-- Image Showcase Widget ********* -->
 

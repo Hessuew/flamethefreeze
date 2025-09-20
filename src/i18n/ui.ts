@@ -300,38 +300,141 @@ export const ui = {
     "about.hero.title.2": "Holy Ghost do?",
     "about.hero.subtitle": "Discover what does the Holy Ghost do with a 7-Point list. Power of the Holy Ghost in 2025?",
     "about.hero.cta.button": "7-point: What does the Holy Ghost do?",
+    "about.hero.prayerPoints.title.1": "7-Point ",
+    "about.hero.prayerPoints.title.2": "What does the Holy Ghost do",
+    "about.hero.prayerPoints.title.3": "Guide",
+    "about.hero.prayerPoints.subtitle":
+      "When you understand what does the Holy Ghost do and who He is, your life will be transformed. Learn what does the Holy Ghost do and dive into a living, intimate relationship with the Almighty.",
     "about.prayerPoints.1.title": "What is the Holy Ghost?",
-    "about.prayerPoints.1.subtitle":
-      "Can a rock speak? 🪨 Can a cloud act? 🌧 Does water have a will? 🌊 Can a tree feel? 🌳 Can a plant have identity? 🌿 Is car a 'he' or 'she'? 🚗 Naturally no. Then naturally the Holy Ghost is a person: 'When he is come.. he will guide you' ... 'The Holy Ghost said, Separate unto me'. <br /> Is a finger of God part of God? ☝️ Did God lead the Israelites in the wilderness and was grieved with them? 🏞️😔 Naturally yes. So the Holy Ghost is God, 'If I with the finger of God cast out devils' ... 'Wherefore (as the Holy Ghost saith .. Wherefore I was grieved with that generation'",
+    "about.prayerPoints.1.subtitle.1": `
+    1. Can a rock speak? Can a cloud act? Does water have a will? 🪨🌧🌊
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He demonstrates divine personality through communication.
+      `,
+    "about.prayerPoints.1.subtitle.2": `
+    2. The Holy Ghost is a person: 'When he is come.. he will guide you' 🗣️.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He guides believers with personal direction and wisdom.
+    `,
+    "about.prayerPoints.1.subtitle.3": `
+    3. Is a finger of God part of God? Did God lead the Israelites in the wilderness? ☝️🏞️
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He operates as God himself in divine leadership.
+    `,
+    "about.prayerPoints.1.subtitle.4": `
+    4. 'If I with the finger of God cast out devils' - The Holy Ghost is God 👑.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He exercises divine power and authority over evil.
+    `,
     "about.prayerPoints.1.bibleQuote":
       '"The grace of the Lord Jesus Christ, and the love of God, <span class="underline">and the communion of the Holy Ghost</span>, be with you all. Amen" - 2 Corinthians 13:14',
     "about.prayerPoints.2.title": "He reveals",
-    "about.prayerPoints.2.subtitle":
-      "The Holy Ghost is a revealer of secrets. 🔐 The things of the spirit cannot be discerned easily but the spirit of God is an expert in this matter. 🏆 First he reveals Jesus, and his work at Calvary. ✝️ Second he opens the word of God. 📜 Third He reveals the Father. 👨‍👦 Fourth he reveals the mysteries of the kingdom of God. 👑",
+    "about.prayerPoints.2.subtitle.1": `
+    1. The Holy Ghost is a revealer of secrets and spiritual expert 🔐🏆.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He unveils hidden spiritual truths and mysteries.
+      `,
+    "about.prayerPoints.2.subtitle.2": `
+    2. First he reveals Jesus and his work at Calvary ✝️.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He illuminates Christ's redemptive work and sacrifice.
+    `,
+    "about.prayerPoints.2.subtitle.3": `
+    3. Second he opens the word of God and reveals the Father 📜👨‍👦.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He makes Scripture alive and reveals God's character.
+    `,
+    "about.prayerPoints.2.subtitle.4": `
+    4. Fourth he reveals the mysteries of the kingdom of God 👑.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He unlocks divine kingdom secrets and understanding.
+    `,
     "about.prayerPoints.2.bibleQuote": `"But God hath revealed them unto us by his Spirit: for the Spirit searcheth all things, yea, the deep things of God." - 1 Corinthians 2:10`,
     "about.prayerPoints.3.title": "He is a friend",
-    "about.prayerPoints.3.subtitle":
-      "Jesus never performed a miracle without the Holy Ghost.❌ Jesus could not perform a miracle without him. Only after he came the supernatural began.🌟 You cannot know God without him. 🤝 You cannot even approach God without him. All these things are enabled, and made possible by him.✅ But it all comes through a fellowship. 🤝 He is a friend.",
+    "about.prayerPoints.3.subtitle.1": `
+    1. Jesus never performed a miracle without the Holy Ghost ❌🌟.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He enables supernatural power and miraculous works.
+      `,
+    "about.prayerPoints.3.subtitle.2": `
+    2. You cannot know God or approach God without him 🤝.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He bridges the gap between humanity and divinity.
+    `,
+    "about.prayerPoints.3.subtitle.3": `
+    3. All these things are enabled and made possible by him ✅.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He empowers every aspect of spiritual life and growth.
+    `,
+    "about.prayerPoints.3.subtitle.4": `
+    4. But it all comes through fellowship - He is a friend 🤝.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He builds intimate, personal relationship, you and him.
+    `,
     "about.prayerPoints.3.bibleQuote":
       '"A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother." - Proverbs 18:24',
     "about.prayerPoints.4.title": "He brings heaven to the earth",
-    "about.prayerPoints.4.subtitle":
-      "The only authorized messenger to bring heaven to the earth is the Holy Ghost. 📦 Angels bring messages or help as God commands them but the Holy Spirit brings heaven itself to the earth.🌅 Heaven is something you can experience or see others experience. 😄 The perfect inner rest, peace, and joy are marks that this heaven has come to dwell and remain within a person. 💚🏕️🌿🌲🌳☘️",
+    "about.prayerPoints.4.subtitle.1": `
+    1. The only authorized messenger to bring heaven to earth is the Holy Ghost 📦.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He transports heavenly reality into earthly experience.
+      `,
+    "about.prayerPoints.4.subtitle.2": `
+    2. Angels bring messages, but the Holy Spirit brings heaven itself 🌅.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He delivers the actual presence and atmosphere of heaven.
+    `,
+    "about.prayerPoints.4.subtitle.3": `
+    3. Heaven is something you can experience or see others experience 😄.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He makes heaven tangible and experiential for believers.
+    `,
+    "about.prayerPoints.4.subtitle.4": `
+    4. Perfect inner rest, peace, and joy mark heaven dwelling within 💚🏥️.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He establishes heaven's characteristics in human hearts.
+    `,
     "about.prayerPoints.4.bibleQuote":
       '"For the kingdom of God is not meat and drink; but righteousness, and peace, and joy in the Holy Ghost." - Romans 14:17',
     "about.prayerPoints.5.title": "He is a bestseller",
-    "about.prayerPoints.5.subtitle":
-      "Who has written the bestseller of all times?🖊️ The Holy Ghost. He wrote the Bible. His skill, and understanding of the Bible is without a match.⛓️‍💥 Therefore when he comes the scriptures became so vivid, and alive, like you would be watching a movie in the biggest rollercoaster in the world.🎢 And it sinks to the heart.❤️ The change of an individual from a murderer to the most kind, and respectful person is by him.🦋",
+    "about.prayerPoints.5.subtitle.1": `
+    1. Who has written the bestseller of all times? The Holy Ghost 🖊️.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He authors Scripture with unmatched divine wisdom.
+      `,
+    "about.prayerPoints.5.subtitle.2": `
+    2. His skill and understanding of the Bible is without match ⛓️‍💥.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He provides perfect biblical interpretation and insight.
+    `,
+    "about.prayerPoints.5.subtitle.3": `
+    3. When he comes, scriptures become vivid and alive like a movie 🎢.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He transforms Bible reading into living, dynamic experience.
+    `,
+    "about.prayerPoints.5.subtitle.4": `
+    4. He changes murderers into kind, respectful people 🦋❤️.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He accomplishes complete character transformation.
+    `,
     "about.prayerPoints.5.bibleQuote":
       '"Knowing this first, that no prophecy of the scripture is of any private interpretation. For the prophecy came not in old time by the will of man: but holy men of God spake as they were moved by the Holy Ghost." - 2 Peter 1:20-21',
     "about.prayerPoints.6.title": "He is the Greater One",
-    "about.prayerPoints.6.subtitle":
-      "You don't own your body after the Holy Ghost comes to live within.🏠 The old things are past away, and now your life is to glorify Jesus.👉👑 But the ability does not comes from you but from the Greater One himself.🌀 He will do the work. But you must let him work.👀 So you lose your ability, and he will bring his own. It's an exchange from the natural, and weak to the divine, and strong.🚀",
+    "about.prayerPoints.6.subtitle.1": `
+    1. You don't own your body after the Holy Ghost comes to live within 🏠.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He takes ownership and residence in believers' lives.
+      `,
+    "about.prayerPoints.6.subtitle.2": `
+    2. Old things pass away, now your life is to glorify Jesus 👉👑.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He transforms life's purpose toward Christ's glory.
+    `,
+    "about.prayerPoints.6.subtitle.3": `
+    3. The ability comes from the Greater One himself, not you 🌀.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He provides divine ability beyond human capacity.
+    `,
+    "about.prayerPoints.6.subtitle.4": `
+    4. It's an exchange from natural and weak to divine and strong 🚀.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He replaces human weakness with divine strength.
+    `,
     "about.prayerPoints.6.bibleQuote":
       '"But ye shall receive power, after that the Holy Ghost is come upon you." - Acts 1:8',
     "about.prayerPoints.7.title": "He will finish the work upon earth",
-    "about.prayerPoints.7.subtitle":
-      "The fields are ready to harvest but the laborers are few.🤏 Why don't you then ask the Lord of the harvest to send some more labourers?➕ Let the wind blow the harvest in to the barns of heaven.📦📦📦 Something needs to be learned: when he is come he will show to the world.👐 Only he can show God to the world. There is no human method for that, only the power of the Holy Ghost can turn the hearts of men back to God ❤️❤️☝️🌅",
+    "about.prayerPoints.7.subtitle.1": `
+    1. The fields are ready to harvest but the laborers are few 🤏.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He identifies the spiritual harvest and need for workers.
+      `,
+    "about.prayerPoints.7.subtitle.2": `
+    2. Ask the Lord to send more laborers and let the wind blow harvest to heaven ➕📦.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He mobilizes and empowers evangelistic workers.
+    `,
+    "about.prayerPoints.7.subtitle.3": `
+    3. When he is come he will show God to the world 👐.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He reveals God's character to humanity.
+    `,
+    "about.prayerPoints.7.subtitle.4": `
+    4. Only the Holy Ghost can turn hearts of men back to God ❤️☝️🌅.
+    <br/>&nbsp;&nbsp;• What does the Holy Ghost do? He accomplishes divine heart transformation and salvation.
+    `,
     "about.prayerPoints.7.bibleQuote":
       '"No man can come to me, except the Father which hath sent me draw him" - John 6:44',
     "about.what.title.1": "What does the",
@@ -1780,55 +1883,162 @@ export const ui = {
     "prayer.hero.subtitle":
       "Opi 7 kohdan listasta miten rukoilla, jotta rukouksen voima pääsee muuttamaan elämäsi Jumalan tulessa 🔥",
     "prayer.hero.cta.button": "7 kohdan lista opettaa miten rukoilla",
+    "prayer.hero.prayerPoints.title.1": "7 kohdan ",
+    "prayer.hero.prayerPoints.title.2": "'Miten rukoilla'",
+    "prayer.hero.prayerPoints.title.3": "ohje",
+    "prayer.hero.prayerPoints.subtitle":
+      "Muuta rukouselämäsi Raamatun mukaisen rukouksen lähestymistavan avulla. Jokainen kohta antaa sinulle Jumalallista viisautta onnistuneeseen rukouselämään.",
     "prayer.prayerPoints.1.title": "Henkilökohtainen usko Jeesukseen",
-    "prayer.prayerPoints.1.subtitle":
-      "Rukouksesi voivat toimia vain, jos Jeesus on sinun henkilökohtainen Herrasi ja pelastajasi. Jotkut eri uskonnot saavat vastauksia kyllä, mutta ne tulevat demoneilta. Sinun tulee olla uudesti syntynyt, vanhurkas ja pyhä. Ja Jeesuksen tulee olla Herrasi eli mitä Hän sanoo sanassaan, on se mitä tottelet.",
+    "prayer.prayerPoints.1.subtitle.1": `
+    1. Rukouksesi voivat toimia vain, jos Jeesus on sinun henkilökohtainen Herrasi ja pelastajasi 🙏.
+    <br/>&nbsp;&nbsp;• Henkilökohtainen suhde Jeesuksen kanssa on rukouksen voiman perusta.
+      `,
+    "prayer.prayerPoints.1.subtitle.2": `
+    2. Jotkut eri uskonnot saavat vastauksia kyllä, mutta ne tulevat demoneilta 👹.
+    <br/>&nbsp;&nbsp;• Vain Jeesuksen kautta tulevat vastaukset ovat turvallisia ja pyhiä, koska Jeesus on ainoa tie Jumalan luo.
+    `,
+    "prayer.prayerPoints.1.subtitle.3": `
+    3. Sinun tulee olla uudesti syntynyt, vanhurkas ja pyhä ✨.
+    <br/>&nbsp;&nbsp;• Uudestisyntyminen avaa tien tehokkaaseen rukoukseen.
+    `,
+    "prayer.prayerPoints.1.subtitle.4": `
+    4. Jeesuksen tulee olla Herrasi eli mitä Hän sanoo sanassaan, on se mitä tottelet 👑.
+    <br/>&nbsp;&nbsp;• Kuuliaisuus Jumalan sanalle vahvistaa rukouksen voimaa.
+    `,
     "prayer.prayerPoints.1.bibleQuote":
       '"Jeesus vastasi: ”Minä olen tie, totuus ja elämä. Ei kukaan tule Isän luo muuten kuin minun kauttani." - Johannes 14:6',
     "prayer.prayerPoints.2.title": "Anna anteeksi",
-    "prayer.prayerPoints.2.subtitle":
-      "Jumala kuulee rukouksesi jos olet antanut anteeksi kaikille. Jos et ole, elät synnissä ja Jumala ei kuule rukouksiasi, sillä ne ovat saastaisia. Rukouksiesi tulee nousta taivaan valtaistuimen eteen puhtaasta astiasta ja silloin ne ovat tarpeeksi puhtaita Kaikkivaltiaan eteen.",
+    "prayer.prayerPoints.2.subtitle.1": `
+    1. Jumala kuulee rukouksesi jos olet antanut anteeksi kaikille 💚.
+    <br/>&nbsp;&nbsp;• Anteeksianto avaa tien Jumalan kuulemiselle.
+      `,
+    "prayer.prayerPoints.2.subtitle.2": `
+    2. Jos et ole antanut anteeksi, elät synnissä ja Jumala ei kuule rukouksiasi 🚫.
+    <br/>&nbsp;&nbsp;• Katkeruus ja viha estävät rukouksen voiman.
+    `,
+    "prayer.prayerPoints.2.subtitle.3": `
+    3. Rukouksiesi tulee nousta taivaan valtaistuimen eteen puhtaasta astiasta ✨.
+    <br/>&nbsp;&nbsp;• Puhdas sydän tekee rukouksista tehokkaita.
+    `,
+    "prayer.prayerPoints.2.subtitle.4": `
+    4. Silloin ne ovat tarpeeksi puhtaita Kaikkivaltiaan eteen 👑.
+    <br/>&nbsp;&nbsp;• Anteeksianto pyhittää rukouksesi Jumalan edessä.
+    `,
     "prayer.prayerPoints.2.bibleQuote": `"Kun seisotte rukoilemassa, antakaa anteeksi, jos teillä on jotakin jotakuta vastaan, niin että myös teidän Isänne, joka on taivaissa, antaisi teille anteeksi teidän rikkomuksenne." - Markus 11:25`,
     "prayer.prayerPoints.3.title": "2 tai 3 Raamatun paikkaa",
-    "prayer.prayerPoints.3.subtitle":
-      "Sinulla tulee olla perustelut Raamatusta, miksi rukouksesi ansaitsee vastauksen. Rukouksien tulee pohjautua Raamattuun eikä omiin himoihin ja haluihin. Jos lapsi kinuaa laskinta, niin hyvä vanhempi ei osta sitä. Mutta jos lapsi näyttää viestin koulusta, jossa kerrotaan lapsen tarvitsevan laskin, niin vanhempi ostaa laskimen.",
+    "prayer.prayerPoints.3.subtitle.1": `
+    1. Sinulla tulee olla perustelut Raamatusta, miksi rukouksesi ansaitsee vastauksen 📖.
+    <br/>&nbsp;&nbsp;• Raamatulliset perusteet ovat perusta rukoukselle.
+      `,
+    "prayer.prayerPoints.3.subtitle.2": `
+    2. Rukouksien tulee pohjautua Raamattuun eikä omiin himoihin ja haluihin 🎯.
+    <br/>&nbsp;&nbsp;• Jumalan tahto on rukouksen oikea suunta.
+    `,
+    "prayer.prayerPoints.3.subtitle.3": `
+    3. Jos lapsi kinuaa laskinta, hyvä vanhempi ei osta sitä 🧮.
+    <br/>&nbsp;&nbsp;• Pelkkä pyyntö ilman perustetta ei riitä.
+    `,
+    "prayer.prayerPoints.3.subtitle.4": `
+    4. Mutta jos lapsi näyttää viestin koulusta, vanhempi ostaa laskimen 📝.
+    <br/>&nbsp;&nbsp;• Raamatulliset todisteet avaavat Jumalan sydämen.
+    `,
     "prayer.prayerPoints.3.bibleQuote":
       '"Kolmannen kerran tulen nyt luoksenne, sillä jokainen asia on vahvistettava kahden tai kolmen todistajan suulla." - 2. Korinttilaisille 13:1',
     "prayer.prayerPoints.4.title": "Kun rukoilet, usko",
-    "prayer.prayerPoints.4.subtitle":
-      "Kun rukoilet niin usko, että Jumala on jo lähettänyt taivaallisen paketin tulemaan, ja näet sen vain saapuvan ovellesi jonkin ajan päästä. Et tee postiin uutta tilausta, koska tiedät että aiempi on jo tulossa. Onko sinulla enemmän uskoa Postiin kuin Jumalaan? Eli usko Jumalaan.",
+    "prayer.prayerPoints.4.subtitle.1": `
+    1. Kun rukoilet niin usko, että Jumala on jo lähettänyt taivaallisen paketin tulemaan 📦.
+    <br/>&nbsp;&nbsp;• Usko näkee vastauksen jo lähetetyksi.
+      `,
+    "prayer.prayerPoints.4.subtitle.2": `
+    2. Näet sen vain saapuvan ovellesi jonkin ajan päästä 🚪.
+    <br/>&nbsp;&nbsp;• Usko odottaa kärsivällisesti rukouksen ilmentymisen aikaa.
+    `,
+    "prayer.prayerPoints.4.subtitle.3": `
+    3. Et tee postiin uutta tilausta, koska tiedät että aiempi on jo tulossa 📮.
+    <br/>&nbsp;&nbsp;• Usko ei epäile eikä toista samaa pyyntöä.
+    `,
+    "prayer.prayerPoints.4.subtitle.4": `
+    4. Onko sinulla enemmän uskoa Postiin kuin Jumalaan? 🤔
+    <br/>&nbsp;&nbsp;• Jumala on luotettavampi kuin mikään maallinen järjestelmä.
+    `,
     "prayer.prayerPoints.4.bibleQuote":
       '" Sen tähden minä sanon teille: kaiken, mitä te rukoilette ja anotte, uskokaa, että olette sen jo saaneet, niin se tulee teille." - Markus 11:24',
     "prayer.prayerPoints.5.title": "Erilaiset rukoukset eri tilanteisiin",
-    "prayer.prayerPoints.5.subtitle":
-      "On eritapohja rukoilla ja siksi Raamattu on antanut monia esimerkkejä rukouksesta. On sopimis rukousta, esirukousta, kiitos rukousta, ylistystä, sota rukousta (sotaa ei voiteta yhdellä pommilla 💣), ja muita. Eli rukoile tilannetta vastaavalla tavalla.",
+    "prayer.prayerPoints.5.subtitle.1": `
+    1. On eri tapoja rukoilla ja Raamattu antaa monia esimerkkejä rukouksesta 📚.
+    <br/>&nbsp;&nbsp;• Erilaisia tilanteita varten on erilaisia rukouksen tapoja.
+      `,
+    "prayer.prayerPoints.5.subtitle.2": `
+    2. On sopimus rukousta, esirukousta, kiitos rukousta, ylistystä 🙏.
+    <br/>&nbsp;&nbsp;• Jokainen rukoustyyppi palvelee omaa tarkoitustaan.
+    `,
+    "prayer.prayerPoints.5.subtitle.3": `
+    3. On sota rukousta - sotaa ei voiteta yhdellä pommilla 💣.
+    <br/>&nbsp;&nbsp;• Hengellinen sota vaatii jatkuvaa ja määrätietoista rukousta.
+    `,
+    "prayer.prayerPoints.5.subtitle.4": `
+    4. Rukoile tilannetta vastaavalla tavalla ⚔️.
+    <br/>&nbsp;&nbsp;• Oikea rukoustyyppi oikeaan aikaan tuo voiton.
+    `,
     "prayer.prayerPoints.5.bibleQuote":
       '"Emmehän me taistele verta ja lihaa vastaan vaan hallituksia ja henkivaltoja vastaan, tässä pimeydessä hallitsevia maailmanvaltiaita ja taivaan avaruuden pahoja henkiolentoja vastaan." - Efesolaisille 6:12',
     "prayer.prayerPoints.6.title": "Rukoile niin kuin Henki ohjaa",
-    "prayer.prayerPoints.6.subtitle":
-      "Tarvitsemme Pyhää Henkeä kaikessa. Jumala antaa nöyrille armon, mutta hän on ylpeitä vastaan. Ja jos Jumala on sinua vastaan niin älä luule, että hän vastaa rukouksiisi. Eli ole nöyrä ja ota vastaan kaikki ohjaus ja apu, mitä Pyhä Henki sinulle antaa.",
+    "prayer.prayerPoints.6.subtitle.1": `
+    1. Tarvitsemme Pyhää Henkeä kaikessa 🕊️.
+    <br/>&nbsp;&nbsp;• Pyhä Henki on rukouksen opettaja ja ohjaaja.
+      `,
+    "prayer.prayerPoints.6.subtitle.2": `
+    2. Jumala antaa nöyrille armon, mutta hän on ylpeitä vastaan 💪.
+    <br/>&nbsp;&nbsp;• Nöyryys avaa tien Jumalan armoon ja ohjaukseen.
+    `,
+    "prayer.prayerPoints.6.subtitle.3": `
+    3. Jos Jumala on sinua vastaan, älä luule että hän vastaa rukouksiisi 🚫.
+    <br/>&nbsp;&nbsp;• Ylpeys estää rukouksen voiman ja Jumalan vastaukset.
+    `,
+    "prayer.prayerPoints.6.subtitle.4": `
+    4. Ole nöyrä ja ota vastaan kaikki ohjaus mitä Pyhä Henki antaa 🌬️.
+    <br/>&nbsp;&nbsp;• Hengen ohjaus tekee rukouksesta tehokasta ja voimallista.
+    `,
     "prayer.prayerPoints.6.bibleQuote":
       '"Tuuli puhaltaa, missä tahtoo, ja sinä kuulet sen huminan mutta et tiedä, mistä se tulee ja minne se menee. Näin on jokaisen Hengestä syntyneen laita." - Johannes 3:8',
     "prayer.prayerPoints.7.title": "Rukoile hengessä",
-    "prayer.prayerPoints.7.subtitle":
-      "Me emme yksinkertaisesti tiedä tai ymmärrä kaikkea, mitä ja miten meidän tulee rukoilla. Siksi kielillä eli hengessä rukoilu on aivan mahtava Jumalan antama tapa rukoilla. Se on niin kuin paras lakimies maailmassa on valmistellut sinulle puolustuspuheen. Et edes ymmärrä paljoa termejä, mutta kun luet sen, niin sinun juttusi on voitettu 100% varmuudella.",
+    "prayer.prayerPoints.7.subtitle.1": `
+    1. Me emme tiedä tai ymmärrä kaikkea, mitä ja miten meidän tulee rukoilla 🤷‍♂️.
+    <br/>&nbsp;&nbsp;• Inhimillinen ymmärrys on rajallista rukouksessa.
+      `,
+    "prayer.prayerPoints.7.subtitle.2": `
+    2. Siksi kielillä eli hengessä rukoilu on mahtava Jumalan antama tapa 🗣️.
+    <br/>&nbsp;&nbsp;• Hengen kielillä rukoilu ylittää ymmärryksemme rajat.
+    `,
+    "prayer.prayerPoints.7.subtitle.3": `
+    3. Se on kuin paras lakimies maailmassa valmistelee puolustuspuheesi ⚖️.
+    <br/>&nbsp;&nbsp;• Pyhä Henki valmistelee täydelliset rukoukset puolestamme.
+    `,
+    "prayer.prayerPoints.7.subtitle.4": `
+    4. Et ymmärrä termejä, mutta juttusi voitetaan 100% varmuudella 🏆.
+    <br/>&nbsp;&nbsp;• Hengen rukous takaa voiton hengellisessä taistelussa.
+    `,
     "prayer.prayerPoints.7.bibleQuote":
       '"Kielillä puhuva ei näet puhu ihmisille vaan Jumalalle. Häntä ei ymmärrä kukaan, sillä hän puhuu salaisuuksia hengessä ... Mitä siis tehdä? Minun tulee rukoilla hengelläni mutta myös ymmärrykselläni. Minun tulee laulaa kiitosta hengelläni mutta myös ymmärrykselläni." - 1. kirje korinttilaisille 14:2,15',
     "prayer.testimonies.title.1": "Todistuksia rukouksesta ja",
     "prayer.testimonies.title.2": "Rukouksen voimasta",
     "prayer.testimonies.subtitle":
       "Tässä esimerkkejä miten 7 kohdan miten rukoilla -lista on tuonut rukouksen voiman ihmisten elämään.",
+    "prayer.testimonies.A.title": "Miten rukoilla todistus - 12 tunnin rukousmaraton ja Pyhän Hengen kohtaaminen",
     "prayer.testimonies.A.description":
-      "Jos joku on väsynyt niin voit jo mennä nukkumaan. Olemme rukoilleet 6 tuntia, mutta vielä me jatkamme ... Me rukoilimme yhteensä 12 tuntia ja Pyhä Henki avasi meille mysteerejä Sanasta. Jotkut kertoivat rukouksen suoraan muuttaneen heitä ja jotkut kohtasivat Jumalan. Saatana kävi katsomassa, mitä tapahtuu, ja näin myös vilauksen Jeesuksesta, joka hymyili meille.",
-    "prayer.testimonies.A.profession": "2010 > Pyhän Hengen ystävänä🫂🤗👐",
+      "Jos joku on väsynyt niin voit jo mennä nukkumaan. Olemme rukoilleet 6 tuntia, mutta vielä me jatkamme ... Me rukoilimme yhteensä 12 tuntia ja Pyhä Henki avasi meille mysteerejä Sanasta. Kun opimme miten rukoilla oikein, rukouksen voima muutti meitä suoraan ja jotkut kohtasivat Jumalan. Saatana kävi katsomassa, mitä tapahtuu, ja näin myös vilauksen Jeesuksesta, joka hymyili meille.",
+    "prayer.testimonies.A.profession": "Pyhän Hengen ystävä ja rukoussoturi",
+    "prayer.testimonies.G.title": "Rukouksen voima todistus - Oppiminen ja tehokas rukouselämä",
     "prayer.testimonies.G.description":
-      "Haluan oppia rukoilemaan. Tiedän, että rukous toimii ja se on tehokasta ja meillä on paljon rukousvastauksia. Rukouksia on myös monenlaisia, ei ole vain anomisia.",
-    "prayer.testimonies.G.profession": "2022 > palavassa uskossa🔥🔥🔥",
+      "Haluan oppia miten rukoilla tehokkaasti. Tiedän, että rukouksen voima toimii ja se on tehokasta - meillä on paljon rukousvastauksia. Kun ymmärsin miten rukoilla eri tavoin, rukouksen voima tuli näkyväksi elämässäni. Rukouksia on monenlaisia, ei ole vain anomisia.",
+    "prayer.testimonies.G.profession": "Palavassa uskossa elävä kristitty",
+    "prayer.testimonies.J.title": "Miten rukoilla todistus - Päivittäinen yhteys Pyhän Hengen kanssa",
     "prayer.testimonies.J.description":
-      "Rukous on aivan mahtavaa! Vietän ihanasti aikaa Pyhän Hengen kanssa joka päivä ja Hän on niiiin ihana. Ja kun rukoilen tiedän, että Isä kuulee minut. On mahtava rukoilla kun tietää, että Jumala tykkää kun rukoilen, ja että Hän ainaa kuulee ja vastaa joka kerta.",
-    "prayer.testimonies.J.profession": "2020 > uudistuksen jälkeen💐🐝⛅",
+      "Rukous on aivan mahtavaa! Kun opin miten rukoilla oikein, vietän ihanasti aikaa Pyhän Hengen kanssa joka päivä ja Hän on niiiin ihana. Rukouksen voima näkyy siinä, että kun rukoilen tiedän, että Isä kuulee minut. On mahtava rukoilla kun tietää, että Jumala tykkää kun rukoilen, ja että Hän aina kuulee ja vastaa joka kerta.",
+    "prayer.testimonies.J.profession": "Uudistuksen kokenut kristitty",
     "prayer.testimonies.Y.title": "Sinun todistuksesi?",
-    "prayer.testimonies.Y.description": "Oletko jo oppinut miten rukoilla ja rukouksen voima on elämässäsi?",
+    "prayer.testimonies.Y.description":
+      "Oletko jo oppinut miten rukoilla tehokkaasti ja rukouksen voima on muuttanut elämääsi? Jaa kokemuksesi siitä, miten rukoilla -opetus on tuonut läpimurtoja elämääsi.",
     "prayer.cta.title.1": "Oletko valmis",
     "prayer.cta.title.2": "Saamaan rukouksen voiman elämääsi",
     "prayer.cta.subtitle.1":
@@ -1839,37 +2049,142 @@ export const ui = {
     "about.hero.subtitle": "Opi, mitä Pyhä Henki tekee 7 kohdan listan kautta. Pyhän Hengen voima vuonna 2025?",
     "about.hero.cta.button": "7 kohtaa: Pyhä Henki, mitä hän tekee?",
     "about.prayerPoints.1.title": "Mikä Pyhä Henki on?",
+    "about.hero.prayerPoints.title.1": "7 kohdan ",
+    "about.hero.prayerPoints.title.2": "Mitä Pyhä Henki tekee",
+    "about.hero.prayerPoints.title.3": "ohje",
+    "about.hero.prayerPoints.subtitle":
+      "Kun ymmärrät mitä Pyhä Henki tekee ja kuka hän on sinun elämäsi muuttuu. Opi mitä Pyhä Henki tekee ja sukella elävään ja intiimiin suhteeseen kaikkivaltiaan kanssa.",
     "about.prayerPoints.1.subtitle":
       "Voiko kivi puhua?🪨 Voiko pilvi tehdä jotain?🌧 Onko vedellä oma tahto?🌊 Voiko puu tuntea?🌳 Onko kasvilla persoona?🌿 Onko auto 'hän'?🚗 Tietenkään ei. Joten luonnollisesti Pyhä Henki on henkilö: 'Kun hän tulee.. hän ohjaa teidät' ... 'Pyhä Henki sanoi, erottakaa minulle'. <br /> Onko Jumalan sormi osa Jumalaa?☝️ Johtiko Jumala Israelilaisia autiomaassa ja oliko hän heille vihainen?🏞️😔 Tietenkin kyllä. Joten Pyhä Henki on Jumala, 'Jos minä Jumalan sormella ajan ulos pahoja henkiä' ... 'Sen tähden, niin kuin Pyhä Henki sanoo .. Minä vihastuin tähän sukupolveen'",
+    "about.prayerPoints.1.subtitle.1": `
+    1. Voiko kivi puhua? Voiko pilvi tehdä jotain? Onko vedellä oma tahto? 🪨🌧🌊
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän osoittaa jumalallista persoonallisuuttaan kommunikoimalla ja voimalla.
+      `,
+    "about.prayerPoints.1.subtitle.2": `
+    2. Pyhä Henki on henkilö: 'Kun hän tulee.. hän ohjaa teidät' 🗣️.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän ohjaa uskovia henkilökohtaisella johdatuksella ja viisaudella.
+    `,
+    "about.prayerPoints.1.subtitle.3": `
+    3. Onko Jumalan sormi osa Jumalaa? Johtiko Jumala Israelilaisia autiomaassa? ☝️🏞️
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän toimii Jumalana johtaen kansaansa.
+    `,
+    "about.prayerPoints.1.subtitle.4": `
+    4. 'Jos minä Jumalan sormella ajan ulos pahoja henkiä' - Pyhä Henki on Jumala 👑.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän käyttää jumalallista voimaa ja auktoriteettia pahaa vastaan.
+    `,
     "about.prayerPoints.1.bibleQuote":
       '"Herran Jeesuksen Kristuksen armo, Jumalan rakkaus <span class="underline">ja Pyhän Hengen yhteys</span> olkoon kaikkien teidän kanssanne! " - 2 Korinttilaisille 13:13',
     "about.prayerPoints.2.title": "Hän paljastaa",
-    "about.prayerPoints.2.subtitle":
-      "Pyhä Henki paljastaa salaisuuksia.🔐 Hengen asioita ei voi helposti havaita, mutta Pyhä Henki on expertti tässä asiassa.🏆 Ensin hän paljastaa Jeesuksen ja hänen ristintyönsä.✝️ Toiseksi hän avaa Jumalan Sanan.📜 Kolmanneksi hän paljastaa Isän.👨‍👦 Neljänneksi hän paljastaa Jumalan valtakunnan salaisuudet.👑",
+    "about.prayerPoints.2.subtitle.1": `
+    1. Pyhä Henki paljastaa salaisuuksia ja on hengellinen asiantuntija 🔐🏆.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän paljastaa piilossa olevia hengellisiä totuuksia ja mysteerejä.
+      `,
+    "about.prayerPoints.2.subtitle.2": `
+    2. Ensin hän paljastaa Jeesuksen ja hänen ristintyönsä ✝️.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän valaisee Kristuksen lunastustyön ja uhrin.
+    `,
+    "about.prayerPoints.2.subtitle.3": `
+    3. Toiseksi hän avaa Jumalan Sanan ja paljastaa Isän 📜👨‍👦.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän tekee Raamatun eläväksi ja paljastaa Jumalan luonteen.
+    `,
+    "about.prayerPoints.2.subtitle.4": `
+    4. Neljänneksi hän paljastaa Jumalan valtakunnan salaisuudet 👑.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän avaa jumalallisia valtakunnan salaisuuksia ja ymmärrystä.
+    `,
     "about.prayerPoints.2.bibleQuote": `"Sen Jumala on meille ilmoittanut Henkensä kautta, sillä Henki tutkii kaiken, Jumalan syvyydetkin." - 1 Korinttilaisille 2:10`,
     "about.prayerPoints.3.title": "Hän on ystävä",
-    "about.prayerPoints.3.subtitle":
-      "Jeesus ei ikinä tehnyt yhtään ihmettä ilman Pyhää Henkeä.❌ Jeesus ei pystynyt tekemään mitään ilman häntä. Vasta sen jälkeen kun hän tuli yliluonnollinen alkoi.🌟 Et voi tuntea Jumalaa ilman häntä.🤝 Et voi edes lähestyä Jumalaa ilman häntä. Kaikki nämä asiat ovat mahdollisia hänen kauttaan.✅ Mutta tämä kaikki tapahtuu yhteyden kautta.🤝 Hän on ystävä.",
+    "about.prayerPoints.3.subtitle.1": `
+    1. Jeesus ei ikinä tehnyt yhtään ihmettä ilman Pyhää Henkeä ❌🌟.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän mahdollistaa yliluonnollisen voiman ja ihmeteot.
+      `,
+    "about.prayerPoints.3.subtitle.2": `
+    2. Et voi tuntea Jumalaa tai lähestyä Jumalaa ilman häntä 🤝.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän siltaa kuilun ihmisyyden ja jumaluuden välillä.
+    `,
+    "about.prayerPoints.3.subtitle.3": `
+    3. Kaikki nämä asiat ovat mahdollisia hänen kauttaan ✅.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän voimaannuttaa jokaisen hengellisen elämän ja kasvun osa-alueen.
+    `,
+    "about.prayerPoints.3.subtitle.4": `
+    4. Mutta tämä kaikki tapahtuu yhteyden kautta - Hän on ystävä 🤝.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän rakentaa läheisiä, henkilökohtaisia suhteita uskovien kanssa.
+    `,
     "about.prayerPoints.3.bibleQuote":
       '"Vahingokseen mies on monien ystävä, mutta on myös ystäviä, veljiäkin uskollisempia. " - Sananlaskust 18:24',
     "about.prayerPoints.4.title": "Hän tuo taivaan maan päälle",
-    "about.prayerPoints.4.subtitle":
-      "Ainut valtuutettu lähettiläs, joka tuo taivaan maan päälle, on Pyhä Henki.📦 Enkelit tuovat viestejä tai apua Jumalan käskyjen mukaan, mutta Pyhä Henki tuo itsensä taivaan maan päälle.🌅 Taivas on jotain jonka voit kokea tai nähdä toisen kokevan sen.😄 Täydellinen sisäisen lepo, rauha ja ilo ovat merkkejä, että tämä taivas on tullut asumaan ja jäämään henkilön sisimpään.💚🏕️🌿🌲🌳☘",
+    "about.prayerPoints.4.subtitle.1": `
+    1. Ainut valtuutettu lähettiläs, joka tuo taivaan maan päälle, on Pyhä Henki 📦.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän kuljettaa taivaallisen todellisuuden maalliseen kokemukseen.
+      `,
+    "about.prayerPoints.4.subtitle.2": `
+    2. Enkelit tuovat viestejä, mutta Pyhä Henki tuo taivaan itsensä 🌅.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän toimittaa taivaan todellisen läsnäolon ja ilmapiirin.
+    `,
+    "about.prayerPoints.4.subtitle.3": `
+    3. Taivas on jotain jonka voit kokea tai nähdä toisten kokevan 😄.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän tekee taivaan konkreettiseksi ja koettavaksi uskoville.
+    `,
+    "about.prayerPoints.4.subtitle.4": `
+    4. Täydellinen sisäinen lepo, rauha ja ilo merkitsevät taivaan asumista sisällä 💚🏥️.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän vakiinnuttaa taivaan ominaisuudet ihmisten sydämiin.
+    `,
     "about.prayerPoints.4.bibleQuote":
       '"Sillä Jumalan valtakunta ei ole syömistä ja juomista vaan vanhurskautta, rauhaa ja iloa Pyhässä Hengessä." - Roomalaisille 14:17',
     "about.prayerPoints.5.title": "Hän on bestseller",
-    "about.prayerPoints.5.subtitle":
-      "Kuka on kirjoittanut kaikkien aikojen bestsellerin?🖊️ Pyhä Henki tietenkin. Hän kirjoitti Raamatun. Hänen Raamatun taitonsa ja ymmärryksensä ovat vailla vertaa.⛓️‍💥 Eli kun hän tulee niin Sana tulee eläväksi ja niin aidoksi, ihan kuin katsoisit elokuvaa maailman parhaassa vuoristoradassa.🎢 Ja se uppoaa sydämeen.❤️ Se, että murhaaja muuttuu kiltiksi ja kunnioitettavaksi henkilöksi, on hänen työnsä tulosta.🦋",
+    "about.prayerPoints.5.subtitle.1": `
+    1. Kuka on kirjoittanut kaikkien aikojen bestsellerin? Pyhä Henki tietenkin 🖊️.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän on kirjoittanut Raamatun vertaansa vailla olevalla jumalallisella viisaudella.
+      `,
+    "about.prayerPoints.5.subtitle.2": `
+    2. Hänen Raamatun taitonsa ja ymmärryksensä ovat vailla vertaa ⛓️‍💥.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän tarjoaa täydellistä raamatullista tulkintaa ja oivallusta.
+    `,
+    "about.prayerPoints.5.subtitle.3": `
+    3. Kun hän tulee, Sana tulee eläväksi kuin elokuva vuoristoradassa 🎢.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän muuttaa Raamatun lukemisen eläväksi, dynaamiseksi kokemukseksi.
+    `,
+    "about.prayerPoints.5.subtitle.4": `
+    4. Hän muuttaa murhaajat kiltiksi, kunnioitettaviksi ihmisiksi 🦋❤️.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän toteuttaa täydellisen luonteen muutoksen.
+    `,
     "about.prayerPoints.5.bibleQuote":
       '"Ennen kaikkea teidän tulee tietää, ettei yksikään Raamatun profetia ole kenenkään omin neuvoin selitettävissä, sillä mitään profetiaa ei ole koskaan tuotu esiin ihmisen tahdosta, vaan Pyhän Hengen johtamina ihmiset ovat puhuneet sen, minkä saivat Jumalalta." - 2 Pietari 1:20-21',
     "about.prayerPoints.6.title": "Hän se 'Suurempi'",
-    "about.prayerPoints.6.subtitle":
-      "Et omista kehoasi, kun Pyhä Henki on tullut asumaan sydämeesi.🏠 Vanhat asiat ovat poissa ja nyt elämäsi on Jeesuksen kirkastamiseksi.👉👑 Mutta tämä kyky ei tule sinusta vaan tältä 'Suuremmalta' auttajalta.🌀 Hän tekee työn. Mutta sinun tulee antaa hänen tehdä työ.👀 Joten menetät omat kykysi ja hän antaa omansa. Kyseessä on luonnollisen ja heikon vaihtokauppa yliluonnolliseen ja vahvaan.🚀",
+    "about.prayerPoints.6.subtitle.1": `
+    1. Et omista kehoasi, kun Pyhä Henki on tullut asumaan sydämeesi 🏠.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän ottaa omistajuuden ja asuinsijan uskovien elämässä.
+      `,
+    "about.prayerPoints.6.subtitle.2": `
+    2. Vanhat asiat ovat poissa, nyt elämäsi on Jeesuksen kirkastamiseksi 👉👑.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän muuttaa elämän tarkoituksen Kristuksen kirkastamiseen.
+    `,
+    "about.prayerPoints.6.subtitle.3": `
+    3. Kyky tulee 'Suuremmalta' auttajalta, ei sinusta 🌀.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän tarjoaa jumalallista kykyä yli inhimillisen kapasiteetin.
+    `,
+    "about.prayerPoints.6.subtitle.4": `
+    4. Se on vaihtokauppa luonnollisesta ja heikosta jumalalliseen ja vahvaan 🚀.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän korvaa inhimillisen heikkouden jumalallisella voimalla.
+    `,
     "about.prayerPoints.6.bibleQuote":
       '"Mutta te saatte voiman, kun Pyhä Henki tulee teidän päällenne." - Apostolien teot 1:8',
     "about.prayerPoints.7.title": "Hän viimeistelee työn maan päällä",
-    "about.prayerPoints.7.subtitle":
-      "Viljapellot ovat valmiina korjattavaksi, mutta työmiehiä on vähän.🤏 Miksemme sitten pyydä elon Herralta lisää työmiehiä?➕ Antaa tuulen puhaltaa vilja taivaan varastoihin.📦📦 Jotain on opittava: kun hän tulee hän näyttää maailmalle.👐 Vain hän voi näyttää Jumalan maailmalle. Mikään ihmis metodi ei pysty siihen, ainoastaan Pyhän Hengen voima voi kääntää ihmisten sydämet takaisin Jumalan puoleen ❤️❤️☝️🌅",
+    "about.prayerPoints.7.subtitle.1": `
+    1. Viljapellot ovat valmiina korjattavaksi, mutta työmiehiiä on vähän 🤏.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän tunnistaa hengellisen sadon ja työntekijöiden tarpeen.
+      `,
+    "about.prayerPoints.7.subtitle.2": `
+    2. Pyydä Herralta lisää työmiehiiä ja anna tuulen puhaltaa sato taivaaseen ➕📦.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän mobilisoi ja voimaannuttaa evankelioimistyöntekijöitä.
+    `,
+    "about.prayerPoints.7.subtitle.3": `
+    3. Kun hän tulee, hän näyttää Jumalan maailmalle 👐.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän paljastaa Jumalan luonteen ihmiskunnalle.
+    `,
+    "about.prayerPoints.7.subtitle.4": `
+    4. Vain Pyhä Henki voi kääntää ihmisten sydämet takaisin Jumalan puoleen ❤️☝️🌅.
+    <br/>&nbsp;&nbsp;• Mitä Pyhä Henki tekee? Hän toteuttaa jumalallisen sydämen muutoksen ja pelastuksen.
+    `,
     "about.prayerPoints.7.bibleQuote":
       '"Ei kukaan voi tulla minun luokseni, ellei Isä, joka on minut lähettänyt, vedä häntä." - Johannes 6:44',
     "about.what.title.1": "Pyhä Henki,",
