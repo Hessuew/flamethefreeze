@@ -2044,13 +2044,13 @@ export const ui = {
     "prayer.cta.subtitle.1":
       "Ota tämä 7 kohdan miten rukoilla -lista käyttöösi ja kuinka alat saamaan vastauksia rukouksiisi. Rukouksen voima kuuluu myös sinulle.",
     "prayer.cta.button": "Mitäs seuraavaksi?",
-    "about.hero.title.1": "Pyhä Henki,",
-    "about.hero.title.2": "Mitä hän tekee?",
+    "about.hero.title.1": "Mitä Pyhä",
+    "about.hero.title.2": "Henki tekee?",
     "about.hero.subtitle": "Opi, mitä Pyhä Henki tekee 7 kohdan listan kautta. Pyhän Hengen voima vuonna 2025?",
-    "about.hero.cta.button": "7 kohtaa: Pyhä Henki, mitä hän tekee?",
+    "about.hero.cta.button": "7 kohtaa: mitä Pyhä Henki tekee?",
     "about.prayerPoints.1.title": "Mikä Pyhä Henki on?",
     "about.hero.prayerPoints.title.1": "7 kohdan ",
-    "about.hero.prayerPoints.title.2": "Mitä Pyhä Henki tekee",
+    "about.hero.prayerPoints.title.2": "'Mitä Pyhä Henki tekee'",
     "about.hero.prayerPoints.title.3": "ohje",
     "about.hero.prayerPoints.subtitle":
       "Kun ymmärrät mitä Pyhä Henki tekee ja kuka hän on sinun elämäsi muuttuu. Opi mitä Pyhä Henki tekee ja sukella elävään ja intiimiin suhteeseen kaikkivaltiaan kanssa.",
@@ -2187,8 +2187,8 @@ export const ui = {
     `,
     "about.prayerPoints.7.bibleQuote":
       '"Ei kukaan voi tulla minun luokseni, ellei Isä, joka on minut lähettänyt, vedä häntä." - Johannes 6:44',
-    "about.what.title.1": "Pyhä Henki,",
-    "about.what.title.2": "Mitä hän tekee",
+    "about.what.title.1": "Mitä Pyhä",
+    "about.what.title.2": "Henki tekee",
     "about.what.title.3": "? 👨‍💻",
     "about.what.tagline": "Mitä",
     "about.what.subtitle.1": "Joskus et vain voi selittää sitä. Sinun vain täytyy kokea se itse 👥",
@@ -2198,7 +2198,7 @@ export const ui = {
       " ymmärtää, mitä Pyhä Henki tekee, kun saat henkilökohtaisen kohtaamisen Jumalan kanssa.🤜🤛",
     "about.what.images.1.alt": "Mitä Pyhä Henki tekee: Sytyttää sydämesi tuleen",
     "about.what.images.1.title":
-      "Pyydä, että hän ilmaisee itsensä sinulle. Ja pyydä anteeksi, että olet sivuuttanut hänet aikaisemmin 🙏",
+      "Mitä Pyhä Henki tekee: Pyydä, että hän ilmaisee itsensä sinulle. Ja pyydä anteeksi, että olet sivuuttanut hänet aikaisemmin 🙏",
     "about.what.images.2.alt": "Mitä Pyhä Henki tekee: täyttää sinut ja käyttää sinua",
     "about.what.images.2.title":
       "Pyydä, että hänen elämänsä täyttää sinut kokonaan. 'Täytä minua, käytä minua, muokkaa minua'🍷🚰",
