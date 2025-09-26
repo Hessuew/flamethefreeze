@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 export const languages = {
   en: "EN",
   fi: "FI",
@@ -458,7 +460,8 @@ export const ui = {
     "about.cta.button": "Learn about prayer for works",
     "word.hero.title.1": "The Power of the Words:",
     "word.hero.title.2": "Transform your speech",
-    "word.hero.subtitle.1": "Does you words have power? Know how you can receive the power of the words in your life.",
+    "word.hero.subtitle.1":
+      "Discover the transformative power of words in your life. Learn how to harness the divine power of words to speak life, create change, and manifest God's purposes through your speech.",
     "word.hero.subtitle.item.1": "Divine",
     "word.hero.subtitle.item.2": "Fire",
     "word.hero.subtitle.item.3": "Word",
@@ -467,41 +470,131 @@ export const ui = {
     "word.wordItems.subtitle.1": "Practical: Study to be quiet.",
     "word.wordItems.description.1":
       "Even a fool is counted wise if he keeps quiet: and he that simply shuts his lips is esteemed a man of understanding.🧐🤐 <br/><br/>On the other hand you can distinguish a fool from many words: and in the multitude of the words sin will not be lacking 🤬👿",
+    "word.wordItems.extendedContent.1":
+      "The power of words begins with restraint. When you master the art of speaking less, your words carry more weight and authority. Biblical wisdom teaches that silence often demonstrates greater understanding than endless chatter. Those who harness the power of words know when to speak and when to remain silent, creating space for divine wisdom to flow through their speech.",
+    "word.wordItems.keywords.1": [
+      "power of words",
+      "wise speech",
+      "biblical wisdom",
+      "divine restraint",
+      "spiritual communication",
+    ],
     "word.wordItems.title.2": "Listen before you speak",
     "word.wordItems.subtitle.2": "Practical: Be the last person to speak.",
     "word.wordItems.description.2":
       "Don’t rush to be the first one to speak. Practice patience, listen to others first, and then share your thoughts clearly.🥈🥉😗 <br/><br/>When you listen first, you gain their key points and conclusions — and your reply becomes better, and smarter.🆓☝️",
+    "word.wordItems.extendedContent.2":
+      "The power of words is amplified through active listening. When you listen before speaking, you tap into divine wisdom and understanding. This practice allows the Holy Spirit to guide your response, ensuring your words carry supernatural power and effectiveness. True spiritual communication flows from a heart that first receives before it gives.",
+    "word.wordItems.keywords.2": [
+      "active listening",
+      "divine wisdom",
+      "Holy Spirit guidance",
+      "spiritual communication",
+      "power of words",
+    ],
     "word.wordItems.title.3": "Speak with purpose",
     "word.wordItems.subtitle.3": `Practical: "Does this add value?" If not, then don't speak.`,
     "word.wordItems.description.3":
       "Don’t speak just for the sake of speaking. Add value with your words, and your voice will always stand out.🎯✨ <br/><br/>When you focus on contributing, even fewer words can have greater impact.💡🔥",
+    "word.wordItems.extendedContent.3":
+      "The power of words reaches its peak when every word serves a divine purpose. Speaking with intentionality means aligning your words with God's will and kingdom purposes. When you speak with purpose, your words become vessels for divine power, bringing transformation, healing, and breakthrough to those who hear them.",
+    "word.wordItems.keywords.3": [
+      "purposeful speech",
+      "divine purpose",
+      "kingdom words",
+      "transformative power",
+      "power of words",
+    ],
     "word.wordItems.title.4": "The power of questions",
     "word.wordItems.subtitle.4": "Practical: Aim to ask at least one thoughtful question.",
     "word.wordItems.description.4":
       "Don’t hesitate to ask questions — they don’t reveal ignorance, but instead they reveal depth.❓💭 <br/><br/>Good questions spark new thoughts, open fresh perspectives, and show that you truly understand the matter.🔑✨",
+    "word.wordItems.extendedContent.4":
+      "The power of words is unleashed through thoughtful questioning. Jesus himself demonstrated this principle, using questions to reveal truth and provoke deeper thinking. When you ask the right questions, you activate the power of words to unlock revelation, understanding, and spiritual breakthrough in others' lives.",
+    "word.wordItems.keywords.4": [
+      "power of questions",
+      "spiritual revelation",
+      "divine inquiry",
+      "breakthrough words",
+      "power of words",
+    ],
     "word.wordItems.title.5": "Adopt the apprentice mindset",
     "word.wordItems.subtitle.5": `Practical: "What can I learn from this person?"`,
     "word.wordItems.description.5":
       "Be ready to be a student — Every person who really wants to learn must be a student to receive from an another.📘🙏 <br/><br/>Every expert was once a learner, and a master is ready to learn new things even from a child.🌱👶",
+    "word.wordItems.extendedContent.5":
+      "The power of words grows through humble learning. When you approach conversations with an apprentice mindset, you position yourself to receive from unexpected sources. God often speaks through others, and those who understand the power of words know how to receive and apply heavenly insights from every interaction.",
+    "word.wordItems.keywords.5": [
+      "humble learning",
+      "divine wisdom",
+      "spiritual growth",
+      "heavenly insights",
+      "power of words",
+    ],
     "word.wordItems.title.6": "Speak to build others up",
     "word.wordItems.subtitle.6": "Practical: Before speaking, check — will my words build or break?",
     "word.wordItems.description.6":
       "Do not use your words to tear down — use them to lift up, and to build up.🌿✨ <br/><br/>When you speak life and light, your words build, strengthen, and inspire instead of destroy.💬🌞",
+    "word.wordItems.extendedContent.6":
+      "The power of words is most evident when used to edify and encourage. Biblical truth teaches that our words should minister grace to those who hear. When you choose to speak life, your words become instruments of divine healing, restoration, and empowerment, reflecting God's heart for humanity.",
+    "word.wordItems.keywords.6": [
+      "edifying words",
+      "speaking life",
+      "divine healing",
+      "words of grace",
+      "power of words",
+    ],
     "word.wordItems.title.7": "Keep it simple",
     "word.wordItems.subtitle.7": "Practical: Speak so that a child would understand.",
     "word.wordItems.description.7":
       "Don’t confuse with complicated words, use simple and short words — clarity beats vocabulary.📝✨ <br/><br/>The goal of speaking is not to impress but to be understood.🎯🤝",
+    "word.wordItems.extendedContent.7":
+      "The power of words is maximized through simplicity and clarity. Jesus spoke in parables that common people could understand, demonstrating that divine truth is most powerful when communicated simply. When your words are clear and accessible, they carry greater anointing and can touch more hearts with God's love and truth.",
+    "word.wordItems.keywords.7": [
+      "clear communication",
+      "simple truth",
+      "divine anointing",
+      "accessible wisdom",
+      "power of words",
+    ],
     "word.wordItems.title.8": "Speak on principles, not opinions",
     "word.wordItems.subtitle.8": "Practical: Speak only from facts and principles.",
     "word.wordItems.description.8": `Don’t base your words on fleeting feelings or opinions — ground them in principles and facts.⚖️📚 <br/><br/>When your speech is anchored in truth, it becomes steady, strong, and <span class="underline">unarguable</span>.🗝️🛡️`,
+    "word.wordItems.extendedContent.8":
+      "The power of words reaches its highest authority when rooted in eternal principles and divine truth. Speaking from biblical foundations gives your words supernatural backing and unshakeable strength. When you align your speech with God's Word, your words carry the same power and authority as Scripture itself.",
+    "word.wordItems.keywords.8": [
+      "biblical authority",
+      "divine truth",
+      "scriptural power",
+      "eternal principles",
+      "power of words",
+    ],
     "word.wordItems.title.9": "Believe your own words",
     "word.wordItems.subtitle.9": "Practical: Only speak what you can stand upon.",
     "word.wordItems.description.9":
       "If you don’t believe what you’re saying, people will notice — and your message won’t land.🗣️🤔 <br/><br/>But when you speak with genuine belief, your confidence shows and your enthusiasm convinces others too.💡🔥",
+    "word.wordItems.extendedContent.9":
+      "The power of words is activated by authentic faith and conviction. When you speak from genuine belief, your words carry spiritual authority and divine power. Faith-filled speech releases supernatural energy that can move mountains, heal hearts, and transform circumstances according to God's will.",
+    "word.wordItems.keywords.9": [
+      "faith-filled speech",
+      "spiritual authority",
+      "divine conviction",
+      "supernatural power",
+      "power of words",
+    ],
     "word.wordItems.title.10": "Speak from the heart",
     "word.wordItems.subtitle.10": "Practical: Look at people, not paper.",
     "word.wordItems.description.10":
       "If you only read from notes, your message stays on the paper and the people will eat paper.📄🙈 <br/><br/>But when you speak from the heart, you connect with eyes, reactions, and lives — your words land where they matter most: in the heart.❤️👥",
+    "word.wordItems.extendedContent.10":
+      "The power of words flows most powerfully from a heart transformed by God's love. When you speak from the heart, your words carry the anointing of the Holy Spirit and create deep spiritual connections. Heart-to-heart communication releases divine love and brings lasting transformation to those who receive your words.",
+    "word.wordItems.keywords.10": [
+      "heart communication",
+      "Holy Spirit anointing",
+      "divine love",
+      "spiritual connection",
+      "power of words",
+    ],
     "zoom.title": "→ How to transform the Power of your Words? 🪫↠🔋",
     "zoom.subtitle":
       "The shell changes when the content has been transformed.🐚🦋 Join Our Zoom Sessions: total transformation of the mind takes time with the word and in prayers, and depends on what you put into your heart.⌛📥 Join the Zoom meetings, and you will be changed. And when you are changed by the Word of God, your words will change.💎💰🎁✨ 'For of the abundance of his heart his mouth speaketh'.",
@@ -2213,7 +2306,7 @@ export const ui = {
     "word.hero.title.1": "Jumalan Sana & Raamatun sana:",
     "word.hero.title.2": "Muuta puheesi",
     "word.hero.subtitle.1":
-      "Onko Jumalan sana muuttanut puheesi? Opi miten Jumalan sana ja Raamatun sana muuttaa elämäsi.",
+      "Löydä Jumalan sanan muuttava voima elämässäsi. Opi hyödyntämään Jumalan sanan jumalallista voimaa puhuaksesi elämää, luodaksesi muutosta ja ilmentääksesi Jumalan tarkoituksia puheessasi.",
     "word.hero.subtitle.item.1": "Voima",
     "word.hero.subtitle.item.2": "Tuli",
     "word.hero.subtitle.item.3": "Sana",
@@ -2222,41 +2315,131 @@ export const ui = {
     "word.wordItems.subtitle.1": "Käytäntö: Opittele olemaan hiljaa.",
     "word.wordItems.description.1":
       "Jopa hölmö lasketaan viisaaksi, jos hän pysyy hiljaa: ja suunsa sulkeva lasketaan ymmärtäväisten joukkoon. 🧐🤐 <br/><br/>Toisaalta voit havaita hölmön sanojen paljoudesta ja sanojen paljoudesta synti löytyy kyllä helposti.🤬👿",
+    "word.wordItems.extendedContent.1":
+      "Jumalan sanan voima alkaa itsehillinnästä. Kun hallitset taidon puhua vähemmän, sanasi kantavat enemmän painoa ja auktoriteettia. Raamatullinen viisaus opettaa, että hiljaisuus osoittaa usein suurempaa ymmärrystä kuin loputon puhe. Ne, jotka ymmärtävät Jumalan sanan voiman, tietävät milloin puhua ja milloin pysyä hiljaa, luoden tilaa jumalalliselle viisaudelle virrata puheensa kautta.",
+    "word.wordItems.keywords.1": [
+      "Jumalan sana",
+      "viisas puhe",
+      "Raamatun sana",
+      "jumalallinen itsehillintä",
+      "hengellinen viestintä",
+    ],
     "word.wordItems.title.2": "Kuuntele ennen kuin puhut",
     "word.wordItems.subtitle.2": "Käytäntö: Puhu viimeisenä.",
     "word.wordItems.description.2":
       "Älä kiirehdi puhumaan ensimmäisenä. Harjoita kärsivällisyyttä, kuuntele muita ja jaa ajatuksesi sen jälkeen selkeästi.🥈🥉😗 <br/><br/>Kun kuuntelet ensin vastaanotat toisten avainkohdat ja päätelmät — omasta vastauksestasi tulee parempi ja järkevämpi.🆓☝️",
+    "word.wordItems.extendedContent.2":
+      "Jumalan sanan voima vahvistuu aktiivisen kuuntelun kautta. Kun kuuntelet ennen puhumista, hyödynnät jumalallista viisautta ja ymmärrystä. Tämä käytäntö antaa Pyhälle Hengelle mahdollisuuden ohjata vastaustasi, varmistaen että sanasi kantavat yliluonnollista voimaa ja tehokkuutta. Aito hengellinen viestintä virtaa sydämestä, joka ensin vastaanottaa ennen kuin antaa.",
+    "word.wordItems.keywords.2": [
+      "aktiivinen kuuntelu",
+      "jumalallinen viisaus",
+      "Pyhän Hengen ohjaus",
+      "hengellinen viestintä",
+      "Jumalan sana",
+    ],
     "word.wordItems.title.3": "Puhu aina tarkoituksen kera",
     "word.wordItems.subtitle.3": `Käytäntö: "Onko puheeni merkityksellistä?" Jos ei niin älä puhu.`,
     "word.wordItems.description.3":
       "Älä puhu vain puhumisen iloksi. Lisää sanoillasi keskustelun arvoa niin puheesi erottuu aina joukosta.🎯✨ <br/><br/>Kun olet keskittynyt positiiviseen vaikuttamiseen, jopa vähät sanat vaikuttavat paljon.💡🔥",
+    "word.wordItems.extendedContent.3":
+      "Jumalan sanan voima saavuttaa huippunsa, kun jokainen sana palvelee jumalallista tarkoitusta. Tarkoituksellinen puhuminen tarkoittaa sanojesi kohdistamista Jumalan tahtoon ja valtakunnan tarkoituksiin. Kun puhut tarkoituksella, sanasi tulevat jumalallisen voiman astioiksi, tuoden muutosta, parantumista ja läpimurtoa niille, jotka kuulevat ne.",
+    "word.wordItems.keywords.3": [
+      "tarkoituksellinen puhe",
+      "jumalallinen tarkoitus",
+      "valtakunnan sanat",
+      "muuttava voima",
+      "Jumalan sana",
+    ],
     "word.wordItems.title.4": "Kysymysten voima",
     "word.wordItems.subtitle.4": "Käytäntö: Pyri kysymään ainakin yksi kysymys.",
     "word.wordItems.description.4":
       "Älä arkaile kysyä kysymyksiä — ne eivät paljasta tietämättömyyttä, mutta paljastavat ajattelun syvyyttä.❓💭 <br/><br/> Hyvät kysymykset synnyttävät uusia ajatuksia, avaavat uusia katsontakantoja ja näyttävät, että todella ymmärrät aiheen.🔑✨",
+    "word.wordItems.extendedContent.4":
+      "Jumalan sanan voima vapautuu harkittujen kysymysten kautta. Jeesus itse osoitti tämän periaatteen käyttäen kysymyksiä totuuden paljastamiseen ja syvemmän ajattelun herättämiseen. Kun esität oikeita kysymyksiä, aktivoit Jumalan sanan voiman avaamaan ilmestystä, ymmärrystä ja hengellistä läpimurtoa muiden elämässä.",
+    "word.wordItems.keywords.4": [
+      "kysymysten voima",
+      "hengellinen ilmestys",
+      "jumalallinen tutkiminen",
+      "läpimurron sanat",
+      "Jumalan sana",
+    ],
     "word.wordItems.title.5": "Omaksu oppipojan ajatuskaava",
     "word.wordItems.subtitle.5": `Käytäntö: "Mitä voin oppia tältä henkilöltä?"`,
     "word.wordItems.description.5":
       "Ole valmis olemaan oppilas — jokaisen, joka haluaa oppia oikeasti, täytyy olla oppilas oppiakseen muilta .📘🙏 <br/><br/>Jokainen ekspertti oli joskus oppilas ja mestari on valmis oppimaan uusia asioita jopa lapselta.🌱👶",
+    "word.wordItems.extendedContent.5":
+      "Jumalan sanan voima kasvaa nöyrän oppimisen kautta. Kun lähestyt keskusteluja oppipojan mielessä, asetat itsesi vastaanottamaan jumalallista viisautta odottamattomista lähteistä. Jumala puhuu usein muiden kautta, ja ne jotka ymmärtävät Jumalan sanan voiman, tietävät miten vastaanottaa ja soveltaa taivaallisia oivalluksia jokaisesta vuorovaikutuksesta.",
+    "word.wordItems.keywords.5": [
+      "nöyrä oppiminen",
+      "jumalallinen viisaus",
+      "hengellinen kasvu",
+      "taivaallisia oivalluksia",
+      "Jumalan sana",
+    ],
     "word.wordItems.title.6": "Rakenna toisia sanoillasi",
     "word.wordItems.subtitle.6": "Käytäntö: Ennen kuin puhut tarkista — Rakentavatko vai rikkovatko sanani?",
     "word.wordItems.description.6":
       "Älä käytä sanojasi rikkomiseen — käytä niitä toisten nostamiseen ja rakentamiseen.🌿✨ <br/><br/>Kun puhut elämää ja valoa, sanasi rakentavat, vahvistavat ja inspiroivat toisia tuhoamisen sijaan.💬🌞",
+    "word.wordItems.extendedContent.6":
+      "Jumalan sanan voima näkyy selvimmin, kun sitä käytetään rakentamiseen ja rohkaisemiseen. Raamatullinen totuus opettaa, että sanojemme tulisi tuoda armoa niille, jotka kuulevat. Kun valitset puhua elämää, sanasi tulevat jumalallisen parantumisen, ennallistamisen ja voimaannuttamisen välineiksi, heijastaen Jumalan sydäntä ihmisyyttä kohtaan.",
+    "word.wordItems.keywords.6": [
+      "rakentavat sanat",
+      "elämän puhuminen",
+      "jumalallinen parantuminen",
+      "armon sanat",
+      "Jumalan sana",
+    ],
     "word.wordItems.title.7": "Pidä asiat yksinkertaisina",
     "word.wordItems.subtitle.7": "Käytäntö: Puhu niin että lapsikin voi ymmärtää.",
     "word.wordItems.description.7":
       "Älä sekoita muita monimutkaisilla sanoilla, vaan käytä yksinkertaisia ja lyhyitä sanoja — selkeys voittaa sanaston.📝✨ <br/><br/>Puhumisen tarkoitus ei ole näyttää hienolta tai vakuuttavalta, vaan tulla ymmärretyksi.🎯🤝",
+    "word.wordItems.extendedContent.7":
+      "Jumalan sanan voima maksimoidaan yksinkertaisuuden ja selkeyden kautta. Jeesus puhui vertauksilla, joita tavalliset ihmiset pystyivät ymmärtämään, osoittaen että jumalallinen totuus on voimakkainta, kun se välitetään yksinkertaisesti. Kun sanasi ovat selkeitä ja saavutettavia, ne kantavat suurempaa voitelua ja voivat koskettaa enemmän sydämiä Jumalan rakkaudella ja totuudella.",
+    "word.wordItems.keywords.7": [
+      "selkeä viestintä",
+      "yksinkertainen totuus",
+      "jumalallinen voitelu",
+      "saavutettava viisaus",
+      "Jumalan sana",
+    ],
     "word.wordItems.title.8": "Puhu vain periaatteita ja faktoja",
     "word.wordItems.subtitle.8": "Käytäntö: Puhu vain faktojen ja periaatteiden pohjalta.",
     "word.wordItems.description.8": `Älä perusta puhettasi muuttuviin tunteisiin ja tai mielipiteisiin — perusta ne periaatteisiin ja faktoihin.⚖️📚 <br/><br/>Kun puheesi on ankkuroitu totuuteen siitä tulee vakaa, vahva <span class="underline">vastustamaton</span>.🗝️🛡️`,
+    "word.wordItems.extendedContent.8":
+      "Jumalan sanan voima saavuttaa korkeimman auktoriteetin, kun se on juurtunut ikuisiin periaatteisiin ja jumalalliseen totuuteen. Raamatullisista perusteista puhuminen antaa sanoillesi yliluonnollisen tuen ja horjumattoman vahvuuden. Kun kohdistaat puheesi Jumalan Sanaan, sanasi kantavat samaa voimaa ja auktoriteettia kuin Raamattu itse.",
+    "word.wordItems.keywords.8": [
+      "Raamatun sana",
+      "jumalallinen totuus",
+      "Raamatullinen voima",
+      "ikuiset periaatteet",
+      "Jumalan sana",
+    ],
     "word.wordItems.title.9": "Usko oma puheesi",
     "word.wordItems.subtitle.9": "Käytäntö: Puhu vain, minkä päällä voit seistä koko painollasi.",
     "word.wordItems.description.9":
       "Jos et usko itse mitä sanot niin muut huomaavat sen — ja sanojesi viesti ei tule välittymään.🗣️🤔 <br/><br/>Mutta kun uskot aidosti sen, mitä puhut, se näkyy muille ja intoasi vakuuttaa myös muut.💡🔥",
+    "word.wordItems.extendedContent.9":
+      "Jumalan sanan voima aktivoituu aidon uskon ja vakaumuksen kautta. Kun puhut aidosta uskosta, sanasi kantavat hengellistä auktoriteettia ja jumalallista voimaa. Uskontäyteinen puhe vapauttaa yliluonnollista energiaa, joka voi siirtää vuoria, parantaa sydämiä ja muuttaa olosuhteita Jumalan tahdon mukaisesti.",
+    "word.wordItems.keywords.9": [
+      "uskontäyteinen puhe",
+      "hengellinen auktoriteetti",
+      "jumalallinen vakaumus",
+      "yliluonnollinen voima",
+      "Jumalan sana",
+    ],
     "word.wordItems.title.10": "Puhu sydämestä",
     "word.wordItems.subtitle.10": "Käytäntö: Katso ihmisiä, älä paperia.",
     "word.wordItems.description.10":
       "Jos vain luet muistiinpanoista viestisi pysyy paperissa ja ihmiset kuulevat vain paperia.📄🙈 <br/><br/>Mutta kun puhut sydämestä tavoitat ihmisten silmiä, reaktioita ja elämiä — sanasi pääsevät sinne, jossa niillä on eniten merkitystä: sydämeen.❤️👥",
+    "word.wordItems.extendedContent.10":
+      "Jumalan sanan voima virtaa voimakkaimmin sydämestä, jonka Jumalan rakkaus on muuttanut. Kun puhut sydämestä, sanasi kantavat Pyhän Hengen voitelua ja luovat syviä hengellisiä yhteyksiä. Sydämestä sydämeen -viestintä vapauttaa jumalallista rakkautta ja tuo pysyvää muutosta niille, jotka vastaanottavat sanasi.",
+    "word.wordItems.keywords.10": [
+      "sydämen viestintä",
+      "Pyhän Hengen voitelu",
+      "jumalallinen rakkaus",
+      "hengellinen yhteys",
+      "Jumalan sana",
+    ],
     "zoom.title": "→ Miten Jumalan Sana muuttaa elämäsi? 🪫↠🔋",
     "zoom.subtitle":
       "Ulkokuori muuttuu, kun sisin on muuttunut.🐚🦋  Zoom tapaamiset: täysi mielen muutos vie aikaa Jumalan Sanassa ja rukouksessa, sekä riippuu siitä, mitä istutat sydämeesi.⌛📥 Liity siis Zoom tapaamisiin ja muutut. Ja kun sinä muutut Jumalan Sanan kautta niin puheesi muuttuu,💎💰🎁✨ 'Mitä sydän on täynnä sitä suu puhuu'.",

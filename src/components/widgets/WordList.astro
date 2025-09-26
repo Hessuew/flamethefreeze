@@ -9,6 +9,8 @@ export interface WordItem {
   title: string;
   subtitle: string;
   description: string;
+  extendedContent?: string;
+  keywords?: string[];
   color: "orange" | "blue" | "green" | "purple" | "red" | "yellow" | "pink" | "indigo";
   emoji: string;
 }
@@ -156,6 +158,31 @@ const colorThemes = {
                               class="text-gray-100 text-lg xl:text-[18px] xl:leading-[28px] leading-relaxed pl-6 xl:pl-[24px] font-light"
                               set:html={item.description}
                             />
+
+                            {/* Extended Content Section */}
+                            {item.extendedContent && (
+                              <div class="mt-6 xl:mt-[24px] pl-6 xl:pl-[24px]">
+                                <div class="border-t border-gray-600/30 pt-4 xl:pt-[16px]">
+                                  <p
+                                    class="text-gray-200 text-base xl:text-[16px] xl:leading-[24px] leading-relaxed font-light"
+                                    set:html={item.extendedContent}
+                                  />
+                                </div>
+                              </div>
+                            )}
+
+                            {/* Keywords Section */}
+                            {item.keywords && item.keywords.length > 0 && (
+                              <div class="mt-4 xl:mt-[16px] pl-6 xl:pl-[24px]">
+                                <div class="flex flex-wrap gap-2 xl:gap-[8px]">
+                                  {item.keywords.map((keyword) => (
+                                    <span class={`px-3 py-1 text-xs xl:text-[12px] font-medium rounded-full bg-gradient-to-r ${theme.gradient} text-white/90 shadow-sm`}>
+                                      {keyword}
+                                    </span>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
 
                             {/* Bottom decorative line */}
                             <div class="mt-4 xl:mt-[16px] pl-6 xl:pl-[24px]">
