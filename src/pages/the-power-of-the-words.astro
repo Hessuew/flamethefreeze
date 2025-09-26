@@ -6,7 +6,7 @@ import less from "~/assets/images/word/the_power_of_the_words-less.webp";
 const metadata = {
   title: "The Power of the Words | Power of your speech",
   description:
-    "Unlock the transformative potential of your speech with Flame the Freeze. Explore how the power of the words can shape your life and bring forth positive change",
+    "Discover the divine power of words to transform your life. Learn biblical principles about the power of the words, and how your speech creates breakthrough.",
   robots: {
     index: true,
     follow: true,
@@ -18,7 +18,7 @@ const metadata = {
     siteName: "Flame the Freeze",
     title: "The Power of the Words | Power of your speech",
     description:
-      "Unlock the transformative potential of your speech with Flame the Freeze. Explore how the power of the words can shape your life and bring forth positive change",
+      "Discover the divine power of words to transform your life. Learn biblical principles about the power of the words, and how your speech creates breakthrough.",
     images: [
       {
         url: less,
@@ -32,9 +32,9 @@ const metadata = {
     handle: "@FlameTheFreeze",
     site: "@FlameTheFreeze",
     cardType: "summary_large_image",
-    title: "The Power of the Words - Transform Your Life",
+    title: "The Power of the Words 2025 | Transform Your Speech & Life Today",
     description:
-      "Discover how the power of the words transforms reality through biblical confessions and spoken declarations.",
+      "Discover the divine power of words to transform your life. Learn biblical principles about the power of the words, spiritual communication, and divine transformation through God's Word.",
   },
   ignoreTitleTemplate: true,
 };
@@ -42,6 +42,65 @@ const metadata = {
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://flamethefreeze.com/#organization",
+      name: "Flame the Freeze",
+      url: "https://flamethefreeze.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://flamethefreeze.com/favicon.svg",
+        width: 512,
+        height: 512,
+      },
+      description:
+        "Christian ministry focused on the power of words, spiritual transformation, and divine breakthrough through biblical principles.",
+      sameAs: ["https://www.youtube.com/@FlameTheFreeze", "https://twitter.com/FlameTheFreeze"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://flamethefreeze.com/#website",
+      url: "https://flamethefreeze.com",
+      name: "Flame the Freeze",
+      description: "Discover the power of words and spiritual transformation through biblical principles",
+      publisher: {
+        "@id": "https://flamethefreeze.com/#organization",
+      },
+      potentialAction: [
+        {
+          "@type": "SearchAction",
+          target: {
+            "@type": "EntryPoint",
+            urlTemplate: "https://flamethefreeze.com/search?q={search_term_string}",
+          },
+          "query-input": "required name=search_term_string",
+        },
+      ],
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://flamethefreeze.com/the-power-of-the-words#webpage",
+      url: "https://flamethefreeze.com/the-power-of-the-words",
+      name: "The Power of the Words 2025 | Transform Your Speech & Life Today",
+      isPartOf: {
+        "@id": "https://flamethefreeze.com/#website",
+      },
+      about: {
+        "@id": "https://flamethefreeze.com/the-power-of-the-words#article",
+      },
+      description:
+        "Discover the divine power of words to transform your life. Learn biblical principles about the power of the words, spiritual communication, and how your speech creates breakthrough, healing, and divine transformation through God's Word.",
+      breadcrumb: {
+        "@id": "https://flamethefreeze.com/the-power-of-the-words#breadcrumb",
+      },
+      inLanguage: "en-US",
+      potentialAction: [
+        {
+          "@type": "ReadAction",
+          target: ["https://flamethefreeze.com/the-power-of-the-words"],
+        },
+      ],
+    },
     {
       "@type": "Article",
       "@id": "https://flamethefreeze.com/the-power-of-the-words#article",
@@ -51,9 +110,9 @@ const structuredData = {
       author: {
         "@id": "https://flamethefreeze.com/#organization",
       },
-      headline: "The Power of the Words - Transform Your Life Through Speech",
+      headline: "The Power of the Words: Transform Your Speech and Life Through Divine Principles",
       description:
-        "Discover the power of the words and how your speech transforms reality. Learn biblical principles about the power of words, spoken declarations, and life-changing confessions that bring breakthrough and divine transformation.",
+        "Discover the transformative power of words in your life. Learn biblical principles about the power of the words, spiritual communication, divine wisdom, and how your speech creates breakthrough, healing, and supernatural transformation through God's Word and Holy Spirit guidance.",
       datePublished: "2024-01-01T00:00:00+00:00",
       dateModified: "2025-01-01T00:00:00+00:00",
       mainEntityOfPage: {
@@ -67,35 +126,132 @@ const structuredData = {
         url: less,
         width: 630,
         height: 630,
+        caption: "The Power of the Words - Transform Your Speech and Life",
       },
       articleSection: "Spiritual Teaching",
       keywords: [
         "the power of the words",
         "power of words",
-        "biblical confessions",
-        "spoken declarations",
+        "biblical wisdom",
+        "spiritual communication",
+        "divine wisdom",
+        "Holy Spirit guidance",
         "transformative speech",
         "divine breakthrough",
         "life and death in the tongue",
         "word of faith",
         "prophetic words",
         "spiritual transformation",
+        "biblical authority",
+        "divine truth",
+        "scriptural power",
+        "faith-filled speech",
+        "spiritual authority",
+        "divine conviction",
+        "supernatural power",
+        "heart communication",
+        "Holy Spirit anointing",
+        "divine love",
+        "spiritual connection",
+        "purposeful speech",
+        "divine purpose",
+        "kingdom words",
+        "active listening",
+        "clear communication",
+        "simple truth",
+        "divine anointing",
+        "accessible wisdom",
+        "edifying words",
+        "speaking life",
+        "divine healing",
+        "words of grace",
+        "humble learning",
+        "spiritual growth",
+        "heavenly insights",
+        "power of questions",
+        "spiritual revelation",
+        "divine inquiry",
+        "breakthrough words",
+        "eternal principles",
+        "wise speech",
+        "divine restraint",
       ],
       about: [
         {
           "@type": "Thing",
-          name: "Biblical Confessions",
-          description: "Spoken declarations based on biblical principles that transform circumstances",
+          name: "The Power of Words",
+          description:
+            "The divine ability of spoken words to create transformation, breakthrough, and spiritual change in accordance with biblical principles",
         },
         {
           "@type": "Thing",
-          name: "Power of Speech",
-          description: "The transformative ability of spoken words to create change in the spiritual and natural realm",
+          name: "Biblical Wisdom",
+          description:
+            "Divine wisdom and understanding derived from Scripture about the power and impact of human speech",
         },
         {
           "@type": "Thing",
-          name: "Divine Declarations",
-          description: "Faith-filled statements that align with God's word and bring breakthrough",
+          name: "Spiritual Communication",
+          description:
+            "Communication that flows from the Holy Spirit and aligns with God's purposes for transformation and healing",
+        },
+        {
+          "@type": "Thing",
+          name: "Divine Transformation",
+          description:
+            "Supernatural change that occurs through the power of words aligned with God's will and biblical truth",
+        },
+        {
+          "@type": "Thing",
+          name: "Holy Spirit Guidance",
+          description:
+            "Divine direction and wisdom that guides our speech to carry supernatural power and effectiveness",
+        },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://flamethefreeze.com/the-power-of-the-words#faq",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the power of the words according to the Bible?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The power of the words refers to the biblical principle that our speech has creative and transformative power. Proverbs 18:21 states 'Death and life are in the power of the tongue.' When we align our words with God's Word, they carry divine authority and can bring breakthrough, healing, and transformation.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How can I harness the power of words in my daily life?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can harness the power of words by: speaking less and listening more, speaking with divine purpose, asking thoughtful questions, adopting a humble learning mindset, speaking to build others up, keeping your communication simple and clear, grounding your speech in biblical principles, believing your own words, and speaking from the heart with Holy Spirit guidance.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What does it mean to speak with the power of words?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Speaking with the power of words means aligning your speech with God's will and biblical truth. It involves speaking with faith, conviction, and divine purpose. When your words are rooted in Scripture and guided by the Holy Spirit, they carry supernatural authority and can create positive change, healing, and breakthrough in your life and others' lives.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do words have power to transform circumstances?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Words have power to transform circumstances because they are spiritual forces that can influence both the natural and spiritual realms. When we speak in faith and alignment with God's Word, our words become vessels for divine power. They can shift atmospheres, bring healing, create breakthrough, and manifest God's purposes in our lives and situations.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the difference between regular speech and the power of words?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Regular speech is casual communication, while the power of words involves intentional, faith-filled speech that aligns with biblical principles. The power of words is characterized by divine purpose, spiritual authority, biblical foundation, Holy Spirit guidance, and the expectation of supernatural results. It's speech that carries the anointing and authority of God's Word.",
+          },
         },
       ],
     },
