@@ -1,5 +1,13 @@
 # Changelog
 
+## [3.23.0](https://github.com/Hessuew/flamethefreeze/compare/v3.22.0...v3.23.0) (2025-09-26)
+
+
+### Features
+
+* add word page content and enhance word list component ([f078c95](https://github.com/Hessuew/flamethefreeze/commit/f078c9583c3b13d190890f6cbf698047204b31f0))
+* add word page content and enhance word list component ([#294](https://github.com/Hessuew/flamethefreeze/issues/294)) ([1963c87](https://github.com/Hessuew/flamethefreeze/commit/1963c874c9d72a03fc89a7b6e971ebb8e62749a9))
+
 ## [3.22.0](https://github.com/Hessuew/flamethefreeze/compare/v3.21.0...v3.22.0) (2025-09-14)
 
 
