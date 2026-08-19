@@ -95,7 +95,7 @@ const t = useTranslations(lang);
         class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] xl:text-[15px] xl:tracking-[0.16px] font-medium lg:justify-center"
       >
         {
-          links.map(({ text, href, links, icon, description }, index) => (
+          links.map(({ text, href, links, icon, description, featured }, index) => (
             <li class={links?.length ? "dropdown" : ""}>
               {links?.length ? (
                 <>
@@ -170,22 +170,29 @@ const t = useTranslations(lang);
                 </>
               ) : (
                 <a
-                  class:list={[
+                  class={twMerge(
                     "font-bold lg:font-normal ml-[16px] lg:pl-0 px-2.5 xl:px-[10px] py-3 xl:py-[12px] flex items-center whitespace-nowrap relative group transition-all duration-300 hover:text-white",
-                    {
-                      "text-primary after:w-full": href === currentPath,
-                      "hover:text-primary after:w-0 hover:after:w-full": href !== currentPath,
-                    },
+                    href === currentPath
+                      ? "text-primary after:w-full"
+                      : "hover:text-primary after:w-0 hover:after:w-full",
                     "after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-accent after:transition-all after:duration-300",
-                  ]}
+                    featured &&
+                      "mx-3 mt-3 rounded-full border border-orange-300/40 bg-gradient-to-r from-orange-500 to-amber-400 px-5 text-slate-950 shadow-lg shadow-orange-500/20 hover:text-slate-950 lg:mx-2 lg:my-2 lg:min-h-10 lg:px-4 lg:py-2 lg:font-bold lg:after:hidden"
+                  )}
                   href={getPermalink(getLanguageRoute(href || "", lang || "en"))}
                 >
                   <div class="hidden lg:flex">{text ? t(text as keyof typeof ui.en) : text}</div>
                   <div class="flex lg:hidden items-center gap-3 active:text-primary pl-0">
                     {icon && <Icon name={icon} class="w-5 h-5 mt-0.5" />}
                     <div>
-                      <div class="font-bold text-white">{text}</div>
-                      {description && <div class="text-sm text-gray-400">{description}</div>}
+                      <div class={featured ? "font-bold text-slate-950" : "font-bold text-white"}>
+                        {text ? t(text as keyof typeof ui.en) : text}
+                      </div>
+                      {description && (
+                        <div class={featured ? "text-sm text-slate-800" : "text-sm text-gray-400"}>
+                          {t(description as keyof typeof ui.en)}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </a>
@@ -235,12 +242,7 @@ const t = useTranslations(lang);
     let currentOpenMenu: HTMLElement | null = null;
 
     // Function to safely toggle menu items
-    function toggleMenuItem(
-      button: Element | null,
-      content: HTMLElement,
-      chevron: Element | null,
-      forceClose?: boolean
-    ): void {
+    function toggleMenuItem(content: HTMLElement, chevron: Element | null, forceClose?: boolean): void {
       // Determine if we should show or hide
       let shouldShow = true;
 
@@ -307,7 +309,7 @@ const t = useTranslations(lang);
           e.preventDefault();
 
           // Toggle this menu item - no need to close other menus as toggleMenuItem handles this
-          toggleMenuItem(button, content, chevron);
+          toggleMenuItem(content, chevron);
         });
       }
     });

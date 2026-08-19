@@ -10,6 +10,7 @@ import { useTranslations } from "~/i18n/utils";
 import Steps2 from "~/components/widgets/Steps2.astro";
 import { YouTube } from "astro-embed";
 import Lyrics from "~/components/widgets/Lyrics.astro";
+import MeetingDirectory from "~/components/widgets/MeetingDirectory.astro";
 
 const metadata = {
   title: "Events",
@@ -52,7 +53,17 @@ const songs = [
 
 <Layout lang={lang} metadata={metadata}>
   <!-- Hero Widget ******************* -->
-  <Hero tagline={t("events.hero.tagline")}>
+  <Hero
+    tagline={t("events.hero.tagline")}
+    actions={[
+      {
+        variant: "primary",
+        text: t("events.hero.callToAction"),
+        href: "#meetings",
+        icon: "tabler:arrow-down",
+      },
+    ]}
+  >
     <Fragment slot="title">
       <GradientText isHeading={true} text={t("events.hero.title.span1")} />
       {t("events.hero.title1")}{" "}
@@ -64,47 +75,12 @@ const songs = [
     </Fragment>
   </Hero>
 
-  <!-- Note Widget ******************* -->
-
-  <Note title={t("events.note.title")} subtitle={t("events.note.subtitle")} />
-
-  <Lyrics id="songs" songs={songs} title={t("events.lyrics.title")}>
-    <Fragment slot="subtitle">
-      {t("events.lyrics.subtitle")}<a
-        class="text-blue-600 dark:text-blue-600 hover:underline"
-        href="https://www.rukouksenseurakunta.fi/#tapahtumat"
-        target="_blank"
-      >
-        https://www.rukouksenseurakunta.fi/
-      </a>
-    </Fragment>
-  </Lyrics>
-
-  <!-- Features2 Widget ************** -->
+  <MeetingDirectory lang={lang} />
 
   <Features2
-    title={t("events.features.title")}
-    subtitle={t("events.features.subtitle")}
+    title={t("meetings.other.title")}
     columns={3}
     items={[
-      {
-        title: t("events.features.items1.title"),
-        description: t("events.features.items1.description"),
-        description2: {
-          text: t("events.features.items1.description2"),
-          link: "https://flamethefreeze.zoom.us/j/89840579351?pwd=Hr5ZAcJHbUVrybCIIySL6sT6Vw7Rly.1",
-        },
-        icon: "tabler:book",
-      },
-      {
-        title: t("events.features.items2.title"),
-        description: t("events.features.items2.description"),
-        description2: {
-          text: t("events.features.items2.description2"),
-          link: "https://flamethefreeze.zoom.us/j/82297139976?pwd=2ZCDgn6UVPyuqKeKsh8CWBN3IQhiXu.1",
-        },
-        icon: "tabler:pray",
-      },
       {
         title: t("events.features.items3.title"),
         description: t("events.features.items3.description"),
@@ -131,6 +107,22 @@ const songs = [
       },
     ]}
   />
+
+  <!-- Note Widget ******************* -->
+
+  <Note title={t("events.note.title")} subtitle={t("events.note.subtitle")} />
+
+  <Lyrics id="songs" songs={songs} title={t("events.lyrics.title")}>
+    <Fragment slot="subtitle">
+      {t("events.lyrics.subtitle")}<a
+        class="text-blue-600 dark:text-blue-600 hover:underline"
+        href="https://www.rukouksenseurakunta.fi/#tapahtumat"
+        target="_blank"
+      >
+        https://www.rukouksenseurakunta.fi/
+      </a>
+    </Fragment>
+  </Lyrics>
 
   <Content tagline={t("events.hero2.tagline")} isReversed>
     <Fragment slot="content">

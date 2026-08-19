@@ -23,7 +23,7 @@ export type PageLayoutProps = {
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 ---
 
-<Layout metadata={metadata}>
+<Layout metadata={metadata} lang={lang}>
   <slot name="announcement">
     <Announcement lang={lang} siteRebuildStatus={siteRebuildStatus} />
   </slot>
