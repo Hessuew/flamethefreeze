@@ -92,7 +92,7 @@ const {
                     {link || link2 ? (
                       <a
                         class="text-blue-700 break-all hover:underline"
-                        href={description}
+                        href={typeof description === "string" ? description : undefined}
                         set:html={description}
                         target="_blank"
                       />

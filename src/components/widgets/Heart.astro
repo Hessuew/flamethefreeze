@@ -18,10 +18,11 @@ const {
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const headlineClasses = typeof classes?.headline === "object" ? classes.headline : undefined;
 ---
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ""}`} bg={bg}>
-  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline} />
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={headlineClasses} />
   <div class="w-full flex flex-col items-center pt-16 px-10">
     <div class="heart"></div>
     <div class="h-20"></div>

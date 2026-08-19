@@ -14,6 +14,8 @@ const {
   classes = {},
   bg = await Astro.slots.render("bg"),
 } = Astro.props;
+
+const headlineClasses = typeof classes?.headline === "object" ? classes.headline : undefined;
 ---
 
 <WidgetWrapper
@@ -22,7 +24,7 @@ const {
   containerClass={`max-w-6xl xl:max-w-[1200px] ${classes?.container ?? ""}`}
   bg={bg}
 >
-  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={headlineClasses} />
 
   <div class="grid gap-8 xl:gap-[32px] sm:grid-cols-2 lg:grid-cols-4 mt-12 xl:mt-[48px]">
     {

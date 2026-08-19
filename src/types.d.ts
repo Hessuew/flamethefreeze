@@ -386,6 +386,7 @@ export interface Steps extends Omit<Headline, "classes">, Widget {
   footer?: string;
   image?: string | Image;
   isReversed?: boolean;
+  link?: boolean;
   items: Array<Item>;
   type2?: boolean;
 }
