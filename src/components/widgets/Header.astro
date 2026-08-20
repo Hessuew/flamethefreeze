@@ -92,11 +92,11 @@ const t = useTranslations(lang);
         <LanguagePicker lang={lang} />
       </div>
       <ul
-        class="flex flex-col lg:flex-row lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] xl:text-[15px] xl:tracking-[0.16px] font-medium lg:justify-center"
+        class="flex flex-col lg:flex-row lg:items-center lg:self-center w-full lg:w-auto text-xl lg:text-[0.9375rem] tracking-[0.01rem] xl:text-[15px] xl:tracking-[0.16px] font-medium lg:justify-center"
       >
         {
           links.map(({ text, href, links, icon, description, featured }, index) => (
-            <li class={links?.length ? "dropdown" : ""}>
+            <li class={twMerge(links?.length ? "dropdown" : "", "lg:flex lg:items-center")}>
               {links?.length ? (
                 <>
                   <button
@@ -177,7 +177,7 @@ const t = useTranslations(lang);
                       : "hover:text-primary after:w-0 hover:after:w-full",
                     "after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-accent after:transition-all after:duration-300",
                     featured &&
-                      "mx-3 mt-3 rounded-full border border-orange-300/40 bg-gradient-to-r from-orange-500 to-amber-400 px-5 text-slate-950 shadow-lg shadow-orange-500/20 hover:text-slate-950 lg:mx-2 lg:my-2 lg:min-h-10 lg:px-4 lg:py-2 lg:font-bold lg:after:hidden"
+                      "mx-3 mt-3 rounded-full border border-orange-300/40 bg-gradient-to-r from-orange-500 to-amber-400 px-5 text-slate-950 shadow-lg shadow-orange-500/20 hover:text-slate-950 lg:mx-2 lg:my-0 lg:px-3.5 lg:py-1.5 lg:text-sm lg:font-bold lg:after:hidden"
                   )}
                   href={getPermalink(getLanguageRoute(href || "", lang || "en"))}
                 >
