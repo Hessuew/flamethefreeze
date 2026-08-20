@@ -1006,8 +1006,27 @@ export const ui = {
     "hourOfEncounter.emailLabel": "Email",
     "hourOfEncounter.phoneLabel": "Phone / WhatsApp",
     "hourOfEncounter.websiteLabel": "Websites",
+    "hourOfEncounter.ministerTitle": "Ministering",
+    "hourOfEncounter.ministerName": "Prof Andrew Agbaje",
+    "hourOfEncounter.scriptureText": "Jesus Christ is the same yesterday, today and forever.",
+    "hourOfEncounter.scriptureRef": "Hebrews 13:8",
+    "hourOfEncounter.miraclesTitle": "Miracles & Testimonies",
+    "hourOfEncounter.miraclesSubtitle":
+      "Documented testimonies of God's power and healing shared from the campaign flyer:",
+    "hourOfEncounter.miracles.1":
+      "Lame man healed and walked perfectly at Kuopio city center, Finland on June 28, 2026",
+    "hourOfEncounter.miracles.2": "Lung disease from childhood that lasted 30-years was healed on April 12, 2026",
+    "hourOfEncounter.miracles.3": "4 years depression, anxiety and mental health problems healed on February 8, 2026",
+    "hourOfEncounter.miracles.4":
+      "Shorter leg and arm of two >40-year-old ladies grew out to become equal with other limbs on Nov. 9, 2025",
+    "hourOfEncounter.miracles.5": "14-year-long panic attacks and visualisation disorder healed on July 27, 2025",
+    "hourOfEncounter.miracles.6": "Deaf ear of >70-year-old lady opened on April 20, 2025",
+    "hourOfEncounter.miracles.7": "20-year-old lady raised from death on Jan 9, 2024",
+    "hourOfEncounter.miracles.8":
+      "Deliverance of two persons >40 years old from New Age occultism, meditation and energy spirituality, evil spirits, demons, and witchcraft on July 13 and 20, 2024",
+    "hourOfEncounter.miracles.9": "Freedom from pornography and video games addiction of 13 years in July 2020",
     "hourOfEncounter.sourceNote":
-      "Event schedule, Zoom access details, and ministry contacts are reproduced from the supplied campaign flyer.",
+      "Event schedule, Zoom access details, ministry contacts, and miracle testimonies are reproduced from the supplied campaign flyer.",
     "events.content.subtitle": "JESUS FEST Winter Revival - December 2024",
     "events.content.subtitle1": "God sent two angels, and rescued me from hell.",
     "events.content.subtitle2":
@@ -2853,8 +2872,29 @@ export const ui = {
     "hourOfEncounter.emailLabel": "Sähköposti",
     "hourOfEncounter.phoneLabel": "Puhelin / WhatsApp",
     "hourOfEncounter.websiteLabel": "Verkkosivut",
+    "hourOfEncounter.ministerTitle": "Palvelemassa",
+    "hourOfEncounter.ministerName": "Professori Andrew Agbaje",
+    "hourOfEncounter.scriptureText": "Jeesus Kristus on sama eilen ja tänään ja iankaikkisesti.",
+    "hourOfEncounter.scriptureRef": "Heprealaiskirje 13:8",
+    "hourOfEncounter.miraclesTitle": "Ihmeitä ja todistuksia",
+    "hourOfEncounter.miraclesSubtitle":
+      "Kampanjaesitteessä jaetut dokumentoidut todistukset Jumalan voimasta ja parantumisista:",
+    "hourOfEncounter.miracles.1": "Rampa mies parantui ja käveli täydellisesti Kuopion keskustassa 28. kesäkuuta 2026",
+    "hourOfEncounter.miracles.2": "Lapsuudesta asti 30 vuotta kestänyt keuhkosairaus parantui 12. huhtikuuta 2026",
+    "hourOfEncounter.miracles.3":
+      "4 vuotta kestänyt masennus, ahdistus ja mielenterveysongelmat parantuivat 8. helmikuuta 2026",
+    "hourOfEncounter.miracles.4":
+      "Kahden yli 40-vuotiaan naisen lyhyempi jalka ja käsi kasvoivat samanpituisiksi muiden raajojen kanssa 9. marraskuuta 2025",
+    "hourOfEncounter.miracles.5":
+      "14 vuotta kestäneet paniikkikohtaukset ja näköhäiriöt parantuivat 27. heinäkuuta 2025",
+    "hourOfEncounter.miracles.6": "Yli 70-vuotiaan naisen kuuro korva avautui 20. huhtikuuta 2025",
+    "hourOfEncounter.miracles.7": "20-vuotias nainen heräsi kuolleista 9. tammikuuta 2024",
+    "hourOfEncounter.miracles.8":
+      "Kahden yli 40-vuotiaan henkilön vapautuminen New Age -okkultismista, meditaatiosta ja energiaspiritualismista, pahoista hengistä, demoneista ja noituudesta 13. ja 20. heinäkuuta 2024",
+    "hourOfEncounter.miracles.9":
+      "Vapautuminen 13 vuotta kestäneestä porno- ja videopeliriippuvuudesta heinäkuussa 2020",
     "hourOfEncounter.sourceNote":
-      "Tapahtuman aikataulu, Zoom-tiedot ja palvelutyön yhteystiedot on toistettu toimitetusta kampanjaesitteestä.",
+      "Tapahtuman aikataulu, Zoom-tiedot, palvelutyön yhteystiedot ja ihmetodistukset on toistettu toimitetusta kampanjaesitteestä.",
     "events.features.items5.description2": "Jokaisena päivänä.",
     "events.content.subtitle": "JESUS FEST Talvi Herätys - Joulukuu 2024",
     "events.content.subtitle1": "Jumala lähetti kaksi enkeliään ja pelasti minun helvetistä.",

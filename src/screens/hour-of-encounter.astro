@@ -17,6 +17,18 @@ const canonicalPath = HOUR_OF_ENCOUNTER.detailsPath[lang];
 const canonicalUrl = new URL(canonicalPath, "https://flamethefreeze.com").toString();
 const flyerUrl = new URL(flyer.src, "https://flamethefreeze.com").toString();
 
+const MIRACLE_KEYS = [
+  "hourOfEncounter.miracles.1",
+  "hourOfEncounter.miracles.2",
+  "hourOfEncounter.miracles.3",
+  "hourOfEncounter.miracles.4",
+  "hourOfEncounter.miracles.5",
+  "hourOfEncounter.miracles.6",
+  "hourOfEncounter.miracles.7",
+  "hourOfEncounter.miracles.8",
+  "hourOfEncounter.miracles.9",
+] as const;
+
 const metadata: MetaData = {
   title: `${HOUR_OF_ENCOUNTER.title} | Flame the Freeze North America`,
   description: t("hourOfEncounter.metaDescription"),
@@ -160,6 +172,35 @@ const metadata: MetaData = {
             <p>{t("meetings.zoomSafety")}</p>
           </div>
         </div>
+
+        <section
+          aria-labelledby="ministering-title"
+          class="mt-10 rounded-2xl border border-amber-300/20 bg-amber-500/10 p-6"
+        >
+          <h2 id="ministering-title" class="text-sm font-bold uppercase tracking-[0.16em] text-amber-300">
+            {t("hourOfEncounter.ministerTitle")}
+          </h2>
+          <p class="mt-2 text-xl font-bold text-white">{t("hourOfEncounter.ministerName")}</p>
+          <blockquote class="mt-4 border-l-2 border-amber-400/50 pl-4 italic text-amber-100/90">
+            "{t("hourOfEncounter.scriptureText")}"
+            <footer class="mt-1 font-semibold not-italic text-amber-300">— {t("hourOfEncounter.scriptureRef")}</footer>
+          </blockquote>
+        </section>
+
+        <section aria-labelledby="miracles-title" class="mt-10">
+          <h2 id="miracles-title" class="text-2xl font-bold text-white">{t("hourOfEncounter.miraclesTitle")}</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-300">{t("hourOfEncounter.miraclesSubtitle")}</p>
+          <ul class="mt-4 space-y-3">
+            {
+              MIRACLE_KEYS.map((key) => (
+                <li class="flex items-start gap-3 rounded-xl border border-white/10 bg-black/20 p-3.5 text-sm leading-relaxed text-slate-200">
+                  <Icon name="tabler:sparkles" class="mt-0.5 h-5 w-5 flex-none text-amber-400" />
+                  <span>{t(key)}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
 
         <section aria-labelledby="event-contact-title" class="mt-10">
           <h2 id="event-contact-title" class="text-2xl font-bold text-white">{t("hourOfEncounter.contactTitle")}</h2>
