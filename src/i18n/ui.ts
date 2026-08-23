@@ -965,6 +965,68 @@ export const ui = {
     "events.features.items5.title": "Personal Discipleship",
     "events.features.items5.description":
       "But what Jesus said continued, 'and make disciples of all the nations, baptizing them into the name of the Father and of the Son and of the Holy Spirit, teaching them to observe everything that I have commanded you'. People who come into Christ must grow into mature sons of God who can shift any atmosphere with unwavering faith and with the presence of God they carry.",
+    "campaign.banner.eyebrow": "North America online event",
+    "campaign.banner.schedule": "Second and fourth Sundays · 7:00 p.m. Eastern Time · Zoom",
+    "campaign.banner.details": "View event details",
+    "campaign.banner.allMeetings": "All meetings",
+    "campaign.banner.dismiss": "Dismiss the Hour of Encounter announcement",
+    "meetings.eyebrow": "Meet online",
+    "meetings.title": "Join a meeting",
+    "meetings.subtitle":
+      "Choose a meeting below for its schedule and verified Zoom details. Meeting links remain available so you can prepare before the session starts.",
+    "meetings.campaign.badge": "North America · Online",
+    "meetings.campaign.description":
+      "A recurring Flame the Freeze North America Zoom event presented as Hour of Encounter.",
+    "meetings.campaign.schedule": "Every second and fourth Sunday of the month",
+    "meetings.campaign.startDate": "August 9, 2026",
+    "meetings.bible.schedule": "Odd-numbered Saturdays at 6:00 p.m. Europe/Helsinki time",
+    "meetings.prayer.schedule": "Even-numbered Saturdays at 6:00 p.m. Europe/Helsinki time",
+    "meetings.scheduleLabel": "Schedule",
+    "meetings.timeLabel": "Time",
+    "meetings.startsLabel": "Beginning",
+    "meetings.meetingIdLabel": "Meeting ID",
+    "meetings.passcodeLabel": "Passcode",
+    "meetings.viewDetails": "View event details",
+    "meetings.joinZoom": "Join on Zoom",
+    "meetings.other.title": "More ways to connect",
+    "meetings.zoomSafety":
+      "Zoom opens in a new tab. Before joining, confirm that the meeting title and ID match the details shown on this page.",
+    "hourOfEncounter.metaDescription":
+      "Join Hour of Encounter, a Flame the Freeze North America Zoom event every second and fourth Sunday at 7:00 p.m. Eastern Time, beginning August 9, 2026.",
+    "hourOfEncounter.flyerAlt": "Hour of Encounter flyer for the recurring Flame the Freeze North America Zoom event",
+    "hourOfEncounter.openFlyer": "Open the full-size Hour of Encounter flyer in a new tab",
+    "hourOfEncounter.flyerCaption": "The supplied Hour of Encounter campaign flyer. Select to view it full size.",
+    "hourOfEncounter.eyebrow": "Flame the Freeze North America presents",
+    "hourOfEncounter.intro":
+      "Join Prof Andrew Agbaje online for Hour of Encounter. The event recurs on the second and fourth Sunday of each month.",
+    "hourOfEncounter.timezoneHelp":
+      "Eastern Time follows seasonal clock changes. The calendar download converts the event to your local time.",
+    "hourOfEncounter.addCalendar": "Add recurring event to calendar",
+    "hourOfEncounter.contactTitle": "Ministry contacts",
+    "hourOfEncounter.emailLabel": "Email",
+    "hourOfEncounter.phoneLabel": "Phone / WhatsApp",
+    "hourOfEncounter.websiteLabel": "Websites",
+    "hourOfEncounter.ministerTitle": "Ministering",
+    "hourOfEncounter.ministerName": "Prof Andrew Agbaje",
+    "hourOfEncounter.scriptureText": "Jesus Christ is the same yesterday, today and forever.",
+    "hourOfEncounter.scriptureRef": "Hebrews 13:8",
+    "hourOfEncounter.miraclesTitle": "Miracles & Testimonies",
+    "hourOfEncounter.miraclesSubtitle":
+      "Documented testimonies of God's power and healing shared from the campaign flyer:",
+    "hourOfEncounter.miracles.1":
+      "Lame man healed and walked perfectly at Kuopio city center, Finland on June 28, 2026",
+    "hourOfEncounter.miracles.2": "Lung disease from childhood that lasted 30-years was healed on April 12, 2026",
+    "hourOfEncounter.miracles.3": "4 years depression, anxiety and mental health problems healed on February 8, 2026",
+    "hourOfEncounter.miracles.4":
+      "Shorter leg and arm of two >40-year-old ladies grew out to become equal with other limbs on Nov. 9, 2025",
+    "hourOfEncounter.miracles.5": "14-year-long panic attacks and visualisation disorder healed on July 27, 2025",
+    "hourOfEncounter.miracles.6": "Deaf ear of >70-year-old lady opened on April 20, 2025",
+    "hourOfEncounter.miracles.7": "20-year-old lady raised from death on Jan 9, 2024",
+    "hourOfEncounter.miracles.8":
+      "Deliverance of two persons >40 years old from New Age occultism, meditation and energy spirituality, evil spirits, demons, and witchcraft on July 13 and 20, 2024",
+    "hourOfEncounter.miracles.9": "Freedom from pornography and video games addiction of 13 years in July 2020",
+    "hourOfEncounter.sourceNote":
+      "Event schedule, Zoom access details, ministry contacts, and miracle testimonies are reproduced from the supplied campaign flyer.",
     "events.content.subtitle": "JESUS FEST Winter Revival - December 2024",
     "events.content.subtitle1": "God sent two angels, and rescued me from hell.",
     "events.content.subtitle2":
@@ -1174,6 +1236,8 @@ export const ui = {
     "header.description7": "They continued steadfastly in doctrine and fellowship",
     "header.link8": "What does the<br />Holy Ghost do?",
     "header.description8": "Discover 7-point list of what the Holy Ghost does.",
+    "header.joinMeeting": "Join a meeting",
+    "header.joinMeetingDescription": "See online meeting times and Zoom details",
     "index.hero0.title1": "Our purpose is not to build a megachurch, but to",
     "index.hero0.title2": " the whole body of Christ in the",
     "index.hero0.title3": " of the Spirit,",
@@ -2766,6 +2830,71 @@ export const ui = {
     "events.features.items5.title": "Henkilökohtainen opetuslapseuttaminen",
     "events.features.items5.description":
       "Mutta se, mitä Jeesus sanoi, ei loppunut siihen, 'ja tehkää kaikista kansoista minun opetuslapsiani. Kastakaa heidät Isän ja Pojan ja Pyhän Hengen nimeen ja opettakaa heitä pitämään kaikki, mitä minä olen käskenyt teidän pitää.' Niiden, jotka tulevat Kristuksen luokse täytyy kasvaa täyteen aikuisuuteen. Miehiksi (kun hengessä ei ole miestä eikä naista), jotka voivat muuttaa minkä tahansa tilanteen vankkumattomalla uskolla ja Kaikkivaltiaan läsnöololla, jota he kantavat mukanaan.",
+    "campaign.banner.eyebrow": "Pohjois-Amerikan verkkotapahtuma",
+    "campaign.banner.schedule": "Kuukauden toinen ja neljäs sunnuntai · klo 19.00 Eastern Time · Zoom",
+    "campaign.banner.details": "Näytä tapahtuman tiedot",
+    "campaign.banner.allMeetings": "Kaikki tapaamiset",
+    "campaign.banner.dismiss": "Sulje Hour of Encounter -ilmoitus",
+    "meetings.eyebrow": "Tapaa verkossa",
+    "meetings.title": "Liity tapaamiseen",
+    "meetings.subtitle":
+      "Valitse tapaaminen nähdäksesi aikataulun ja tarkistetut Zoom-tiedot. Linkit ovat saatavilla etukäteen, jotta voit valmistautua tapaamiseen.",
+    "meetings.campaign.badge": "Pohjois-Amerikka · Verkossa",
+    "meetings.campaign.description":
+      "Flame the Freeze North American toistuva Zoom-tapahtuma nimeltä Hour of Encounter.",
+    "meetings.campaign.schedule": "Joka kuukauden toinen ja neljäs sunnuntai",
+    "meetings.campaign.startDate": "9. elokuuta 2026",
+    "meetings.bible.schedule": "Parittomien viikkojen lauantaisin klo 18.00 Suomen aikaa",
+    "meetings.prayer.schedule": "Parillisten viikkojen lauantaisin klo 18.00 Suomen aikaa",
+    "meetings.scheduleLabel": "Aikataulu",
+    "meetings.timeLabel": "Aika",
+    "meetings.startsLabel": "Alkaen",
+    "meetings.meetingIdLabel": "Kokoustunnus",
+    "meetings.passcodeLabel": "Tunnuskoodi",
+    "meetings.viewDetails": "Näytä tapahtuman tiedot",
+    "meetings.joinZoom": "Liity Zoomissa",
+    "meetings.other.title": "Muita tapoja osallistua",
+    "meetings.zoomSafety":
+      "Zoom avautuu uuteen välilehteen. Varmista ennen liittymistä, että tapaamisen nimi ja tunnus vastaavat tällä sivulla näkyviä tietoja.",
+    "hourOfEncounter.metaDescription":
+      "Liity Hour of Encounter -Zoom-tapahtumaan kuukauden toisena ja neljäntenä sunnuntaina klo 19.00 Eastern Time, alkaen 9. elokuuta 2026.",
+    "hourOfEncounter.flyerAlt": "Hour of Encounter -esite Flame the Freeze North American toistuvaan Zoom-tapahtumaan",
+    "hourOfEncounter.openFlyer": "Avaa Hour of Encounter -esite täysikokoisena uuteen välilehteen",
+    "hourOfEncounter.flyerCaption":
+      "Toimitettu Hour of Encounter -kampanjaesite. Avaa se täysikokoisena valitsemalla kuva.",
+    "hourOfEncounter.eyebrow": "Flame the Freeze North America esittää",
+    "hourOfEncounter.intro":
+      "Liity professori Andrew Agbajen Hour of Encounter -verkkotapahtumaan. Tapahtuma toistuu kuukauden toisena ja neljäntenä sunnuntaina.",
+    "hourOfEncounter.timezoneHelp":
+      "Eastern Time noudattaa kausittaisia kellonsiirtoja. Kalenterilataus muuntaa tapahtuman paikalliseen aikaasi.",
+    "hourOfEncounter.addCalendar": "Lisää toistuva tapahtuma kalenteriin",
+    "hourOfEncounter.contactTitle": "Palvelutyön yhteystiedot",
+    "hourOfEncounter.emailLabel": "Sähköposti",
+    "hourOfEncounter.phoneLabel": "Puhelin / WhatsApp",
+    "hourOfEncounter.websiteLabel": "Verkkosivut",
+    "hourOfEncounter.ministerTitle": "Palvelemassa",
+    "hourOfEncounter.ministerName": "Professori Andrew Agbaje",
+    "hourOfEncounter.scriptureText": "Jeesus Kristus on sama eilen ja tänään ja iankaikkisesti.",
+    "hourOfEncounter.scriptureRef": "Heprealaiskirje 13:8",
+    "hourOfEncounter.miraclesTitle": "Ihmeitä ja todistuksia",
+    "hourOfEncounter.miraclesSubtitle":
+      "Kampanjaesitteessä jaetut dokumentoidut todistukset Jumalan voimasta ja parantumisista:",
+    "hourOfEncounter.miracles.1": "Rampa mies parantui ja käveli täydellisesti Kuopion keskustassa 28. kesäkuuta 2026",
+    "hourOfEncounter.miracles.2": "Lapsuudesta asti 30 vuotta kestänyt keuhkosairaus parantui 12. huhtikuuta 2026",
+    "hourOfEncounter.miracles.3":
+      "4 vuotta kestänyt masennus, ahdistus ja mielenterveysongelmat parantuivat 8. helmikuuta 2026",
+    "hourOfEncounter.miracles.4":
+      "Kahden yli 40-vuotiaan naisen lyhyempi jalka ja käsi kasvoivat samanpituisiksi muiden raajojen kanssa 9. marraskuuta 2025",
+    "hourOfEncounter.miracles.5":
+      "14 vuotta kestäneet paniikkikohtaukset ja näköhäiriöt parantuivat 27. heinäkuuta 2025",
+    "hourOfEncounter.miracles.6": "Yli 70-vuotiaan naisen kuuro korva avautui 20. huhtikuuta 2025",
+    "hourOfEncounter.miracles.7": "20-vuotias nainen heräsi kuolleista 9. tammikuuta 2024",
+    "hourOfEncounter.miracles.8":
+      "Kahden yli 40-vuotiaan henkilön vapautuminen New Age -okkultismista, meditaatiosta ja energiaspiritualismista, pahoista hengistä, demoneista ja noituudesta 13. ja 20. heinäkuuta 2024",
+    "hourOfEncounter.miracles.9":
+      "Vapautuminen 13 vuotta kestäneestä porno- ja videopeliriippuvuudesta heinäkuussa 2020",
+    "hourOfEncounter.sourceNote":
+      "Tapahtuman aikataulu, Zoom-tiedot, palvelutyön yhteystiedot ja ihmetodistukset on toistettu toimitetusta kampanjaesitteestä.",
     "events.features.items5.description2": "Jokaisena päivänä.",
     "events.content.subtitle": "JESUS FEST Talvi Herätys - Joulukuu 2024",
     "events.content.subtitle1": "Jumala lähetti kaksi enkeliään ja pelasti minun helvetistä.",
@@ -2967,6 +3096,8 @@ export const ui = {
     "header.description7": "He jatkoivat uskollisesti opissa ja yhteydessä",
     "header.link8": 'Pyhä Henki, <br class="hidden lg:block" />Mitä hän tekee?',
     "header.description8": "Opi, mitä Pyhä Henki tekee 7 kohdan listan kautta.",
+    "header.joinMeeting": "Liity tapaamiseen",
+    "header.joinMeetingDescription": "Katso verkkotapaamisten ajat ja Zoom-tiedot",
     "index.hero0.title1": "Emme hajota Kristuksen ruumista, vaan",
     "index.hero0.title2": " sen ",
     "index.hero0.title3": "ja ",

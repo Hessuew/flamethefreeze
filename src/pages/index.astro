@@ -3,6 +3,8 @@ import Template from "~/screens/index.astro";
 
 import logoUrl from "~/assets/images/default.jpg";
 
+const { lang = "en" } = Astro.props;
+
 const metadata = {
   title: "Fire of God & Fire for God 2025 | Flame the Freeze",
   description:
@@ -37,4 +39,4 @@ const metadata = {
 };
 ---
 
-<Template lang="en" metadata={metadata} siteRebuildStatus={{ status: "completed", display: false }} />
+<Template lang={lang} metadata={metadata} siteRebuildStatus={{ status: "completed", display: false }} />

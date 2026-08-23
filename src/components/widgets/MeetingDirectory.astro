@@ -1,0 +1,126 @@
+---
+import { Icon } from "astro-icon/components";
+import { HOUR_OF_ENCOUNTER, ONLINE_MEETINGS } from "~/data/meetings";
+import { ui } from "~/i18n/ui";
+import { useTranslations } from "~/i18n/utils";
+import { getPermalink } from "~/utils/permalinks";
+
+interface Props {
+  lang?: "en" | "fi";
+}
+
+const { lang = "en" } = Astro.props;
+const t = useTranslations(lang);
+const translate = (key: string) => t(key as keyof typeof ui.en);
+const detailsUrl = getPermalink(HOUR_OF_ENCOUNTER.detailsPath[lang]);
+---
+
+<section id="meetings" aria-labelledby="meetings-title" class="relative scroll-mt-24 py-16 md:py-24 xl:py-[96px]">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 xl:max-w-[1280px] xl:px-[24px]">
+    <div class="mx-auto mb-10 max-w-3xl text-center md:mb-14">
+      <p class="text-sm font-bold uppercase tracking-[0.18em] text-orange-400">{t("meetings.eyebrow")}</p>
+      <h2 id="meetings-title" class="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        {t("meetings.title")}
+      </h2>
+      <p class="mt-4 text-lg leading-8 text-slate-300">{t("meetings.subtitle")}</p>
+    </div>
+
+    <div class="grid min-w-0 gap-6 lg:grid-cols-2">
+      <article
+        class="relative min-w-0 overflow-hidden rounded-3xl border border-amber-400/35 bg-gradient-to-br from-amber-500/15 via-orange-500/10 to-purple-700/10 p-6 shadow-2xl shadow-black/20 sm:p-8 lg:col-span-2"
+      >
+        <div class="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-amber-400/10 blur-3xl" aria-hidden="true">
+        </div>
+        <div class="relative grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1.3fr)_minmax(18rem,0.7fr)] lg:items-end">
+          <div class="min-w-0">
+            <p
+              class="inline-flex items-center rounded-full border border-amber-300/30 bg-amber-300/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-amber-200"
+            >
+              <Icon name="tabler:world" class="mr-2 h-4 w-4" />
+              {t("meetings.campaign.badge")}
+            </p>
+            <h3 class="mt-4 text-2xl font-bold text-white sm:text-3xl">{HOUR_OF_ENCOUNTER.title}</h3>
+            <p class="mt-3 max-w-3xl text-base leading-7 text-slate-200">{t("meetings.campaign.description")}</p>
+            <dl class="mt-6 grid gap-4 text-sm sm:grid-cols-3">
+              <div>
+                <dt class="font-semibold text-amber-300">{t("meetings.scheduleLabel")}</dt>
+                <dd class="mt-1 text-slate-200">{t("meetings.campaign.schedule")}</dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-amber-300">{t("meetings.timeLabel")}</dt>
+                <dd class="mt-1 text-slate-200">{HOUR_OF_ENCOUNTER.time} {HOUR_OF_ENCOUNTER.timezoneLabel}</dd>
+              </div>
+              <div>
+                <dt class="font-semibold text-amber-300">{t("meetings.startsLabel")}</dt>
+                <dd class="mt-1 text-slate-200">
+                  <time datetime={HOUR_OF_ENCOUNTER.firstOccurrence}>{t("meetings.campaign.startDate")}</time>
+                </dd>
+              </div>
+            </dl>
+          </div>
+          <div class="flex min-w-0 flex-col gap-3 sm:flex-row lg:flex-col">
+            <a
+              href={detailsUrl}
+              class="inline-flex min-h-12 items-center justify-center rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-3 font-bold text-slate-950 transition hover:from-amber-300 hover:to-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
+            >
+              {t("meetings.viewDetails")}
+              <Icon name="tabler:arrow-right" class="ml-2 h-5 w-5" />
+            </a>
+            <a
+              href={HOUR_OF_ENCOUNTER.joinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-white/5 px-6 py-3 font-semibold text-white transition hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
+            >
+              {t("meetings.joinZoom")}
+              <Icon name="tabler:external-link" class="ml-2 h-5 w-5" />
+            </a>
+          </div>
+        </div>
+      </article>
+
+      {
+        ONLINE_MEETINGS.map((meeting) => (
+          <article class="flex min-w-0 flex-col rounded-3xl border border-white/15 bg-white/[0.06] p-6 shadow-xl shadow-black/10 backdrop-blur sm:p-8">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 text-white">
+              <Icon name={meeting.icon} class="h-6 w-6" />
+            </div>
+            <h3 class="mt-5 text-2xl font-bold text-white">{translate(meeting.titleKey)}</h3>
+            <p class="mt-3 flex-1 text-base leading-7 text-slate-300">{translate(meeting.descriptionKey)}</p>
+            <dl class="mt-6 space-y-3 border-t border-white/10 pt-5 text-sm">
+              <div class="flex min-w-0 items-start justify-between gap-4">
+                <dt class="font-semibold text-slate-400">{t("meetings.scheduleLabel")}</dt>
+                <dd class="min-w-0 text-right text-slate-200">{translate(meeting.scheduleKey)}</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4">
+                <dt class="font-semibold text-slate-400">{t("meetings.meetingIdLabel")}</dt>
+                <dd class="font-mono text-slate-200">{meeting.meetingId}</dd>
+              </div>
+              <div class="flex items-start justify-between gap-4">
+                <dt class="font-semibold text-slate-400">{t("meetings.passcodeLabel")}</dt>
+                <dd class="font-mono text-slate-200">{meeting.passcode}</dd>
+              </div>
+            </dl>
+            <a
+              href={meeting.joinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${t("meetings.joinZoom")}: ${translate(meeting.titleKey)}`}
+              class="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-6 py-3 font-bold text-white transition hover:from-blue-500 hover:to-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-300"
+            >
+              {t("meetings.joinZoom")}
+              <Icon name="tabler:external-link" class="ml-2 h-5 w-5" />
+            </a>
+          </article>
+        ))
+      }
+    </div>
+
+    <div
+      class="mx-auto mt-8 flex max-w-3xl items-start gap-3 rounded-2xl border border-blue-300/20 bg-blue-400/10 p-4 text-sm leading-6 text-blue-100"
+    >
+      <Icon name="tabler:shield-check" class="mt-0.5 h-5 w-5 flex-none" />
+      <p>{t("meetings.zoomSafety")}</p>
+    </div>
+  </div>
+</section>

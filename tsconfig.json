@@ -11,5 +11,10 @@
     "jsxImportSource": "react"
   },
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist/"]
+  "exclude": [
+    "dist/",
+    "workers/",
+    "src/components/widgets/BlogHighlightedPosts.astro",
+    "src/components/widgets/BlogLatestPosts.astro"
+  ]
 }

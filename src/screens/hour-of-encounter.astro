@@ -1,0 +1,269 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import flyer from "~/assets/images/events/hour-of-encounter.jpg";
+import { HOUR_OF_ENCOUNTER } from "~/data/meetings";
+import { useTranslations } from "~/i18n/utils";
+import Layout from "~/layouts/PageLayout.astro";
+import type { MetaData } from "~/types";
+
+interface Props {
+  lang?: "en" | "fi";
+}
+
+const { lang = "en" } = Astro.props;
+const t = useTranslations(lang);
+const canonicalPath = HOUR_OF_ENCOUNTER.detailsPath[lang];
+const canonicalUrl = new URL(canonicalPath, "https://flamethefreeze.com").toString();
+const flyerUrl = new URL(flyer.src, "https://flamethefreeze.com").toString();
+
+const MIRACLE_KEYS = [
+  "hourOfEncounter.miracles.1",
+  "hourOfEncounter.miracles.2",
+  "hourOfEncounter.miracles.3",
+  "hourOfEncounter.miracles.4",
+  "hourOfEncounter.miracles.5",
+  "hourOfEncounter.miracles.6",
+  "hourOfEncounter.miracles.7",
+  "hourOfEncounter.miracles.8",
+  "hourOfEncounter.miracles.9",
+] as const;
+
+const metadata: MetaData = {
+  title: `${HOUR_OF_ENCOUNTER.title} | Flame the Freeze North America`,
+  description: t("hourOfEncounter.metaDescription"),
+  canonical: canonicalUrl,
+  openGraph: {
+    type: "website",
+    url: canonicalUrl,
+    siteName: "Flame the Freeze",
+    locale: lang === "fi" ? "fi_FI" : "en_US",
+    images: [
+      {
+        url: flyer,
+        alt: t("hourOfEncounter.flyerAlt"),
+        width: flyer.width,
+        height: flyer.height,
+      },
+    ],
+  },
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: HOUR_OF_ENCOUNTER.title,
+    description: t("hourOfEncounter.metaDescription"),
+    startDate: "2026-08-09T19:00:00-04:00",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
+    image: flyerUrl,
+    url: canonicalUrl,
+    location: {
+      "@type": "VirtualLocation",
+      url: HOUR_OF_ENCOUNTER.joinUrl,
+    },
+    organizer: {
+      "@type": "Organization",
+      name: "Flame the Freeze North America",
+      url: "https://flamethefreeze.com",
+    },
+  },
+};
+---
+
+<Layout lang={lang} metadata={metadata}>
+  <section class="relative py-12 sm:py-16 lg:py-24">
+    <div
+      class="mx-auto grid min-w-0 max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:items-start xl:max-w-[1280px] xl:px-[24px]"
+    >
+      <figure class="min-w-0 lg:sticky lg:top-24">
+        <a
+          href={flyer.src}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={t("hourOfEncounter.openFlyer")}
+          class="block overflow-hidden rounded-3xl border border-amber-300/25 shadow-2xl shadow-black/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-300"
+        >
+          <Image
+            src={flyer}
+            alt={t("hourOfEncounter.flyerAlt")}
+            widths={[480, 768, 1151]}
+            sizes="(max-width: 1023px) 100vw, 42vw"
+            loading="eager"
+            class="h-auto w-full"
+          />
+        </a>
+        <figcaption class="mt-3 text-center text-sm text-slate-400">{t("hourOfEncounter.flyerCaption")}</figcaption>
+      </figure>
+
+      <article
+        class="min-w-0 rounded-3xl border border-white/15 bg-white/[0.06] p-6 shadow-2xl shadow-black/20 backdrop-blur sm:p-8 lg:p-10"
+      >
+        <p class="text-sm font-bold uppercase tracking-[0.18em] text-amber-300">{t("hourOfEncounter.eyebrow")}</p>
+        <h1 class="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl">{HOUR_OF_ENCOUNTER.title}</h1>
+        <p class="mt-5 text-lg leading-8 text-slate-200">{t("hourOfEncounter.intro")}</p>
+
+        <dl class="mt-8 grid gap-5 border-y border-white/10 py-6 sm:grid-cols-2">
+          <div>
+            <dt class="flex items-center font-semibold text-amber-300">
+              <Icon name="tabler:calendar-repeat" class="mr-2 h-5 w-5" />
+              {t("meetings.scheduleLabel")}
+            </dt>
+            <dd class="mt-2 leading-7 text-slate-100">{t("meetings.campaign.schedule")}</dd>
+          </div>
+          <div>
+            <dt class="flex items-center font-semibold text-amber-300">
+              <Icon name="tabler:clock" class="mr-2 h-5 w-5" />
+              {t("meetings.timeLabel")}
+            </dt>
+            <dd class="mt-2 leading-7 text-slate-100">
+              {HOUR_OF_ENCOUNTER.time}
+              {HOUR_OF_ENCOUNTER.timezoneLabel}
+              <span class="block text-sm text-slate-400">{t("hourOfEncounter.timezoneHelp")}</span>
+            </dd>
+          </div>
+          <div>
+            <dt class="flex items-center font-semibold text-amber-300">
+              <Icon name="tabler:calendar-event" class="mr-2 h-5 w-5" />
+              {t("meetings.startsLabel")}
+            </dt>
+            <dd class="mt-2 leading-7 text-slate-100">
+              <time datetime={HOUR_OF_ENCOUNTER.firstOccurrence}>{t("meetings.campaign.startDate")}</time>
+            </dd>
+          </div>
+          <div>
+            <dt class="flex items-center font-semibold text-amber-300">
+              <Icon name="tabler:video" class="mr-2 h-5 w-5" />
+              Zoom
+            </dt>
+            <dd class="mt-2 leading-7 text-slate-100">
+              <span class="block"
+                >{t("meetings.meetingIdLabel")}: <span class="font-mono">{HOUR_OF_ENCOUNTER.meetingId}</span></span
+              >
+              <span class="block"
+                >{t("meetings.passcodeLabel")}: <span class="font-mono">{HOUR_OF_ENCOUNTER.passcode}</span></span
+              >
+            </dd>
+          </div>
+        </dl>
+
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <a
+            href={HOUR_OF_ENCOUNTER.joinUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex min-h-12 items-center justify-center rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-6 py-3 font-bold text-slate-950 transition hover:from-amber-300 hover:to-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
+          >
+            {t("meetings.joinZoom")}
+            <Icon name="tabler:external-link" class="ml-2 h-5 w-5" />
+          </a>
+          <a
+            href={HOUR_OF_ENCOUNTER.calendarUrl}
+            download
+            class="inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-white/5 px-6 py-3 font-semibold text-white transition hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
+          >
+            {t("hourOfEncounter.addCalendar")}
+            <Icon name="tabler:calendar-plus" class="ml-2 h-5 w-5" />
+          </a>
+        </div>
+
+        <div class="mt-8 rounded-2xl border border-blue-300/20 bg-blue-400/10 p-4 text-sm leading-6 text-blue-100">
+          <div class="flex items-start gap-3">
+            <Icon name="tabler:shield-check" class="mt-0.5 h-5 w-5 flex-none" />
+            <p>{t("meetings.zoomSafety")}</p>
+          </div>
+        </div>
+
+        <section
+          aria-labelledby="ministering-title"
+          class="mt-10 rounded-2xl border border-amber-300/20 bg-amber-500/10 p-6"
+        >
+          <h2 id="ministering-title" class="text-sm font-bold uppercase tracking-[0.16em] text-amber-300">
+            {t("hourOfEncounter.ministerTitle")}
+          </h2>
+          <p class="mt-2 text-xl font-bold text-white">{t("hourOfEncounter.ministerName")}</p>
+          <blockquote class="mt-4 border-l-2 border-amber-400/50 pl-4 italic text-amber-100/90">
+            "{t("hourOfEncounter.scriptureText")}"
+            <footer class="mt-1 font-semibold not-italic text-amber-300">— {t("hourOfEncounter.scriptureRef")}</footer>
+          </blockquote>
+        </section>
+
+        <section aria-labelledby="miracles-title" class="mt-10">
+          <h2 id="miracles-title" class="text-2xl font-bold text-white">{t("hourOfEncounter.miraclesTitle")}</h2>
+          <p class="mt-2 text-sm leading-6 text-slate-300">{t("hourOfEncounter.miraclesSubtitle")}</p>
+          <ul class="mt-4 space-y-3">
+            {
+              MIRACLE_KEYS.map((key) => (
+                <li class="flex items-start gap-3 rounded-xl border border-white/10 bg-black/20 p-3.5 text-sm leading-relaxed text-slate-200">
+                  <Icon name="tabler:sparkles" class="mt-0.5 h-5 w-5 flex-none text-amber-400" />
+                  <span>{t(key)}</span>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+
+        <section aria-labelledby="event-contact-title" class="mt-10">
+          <h2 id="event-contact-title" class="text-2xl font-bold text-white">{t("hourOfEncounter.contactTitle")}</h2>
+          <div class="mt-5 grid min-w-0 gap-5 sm:grid-cols-2">
+            <div class="min-w-0 rounded-2xl border border-white/10 bg-black/15 p-5">
+              <h3 class="font-semibold text-amber-300">{t("hourOfEncounter.emailLabel")}</h3>
+              <ul class="mt-3 min-w-0 space-y-2">
+                {
+                  HOUR_OF_ENCOUNTER.contacts.emails.map((email) => (
+                    <li class="min-w-0">
+                      <a
+                        class="break-all text-slate-100 underline decoration-white/30 underline-offset-4 hover:decoration-white"
+                        href={`mailto:${email}`}
+                      >
+                        {email}
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div class="min-w-0 rounded-2xl border border-white/10 bg-black/15 p-5">
+              <h3 class="font-semibold text-amber-300">{t("hourOfEncounter.phoneLabel")}</h3>
+              <a
+                class="mt-3 block text-slate-100 underline decoration-white/30 underline-offset-4 hover:decoration-white"
+                href={HOUR_OF_ENCOUNTER.contacts.phoneUrl}
+              >
+                {HOUR_OF_ENCOUNTER.contacts.phoneDisplay}
+              </a>
+              <a
+                class="mt-2 inline-flex items-center text-sm font-semibold text-green-300 underline decoration-green-300/30 underline-offset-4 hover:decoration-green-300"
+                href={HOUR_OF_ENCOUNTER.contacts.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp <Icon name="tabler:external-link" class="ml-1 h-4 w-4" />
+              </a>
+            </div>
+            <div class="min-w-0 rounded-2xl border border-white/10 bg-black/15 p-5 sm:col-span-2">
+              <h3 class="font-semibold text-amber-300">{t("hourOfEncounter.websiteLabel")}</h3>
+              <ul class="mt-3 flex min-w-0 flex-col gap-2 sm:flex-row sm:gap-6">
+                {
+                  HOUR_OF_ENCOUNTER.contacts.websites.map((website) => (
+                    <li class="min-w-0">
+                      <a
+                        class="inline-flex min-w-0 items-center break-all text-slate-100 underline decoration-white/30 underline-offset-4 hover:decoration-white"
+                        href={website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {website.replace("https://", "")}
+                        <Icon name="tabler:external-link" class="ml-1 h-4 w-4 flex-none" />
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <p class="mt-8 text-sm leading-6 text-slate-400">{t("hourOfEncounter.sourceNote")}</p>
+      </article>
+    </div>
+  </section>
+</Layout>

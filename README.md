@@ -89,7 +89,7 @@ The glory of God groans for manifestation in the midst of these adversities.
 
 ### Want to Join?
 
-Do you desire to be part of this chariot of fire that will change the globe? Join us in lifting the name of our Lord Jesus Christ.
+Do you desire to be part of this chariot of fire that will change the globe? Join us in lifting the name of our Lord Jesus Christ. Browse the current online meetings in [English](https://flamethefreeze.com/en/events#meetings) or [Finnish](https://flamethefreeze.com/fi/events#meetings) for schedules and joining details.
 
 ---
 

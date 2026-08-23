@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Flame the Freeze//Hour of Encounter//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Hour of Encounter
+X-WR-TIMEZONE:America/New_York
+BEGIN:VEVENT
+UID:hour-of-encounter-2026@flamethefreeze.com
+DTSTAMP:20260819T000000Z
+DTSTART;TZID=America/New_York:20260809T190000
+RRULE:FREQ=MONTHLY;BYDAY=2SU,4SU
+SUMMARY:Hour of Encounter
+DESCRIPTION:Flame the Freeze North America. Zoom meeting ID: 896 8357 0736.
+ Passcode: 931418. Contact: ftf.northamerica@gmail.com or
+ info@christ-dina.org.
+LOCATION:Zoom
+URL:https://zoom.us/j/89683570736
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

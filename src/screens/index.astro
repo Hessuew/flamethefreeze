@@ -26,6 +26,7 @@ import FreezeOverlay from "~/components/ui/FreezeOverlay.astro";
 import { getPermalink } from "~/utils/permalinks";
 import { ENDPOINTS } from "~/config/endpoints";
 import { getLanguageRoute } from "~/navigation";
+import NorthAmericaCampaignBanner from "~/components/widgets/NorthAmericaCampaignBanner.astro";
 
 const { metadata, siteRebuildStatus, lang } = Astro.props;
 
@@ -33,6 +34,8 @@ const t = useTranslations(lang);
 ---
 
 <Layout lang={lang} metadata={metadata} siteRebuildStatus={siteRebuildStatus}>
+  <NorthAmericaCampaignBanner lang={lang} />
+
   <!-- Hero Widget ******************* -->
   <div class="min-h-screen relative overflow-hidden">
     <!-- Video Background -->

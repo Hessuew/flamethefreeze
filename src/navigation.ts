@@ -167,5 +167,12 @@ export const headerData: { links: Array<MenuLink> } = {
         },
       ],
     },
+    {
+      text: "header.joinMeeting",
+      description: "header.joinMeetingDescription",
+      href: "events#meetings",
+      icon: "tabler:video",
+      featured: true,
+    },
   ],
 };

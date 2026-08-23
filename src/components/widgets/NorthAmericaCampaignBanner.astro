@@ -1,0 +1,94 @@
+---
+import { Icon } from "astro-icon/components";
+import { HOUR_OF_ENCOUNTER } from "~/data/meetings";
+import { useTranslations } from "~/i18n/utils";
+import { getPermalink } from "~/utils/permalinks";
+
+interface Props {
+  lang?: "en" | "fi";
+}
+
+const { lang = "en" } = Astro.props;
+const t = useTranslations(lang);
+const detailsUrl = getPermalink(HOUR_OF_ENCOUNTER.detailsPath[lang]);
+const meetingsUrl = getPermalink(`${lang === "fi" ? "/fi/events" : "/en/events"}#meetings`);
+---
+
+<aside
+  id="north-america-campaign"
+  data-campaign-key="hour-of-encounter-2026-v1"
+  aria-labelledby="north-america-campaign-title"
+  class="relative border-b border-amber-400/30 bg-gradient-to-r from-[#140b05] via-[#281606] to-[#140b05] text-white shadow-lg shadow-black/20"
+>
+  <div
+    class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-4 pr-14 sm:px-6 sm:pr-16 lg:flex-row lg:items-center lg:justify-between xl:max-w-[1280px] xl:px-[24px]"
+  >
+    <div class="min-w-0">
+      <p class="mb-1 text-xs font-bold uppercase tracking-[0.16em] text-amber-300">
+        {t("campaign.banner.eyebrow")}
+      </p>
+      <h2 id="north-america-campaign-title" class="text-lg font-bold leading-tight text-white sm:text-xl">
+        {HOUR_OF_ENCOUNTER.title}
+      </h2>
+      <p class="mt-1 text-sm leading-6 text-amber-50/85 sm:text-base">
+        {t("campaign.banner.schedule")}
+      </p>
+    </div>
+
+    <div class="flex flex-wrap items-center gap-2 sm:gap-3">
+      <a
+        href={detailsUrl}
+        class="inline-flex min-h-11 items-center justify-center rounded-full bg-gradient-to-r from-amber-400 to-orange-500 px-5 py-2.5 text-sm font-bold text-slate-950 transition hover:from-amber-300 hover:to-orange-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
+      >
+        {t("campaign.banner.details")}
+        <Icon name="tabler:arrow-right" class="ml-2 h-4 w-4" />
+      </a>
+      <a
+        href={meetingsUrl}
+        class="inline-flex min-h-11 items-center justify-center rounded-full border border-amber-200/40 px-5 py-2.5 text-sm font-semibold text-white transition hover:border-amber-200 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
+      >
+        {t("campaign.banner.allMeetings")}
+      </a>
+    </div>
+  </div>
+
+  <button
+    type="button"
+    data-campaign-dismiss
+    aria-label={t("campaign.banner.dismiss")}
+    class="absolute right-2 top-2 inline-flex h-11 w-11 items-center justify-center rounded-full text-amber-100/80 transition hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300 sm:right-4 sm:top-1/2 sm:-translate-y-1/2"
+  >
+    <Icon name="tabler:x" class="h-5 w-5" />
+  </button>
+</aside>
+
+<script>
+  function setupNorthAmericaCampaign() {
+    const banner = document.querySelector<HTMLElement>("#north-america-campaign");
+    if (!banner || banner.dataset.initialized === "true") return;
+
+    banner.dataset.initialized = "true";
+    const storageKey = banner.dataset.campaignKey;
+
+    try {
+      if (storageKey && window.localStorage.getItem(storageKey) === "dismissed") {
+        banner.hidden = true;
+        return;
+      }
+    } catch {
+      // The campaign remains usable when storage is unavailable.
+    }
+
+    banner.querySelector("[data-campaign-dismiss]")?.addEventListener("click", () => {
+      banner.hidden = true;
+      try {
+        if (storageKey) window.localStorage.setItem(storageKey, "dismissed");
+      } catch {
+        // Dismiss for the current page even if storage is unavailable.
+      }
+    });
+  }
+
+  setupNorthAmericaCampaign();
+  document.addEventListener("astro:page-load", setupNorthAmericaCampaign);
+</script>
