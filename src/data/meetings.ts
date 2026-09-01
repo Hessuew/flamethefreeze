@@ -10,6 +10,7 @@ export const HOUR_OF_ENCOUNTER = {
   passcode: "931418",
   joinUrl: "https://zoom.us/j/89683570736",
   calendarUrl: "/calendar/hour-of-encounter.ics",
+  registrationUrl: "https://flamethefreeze.zoom.us/meeting/register/ld_7_mtRRcmYZSfmGUgbUw",
   detailsPath: {
     en: "/en/events/hour-of-encounter",
     fi: "/fi/events/hour-of-encounter",

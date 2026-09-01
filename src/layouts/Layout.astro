@@ -5,6 +5,7 @@ import ApplyColorMode from "~/components/common/ApplyColorMode.astro";
 import BasicScripts from "~/components/common/BasicScripts.astro";
 import CommonMeta from "~/components/common/CommonMeta.astro";
 import Metadata from "~/components/common/Metadata.astro";
+import MetaPixel from "~/components/common/MetaPixel.astro";
 import SiteVerification from "~/components/common/SiteVerification.astro";
 import StructuredData from "~/components/common/StructuredData.astro";
 import CustomStyles from "~/components/CustomStyles.astro";
@@ -33,6 +34,7 @@ const { language, textDirection } = I18N;
     <Metadata {...metadata} />
     <SiteVerification />
     <Analytics />
+    <MetaPixel />
     <StructuredData lang={lang} pageSpecificSchema={metadata?.structuredData} />
 
     <!-- Comment the line below to disable View Transitions -->

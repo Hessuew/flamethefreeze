@@ -93,6 +93,15 @@ const metadata: MetaData = {
           />
         </a>
         <figcaption class="mt-3 text-center text-sm text-slate-400">{t("hourOfEncounter.flyerCaption")}</figcaption>
+        <a
+          href={flyer.src}
+          download="hour-of-encounter-flyer.jpg"
+          aria-label={t("hourOfEncounter.downloadFlyer")}
+          class="mx-auto mt-4 inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-white/5 px-6 py-3 font-semibold text-white transition hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
+        >
+          {t("hourOfEncounter.downloadFlyer")}
+          <Icon name="tabler:download" class="ml-2 h-5 w-5" />
+        </a>
       </figure>
 
       <article
@@ -157,12 +166,13 @@ const metadata: MetaData = {
             <Icon name="tabler:external-link" class="ml-2 h-5 w-5" />
           </a>
           <a
-            href={HOUR_OF_ENCOUNTER.calendarUrl}
-            download
+            href={HOUR_OF_ENCOUNTER.registrationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             class="inline-flex min-h-12 items-center justify-center rounded-full border border-white/25 bg-white/5 px-6 py-3 font-semibold text-white transition hover:border-white/50 hover:bg-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-300"
           >
-            {t("hourOfEncounter.addCalendar")}
-            <Icon name="tabler:calendar-plus" class="ml-2 h-5 w-5" />
+            {t("hourOfEncounter.registerFutureEvents")}
+            <Icon name="tabler:external-link" class="ml-2 h-5 w-5" />
           </a>
         </div>
 
