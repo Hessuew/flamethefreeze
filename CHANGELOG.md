@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.24.0](https://github.com/Hessuew/flamethefreeze/compare/v3.23.0...v3.24.0) (2026-09-01)
+
+
+### Features
+
+* promote North America meetings ([afa61ab](https://github.com/Hessuew/flamethefreeze/commit/afa61abdd0d3c6da008a0aa7ab14c00f562dc908))
+* update event registration and tracking ([469aa70](https://github.com/Hessuew/flamethefreeze/commit/469aa70ad8f84704f83db25d115fe5b5ab29335b))
+
+
+### Bug Fixes
+
+* **a11y:** provide accessible flyer testimonies and remove rebuild banner ([ee6a2a6](https://github.com/Hessuew/flamethefreeze/commit/ee6a2a60f576e85e7209ea3b9d4b8661d381e8d0))
+* restore green project checks ([6a42eb6](https://github.com/Hessuew/flamethefreeze/commit/6a42eb601b184eb95c6608b895d2d1b3d4eb9818))
+
 ## [3.23.0](https://github.com/Hessuew/flamethefreeze/compare/v3.22.0...v3.23.0) (2025-09-26)
 
 
