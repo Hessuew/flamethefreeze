@@ -1000,8 +1000,9 @@ export const ui = {
     "hourOfEncounter.intro":
       "Join Prof Andrew Agbaje online for Hour of Encounter. The event recurs on the second and fourth Sunday of each month.",
     "hourOfEncounter.timezoneHelp":
-      "Eastern Time follows seasonal clock changes. The calendar download converts the event to your local time.",
-    "hourOfEncounter.addCalendar": "Add recurring event to calendar",
+      "Eastern Time follows seasonal clock changes. Check your local calendar settings for the start time.",
+    "hourOfEncounter.downloadFlyer": "Download the Hour of Encounter flyer",
+    "hourOfEncounter.registerFutureEvents": "Register for future events",
     "hourOfEncounter.contactTitle": "Ministry contacts",
     "hourOfEncounter.emailLabel": "Email",
     "hourOfEncounter.phoneLabel": "Phone / WhatsApp",
@@ -2866,8 +2867,9 @@ export const ui = {
     "hourOfEncounter.intro":
       "Liity professori Andrew Agbajen Hour of Encounter -verkkotapahtumaan. Tapahtuma toistuu kuukauden toisena ja neljäntenä sunnuntaina.",
     "hourOfEncounter.timezoneHelp":
-      "Eastern Time noudattaa kausittaisia kellonsiirtoja. Kalenterilataus muuntaa tapahtuman paikalliseen aikaasi.",
-    "hourOfEncounter.addCalendar": "Lisää toistuva tapahtuma kalenteriin",
+      "Eastern Time noudattaa kausittaisia kellonsiirtoja. Tarkista alkamisaika oman kalenterisi asetuksista.",
+    "hourOfEncounter.downloadFlyer": "Lataa Hour of Encounter -esite",
+    "hourOfEncounter.registerFutureEvents": "Ilmoittaudu tuleviin tapahtumiin",
     "hourOfEncounter.contactTitle": "Palvelutyön yhteystiedot",
     "hourOfEncounter.emailLabel": "Sähköposti",
     "hourOfEncounter.phoneLabel": "Puhelin / WhatsApp",
