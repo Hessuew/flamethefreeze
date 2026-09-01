@@ -17,8 +17,14 @@
     s = b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t, s);
   })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-  fbq("init", "1774128133609281");
-  fbq("track", "PageView");
+  if (!window.flameTheFreezeMetaPixelInitialized) {
+    fbq("init", "1774128133609281");
+    window.flameTheFreezeMetaPixelInitialized = true;
+  }
+  if (!window.flameTheFreezeMetaPixelPageViewListener) {
+    window.flameTheFreezeMetaPixelPageViewListener = () => fbq("track", "PageView");
+    document.addEventListener("astro:page-load", window.flameTheFreezeMetaPixelPageViewListener);
+  }
   /* eslint-enable @typescript-eslint/no-unused-expressions, prefer-spread, prefer-rest-params */
 </script>
 <noscript
