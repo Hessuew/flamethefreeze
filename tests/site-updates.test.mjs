@@ -19,16 +19,16 @@ const decodeAttribute = (value) => value?.replaceAll("&amp;", "&").replaceAll("&
 
 const parseAttributes = (source) =>
   Object.fromEntries(
-    [...source.matchAll(/([:\w-]+)(?:="([^"]*)")?/g)].map(([, name, value = ""]) => [
-      name,
-      decodeAttribute(value),
-    ])
+    [...source.matchAll(/([:\w-]+)(?:="([^"]*)")?/g)].map(([, name, value = ""]) => [name, decodeAttribute(value)])
   );
 
 const linksIn = (html) =>
   [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/g)].map(([, attributes, content]) => ({
     attributes: parseAttributes(attributes),
-    text: content.replaceAll(/<[^>]+>/g, " ").replaceAll(/\s+/g, " ").trim(),
+    text: content
+      .replaceAll(/<[^>]+>/g, " ")
+      .replaceAll(/\s+/g, " ")
+      .trim(),
   }));
 
 const pixelScriptIn = (html) => {
@@ -44,9 +44,7 @@ describe("requested site updates", () => {
     ];
 
     for (const [html, label] of pages) {
-      const download = linksIn(html).find(
-        ({ attributes }) => attributes.download === "hour-of-encounter-flyer.jpg"
-      );
+      const download = linksIn(html).find(({ attributes }) => attributes.download === "hour-of-encounter-flyer.jpg");
 
       expect(download).toBeDefined();
       expect(download.attributes["aria-label"]).toBe(label);
